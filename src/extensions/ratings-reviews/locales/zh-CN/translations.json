@@ -1,0 +1,71 @@
+{
+    "section": {
+        "heading": "客户评论",
+        "loading": "正在加载评论...",
+        "loadError": "无法加载评论。请刷新页面后重试。",
+        "noReviewsForProduct": "此产品没有评论。",
+        "noReviewsMatchFilters": "没有与您的筛选条件匹配的评论。",
+        "showingReviews": "显示 {{from}}-{{to}} 个评论（共 {{total}} 个）",
+        "subtitleOne": "{{productName}} 的 1 个评论",
+        "subtitleOther": "{{productName}} 的 {{count}} 个评论",
+        "aiReviewSummary": "AI 评论摘要"
+    },
+    "filters": {
+        "filterBy": "筛选标准：",
+        "withPhotos": "有照片",
+        "searchPlaceholder": "搜索评论...",
+        "sortLabel": "排序：",
+        "sortMostRecent": "最新",
+        "sortHighestRated": "最高评分",
+        "sortLowestRated": "最低评分",
+        "sortMostHelpful": "最有帮助",
+        "activeFilterStars": "{{count}} 星",
+        "clearFilter": "清除筛选器",
+        "filterByStars": "按 {{count}} 星筛选",
+        "clearStarFilter": "清除 {{count}} 星筛选条件",
+        "clearPhotoFilter": "清除照片筛选条件"
+    },
+    "card": {
+        "verifiedPurchase": "已验证购买",
+        "helpful": "有帮助 ({{count}})",
+        "helpfulNoCount": "有帮助",
+        "report": "报告",
+        "readMore": "阅读更多",
+        "readLess": "阅读更少",
+        "imageAlt": "评论图片"
+    },
+    "rating": {
+        "starContainerAriaLabel": "{{rating}} 星，共 {{total}} 星，{{count, number}} 个评论",
+        "ratingOutOfTotal": "{{rating}} 星，共 {{total}} 星",
+        "ratingValue": "{{rating}}",
+        "basedOnReviews": "基于 {{count, number}} 个评论",
+        "ratingWithCount": "{{rating}} ({{count, number}})",
+        "viewAllReviews": "查看所有评论",
+        "distributionAriaLabel": "{{rating}} 星：{{count, number}} 个评论，共 {{totalReviews, number}} 个",
+        "distributionsAriaLabel": "星级分布，共 {{total, number}} 个评论",
+        "seeCustomerReviews": "查看客户评论 >"
+    },
+    "writeReview": {
+        "buttonLabel": "撰写评论",
+        "modalDescription": "评论填写表格",
+        "starRatingDistributionDescription": "星级评定分布详情",
+        "submitting": "正在提交",
+        "successMessage": "评论已提交",
+        "errorMessage": "提交评论失败。请重试。",
+        "validation": {
+            "pleaseFixFollowing": "请修复以下问题：",
+            "ratingRequired": "请选择评级。",
+            "reviewRequired": "请填写此字段。",
+            "reviewMinLength": "您的评论必须至少 {{count}} 个字符",
+            "reviewMaxLength": "请输入不超过 {{count}} 个字符。",
+            "titleMaxLength": "请输入不超过 {{count}} 个字符。"
+        },
+        "minCharactersHint": "最少 {{count}} 个字符。",
+        "maxCharactersHint": "最多 {{count}} 个字符。"
+    },
+    "orderLine": {
+        "rateAndReview": "评分和评论",
+        "reviewSubmitted": "评论已提交",
+        "cta": "评分和评论"
+    }
+}

@@ -1,0 +1,352 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Contact stories snapshot > Default story renders and matches snapshot 1`] = `
+<div
+  class="bg-background px-6 py-10"
+>
+  <div
+    class="text-card-foreground flex flex-col rounded-ui border-ui border-border shadow-ui max-w-screen-2xl border-0 bg-background px-0 py-6 sm:flex-row gap-12"
+    data-slot="card"
+  >
+    <div
+      class="flex-1 p-6"
+    >
+      <div
+        class="flex flex-col gap-1.5"
+      >
+        <h3
+          class="text-2xl font-semibold text-left tracking-tight text-card-foreground"
+        >
+          We’re Here to Help
+        </h3>
+        <div
+          class="text-sm leading-5 text-muted-foreground"
+        >
+          <p
+            class="[&:not(:first-child)]:mt-6 text-left text-sm leading-5 text-muted-foreground"
+          >
+            Have a question, feedback, or need support? Our team is ready to assist you.
+            <br />
+            <a
+              class="text-primary underline"
+              href="tel:180080606453"
+            >
+              1-800-8060-6453
+            </a>
+          </p>
+          <p
+            class="[&:not(:first-child)]:mt-6 text-left mt-4 text-sm leading-5 text-muted-foreground"
+          >
+            Monday – Friday: 9am – 10pm EST
+            <br />
+            Saturday & Sunday: 10am – 7pm EST
+          </p>
+          <p
+            class="[&:not(:first-child)]:mt-6 text-left mt-4 text-sm leading-5 text-muted-foreground"
+          >
+            Or send us a message using the form — we’ll get back to you as soon as possible.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-1 flex-col gap-4 p-6"
+    >
+      <form
+        class="flex flex-col gap-4"
+      >
+        <div
+          class="flex flex-col gap-2"
+        >
+          <label
+            class="flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-sm leading-5 font-normal text-foreground"
+            data-slot="label"
+            for="contact-full-name"
+          >
+            Name
+            <span
+              class="text-destructive"
+            >
+              *
+            </span>
+          </label>
+          <input
+            aria-required="true"
+            class="file:text-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 w-full min-w-0 rounded-ui border shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border-input bg-background text-foreground placeholder:text-muted-foreground shadow-xs h-10 px-3 py-2 text-sm leading-5"
+            data-slot="input"
+            id="contact-full-name"
+            name="fullName"
+            placeholder="Enter your full name"
+            required=""
+          />
+        </div>
+        <div
+          class="flex flex-col gap-2"
+        >
+          <label
+            class="flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-sm leading-5 font-normal text-foreground"
+            data-slot="label"
+            for="contact-email"
+          >
+            Email
+            <span
+              class="text-destructive"
+            >
+              *
+            </span>
+          </label>
+          <input
+            aria-required="true"
+            autocomplete="email"
+            class="file:text-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 w-full min-w-0 rounded-ui border shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border-input bg-background text-foreground placeholder:text-muted-foreground shadow-xs h-10 px-3 py-2 text-sm leading-5"
+            data-slot="input"
+            id="contact-email"
+            name="email"
+            placeholder="you@example.com"
+            required=""
+            type="email"
+          />
+        </div>
+        <div
+          class="flex flex-col gap-2"
+        >
+          <label
+            class="flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-sm leading-5 font-normal text-foreground"
+            data-slot="label"
+            for="contact-topic"
+          >
+            Label
+            <span
+              class="text-destructive"
+            >
+              *
+            </span>
+          </label>
+          <input
+            aria-required="true"
+            class="file:text-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 w-full min-w-0 rounded-ui border shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border-input bg-background text-foreground placeholder:text-muted-foreground shadow-xs h-10 px-3 py-2 text-sm leading-5"
+            data-slot="input"
+            id="contact-topic"
+            name="topic"
+            placeholder="General information"
+            required=""
+          />
+        </div>
+        <div
+          class="flex flex-col gap-2"
+        >
+          <label
+            class="flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-sm leading-5 font-normal text-foreground"
+            data-slot="label"
+            for="contact-message"
+          >
+            Message
+            <span
+              class="text-destructive"
+            >
+              *
+            </span>
+          </label>
+          <textarea
+            aria-required="true"
+            class="border-input placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 flex field-sizing-content w-full rounded-ui border bg-transparent px-3 py-2 shadow-ui transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 md:text-sm min-h-48 resize-none text-sm leading-5"
+            data-slot="textarea"
+            id="contact-message"
+            name="message"
+            placeholder="Leave us a message"
+            required=""
+          />
+        </div>
+        <button
+          class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground hover:bg-primary/90 h-9 px-4 py-2 has-[>svg]:px-3 w-full"
+          data-size="default"
+          data-slot="button"
+          data-variant="default"
+          type="submit"
+        >
+          Submit message
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Contact stories snapshot > FormValidationAndSubmission story renders and matches snapshot 1`] = `
+<div
+  class="bg-background px-6 py-10"
+>
+  <section
+    aria-atomic="false"
+    aria-label="Notifications alt+T"
+    aria-live="polite"
+    aria-relevant="additions text"
+    tabindex="-1"
+  />
+  <div
+    class="text-card-foreground flex flex-col rounded-ui border-ui border-border shadow-ui max-w-screen-2xl border-0 bg-background px-0 py-6 sm:flex-row gap-12"
+    data-slot="card"
+  >
+    <div
+      class="flex-1 p-6"
+    >
+      <div
+        class="flex flex-col gap-1.5"
+      >
+        <h3
+          class="text-2xl font-semibold text-left tracking-tight text-card-foreground"
+        >
+          We’re Here to Help
+        </h3>
+        <div
+          class="text-sm leading-5 text-muted-foreground"
+        >
+          <p
+            class="[&:not(:first-child)]:mt-6 text-left text-sm leading-5 text-muted-foreground"
+          >
+            Have a question, feedback, or need support? Our team is ready to assist you.
+            <br />
+            <a
+              class="text-primary underline"
+              href="tel:180080606453"
+            >
+              1-800-8060-6453
+            </a>
+          </p>
+          <p
+            class="[&:not(:first-child)]:mt-6 text-left mt-4 text-sm leading-5 text-muted-foreground"
+          >
+            Monday – Friday: 9am – 10pm EST
+            <br />
+            Saturday & Sunday: 10am – 7pm EST
+          </p>
+          <p
+            class="[&:not(:first-child)]:mt-6 text-left mt-4 text-sm leading-5 text-muted-foreground"
+          >
+            Or send us a message using the form — we’ll get back to you as soon as possible.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div
+      class="flex flex-1 flex-col gap-4 p-6"
+    >
+      <form
+        class="flex flex-col gap-4"
+      >
+        <div
+          class="flex flex-col gap-2"
+        >
+          <label
+            class="flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-sm leading-5 font-normal text-foreground"
+            data-slot="label"
+            for="contact-full-name"
+          >
+            Name
+            <span
+              class="text-destructive"
+            >
+              *
+            </span>
+          </label>
+          <input
+            aria-required="true"
+            class="file:text-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 w-full min-w-0 rounded-ui border shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border-input bg-background text-foreground placeholder:text-muted-foreground shadow-xs h-10 px-3 py-2 text-sm leading-5"
+            data-slot="input"
+            id="contact-full-name"
+            name="fullName"
+            placeholder="Enter your full name"
+            required=""
+          />
+        </div>
+        <div
+          class="flex flex-col gap-2"
+        >
+          <label
+            class="flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-sm leading-5 font-normal text-foreground"
+            data-slot="label"
+            for="contact-email"
+          >
+            Email
+            <span
+              class="text-destructive"
+            >
+              *
+            </span>
+          </label>
+          <input
+            aria-required="true"
+            autocomplete="email"
+            class="file:text-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 w-full min-w-0 rounded-ui border shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border-input bg-background text-foreground placeholder:text-muted-foreground shadow-xs h-10 px-3 py-2 text-sm leading-5"
+            data-slot="input"
+            id="contact-email"
+            name="email"
+            placeholder="you@example.com"
+            required=""
+            type="email"
+          />
+        </div>
+        <div
+          class="flex flex-col gap-2"
+        >
+          <label
+            class="flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-sm leading-5 font-normal text-foreground"
+            data-slot="label"
+            for="contact-topic"
+          >
+            Label
+            <span
+              class="text-destructive"
+            >
+              *
+            </span>
+          </label>
+          <input
+            aria-required="true"
+            class="file:text-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 w-full min-w-0 rounded-ui border shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border-input bg-background text-foreground placeholder:text-muted-foreground shadow-xs h-10 px-3 py-2 text-sm leading-5"
+            data-slot="input"
+            id="contact-topic"
+            name="topic"
+            placeholder="General information"
+            required=""
+          />
+        </div>
+        <div
+          class="flex flex-col gap-2"
+        >
+          <label
+            class="flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-sm leading-5 font-normal text-foreground"
+            data-slot="label"
+            for="contact-message"
+          >
+            Message
+            <span
+              class="text-destructive"
+            >
+              *
+            </span>
+          </label>
+          <textarea
+            aria-required="true"
+            class="border-input placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 flex field-sizing-content w-full rounded-ui border bg-transparent px-3 py-2 shadow-ui transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 md:text-sm min-h-48 resize-none text-sm leading-5"
+            data-slot="textarea"
+            id="contact-message"
+            name="message"
+            placeholder="Leave us a message"
+            required=""
+          />
+        </div>
+        <button
+          class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground hover:bg-primary/90 h-9 px-4 py-2 has-[>svg]:px-3 w-full"
+          data-size="default"
+          data-slot="button"
+          data-variant="default"
+          type="submit"
+        >
+          Submit message
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,71 @@
+# ============================================================================
+# IMPORTANT: This .gitignore is synced to the mirror repository.
+# DO NOT consolidate it to the monorepo root!
+# ============================================================================
+
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Build outputs
+dist/
+build/
+.react-router/
+*.tsbuildinfo
+
+# Environment variables (keep .env.default)
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Coverage
+coverage/
+*.lcov
+.nyc_output
+
+# Storybook
+storybook-static/
+.storybook/tests/generated-stories/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Vitest
+.vitest/
+
+# Workspace configuration and packages (monorepo only - included in mirror repo)
+# In monorepo: Ignored (created temporarily for syncing)
+# In mirror repo: Tracked (needed for standalone workspace)
+packages/
+pnpm-workspace.yaml
+
+# Ignore local Claude md file
+Claude.local.md
+
+dw.json
+
+# Generated per-vertical tsconfigs (see scripts/internal/generate-vertical-tsconfig.mjs).
+# tsconfig.json (fashion/default) is checked in; non-default verticals are
+# generated on demand by `typecheck:<vertical>`.
+/tsconfig.cosmetic.json
+/tsconfig.foundations.json
+/tsconfig.footwear.json
+/tsconfig.furniture.json
+# The generator test writes a throwaway tsconfig.fashion.json for the route-less
+# case and deletes it in afterAll; ignore it so an interrupted run can't stage it.
+/tsconfig.fashion.json

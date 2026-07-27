@@ -1,0 +1,9 @@
+{
+    "components": [
+        {
+            "targetId": "sfcc.pdp.bnpl.message",
+            "path": "extensions/bnpl/components/target/bnpl-target.tsx",
+            "order": 0
+        }
+    ]
+}

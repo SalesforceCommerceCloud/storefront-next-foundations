@@ -1,0 +1,29 @@
+/*
+ * Storefront header/footer chrome — auto-derived for foundations (PLACEHOLDER).
+ *
+ * Chrome tracks the placeholder --primary (teal) so the scaffold renders a
+ * visibly different header than fashion's #18181B. Replace alongside the real
+ * brand palette in a later work item (W-23350046) if the brand wants different
+ * chrome than its primary.
+ */
+:root {
+    /* header & navigation — teal primary shows through the chrome */
+    --header-background: var(--primary);
+    --header-foreground: var(--primary-foreground);
+    --header-border: rgba(255, 255, 255, 0.12); /* --primary is dark; light hairline */
+    --header-divider: var(--header-border);
+    /* header menu dropdowns — same chrome as the bar; hover inverts to accent */
+    --header-menu-background: var(--header-background);
+    --header-menu-foreground: var(--header-foreground);
+    --header-menu-border: var(--header-border);
+    --header-menu-hover-background: var(--accent);
+    --header-menu-hover-foreground: var(--accent-foreground);
+    --header-menu-active-background: rgba(255, 255, 255, 0.08);
+    --header-menu-icon: rgba(255, 255, 255, 0.78);
+    /* logo.svg is black; invert to white on the dark teal header */
+    --header-logo-filter: brightness(0) invert(1);
+
+    /* footer — page background to avoid a hard chrome edge */
+    --footer-background: var(--background);
+    --footer-foreground: var(--foreground);
+}

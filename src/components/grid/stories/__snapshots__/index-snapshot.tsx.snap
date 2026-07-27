@@ -1,0 +1,59 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Grid stories snapshot > Default story renders and matches snapshot 1`] = `
+<div
+  class="grid grid-cols-3 grid-flow-row max-w-full mx-0 gap-4 items-stretch"
+  data-slot="grid"
+>
+  <div
+    class="bg-muted p-4 rounded text-center text-sm"
+  >
+    Item 
+    1
+  </div>
+  <div
+    class="bg-muted p-4 rounded text-center text-sm"
+  >
+    Item 
+    2
+  </div>
+  <div
+    class="bg-muted p-4 rounded text-center text-sm"
+  >
+    Item 
+    3
+  </div>
+</div>
+`;
+
+exports[`Grid stories snapshot > Featured story renders and matches snapshot 1`] = `
+<div
+  class="grid grid-cols-4 grid-flow-row max-w-screen-2xl mx-auto gap-6 items-stretch bg-gradient-to-br from-purple-500 to-purple-700 p-8"
+  data-slot="grid"
+>
+  <div
+    class="bg-white p-4 rounded shadow text-sm"
+  >
+    Item 
+    1
+  </div>
+  <div
+    class="bg-white p-4 rounded shadow text-sm"
+  >
+    Item 
+    2
+  </div>
+  <div
+    class="bg-white p-4 rounded shadow text-sm"
+  >
+    Item 
+    3
+  </div>
+  <div
+    class="bg-white p-4 rounded shadow text-sm"
+  >
+    Item 
+    4
+  </div>
+</div>
+`;

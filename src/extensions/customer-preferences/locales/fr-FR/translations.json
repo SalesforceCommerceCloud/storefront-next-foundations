@@ -1,0 +1,35 @@
+{
+    "interestsPreferences": {
+        "title": "Centres d’intérêt et préférences",
+        "description": "Ajoutez vos centres d’intérêt en matière de design et gérez vos préférences d’achat",
+        "successMessage": "Vos centres d’intérêt et vos préférences ont été mis à jour.",
+        "errorMessage": "Échec de la mise à jour. Veuillez réessayer.",
+        "loadError": "We couldn't load your interests and preferences. Please refresh the page to try again."
+    },
+    "interests": {
+        "title": "Vos centres d’intérêt",
+        "noneSelected": "Aucun centre d’intérêt sélectionné",
+        "addMore": "En ajouter plus",
+        "addInterestsTitle": "Ajouter vos centres d’intérêt"
+    },
+    "preferences": {
+        "noneSelected": "Aucune sélection",
+        "addMore": "En ajouter plus",
+        "dialogTitle": "Sélectionner des options",
+        "selectCategory": "Sélectionner {{category}}"
+    },
+    "measures": {
+        "roomDimensionsLabel": "Room dimensions:",
+        "ceilingHeightLabel": "Ceiling height:",
+        "noneProvided": "No measures provided"
+    },
+    "size": {
+        "preferredSizeLabel": "Preferred product size:"
+    },
+    "common": {
+        "save": "Enregistrer",
+        "saving": "Enregistrement en cours...",
+        "cancel": "Annuler",
+        "edit": "Modifier"
+    }
+}

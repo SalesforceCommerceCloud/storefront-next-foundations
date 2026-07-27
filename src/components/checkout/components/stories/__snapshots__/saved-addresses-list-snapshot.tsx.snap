@@ -1,0 +1,1251 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SavedAddressesList stories snapshot > DefaultView story renders and matches snapshot 1`] = `
+<div
+  class="space-y-4"
+>
+  <div>
+    <div
+      aria-label="Select a saved address"
+      aria-required="false"
+      class="grid gap-3 space-y-2"
+      data-slot="radio-group"
+      dir="ltr"
+      role="radiogroup"
+      style="outline: none;"
+      tabindex="0"
+    >
+      <div
+        class="group flex items-start gap-2 transition-all duration-200 rounded-ui border border-primary p-4"
+      >
+        <button
+          aria-checked="true"
+          class="border-input text-primary focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 aspect-square rounded-full border shadow-ui transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 mt-0.5 size-4 shrink-0"
+          data-radix-collection-item=""
+          data-slot="radio-group-item"
+          data-state="checked"
+          id="saved-address-addr-2"
+          role="radio"
+          tabindex="-1"
+          type="button"
+          value="addr-2"
+        >
+          <span
+            class="relative flex items-center justify-center"
+            data-slot="radio-group-indicator"
+            data-state="checked"
+          >
+            <svg
+              aria-hidden="true"
+              class="lucide lucide-circle fill-primary absolute top-1/2 left-1/2 size-2 -translate-x-1/2 -translate-y-1/2"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+              />
+            </svg>
+          </span>
+        </button>
+        <label
+          class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 flex-1 cursor-pointer min-w-0"
+          data-slot="label"
+          for="saved-address-addr-2"
+        >
+          <div
+            class="space-y-1.5"
+          >
+            <div
+              class="space-y-1.5"
+            >
+              <div
+                class="flex flex-wrap items-center gap-2"
+              >
+                <p
+                  class="text-left text-sm font-medium text-foreground"
+                >
+                  Bob Smith
+                </p>
+              </div>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                456 Oak Ave
+              </p>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                02101, Boston, MA, US
+              </p>
+            </div>
+          </div>
+        </label>
+      </div>
+      <div
+        class="group flex items-start transition-all duration-200 gap-3"
+      >
+        <button
+          aria-checked="false"
+          class="border-input text-primary focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 aspect-square rounded-full border shadow-ui transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 mt-0.5 size-4 shrink-0"
+          data-radix-collection-item=""
+          data-slot="radio-group-item"
+          data-state="unchecked"
+          id="saved-address-addr-3"
+          role="radio"
+          tabindex="-1"
+          type="button"
+          value="addr-3"
+        />
+        <label
+          class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 flex-1 cursor-pointer min-w-0"
+          data-slot="label"
+          for="saved-address-addr-3"
+        >
+          <div
+            class="space-y-1.5"
+          >
+            <div
+              class="space-y-1.5"
+            >
+              <div
+                class="flex flex-wrap items-center gap-2"
+              >
+                <p
+                  class="text-left text-sm font-medium text-foreground"
+                >
+                  Alice Johnson
+                </p>
+              </div>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                789 Pine Rd
+              </p>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                97201, Portland, OR, US
+              </p>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SavedAddressesList stories snapshot > SingleAddress story renders and matches snapshot 1`] = `
+<div
+  class="space-y-4"
+>
+  <div>
+    <div
+      aria-label="Select a saved address"
+      aria-required="false"
+      class="grid gap-3 space-y-2"
+      data-slot="radio-group"
+      dir="ltr"
+      role="radiogroup"
+      style="outline: none;"
+      tabindex="0"
+    >
+      <div
+        class="group flex items-start gap-2 transition-all duration-200 rounded-ui border border-primary p-4"
+      >
+        <button
+          aria-checked="true"
+          class="border-input text-primary focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 aspect-square rounded-full border shadow-ui transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 mt-0.5 size-4 shrink-0"
+          data-radix-collection-item=""
+          data-slot="radio-group-item"
+          data-state="checked"
+          id="saved-address-addr-1"
+          role="radio"
+          tabindex="-1"
+          type="button"
+          value="addr-1"
+        >
+          <span
+            class="relative flex items-center justify-center"
+            data-slot="radio-group-indicator"
+            data-state="checked"
+          >
+            <svg
+              aria-hidden="true"
+              class="lucide lucide-circle fill-primary absolute top-1/2 left-1/2 size-2 -translate-x-1/2 -translate-y-1/2"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+              />
+            </svg>
+          </span>
+        </button>
+        <label
+          class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 flex-1 cursor-pointer min-w-0"
+          data-slot="label"
+          for="saved-address-addr-1"
+        >
+          <div
+            class="space-y-1.5"
+          >
+            <div
+              class="space-y-1.5"
+            >
+              <div
+                class="flex flex-wrap items-center gap-2"
+              >
+                <p
+                  class="text-left text-sm font-medium text-foreground"
+                >
+                  Jane Doe
+                </p>
+                <span
+                  class="inline-flex items-center justify-center rounded-full border px-2 py-0.5 w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent [a&]:hover:bg-secondary/90 text-xs font-normal bg-primary/10 text-primary"
+                  data-slot="badge"
+                >
+                  Default
+                </span>
+              </div>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                123 Main St Apt 4
+              </p>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                94102, San Francisco, CA, US
+              </p>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SavedAddressesList stories snapshot > WithAddNewAddress story renders and matches snapshot 1`] = `
+<div
+  class="space-y-4"
+>
+  <div
+    class="flex justify-end"
+  >
+    <button
+      aria-label="Add new address"
+      class="inline-flex items-center justify-center whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-ui gap-1.5 px-3 has-[>svg]:px-2.5"
+      data-size="sm"
+      data-slot="button"
+      data-variant="outline"
+      type="button"
+    >
+      Add new address
+    </button>
+  </div>
+  <div>
+    <div
+      aria-label="Select a saved address"
+      aria-required="false"
+      class="grid gap-3 space-y-2"
+      data-slot="radio-group"
+      dir="ltr"
+      role="radiogroup"
+      style="outline: none;"
+      tabindex="0"
+    >
+      <div
+        class="group flex items-start gap-2 transition-all duration-200 rounded-ui border border-primary p-4"
+      >
+        <button
+          aria-checked="true"
+          class="border-input text-primary focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 aspect-square rounded-full border shadow-ui transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 mt-0.5 size-4 shrink-0"
+          data-radix-collection-item=""
+          data-slot="radio-group-item"
+          data-state="checked"
+          id="saved-address-addr-1"
+          role="radio"
+          tabindex="-1"
+          type="button"
+          value="addr-1"
+        >
+          <span
+            class="relative flex items-center justify-center"
+            data-slot="radio-group-indicator"
+            data-state="checked"
+          >
+            <svg
+              aria-hidden="true"
+              class="lucide lucide-circle fill-primary absolute top-1/2 left-1/2 size-2 -translate-x-1/2 -translate-y-1/2"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+              />
+            </svg>
+          </span>
+        </button>
+        <label
+          class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 flex-1 cursor-pointer min-w-0"
+          data-slot="label"
+          for="saved-address-addr-1"
+        >
+          <div
+            class="space-y-1.5"
+          >
+            <div
+              class="space-y-1.5"
+            >
+              <div
+                class="flex flex-wrap items-center gap-2"
+              >
+                <p
+                  class="text-left text-sm font-medium text-foreground"
+                >
+                  Jane Doe
+                </p>
+                <span
+                  class="inline-flex items-center justify-center rounded-full border px-2 py-0.5 w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent [a&]:hover:bg-secondary/90 text-xs font-normal bg-primary/10 text-primary"
+                  data-slot="badge"
+                >
+                  Default
+                </span>
+              </div>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                123 Main St Apt 4
+              </p>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                94102, San Francisco, CA, US
+              </p>
+            </div>
+          </div>
+        </label>
+      </div>
+      <div
+        class="group flex items-start transition-all duration-200 gap-3"
+      >
+        <button
+          aria-checked="false"
+          class="border-input text-primary focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 aspect-square rounded-full border shadow-ui transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 mt-0.5 size-4 shrink-0"
+          data-radix-collection-item=""
+          data-slot="radio-group-item"
+          data-state="unchecked"
+          id="saved-address-addr-2"
+          role="radio"
+          tabindex="-1"
+          type="button"
+          value="addr-2"
+        />
+        <label
+          class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 flex-1 cursor-pointer min-w-0"
+          data-slot="label"
+          for="saved-address-addr-2"
+        >
+          <div
+            class="space-y-1.5"
+          >
+            <div
+              class="space-y-1.5"
+            >
+              <div
+                class="flex flex-wrap items-center gap-2"
+              >
+                <p
+                  class="text-left text-sm font-medium text-foreground"
+                >
+                  Bob Smith
+                </p>
+              </div>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                456 Oak Ave
+              </p>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                02101, Boston, MA, US
+              </p>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SavedAddressesList stories snapshot > WithDefaultAddressSelected story renders and matches snapshot 1`] = `
+<div
+  class="space-y-4"
+>
+  <div>
+    <div
+      aria-label="Select a saved address"
+      aria-required="false"
+      class="grid gap-3 space-y-2"
+      data-slot="radio-group"
+      dir="ltr"
+      role="radiogroup"
+      style="outline: none;"
+      tabindex="0"
+    >
+      <div
+        class="group flex items-start gap-2 transition-all duration-200 rounded-ui border border-primary p-4"
+      >
+        <button
+          aria-checked="true"
+          class="border-input text-primary focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 aspect-square rounded-full border shadow-ui transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 mt-0.5 size-4 shrink-0"
+          data-radix-collection-item=""
+          data-slot="radio-group-item"
+          data-state="checked"
+          id="saved-address-addr-1"
+          role="radio"
+          tabindex="-1"
+          type="button"
+          value="addr-1"
+        >
+          <span
+            class="relative flex items-center justify-center"
+            data-slot="radio-group-indicator"
+            data-state="checked"
+          >
+            <svg
+              aria-hidden="true"
+              class="lucide lucide-circle fill-primary absolute top-1/2 left-1/2 size-2 -translate-x-1/2 -translate-y-1/2"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+              />
+            </svg>
+          </span>
+        </button>
+        <label
+          class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 flex-1 cursor-pointer min-w-0"
+          data-slot="label"
+          for="saved-address-addr-1"
+        >
+          <div
+            class="space-y-1.5"
+          >
+            <div
+              class="space-y-1.5"
+            >
+              <div
+                class="flex flex-wrap items-center gap-2"
+              >
+                <p
+                  class="text-left text-sm font-medium text-foreground"
+                >
+                  Jane Doe
+                </p>
+                <span
+                  class="inline-flex items-center justify-center rounded-full border px-2 py-0.5 w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent [a&]:hover:bg-secondary/90 text-xs font-normal bg-primary/10 text-primary"
+                  data-slot="badge"
+                >
+                  Default
+                </span>
+              </div>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                123 Main St Apt 4
+              </p>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                94102, San Francisco, CA, US
+              </p>
+            </div>
+          </div>
+        </label>
+      </div>
+      <div
+        class="group flex items-start transition-all duration-200 gap-3"
+      >
+        <button
+          aria-checked="false"
+          class="border-input text-primary focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 aspect-square rounded-full border shadow-ui transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 mt-0.5 size-4 shrink-0"
+          data-radix-collection-item=""
+          data-slot="radio-group-item"
+          data-state="unchecked"
+          id="saved-address-addr-2"
+          role="radio"
+          tabindex="-1"
+          type="button"
+          value="addr-2"
+        />
+        <label
+          class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 flex-1 cursor-pointer min-w-0"
+          data-slot="label"
+          for="saved-address-addr-2"
+        >
+          <div
+            class="space-y-1.5"
+          >
+            <div
+              class="space-y-1.5"
+            >
+              <div
+                class="flex flex-wrap items-center gap-2"
+              >
+                <p
+                  class="text-left text-sm font-medium text-foreground"
+                >
+                  Bob Smith
+                </p>
+              </div>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                456 Oak Ave
+              </p>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                02101, Boston, MA, US
+              </p>
+            </div>
+          </div>
+        </label>
+      </div>
+      <div
+        class="group flex items-start transition-all duration-200 gap-3"
+      >
+        <button
+          aria-checked="false"
+          class="border-input text-primary focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 aspect-square rounded-full border shadow-ui transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 mt-0.5 size-4 shrink-0"
+          data-radix-collection-item=""
+          data-slot="radio-group-item"
+          data-state="unchecked"
+          id="saved-address-addr-3"
+          role="radio"
+          tabindex="-1"
+          type="button"
+          value="addr-3"
+        />
+        <label
+          class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 flex-1 cursor-pointer min-w-0"
+          data-slot="label"
+          for="saved-address-addr-3"
+        >
+          <div
+            class="space-y-1.5"
+          >
+            <div
+              class="space-y-1.5"
+            >
+              <div
+                class="flex flex-wrap items-center gap-2"
+              >
+                <p
+                  class="text-left text-sm font-medium text-foreground"
+                >
+                  Alice Johnson
+                </p>
+              </div>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                789 Pine Rd
+              </p>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                97201, Portland, OR, US
+              </p>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SavedAddressesList stories snapshot > WithEditAddress story renders and matches snapshot 1`] = `
+<div
+  class="space-y-4"
+>
+  <div>
+    <div
+      aria-label="Select a saved address"
+      aria-required="false"
+      class="grid gap-3 space-y-2"
+      data-slot="radio-group"
+      dir="ltr"
+      role="radiogroup"
+      style="outline: none;"
+      tabindex="0"
+    >
+      <div
+        class="group flex items-start gap-2 transition-all duration-200 rounded-ui border border-primary p-4"
+      >
+        <button
+          aria-checked="true"
+          class="border-input text-primary focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 aspect-square rounded-full border shadow-ui transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 mt-0.5 size-4 shrink-0"
+          data-radix-collection-item=""
+          data-slot="radio-group-item"
+          data-state="checked"
+          id="saved-address-addr-1"
+          role="radio"
+          tabindex="-1"
+          type="button"
+          value="addr-1"
+        >
+          <span
+            class="relative flex items-center justify-center"
+            data-slot="radio-group-indicator"
+            data-state="checked"
+          >
+            <svg
+              aria-hidden="true"
+              class="lucide lucide-circle fill-primary absolute top-1/2 left-1/2 size-2 -translate-x-1/2 -translate-y-1/2"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+              />
+            </svg>
+          </span>
+        </button>
+        <label
+          class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 flex-1 cursor-pointer min-w-0"
+          data-slot="label"
+          for="saved-address-addr-1"
+        >
+          <div
+            class="space-y-1.5"
+          >
+            <div
+              class="space-y-1.5"
+            >
+              <div
+                class="flex flex-wrap items-center gap-2"
+              >
+                <p
+                  class="text-left text-sm font-medium text-foreground"
+                >
+                  Jane Doe
+                </p>
+                <span
+                  class="inline-flex items-center justify-center rounded-full border px-2 py-0.5 w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent [a&]:hover:bg-secondary/90 text-xs font-normal bg-primary/10 text-primary"
+                  data-slot="badge"
+                >
+                  Default
+                </span>
+              </div>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                123 Main St Apt 4
+              </p>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                94102, San Francisco, CA, US
+              </p>
+            </div>
+            <button
+              aria-label="Edit Address"
+              class="inline-flex items-center justify-center whitespace-nowrap rounded-ui text-sm transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive text-primary underline-offset-4 hover:underline rounded-ui gap-1.5 has-[>svg]:px-2.5 px-0 h-auto font-medium underline"
+              data-size="sm"
+              data-slot="button"
+              data-variant="link"
+              type="button"
+            >
+              Edit Address
+            </button>
+          </div>
+        </label>
+      </div>
+      <div
+        class="group flex items-start transition-all duration-200 gap-3"
+      >
+        <button
+          aria-checked="false"
+          class="border-input text-primary focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 aspect-square rounded-full border shadow-ui transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 mt-0.5 size-4 shrink-0"
+          data-radix-collection-item=""
+          data-slot="radio-group-item"
+          data-state="unchecked"
+          id="saved-address-addr-2"
+          role="radio"
+          tabindex="-1"
+          type="button"
+          value="addr-2"
+        />
+        <label
+          class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 flex-1 cursor-pointer min-w-0"
+          data-slot="label"
+          for="saved-address-addr-2"
+        >
+          <div
+            class="space-y-1.5"
+          >
+            <div
+              class="space-y-1.5"
+            >
+              <div
+                class="flex flex-wrap items-center gap-2"
+              >
+                <p
+                  class="text-left text-sm font-medium text-foreground"
+                >
+                  Bob Smith
+                </p>
+              </div>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                456 Oak Ave
+              </p>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                02101, Boston, MA, US
+              </p>
+            </div>
+            <button
+              aria-label="Edit Address"
+              class="inline-flex items-center justify-center whitespace-nowrap rounded-ui text-sm transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive text-primary underline-offset-4 hover:underline rounded-ui gap-1.5 has-[>svg]:px-2.5 px-0 h-auto font-medium underline"
+              data-size="sm"
+              data-slot="button"
+              data-variant="link"
+              type="button"
+            >
+              Edit Address
+            </button>
+          </div>
+        </label>
+      </div>
+      <div
+        class="group flex items-start transition-all duration-200 gap-3"
+      >
+        <button
+          aria-checked="false"
+          class="border-input text-primary focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 aspect-square rounded-full border shadow-ui transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 mt-0.5 size-4 shrink-0"
+          data-radix-collection-item=""
+          data-slot="radio-group-item"
+          data-state="unchecked"
+          id="saved-address-addr-3"
+          role="radio"
+          tabindex="-1"
+          type="button"
+          value="addr-3"
+        />
+        <label
+          class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 flex-1 cursor-pointer min-w-0"
+          data-slot="label"
+          for="saved-address-addr-3"
+        >
+          <div
+            class="space-y-1.5"
+          >
+            <div
+              class="space-y-1.5"
+            >
+              <div
+                class="flex flex-wrap items-center gap-2"
+              >
+                <p
+                  class="text-left text-sm font-medium text-foreground"
+                >
+                  Alice Johnson
+                </p>
+              </div>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                789 Pine Rd
+              </p>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                97201, Portland, OR, US
+              </p>
+            </div>
+            <button
+              aria-label="Edit Address"
+              class="inline-flex items-center justify-center whitespace-nowrap rounded-ui text-sm transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive text-primary underline-offset-4 hover:underline rounded-ui gap-1.5 has-[>svg]:px-2.5 px-0 h-auto font-medium underline"
+              data-size="sm"
+              data-slot="button"
+              data-variant="link"
+              type="button"
+            >
+              Edit Address
+            </button>
+          </div>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SavedAddressesList stories snapshot > WithNonDefaultAddressSelected story renders and matches snapshot 1`] = `
+<div
+  class="space-y-4"
+>
+  <div>
+    <div
+      aria-label="Select a saved address"
+      aria-required="false"
+      class="grid gap-3 space-y-2"
+      data-slot="radio-group"
+      dir="ltr"
+      role="radiogroup"
+      style="outline: none;"
+      tabindex="0"
+    >
+      <div
+        class="group flex items-start transition-all duration-200 gap-3"
+      >
+        <button
+          aria-checked="false"
+          class="border-input text-primary focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 aspect-square rounded-full border shadow-ui transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 mt-0.5 size-4 shrink-0"
+          data-radix-collection-item=""
+          data-slot="radio-group-item"
+          data-state="unchecked"
+          id="saved-address-addr-1"
+          role="radio"
+          tabindex="-1"
+          type="button"
+          value="addr-1"
+        />
+        <label
+          class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 flex-1 cursor-pointer min-w-0"
+          data-slot="label"
+          for="saved-address-addr-1"
+        >
+          <div
+            class="space-y-1.5"
+          >
+            <div
+              class="space-y-1.5"
+            >
+              <div
+                class="flex flex-wrap items-center gap-2"
+              >
+                <p
+                  class="text-left text-sm font-medium text-foreground"
+                >
+                  Jane Doe
+                </p>
+                <span
+                  class="inline-flex items-center justify-center rounded-full border px-2 py-0.5 w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent [a&]:hover:bg-secondary/90 text-xs font-normal bg-primary/10 text-primary"
+                  data-slot="badge"
+                >
+                  Default
+                </span>
+              </div>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                123 Main St Apt 4
+              </p>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                94102, San Francisco, CA, US
+              </p>
+            </div>
+          </div>
+        </label>
+      </div>
+      <div
+        class="group flex items-start gap-2 transition-all duration-200 rounded-ui border border-primary p-4"
+      >
+        <button
+          aria-checked="true"
+          class="border-input text-primary focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 aspect-square rounded-full border shadow-ui transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 mt-0.5 size-4 shrink-0"
+          data-radix-collection-item=""
+          data-slot="radio-group-item"
+          data-state="checked"
+          id="saved-address-addr-2"
+          role="radio"
+          tabindex="-1"
+          type="button"
+          value="addr-2"
+        >
+          <span
+            class="relative flex items-center justify-center"
+            data-slot="radio-group-indicator"
+            data-state="checked"
+          >
+            <svg
+              aria-hidden="true"
+              class="lucide lucide-circle fill-primary absolute top-1/2 left-1/2 size-2 -translate-x-1/2 -translate-y-1/2"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+              />
+            </svg>
+          </span>
+        </button>
+        <label
+          class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 flex-1 cursor-pointer min-w-0"
+          data-slot="label"
+          for="saved-address-addr-2"
+        >
+          <div
+            class="space-y-1.5"
+          >
+            <div
+              class="space-y-1.5"
+            >
+              <div
+                class="flex flex-wrap items-center gap-2"
+              >
+                <p
+                  class="text-left text-sm font-medium text-foreground"
+                >
+                  Bob Smith
+                </p>
+              </div>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                456 Oak Ave
+              </p>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                02101, Boston, MA, US
+              </p>
+            </div>
+          </div>
+        </label>
+      </div>
+      <div
+        class="group flex items-start transition-all duration-200 gap-3"
+      >
+        <button
+          aria-checked="false"
+          class="border-input text-primary focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 aspect-square rounded-full border shadow-ui transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 mt-0.5 size-4 shrink-0"
+          data-radix-collection-item=""
+          data-slot="radio-group-item"
+          data-state="unchecked"
+          id="saved-address-addr-3"
+          role="radio"
+          tabindex="-1"
+          type="button"
+          value="addr-3"
+        />
+        <label
+          class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 flex-1 cursor-pointer min-w-0"
+          data-slot="label"
+          for="saved-address-addr-3"
+        >
+          <div
+            class="space-y-1.5"
+          >
+            <div
+              class="space-y-1.5"
+            >
+              <div
+                class="flex flex-wrap items-center gap-2"
+              >
+                <p
+                  class="text-left text-sm font-medium text-foreground"
+                >
+                  Alice Johnson
+                </p>
+              </div>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                789 Pine Rd
+              </p>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                97201, Portland, OR, US
+              </p>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SavedAddressesList stories snapshot > WithViewAll story renders and matches snapshot 1`] = `
+<div
+  class="space-y-4"
+>
+  <div>
+    <div
+      aria-label="Select a saved address"
+      aria-required="false"
+      class="grid gap-3 space-y-2"
+      data-slot="radio-group"
+      dir="ltr"
+      role="radiogroup"
+      style="outline: none;"
+      tabindex="0"
+    >
+      <div
+        class="group flex items-start gap-2 transition-all duration-200 rounded-ui border border-primary p-4"
+      >
+        <button
+          aria-checked="true"
+          class="border-input text-primary focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 aspect-square rounded-full border shadow-ui transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 mt-0.5 size-4 shrink-0"
+          data-radix-collection-item=""
+          data-slot="radio-group-item"
+          data-state="checked"
+          id="saved-address-addr-1"
+          role="radio"
+          tabindex="-1"
+          type="button"
+          value="addr-1"
+        >
+          <span
+            class="relative flex items-center justify-center"
+            data-slot="radio-group-indicator"
+            data-state="checked"
+          >
+            <svg
+              aria-hidden="true"
+              class="lucide lucide-circle fill-primary absolute top-1/2 left-1/2 size-2 -translate-x-1/2 -translate-y-1/2"
+              fill="none"
+              height="24"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle
+                cx="12"
+                cy="12"
+                r="10"
+              />
+            </svg>
+          </span>
+        </button>
+        <label
+          class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 flex-1 cursor-pointer min-w-0"
+          data-slot="label"
+          for="saved-address-addr-1"
+        >
+          <div
+            class="space-y-1.5"
+          >
+            <div
+              class="space-y-1.5"
+            >
+              <div
+                class="flex flex-wrap items-center gap-2"
+              >
+                <p
+                  class="text-left text-sm font-medium text-foreground"
+                >
+                  Jane Doe
+                </p>
+                <span
+                  class="inline-flex items-center justify-center rounded-full border px-2 py-0.5 w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent [a&]:hover:bg-secondary/90 text-xs font-normal bg-primary/10 text-primary"
+                  data-slot="badge"
+                >
+                  Default
+                </span>
+              </div>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                123 Main St Apt 4
+              </p>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                94102, San Francisco, CA, US
+              </p>
+            </div>
+          </div>
+        </label>
+      </div>
+      <div
+        class="group flex items-start transition-all duration-200 gap-3"
+      >
+        <button
+          aria-checked="false"
+          class="border-input text-primary focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 aspect-square rounded-full border shadow-ui transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 mt-0.5 size-4 shrink-0"
+          data-radix-collection-item=""
+          data-slot="radio-group-item"
+          data-state="unchecked"
+          id="saved-address-addr-2"
+          role="radio"
+          tabindex="-1"
+          type="button"
+          value="addr-2"
+        />
+        <label
+          class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 flex-1 cursor-pointer min-w-0"
+          data-slot="label"
+          for="saved-address-addr-2"
+        >
+          <div
+            class="space-y-1.5"
+          >
+            <div
+              class="space-y-1.5"
+            >
+              <div
+                class="flex flex-wrap items-center gap-2"
+              >
+                <p
+                  class="text-left text-sm font-medium text-foreground"
+                >
+                  Bob Smith
+                </p>
+              </div>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                456 Oak Ave
+              </p>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                02101, Boston, MA, US
+              </p>
+            </div>
+          </div>
+        </label>
+      </div>
+      <div
+        class="group flex items-start transition-all duration-200 gap-3"
+      >
+        <button
+          aria-checked="false"
+          class="border-input text-primary focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive dark:bg-input/30 aspect-square rounded-full border shadow-ui transition-[color,box-shadow] outline-none focus-visible:ring-[3px] disabled:cursor-not-allowed disabled:opacity-50 mt-0.5 size-4 shrink-0"
+          data-radix-collection-item=""
+          data-slot="radio-group-item"
+          data-state="unchecked"
+          id="saved-address-addr-3"
+          role="radio"
+          tabindex="-1"
+          type="button"
+          value="addr-3"
+        />
+        <label
+          class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 flex-1 cursor-pointer min-w-0"
+          data-slot="label"
+          for="saved-address-addr-3"
+        >
+          <div
+            class="space-y-1.5"
+          >
+            <div
+              class="space-y-1.5"
+            >
+              <div
+                class="flex flex-wrap items-center gap-2"
+              >
+                <p
+                  class="text-left text-sm font-medium text-foreground"
+                >
+                  Alice Johnson
+                </p>
+              </div>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                789 Pine Rd
+              </p>
+              <p
+                class="font-medium text-left text-sm text-muted-foreground"
+              >
+                97201, Portland, OR, US
+              </p>
+            </div>
+          </div>
+        </label>
+      </div>
+    </div>
+  </div>
+  <div>
+    <button
+      aria-expanded="false"
+      aria-label="View all"
+      class="inline-flex items-center justify-center whitespace-nowrap rounded-ui transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50 h-8 rounded-ui gap-1.5 px-3 has-[>svg]:px-2.5 text-sm font-medium text-foreground"
+      data-size="sm"
+      data-slot="button"
+      data-variant="ghost"
+      type="button"
+    >
+      View all
+       
+      (2 more)
+    </button>
+  </div>
+</div>
+`;

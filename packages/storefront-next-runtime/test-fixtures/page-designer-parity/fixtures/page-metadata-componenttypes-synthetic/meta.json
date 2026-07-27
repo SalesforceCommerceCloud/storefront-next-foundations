@@ -1,0 +1,9 @@
+{
+    "sourceStack": "synthetic",
+    "requestHost": "https://www.shop.example",
+    "locale": "fr_FR",
+    "defaultLocale": "en_US",
+    "siteId": "RefArch",
+    "capturedAt": "2026-05-07T00:00:00Z",
+    "description": "Page metadata + componentTypes round-trip fixture: a page with name/aspectTypeId/description/pageTitle/pageDescription/pageKeywords populated for the default locale, plus a fr_FR pageContent overlay that replaces every metadata field. The page carries one hero component referencing an image-typed attribute, exercising both the componentTypes-driven dispatch path (image type registered on commerce_assets.heroBanner) and the per-locale page metadata overlay. Synthetic capture — both inputs and outputs were authored by hand. Expected output is what resolvePage should emit at locale fr_FR after applying the overlay and stamping the image URL."
+}

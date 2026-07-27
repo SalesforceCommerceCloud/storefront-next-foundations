@@ -1,0 +1,142 @@
+/**
+ * Copyright 2026 Salesforce, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+import type { Meta, StoryObj } from '@storybook/react-vite';
+import { Title, Description, Controls } from '@storybook/addon-docs/blocks';
+import GooglePayLogo from '../google-pay-logo';
+import { expect } from 'storybook/test';
+import { waitForStorybookReady } from '@storybook/test-utils';
+
+import { checkoutStrictA11yParameters } from '@/components/checkout/storybook/checkout-strict-a11y-parameters';
+
+const meta: Meta<typeof GooglePayLogo> = {
+    title: 'Checkout/Payment/Logos/Google Pay Logo',
+    component: GooglePayLogo,
+    parameters: {
+        ...checkoutStrictA11yParameters,
+        layout: 'centered',
+        controls: { expanded: true },
+        docs: {
+            description: {
+                component: `
+### GooglePayLogo Component (PLACEHOLDER)
+
+**⚠️ IMPORTANT: This is a PLACEHOLDER logo for UI demonstration only. It is not the official Google Pay brand asset.**
+
+This component renders a generic Google Pay logo used inside the placeholder \`ExpressPayments\` button. It exists solely to visually represent Google Pay in UI mockups and wireframes.
+
+**Current Implementation:**
+- Local SVG from \`public/images/google-pay-logo.svg\`
+- Renders a logo with colored Google "G" and white "Pay" text, designed for use on dark backgrounds
+
+**Production Replacement:**
+When integrating real Google Pay, replace this placeholder with the **official Google Pay button** provided through the Google Pay Web API. Google has strict brand guidelines that mandate using their supplied button components (with correct logo usage, colors, sizes, and padding). See:
+- [Google Pay Brand Guidelines](https://developers.google.com/pay/api/web/guides/brand-guidelines)
+- [Google Pay Web API](https://developers.google.com/pay/api/web/overview)
+                `,
+            },
+            page: () => (
+                <>
+                    <Title />
+                    <Description />
+                    <Controls />
+                </>
+            ),
+        },
+    },
+    tags: ['autodocs'],
+    argTypes: {
+        className: {
+            control: 'text',
+            description: 'Additional CSS classes applied to the underlying `<img>` element.',
+            table: {
+                type: { summary: 'string' },
+            },
+        },
+        decorative: {
+            control: 'boolean',
+            description:
+                'When `true`, the image is hidden from the accessibility tree (`aria-hidden="true"`, empty `alt`). Use this when the logo is rendered inside a button that already provides an `aria-label`.',
+            table: {
+                type: { summary: 'boolean' },
+                defaultValue: { summary: 'false' },
+            },
+        },
+    },
+};
+
+export default meta;
+type Story = StoryObj<typeof GooglePayLogo>;
+
+export const Default: Story = {
+    args: {},
+    play: async ({ canvasElement }) => {
+        await waitForStorybookReady(canvasElement);
+        const logo = canvasElement.querySelector('img[alt="Google Pay"]');
+        await expect(logo).toBeInTheDocument();
+    },
+};
+
+export const WithCustomClassName: Story = {
+    args: {
+        className: 'custom-class',
+    },
+    play: async ({ canvasElement }) => {
+        await waitForStorybookReady(canvasElement);
+        const logo = canvasElement.querySelector('img[alt="Google Pay"]');
+        await expect(logo).toHaveClass('custom-class');
+    },
+};
+
+export const OnDarkBackground: Story = {
+    args: {},
+    parameters: {
+        docs: {
+            description: {
+                story: 'The logo has a colored Google "G" with white "Pay" text, designed for dark backgrounds.',
+            },
+        },
+    },
+    decorators: [
+        (Story) => (
+            <div style={{ backgroundColor: '#000', padding: '20px', borderRadius: '8px' }}>
+                <Story />
+            </div>
+        ),
+    ],
+    play: async ({ canvasElement }) => {
+        await waitForStorybookReady(canvasElement);
+        const logo = canvasElement.querySelector('img[alt="Google Pay"]');
+        await expect(logo).toBeInTheDocument();
+    },
+};
+
+export const Decorative: Story = {
+    args: {
+        decorative: true,
+    },
+    parameters: {
+        docs: {
+            description: {
+                story: 'Decorative mode — use when the logo is inside a labeled button. Image is hidden from the accessibility tree (`aria-hidden="true"`).',
+            },
+        },
+    },
+    play: async ({ canvasElement }) => {
+        await waitForStorybookReady(canvasElement);
+        const logo = canvasElement.querySelector('img[aria-hidden="true"]');
+        await expect(logo).toBeInTheDocument();
+    },
+};

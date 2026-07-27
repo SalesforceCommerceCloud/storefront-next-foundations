@@ -1,0 +1,130 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`MarketingConsent stories snapshot > Default story renders and matches snapshot 1`] = `
+<div
+  class="bg-card text-card-foreground flex flex-col gap-6 rounded-ui border-ui border-border py-6 shadow-ui"
+  data-section="marketing-consent"
+  data-slot="card"
+>
+  <div
+    class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 border-b border-muted-foreground/20 pb-4"
+    data-slot="card-header"
+  >
+    <div
+      class="leading-none font-semibold"
+      data-slot="card-title"
+    >
+      Marketing & Communication Preferences
+    </div>
+    <div
+      class="col-start-2 row-span-2 row-start-1 self-start justify-self-end"
+      data-slot="card-action"
+    >
+      <button
+        aria-label="Edit marketing preferences"
+        class="inline-flex items-center justify-center whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-ui gap-1.5 px-3 has-[>svg]:px-2.5 cursor-pointer"
+        data-size="sm"
+        data-slot="button"
+        data-variant="outline"
+        type="button"
+      >
+        Edit
+      </button>
+    </div>
+  </div>
+  <div
+    class="px-6 pt-6"
+    data-slot="card-content"
+  >
+    <div
+      class="space-y-4"
+    >
+      <section
+        aria-labelledby="marketing-consent-channel-email"
+        class=""
+      >
+        <h2
+          class="text-sm font-semibold text-foreground mb-2"
+          id="marketing-consent-channel-email"
+        >
+          Email
+        </h2>
+        <ul
+          class="space-y-2 pl-4"
+          role="list"
+        >
+          <li
+            class="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between py-1"
+          >
+            <div
+              class="space-y-1 min-w-0"
+            >
+              <p
+                class="text-sm font-medium text-foreground"
+              >
+                Sale
+              </p>
+            </div>
+            <button
+              aria-checked="false"
+              aria-label="Sale: Not opted in"
+              class="peer inline-flex h-6 w-11 items-center rounded-full border-2 border-transparent shadow-ui transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:opacity-50 data-[state=checked]:bg-primary data-[state=unchecked]:bg-input shrink-0 sm:ml-4 cursor-default disabled:cursor-default"
+              data-disabled=""
+              data-slot="switch"
+              data-state="unchecked"
+              disabled=""
+              role="switch"
+              type="button"
+              value="on"
+            >
+              <span
+                class="pointer-events-none block h-5 w-5 rounded-full bg-background shadow-ui ring-0 transition-transform data-[state=checked]:translate-x-6 data-[state=unchecked]:translate-x-0"
+                data-disabled=""
+                data-slot="switch-thumb"
+                data-state="unchecked"
+              />
+            </button>
+          </li>
+          <li
+            class="flex flex-col gap-1 sm:flex-row sm:items-center sm:justify-between py-1"
+          >
+            <div
+              class="space-y-1 min-w-0"
+            >
+              <p
+                class="text-sm font-medium text-foreground"
+              >
+                Newsletter
+              </p>
+            </div>
+            <button
+              aria-checked="true"
+              aria-label="Newsletter: Opted in"
+              class="peer inline-flex h-6 w-11 items-center rounded-full border-2 border-transparent shadow-ui transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:ring-offset-background disabled:opacity-50 data-[state=checked]:bg-primary data-[state=unchecked]:bg-input shrink-0 sm:ml-4 cursor-default disabled:cursor-default"
+              data-disabled=""
+              data-slot="switch"
+              data-state="checked"
+              disabled=""
+              role="switch"
+              type="button"
+              value="on"
+            >
+              <span
+                class="pointer-events-none block h-5 w-5 rounded-full bg-background shadow-ui ring-0 transition-transform data-[state=checked]:translate-x-6 data-[state=unchecked]:translate-x-0"
+                data-disabled=""
+                data-slot="switch-thumb"
+                data-state="checked"
+              />
+            </button>
+          </li>
+        </ul>
+      </section>
+      <p
+        class="text-sm text-muted-foreground pt-4 border-t border-muted-foreground/10"
+      >
+        By enabling these communication preferences, you agree to receive marketing communications from us, including exclusive offers, latest product information, and news about upcoming collections. See our Terms & Conditions and Privacy Policy for more details.
+      </p>
+    </div>
+  </div>
+</div>
+`;

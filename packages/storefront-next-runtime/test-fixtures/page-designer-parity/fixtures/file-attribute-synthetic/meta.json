@@ -1,0 +1,9 @@
+{
+    "sourceStack": "synthetic",
+    "requestHost": "https://www.shop.example",
+    "locale": "en_US",
+    "defaultLocale": "en_US",
+    "siteId": "RefArch",
+    "capturedAt": "2026-05-11T00:00:00Z",
+    "description": "File attribute round-trip fixture: one component with a file-typed attribute carrying a media envelope. The expected output shows the envelope resolved to a plain URL string (matching SCAPI's mediaFile.getAbsURL().toString()). Synthetic capture."
+}

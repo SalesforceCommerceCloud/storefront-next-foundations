@@ -1,0 +1,1624 @@
+{
+    "actionCard": {
+        "edit": "编辑",
+        "remove": "删除"
+    },
+    "categoryRefinements": {
+        "appliedFilters": "应用的筛选条件：",
+        "clearAll": "全部清除",
+        "filtersButtonLabel": "筛选条件",
+        "filtersButtonLabelWithCount": "{{label}}，已选 {{count}} 个",
+        "noFilterOptionsAvailable": "没有可用的筛选条件选项。"
+    },
+    "common": {
+        "defaultSiteName": "网店 下一个：Market Street",
+        "loading": "正在加载",
+        "loadingMore": "正在加载更多...",
+        "product": "产品",
+        "noImageAvailable": "无可用图片",
+        "productGeneric": "产品",
+        "noProductsFound": "未找到产品",
+        "productCarousel": "产品轮播",
+        "productImageAlt": "产品图片",
+        "suggestionImageAlt": "建议图片",
+        "hero": {
+            "defaultTitle": "立即购买",
+            "defaultImageAlt": "主图片",
+            "defaultCtaText": "立即购买"
+        },
+        "previousImage": "上一张图片",
+        "nextImage": "下一张图片"
+    },
+    "search": {
+        "results": "搜索以下方面的结果：",
+        "suggestions": {
+            "didYouMean": "您是否要找",
+            "categories": "类别",
+            "products": "产品",
+            "popularSearches": "热门搜索",
+            "recentSearches": "最近搜索",
+            "clearRecentSearches": "清除最近搜索",
+            "viewAll": "查看全部"
+        }
+    },
+    "customer": {
+        "defaults": {
+            "guestFirstName": "访客",
+            "guestLastName": "用户",
+            "defaultAddressName": "主页",
+            "defaultBillingAddressName": "账单"
+        },
+        "messages": {
+            "currentUserRecommendation": "使用您的账户信息",
+            "guestRecommendation": "以访客身份继续。如果您有账户，可以稍后登录。"
+        }
+    },
+    "removeItem": {
+        "success": "商品已被删除。",
+        "failed": "无法删除商品。",
+        "title": "删除商品",
+        "button": "删除",
+        "removing": "正在删除...",
+        "confirmTitle": "确认删除商品",
+        "cancelButton": "否，保留商品",
+        "keepItemButton": "保留商品",
+        "confirmAction": "是，删除商品",
+        "keepItemAriaLabel": "保留商品 - 将此商品保存在购物车中",
+        "removeItemAriaLabel": "是，删除商品 - 从购物车中删除此商品"
+    },
+    "editItem": {
+        "title": "编辑购物车商品",
+        "quickAddTitle": "快速添加",
+        "loadError": "无法加载产品详情。请重试。",
+        "retry": "重试",
+        "loadingProduct": "正在加载..."
+    },
+    "header": {
+        "logoAlt": "主页",
+        "openChat": "打开聊天",
+        "searchPlaceholder": "搜索",
+        "welcomeBack": "欢迎回来！",
+        "signIn": "登录",
+        "signOut": "退出",
+        "signingOut": "正在退出...",
+        "cartTitle": "我的购物车",
+        "checkout": "结账",
+        "continueShopping": "继续购物",
+        "openMenu": "打开菜单",
+        "closeMenu": "关闭菜单",
+        "mobileNavigation": "移动导航菜单",
+        "expandCategory": "展开 {{category}}",
+        "collapseCategory": "折叠 {{category}}",
+        "menu": {
+            "yourLists": "您的列表",
+            "yourAccount": "您的账户",
+            "savedItems": "已保存的商品",
+            "overview": "概述",
+            "addressBook": "地址簿",
+            "paymentMethods": "付款方式",
+            "signInForBestExperience": "登录以获得最佳体验",
+            "newCustomer": "新客户？",
+            "createAccount": "创建账户"
+        }
+    },
+    "login": {
+        "title": "登录您的账户",
+        "subtitle": "输入凭据以访问账户",
+        "continueWithProvider": "继续使用 {{provider}}",
+        "checkEmailTitle": "检查您的电子邮件",
+        "checkEmailDescription": "我们已经将登录链接发送到 {{email}}。点击链接以登录。",
+        "backToLogin": "返回登录",
+        "emailLabel": "电子邮件地址",
+        "emailPlaceholder": "输入电子邮件",
+        "passwordLabel": "密码",
+        "passwordPlaceholder": "输入密码",
+        "loginWithoutPassword": "无密码登录",
+        "loginWithPassword": "使用密码登录",
+        "forgotPassword": "忘记了密码？",
+        "noAccountQuestion": "没有账户？ ",
+        "signUp": "注册",
+        "signingIn": "正在登录...",
+        "sendLoginLink": "发送登录链接",
+        "sendingLoginLink": "正在发送登录链接...",
+        "signIn": "登录",
+        "socialOrContinueWith": "或继续",
+        "otpCodeLabel": "验证码",
+        "redirecting": "正在登录...",
+        "otpModalTitle": "输入验证码",
+        "otpModalDescription": "我们已将 {{otpLength}} 位数代码发送至 {{email}}",
+        "otpRequired": "验证码为必填项",
+        "otpInvalidFormat": "请输入有效的 {{otpLength}} 位数代码",
+        "verifying": "正在验证...",
+        "checkoutAsGuest": "以访客身份结账",
+        "resendCode": "重新发送代码",
+        "resendCodeTimer": "在 {{timer}} 后重新发送",
+        "resendCodeError": "无法重新发送代码。请重试。"
+    },
+    "resetPassword": {
+        "title": "重置密码",
+        "subtitle": "进入您的电子邮件，获取重置密码说明",
+        "checkEmailTitle": "检查您的电子邮件",
+        "checkEmailDescription": "您将通过 {{email}} 收到包含重置密码链接的电子邮件。",
+        "backToSignIn": "返回登录",
+        "emailLabel": "电子邮件地址",
+        "emailPlaceholder": "输入电子邮件",
+        "or": "或 ",
+        "goBackToLogin": "返回登录页面",
+        "emailRequired": "需要电子邮件。",
+        "newPasswordRequired": "需要新密码。",
+        "confirmPasswordRequired": "需要确认密码。",
+        "sendingEmail": "正在发送电子邮件...",
+        "resetButton": "重置密码",
+        "landingTitle": "设置新密码",
+        "landingSubtitle": "在下面输入新密码",
+        "newPasswordLabel": "新密码",
+        "newPasswordPlaceholder": "创建安全密码",
+        "confirmPasswordLabel": "确认密码",
+        "confirmPasswordPlaceholder": "确认密码",
+        "passwordsMustMatch": "密码必须匹配",
+        "resetPasswordButton": "重置密码",
+        "resettingPassword": "正在重置密码...",
+        "invalidToken": "无效或过期的重置链接。申请新密码。",
+        "resetSuccess": "密码已重置！正在登录...",
+        "resetSuccessToast": "密码已重置！使用新密码登录。"
+    },
+    "signup": {
+        "title": "创建您的账户",
+        "subtitle": "加入我们，立即开始购物",
+        "haveAccountQuestion": "已有账户？ ",
+        "signIn": "登录",
+        "allFieldsRequired": "必须填写所有字段。",
+        "passwordsDoNotMatch": "密码不匹配。",
+        "passwordNotSecure": "密码不符合安全要求。",
+        "form": {
+            "firstNameLabel": "名字",
+            "firstNamePlaceholder": "输入您的名字",
+            "lastNameLabel": "姓氏",
+            "lastNamePlaceholder": "输入您的姓氏",
+            "emailLabel": "电子邮件地址",
+            "emailPlaceholder": "输入您的电子邮件地址",
+            "passwordLabel": "密码",
+            "passwordPlaceholder": "创建安全密码",
+            "confirmPasswordLabel": "确认密码",
+            "confirmPasswordPlaceholder": "确认密码",
+            "createAccountButton": "创建账户"
+        },
+        "passwordRequirements": {
+            "title": "密码要求：",
+            "minLength": "至少 8 个字符",
+            "hasUppercase": "一个大写字母",
+            "hasLowercase": "一个小写字母",
+            "hasNumber": "一个数字",
+            "hasSpecialChar": "一个特殊字符 （， ！ % # @ $ & * 等）"
+        }
+    },
+    "socialCallback": {
+        "socialError": "社交登录已取消或失败。重试"
+    },
+    "errors": {
+        "genericTryAgain": "出现错误。重试",
+        "somethingWentWrong": "出现错误。重试",
+        "loginFailed": "登录失败。检查您的凭据。",
+        "accessTokenRefreshFailed": "检索刷新的访问令牌失败。",
+        "guestAccessTokenFailed": "检索新的访问令牌失败。",
+        "codeVerifierMissing": "会话中未找到代码验证器。",
+        "missingRegistrationField": "客户注册缺少必填字段。",
+        "autoLoginAfterRegistrationFailed": "注册失败后自动登录。",
+        "methodNotAllowed": "方法不被允许。",
+        "featureUnavailable": "此功能目前不可用。请联系支持部门。",
+        "tooManyLoginAttempts": "您已达到登录尝试次数上限。为安全起见，请等待 10 分钟，然后重试。",
+        "tooManyPasswordResetAttempts": "您已达到密码重置次数上限。为安全起见，请等待 10 分钟，然后重试。",
+        "invalidToken": "验证码无效。请重试。",
+        "expiredToken": "验证码已过期。请申请新链接。",
+        "promoCodeRequired": "促销代码为必填项。",
+        "couponItemIdRequired": "优惠券商品 ID 为必填项。",
+        "noBasketFound": "未找到购物车。",
+        "noCustomerFound": "在会话中未找到客户",
+        "api": {
+            "orderNotFound": "未找到订单。请检查订单号并重试。",
+            "basketNotFound": "未找到购物车。请刷新页面并重试。",
+            "basketQuotaExceeded": "已超过最大购物车数量。使用您的现有购物车。",
+            "paymentFailed": "付款失败。请检查您的付款信息并重试。",
+            "paymentInformationRequired": "需要付款信息才能完成您的订单。",
+            "unableToLoadCustomerProfile": "无法加载您的个人资料。请刷新页面并重试。",
+            "inventoryUnavailable": "购物车中的某些商品不再可供。查看您的购物车。",
+            "invalidOrderData": "订单数据无效。请验证您的结账信息并重试。",
+            "shippingAddressRequired": "需要送货地址才能继续。",
+            "billingAddressRequired": "需要账单地址才能完成您的订单。",
+            "networkError": "网络错误。请检查您的连接并重试。",
+            "serverError": "服务器错误。请稍后重试。",
+            "unauthorized": "您的会话已过期。重新登录。",
+            "badRequest": "请求无效。请检查您的信息并重试。",
+            "forbidden": "访问被拒绝。您无权执行此操作。",
+            "timeout": "请求超时。重试",
+            "unexpectedError": "发生意外错误。"
+        },
+        "validation": {
+            "required": "此字段为必填项。",
+            "invalidEmail": "输入有效电子邮件地址。",
+            "invalidCreditCard": "请输入有效信用卡号。",
+            "invalidExpiryDate": "请输入有效到期日期。",
+            "invalidCvv": "请输入有效 CVV 代码。",
+            "minLength": "此字段长度必须至少为 {{min}} 个字符。",
+            "maxLength": "此字段不能超过 {{max}} 个字符。",
+            "invalidPhoneNumber": "请输入有效电话号码。",
+            "invalidPostalCode": "请输入有效邮政编码。"
+        },
+        "checkout": {
+            "noActiveBasket": "未找到活动购物车。请刷新页面并重试。",
+            "basketCalculationFailed": "无法计算订单总额。重试",
+            "orderCreationFailed": "创建订单失败。重试",
+            "paymentProcessingFailed": "付款处理失败。重试",
+            "shippingMethodNotAvailable": "所选送货方式不可用。请选择其他选项。",
+            "shippingMethodRequired": "请选择送货方式以继续。",
+            "addressValidationFailed": "地址验证失败。请检查您的地址并重试。",
+            "promoCodeInvalid": "无效促销代码。请检查并重试。",
+            "stockNotAvailable": "购物车中的一件或多件商品库存不足。"
+        },
+        "customer": {
+            "addressIdRequired": "客户地址必须填写地址标题。",
+            "countryCodeRequired": "客户地址必须填写国家/地区代码。",
+            "addressLine1Required": "客户地址必须填写地址行 1。",
+            "cityRequired": "客户地址必须填写城市。",
+            "firstNameRequired": "客户地址必须填写名字。",
+            "lastNameRequired": "客户地址必须填写姓氏。",
+            "postalCodeRequired": "客户地址必须填写邮政编码。",
+            "invalidEmailFormat": "电子邮件格式无效",
+            "customerLookupUnavailable": "客户查询服务不可用。",
+            "registrationFailed": "注册失败。重试",
+            "autoLoginFailed": "自动登录失败。请手动登录。",
+            "autoLoginAfterRegistrationFailed": "账户已创建，但自动登录失败。请手动登录。",
+            "notAuthenticated": "未找到客户 ID。"
+        },
+        "passwordless": {
+            "missingToken": "缺少令牌。",
+            "missingCallbackToken": "缺少 x-slas-callback-token 标头。",
+            "missingRequiredFields": "缺少必填字段：email_id 和令牌。"
+        },
+        "jwks": {
+            "missingEnvironmentVariables": "缺少必填配置：shortCode 和 organizationId。",
+            "invalidResponse": "无效 JWKS 响应：缺少或无效的密钥数组。",
+            "unknownError": "发生未知错误。"
+        },
+        "marketing": {
+            "clientIdMissing": "MARKETING_CLOUD_CLIENT_ID 未在环境变量中设置。",
+            "clientSecretMissing": "MARKETING_CLOUD_CLIENT_SECRET 未在环境变量中设置。",
+            "subdomainMissing": "MARKETING_CLOUD_SUBDOMAIN 未在环境变量中设置。",
+            "templateIdMissing": "MARKETING_CLOUD_PASSWORDLESS_LOGIN_TEMPLATE 未在环境变量中设置。"
+        }
+    },
+    "quantitySelector": {
+        "quantity": "数量：",
+        "decreaseQuantity": "减少数量",
+        "increaseQuantity": "增加数量",
+        "decreaseQuantityForProduct": "减少 {{productName}} 的数量",
+        "increaseQuantityForProduct": "增加 {{productName}} 的数量",
+        "quantityInput": "数量",
+        "quantityUpdated": "数量已更新",
+        "quantityUpdateFailed": "无法更新数量",
+        "onlyLeft": "仅剩 {{stockLevel}} 件！",
+        "onlyLeftForProduct": "{{productName}} 只剩下 {{stockLevel}}！",
+        "maxStockReached": "已达到最大库存",
+        "insufficientStock": "库存不足"
+    },
+    "cart": {
+        "title": "购物车",
+        "delivery": {
+            "heading": "配送 - {{deliveryCount}} 件（共 {{totalCount}} 件商品）",
+            "heading_one": "Delivery - {{deliveryCount}} out of {{count}} item",
+            "heading_other": "Delivery - {{deliveryCount}} out of {{count}} items"
+        },
+        "itemCount_zero": "购物车 （0 件商品）",
+        "itemCount_one": "购物车 （1 件商品）",
+        "itemCount_other": "购物车 （{{count}} 件商品）",
+        "empty": {
+            "title": "购物车内没有商品。",
+            "registeredMessage": "继续购物并将商品添加到购物车。",
+            "guestMessage": "登录以检索您保存的商品或继续购物。",
+            "continueShopping": "继续购物",
+            "signIn": "登录"
+        },
+        "summary": {
+            "orderSummary": "订单摘要",
+            "showOrderSummary": "显示订单摘要",
+            "mobileHeadingTotal_one": "总额（1件商品）",
+            "mobileHeadingTotal_other": "总额（{{count}}件商品）",
+            "subtotal": "小计",
+            "shipping": "送货",
+            "shippingPromotionApplied": "（已应用促销）",
+            "shippingFree": "免费",
+            "shippingTbd": "待定",
+            "tax": "税项",
+            "taxTbd": "待定",
+            "estimatedTotal": "预计总数",
+            "orderTotal": "订单总额",
+            "noBasketData": "无可用的购物车数据",
+            "mobileHeading_one": "Estimated Total (1 item)",
+            "mobileHeading_other": "Estimated Total ({{count}} items)"
+        },
+        "promoCode": {
+            "label": "促销代码",
+            "placeholder": "促销代码...",
+            "apply": "确定",
+            "applying": "正在应用...",
+            "remove": "删除",
+            "removing": "正在删除...",
+            "accordionTitle": "您是否有促销代码？",
+            "successMessage": "已应用促销。",
+            "errorMessage": "请检查代码并重试。促销已可应用或已过期。",
+            "removeSuccessMessage": "促销已删除。",
+            "removeErrorMessage": "无法删除促销",
+            "noBasketMessage": "没有可用的购物车",
+            "requiredMessage": "促销代码为必填项。",
+            "validation": {
+                "minLength": "促销代码必须至少为 2 个字符。"
+            },
+            "errors": {
+                "invalidCode": "优惠券代码“{{code}}”无效。",
+                "expiredCode": "此促销代码已过期。",
+                "alreadyApplied": "此促销代码已被应用。",
+                "notApplicable": "此促销代码不适用于您的购物车",
+                "generic": "无法应用促销代码。请检查代码并重试。"
+            }
+        },
+        "items": {
+            "itemsInCart_zero": "购物车内有 0 件商品",
+            "itemsInCart_one": "购物车中有 1 件商品",
+            "itemsInCart_other": "购物车中有 {{count}} 件商品",
+            "editCart": "编辑购物车"
+        },
+        "checkout": {
+            "proceedToCheckout": "继续以结账",
+            "secure": "安全"
+        },
+        "attributes": {
+            "quantity": "数量：",
+            "promotions": "促销："
+        },
+        "product": {
+            "defaultName": "产品名称"
+        },
+        "removeItemConfirmDescription": "是否确定要从购物车移除此商品？",
+        "itemIdRequired": "商品 ID 为必填项。",
+        "noBasketIdFound": "未找到购物车 ID。",
+        "discount": {
+            "type": {
+                "free": "免费"
+            }
+        },
+        "badge": {
+            "ariaLabel": "我的购物车，商品数量：{{count}}"
+        },
+        "bundle": {
+            "selectedOptions": "已选选项"
+        },
+        "bonusProducts": {
+            "selectBonusProducts": "选择购物车中的赠品",
+            "addedToCart": "赠品已添加到购物车",
+            "failedToAdd": "无法添加赠品：{{error}}",
+            "missingRequiredInfo": "缺少必填信息"
+        }
+    },
+    "checkout": {
+        "contactInfo": {
+            "title": "联系信息",
+            "emailLabel": "电子邮件地址",
+            "emailPlaceholder": "电子邮件地址",
+            "emailRequired": "请输入您的电子邮件地址。",
+            "emailInvalid": "请输入有效电子邮件地址。",
+            "countryCodeLabel": "代码",
+            "phoneLabel": "电话号码",
+            "phoneFormatDescription": "10位电话号码",
+            "phoneRequired": "请输入您的电话号码。",
+            "phoneInvalid": "请输入有效电话号码。",
+            "notProvided": "尚未提供",
+            "loginSuggestion": "💡 已有账户？您可以继续以访客身份或 ",
+            "loginSuggestionLink": "登录以加快结账速度",
+            "usingRegisteredAccount": "✓ 使用您的注册账户",
+            "continue": "继续前往送货地址",
+            "saving": "正在保存...",
+            "lookupFallbackMessage": "客户查找失败。以访客身份继续。",
+            "saveError": "无法保存联系人信息",
+            "sessionExpired": "会话已过期。重新登录。"
+        },
+        "addressModal": {
+            "title": "添加新地址",
+            "editTitle": "编辑地址",
+            "description": "在下面的表格中输入您的送货地址。",
+            "editDescription": "在下面的表格中更新您的送货地址。",
+            "cancel": "取消",
+            "save": "保存",
+            "saving": "正在保存..."
+        },
+        "shippingAddress": {
+            "title": "送货地址",
+            "changeLabel": "编辑",
+            "selectSavedAddress": "选择保存的地址",
+            "viewAllLink": "查看全部",
+            "viewAllMore": "（{{count}} 个以上）",
+            "viewLessAddresses": "查看更少",
+            "addNewAddressButton": "添加新地址",
+            "editAddressLink": "编辑地址",
+            "defaultBadge": "默认",
+            "firstNameRequired": "请输入您的名字。",
+            "lastNameRequired": "请输入您的姓氏。",
+            "addressRequired": "请输入您的地址。",
+            "cityRequired": "请输入您所在城市。",
+            "stateRequired": "请选择您所在的州。",
+            "postalCodeRequired": "请输入您的邮政编码。",
+            "continue": "继续并选择送货方式",
+            "saving": "正在保存...",
+            "saved": "送货地址已保存",
+            "failed": "无法保存送货地址",
+            "confirmed": "送货地址已确认",
+            "notProvided": "尚未提供送货地址",
+            "completePreviousSteps": "完成前面的步骤以继续"
+        },
+        "addressForm": {
+            "firstNameLabel": "名字",
+            "firstNamePlaceholder": "名字",
+            "lastNameLabel": "姓氏",
+            "lastNamePlaceholder": "姓氏",
+            "countryLabel": "国家/地区",
+            "addressLabel": "地址行 1",
+            "addressPlaceholder": "地址行 1",
+            "address2Label": "地址行 2",
+            "address2Placeholder": "地址行 2",
+            "cityLabel": "城市",
+            "cityPlaceholder": "城市",
+            "stateLabel": "州",
+            "statePlaceholder": "状态",
+            "provinceLabel": "省",
+            "provincePlaceholder": "省",
+            "zipLabel": "邮政编码",
+            "zipPlaceholder": "邮政编码",
+            "postalCodeLabel": "邮政编码",
+            "postalCodePlaceholder": "邮政编码",
+            "codeLabel": "代码",
+            "phoneLabel": "电话号码"
+        },
+        "shippingOptions": {
+            "title": "送货方式",
+            "giftWrappingLabel": "作为礼物发送（礼品包装）",
+            "giftWrappingDescription": "您可以随时启用或禁用礼品选项。",
+            "selectRequired": "选择送货方式",
+            "saving": "正在保存...",
+            "continue": "继续并选择付款",
+            "completePreviousSteps": "完成前面的步骤以继续",
+            "enterAddressFirst": "输入您的送货地址以查看可用的送货方式。",
+            "arrives": "送达时间：{{estimatedArrivalTime}}",
+            "free": "免费",
+            "noMethodsAvailable": "无可用的运货方式",
+            "noMethodsAvailableHelp": "请确保您的送货地址完整并重试。",
+            "deliveryWindow": "Arrives {{window}}"
+        },
+        "payment": {
+            "title": "付款",
+            "changeLabel": "编辑",
+            "methodTitle": "付款方式",
+            "savedMethodDescription": "选择已保存的付款方式或添加新的付款方式",
+            "addNewPaymentMethod": "添加新的付款方式",
+            "creditCardOption": "信用卡",
+            "newPaymentMethodTitle": "新的付款方式",
+            "cardholderLabel": "持卡人姓名",
+            "nameOnCardLabel": "卡上的姓名*",
+            "cardholderPlaceholder": "卡上的姓名*",
+            "cardholderRequired": "持卡人姓名为必填项。",
+            "cardNumberLabel": "卡号*",
+            "cardNumberPlaceholder": "卡号*",
+            "cardNumberRequired": "卡号为必填项。",
+            "cardNumberInvalid": "输入有效卡号。",
+            "cardNumberInvalidLength": "输入有效卡号（13-19 位数字）。",
+            "expiryLabel": "月/年*",
+            "expiryPlaceholder": "月/年*",
+            "expiryRequired": "到期日为必填项",
+            "expiryInvalid": "输入有效到期日期 （MM/YY）",
+            "cvvHelp": "卡背面有 3-4 位数字",
+            "cvvShow": "显示 CVV",
+            "cvvHide": "隐藏 CVV",
+            "cvvRequired": "CVV 是必填项",
+            "cvvInvalid": "输入有效 CVV",
+            "cvvInvalidFormat": "输入有效 CVV（3-4 位数字）。",
+            "billingAddressRequired": "如果账单地址与收货地址不同，则必须填写账单地址。",
+            "useDifferentBilling": "使用其他账单地址",
+            "useDifferentBillingDescription": "账单地址和收货地址使用同一地址",
+            "sameAsShippingAddress": "与送货地址相同",
+            "selectAnAddress": "选择地址",
+            "noBillingAddressSaved": "没有保存的账单地址",
+            "continue": "继续审查",
+            "saving": "正在保存...",
+            "saved": "付款信息已保存",
+            "failed": "无法保存付款信息",
+            "createAccountForFasterCheckout": "创建账户，下次结账更快捷",
+            "saveForFutureUse": "保存以备将来使用",
+            "unknownCardType": "未知",
+            "defaultCardLabel": "卡",
+            "preferredBadge": "首选",
+            "defaultBadge": "默认",
+            "endingIn": "尾号为 {{lastDigits}}",
+            "expiresLabel": "到期时间 {{expiry}}",
+            "summaryLabel": "{{methodLabel}} 尾号为 {{lastDigits}}",
+            "summarySavedLabel": "保存的付款方式： {{methodLabel}} 尾号为 {{lastDigits}}",
+            "noPaymentMethodSaved": "无保存的付款方式",
+            "billingSummaryTitle": "账单地址",
+            "viewAllMore": "查看全部 （{{count}} 个以上）",
+            "viewLess": "查看更少",
+            "savePaymentToProfile": "保存付款方式以备将来使用"
+        },
+        "expressPayments": {
+            "separator": "或",
+            "venmoUnavailable": "Venmo 在此设备上不可用。"
+        },
+        "common": {
+            "edit": "编辑",
+            "submitting": "正在提交",
+            "notProvided": "未提供",
+            "backToCart": "返回购物车",
+            "emptyCart": "购物车中没有商品。在结账前添加商品。"
+        },
+        "orderSummary": {
+            "title": "订单摘要",
+            "toggleLabel": "显示订单摘要"
+        },
+        "myCart": {
+            "title": "我的购物车",
+            "saved": "已保存 {{amount}}"
+        },
+        "placeOrder": {
+            "button": "下订单 - {{total}}",
+            "processing": "正在下订单...",
+            "success": "订单已下达！",
+            "failed": "结账时发生意外错误。"
+        },
+        "confirmation": {
+            "title": "感谢您订购商品！",
+            "orderNumber": "订单编号：",
+            "confirmationEmailSent": "我们已将确认电子邮件发送至 {{email}}",
+            "orderNotFound": "未找到订单",
+            "orderNotFoundDescription": "我们无法找到您要找的订单。",
+            "orderNumberRequired": "订单号为必填项",
+            "sections": {
+                "orderSummary": "订单摘要",
+                "shippingDetails": "送货详细信息",
+                "paymentDetails": "付款详情"
+            },
+            "fields": {
+                "orderNumber": "订单编号：",
+                "status": "状态：",
+                "total": "总计：",
+                "shippingAddress": "送货地址",
+                "shippingMethod": "送货方式",
+                "billingAddress": "账单地址",
+                "paymentMethod": "付款方式",
+                "defaultShippingMethod": "标准送货",
+                "defaultPaymentMethod": "信用卡",
+                "savedMethodDescription": "选择已保存的付款方式或添加新的付款方式"
+            },
+            "actions": {
+                "continueShopping": "继续购物",
+                "viewAccount": "查看账户"
+            },
+            "hero": {
+                "thankYou": "{{name}}，谢谢！ ",
+                "orderConfirmed": "您的订单已确认。",
+                "emailConfirmation": "我们已将确认电子邮件发送至 {{email}}。",
+                "needHelp": "需要帮助吗？",
+                "defaultName": "顾客",
+                "emailFallback": "您的电子邮件"
+            },
+            "helpLinks": {
+                "faq": "常见问题解答",
+                "contact": "联系我们",
+                "returns": "退货政策"
+            },
+            "summaryLabels": {
+                "arriving": "送达日期",
+                "shippingAddress": "送货地址",
+                "shippingMethod": "送货方式",
+                "noAddress": "无可用地址",
+                "estimatedDatePlaceholder": "立即处理",
+                "quantity": "数量： {{count}}",
+                "freeShipping": "免费",
+                "deliveryWindow": "{{window}}"
+            },
+            "totals": {
+                "subtotal": "小计",
+                "promotions": "促销",
+                "shipping": "送货",
+                "tax": "税项",
+                "total": "总计"
+            },
+            "payment": {
+                "methodSummary": "{{method}} 尾号为 {{lastDigits}}",
+                "noMethod": "存档的付款方式"
+            },
+            "newsletter": {
+                "title": "下次订单可享 10% 的折扣。加入电子邮件列表。",
+                "subtitle": "及时了解产品发布和独家优惠。",
+                "placeholder": "电子邮件地址",
+                "cta": "加入"
+            },
+            "summaryTitle": "摘要",
+            "emptyItemsFallback": "您的商品正在准备中。",
+            "productPlaceholderInitial": "商品"
+        },
+        "errorBoundary": {
+            "title": "结账功能暂时不可用",
+            "description": "我们在结账过程中遇到了一些技术问题。您的购物车商品安全且已保存。",
+            "tryAgain": "重试",
+            "returnToCart": "返回购物车",
+            "componentError": {
+                "title": "组件暂时不可用",
+                "description": "此部分无法正确加载。您可以继续结帐或尝试刷新页面。",
+                "tryAgain": "重试"
+            }
+        },
+        "registration": {
+            "emailNotFound": "创建账户需要电子邮件地址。请在联系信息部分提供您的电子邮件。",
+            "initiationFailed": "无法发送验证码。请重试。",
+            "sendingVerificationCode": "正在发送验证码...",
+            "accountCreatedSuccess": "账户创建成功！",
+            "checkboxExpandedDescription": "当您下订单时，我们会为您创建账户，并保存您的付款信息和其他详细信息，以备将来购物时使用。下次结账时，请使用我们发送给您的验证码确认您的账户。",
+            "accountCreatedTitle": "已创建账户",
+            "verified": "已验证",
+            "accountCreatedDescription": "我们已使用您订单中的信息创建并验证了您的账户。下次结账时，只需输入我们发送的登录代码 - 无需密码。",
+            "accountCreationLabel": "账户创建",
+            "accountWillBeCreated": "将创建账户",
+            "continueAsGuest": "以访客身份继续"
+        }
+    },
+    "account": {
+        "title": "账户详情",
+        "subtitle": "管理您的个人信息",
+        "myAccount": "我的账户",
+        "navigation": {
+            "overview": "概述",
+            "accountDetails": "账户详情",
+            "wishlist": "愿望清单",
+            "orderHistory": "订单历史记录",
+            "addresses": "地址",
+            "manageAddresses": "管理地址",
+            "paymentMethods": "付款方式",
+            "storePreferences": "实体店首选项",
+            "logOut": "登出"
+        },
+        "storePreferences": {
+            "title": "实体店首选项",
+            "subtitle": "管理您首选的实体店位置和取货偏好设置",
+            "preferredStore": {
+                "heading": "首选取货实体店",
+                "description": "选择店内取货订单的首选实体店",
+                "changeStore": "更改实体店",
+                "noStoreSelected": "未选择实体店。使用实体店定位器选择您首选的取货实体店。",
+                "storeHoursTitle": "营业时间",
+                "error": "无法加载实体店详细信息。请稍后再试。"
+            },
+            "authorizedPickupPeople": {
+                "heading": "被授权取货人",
+                "description": "添加有权代表您取货的人员",
+                "addPerson": "添加人员",
+                "idNote": "被授权的取货人员在取货时需要出示与存档姓名相符的有效身份证件。",
+                "modal": {
+                    "addTitle": "添加被授权人",
+                    "editTitle": "编辑被授权人",
+                    "firstName": "名字",
+                    "firstNamePlaceholder": "名字",
+                    "lastName": "姓氏",
+                    "lastNamePlaceholder": "姓氏",
+                    "email": "电子邮件地址",
+                    "relationship": "关系",
+                    "relationshipPlaceholder": "选择关系",
+                    "modalNote": "此人将被授权代表您取货。他们需要出示与取货时提供的姓名相符的有效身份证件。",
+                    "cancel": "取消",
+                    "save": "保存",
+                    "firstNameRequired": "名字为必填项。",
+                    "firstNameMax": "名字不得超过 50 个字符。",
+                    "lastNameRequired": "姓氏为必填项。",
+                    "lastNameMax": "姓氏不得超过 50 个字符。",
+                    "emailRequired": "需要电子邮件。",
+                    "emailInvalid": "请输入有效电子邮件地址。",
+                    "emailMax": "电子邮件不得超过 100 个字符。",
+                    "relationshipRequired": "请选择关系。"
+                },
+                "statusActive": "启用",
+                "relationshipLabel": "关系：{{relationship}}",
+                "edit": "编辑",
+                "delete": "删除",
+                "emptyState": "尚无被授权的提货人员。添加可以代表您取货的人员。",
+                "deleteConfirmTitle": "删除被授权人员",
+                "deleteConfirmDescription": "您确定要删除 {{name}} 吗？他们将无法再代表您取货。",
+                "deleteConfirmCancel": "取消",
+                "deleteConfirmRemove": "删除",
+                "relationships": {
+                    "spouse": "配偶",
+                    "familyMember": "家人",
+                    "friend": "朋友",
+                    "other": "其他"
+                }
+            },
+            "pickupPreferences": {
+                "heading": "取货首选设置",
+                "description": "管理您的取货通知和实体店首选设置",
+                "edit": "编辑",
+                "save": "保存",
+                "cancel": "取消",
+                "autoSelectStore": "自动选择首选实体店",
+                "autoSelectStoreDescription": "自动使用您的首选实体店处理取货订单",
+                "pickupNotifications": "取货通知",
+                "pickupNotificationsDescription": "当您的订单准备好取货时收到通知",
+                "storeEventsPromotions": "实体店活动与促销",
+                "storeEventsPromotionsDescription": "接收有关您首选实体店的活动和促销的最新信息",
+                "saveSuccess": "取货首选设置已成功保存"
+            }
+        },
+        "overview": {
+            "welcomeBack": "欢迎回来，{{name}}！",
+            "welcomeSubtitle": "管理您的账户、查看订单并发现个性化推荐。",
+            "defaultName": "那里",
+            "quickLinks": {
+                "title": "快速链接",
+                "orderHistoryDesc": "跟踪您的订单",
+                "wishlistDesc": "保存的商品",
+                "addressesDesc": "管理您的地址",
+                "paymentMethodsDesc": "管理您的付款方式"
+            },
+            "curatedForYou": {
+                "title": "为您量身打造",
+                "subtitle": "根据您的活动为您挑选"
+            },
+            "appDownload": {
+                "title": "下载我们的应用程序",
+                "description": "随时随地获得最佳购物体验。访问独家优惠、跟踪订单并更快购物。",
+                "qrCode": "二维码"
+            }
+        },
+        "shopperAgentEntry": {
+            "title": "需要帮助？",
+            "description": "我们随时为您解答任何疑问或疑虑",
+            "askQuestion": "提出问题",
+            "contactInfo": "联系方式",
+            "browseFaq": "浏览常见问题解答"
+        },
+        "wishlist": {
+            "pageTitle": "我的愿望清单",
+            "pageSubtitle": "您保存的以备后用商品",
+            "savedItems": "保存的商品",
+            "emptyTitle": "此愿望清单为空",
+            "emptySubtitle": "开始将商品添加到您的愿望清单！",
+            "itemCount_one": "{{count}} 件商品已保存",
+            "itemCount_other": "{{count}} 件商品已保存",
+            "empty": "您的愿望清单是空的。开始添加您喜欢的商品！",
+            "wishlistName": "愿望清单",
+            "failedToCreate": "无法创建愿望清单：listId 创建后不可用。",
+            "unableToRetrieveId": "无法找回愿望清单 ID。重试",
+            "notFound": "未找到愿望清单",
+            "idNotFound": "未找到愿望清单 ID",
+            "itemNotFound": "在愿望清单中找不到商品",
+            "mustLoginToAdd": "您必须登录才能将商品添加到您的愿望清单中。",
+            "mustLoginToRemove": "您必须登录才能从愿望清单中删除商品。",
+            "sortBy": "排序标准",
+            "sort": {
+                "recentlyAdded": "最近添加",
+                "nameAZ": "名称 (A-Z)",
+                "priceLow": "价格：从低到高",
+                "priceHigh": "价格：从高到低"
+            },
+            "filterBy": "筛选标准",
+            "filter": {
+                "all": "所有商品",
+                "inStock": "有库存",
+                "outOfStock": "无库存",
+                "onSale": "促销"
+            },
+            "noFilterResults": "没有与您的筛选条件匹配的商品。"
+        },
+        "orders": {
+            "empty": "您尚未下订单。下订单后，详细信息将显示在此处。",
+            "continueShopping": "继续购物",
+            "errorDescription": "我们在加载您的订单历史记录时出错。请稍后再试。",
+            "subtitle": "查看和跟踪您的订单",
+            "orderDate": "订单日期",
+            "total": "总计",
+            "items": "商品",
+            "pickupLocation": "取货地点",
+            "location": "位置",
+            "address": "地址",
+            "viewOrderDetails": "查看订单详情",
+            "tableHeaders": {
+                "orderNumber": "订单 ID",
+                "status": "状态",
+                "method": "方法",
+                "amount": "金额",
+                "actions": "操作"
+            },
+            "viewDetails": "查看详情",
+            "orderDetailsTitle": "订单",
+            "orderDetailsPageTitle": "订单详情",
+            "status": {
+                "created": "已创建",
+                "new": "新建",
+                "completed": "已完成",
+                "cancelled": "已取消",
+                "replaced": "已替换",
+                "failed": "失败"
+            },
+            "shippingStatus": {
+                "notShipped": "未发货",
+                "partShipped": "零件已发货",
+                "shipped": "已发货"
+            },
+            "totalOrders_one": "查看 {{count}} 个订单",
+            "totalOrders_other": "查看 {{count}} 个订单",
+            "totalOrdersRange": "查看 {{start}}–{{end}} 个订单（共{{total}} 个）",
+            "paginationLabel": "订单历史记录分页",
+            "paginationPrevious": "上一页",
+            "paginationNext": "下一页",
+            "invalidDate": "无效日期",
+            "shipmentNumber": "货单 {{n}}",
+            "itemsOrdered": "订购的商品",
+            "orderSummary": "订单摘要",
+            "backToOrderHistory": "返回订单记录",
+            "orderNotFound": "未找到订单",
+            "orderNotFoundDescription": "我们无法找到您要找的订单。",
+            "buyAgain": "再次购买",
+            "emptyItemsFallback": "无商品。",
+            "productPlaceholderInitial": "商品",
+            "quantityLabel": "数量： {{count}}",
+            "trackingNumber": "跟踪编号",
+            "shippingAddress": "送货地址",
+            "paymentMethod": "付款方式",
+            "paymentMethodEndingIn": "{{cardType}} 尾号为 {{lastDigits}}"
+        },
+        "addresses": {
+            "subtitle": "管理您的送货地址",
+            "empty": "添加地址以加快结账速度！",
+            "noSavedAddresses": "没有保存的地址",
+            "addAddress": "添加地址",
+            "addNewAddress": "添加新地址",
+            "editAddress": "编辑地址",
+            "preferred": "首选",
+            "default": "默认",
+            "setDefault": "默认设置",
+            "setDefaultSuccess": "地址已设置为默认地址。",
+            "setDefaultError": "无法将地址设置为默认地址。重试",
+            "billing": "账单",
+            "shipping": "送货",
+            "removeSuccess": "地址已删除。",
+            "removeError": "无法删除地址。重试",
+            "addSuccess": "地址已添加。",
+            "addError": "添加地址失败。",
+            "updateSuccess": "地址已更新。",
+            "updateError": "无法更新地址。",
+            "removeDialogTitle": "删除地址",
+            "removeDialogDescription": "您确定要删除此地址吗？",
+            "removeDefaultWarning": "这是您的默认地址。删除它会自动将另一个地址设置为默认地址（如有）。",
+            "removeButton": "删除",
+            "removeConfirmTitle": "确认删除地址",
+            "removeConfirmDescription": "您确定要删除地址“{{addressName}}”吗？",
+            "removeCancelButton": "取消",
+            "removeConfirmButton": "是，删除地址"
+        },
+        "paymentMethods": {
+            "pageSubtitle": "管理您的付款方式、礼品卡和商店信用额度",
+            "subtitle": "管理保存的付款方式",
+            "noSavedPaymentMethods": "没有保存的付款方式",
+            "empty": "添加付款方式以加快结账速度！",
+            "addPaymentMethod": "添加付款方式",
+            "setDefault": "默认设置",
+            "remove": "删除",
+            "default": "默认",
+            "expires": "到期",
+            "addPaymentMethodTitle": "添加付款方式",
+            "creditCard": "信用卡",
+            "nameOnCard": "卡上的姓名*",
+            "cardNumberPlaceholder": "卡号*",
+            "expiryPlaceholder": "月/年*",
+            "saveAsDefault": "另存为默认付款",
+            "billingAddress": "账单地址*",
+            "selectAddress": "选择地址",
+            "addNewAddress": "添加新地址",
+            "cancel": "取消",
+            "save": "保存",
+            "removePaymentMethod": "删除付款方式",
+            "removeConfirmation": "您确定要删除此付款方式吗？",
+            "paymentMethod": "付款方式",
+            "defaultRemovalWarning": "这是您的默认付款方式。删除它会自动将另一种付款方式设置为默认付款方式（如有）。",
+            "addSuccess": "付款方式已成功添加。",
+            "addError": "无法添加付款方式。",
+            "removeSuccess": "付款方式已成功删除。",
+            "removeError": "无法删除付款方式。",
+            "setDefaultSuccess": "付款方式成功设置为默认。",
+            "setDefaultError": "无法将付款方式设置为默认。",
+            "validationError": "请更正表格中的错误。",
+            "addressValidationError": "请更正账单地址中的错误。",
+            "selectAddressError": "请选择账单地址。",
+            "invalidExpiryFormat": "无效到期日期格式。"
+        },
+        "addressForm": {
+            "addressTitleLabel": "地址标题",
+            "addressTitlePlaceholder": "例如，家、工作场所、母亲住所",
+            "firstNameLabel": "名字",
+            "lastNameLabel": "姓氏",
+            "phoneLabel": "电话",
+            "countryLabel": "国家/地区",
+            "addressLabel": "地址",
+            "address2Label": "地址行 2",
+            "address2Placeholder": "公寓、套房等（可选）",
+            "cityLabel": "城市",
+            "stateLabel": "状态",
+            "provinceLabel": "省",
+            "postalCodeLabel": "邮政编码",
+            "zipCodeLabel": "邮政编码",
+            "preferredLabel": "设为默认值",
+            "saveButton": "保存",
+            "savingButton": "正在保存...",
+            "cancelButton": "取消",
+            "selectStatePlaceholder": "选择州",
+            "selectProvincePlaceholder": "选择省份",
+            "successMessage": "地址已保存。",
+            "errorMessage": "无法保存地址。重试",
+            "validation": {
+                "stateRequired": "州/省为必填项",
+                "addressTitleRequired": "地址标题为必填项。",
+                "addressTitleMaxLength": "地址标题不得超过 256 个字符。",
+                "phoneRequired": "电话号码为必填项。"
+            }
+        },
+        "profile": {
+            "title": "个人信息",
+            "description": "管理您的个人信息",
+            "edit": "编辑",
+            "fullName": "全名",
+            "email": "电子邮件地址",
+            "phoneNumber": "电话号码",
+            "notProvided": "未提供",
+            "firstName": "名字",
+            "lastName": "姓氏",
+            "firstNamePlaceholder": "输入您的名字",
+            "lastNamePlaceholder": "输入您的姓氏",
+            "phonePlaceholder": "输入您的电话号码",
+            "gender": "性别",
+            "genderPlaceholder": "选择性别",
+            "genderOptions": {
+                "male": "男",
+                "female": "女"
+            },
+            "dateOfBirth": "出生日期",
+            "dateOfBirthPlaceholder": "选择出生日期",
+            "saveButton": "保存",
+            "savingButton": "正在保存...",
+            "cancelButton": "取消",
+            "successMessage": "您的个人资料已更新。",
+            "errorMessage": "我们无法更新您的个人资料。重试",
+            "validation": {
+                "firstNameRequired": "名字为必填项。",
+                "lastNameRequired": "姓氏为必填项。",
+                "emailRequired": "需要电子邮件。",
+                "emailInvalid": "输入有效电子邮件地址。",
+                "phoneInvalid": "请输入有效电话号码。",
+                "birthdayFuture": "出生日期不能是将来。"
+            }
+        },
+        "password": {
+            "title": "密码与安全",
+            "description": "管理密码和安全设置",
+            "edit": "编辑",
+            "password": "密码",
+            "changePassword": "更改密码",
+            "currentPassword": "当前密码",
+            "currentPasswordPlaceholder": "输入当前密码",
+            "newPassword": "新密码",
+            "newPasswordPlaceholder": "输入新密码",
+            "confirmPassword": "确认新密码",
+            "confirmPasswordPlaceholder": "确认您的新密码",
+            "saveButton": "保存",
+            "cancelButton": "取消",
+            "successMessage": "密码已更新。",
+            "errorMessage": "无法更新密码。重试",
+            "validation": {
+                "currentPasswordRequired": "当前密码为必填项。",
+                "newPasswordRequired": "需要新密码。",
+                "confirmPasswordRequired": "确认您的新密码。",
+                "passwordsDoNotMatch": "新密码不匹配。",
+                "passwordTooShort": "密码长度必须至少为 8 个字符。"
+            },
+            "requirements": {
+                "title": "密码要求",
+                "minLength": "至少 8 个字符",
+                "hasUppercase": "至少一个大写字母",
+                "hasLowercase": "至少一个小写字母",
+                "hasNumber": "至少一个数字",
+                "hasSpecial": "至少一个特殊字符"
+            }
+        },
+        "common": {
+            "save": "保存",
+            "saving": "正在保存...",
+            "cancel": "取消",
+            "edit": "编辑",
+            "done": "完成",
+            "enabled": "启用",
+            "disabled": "禁用"
+        },
+        "marketingConsent": {
+            "title": "营销与通讯偏好",
+            "edit": "编辑",
+            "editA11y": "编辑营销偏好",
+            "optedIn": "已选择加入",
+            "optedOut": "未选择加入",
+            "channelEmail": "电子邮件",
+            "channelSms": "短信",
+            "disclaimer": "启用这些通讯偏好，即表示您同意接收我们发送的营销通讯，包括独家优惠、最新产品信息和即将推出的系列产品的新闻。有关更多详细信息，请参阅我们的《条款与条件》和《隐私政策》。",
+            "updateError": "无法更新营销偏好。重试",
+            "partialSuccess": "已保存一些偏好设置。刷新以查看当前设置。"
+        }
+    },
+    "home": {
+        "hero": {
+            "slide1": {
+                "title": "新一季",
+                "subtitle": "全新系列，以对比、比例和现代态度为特色。介绍下一季的重点单品。",
+                "ctaText": "探索产品系列",
+                "imageAlt": "女士休闲裤、外套和手提包"
+            },
+            "slide2": {
+                "title": "现代衣橱",
+                "subtitle": "高雅廓形、精致质感和大胆日常穿搭风格。专为随身携带而设计。",
+                "imageAlt": "女士白色亚麻连衣裙"
+            },
+            "slide3": {
+                "title": "下班后",
+                "subtitle": "专为夜晚外出、深夜时光以及介于两者之间的各种场合而设计的吸睛单品和精致叠穿款式。",
+                "ctaText": "探索产品系列",
+                "imageAlt": "女士黑色西装"
+            },
+            "slide4": {
+                "title": "新视角",
+                "subtitle": "精心挑选的特色单品，重新定义当代时尚。自信。张扬。不妥协。",
+                "ctaText": "立即购买",
+                "imageAlt": "女士灰色连衣裙"
+            }
+        },
+        "meta": {
+            "title": "网店 下一个：Market Street",
+            "description": "新一代时装店"
+        },
+        "featuredProducts": {
+            "title": "推荐商品",
+            "shopAll": "全部商品"
+        },
+        "categoryGrid": {
+            "title": "现实生活的风格",
+            "description": "在 Market Street，我们相信时尚应该轻松自在、真实自然、触手可及。我们的系列专为重视品质、百搭性和永恒风格的现代人士而设计。",
+            "shopNowButton": "立即购买"
+        },
+        "featuredContent": {
+            "women": {
+                "title": "女士用品",
+                "description": "探索我们专为现代女性设计的精致鞋履系列。",
+                "ctaText": "探索产品系列",
+                "imageAlt": "女装系列"
+            },
+            "men": {
+                "title": "男用",
+                "description": "我们的男士鞋履系列将经典工艺与现代风格完美融合。",
+                "ctaText": "探索产品系列",
+                "imageAlt": "男装系列"
+            },
+            "styleForRealLife": {
+                "title": "现实生活的风格",
+                "description": "在 Market Street，我们相信时尚应该轻松自在、真实自然、触手可及。我们的系列专为重视品质、百搭性和永恒风格的现代人士而设计。\n\n探索那些与您形影不离、适应您生活方式的单品，它们将成为您日常穿搭的基石，让您在任何场合都能轻松驾驭。"
+            }
+        }
+    },
+    "footer": {
+        "sections": {
+            "customerSupport": "客户支持",
+            "account": "账户",
+            "ourCompany": "我们的公司",
+            "switchThemes": "切换主题",
+            "switchSite": "区域",
+            "switchLanguage": "语言",
+            "switchCurrency": "货币",
+            "shop": "购物",
+            "help": "帮助",
+            "about": "关于"
+        },
+        "links": {
+            "contactUs": "联系我们",
+            "shipping": "送货",
+            "orderStatus": "订单状态",
+            "signInOrCreateAccount": "登录或创建账户",
+            "aboutUs": "关于我们",
+            "accessibility": "无障碍声明",
+            "privacyPolicy": "隐私政策",
+            "privacyChoices": "您的隐私选择",
+            "termsOfUse": "使用条款"
+        },
+        "newsletter": {
+            "title": "加入我们的社区",
+            "description": "抢先发现新品、独家优惠和时尚灵感。",
+            "emailPlaceholder": "您的电子邮件",
+            "subscribeButton": "订阅"
+        },
+        "copyright": "Salesforce 或其附属公司。保留所有权利。此仅为示范商店。所下订单不会被处理。"
+    },
+    "aboutUs": {
+        "breadcrumb": {
+            "home": "主页",
+            "aboutUs": "关于我们"
+        },
+        "title": "关于我们",
+        "subtitle": "详细了解我们的公司和使命",
+        "section": {
+            "ourGoal": {
+                "title": "为运动而生。专为日常生活而设计。",
+                "content": "Market Street 的灵感源自都市文化和运动的活力，旨在将性能、时尚和日常必需品无缝融合，打造流畅的购物体验。我们相信，优质的产品应该伴您左右——从街头到健身房，从工作到周末。\n最初，我们致力于简化人们体验时尚和生活方式零售的方式，如今，我们已发展成为一个专注于清晰、便捷和智能设计的品牌。每个系列都经过精心设计，力求兼具百搭性、耐用性和永恒魅力。"
+            },
+            "ourVision": {
+                "title": "我们的愿景",
+                "content": "通过科技、设计和客户体验，重新定义现代零售——打造轻松、鼓舞人心且人性化的商业环境。我们不追逐潮流。我们致力于创造持久的体验。"
+            },
+            "ourValue": {
+                "title": "我们存在的意义",
+                "content": "我们存在，是为了消除人们与心爱之物之间的障碍。为了让购物变得直观、快速且有意义。为了打造一个与社区共同成长的品牌。"
+            },
+            "ourMission": {
+                "title": "我们的主张",
+                "content": "以目标为导向的设计——每一件产品、每一次互动、每一个细节都经过精心设计。\n无形的技术——我们以创新化繁为简，而非徒增复杂。\n客户至上的理念——从发现到交付，您的体验始终优先。\n可持续发展——我们优先选择负责任的材料、供应商与物流。"
+            },
+            "ourTeam": {
+                "title": "全球品牌，街头灵魂",
+                "content": "Market Street 的创立源于一个理念：时尚不应遥不可及。我们将全球灵感与街头思维相融合，把文化、功能和生活方式融为一体，流畅自然。\n从产品开发到数字体验，我们所做的一切都遵循一个原则：\n让购物像呼吸一样自然。"
+            }
+        },
+        "contact": {
+            "title": "我们随时提供帮助",
+            "intro": "有疑问、反馈或需要支持？我们的团队随时准备为您提供协助。",
+            "phoneHref": "电话：180080606453",
+            "hours": {
+                "weekdays": "星期一至星期五：美国东部时间上午 9 点至晚上 10 点",
+                "weekends": "星期六和星期日：美国东部时间上午 10 点至晚上 7 点"
+            },
+            "cta": "或者使用表格给我们发送消息，我们会尽快回复您。",
+            "form": {
+                "label": "标签",
+                "nameLabel": "名称",
+                "emailLabel": "电子邮件",
+                "messageLabel": "邮件正文",
+                "placeholders": {
+                    "fullName": "输入您的全名",
+                    "topic": "一般信息",
+                    "message": "给我们留言"
+                },
+                "submit": "提交消息"
+            },
+            "toast": {
+                "success": "消息已成功发送。"
+            }
+        }
+    },
+    "countries": {
+        "US": {
+            "name": "美国",
+            "states": {
+                "AL": "亚拉巴马",
+                "AK": "阿拉斯加",
+                "AZ": "亚利桑那",
+                "AR": "阿肯色",
+                "CA": "加利福尼亚",
+                "CO": "科罗拉多",
+                "CT": "康涅狄格",
+                "DE": "特拉华州",
+                "DC": "哥伦比亚特区",
+                "FL": "佛罗里达",
+                "GA": "佐治亚",
+                "HI": "夏威夷",
+                "ID": "爱达荷",
+                "IL": "伊利诺伊",
+                "IN": "印地安那",
+                "IA": "爱荷华",
+                "KS": "堪萨斯",
+                "KY": "肯塔基",
+                "LA": "路易斯安那",
+                "ME": "缅因",
+                "MD": "马里兰",
+                "MA": "马萨诸塞",
+                "MI": "密歇根",
+                "MN": "明尼苏达",
+                "MS": "密西西比",
+                "MO": "密苏里",
+                "MT": "蒙大拿",
+                "NE": "内布拉斯加",
+                "NV": "内华达",
+                "NH": "新罕布什尔",
+                "NJ": "新泽西",
+                "NM": "新墨西哥",
+                "NY": "纽约",
+                "NC": "北卡罗来纳",
+                "ND": "北达科他",
+                "OH": "俄亥俄",
+                "OK": "俄克拉何马",
+                "OR": "俄勒冈",
+                "PA": "宾夕法尼亚",
+                "RI": "罗德岛",
+                "SC": "南卡罗来纳",
+                "SD": "南达科他",
+                "TN": "田纳西",
+                "TX": "得克萨斯",
+                "UT": "犹他",
+                "VT": "佛蒙特",
+                "VA": "弗吉尼亚",
+                "WA": "华盛顿",
+                "WV": "西弗吉尼亚",
+                "WI": "威斯康星",
+                "WY": "怀俄明"
+            }
+        },
+        "CA": {
+            "name": "加拿大",
+            "states": {
+                "AB": "阿尔伯塔",
+                "BC": "卑诗省",
+                "MB": "马尼托巴",
+                "NB": "新不伦瑞克",
+                "NL": "纽芬兰和拉布拉多",
+                "NS": "新斯科舍",
+                "NT": "西北地区",
+                "NU": "努纳武特",
+                "ON": "安大略",
+                "PE": "爱德华王子岛",
+                "QC": "魁北克",
+                "SK": "萨斯喀彻温",
+                "YT": "育空"
+            }
+        }
+    },
+    "miniCart": {
+        "noImage": "无图片",
+        "productAltFallback": "产品",
+        "quantityLabel": "数量：",
+        "quantityAriaLabel": "数量",
+        "customQuantityAriaLabel": "自定义数量",
+        "customOption": "自定义...",
+        "editQuantityAriaLabel": "编辑数量",
+        "promotionApplied": "已应用促销",
+        "removeItemAriaLabel": "从购物车中删除商品",
+        "emptyCart": "您的购物车是空的",
+        "loading": "正在加载...",
+        "viewCart": "查看购物车",
+        "saved": "已保存 {{amount}}",
+        "free": "免费",
+        "emptyTitle": "Your cart is empty",
+        "emptyMessage": "Looks like you haven't added anything to your cart yet. Start shopping to fill it up with amazing products!",
+        "startShopping": "Start Shopping",
+        "delivery": "Delivery",
+        "closeAriaLabel": "关闭"
+    },
+    "trackingConsent": {
+        "title": "追踪同意书",
+        "description": "Lorem ipsum dolor sit amet， consectetur adipiscing elit， sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam， quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "accept": "接受",
+        "decline": "拒绝",
+        "closeAriaLabel": "关闭"
+    },
+    "localeSwitcher": {
+        "ariaLabel": "语言选择器",
+        "validation": {
+            "unsupportedLocale": "不支持区域设置",
+            "usingDefault": "使用默认区域设置：{{locale}}"
+        },
+        "locales": {
+            "en-GB": "English (UK)",
+            "en-US": "English (US)",
+            "da-DK": "Dansk (Danmark)",
+            "de-DE": "Deutsch (Deutschland)",
+            "es-ES": "Español (España)",
+            "fi-FI": "Suomi (Suomi)",
+            "fr-FR": "Français (France)",
+            "it-IT": "Italiano (Italia)",
+            "ja-JP": "日本語 (日本)",
+            "ko-KR": "한국어 (대한민국)",
+            "nb-NO": "Norsk bokmål (Norge)",
+            "nl-NL": "Nederlands (Nederland)",
+            "pl-PL": "Polski (Polska)",
+            "pt-PT": "Português (Portugal)",
+            "sv-SE": "Svenska (Sverige)",
+            "zh-CN": "中文 (简体)",
+            "zh-TW": "中文 (繁體)"
+        }
+    },
+    "currencySwitcher": {
+        "ariaLabel": "货币切换器",
+        "currencies": {
+            "USD": "美元 ($)",
+            "MXN": "墨西哥比索 ($)",
+            "EUR": "欧元 (€)",
+            "GBP": "英镑 (£)",
+            "JPY": "日元 (¥)",
+            "KRW": "韩元 (₩)",
+            "BRL": "巴西雷亚尔 (R$)",
+            "CNY": "人民币 (¥)",
+            "TWD": "新台币 (NT$)",
+            "DKK": "丹麦克朗 (kr)",
+            "PLN": "波兰兹罗提 (zł)",
+            "SEK": "瑞典克朗 (kr)"
+        },
+        "validation": {
+            "unsupportedCurrency": "不支持的货币",
+            "usingDefault": "使用默认货币：{{currency}}"
+        }
+    },
+    "addressSuggestionDropdown": {
+        "suggested": "建议",
+        "closeSuggestions": "关闭建议",
+        "loading": "正在加载建议...",
+        "googleMapsLogoAlt": "Google 地图"
+    },
+    "infoModal": {
+        "paymentScheduleDescription": "付款时间表详细信息",
+        "writeReviewDescription": "评论填写表格",
+        "starRatingDistributionDescription": "星级评定分布详情",
+        "estimatedDeliveryDescription": "预计配送详情",
+        "returnsAndWarrantyDescription": "退货和保修详情",
+        "close": "关闭"
+    },
+    "estimatedDelivery": {
+        "cardTitle": "预计送达时间",
+        "cardDescription": "可用送货选项",
+        "learnMore": "了解更多",
+        "sectionHeading": "预计送达时间",
+        "shippingOptionsHeading": "送货选项与费率",
+        "free": "免费"
+    },
+    "writeReview": {
+        "validation": {
+            "pleaseFixFollowing": "请修复以下问题：",
+            "ratingRequired": "请选择评级。",
+            "reviewRequired": "请填写此字段。",
+            "reviewMinLength": "您的评论必须至少 {{count}} 个字符",
+            "reviewMaxLength": "请输入不超过 {{count}} 个字符。",
+            "titleMaxLength": "请输入不超过 {{count}} 个字符。"
+        },
+        "minCharactersHint": "最少 {{count}} 个字符。",
+        "maxCharactersHint": "最多 {{count}} 个字符。"
+    },
+    "sitePicker": {
+        "title": "选择您的站点",
+        "description": "选择您喜欢的商店，查看相关产品和定价。",
+        "ariaLabel": "选择站点",
+        "placeholder": "选择站点...",
+        "sites": {
+            "RefArchGlobal": "全球（英国）",
+            "RefArch": "美国"
+        }
+    },
+    "category": {
+        "banner": {
+            "productsAvailable_one": "1 product available",
+            "productsAvailable_other": "{{count}} products available"
+        }
+    },
+    "maintenancePage": {
+        "apology": "We apologise for any inconvenience. Thank you for your patience!"
+    },
+    "error": {
+        "403": {
+            "title": "Access restricted",
+            "message": "You don't have permission to view this page. If you believe this is an error, please contact our support team.",
+            "secondaryMessage": "In the meantime, feel free to browse our collection."
+        },
+        "404": {
+            "title": "Page not found",
+            "message": "We couldn't find the page you're looking for. It may have been moved or the link might be incorrect.",
+            "secondaryMessage": "Don't worry—you can still explore our collection or head back home.",
+            "details": "The requested page could not be found."
+        },
+        "500": {
+            "title": "Something went wrong",
+            "message": "We're sorry, but something unexpected happened on our end. Our team has been notified and is working to fix it.",
+            "secondaryMessage": "Please try again in a few moments, or browse our shop while we sort things out."
+        },
+        "defaultTitle": "Something went wrong",
+        "defaultDescription": "An error occurred",
+        "defaultDetails": "An unexpected error occurred.",
+        "notFoundTitle": "Page not found",
+        "notFoundDetails": "The requested page could not be found.",
+        "persistsMessage": "If this problem persists, please contact support.",
+        "tryAgainMessage": "An unexpected error occurred. Please try again later.",
+        "goToHomepage": "Go to Homepage",
+        "allRightsReserved": "All rights reserved.",
+        "recommendations": {
+            "title": "You might also like"
+        }
+    },
+    "product": {
+        "recommendations": {
+            "youMightAlsoLike": "您可能还喜欢",
+            "completeTheLook": "完成外观",
+            "recentlyViewed": "最近查看"
+        },
+        "rating": {
+            "starContainerAriaLabel": "{{rating}} 星，共 {{total}} 星，{{count, number}} 个评论",
+            "ratingOutOfTotal": "{{rating}} 星，共 {{total}} 星",
+            "ratingValue": "{{rating}}",
+            "basedOnReviews": "基于 {{count, number}} 个评论",
+            "ratingWithCount": "{{rating}} ({{count, number}})",
+            "viewAllReviews": "查看所有评论",
+            "distributionAriaLabel": "{{rating}} 星：{{count, number}} 个评论，共 {{totalReviews, number}} 个",
+            "distributionsAriaLabel": "星级分布，共 {{total, number}} 个评论",
+            "seeCustomerReviews": "查看客户评论 >"
+        },
+        "from": "从",
+        "outOfStock": "{{productName}} 无库存",
+        "onlyLeft": "{{productName}} 只剩下 {{stockLevel}}！",
+        "inStock": "有库存",
+        "inStockCount": "有库存 （{{stockDisplay}} 单位） 准备发货",
+        "lowStock": "库存不足",
+        "lowStockCount": "库存不足 - 仅剩 {{stockDisplay}}",
+        "preOrder": "可供预订",
+        "backOrder": "适用于延期交货",
+        "outOfStockLabel": "无库存",
+        "selectAllOptions": "选择上面的所有选项",
+        "description": "描述",
+        "imageAlt": "产品图片",
+        "addingToCart": "正在添加到购物车...",
+        "addToCart": "添加到购物车",
+        "moreOptions": "更多选项",
+        "quickAdd": "快速添加",
+        "buyItNow": "立即购买",
+        "pickupAvailable": "提供取货服务",
+        "selectProduct": "选择产品",
+        "updatingCart": "正在更新...",
+        "updateCart": "更新",
+        "addingToWishlist": "正在添加到愿望清单...",
+        "addToWishlist": "添加到愿望清单",
+        "updatingWishlist": "更新愿望清单",
+        "share": "共享",
+        "expressPayments": {
+            "separatorBuyWith": "或购买",
+            "venmoUnavailable": "Venmo 在此设备上不可用。"
+        },
+        "productSetNotice": "这是产品组合。在下面选择单个商品以添加到购物车。",
+        "productBundleNotice": "这是产品套装。所有商品一起添加。",
+        "productDetails": "产品详情",
+        "noDetailedDescription": "没有详细描述。",
+        "brand": "品牌：",
+        "manufacturer": "生产商:",
+        "sku": "SKU：",
+        "sizeAndFit": "尺寸与合身",
+        "sizeAndFitComingSoon": "尺码和合身信息即将推出。",
+        "shippingAndReturns": "送货与退货",
+        "freeShipping": "订单满 50 美元免运费",
+        "standardShipping": "标准运输：3-5 个工作日",
+        "expressShipping": "快递运输：1-2 个工作日",
+        "priceMin": "最小",
+        "priceMax": "最大",
+        "priceTo": "到",
+        "returns": "退货：30 天退货政策",
+        "reviews": "点评",
+        "customerReviews": "客户评论",
+        "oneReviewForProductName": "{{productName}} 的 1 个评论",
+        "reviewsForProductName": "{{productName}} 的 {{count}} 个评论",
+        "aiReviewSummary": "AI 评论摘要",
+        "loadingReviews": "正在加载评论...",
+        "noReviewsForProduct": "此产品没有评论。",
+        "noReviewsMatchFilters": "没有与您的筛选条件匹配的评论。",
+        "verifiedPurchase": "已验证购买",
+        "helpful": "有帮助 ({{count}})",
+        "helpfulNoCount": "有帮助",
+        "report": "报告",
+        "readMore": "阅读更多",
+        "readLess": "阅读更少",
+        "reviewImageAlt": "评论图片",
+        "viewProductAriaLabel": "查看 {{productName}}",
+        "swatches": {
+            "availableColors": "Available colors",
+            "viewProductInColor": "View {{productName}} in {{colorName}}",
+            "viewAllColors": "View all {{count}} colors for {{productName}}",
+            "moreColorsTitle": "+{{count}} more"
+        },
+        "showingReviews": "显示 {{from}}-{{to}} 个评论（共 {{total}} 个）",
+        "filterBy": "筛选标准：",
+        "withPhotos": "有照片",
+        "searchReviewsPlaceholder": "搜索评论...",
+        "sortLabel": "排序：",
+        "sortMostRecent": "最新",
+        "sortHighestRated": "最高评分",
+        "sortLowestRated": "最低评分",
+        "sortMostHelpful": "最有帮助",
+        "activeFilterStars": "{{count}} 星",
+        "clearFilter": "清除筛选器",
+        "filterByStars": "按 {{count}} 星筛选",
+        "clearStarFilter": "清除 {{count}} 星筛选条件",
+        "clearPhotoFilter": "清除照片筛选条件",
+        "writeReviewButton": "撰写评论",
+        "materials": "材料",
+        "usageInstructions": "使用说明",
+        "specifications": "规格",
+        "careInstructions": "保养说明",
+        "careInstructionsComingSoon": "保养说明即将推出。",
+        "productSet": "产品组合",
+        "productBundle": "产品套装",
+        "setDescription": "从以下商品中选择，打造您的完美组合",
+        "bundleDescription": "此套装产品中的所有商品将一起添加到您的购物车中",
+        "selectedOf": "已选 {{selected}} 件（共 {{total}} 件）",
+        "addSetToCart": "将组合产品添加到购物车",
+        "addBundleToCart": "将套装产品添加到购物车",
+        "adding": "正在添加...",
+        "selectAllOptionsAbove": "选择上面的所有选项",
+        "outOfStockStatus": "无库存",
+        "selected": "✓ 已选择",
+        "selectOptionsAbove": "选择上面的选项",
+        "selectOptions": "选择选项",
+        "bonusProduct": "赠品",
+        "bonusProductAriaLabel": "此商品为免费赠品",
+        "addedToCart": "{{productName}} 已添加到购物车",
+        "updatedCart": "已更新购物车中的 {{productName}}。",
+        "addedSetToCart": "已将产品组合添加到购物车。",
+        "addedBundleToCart": "已将产品套装添加到购物车。",
+        "failedToAddToCart": "无法添加到购物车：{{error}}。",
+        "failedToUpdateCart": "无法更新购物车：{{error}}。",
+        "failedToAddItemsToCart": "无法将商品添加到购物车：{{error}}。",
+        "failedToAddBundleToCart": "无法将套装添加到购物车：{{error}}。",
+        "addedToWishlist": "已将 {{productName}} 添加到愿望清单。",
+        "alreadyInWishlist": "{{productName}} 已在您的愿望清单中。",
+        "failedToAddToWishlist": "无法将商品添加到愿望清单。",
+        "signInToAddToWishlist": "登录以将商品添加到您的愿望清单。",
+        "signInToContinue": "登录以继续。",
+        "removedFromWishlist": "已从愿望清单中删除。",
+        "failedToRemoveFromWishlist": "无法从愿望清单中删除商品。",
+        "removeFromWishlist": "从愿望清单中删除。",
+        "removedLabel": "已删除",
+        "remove": "删除",
+        "selectVariantPlaceholder": "选择",
+        "itemAlreadyInWishlist": "商品已在您的愿望清单中。",
+        "addedToWishlistGeneric": "已加入愿望清单。",
+        "productIdRequired": "产品 ID 为必填项。",
+        "productOrItemIdRequired": "产品 ID 或商品 ID 为必填项。",
+        "methodNotAllowed": "方法不被允许",
+        "productItemRequired": "产品项目数据为必填项。",
+        "productItemsRequired": "产品项目数据为必填项。",
+        "bundleDataRequired": "套装商品和子项选择数据为必填项。",
+        "failedToAddItemToCart": "无法将商品添加到购物车。",
+        "failedToUpdateItemToCart": "无法将商品更新到购物车。",
+        "failedToRemoveItem": "无法删除商品。",
+        "failedToUpdateItemQuantity": "无法更新商品数量。",
+        "failedToAddItemsToCartError": "无法将商品添加到购物车。",
+        "failedToAddBundleToCartError": "无法将套装添加到购物车。",
+        "failedToUpdateBundleToCartError": "无法将套装更新到购物车。",
+        "pleaseSelectOptionsFor": "选择 {{productName}} 的选项。",
+        "productNotOrderable": "{{productName}} 不可订购。",
+        "cannotAddToCartValidationFailed": "无法添加到购物车：验证失败。",
+        "failedToAddProductToCart": "无法将产品添加到购物车。",
+        "failedToAddProductToWishlist": "无法将产品添加到愿望清单。",
+        "noProductIdForCart": "没有可用于添加到购物车的产品 ID。",
+        "invalidQuantityForCart": "添加到购物车的数量 {{quantity}} 无效。",
+        "noProductSelectionsForSet": "未提供用于组合购物车添加的产品选项。",
+        "noProductIdForBundle": "没有可用于套装购物车添加的产品 ID。",
+        "invalidQuantityForBundle": "套装购物车添加的数量无效：{{quantity}}。",
+        "noChildSelectionsForBundle": "没有可用于套装购物车添加的子产品选项。",
+        "cartOperationFailed": "购物车操作失败：",
+        "multipleItemsCartOperationFailed": "多件商品购物车操作失败：",
+        "bundleCartOperationFailed": "套装产品购物车操作失败：",
+        "errorInHandleAddToCart": "handleAddToCart 出错：",
+        "errorInHandleProductSetAddToCart": "handleProductSetAddToCart 出错：",
+        "errorInHandleProductBundleAddToCart": "handleProductBundleAddToCart 出错：",
+        "failedToAddToWishlistError": "无法添加到愿望单：",
+        "addingToWishlistLog": "正在添加到愿望清单：",
+        "failedToAddProductToCartError": "无法将产品添加到购物车：",
+        "failedToAddProductToWishlistError": "无法将产品添加到愿望清单：",
+        "price": {
+            "unavailable": "价格不可用",
+            "currentPriceFrom": "当前价格从 {{price}} 起",
+            "currentPrice": "当前价格：{{price}}",
+            "from": "起始价格：{{price}}",
+            "range": "{{min}} – {{max}}",
+            "rangeA11y": "价格范围从 {{min}} 至 {{max}}",
+            "listPriceFrom": "标价从 {{price}} 起",
+            "listPrice": "标价：{{price}}"
+        },
+        "removingFromWishlist": "Removing from wishlist...",
+        "inWishlist": "In your wishlist"
+    }
+}

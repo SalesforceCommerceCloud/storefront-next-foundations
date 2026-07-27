@@ -1,0 +1,149 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HtmlFragment stories snapshot > BulletedList story renders and matches snapshot 1`] = `
+<div
+  class="text-sm text-foreground [&_ul]:flex [&_ul]:flex-col [&_ul]:gap-1.5 [&_ul]:list-none [&_ul]:m-0 [&_ul]:p-0 [&_li]:flex [&_li]:items-center [&_li]:gap-2 [&_li]:before:content-[''] [&_li]:before:h-1.5 [&_li]:before:w-1.5 [&_li]:before:flex-shrink-0 [&_li]:before:rounded-full [&_li]:before:bg-foreground"
+  data-testid="html-fragment"
+>
+  <ul>
+    <li>
+      Premium cotton blend
+    </li>
+    <li>
+      Machine washable
+    </li>
+    <li>
+      Breathable fabric
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`HtmlFragment stories snapshot > EmptyContent story renders and matches snapshot 1`] = `
+<div
+  class="text-sm text-foreground leading-relaxed"
+  data-testid="html-fragment"
+/>
+`;
+
+exports[`HtmlFragment stories snapshot > LongCopy story renders and matches snapshot 1`] = `
+<div
+  class="text-sm text-foreground leading-relaxed"
+  data-testid="html-fragment"
+>
+  
+            
+  <h2>
+    Editorial Story Headline That Demonstrates Long Authored Copy
+  </h2>
+  
+            
+  <p>
+    This paragraph represents the kind of multi-sentence editorial content merchants author for product description pages, brand stories, and FAQ articles. It includes inline 
+    <strong>
+      strong text
+    </strong>
+    , 
+    <em>
+      emphasis
+    </em>
+    , and 
+    <a
+      href="/category/featured"
+    >
+      links
+    </a>
+     — verifying that the default plain-text styling reflows cleanly under realistic copy density without breaking the surrounding layout.
+  </p>
+  
+            
+  <p>
+    A second paragraph adds further density: it tests vertical spacing between block elements, paragraph margins, and the legibility of long-form running copy at the default font size. Merchants typically author 200-500 words for editorial sections, occasionally up to 1000+ for full brand stories.
+  </p>
+  
+            
+  <ul>
+    
+                
+    <li>
+      Inline lists nested inside long-copy sections (this is one such item)
+    </li>
+    
+                
+    <li>
+      Multiple bullets with secondary content
+    </li>
+    
+                
+    <li>
+      And a final closing item to verify list spacing under the running copy
+    </li>
+    
+            
+  </ul>
+  
+        
+</div>
+`;
+
+exports[`HtmlFragment stories snapshot > PlainText story renders and matches snapshot 1`] = `
+<div
+  class="text-sm text-foreground leading-relaxed"
+  data-testid="html-fragment"
+>
+  This is a premium quality product with excellent durability and comfort.
+</div>
+`;
+
+exports[`HtmlFragment stories snapshot > Playground story renders and matches snapshot 1`] = `
+<div
+  class="text-sm text-foreground leading-relaxed"
+  data-testid="html-fragment"
+>
+  This is a premium quality product with excellent durability and comfort.
+</div>
+`;
+
+exports[`HtmlFragment stories snapshot > Table2Column story renders and matches snapshot 1`] = `
+<div
+  class="text-sm text-foreground [&_table]:w-full [&_table]:border-collapse [&_td]:py-1.5 [&_td]:pr-4 [&_td]:align-top [&_td:first-child]:font-semibold [&_td:first-child]:w-1/2 [&_tr]:border-b [&_tr]:border-border"
+  data-testid="html-fragment"
+>
+  <table>
+    <tbody>
+      <tr>
+        <td>
+          Material:
+        </td>
+        <td>
+          Full-grain leather
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Sole:
+        </td>
+        <td>
+          Rubber
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Heel height:
+        </td>
+        <td>
+          1.5"
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Closure:
+        </td>
+        <td>
+          Lace-up + side zip
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;

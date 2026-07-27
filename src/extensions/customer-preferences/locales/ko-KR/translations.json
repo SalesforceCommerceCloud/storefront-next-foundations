@@ -1,0 +1,35 @@
+{
+    "interestsPreferences": {
+        "title": "관심사 및 기본 설정",
+        "description": "디자인 관심사를 추가하고 쇼핑 기호를 관리하세요.",
+        "successMessage": "관심사와 기호가 업데이트되었습니다.",
+        "errorMessage": "업데이트하지 못했습니다. 다시 시도하십시오.",
+        "loadError": "We couldn't load your interests and preferences. Please refresh the page to try again."
+    },
+    "interests": {
+        "title": "관심사",
+        "noneSelected": "선택한 관심사가 없습니다.",
+        "addMore": "더 추가",
+        "addInterestsTitle": "관심사 추가"
+    },
+    "preferences": {
+        "noneSelected": "선택되지 않음",
+        "addMore": "더 추가",
+        "dialogTitle": "옵션 선택",
+        "selectCategory": "{{category}} 선택"
+    },
+    "measures": {
+        "roomDimensionsLabel": "Room dimensions:",
+        "ceilingHeightLabel": "Ceiling height:",
+        "noneProvided": "No measures provided"
+    },
+    "size": {
+        "preferredSizeLabel": "Preferred product size:"
+    },
+    "common": {
+        "save": "저장",
+        "saving": "저장 중...",
+        "cancel": "취소",
+        "edit": "편집"
+    }
+}

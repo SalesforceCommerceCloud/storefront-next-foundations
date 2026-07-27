@@ -1,0 +1,47 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Help stories snapshot > Default story renders and matches snapshot 1`] = `
+<div>
+  <div
+    class="py-16 bg-background"
+  >
+    <div
+      class="section-container"
+    >
+      <div
+        class="lg:flex lg:items-center lg:justify-between"
+      >
+        <div
+          class="lg:max-w-lg"
+        >
+          <h2
+            class="text-3xl font-bold text-foreground sm:text-4xl"
+          >
+            We're here to help
+          </h2>
+          <p
+            class="mt-4 text-sm text-muted-foreground"
+          >
+            Contact our support staff.
+            <br />
+            They will get you to the right place.
+          </p>
+          <div
+            class="mt-8"
+          >
+            <a
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground hover:bg-primary/90 h-9 has-[>svg]:px-3 text-2xl p-6"
+              data-size="default"
+              data-slot="button"
+              data-variant="default"
+              href="/contact"
+            >
+              Contact Us
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,20 @@
+{
+    "contentComingSoon": "Conteúdo em breve.",
+    "faq": {
+        "askAssistant": "Perguntar ao assistente",
+        "faqQuestionSendToAssistantAriaLabel": "Abra o agente de compras e pergunte: {{question}}"
+    },
+    "returnsAndWarranty": {
+        "learnMore": "Ver políticas",
+        "returnConditions": "Condições de devolução:",
+        "howToReturn": "Como devolver:",
+        "note": "Observação:",
+        "whatsCovered": "O que está coberto:",
+        "whatsNotCovered": "O que não está coberto:",
+        "warrantyClaims": "Reclamações de garantia:",
+        "exchangeProcess": "Processo de intercâmbio:",
+        "needHelp": "Precisa de ajuda?",
+        "contactAt": "Entre em contato conosco:",
+        "orCall": "ou ligue"
+    }
+}

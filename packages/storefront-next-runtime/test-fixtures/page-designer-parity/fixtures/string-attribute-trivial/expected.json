@@ -1,0 +1,22 @@
+{
+    "id": "trivial-string-page",
+    "typeId": "storePage",
+    "regions": [
+        {
+            "id": "main",
+            "components": [
+                {
+                    "id": "banner-1",
+                    "typeId": "commerce_assets.heroBanner",
+                    "regions": [],
+                    "fragment": false,
+                    "localized": true,
+                    "visible": true,
+                    "data": {
+                        "heading": "Welcome to the Storefront"
+                    }
+                }
+            ]
+        }
+    ]
+}

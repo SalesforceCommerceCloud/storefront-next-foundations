@@ -1,0 +1,20 @@
+{
+    "configs": [
+        {
+            "name": "SLAS Client ID",
+            "key": "PUBLIC__app__commerce__api__clientId"
+        },
+        {
+            "name": "Organization ID",
+            "key": "PUBLIC__app__commerce__api__organizationId"
+        },
+        {
+            "name": "Short Code",
+            "key": "PUBLIC__app__commerce__api__shortCode"
+        },
+        {
+            "name": "Site ID",
+            "key": "PUBLIC__app__defaultSiteId"
+        }
+    ]
+}

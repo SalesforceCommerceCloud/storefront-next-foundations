@@ -1,0 +1,224 @@
+{
+  "name": "@salesforce/storefront-next-runtime",
+  "version": "1.2.0-dev",
+  "description": "Runtime agnostic libraries for SFCC Storefront Next",
+  "type": "module",
+  "exports": {
+    "./design": {
+      "import": {
+        "types": "./dist/design.d.ts",
+        "default": "./dist/design.js"
+      }
+    },
+    "./design/data": {
+      "import": {
+        "types": "./dist/design-data.d.ts",
+        "default": "./dist/design-data.js"
+      }
+    },
+    "./design/messaging": {
+      "import": {
+        "types": "./dist/design-messaging.d.ts",
+        "default": "./dist/design-messaging.js"
+      }
+    },
+    "./design/react": {
+      "import": {
+        "types": "./dist/design-react.d.ts",
+        "default": "./dist/design-react.js"
+      }
+    },
+    "./design/react/core": {
+      "import": {
+        "types": "./dist/design-react-core.d.ts",
+        "default": "./dist/design-react-core.js"
+      }
+    },
+    "./design/mode": {
+      "import": {
+        "types": "./dist/design-mode.d.ts",
+        "default": "./dist/design-mode.js"
+      }
+    },
+    "./design/styles.css": {
+      "import": "./dist/design-styles.css",
+      "require": "./dist/design-styles.css"
+    },
+    "./config": {
+      "import": {
+        "types": "./dist/config.d.ts",
+        "default": "./dist/config.js"
+      }
+    },
+    "./config/load-config": {
+      "import": {
+        "types": "./dist/config-load.d.ts",
+        "default": "./dist/config-load.js"
+      }
+    },
+    "./env": {
+      "import": {
+        "types": "./dist/env.d.ts",
+        "default": "./dist/env.js"
+      }
+    },
+    "./events": {
+      "import": {
+        "types": "./dist/events.d.ts",
+        "default": "./dist/events.js"
+      }
+    },
+    "./data-store": {
+      "import": {
+        "types": "./dist/data-store.d.ts",
+        "default": "./dist/data-store.js"
+      }
+    },
+    "./site-context": {
+      "import": {
+        "types": "./dist/site-context.d.ts",
+        "default": "./dist/site-context.js"
+      }
+    },
+    "./scapi": {
+      "import": {
+        "types": "./dist/scapi.d.ts",
+        "default": "./dist/scapi.js"
+      }
+    },
+    "./routing": {
+      "import": {
+        "types": "./dist/routing.d.ts",
+        "default": "./dist/routing.js"
+      }
+    },
+    "./routing/app-wrapper": {
+      "import": {
+        "types": "./dist/routing-app-wrapper.d.ts",
+        "default": "./dist/routing-app-wrapper.js"
+      }
+    },
+    "./workspace": {
+      "import": {
+        "types": "./dist/workspace.d.ts",
+        "default": "./dist/workspace.js"
+      }
+    },
+    "./i18n": {
+      "import": {
+        "types": "./dist/i18n.d.ts",
+        "default": "./dist/i18n.js"
+      }
+    },
+    "./i18n/client": {
+      "import": {
+        "types": "./dist/i18n-client.d.ts",
+        "default": "./dist/i18n-client.js"
+      }
+    },
+    "./security": {
+      "import": {
+        "types": "./dist/security.d.ts",
+        "default": "./dist/security.js"
+      }
+    },
+    "./security/react": {
+      "import": {
+        "types": "./dist/security-react.d.ts",
+        "default": "./dist/security-react.js"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown && shx cp src/design/styles/base.css dist/design-styles.css",
+    "dev": "tsdown --watch",
+    "typecheck": "tsc --noEmit",
+    "test": "pnpm typecheck && pnpm test:unit",
+    "test:unit": "vitest --run --coverage",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "clean": "shx rm -rf dist",
+    "scapi:generate-types": "openapi-typescript -c ./openapi-specs/redocly.yaml",
+    "scapi:generate-operations": "pnpm dlx tsx scripts/generate-operation-maps.ts",
+    "scapi:generate": "pnpm scapi:generate-types && pnpm scapi:generate-operations",
+    "scapi:update-specs": "pnpm dlx tsx scripts/update-scapi-specs.ts"
+  },
+  "keywords": [
+    "salesforce",
+    "storefront-next",
+    "commerce-cloud",
+    "runtime"
+  ],
+  "author": "cc-pwa-kit@salesforce.com",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@salesforce/mrt-utilities": "0.2.1",
+    "jiti": "^2.6.1",
+    "openapi-fetch": "0.15.0",
+    "zod": "4.1.13"
+  },
+  "devDependencies": {
+    "@react-router/dev": "7.18.0",
+    "@react-router/fs-routes": "7.18.0",
+    "@testing-library/react": "^16.1.0",
+    "@types/node": "^24.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/semver": "^7.5.8",
+    "@vitejs/plugin-react": "5.0.3",
+    "@vitest/coverage-v8": "4.1.8",
+    "happy-dom": "20.8.9",
+    "i18next": "25.5.3",
+    "i18next-browser-languagedetector": "8.2.0",
+    "openapi-typescript": "7.10.1",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-i18next": "16.0.0",
+    "react-router": "7.18.0",
+    "remix-i18next": "7.4.2",
+    "shx": "^0.4.0",
+    "tsdown": "^0.15.4",
+    "typescript": "^5.6.0",
+    "vitest": "4.1.8"
+  },
+  "peerDependencies": {
+    "@react-router/dev": ">=7.0.0",
+    "@react-router/fs-routes": ">=7.0.0",
+    "i18next": ">=25.0.0",
+    "i18next-browser-languagedetector": ">=8.0.0",
+    "react": ">=19.0.0",
+    "react-dom": ">=19.0.0",
+    "react-i18next": ">=16.0.0",
+    "react-router": ">=7.0.0",
+    "remix-i18next": ">=7.0.0"
+  },
+  "peerDependenciesMeta": {
+    "@react-router/dev": {
+      "optional": true
+    },
+    "@react-router/fs-routes": {
+      "optional": true
+    },
+    "i18next": {
+      "optional": true
+    },
+    "i18next-browser-languagedetector": {
+      "optional": true
+    },
+    "react-i18next": {
+      "optional": true
+    },
+    "remix-i18next": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

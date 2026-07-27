@@ -1,0 +1,1559 @@
+{
+    "actionCard": {
+        "edit": "Redigera",
+        "remove": "Ta bort"
+    },
+    "categoryRefinements": {
+        "appliedFilters": "Tillämpade filter:",
+        "clearAll": "Rensa alla",
+        "filtersButtonLabel": "Filter",
+        "filtersButtonLabelWithCount": "{{label}}, {{count}} vald/valda",
+        "noFilterOptionsAvailable": "Inga filteralternativ tillgängliga."
+    },
+    "common": {
+        "loading": "Läser in",
+        "loadingMore": "Läser in fler ...",
+        "product": "produkten",
+        "noImageAvailable": "Ingen bild tillgänglig",
+        "productGeneric": "Produkt",
+        "noProductsFound": "Inga produkter hittades",
+        "productCarousel": "Produktkarusell",
+        "productImageAlt": "Produktbild",
+        "suggestionImageAlt": "Bildförslag",
+        "hero": {
+            "defaultTitle": "Handla nu",
+            "defaultCtaText": "Handla nu"
+        },
+        "previousImage": "Föregående bild",
+        "nextImage": "Nästa bild"
+    },
+    "search": {
+        "results": "Sökresultat för",
+        "suggestions": {
+            "didYouMean": "Menade du",
+            "categories": "Kategorier",
+            "products": "Produkter",
+            "popularSearches": "Populära sökningar",
+            "recentSearches": "Senaste sökningar",
+            "clearRecentSearches": "Ta bort senaste sökningar",
+            "viewAll": "Visa alla"
+        }
+    },
+    "customer": {
+        "defaults": {
+            "guestFirstName": "Gäst",
+            "guestLastName": "Användare",
+            "defaultAddressName": "Hem",
+            "defaultBillingAddressName": "Fakturering"
+        },
+        "messages": {
+            "currentUserRecommendation": "Använda din kontoinformation",
+            "guestRecommendation": "Fortsätter som gäst. Du kan logga in senare om du har ett konto."
+        }
+    },
+    "removeItem": {
+        "success": "Artikeln har tagits bort.",
+        "failed": "Det gick inte att ta bort artikeln.",
+        "title": "Ta bort artikel",
+        "button": "Ta bort",
+        "removing": "Tar bort ...",
+        "confirmTitle": "Bekräfta att du vill ta bort artikeln",
+        "cancelButton": "Nej, behåll artikeln",
+        "keepItemButton": "Behåll artikel",
+        "confirmAction": "Ja, ta bort artikeln",
+        "keepItemAriaLabel": "Behåll artikel – behåll artikeln i kundvagnen",
+        "removeItemAriaLabel": "Ta bort artikel – ta bort artikeln från varukorgen"
+    },
+    "editItem": {
+        "title": "Redigera artikel i kundvagnen",
+        "quickAddTitle": "Snabbtillägg",
+        "loadError": "Det gick inte att ladda produktinformation. Försök igen.",
+        "retry": "Försök igen",
+        "loadingProduct": "Laddar ..."
+    },
+    "header": {
+        "logoAlt": "Hem",
+        "openChat": "Öppen chatt",
+        "searchPlaceholder": "Sök",
+        "welcomeBack": "Välkommen tillbaka!",
+        "signIn": "Logga in",
+        "signOut": "Logga ut",
+        "signingOut": "Loggar ut ...",
+        "cartTitle": "Min kundvagn",
+        "checkout": "Kassa",
+        "continueShopping": "Fortsätt handla",
+        "openMenu": "Öppna menyn",
+        "closeMenu": "Stäng menyn",
+        "mobileNavigation": "Navigeringsmeny för mobil",
+        "expandCategory": "Expandera {{category}}",
+        "collapseCategory": "Minimera {{category}}",
+        "menu": {
+            "yourLists": "Dina listor",
+            "yourAccount": "Ditt konto",
+            "savedItems": "Sparade artiklar",
+            "overview": "Översikt",
+            "addressBook": "Adressbok",
+            "paymentMethods": "Betalningsmetoder",
+            "signInForBestExperience": "Logga in för bästa möjliga upplevelse",
+            "newCustomer": "Är du ny kund?",
+            "createAccount": "Skapa konto"
+        }
+    },
+    "login": {
+        "title": "Logga in på ditt konto",
+        "subtitle": "Ange dina inloggningsuppgifter för att komma åt ditt konto",
+        "continueWithProvider": "Fortsätt med {{provider}}",
+        "checkEmailTitle": "Kontrollera din e-post",
+        "checkEmailDescription": "Vi har skickat en inloggningslänk till {{email}}. Klicka på länken för att logga in.",
+        "backToLogin": "Tillbaka till inloggning",
+        "emailLabel": "E-postadress",
+        "emailPlaceholder": "Ange din e-postadress",
+        "passwordLabel": "Lösenord",
+        "passwordPlaceholder": "Ange ditt lösenord",
+        "loginWithoutPassword": "Logga in utan lösenord",
+        "loginWithPassword": "Logga in med lösenord",
+        "forgotPassword": "Har du glömt ditt lösenord?",
+        "noAccountQuestion": "Har du inget konto? ",
+        "signUp": "Registrera dig",
+        "signingIn": "Loggar in ...",
+        "sendLoginLink": "Skicka inloggningslänk",
+        "sendingLoginLink": "Skickar inloggningslänk ...",
+        "signIn": "Logga in",
+        "socialOrContinueWith": "Eller fortsätt med",
+        "otpCodeLabel": "Verifieringskod",
+        "redirecting": "Loggar in ...",
+        "otpModalTitle": "Ange verifieringskod",
+        "otpModalDescription": "Vi har skickat en {{otpLength}}-siffrig kod till {{email}}",
+        "otpRequired": "Verifieringskod krävs",
+        "otpInvalidFormat": "Ange en giltig {{otpLength}}-siffrig kod",
+        "verifying": "Verifierar ...",
+        "checkoutAsGuest": "Betala som gäst",
+        "resendCode": "Skicka kod igen",
+        "resendCodeTimer": "Skickar igen om {{timer}} sek",
+        "resendCodeError": "Det gick inte att skicka koden igen. Försök igen."
+    },
+    "resetPassword": {
+        "title": "Återställ lösenord",
+        "subtitle": "Ange din e-postadress för att få instruktioner om hur du återställer ditt lösenord",
+        "checkEmailTitle": "Kontrollera din e-post",
+        "checkEmailDescription": "Inom kort får du ett e-postmeddelande på adressen {{email}} med en länk för att återställa ditt lösenord.",
+        "backToSignIn": "Tillbaka till inloggning",
+        "emailLabel": "E-postadress",
+        "emailPlaceholder": "Ange din e-postadress",
+        "or": "eller ",
+        "goBackToLogin": "gå tillbaka till inloggningssidan",
+        "emailRequired": "E-postadress krävs.",
+        "newPasswordRequired": "Nytt lösenord krävs.",
+        "confirmPasswordRequired": "Bekräfta lösenord krävs.",
+        "sendingEmail": "Skickar e-post ...",
+        "resetButton": "Återställ lösenord",
+        "landingTitle": "Ange nytt lösenord",
+        "landingSubtitle": "Ange ditt nya lösenord nedan",
+        "newPasswordLabel": "Nytt lösenord",
+        "newPasswordPlaceholder": "Skapa ett säkert lösenord",
+        "confirmPasswordLabel": "Bekräfta lösenord",
+        "confirmPasswordPlaceholder": "Bekräfta ditt lösenord",
+        "passwordsMustMatch": "Lösenorden måste stämma överens",
+        "resetPasswordButton": "Återställ lösenord",
+        "resettingPassword": "Återställer lösenord ...",
+        "invalidToken": "Ogiltig eller utgången återställningslänk. Begär en ny.",
+        "resetSuccess": "Lösenordet har återställts! Loggar in dig ...",
+        "resetSuccessToast": "Lösenordet har återställts! Logga in med ditt nya lösenord."
+    },
+    "signup": {
+        "title": "Skapa ett konto",
+        "subtitle": "Gå med och börja handla idag",
+        "haveAccountQuestion": "Har du ett konto? ",
+        "signIn": "Logga in",
+        "allFieldsRequired": "Alla fält är obligatoriska.",
+        "passwordsDoNotMatch": "Lösenorden stämmer inte överens.",
+        "passwordNotSecure": "Lösenordet uppfyller inte säkerhetskraven.",
+        "form": {
+            "firstNameLabel": "Förnamn",
+            "firstNamePlaceholder": "Ange ditt förnamn",
+            "lastNameLabel": "Efternamn",
+            "lastNamePlaceholder": "Ange ditt efternamn",
+            "emailLabel": "E-postadress",
+            "emailPlaceholder": "Ange din e-postadress",
+            "passwordLabel": "Lösenord",
+            "passwordPlaceholder": "Skapa ett säkert lösenord",
+            "confirmPasswordLabel": "Bekräfta lösenord",
+            "confirmPasswordPlaceholder": "Bekräfta ditt lösenord",
+            "createAccountButton": "Skapa konto"
+        },
+        "passwordRequirements": {
+            "title": "Lösenordskrav:",
+            "minLength": "Minst 8 tecken",
+            "hasUppercase": "En stor bokstav",
+            "hasLowercase": "En liten bokstav",
+            "hasNumber": "En siffra",
+            "hasSpecialChar": "Ett specialtecken (, ! % # @ $ & * osv.)"
+        }
+    },
+    "socialCallback": {
+        "socialError": "Den sociala inloggningen avbröts eller misslyckades. Försök igen."
+    },
+    "errors": {
+        "genericTryAgain": "Något gick fel. Försök igen.",
+        "somethingWentWrong": "Något gick fel. Försök igen.",
+        "loginFailed": "Inloggningen misslyckades. Kontrollera dina inloggningsuppgifter.",
+        "accessTokenRefreshFailed": "Det gick inte att hämta den uppdaterade åtkomsttoken.",
+        "guestAccessTokenFailed": "Det gick inte att hämta den nya åtkomsttoken.",
+        "codeVerifierMissing": "Kodverifieraren hittades inte i sessionen.",
+        "missingRegistrationField": "Kundregistreringen saknar obligatoriskt fält.",
+        "autoLoginAfterRegistrationFailed": "Automatisk inloggning efter registrering misslyckades.",
+        "methodNotAllowed": "Metoden är inte tillåten.",
+        "featureUnavailable": "Denna funktion är för närvarande inte tillgänglig. Kontakta supporten.",
+        "tooManyLoginAttempts": "Du har nått gränsen för antal inloggningsförsök. Vänta 10 minuter och försök igen.",
+        "tooManyPasswordResetAttempts": "Du har nått gränsen för återställning av lösenord. Vänta 10 minuter och försök igen.",
+        "invalidToken": "Verifieringskoden är ogiltig. Försök igen.",
+        "expiredToken": "Verifieringskoden har löpt ut. Begär en ny.",
+        "promoCodeRequired": "Kampanjkod krävs.",
+        "couponItemIdRequired": "Kupongens artikel-ID krävs.",
+        "noBasketFound": "Ingen korg hittades.",
+        "noCustomerFound": "Ingen kund hittades i sessionen",
+        "api": {
+            "orderNotFound": "Beställningen hittades inte. Kontrollera beställningsnumret och försök igen.",
+            "basketNotFound": "Varukorgen hittades inte. Uppdatera sidan och försök igen.",
+            "basketQuotaExceeded": "Maximalt antal korgar har överskridits. Använd din befintliga korg.",
+            "paymentFailed": "Betalningen misslyckades. Kontrollera din betalningsinformation och försök igen.",
+            "paymentInformationRequired": "Betalningsinformation krävs för att slutföra din beställning.",
+            "unableToLoadCustomerProfile": "Det går inte att ladda din profil. Uppdatera sidan och försök igen.",
+            "inventoryUnavailable": "Vissa artiklar i din kundvagn är inte längre tillgängliga. Granska din kundvagn.",
+            "invalidOrderData": "Ogiltiga beställningsdata. Kontrollera dina kassauppgifter och försök igen.",
+            "shippingAddressRequired": "Leveransadress krävs för att fortsätta.",
+            "billingAddressRequired": "Faktureringsadress krävs för att slutföra din beställning.",
+            "networkError": "Nätverksfel. Kontrollera din anslutning och försök igen.",
+            "serverError": "Serverfel. Försök igen senare.",
+            "unauthorized": "Din session har löpt ut. Logga in igen.",
+            "badRequest": "Ogiltig begäran. Kontrollera din information och försök igen.",
+            "forbidden": "Åtkomst nekad. Du har inte behörighet att utföra den här åtgärden.",
+            "timeout": "Tidsgräns för begäran uppnådd. Försök igen.",
+            "unexpectedError": "Ett oväntat fel inträffade."
+        },
+        "validation": {
+            "required": "Detta fält är obligatoriskt.",
+            "invalidEmail": "Ange en giltig e-postadress.",
+            "invalidCreditCard": "Ange ett giltigt kreditkortsnummer.",
+            "invalidExpiryDate": "Ange ett giltigt utgångsdatum.",
+            "invalidCvv": "Ange en giltig CVV-kod.",
+            "minLength": "Detta fält måste innehålla minst {{min}} tecken.",
+            "maxLength": "Detta fält får inte innehålla mer än {{max}} tecken.",
+            "invalidPhoneNumber": "Ange ett giltigt telefonnummer.",
+            "invalidPostalCode": "Ange ett giltigt postnummer."
+        },
+        "checkout": {
+            "noActiveBasket": "Ingen aktiv korg hittades. Uppdatera sidan och försök igen.",
+            "basketCalculationFailed": "Det gick inte att beräkna beställningens totalbelopp. Försök igen.",
+            "orderCreationFailed": "Det gick inte att skapa beställning. Försök igen.",
+            "paymentProcessingFailed": "Betalningsbehandlingen misslyckades. Försök igen.",
+            "shippingMethodNotAvailable": "Den valda fraktmetoden är inte tillgänglig. Välj ett annat alternativ.",
+            "shippingMethodRequired": "Välj en fraktmetod för att fortsätta.",
+            "addressValidationFailed": "Det gick inte att bekräfta adressen. Kontrollera din adress och försök igen.",
+            "promoCodeInvalid": "Ogiltig kampanjkod. Kontrollera och försök igen.",
+            "stockNotAvailable": "Otillräckligt lager för en eller flera artiklar i din kundvagn."
+        },
+        "customer": {
+            "addressIdRequired": "Adressnamn krävs för kundadress.",
+            "countryCodeRequired": "Landskod krävs för kundadress.",
+            "addressLine1Required": "Adressrad 1 krävs för kundadress.",
+            "cityRequired": "Ort krävs för kundadress.",
+            "firstNameRequired": "Förnamn krävs för kundadress.",
+            "lastNameRequired": "Efternamn krävs för kundadress.",
+            "postalCodeRequired": "Postnummer krävs för kundadress.",
+            "invalidEmailFormat": "Ogiltigt e-postformat",
+            "customerLookupUnavailable": "Kundsökning är inte tillgänglig.",
+            "registrationFailed": "Registreringen misslyckades. Försök igen.",
+            "autoLoginFailed": "Automatisk inloggning misslyckades. Logga in manuellt.",
+            "autoLoginAfterRegistrationFailed": "Konto skapades men automatisk inloggning misslyckades. Logga in manuellt.",
+            "notAuthenticated": "Kund-ID hittades inte."
+        },
+        "passwordless": {
+            "missingToken": "Token saknas.",
+            "missingCallbackToken": "Rubriken x-slas-callback-token saknas.",
+            "missingRequiredFields": "Saknar obligatoriska fält: email_id och token."
+        },
+        "jwks": {
+            "missingEnvironmentVariables": "Saknar nödvändig konfiguration: shortCode och organizationId.",
+            "invalidResponse": "Ogiltigt JWKS-svar: nyckelmatris saknas eller är ogiltig.",
+            "unknownError": "Okänt fel inträffade."
+        },
+        "marketing": {
+            "clientIdMissing": "MARKETING_CLOUD_CLIENT_ID är inte inställd i miljövariablerna.",
+            "clientSecretMissing": "MARKETING_CLOUD_CLIENT_SECRET är inte inställd i miljövariablerna.",
+            "subdomainMissing": "MARKETING_CLOUD_SUBDOMAIN är inte inställd i miljövariablerna.",
+            "templateIdMissing": "MARKETING_CLOUD_PASSWORDLESS_LOGIN_TEMPLATE är inte inställd i miljövariablerna."
+        }
+    },
+    "quantitySelector": {
+        "quantity": "Kvantitet:",
+        "decreaseQuantity": "Minska kvantiteten",
+        "increaseQuantity": "Öka kvantiteten",
+        "decreaseQuantityForProduct": "Minska kvantitet för {{productName}}",
+        "increaseQuantityForProduct": "Öka kvantitet för {{productName}}",
+        "quantityInput": "Kvantitet",
+        "quantityUpdated": "Kvantitet uppdaterad",
+        "quantityUpdateFailed": "Det gick inte att uppdatera kvantitet",
+        "onlyLeft": "Det finns bara {{stockLevel}} kvar!",
+        "onlyLeftForProduct": "Det finns bara {{stockLevel}} kvar av {{productName}}!",
+        "maxStockReached": "Maximal lagergräns uppnådd",
+        "insufficientStock": "Otillräckligt lager"
+    },
+    "cart": {
+        "title": "Kundvagn",
+        "delivery": {
+            "heading": "Leverans – {{deliveryCount}} av {{totalCount}} artiklar",
+            "heading_one": "Delivery - {{deliveryCount}} out of {{count}} item",
+            "heading_other": "Delivery - {{deliveryCount}} out of {{count}} items"
+        },
+        "itemCount_zero": "Kundvagn (0 artiklar)",
+        "itemCount_one": "Kundvagn (1 artikel)",
+        "itemCount_other": "Kundvagn ({{count}} artiklar)",
+        "empty": {
+            "title": "Din kundvagn är tom.",
+            "registeredMessage": "Fortsätt handla för att lägga till artiklar i din kundvagn.",
+            "guestMessage": "Logga in för att hämta dina sparade artiklar eller fortsätt handla.",
+            "continueShopping": "Fortsätt handla",
+            "signIn": "Logga in"
+        },
+        "summary": {
+            "orderSummary": "Beställningssammanfattning",
+            "showOrderSummary": "Visa beställningsöversikt",
+            "mobileHeadingTotal_one": "Totalt (1 artikel)",
+            "mobileHeadingTotal_other": "Totalt ({{count}} artiklar)",
+            "subtotal": "Delsumma",
+            "shipping": "Frakt",
+            "shippingPromotionApplied": "(Kampanjerbjudande tillämpat)",
+            "shippingFree": "GRATIS",
+            "shippingTbd": "Inte fastställt",
+            "tax": "Skatt",
+            "taxTbd": "Inte fastställt",
+            "estimatedTotal": "Beräknad totalsumma",
+            "orderTotal": "Beställning totalt",
+            "noBasketData": "Ingen korginformation tillgänglig",
+            "mobileHeading_one": "Estimated Total (1 item)",
+            "mobileHeading_other": "Estimated Total ({{count}} items)"
+        },
+        "promoCode": {
+            "label": "Kampanjkod",
+            "placeholder": "Kampanjkod ...",
+            "apply": "Tillämpa",
+            "applying": "Tillämpar ...",
+            "remove": "Ta bort",
+            "removing": "Tar bort ...",
+            "accordionTitle": "Har du en kampanjkod?",
+            "successMessage": "Kampanjerbjudandet tillämpades.",
+            "errorMessage": "Kontrollera koden och försök igen. Kampanjerbjudandet kan redan ha tillämpas eller så har det löpt ut.",
+            "removeSuccessMessage": "Kampanjerbjudandet togs bort.",
+            "removeErrorMessage": "Det gick inte att ta bort kampanjerbjudandet",
+            "noBasketMessage": "Ingen korg tillgänglig",
+            "requiredMessage": "Kampanjkod krävs.",
+            "validation": {
+                "minLength": "Kampanjkoden måste bestå av minst 2 tecken."
+            },
+            "errors": {
+                "invalidCode": "Kupongkoden ”{{code}}” är ogiltig.",
+                "expiredCode": "Denna kampanjkod har löpt ut.",
+                "alreadyApplied": "Denna kampanjkod är redan tillämpad.",
+                "notApplicable": "Denna kampanjkod går inte att använda med din kundvagn.",
+                "generic": "Det går inte att använda kampanjkoden. Kontrollera koden och försök igen."
+            }
+        },
+        "items": {
+            "itemsInCart_zero": "0 artiklar i kundvagnen",
+            "itemsInCart_one": "1 artikel i kundvagnen",
+            "itemsInCart_other": "{{count}} artiklar i kundvagnen",
+            "editCart": "Redigera kundvagn"
+        },
+        "checkout": {
+            "proceedToCheckout": "Fortsätt till kassan",
+            "secure": "Säker"
+        },
+        "attributes": {
+            "quantity": "Antal:",
+            "promotions": "Kampanjerbjudanden:"
+        },
+        "product": {
+            "defaultName": "Produktnamn"
+        },
+        "removeItemConfirmDescription": "Är du säker på att du vill ta bort den här artikeln från din kundvagn?",
+        "itemIdRequired": "Artikel-ID krävs.",
+        "noBasketIdFound": "Inget korg-ID hittades.",
+        "discount": {
+            "type": {
+                "free": "gratis"
+            }
+        },
+        "badge": {
+            "ariaLabel": "Min kundvagn, antal artiklar: {{count}}"
+        },
+        "bundle": {
+            "selectedOptions": "Valda alternativ"
+        },
+        "bonusProducts": {
+            "selectBonusProducts": "Välj bonusprodukter i varukorgen",
+            "addedToCart": "Bonusprodukt tillagd i kundvagnen",
+            "failedToAdd": "Det gick inte att lägga till bonusprodukt: {{error}}",
+            "missingRequiredInfo": "Nödvändig information saknas"
+        }
+    },
+    "checkout": {
+        "contactInfo": {
+            "title": "Kontaktuppgifter",
+            "emailLabel": "E-postadress",
+            "emailPlaceholder": "E-postadress",
+            "emailRequired": "Ange din e-postadress.",
+            "emailInvalid": "Ange en giltig e-postadress.",
+            "countryCodeLabel": "Kod",
+            "phoneLabel": "Telefonnummer",
+            "phoneFormatDescription": "10-siffrigt telefonnummer",
+            "phoneRequired": "Ange ditt telefonnummer.",
+            "phoneInvalid": "Ange ett giltigt telefonnummer.",
+            "notProvided": "Ej angett än",
+            "loginSuggestion": "💡 Har du ett konto? Du kan fortsätta som gäst eller ",
+            "loginSuggestionLink": "logga in för en snabbare kassaupplevelse",
+            "usingRegisteredAccount": "✓ Använda ditt registrerade konto",
+            "continue": "Fortsätt till fraktadress",
+            "saving": "Sparar ...",
+            "lookupFallbackMessage": "Kundsökningen misslyckades. Fortsätter som gäst.",
+            "saveError": "Det gick inte att spara kontaktinformation",
+            "sessionExpired": "Sessionen har löpt ut. Logga in igen."
+        },
+        "addressModal": {
+            "title": "Lägg till ny adress",
+            "editTitle": "Redigera adress",
+            "description": "Fyll i din fraktadress i formuläret nedan.",
+            "editDescription": "Uppdatera din fraktadress i formuläret nedan.",
+            "cancel": "Avbryt",
+            "save": "Spara",
+            "saving": "Sparar ..."
+        },
+        "shippingAddress": {
+            "title": "Fraktadress",
+            "changeLabel": "Redigera",
+            "selectSavedAddress": "Välj en sparad adress",
+            "viewAllLink": "Visa alla",
+            "viewAllMore": "({{count}} till)",
+            "viewLessAddresses": "Visa färre",
+            "addNewAddressButton": "Lägg till ny adress",
+            "editAddressLink": "Redigera adress",
+            "defaultBadge": "Standard",
+            "firstNameRequired": "Ange ditt förnamn.",
+            "lastNameRequired": "Ange ditt efternamn.",
+            "addressRequired": "Ange din adress.",
+            "cityRequired": "Ange din ort.",
+            "stateRequired": "Välj din delstat.",
+            "postalCodeRequired": "Ange ditt postnummer.",
+            "continue": "Fortsätt till fraktmetod",
+            "saving": "Sparar ...",
+            "saved": "Leveransadress sparad",
+            "failed": "Det gick inte att spara leveransadress",
+            "confirmed": "Leveransadress bekräftad",
+            "notProvided": "Leveransadressen har ännu inte angetts",
+            "completePreviousSteps": "Slutför föregående steg för att fortsätta"
+        },
+        "addressForm": {
+            "firstNameLabel": "Förnamn",
+            "firstNamePlaceholder": "Förnamn",
+            "lastNameLabel": "Efternamn",
+            "lastNamePlaceholder": "Efternamn",
+            "countryLabel": "Land",
+            "addressLabel": "Adressrad 1",
+            "addressPlaceholder": "Adressrad 1",
+            "address2Label": "Adressrad 2",
+            "address2Placeholder": "Adressrad 2",
+            "cityLabel": "Ort",
+            "cityPlaceholder": "Ort",
+            "stateLabel": "Delstat",
+            "statePlaceholder": "Delstat",
+            "provinceLabel": "Provins",
+            "provincePlaceholder": "Provins",
+            "zipLabel": "Postnummer",
+            "zipPlaceholder": "Postnummer",
+            "postalCodeLabel": "Postnummer",
+            "postalCodePlaceholder": "Postnummer",
+            "codeLabel": "Kod",
+            "phoneLabel": "Telefonnummer"
+        },
+        "shippingOptions": {
+            "title": "Fraktmetod",
+            "giftWrappingLabel": "Skicka som present (presentförpackning)",
+            "giftWrappingDescription": "Du kan när som helst aktivera eller inaktivera presentalternativ.",
+            "selectRequired": "Välj en fraktmetod",
+            "saving": "Sparar ...",
+            "continue": "Fortsätt till betalning",
+            "completePreviousSteps": "Slutför föregående steg för att fortsätta",
+            "enterAddressFirst": "Ange din leveransadress för att se tillgängliga fraktmetoder.",
+            "arrives": "Levereras: {{estimatedArrivalTime}}",
+            "free": "Gratis",
+            "noMethodsAvailable": "Inga leveransmetoder tillgängliga",
+            "noMethodsAvailableHelp": "Kontrollera att din fraktadress är fullständig och försök igen.",
+            "deliveryWindow": "Arrives {{window}}"
+        },
+        "payment": {
+            "title": "Betalning",
+            "changeLabel": "Redigera",
+            "methodTitle": "Betalningsmetod",
+            "savedMethodDescription": "Välj en sparad betalningsmetod eller lägg till en ny",
+            "addNewPaymentMethod": "Lägg till ny betalningsmetod",
+            "creditCardOption": "Kreditkort",
+            "newPaymentMethodTitle": "Ny betalningsmetod",
+            "cardholderLabel": "Kortinnehavarens namn",
+            "nameOnCardLabel": "Namn på kortet*",
+            "cardholderPlaceholder": "Namn på kortet*",
+            "cardholderRequired": "Kortinnehavarens namn krävs.",
+            "cardNumberLabel": "Kortnummer*",
+            "cardNumberPlaceholder": "Kortnummer*",
+            "cardNumberRequired": "Kortnummer krävs.",
+            "cardNumberInvalid": "Ange ett giltigt kortnummer.",
+            "cardNumberInvalidLength": "Ange ett giltigt kortnummer (13–19 siffror).",
+            "expiryLabel": "mm/åå*",
+            "expiryPlaceholder": "mm/åå*",
+            "expiryRequired": "Utgångsdatum krävs",
+            "expiryInvalid": "Ange ett giltigt utgångsdatum (MM/ÅÅ)",
+            "cvvHelp": "3–4 siffror på baksidan av ditt kort",
+            "cvvShow": "Visa CVV",
+            "cvvHide": "Dölj CVV",
+            "cvvRequired": "CVV-nummer krävs",
+            "cvvInvalid": "Ange en giltig CVV-kod",
+            "cvvInvalidFormat": "Ange en giltig CVV-kod (3–4 siffror).",
+            "billingAddressRequired": "Faktureringsadress krävs om den skiljer sig från fraktadressen.",
+            "useDifferentBilling": "Använd en annan faktureringsadress",
+            "useDifferentBillingDescription": "Använd samma adress för fakturering och leverans",
+            "sameAsShippingAddress": "Samma som fraktadress",
+            "selectAnAddress": "Välj en adress",
+            "noBillingAddressSaved": "Ingen faktureringsadress sparad",
+            "continue": "Fortsätt till granskning",
+            "saving": "Sparar ...",
+            "saved": "Betalningsinformation sparad",
+            "failed": "Det gick inte att spara betalningsinformation",
+            "createAccountForFasterCheckout": "Skapa ett konto för en snabbare kassaupplevelse nästa gång",
+            "saveForFutureUse": "Spara för framtida bruk",
+            "unknownCardType": "Okänd",
+            "defaultCardLabel": "Kort",
+            "preferredBadge": "Primär",
+            "defaultBadge": "Standard",
+            "endingIn": "Slutar med {{lastDigits}}",
+            "expiresLabel": "Upphör att gälla {{expiry}}",
+            "summaryLabel": "{{methodLabel}} slutar med {{lastDigits}}",
+            "summarySavedLabel": "Sparad betalningsmetod: {{methodLabel}} slutar med {{lastDigits}}",
+            "noPaymentMethodSaved": "Ingen betalningsmetod sparad",
+            "billingSummaryTitle": "Faktureringsadress",
+            "viewAllMore": "Visa alla ({{count}} till)",
+            "viewLess": "Visa färre",
+            "savePaymentToProfile": "Spara betalningsmetod för framtida användning"
+        },
+        "expressPayments": {
+            "separator": "Eller",
+            "venmoUnavailable": "Venmo är inte tillgängligt på den här enheten."
+        },
+        "common": {
+            "edit": "Redigera",
+            "submitting": "Skickar in",
+            "notProvided": "Uppgift saknas",
+            "backToCart": "Tillbaka till kundvagnen",
+            "emptyCart": "Inga artiklar i kundvagnen. Lägg till artiklar innan du fortsätter till kassan."
+        },
+        "orderSummary": {
+            "title": "Beställningssammanfattning",
+            "toggleLabel": "Visa beställningsöversikt"
+        },
+        "myCart": {
+            "title": "Min kundvagn",
+            "saved": "Sparat belopp: {{amount}}"
+        },
+        "placeOrder": {
+            "button": "Slutför beställning – {{total}}",
+            "processing": "Lägger beställning ...",
+            "success": "Beställningen är slutförd!",
+            "failed": "Ett oväntat fel inträffade vid betalning."
+        },
+        "confirmation": {
+            "title": "Tack för din beställning!",
+            "orderNumber": "Beställningsnummer:",
+            "confirmationEmailSent": "Vi har skickat ett bekräftelsemejl till {{email}}",
+            "orderNotFound": "Beställningen hittades inte",
+            "orderNotFoundDescription": "Vi kunde inte hitta beställningen du letade efter.",
+            "orderNumberRequired": "Beställningsnummer krävs",
+            "sections": {
+                "orderSummary": "Beställningssammanfattning",
+                "shippingDetails": "Fraktuppgifter",
+                "paymentDetails": "Betalningsinformation"
+            },
+            "fields": {
+                "orderNumber": "Beställningsnummer:",
+                "total": "Totalt:",
+                "shippingAddress": "Fraktadress",
+                "shippingMethod": "Fraktmetod",
+                "billingAddress": "Faktureringsadress",
+                "paymentMethod": "Betalningsmetod",
+                "defaultShippingMethod": "Standardfrakt",
+                "defaultPaymentMethod": "Kreditkort",
+                "savedMethodDescription": "Välj en sparad betalningsmetod eller lägg till en ny"
+            },
+            "actions": {
+                "continueShopping": "Fortsätt handla",
+                "viewAccount": "Visa konto"
+            },
+            "hero": {
+                "thankYou": "Tack {{name}}!",
+                "orderConfirmed": "Din beställning är bekräftad.",
+                "emailConfirmation": "Vi har skickat ett bekräftelsemejl till {{email}}.",
+                "needHelp": "Behöver du hjälp?",
+                "defaultName": "Kund",
+                "emailFallback": "din e-postadress"
+            },
+            "helpLinks": {
+                "faq": "VANLIGA FRÅGOR",
+                "contact": "Kontakta oss",
+                "returns": "Returpolicy"
+            },
+            "summaryLabels": {
+                "arriving": "Leverans senast",
+                "shippingAddress": "Fraktadress",
+                "shippingMethod": "Fraktmetod",
+                "noAddress": "Ingen adress tillgänglig",
+                "estimatedDatePlaceholder": "Bearbetas nu",
+                "quantity": "Antal: {{count}}",
+                "freeShipping": "Gratis",
+                "deliveryWindow": "{{window}}"
+            },
+            "totals": {
+                "subtotal": "Delsumma",
+                "promotions": "Kampanjer",
+                "shipping": "Frakt",
+                "tax": "Skatt",
+                "total": "Totalt"
+            },
+            "payment": {
+                "methodSummary": "{{method}} slutar med {{lastDigits}}",
+                "noMethod": "Sparad betalningsmetod"
+            },
+            "newsletter": {
+                "title": "Få 10 % rabatt på nästa beställning. Registrera dig för våra e-postutskick",
+                "subtitle": "Få information om produktsläpp och exklusiva erbjudanden.",
+                "placeholder": "E-postadress",
+                "cta": "Registrera dig"
+            },
+            "summaryTitle": "Översikt",
+            "emptyItemsFallback": "Dina artiklar behandlas.",
+            "productPlaceholderInitial": "Artikel"
+        },
+        "errorBoundary": {
+            "title": "Kassan är tillfälligt otillgänglig",
+            "description": "Kassan har tekniska problem. Dina artiklar i kundvagnen har sparats.",
+            "tryAgain": "Försök igen",
+            "returnToCart": "Gå tillbaka till kundvagnen",
+            "componentError": {
+                "title": "Komponenten är tillfälligt otillgänglig",
+                "description": "Detta avsnitt kunde inte laddas ordentligt. Du kan fortsätta till kassan eller försöka uppdatera sidan.",
+                "tryAgain": "Försök igen"
+            }
+        },
+        "registration": {
+            "emailNotFound": "E-postadress krävs för att skapa ett konto. Ange din e-postadress under kontaktinformation.",
+            "initiationFailed": "Det gick inte att skicka verifieringskoden. Försök igen.",
+            "sendingVerificationCode": "Skickar verifieringskod ...",
+            "accountCreatedSuccess": "Konto skapat!",
+            "checkboxExpandedDescription": "När du gör din beställning skapar vi ett konto åt dig och sparar din betalningsinformation och andra uppgifter för framtida köp. Nästa gång du handlar kan du bekräfta ditt konto med den kod som vi skickar till dig.",
+            "accountCreatedTitle": "Konto skapat",
+            "verified": "Verifierat",
+            "accountCreatedDescription": "Vi har skapat och verifierat ditt konto med hjälp av informationen från din beställning. Nästa gång du handlar anger du bara koden som vi skickar för att logga in – inget lösenord behövs.",
+            "accountCreationLabel": "Skapande av konto",
+            "accountWillBeCreated": "Ett konto kommer att skapas",
+            "continueAsGuest": "Fortsätt som gäst"
+        }
+    },
+    "account": {
+        "title": "Kontouppgifter",
+        "subtitle": "Hantera din personliga information",
+        "myAccount": "Mitt konto",
+        "navigation": {
+            "overview": "Översikt",
+            "accountDetails": "Kontouppgifter",
+            "wishlist": "Önskelista",
+            "orderHistory": "Beställningshistorik",
+            "addresses": "Adresser",
+            "manageAddresses": "Hantera adresser",
+            "paymentMethods": "Betalningsmetoder",
+            "storePreferences": "Butiksinställningar",
+            "logOut": "Logga ut"
+        },
+        "storePreferences": {
+            "title": "Butiksinställningar",
+            "subtitle": "Hantera dina föredragna butiksplatser och upphämtningsinställningar",
+            "preferredStore": {
+                "heading": "Föredragen butik för upphämtning",
+                "description": "Välj den butik du föredrar för beställningar som hämtas i butik",
+                "changeStore": "Byt butik",
+                "noStoreSelected": "Ingen butik vald. Använd butikslokaliseraren (”hitta butik”) för att välja butiken du föredrar för upphämtning.",
+                "storeHoursTitle": "Butikens öppettider",
+                "error": "Det gick inte att ladda butiksinformation. Försök igen senare."
+            },
+            "authorizedPickupPeople": {
+                "heading": "Behöriga personer för upphämtning",
+                "description": "Lägg till personer som är behöriga att hämta beställningar åt dig.",
+                "addPerson": "Lägg till person",
+                "idNote": "Behöriga personer måste visa upp giltig legitimation som stämmer överens med det registrerade namnet när de hämtar en beställning.",
+                "modal": {
+                    "addTitle": "Lägg till behörig person",
+                    "editTitle": "Redigera behörig person",
+                    "firstName": "Förnamn",
+                    "firstNamePlaceholder": "Förnamn",
+                    "lastName": "Efternamn",
+                    "lastNamePlaceholder": "Efternamn",
+                    "email": "E-postadress",
+                    "relationship": "Relation",
+                    "relationshipPlaceholder": "Välj relation",
+                    "modalNote": "Denna person kommer att vara behörig att hämta ut beställningar åt dig. De måste visa upp giltig legitimation som matchar det angivna namnet när de hämtar ut beställningar.",
+                    "cancel": "Avbryt",
+                    "save": "Spara",
+                    "firstNameRequired": "Förnamn är obligatoriskt.",
+                    "firstNameMax": "Förnamnet får bestå av högst 50 tecken.",
+                    "lastNameRequired": "Efternamn är obligatoriskt.",
+                    "lastNameMax": "Efternamnet får bestå av högst 50 tecken.",
+                    "emailRequired": "E-postadress krävs.",
+                    "emailInvalid": "Ange en giltig e-postadress.",
+                    "emailMax": "E-postadress får bestå av högst 100 tecken.",
+                    "relationshipRequired": "Välj en relation."
+                },
+                "statusActive": "Aktiv",
+                "relationshipLabel": "Relation: {{relationship}}",
+                "edit": "Redigera",
+                "delete": "Ta bort",
+                "emptyState": "Inga behörig person för upphämtning än. Lägg till någon som kan hämta beställningar åt dig.",
+                "deleteConfirmTitle": "Ta bort behörig person",
+                "deleteConfirmDescription": "Är du säker på att du vill ta bort {{name}}? De kommer inte längre att kunna hämta ut beställningar åt dig.",
+                "deleteConfirmCancel": "Avbryt",
+                "deleteConfirmRemove": "Ta bort",
+                "relationships": {
+                    "spouse": "Make/maka",
+                    "familyMember": "Familjemedlem",
+                    "friend": "Vän",
+                    "other": "Annan"
+                }
+            },
+            "pickupPreferences": {
+                "heading": "Inställningar för upphämtning",
+                "description": "Hantera upphämtningsmeddelanden och butiksinställningar",
+                "edit": "Redigera",
+                "save": "Spara",
+                "cancel": "Avbryt",
+                "autoSelectStore": "Välj föredragen butik automatiskt",
+                "autoSelectStoreDescription": "Använd automatiskt din föredragna butik för upphämtning av beställningar",
+                "pickupNotifications": "Upphämtningsmeddelanden",
+                "pickupNotificationsDescription": "Få ett meddelande när din beställning är klar för upphämtning",
+                "storeEventsPromotions": "Butiksevent och kampanjerbjudanden",
+                "storeEventsPromotionsDescription": "Få uppdateringar om evenemang och kampanjer i din föredragna butik",
+                "saveSuccess": "Upphämtningsinställningarna sparade"
+            }
+        },
+        "overview": {
+            "welcomeBack": "Välkommen tillbaka, {{name}}!",
+            "welcomeSubtitle": "Hantera ditt konto, visa beställningar och upptäck personliga rekommendationer.",
+            "defaultName": "där",
+            "quickLinks": {
+                "title": "Snabblänkar",
+                "orderHistoryDesc": "Spåra dina beställningar",
+                "wishlistDesc": "Föremål som du har sparat",
+                "addressesDesc": "Hantera dina adresser",
+                "paymentMethodsDesc": "Hantera dina betalningsmetoder"
+            },
+            "curatedForYou": {
+                "title": "Utvalt för dig",
+                "subtitle": "Handplockade baserat på din aktivitet"
+            },
+            "appDownload": {
+                "title": "Ladda ner vår app",
+                "description": "Få den bästa shoppingupplevelsen när du är på språng. Få tillgång till exklusiva erbjudanden, spåra beställningar och handla snabbare.",
+                "qrCode": "QR-kod"
+            }
+        },
+        "shopperAgentEntry": {
+            "title": "Behöver du hjälp?",
+            "description": "Vi hjälper dig gärna om du har några frågor eller funderingar",
+            "askQuestion": "Ställ en fråga",
+            "contactInfo": "Kontaktuppgifter",
+            "browseFaq": "Bläddra bland vanliga frågor"
+        },
+        "wishlist": {
+            "pageTitle": "Min önskelista",
+            "pageSubtitle": "Dina sparade artiklar",
+            "savedItems": "Sparade artiklar",
+            "emptyTitle": "Denna önskelista är tom",
+            "emptySubtitle": "Börja lägga till artiklar i din önskelista!",
+            "itemCount_one": "{{count}} sparad artikel",
+            "itemCount_other": "{{count}} sparade artiklar",
+            "empty": "Din önskelista är tom. Börja lägga till artiklar som du gillar!",
+            "wishlistName": "Önskelista",
+            "failedToCreate": "Det gick inte att skapa önskelista: listId inte tillgänglig efter skapandet.",
+            "unableToRetrieveId": "Det gick inte att hämta önskelistans ID. Försök igen.",
+            "notFound": "Önskelistan hittades inte",
+            "idNotFound": "Önskelistans ID hittades inte",
+            "itemNotFound": "Artikeln hittades inte i önskelistan",
+            "mustLoginToAdd": "Du måste vara inloggad för att kunna lägga till artiklar i din önskelista.",
+            "mustLoginToRemove": "Du måste vara inloggad för att ta bort artiklar från din önskelista.",
+            "sortBy": "Sortera efter",
+            "sort": {
+                "recentlyAdded": "Nyligen tillagda",
+                "nameAZ": "Namn (A–Ö)",
+                "priceLow": "Pris: Lågt till högt",
+                "priceHigh": "Pris: Högt till lågt"
+            },
+            "filterBy": "Filtrera efter",
+            "filter": {
+                "all": "Alla artiklar",
+                "inStock": "Finns i lager",
+                "outOfStock": "Finns inte i lager",
+                "onSale": "Rea"
+            },
+            "noFilterResults": "Inga artiklar matchar ditt filter."
+        },
+        "orders": {
+            "empty": "Du har gjort någon beställning ännu. När du har gjort en beställning kommer informationen att visas här.",
+            "continueShopping": "Fortsätt handla",
+            "errorDescription": "Vi stötte på ett fel vid inläsningen av din beställningshistorik. Försök igen senare.",
+            "subtitle": "Visa och spåra dina beställningar",
+            "orderDate": "Beställningsdatum",
+            "total": "Totalt",
+            "items": "Objekt",
+            "pickupLocation": "Upphämtningsplats",
+            "location": "Plats",
+            "address": "Adress",
+            "viewOrderDetails": "Visa beställningsinformation",
+            "tableHeaders": {
+                "orderNumber": "Beställnings-ID",
+                "method": "Metod",
+                "amount": "Belopp",
+                "actions": "Åtgärder"
+            },
+            "viewDetails": "Visa detaljer",
+            "orderDetailsTitle": "Beställning",
+            "orderDetailsPageTitle": "Beställningsinformation",
+            "status": {
+                "created": "Skapades",
+                "new": "Ny",
+                "completed": "Slutförd",
+                "cancelled": "Avbruten",
+                "replaced": "Ersatt",
+                "failed": "Misslyckades"
+            },
+            "shippingStatus": {
+                "notShipped": "Har inte skickats",
+                "partShipped": "Delvis skickad",
+                "shipped": "Har skickats"
+            },
+            "totalOrders_one": "Visar {{count}} beställning",
+            "totalOrders_other": "Visar {{count}} beställningar",
+            "totalOrdersRange": "Visar {{start}}–{{end}} av {{total}} beställningar",
+            "paginationLabel": "Sidnumrering för beställningshistorik",
+            "paginationPrevious": "Föregående sida",
+            "paginationNext": "Nästa sida",
+            "invalidDate": "Ogiltigt datum",
+            "shipmentNumber": "Försändelse {{n}}",
+            "itemsOrdered": "Beställda artiklar",
+            "orderSummary": "Beställningssammanfattning",
+            "backToOrderHistory": "Tillbaka till beställningshistorik",
+            "orderNotFound": "Beställningen hittades inte",
+            "orderNotFoundDescription": "Vi kunde inte hitta beställningen du letade efter.",
+            "buyAgain": "Köp igen",
+            "emptyItemsFallback": "Inga artiklar.",
+            "productPlaceholderInitial": "Artikel",
+            "quantityLabel": "Antal: {{count}}",
+            "trackingNumber": "Spårningsnummer",
+            "shippingAddress": "Fraktadress",
+            "paymentMethod": "Betalningsmetod",
+            "paymentMethodEndingIn": "{{cardType}} som slutar med {{lastDigits}}"
+        },
+        "addresses": {
+            "subtitle": "Hantera dina fraktadresser",
+            "empty": "Lägg till en adress för att göra kassaupplevelsen snabbare!",
+            "noSavedAddresses": "Inga sparade adresser",
+            "addAddress": "Lägg till adress",
+            "addNewAddress": "Lägg till ny adress",
+            "editAddress": "Redigera adress",
+            "preferred": "Primär",
+            "default": "Standard",
+            "setDefault": "Ställ in som standard",
+            "setDefaultSuccess": "Adressen ställdes in som standard.",
+            "setDefaultError": "Det gick inte att ställa in adressen som standard. Försök igen.",
+            "billing": "Fakturering",
+            "shipping": "Frakt",
+            "removeSuccess": "Adressen togs bort.",
+            "removeError": "Det gick inte att ta bort adressen. Försök igen.",
+            "addSuccess": "Adressen lades till.",
+            "addError": "Det gick inte att lägga till adressen.",
+            "updateSuccess": "Adressen har uppdaterats.",
+            "updateError": "Det gick inte att uppdatera adressen.",
+            "removeDialogTitle": "Ta bort adress",
+            "removeDialogDescription": "Är du säker på att du vill ta bort den här adressen?",
+            "removeDefaultWarning": "Detta är din standardadress. Om du tar bort den kommer en annan adress automatiskt att ställas in som standardadress (om den finns tillgänglig).",
+            "removeButton": "Ta bort",
+            "removeConfirmTitle": "Bekräfta att du vill ta bort adressen",
+            "removeConfirmDescription": "Är du säker att du vill ta bort adressen ”{{addressName}}”?",
+            "removeCancelButton": "Avbryt",
+            "removeConfirmButton": "Ja, ta bort adress"
+        },
+        "paymentMethods": {
+            "pageSubtitle": "Hantera dina betalningsmetoder, presentkort och tillgodohavanden",
+            "subtitle": "Hantera dina sparade betalningsmetoder",
+            "noSavedPaymentMethods": "Inga sparade betalningsmetoder",
+            "empty": "Lägg till en betalningsmetod för att handla snabbare!",
+            "addPaymentMethod": "Lägg till betalningsmetod",
+            "setDefault": "Ställ in som standard",
+            "remove": "Ta bort",
+            "default": "Standard",
+            "expires": "Upphör att gälla",
+            "addPaymentMethodTitle": "Lägg till betalningsmetod",
+            "creditCard": "Kreditkort",
+            "nameOnCard": "Namn på kortet*",
+            "cardNumberPlaceholder": "Kortnummer*",
+            "expiryPlaceholder": "mm/åå*",
+            "saveAsDefault": "Spara som standard",
+            "billingAddress": "Faktureringsadress*",
+            "selectAddress": "Välj en adress",
+            "addNewAddress": "Lägg till ny adress",
+            "cancel": "Avbryt",
+            "save": "Spara",
+            "removePaymentMethod": "Ta bort betalningsmetod",
+            "removeConfirmation": "Är du säker på att du vill ta bort den här betalningsmetoden?",
+            "paymentMethod": "Betalningsmetod",
+            "defaultRemovalWarning": "Detta är din standardbetalningsmetod. Om du tar bort den kommer en annan betalningsmetod automatiskt att ställas in som standard (om den finns tillgänglig).",
+            "addSuccess": "Betalningsmetod tillagd.",
+            "addError": "Det gick inte att lägga till betalningsmetod.",
+            "removeSuccess": "Betalningsmetod borttagen.",
+            "removeError": "Det gick inte att ta bort betalningsmetod.",
+            "setDefaultSuccess": "Betalningsmetoden har ställts in som standard.",
+            "setDefaultError": "Det gick inte att ställa in betalningsmetoden som standard.",
+            "validationError": "Korrigera felen i formuläret.",
+            "addressValidationError": "Korrigera felen i faktureringsadressen.",
+            "selectAddressError": "Välj en faktureringsadress.",
+            "invalidExpiryFormat": "Ogiltigt format för utgångsdatum."
+        },
+        "addressForm": {
+            "addressTitleLabel": "Adressnamn",
+            "addressTitlePlaceholder": "t.ex. hem, arbete, mammas hus",
+            "firstNameLabel": "Förnamn",
+            "lastNameLabel": "Efternamn",
+            "phoneLabel": "Telefon",
+            "countryLabel": "Land",
+            "addressLabel": "Adress",
+            "address2Label": "Adressrad 2",
+            "address2Placeholder": "Lägenhetsnummer, trappor osv. (valfritt)",
+            "cityLabel": "Ort",
+            "stateLabel": "Delstat",
+            "provinceLabel": "Provins",
+            "postalCodeLabel": "Postnummer",
+            "zipCodeLabel": "Postnummer",
+            "preferredLabel": "Ställ in som standard",
+            "saveButton": "Spara",
+            "savingButton": "Sparar ...",
+            "cancelButton": "Avbryt",
+            "selectStatePlaceholder": "Välj delstat",
+            "selectProvincePlaceholder": "Välj provins",
+            "successMessage": "Adressen har sparats.",
+            "errorMessage": "Det gick inte att spara adressen. Försök igen.",
+            "validation": {
+                "stateRequired": "Delstat/provins är obligatoriskt",
+                "addressTitleRequired": "Adresstitel krävs.",
+                "addressTitleMaxLength": "Adresstiteln får bestå av högst 256 tecken.",
+                "phoneRequired": "Telefonnummer krävs."
+            }
+        },
+        "profile": {
+            "title": "Personlig information",
+            "description": "Hantera din personliga information",
+            "edit": "Redigera",
+            "fullName": "Fullständigt namn",
+            "email": "E-postadress",
+            "phoneNumber": "Telefonnummer",
+            "notProvided": "Uppgift saknas",
+            "firstName": "Förnamn",
+            "lastName": "Efternamn",
+            "firstNamePlaceholder": "Ange ditt förnamn",
+            "lastNamePlaceholder": "Ange ditt efternamn",
+            "phonePlaceholder": "Ange ditt telefonnummer",
+            "gender": "Kön",
+            "genderPlaceholder": "Välj kön",
+            "genderOptions": {
+                "male": "Man",
+                "female": "Kvinna"
+            },
+            "dateOfBirth": "Födelsedatum",
+            "dateOfBirthPlaceholder": "Välj födelsedatum",
+            "saveButton": "Spara",
+            "savingButton": "Sparar ...",
+            "cancelButton": "Avbryt",
+            "successMessage": "Din profil har uppdaterats.",
+            "errorMessage": "Vi kunde inte uppdatera din profil. Försök igen.",
+            "validation": {
+                "firstNameRequired": "Förnamn är obligatoriskt.",
+                "lastNameRequired": "Efternamn är obligatoriskt.",
+                "emailRequired": "E-postadress krävs.",
+                "emailInvalid": "Ange en giltig e-postadress.",
+                "phoneInvalid": "Ange ett giltigt telefonnummer.",
+                "birthdayFuture": "Födelsedatum kan inte vara i framtiden."
+            }
+        },
+        "password": {
+            "title": "Lösenord och säkerhet",
+            "description": "Hantera ditt lösenord och dina säkerhetsinställningar",
+            "edit": "Redigera",
+            "password": "Lösenord",
+            "hiddenPassword": "--------",
+            "changePassword": "Ändra lösenord",
+            "currentPassword": "Nuvarande lösenord",
+            "currentPasswordPlaceholder": "Ange ditt nuvarande lösenord",
+            "newPassword": "Nytt lösenord",
+            "newPasswordPlaceholder": "Ange ditt nya lösenord",
+            "confirmPassword": "Bekräfta nytt lösenord",
+            "confirmPasswordPlaceholder": "Bekräfta ditt nya lösenord",
+            "saveButton": "Spara",
+            "cancelButton": "Avbryt",
+            "successMessage": "Lösenordet har uppdaterats.",
+            "errorMessage": "Det gick inte att uppdatera lösenordet. Försök igen.",
+            "validation": {
+                "currentPasswordRequired": "Nuvarande lösenord krävs.",
+                "newPasswordRequired": "Nytt lösenord krävs.",
+                "confirmPasswordRequired": "Bekräfta ditt nya lösenord.",
+                "passwordsDoNotMatch": "De nya lösenorden stämmer inte överens.",
+                "passwordTooShort": "Lösenordet måste bestå av minst 8 tecken."
+            },
+            "requirements": {
+                "title": "Lösenordskrav",
+                "minLength": "Minst 8 tecken",
+                "hasUppercase": "Minst en stor bokstav",
+                "hasLowercase": "Minst en liten bokstav",
+                "hasNumber": "Minst en siffra",
+                "hasSpecial": "Minst ett specialtecken"
+            }
+        },
+        "common": {
+            "save": "Spara",
+            "saving": "Sparar ...",
+            "cancel": "Avbryt",
+            "edit": "Redigera",
+            "done": "Klart",
+            "enabled": "Har aktiverats",
+            "disabled": "Har inaktiverats"
+        },
+        "marketingConsent": {
+            "title": "Marknadsförings- och kommunikationsinställningar",
+            "edit": "Redigera",
+            "editA11y": "Ändra marknadsföringsinställningar",
+            "optedIn": "Aktiverade",
+            "optedOut": "Inaktiverade",
+            "channelEmail": "E-post",
+            "channelSms": "Sms/textmeddelanden",
+            "disclaimer": "Genom att aktivera dessa kommunikationsinställningar samtycker du till att få marknadsföringskommunikation från oss, inklusive exklusiva erbjudanden, den senaste produktinformationen och nyheter om kommande kollektioner. Se våra villkor och vår sekretesspolicy för mer information.",
+            "updateError": "Det gick inte att uppdatera marknadsföringsinställningar. Försök igen.",
+            "partialSuccess": "Vissa inställningar sparade. Uppdatera för att se aktuella inställningar."
+        }
+    },
+    "home": {
+        "hero": {
+            "slide1": {
+                "title": "Den nya säsongen",
+                "subtitle": "En ny kollektion baserad på kontraster, proportioner och en modern attityd. Nyckelplagg för den kommande säsongen.",
+                "ctaText": "Upptäck kollektionen",
+                "imageAlt": "Byxor, jackor och handväskor för henne"
+            },
+            "slide2": {
+                "title": "Den moderna garderoben",
+                "subtitle": "Skarpa linjer, eleganta texturer och en helt ny inställning till vardagskläder. Designad för att röra sig med dig.",
+                "ctaText": "Köp looken",
+                "imageAlt": "Vit linneklänning för henne"
+            },
+            "slide3": {
+                "title": "Efter arbetstid",
+                "subtitle": "Statementplagg och eleganta lager som är designade för utekvällar, sena nätter och allt däremellan.",
+                "ctaText": "Utforska kollektionen",
+                "imageAlt": "Svart kostym för henne"
+            },
+            "slide4": {
+                "title": "Nya perspektiv",
+                "subtitle": "Handplockade plagg som ger ett nytt perspektiv på dagens mode. Självsäker. Uttrycksfull. Kompromisslös.",
+                "ctaText": "Handla nu",
+                "imageAlt": "Grå klänning för henne"
+            }
+        },
+        "meta": {
+            "description": "En modebutik för nästa generation"
+        },
+        "featuredProducts": {
+            "title": "Rekommenderade produkter",
+            "shopAll": "Handla alla produkter"
+        },
+        "categoryGrid": {
+            "title": "Stil för livet",
+            "description": "Market Street anser att mode ska vara enkelt, äkta och tillgängligt. Våra kollektioner är designade för den moderna individen som värdesätter kvalitet, mångsidighet och tidlös stil.",
+            "shopNowButton": "Handla nu"
+        },
+        "featuredContent": {
+            "women": {
+                "title": "Kvinnor",
+                "description": "Upptäck vår kollektion av sofistikerade skor designade för den moderna kvinnan.",
+                "ctaText": "UTFORSKA KOLLEKTIONEN",
+                "imageAlt": "Kollektion för kvinnor"
+            },
+            "men": {
+                "title": "Män",
+                "description": "Tidlöst hantverk möter modern stil i vår kollektion av herrskor.",
+                "ctaText": "UTFORSKA KOLLEKTIONEN",
+                "imageAlt": "Kollektion för män"
+            },
+            "styleForRealLife": {
+                "title": "Stil för livet",
+                "description": "Market Street anser att mode ska vara enkelt, äkta och tillgängligt. Våra kollektioner är designade för den moderna individen som värdesätter kvalitet, mångsidighet och tidlös stil.\n\nUpptäck plagg som rör sig med dig, anpassar sig efter ditt liv och blir grunden till en garderob som fungerar – varje dag, överallt."
+            }
+        }
+    },
+    "footer": {
+        "sections": {
+            "customerSupport": "Kundsupport",
+            "account": "Konto",
+            "ourCompany": "Vårt företag",
+            "switchThemes": "Byt tema",
+            "switchLanguage": "Språk",
+            "switchCurrency": "Valuta",
+            "shop": "Butik",
+            "help": "Hjälp",
+            "about": "Om"
+        },
+        "links": {
+            "contactUs": "Kontakta oss",
+            "shipping": "Frakt",
+            "orderStatus": "Beställningsstatus",
+            "signInOrCreateAccount": "Logga in eller skapa konto",
+            "aboutUs": "Om oss",
+            "accessibility": "Tillgänglighetspolicy",
+            "privacyPolicy": "Sekretesspolicy",
+            "privacyChoices": "Dina sekretessval",
+            "termsOfUse": "Användarvillkor"
+        },
+        "newsletter": {
+            "title": "Gå med i vår community",
+            "description": "Upptäck nyinkomna varor, exklusiva erbjudanden och stilinspiration först av alla.",
+            "emailPlaceholder": "Din e-postadress",
+            "subscribeButton": "Prenumerera"
+        },
+        "copyright": "Salesforce eller dess närstående bolag. Alla rättigheter förbehållna. Detta är endast en demobutik. Gjorda beställningar kommer INTE att behandlas."
+    },
+    "aboutUs": {
+        "breadcrumb": {
+            "home": "Hem",
+            "aboutUs": "Om oss"
+        },
+        "title": "Om oss",
+        "subtitle": "Läs mer om vårt företag och vår mission",
+        "section": {
+            "ourGoal": {
+                "title": "Utformad för rörelse. Utformad för vardagen.",
+                "content": "Market Street hämtar inspiration från urban kultur och naturliga rörelser. Företaget grundades med målet att förena kvalitet, stil och grundläggande vardagsplagg i en och samma upplevelse. Vi anser att bra produkter rör sig med dig – från gatan till gymmet, från jobbet till helgen.\nVi började med en vision om att förenkla hur människor upplever mode- och livsstilsprodukter, och har utvecklats till ett varumärke som fokuserar på tydlighet, tillgänglighet och smart design. Varje kollektion är framtagen för att ge mångsidighet, hållbarhet och tidlös stil."
+            },
+            "ourVision": {
+                "title": "Vår vision",
+                "content": "Vårt mål är att skapa en helt ny upplevelse inom detaljhandeln med hjälp av teknik, design och en förstklassig kundupplevelse. Vi skapar en miljö som känns enkel, inspirerande och mänsklig. Vi jagar inte trender. Vi skapar bestående upplevelser."
+            },
+            "ourValue": {
+                "title": "Vår affärsidé",
+                "content": "Vår idé är att ta bort friktionen mellan människor och produkterna de älskar. Vi vill skapa shoppingupplevelser som är intuitiva, snabba och meningsfulla. Och vi vill vara ett varumärke som utvecklas i takt med sina kunder."
+            },
+            "ourMission": {
+                "title": "Vad vi står för",
+                "content": "Design med ett syfte: varje produkt, interaktion och detalj är avsiktlig.\nTeknik som inte märks: vi använder innovation för att förenkla, inte för att komplicera.\nKunden i fokus: vi prioriterar kunden, från köp till leverans.\nHållbarhet i rörelse: vi prioriterar hållbara material, leverantörer och transporter."
+            },
+            "ourTeam": {
+                "title": "Ett globalt varumärke, med rötterna i urbant mode",
+                "content": "Market Street föddes ur tanken att en tidlös stil inte ska kännas ouppnåelig. Vi blandar global inspiration med ett lokalt perspektiv som förenar kultur, kvalitet och livsstil i en och samma upplevelse.\nAllt vi gör styrs av samma princip, från produktutveckling till digital upplevelse:\natt främja enkel och naturlig handel."
+            }
+        },
+        "contact": {
+            "title": "Vi finns här för att hjälpa dig",
+            "intro": "Har du frågor, feedback eller behöver hjälp? Vårt team hjälper dig gärna.",
+            "phoneHref": "tele: 180080606453",
+            "hours": {
+                "weekdays": "Måndag–fredag: 09:00–22:00 EST",
+                "weekends": "Lördag och söndag: 10:00–19.00 EST"
+            },
+            "cta": "Eller skicka ett meddelande till oss via formuläret – vi hör av oss så snart som möjligt.",
+            "form": {
+                "label": "Etikett",
+                "nameLabel": "Namn",
+                "emailLabel": "E-post",
+                "messageLabel": "Meddelande",
+                "placeholders": {
+                    "fullName": "Ange ditt fullständiga namn",
+                    "topic": "Allmän information",
+                    "message": "Skriv ett meddelande till oss"
+                },
+                "submit": "Skicka meddelande"
+            },
+            "toast": {
+                "success": "Meddelandet har skickats."
+            }
+        }
+    },
+    "countries": {
+        "US": {
+            "name": "USA",
+            "states": {
+                "CA": "Kalifornien",
+                "DC": "District of Columbia",
+                "NM": "Nya Mexiko"
+            }
+        },
+        "CA": {
+            "name": "Kanada",
+            "states": {
+                "NL": "Newfoundland och Labrador",
+                "NT": "Nordvästra Territorierna"
+            }
+        }
+    },
+    "miniCart": {
+        "noImage": "Ingen bild",
+        "productAltFallback": "Produkt",
+        "quantityLabel": "Kvantitet:",
+        "quantityAriaLabel": "Kvantitet",
+        "customQuantityAriaLabel": "Anpassad kvantitet",
+        "customOption": "Anpassad ...",
+        "editQuantityAriaLabel": "Redigera antal",
+        "promotionApplied": "Kampanjerbjudandet tillämpat",
+        "removeItemAriaLabel": "Ta bort artikeln från kundvagnen",
+        "emptyCart": "Din kundvagn är tom",
+        "loading": "Laddar ...",
+        "viewCart": "Visa kundvagn",
+        "saved": "Sparat belopp: {{amount}}",
+        "free": "Gratis",
+        "emptyTitle": "Your cart is empty",
+        "emptyMessage": "Looks like you haven't added anything to your cart yet. Start shopping to fill it up with amazing products!",
+        "startShopping": "Start Shopping",
+        "delivery": "Delivery",
+        "closeAriaLabel": "Stäng"
+    },
+    "trackingConsent": {
+        "title": "Samtycke till spårning",
+        "accept": "Acceptera",
+        "decline": "Neka",
+        "closeAriaLabel": "Stäng"
+    },
+    "localeSwitcher": {
+        "ariaLabel": "Språkväljare",
+        "validation": {
+            "unsupportedLocale": "Regionen stöds inte",
+            "usingDefault": "Använder standardområde: {{locale}}"
+        },
+        "locales": {
+            "en-GB": "English (UK)",
+            "en-US": "English (US)",
+            "da-DK": "Dansk (Danmark)",
+            "de-DE": "Deutsch (Deutschland)",
+            "es-ES": "Español (España)",
+            "fi-FI": "Suomi (Suomi)",
+            "fr-FR": "Français (France)",
+            "it-IT": "Italiano (Italia)",
+            "ja-JP": "日本語 (日本)",
+            "ko-KR": "한국어 (대한민국)",
+            "nb-NO": "Norsk bokmål (Norge)",
+            "nl-NL": "Nederlands (Nederland)",
+            "pl-PL": "Polski (Polska)",
+            "pt-PT": "Português (Portugal)",
+            "sv-SE": "Svenska (Sverige)",
+            "zh-CN": "中文 (简体)",
+            "zh-TW": "中文 (繁體)"
+        }
+    },
+    "currencySwitcher": {
+        "ariaLabel": "Valutaväxlare",
+        "currencies": {
+            "USD": "Amerikansk dollar ($)",
+            "MXN": "Mexikansk peso ($)",
+            "GBP": "Brittiskt pund (£)",
+            "JPY": "Japansk yen (¥)",
+            "KRW": "Sydkoreansk won (₩)",
+            "BRL": "Brasiliansk real (R$)",
+            "CNY": "Kinesisk yuan (¥)",
+            "TWD": "Taiwanesisk dollar (NT$)",
+            "DKK": "Dansk krona (kr)",
+            "PLN": "Polsk zloty (zł)",
+            "SEK": "Svensk krona (kr)",
+            "EUR": "Euro (€)"
+        },
+        "validation": {
+            "unsupportedCurrency": "Valuta stöds inte",
+            "usingDefault": "Använder standardvaluta: {{currency}}"
+        }
+    },
+    "addressSuggestionDropdown": {
+        "suggested": "FÖRSLAG",
+        "closeSuggestions": "Stäng förslag",
+        "loading": "Laddar förslag ..."
+    },
+    "infoModal": {
+        "paymentScheduleDescription": "Detaljer om betalningsplan",
+        "writeReviewDescription": "Formulär för att skriva en recension",
+        "starRatingDistributionDescription": "Detaljer om distribution av stjärnrecensioner",
+        "estimatedDeliveryDescription": "Beräknad leveransinformation",
+        "returnsAndWarrantyDescription": "Information om returer och garantier",
+        "close": "Stäng"
+    },
+    "estimatedDelivery": {
+        "cardTitle": "Beräknad leverans",
+        "cardDescription": "Tillgängliga fraktalternativ",
+        "learnMore": "Läs mer",
+        "sectionHeading": "Beräknad leverans",
+        "shippingOptionsHeading": "Fraktalternativ och priser",
+        "free": "Gratis"
+    },
+    "writeReview": {
+        "validation": {
+            "pleaseFixFollowing": "Korrigera följande:",
+            "ratingRequired": "Välj ett betyg.",
+            "reviewRequired": "Fyll i detta fält.",
+            "reviewMinLength": "Din recension måste bestå av minst {{count}} tecken",
+            "reviewMaxLength": "Ange inte fler än {{count}} tecken.",
+            "titleMaxLength": "Ange inte fler än {{count}} tecken."
+        },
+        "minCharactersHint": "Minst {{count}} tecken.",
+        "maxCharactersHint": "Högst {{count}} tecken."
+    },
+    "sitePicker": {
+        "title": "Välj din webbplats",
+        "description": "Välj den butik du föredrar för att se relevanta produkter och priser.",
+        "ariaLabel": "Välj webbplats",
+        "placeholder": "Välj en webbplats ...",
+        "sites": {
+            "RefArchGlobal": "Global (Storbritannien)",
+            "RefArch": "USA"
+        }
+    },
+    "category": {
+        "banner": {
+            "productsAvailable_one": "1 product available",
+            "productsAvailable_other": "{{count}} products available"
+        }
+    },
+    "maintenancePage": {
+        "apology": "We apologise for any inconvenience. Thank you for your patience!"
+    },
+    "error": {
+        "403": {
+            "title": "Access restricted",
+            "message": "You don't have permission to view this page. If you believe this is an error, please contact our support team.",
+            "secondaryMessage": "In the meantime, feel free to browse our collection."
+        },
+        "404": {
+            "title": "Page not found",
+            "message": "We couldn't find the page you're looking for. It may have been moved or the link might be incorrect.",
+            "secondaryMessage": "Don't worry—you can still explore our collection or head back home.",
+            "details": "The requested page could not be found."
+        },
+        "500": {
+            "title": "Something went wrong",
+            "message": "We're sorry, but something unexpected happened on our end. Our team has been notified and is working to fix it.",
+            "secondaryMessage": "Please try again in a few moments, or browse our shop while we sort things out."
+        },
+        "defaultTitle": "Something went wrong",
+        "defaultDescription": "An error occurred",
+        "defaultDetails": "An unexpected error occurred.",
+        "notFoundTitle": "Page not found",
+        "notFoundDetails": "The requested page could not be found.",
+        "persistsMessage": "If this problem persists, please contact support.",
+        "tryAgainMessage": "An unexpected error occurred. Please try again later.",
+        "goToHomepage": "Go to Homepage",
+        "allRightsReserved": "All rights reserved.",
+        "recommendations": {
+            "title": "You might also like"
+        }
+    },
+    "product": {
+        "recommendations": {
+            "youMightAlsoLike": "Du kanske också gillar",
+            "completeTheLook": "Fullända looken",
+            "recentlyViewed": "Senast visade"
+        },
+        "rating": {
+            "starContainerAriaLabel": "{{rating}} av {{total}} stjärnor, {{count, number}} recensioner",
+            "ratingOutOfTotal": "{{rating}} av {{total}}",
+            "ratingValue": "{{rating}}",
+            "basedOnReviews": "Baserat på {{count, number}} recensioner",
+            "ratingWithCount": "{{rating}} ({{count, number}})",
+            "viewAllReviews": "Se alla recensioner",
+            "distributionAriaLabel": "{{rating}} stjärnor: {{count, number}} av {{totalReviews, number}} recensioner",
+            "distributionsAriaLabel": "Fördelning av stjärnbetyg, {{total, number}} totalt antal recensioner",
+            "seeCustomerReviews": "Se kundrecensioner >"
+        },
+        "from": "från",
+        "outOfStock": "{{productName}} finns inte i lager",
+        "onlyLeft": "Det finns bara {{stockLevel}} kvar av {{productName}}!",
+        "inStock": "I lager",
+        "inStockCount": "I lager ({{stockDisplay}} enheter) redo att skickas",
+        "lowStock": "Låg lagernivå",
+        "lowStockCount": "Låg lagernivå, endast {{stockDisplay}} kvar",
+        "preOrder": "Tillgänglig för förbeställning",
+        "backOrder": "Tillgänglig för restorder",
+        "outOfStockLabel": "Finns inte i lager",
+        "selectAllOptions": "Välj alla dina alternativ ovan",
+        "description": "Beskrivning",
+        "imageAlt": "Produktbild",
+        "addingToCart": "Lägger till i kundvagnen ...",
+        "addToCart": "Lägg till i kundvagnen",
+        "moreOptions": "Fler alternativ",
+        "quickAdd": "Snabbtillägg",
+        "buyItNow": "Köp nu",
+        "pickupAvailable": "Upphämtning tillgänglig",
+        "selectProduct": "Välj en produkt",
+        "updatingCart": "Uppdaterar ...",
+        "updateCart": "Uppdatera",
+        "addingToWishlist": "Lägger till i önskelistan ...",
+        "addToWishlist": "Lägg till i önskelistan",
+        "updatingWishlist": "Uppdaterar önskelista",
+        "share": "Dela",
+        "expressPayments": {
+            "separatorBuyWith": "Eller köp med",
+            "venmoUnavailable": "Venmo är inte tillgängligt på den här enheten."
+        },
+        "productSetNotice": "Det här är en produktuppsättning. Välj enskilda artiklar nedan för att lägga till dem i kundvagnen.",
+        "productBundleNotice": "Det här är ett produktpaket. Alla artiklar kommer att läggas ihop.",
+        "productDetails": "Produktinformation",
+        "noDetailedDescription": "Ingen detaljerad beskrivning tillgänglig.",
+        "brand": "Varumärke:",
+        "manufacturer": "Tillverkare:",
+        "sku": "SKU:",
+        "sizeAndFit": "Storlek och passform",
+        "sizeAndFitComingSoon": "Information om storlek och passform kommer inom kort.",
+        "shippingAndReturns": "Frakt och returer",
+        "freeShipping": "Fri frakt på beställningar över 50 $",
+        "standardShipping": "Standardleverans: 3–5 arbetsdagar",
+        "expressShipping": "Expressleverans: 1–2 arbetsdagar",
+        "priceMin": "Min",
+        "priceMax": "Max",
+        "priceTo": "till",
+        "returns": "Returer: 30 dagars returrätt",
+        "reviews": "Omdömen",
+        "customerReviews": "Kundrecensioner",
+        "oneReviewForProductName": "1 recension av {{productName}}",
+        "reviewsForProductName": "{{count}} recensioner av {{productName}}",
+        "aiReviewSummary": "AI-sammanfattning av recensioner",
+        "loadingReviews": "Laddar recensioner ...",
+        "noReviewsForProduct": "Inga recensioner för denna produkt.",
+        "noReviewsMatchFilters": "Inga recensioner matchar dina filter.",
+        "verifiedPurchase": "Verifierat köp",
+        "helpful": "Användbar ({{count}})",
+        "helpfulNoCount": "Användbar",
+        "report": "Rapport",
+        "readMore": "Mer",
+        "readLess": "Mindre",
+        "reviewImageAlt": "Granska bilden",
+        "viewProductAriaLabel": "Visa {{productName}}",
+        "swatches": {
+            "availableColors": "Available colors",
+            "viewProductInColor": "View {{productName}} in {{colorName}}",
+            "viewAllColors": "View all {{count}} colors for {{productName}}",
+            "moreColorsTitle": "+{{count}} more"
+        },
+        "showingReviews": "Visar {{from}}–{{to}} av {{total}} recensioner",
+        "filterBy": "Filtrera efter:",
+        "withPhotos": "Med foton",
+        "searchReviewsPlaceholder": "Sök recensioner ...",
+        "sortLabel": "Sortera:",
+        "sortMostRecent": "Senaste",
+        "sortHighestRated": "Högst betyg",
+        "sortLowestRated": "Lägst betyg",
+        "sortMostHelpful": "Mest användbara",
+        "activeFilterStars": "{{count}} stjärnor",
+        "clearFilter": "Rensa filter",
+        "filterByStars": "Filtrera efter {{count}} stjärnor",
+        "clearStarFilter": "Rensa filter med {{count}} stjärna/stjärnor",
+        "clearPhotoFilter": "Rensa fotofilter",
+        "writeReviewButton": "Skriv en recension",
+        "materials": "Material",
+        "usageInstructions": "Instruktioner för användning",
+        "specifications": "Specifikationer",
+        "careInstructions": "Skötselråd",
+        "careInstructionsComingSoon": "Skötselråd kommer inom kort.",
+        "productSet": "Produktuppsättning",
+        "productBundle": "Produktpaket",
+        "setDescription": "Välj bland artiklarna nedan för att skapa ett perfekt set",
+        "bundleDescription": "Alla artiklar i detta paket kommer att läggas till i din kundvagn",
+        "selectedOf": "{{selected}} av {{total}} har valts",
+        "addSetToCart": "Lägg till set i kundvagnen",
+        "addBundleToCart": "Lägg till paket i kundvagnen",
+        "adding": "Lägger till ...",
+        "selectAllOptionsAbove": "Välj alla dina alternativ ovan",
+        "outOfStockStatus": "Finns inte i lager",
+        "selected": "✓ Vald",
+        "selectOptionsAbove": "Välj alternativ ovan",
+        "selectOptions": "Välj alternativ",
+        "bonusProduct": "Bonusprodukt",
+        "bonusProductAriaLabel": "Den här artikeln är en gratis bonusprodukt",
+        "addedToCart": "{{productName}} har lagts till i kundvagnen",
+        "updatedCart": "{{productName}} uppdaterad i kundvagnen.",
+        "addedSetToCart": "Lade till produktuppsättning i kundvagnen.",
+        "addedBundleToCart": "Lade till produktpaketet i kundvagnen.",
+        "failedToAddToCart": "Det gick inte att lägga till i kundvagnen: {{error}}.",
+        "failedToUpdateCart": "Det gick inte att uppdatera kundvagnen: {{error}}.",
+        "failedToAddItemsToCart": "Det gick inte att lägga till artiklar i kundvagnen: {{error}}.",
+        "failedToAddBundleToCart": "Det gick inte att lägga till paketet i kundvagnen: {{error}}.",
+        "addedToWishlist": "Lade till {{productName}} i önskelistan.",
+        "alreadyInWishlist": "{{productName}} finns redan i din önskelista.",
+        "failedToAddToWishlist": "Det gick inte att lägga till artikeln i önskelistan.",
+        "signInToAddToWishlist": "Logga in för att lägga till artiklar i din önskelista.",
+        "signInToContinue": "Logga in för att fortsätta.",
+        "removedFromWishlist": "Borttagen från önskelistan.",
+        "failedToRemoveFromWishlist": "Det gick inte att ta bort artikeln från önskelistan.",
+        "removeFromWishlist": "Ta bort från önskelistan.",
+        "removedLabel": "Borttagen",
+        "remove": "Ta bort",
+        "selectVariantPlaceholder": "Välj",
+        "itemAlreadyInWishlist": "Artikeln finns redan i din önskelista.",
+        "addedToWishlistGeneric": "Tillagd i önskelistan.",
+        "productIdRequired": "Produkt-ID krävs.",
+        "productOrItemIdRequired": "Produkt-ID eller artikel-ID krävs.",
+        "methodNotAllowed": "Metoden är inte tillåten",
+        "productItemRequired": "Uppgifter om produktartikel krävs.",
+        "productItemsRequired": "Uppgifter om produktartiklar krävs.",
+        "bundleDataRequired": "Uppgifter om paketartikel och underordnade val krävs.",
+        "failedToAddItemToCart": "Det gick inte att lägga till artikeln i kundvagnen.",
+        "failedToUpdateItemToCart": "Det gick inte att uppdatera artikeln i kundvagnen.",
+        "failedToRemoveItem": "Det gick inte att ta bort artikeln.",
+        "failedToUpdateItemQuantity": "Det gick inte att uppdatera artikelkvantiteten.",
+        "failedToAddItemsToCartError": "Det gick inte att lägga till artiklar i kundvagnen.",
+        "failedToAddBundleToCartError": "Det gick inte att lägga till paketet i kundvagnen.",
+        "failedToUpdateBundleToCartError": "Det gick inte att uppdatera paketet i kundvagnen.",
+        "pleaseSelectOptionsFor": "Välj alternativ för {{productName}}",
+        "productNotOrderable": "{{productName}} är inte beställningsbar.",
+        "cannotAddToCartValidationFailed": "Går inte att lägga till i kundvagnen: valideringen misslyckades.",
+        "failedToAddProductToCart": "Det gick inte att lägga till produkten i kundvagnen.",
+        "failedToAddProductToWishlist": "Det gick inte att lägga till produkten i önskelistan.",
+        "noProductIdForCart": "Inget produkt-ID tillgängligt för tillägg i kundvagnen.",
+        "invalidQuantityForCart": "Ogiltig kvantitet för att lägga till i kundvagnen: {{quantity}}.",
+        "noProductSelectionsForSet": "Inga produktval angivna för att lägga till set i kundvagnen.",
+        "noProductIdForBundle": "Inget produkt-ID tillgängligt för att lägga till paket i kundvagnen.",
+        "invalidQuantityForBundle": "Ogiltig kvantitet för att lägga till paket i kundvagnen: {{quantity}}.",
+        "noChildSelectionsForBundle": "Inga underordnade produktval angivna för tillägg av paket i kundvagnen.",
+        "cartOperationFailed": "Kundvagnsoperationen misslyckades:",
+        "multipleItemsCartOperationFailed": "Flera artiklar i kundvagnsoperationen misslyckades:",
+        "bundleCartOperationFailed": "Paketet i kundvagnsoperationen misslyckades:",
+        "errorInHandleAddToCart": "Fel i handleAddToCart:",
+        "errorInHandleProductSetAddToCart": "Fel i handleProductSetAddToCart:",
+        "errorInHandleProductBundleAddToCart": "Fel i handleProductBundleAddToCart:",
+        "failedToAddToWishlistError": "Det gick inte att lägga till i önskelistan:",
+        "addingToWishlistLog": "Lägger till i önskelistan:",
+        "failedToAddProductToCartError": "Det gick inte att lägga till produkten i kundvagnen:",
+        "failedToAddProductToWishlistError": "Det gick inte att lägga till produkten i önskelistan:",
+        "price": {
+            "unavailable": "Pris ej tillgängligt",
+            "currentPriceFrom": "Nuvarande pris från {{price}}",
+            "currentPrice": "Nuvarande pris: {{price}}",
+            "from": "Från {{price}}",
+            "range": "{{min}}–{{max}}",
+            "rangeA11y": "Prisintervall från {{min}} till {{max}}",
+            "listPriceFrom": "Rekommenderat pris från {{price}}",
+            "listPrice": "Rekommenderat pris: {{price}}"
+        },
+        "removingFromWishlist": "Removing from wishlist...",
+        "inWishlist": "In your wishlist"
+    }
+}

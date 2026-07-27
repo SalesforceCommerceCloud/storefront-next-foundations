@@ -1,0 +1,35 @@
+{
+    "interestsPreferences": {
+        "title": "Kiinnostuksenkohteet ja asetukset",
+        "description": "Lisää sinua kiinnostavat designit ja hallitse ostosasetuksiasi",
+        "successMessage": "Kiinnostuksenkohteesi ja mieltymyksesi päivitettiin.",
+        "errorMessage": "Päivitys epäonnistui. Yritä uudelleen.",
+        "loadError": "We couldn't load your interests and preferences. Please refresh the page to try again."
+    },
+    "interests": {
+        "title": "Kiinnostuksenkohteesi",
+        "noneSelected": "Ei valittuja etuja",
+        "addMore": "Lisää muita",
+        "addInterestsTitle": "Lisää kiinnostuksenkohteesi"
+    },
+    "preferences": {
+        "noneSelected": "Ei valittua",
+        "addMore": "Lisää muita",
+        "dialogTitle": "Valitse vaihtoehdot",
+        "selectCategory": "Valitse {{category}}"
+    },
+    "measures": {
+        "roomDimensionsLabel": "Room dimensions:",
+        "ceilingHeightLabel": "Ceiling height:",
+        "noneProvided": "No measures provided"
+    },
+    "size": {
+        "preferredSizeLabel": "Preferred product size:"
+    },
+    "common": {
+        "save": "Tallenna",
+        "saving": "Tallennetaan...",
+        "cancel": "Peruuta",
+        "edit": "Muokkaa"
+    }
+}

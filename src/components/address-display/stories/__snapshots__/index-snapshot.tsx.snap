@@ -1,0 +1,35 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AddressDisplay stories snapshot > NoAddress story renders and matches snapshot 1`] = `
+<p
+  class="text-sm font-medium leading-none text-left text-muted-foreground"
+>
+  No address provided
+</p>
+`;
+
+exports[`AddressDisplay stories snapshot > Playground story renders and matches snapshot 1`] = `
+<div
+  class="space-y-1"
+>
+  <div
+    class="flex items-center gap-2"
+  >
+    <p
+      class="leading-7 [&:not(:first-child)]:mt-6 text-left font-medium"
+    >
+      Gurpreet Saini
+    </p>
+  </div>
+  <p
+    class="text-sm font-medium leading-none text-left text-muted-foreground"
+  >
+    123 Main St
+  </p>
+  <p
+    class="text-sm font-medium leading-none text-left text-muted-foreground"
+  >
+    84095, South Jordan, Utah, United States
+  </p>
+</div>
+`;

@@ -1,0 +1,158 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RefineColor stories snapshot > FullyFeatured story renders and matches snapshot 1`] = `
+<div
+  class="mt-2 grid grid-cols-2 gap-2 lg:grid-cols-3"
+>
+  <button
+    class="flex w-full min-w-0 flex-col items-center gap-2 border-0 bg-transparent p-1 text-center whitespace-normal hover:bg-muted/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+    type="button"
+  >
+    <div
+      class="size-8 shrink-0 border rounded-ui border-foreground ring-2 ring-foreground/25 ring-offset-2 ring-offset-background"
+      style="background-color: rgb(0, 0, 0);"
+    />
+    <div
+      class="flex w-full min-w-0 flex-col items-center gap-0.5 text-center"
+    >
+      <span
+        class="text-pretty text-sm break-words text-foreground font-semibold"
+      >
+        Black
+      </span>
+      <span
+        class="text-muted-foreground text-xs"
+      >
+        (
+        43
+        )
+      </span>
+    </div>
+  </button>
+  <button
+    class="flex w-full min-w-0 flex-col items-center gap-2 border-0 bg-transparent p-1 text-center whitespace-normal hover:bg-muted/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+    type="button"
+  >
+    <div
+      class="size-8 shrink-0 border rounded-ui border-border"
+      style="background-color: rgb(37, 99, 235);"
+    />
+    <div
+      class="flex w-full min-w-0 flex-col items-center gap-0.5 text-center"
+    >
+      <span
+        class="text-pretty text-sm break-words text-foreground font-medium"
+      >
+        Blue
+      </span>
+      <span
+        class="text-muted-foreground text-xs"
+      >
+        (
+        27
+        )
+      </span>
+    </div>
+  </button>
+  <button
+    class="flex w-full min-w-0 flex-col items-center gap-2 border-0 bg-transparent p-1 text-center whitespace-normal hover:bg-muted/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+    type="button"
+  >
+    <div
+      class="size-8 shrink-0 border rounded-ui border-border"
+      style="background-color: rgb(220, 38, 38);"
+    />
+    <div
+      class="flex w-full min-w-0 flex-col items-center gap-0.5 text-center"
+    >
+      <span
+        class="text-pretty text-sm break-words text-foreground font-medium"
+      >
+        Red
+      </span>
+      <span
+        class="text-muted-foreground text-xs"
+      >
+        (
+        1
+        )
+      </span>
+    </div>
+  </button>
+  <button
+    class="flex w-full min-w-0 flex-col items-center gap-2 border-0 bg-transparent p-1 text-center whitespace-normal hover:bg-muted/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+    type="button"
+  >
+    <div
+      class="size-8 shrink-0 border rounded-ui border-border"
+      style="background-color: rgb(22, 163, 74);"
+    />
+    <div
+      class="flex w-full min-w-0 flex-col items-center gap-0.5 text-center"
+    >
+      <span
+        class="text-pretty text-sm break-words text-foreground font-medium"
+      >
+        Green
+      </span>
+      <span
+        class="text-muted-foreground text-xs"
+      >
+        (
+        4
+        )
+      </span>
+    </div>
+  </button>
+  <button
+    class="flex w-full min-w-0 flex-col items-center gap-2 border-0 bg-transparent p-1 text-center whitespace-normal hover:bg-muted/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+    type="button"
+  >
+    <div
+      class="size-8 shrink-0 border rounded-ui border-border"
+      style="background-color: rgb(255, 255, 255);"
+    />
+    <div
+      class="flex w-full min-w-0 flex-col items-center gap-0.5 text-center"
+    >
+      <span
+        class="text-pretty text-sm break-words text-foreground font-medium"
+      >
+        White
+      </span>
+      <span
+        class="text-muted-foreground text-xs"
+      >
+        (
+        30
+        )
+      </span>
+    </div>
+  </button>
+  <button
+    class="flex w-full min-w-0 flex-col items-center gap-2 border-0 bg-transparent p-1 text-center whitespace-normal hover:bg-muted/40 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+    type="button"
+  >
+    <div
+      class="size-8 shrink-0 border rounded-ui border-border"
+      style="background-color: rgb(161, 98, 7);"
+    />
+    <div
+      class="flex w-full min-w-0 flex-col items-center gap-0.5 text-center"
+    >
+      <span
+        class="text-pretty text-sm break-words text-foreground font-medium"
+      >
+        Brown
+      </span>
+      <span
+        class="text-muted-foreground text-xs"
+      >
+        (
+        15
+        )
+      </span>
+    </div>
+  </button>
+</div>
+`;

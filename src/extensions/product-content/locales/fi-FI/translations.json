@@ -1,0 +1,20 @@
+{
+    "contentComingSoon": "Sisältöä tulossa pian.",
+    "faq": {
+        "askAssistant": "Kysy avustajalta",
+        "faqQuestionSendToAssistantAriaLabel": "Avaa shopper-agentti ja kysy: {{question}}"
+    },
+    "returnsAndWarranty": {
+        "learnMore": "Näytä käytännöt",
+        "returnConditions": "Palautusehdot:",
+        "howToReturn": "Palautus:",
+        "note": "Huom:",
+        "whatsCovered": "Mitä se kattaa:",
+        "whatsNotCovered": "Mitä ei korvata:",
+        "warrantyClaims": "Takuuvaatimukset:",
+        "exchangeProcess": "Vaihtoprosessi:",
+        "needHelp": "Tarvitsetko apua?",
+        "contactAt": "Ota meihin yhteyttä",
+        "orCall": "tai soita"
+    }
+}

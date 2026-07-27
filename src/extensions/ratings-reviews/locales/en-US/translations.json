@@ -1,0 +1,71 @@
+{
+    "section": {
+        "heading": "Customer Reviews",
+        "loading": "Loading reviews...",
+        "loadError": "We couldn't load reviews. Please refresh the page to try again.",
+        "noReviewsForProduct": "No reviews for this product.",
+        "noReviewsMatchFilters": "No reviews match your filters.",
+        "showingReviews": "Showing {{from}}-{{to}} of {{total}} reviews",
+        "subtitleOne": "1 review for {{productName}}",
+        "subtitleOther": "{{count}} reviews for {{productName}}",
+        "aiReviewSummary": "AI Review Summary"
+    },
+    "filters": {
+        "filterBy": "Filter by:",
+        "withPhotos": "With Photos",
+        "searchPlaceholder": "Search reviews...",
+        "sortLabel": "Sort:",
+        "sortMostRecent": "Most Recent",
+        "sortHighestRated": "Highest Rated",
+        "sortLowestRated": "Lowest Rated",
+        "sortMostHelpful": "Most Helpful",
+        "activeFilterStars": "{{count}} stars",
+        "clearFilter": "Clear filter",
+        "filterByStars": "Filter by {{count}} stars",
+        "clearStarFilter": "Clear {{count}} star filter",
+        "clearPhotoFilter": "Clear photo filter"
+    },
+    "card": {
+        "verifiedPurchase": "Verified Purchase",
+        "helpful": "Helpful ({{count}})",
+        "helpfulNoCount": "Helpful",
+        "report": "Report",
+        "readMore": "Read More",
+        "readLess": "Read Less",
+        "imageAlt": "Review Image"
+    },
+    "rating": {
+        "starContainerAriaLabel": "{{rating}} out of {{total}} stars, {{count, number}} reviews",
+        "ratingOutOfTotal": "{{rating}} out of {{total}}",
+        "ratingValue": "{{rating}}",
+        "basedOnReviews": "Based on {{count, number}} reviews",
+        "ratingWithCount": "{{rating}} ({{count, number}})",
+        "viewAllReviews": "View all reviews",
+        "distributionAriaLabel": "{{rating}} stars: {{count, number}} out of {{totalReviews, number}} reviews",
+        "distributionsAriaLabel": "Star rating distribution, {{total, number}} total reviews",
+        "seeCustomerReviews": "See customer reviews >"
+    },
+    "writeReview": {
+        "buttonLabel": "Write a Review",
+        "modalDescription": "Write a review form",
+        "starRatingDistributionDescription": "Star rating distribution details",
+        "submitting": "Submitting...",
+        "successMessage": "Review submitted",
+        "errorMessage": "Failed to submit review. Please try again.",
+        "validation": {
+            "pleaseFixFollowing": "Please fix the following:",
+            "ratingRequired": "Please select a rating.",
+            "reviewRequired": "Please fill out this field.",
+            "reviewMinLength": "Your review must be at least {{count}} characters",
+            "reviewMaxLength": "Please enter no more than {{count}} characters.",
+            "titleMaxLength": "Please enter no more than {{count}} characters."
+        },
+        "minCharactersHint": "Minimum {{count}} characters.",
+        "maxCharactersHint": "Maximum {{count}} characters."
+    },
+    "orderLine": {
+        "rateAndReview": "Rate & Review",
+        "reviewSubmitted": "Review submitted",
+        "cta": "Rate & review"
+    }
+}

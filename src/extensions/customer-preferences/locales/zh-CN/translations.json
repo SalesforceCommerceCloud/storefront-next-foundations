@@ -1,0 +1,35 @@
+{
+    "interestsPreferences": {
+        "title": "兴趣与偏好",
+        "description": "添加您的设计兴趣并管理您的购物偏好",
+        "successMessage": "您的兴趣和偏好已更新。",
+        "errorMessage": "更新失败。重试",
+        "loadError": "We couldn't load your interests and preferences. Please refresh the page to try again."
+    },
+    "interests": {
+        "title": "您的兴趣",
+        "noneSelected": "未选择兴趣",
+        "addMore": "添加更多",
+        "addInterestsTitle": "添加您的兴趣"
+    },
+    "preferences": {
+        "noneSelected": "未选择",
+        "addMore": "添加更多",
+        "dialogTitle": "选择选项",
+        "selectCategory": "选择 {{category}}"
+    },
+    "measures": {
+        "roomDimensionsLabel": "Room dimensions:",
+        "ceilingHeightLabel": "Ceiling height:",
+        "noneProvided": "No measures provided"
+    },
+    "size": {
+        "preferredSizeLabel": "Preferred product size:"
+    },
+    "common": {
+        "save": "保存",
+        "saving": "正在保存...",
+        "cancel": "取消",
+        "edit": "编辑"
+    }
+}

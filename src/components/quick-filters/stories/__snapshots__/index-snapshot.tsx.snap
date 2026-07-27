@@ -1,0 +1,130 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`QuickFilters stories snapshot > EmptyState story renders and matches snapshot 1`] = `null`;
+
+exports[`QuickFilters stories snapshot > FullyFeatured story renders and matches snapshot 1`] = `
+<div
+  aria-label="Quick category filters"
+  class="flex flex-wrap gap-2"
+  data-slot="quick-filters"
+  role="group"
+>
+  <button
+    aria-pressed="false"
+    class="inline-flex items-center justify-center rounded-ui transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-ui gap-1.5 px-3 has-[>svg]:px-2.5 whitespace-nowrap cursor-pointer text-sm font-normal leading-5 tracking-[-0.15px] text-foreground"
+    data-size="sm"
+    data-slot="button"
+    data-variant="outline"
+  >
+    Tops
+  </button>
+  <button
+    aria-pressed="false"
+    class="inline-flex items-center justify-center rounded-ui transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-ui gap-1.5 px-3 has-[>svg]:px-2.5 whitespace-nowrap cursor-pointer text-sm font-normal leading-5 tracking-[-0.15px] text-foreground"
+    data-size="sm"
+    data-slot="button"
+    data-variant="outline"
+  >
+    Bottoms
+  </button>
+  <button
+    aria-pressed="false"
+    class="inline-flex items-center justify-center rounded-ui transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-ui gap-1.5 px-3 has-[>svg]:px-2.5 whitespace-nowrap cursor-pointer text-sm font-normal leading-5 tracking-[-0.15px] text-foreground"
+    data-size="sm"
+    data-slot="button"
+    data-variant="outline"
+  >
+    Dresses
+  </button>
+  <button
+    aria-pressed="false"
+    class="inline-flex items-center justify-center rounded-ui transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-ui gap-1.5 px-3 has-[>svg]:px-2.5 whitespace-nowrap cursor-pointer text-sm font-normal leading-5 tracking-[-0.15px] text-foreground"
+    data-size="sm"
+    data-slot="button"
+    data-variant="outline"
+  >
+    Outerwear
+  </button>
+</div>
+`;
+
+exports[`QuickFilters stories snapshot > WithCategoryLabel story renders and matches snapshot 1`] = `
+<div
+  aria-label="Shop by Women"
+  class="flex flex-wrap gap-2 items-center"
+  data-slot="quick-filters"
+  role="group"
+>
+  <span
+    class="inline-flex items-center gap-1.5 text-xs font-medium text-muted-foreground pr-2"
+    data-slot="quick-filters-label"
+  >
+    <svg
+      aria-hidden="true"
+      class="size-3.5"
+      fill="none"
+      height="24"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.582a.5.5 0 0 1 0 .963L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"
+      />
+      <path
+        d="M20 3v4"
+      />
+      <path
+        d="M22 5h-4"
+      />
+      <path
+        d="M4 17v2"
+      />
+      <path
+        d="M5 18H3"
+      />
+    </svg>
+    Shop by Women
+  </span>
+  <button
+    aria-pressed="false"
+    class="inline-flex items-center justify-center rounded-ui transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-ui gap-1.5 px-3 has-[>svg]:px-2.5 whitespace-nowrap cursor-pointer text-sm font-normal leading-5 tracking-[-0.15px] text-foreground"
+    data-size="sm"
+    data-slot="button"
+    data-variant="outline"
+  >
+    Tops
+  </button>
+  <button
+    aria-pressed="false"
+    class="inline-flex items-center justify-center rounded-ui transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-ui gap-1.5 px-3 has-[>svg]:px-2.5 whitespace-nowrap cursor-pointer text-sm font-normal leading-5 tracking-[-0.15px] text-foreground"
+    data-size="sm"
+    data-slot="button"
+    data-variant="outline"
+  >
+    Bottoms
+  </button>
+  <button
+    aria-pressed="false"
+    class="inline-flex items-center justify-center rounded-ui transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-ui gap-1.5 px-3 has-[>svg]:px-2.5 whitespace-nowrap cursor-pointer text-sm font-normal leading-5 tracking-[-0.15px] text-foreground"
+    data-size="sm"
+    data-slot="button"
+    data-variant="outline"
+  >
+    Dresses
+  </button>
+  <button
+    aria-pressed="false"
+    class="inline-flex items-center justify-center rounded-ui transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-ui gap-1.5 px-3 has-[>svg]:px-2.5 whitespace-nowrap cursor-pointer text-sm font-normal leading-5 tracking-[-0.15px] text-foreground"
+    data-size="sm"
+    data-slot="button"
+    data-variant="outline"
+  >
+    Outerwear
+  </button>
+</div>
+`;

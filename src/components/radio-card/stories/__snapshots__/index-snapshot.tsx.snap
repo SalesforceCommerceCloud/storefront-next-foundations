@@ -1,0 +1,236 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RadioCard stories snapshot > Default story renders and matches snapshot 1`] = `
+<div
+  class="grid gap-3"
+  role="radiogroup"
+>
+  <label
+    class="items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 relative cursor-pointer rounded-ui border p-4 transition-all duration-200 block hover:border-border focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2 overflow-hidden border-primary bg-accent shadow-md"
+    data-slot="label"
+    for="radio-option1"
+  >
+    <input
+      aria-describedby="radio-option1-description"
+      checked=""
+      class="sr-only"
+      id="radio-option1"
+      type="radio"
+      value="option1"
+    />
+    <div
+      class="absolute top-0 right-0 w-0 border-r-primary border-t-0 border-r-40 border-b-40 border-l-0 border-transparent"
+    >
+      <svg
+        aria-hidden="true"
+        class="lucide lucide-check absolute text-primary-foreground font-bold -right-10 top-1 w-5 h-5"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M20 6 9 17l-5-5"
+        />
+      </svg>
+    </div>
+    <div
+      id="radio-option1-description"
+    >
+      <div>
+        <h3
+          class="font-semibold"
+        >
+          Option 1
+        </h3>
+        <p
+          class="text-sm text-foreground/80"
+        >
+          This is the first option
+        </p>
+      </div>
+    </div>
+  </label>
+  <label
+    class="items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 relative cursor-pointer rounded-ui border p-4 transition-all duration-200 block hover:border-border focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2 border-border bg-card overflow-hidden"
+    data-slot="label"
+    for="radio-option2"
+  >
+    <input
+      aria-describedby="radio-option2-description"
+      class="sr-only"
+      id="radio-option2"
+      type="radio"
+      value="option2"
+    />
+    <div
+      id="radio-option2-description"
+    >
+      <div>
+        <h3
+          class="font-semibold"
+        >
+          Option 2
+        </h3>
+        <p
+          class="text-sm text-foreground/80"
+        >
+          This is the second option
+        </p>
+      </div>
+    </div>
+  </label>
+  <label
+    class="items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 relative cursor-pointer rounded-ui border p-4 transition-all duration-200 block hover:border-border focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2 border-border bg-card overflow-hidden"
+    data-slot="label"
+    for="radio-option3"
+  >
+    <input
+      aria-describedby="radio-option3-description"
+      class="sr-only"
+      id="radio-option3"
+      type="radio"
+      value="option3"
+    />
+    <div
+      id="radio-option3-description"
+    >
+      <div>
+        <h3
+          class="font-semibold"
+        >
+          Option 3
+        </h3>
+        <p
+          class="text-sm text-foreground/80"
+        >
+          This is the third option
+        </p>
+      </div>
+    </div>
+  </label>
+</div>
+`;
+
+exports[`RadioCard stories snapshot > WithDisabled story renders and matches snapshot 1`] = `
+<div
+  class="grid gap-3"
+  role="radiogroup"
+>
+  <label
+    class="items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 relative cursor-pointer rounded-ui border p-4 transition-all duration-200 block hover:border-border focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2 overflow-hidden border-primary bg-accent shadow-md"
+    data-slot="label"
+    for="radio-option1"
+  >
+    <input
+      aria-describedby="radio-option1-description"
+      checked=""
+      class="sr-only"
+      id="radio-option1"
+      type="radio"
+      value="option1"
+    />
+    <div
+      class="absolute top-0 right-0 w-0 border-r-primary border-t-0 border-r-40 border-b-40 border-l-0 border-transparent"
+    >
+      <svg
+        aria-hidden="true"
+        class="lucide lucide-check absolute text-primary-foreground font-bold -right-10 top-1 w-5 h-5"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M20 6 9 17l-5-5"
+        />
+      </svg>
+    </div>
+    <div
+      id="radio-option1-description"
+    >
+      <div>
+        <h3
+          class="font-semibold"
+        >
+          Option 1
+        </h3>
+        <p
+          class="text-sm text-foreground/80"
+        >
+          Available
+        </p>
+      </div>
+    </div>
+  </label>
+  <label
+    class="items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 relative rounded-ui border p-4 transition-all duration-200 block hover:border-border focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2 border-border bg-card overflow-hidden cursor-not-allowed opacity-50"
+    data-slot="label"
+    for="radio-option2"
+  >
+    <input
+      aria-describedby="radio-option2-description"
+      class="sr-only"
+      disabled=""
+      id="radio-option2"
+      type="radio"
+      value="option2"
+    />
+    <div
+      id="radio-option2-description"
+    >
+      <div>
+        <h3
+          class="font-semibold"
+        >
+          Option 2
+        </h3>
+        <p
+          class="text-sm text-foreground/80"
+        >
+          Unavailable
+        </p>
+      </div>
+    </div>
+  </label>
+  <label
+    class="items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 relative cursor-pointer rounded-ui border p-4 transition-all duration-200 block hover:border-border focus-within:ring-2 focus-within:ring-ring focus-within:ring-offset-2 border-border bg-card overflow-hidden"
+    data-slot="label"
+    for="radio-option3"
+  >
+    <input
+      aria-describedby="radio-option3-description"
+      class="sr-only"
+      id="radio-option3"
+      type="radio"
+      value="option3"
+    />
+    <div
+      id="radio-option3-description"
+    >
+      <div>
+        <h3
+          class="font-semibold"
+        >
+          Option 3
+        </h3>
+        <p
+          class="text-sm text-foreground/80"
+        >
+          Available
+        </p>
+      </div>
+    </div>
+  </label>
+</div>
+`;

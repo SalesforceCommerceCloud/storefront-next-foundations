@@ -1,0 +1,41 @@
+packages:
+  - e2e
+  - 'packages/*'
+
+# Supply chain security: only these packages may run install scripts.
+# All other packages' lifecycle scripts are blocked by pnpm.
+# To allow a new package, add it here and run: pnpm install
+# (https://pnpm.io/settings#onlybuiltdependencies)
+onlyBuiltDependencies:
+  - '@swc/core'    # Platform-specific native binding (Rust JS compiler)
+  - esbuild        # Platform-specific binary download (build tooling)
+  - msw            # Copies mockServiceWorker.js into project (test mocking)
+  - protobufjs     # Compiles .proto definitions (gRPC/Google libs)
+  - unrs-resolver  # Native module setup (eslint-import-resolver)
+
+# Refuse npm packages published less than 48 hours ago.
+# Bypass: pnpm install --config.minimumReleaseAge=0
+# (https://pnpm.io/settings#minimumreleaseage)
+minimumReleaseAge: 2880
+
+# These Salesforce-published packages are exempt from the quarantine window.
+# (https://pnpm.io/settings#minimumreleaseageexclude)
+minimumReleaseAgeExclude:
+  - '@salesforce/storefront-next-dev'
+  - '@salesforce/storefront-next-runtime'
+  - '@salesforce/mrt-utilities'
+  - '@salesforce/b2c-tooling-sdk'      # transitive via storefront-next-dev; bare entry auto-pinned by prepare-standalone-template.js
+  - '@salesforce/b2c-cli@1.19.0'       # template devDependency (not reachable from the SDK dirs the prepare script resolves), so pin explicitly; keep in lockstep with the exact pin in package.json
+
+# Prevent lockfile version downgrades.
+# (https://pnpm.io/settings#trustpolicy)
+trustPolicy: no-downgrade
+
+# Packages excluded from trust policy checks.
+# Exclude only when the trust downgrade is a maintainer publishing without
+# provenance (not a real takeover) and the package is widely used.
+# Review periodically — remove entries once the maintainer restores provenance.
+# (https://pnpm.io/settings#trustpolicyexclude)
+trustPolicyExclude:
+  - 'chokidar@4.0.3'          # Lost SLSA provenance in 4.0.2+; dep of @react-router/dev
+  - 'semver@6.3.1 || 5.7.2'   # Lost provenance; dep of eslint-plugin-import, lighthouse

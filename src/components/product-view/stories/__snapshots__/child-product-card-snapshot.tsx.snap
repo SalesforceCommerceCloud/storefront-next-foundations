@@ -1,0 +1,146 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ChildProductCard stories snapshot > Playground story renders and matches snapshot 1`] = `
+<div
+  class="w-80"
+>
+  <div
+    class="bg-card text-card-foreground flex flex-col gap-6 rounded-ui border-ui border-border py-6 shadow-ui h-full"
+    data-slot="card"
+    data-testid="child-product"
+  >
+    <div
+      class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 pb-4"
+      data-slot="card-header"
+    >
+      <div
+        class="text-xl font-bold text-card-foreground tracking-tight"
+        data-slot="card-title"
+      >
+        Turquoise and Gold Bracelet
+      </div>
+      <div
+        class="items-center gap-2"
+      >
+        <span
+          aria-label="Current price: £38.00"
+          aria-live="polite"
+          class="[&:not(:first-child)]:mt-6 text-left text-lg font-bold text-card-foreground tracking-tight"
+        >
+          £38.00
+        </span>
+        <span
+          aria-atomic="true"
+          aria-live="polite"
+          class="sr-only"
+        >
+          Turquoise and Gold Bracelet
+           
+          Current price: £38.00
+        </span>
+         
+      </div>
+    </div>
+    <div
+      class="px-6 space-y-4"
+      data-slot="card-content"
+    >
+      <div
+        class="aspect-square"
+      >
+        <div
+          class="space-y-4"
+        >
+          <div
+            class="relative aspect-square overflow-hidden bg-muted"
+            data-gallery-hero="true"
+          >
+            <div
+              class="w-full h-full object-cover object-center [&_img]:object-contain! [&_img]:h-full! [&_img]:max-w-full! [&_img]:mx-auto!"
+            >
+              <picture>
+                <source
+                  media="(min-width: 768px)"
+                  sizes="420px"
+                  srcset="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwf4356eab/images/large/PG.60119239.JJ887XX.PZ.webp?sfrm=jpg&q=70&sw=420 420w, https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwf4356eab/images/large/PG.60119239.JJ887XX.PZ.webp?sfrm=jpg&q=70&sw=840 840w"
+                  type="image/webp"
+                />
+                <source
+                  sizes="360px"
+                  srcset="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwf4356eab/images/large/PG.60119239.JJ887XX.PZ.webp?sfrm=jpg&q=70&sw=360 360w, https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwf4356eab/images/large/PG.60119239.JJ887XX.PZ.webp?sfrm=jpg&q=70&sw=720 720w"
+                  type="image/webp"
+                />
+                <img
+                  alt="Turquoise and Gold Bracelet, Gold, large"
+                  class="object-cover"
+                  fetchpriority="auto"
+                  loading="lazy"
+                  src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwf4356eab/images/large/PG.60119239.JJ887XX.PZ.webp?sfrm=jpg&q=70"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="space-y-3"
+      >
+        <div
+          aria-labelledby="swatch-group-label-_r_0_"
+          class="flex flex-col gap-3"
+          role="radiogroup"
+        >
+          <div
+            class="flex items-center gap-2 text-base font-semibold leading-6 text-card-foreground"
+            id="swatch-group-label-_r_0_"
+          >
+            <span>
+              Color
+              :
+            </span>
+            <span>
+              Gold
+            </span>
+          </div>
+          <div
+            class="flex flex-wrap gap-[var(--swatch-pill-gap,0.5rem)] focus:outline-none"
+            data-slot="swatch-container"
+          >
+            <a
+              aria-checked="true"
+              aria-label="Gold"
+              class="border-[length:var(--swatch-border-width)] flex-shrink-0 relative group transition-all duration-200 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 min-w-8 min-h-8 w-[var(--swatch-pill-size)] h-[var(--swatch-pill-size)] p-[var(--swatch-pill-padding)] cursor-pointer border-[var(--swatch-color-border-selected,black)] bg-[var(--swatch-color-bg-selected,transparent)] text-[var(--swatch-color-text-selected,inherit)] shadow-[var(--swatch-color-shadow,none)]"
+              data-swatch-type="color"
+              href="/RefArchGlobal/en-GB/?013742002836M=color%3DJJ887XX"
+              position="relative"
+              role="radio"
+              tabindex="0"
+            >
+              <div
+                class="flex items-center justify-center w-full h-full text-sm font-medium leading-5"
+                data-slot="swatch-content"
+              >
+                <div
+                  aria-label="Turquoise and Gold Bracelet, Gold, swatch"
+                  class="w-full h-full bg-cover bg-center bg-no-repeat"
+                  data-slot="swatch-dot"
+                  style="background-image: url("https://zzrf-001.dx.commercecloud.salesforce.com/on/demandware.static/-/Sites-apparel-m-catalog/default/dwe64c51d1/images/swatch/PG.60119239.JJ887XX.CP.jpg");"
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="text-center text-sm"
+      >
+        <span
+          class="text-primary font-medium"
+        >
+          ✓ Selected
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,71 @@
+{
+    "section": {
+        "heading": "カスタマーレビュー",
+        "loading": "レビューを読み込んでいます...",
+        "loadError": "レビューを読み込めませんでした。ページを更新してもう一度お試しください。",
+        "noReviewsForProduct": "この商品にはレビューがありません。",
+        "noReviewsMatchFilters": "絞り込み条件に一致するレビューはありません。",
+        "showingReviews": "{{total}} 件中 {{from}} - {{to}} 件のレビューを表示中",
+        "subtitleOne": "{{productName}}のレビュー 1 件",
+        "subtitleOther": "{{productName}}のレビュー {{count}} 件",
+        "aiReviewSummary": "AI レビューの要約"
+    },
+    "filters": {
+        "filterBy": "絞り込み:",
+        "withPhotos": "写真あり",
+        "searchPlaceholder": "レビューを検索...",
+        "sortLabel": "並べ替え:",
+        "sortMostRecent": "最新順",
+        "sortHighestRated": "評価の高い順",
+        "sortLowestRated": "評価の低い順",
+        "sortMostHelpful": "参考になった順",
+        "activeFilterStars": "{{count}} 星",
+        "clearFilter": "絞り込みをクリア",
+        "filterByStars": "{{count}} 星で絞り込む",
+        "clearStarFilter": "{{count}} 星の絞り込みをクリア",
+        "clearPhotoFilter": "写真の絞り込みをクリア"
+    },
+    "card": {
+        "verifiedPurchase": "購入確認済み",
+        "helpful": "参考になった ({{count}})",
+        "helpfulNoCount": "参考になった",
+        "report": "レポート",
+        "readMore": "もっと読む",
+        "readLess": "表示を減らす",
+        "imageAlt": "レビュー画像"
+    },
+    "rating": {
+        "starContainerAriaLabel": "{{rating}}/{{total}} 星、{{count, number}} 件のレビュー",
+        "ratingOutOfTotal": "{{rating}}/{{total}}",
+        "ratingValue": "{{rating}}",
+        "basedOnReviews": "{{count, number}} 件のレビューに基づいています",
+        "ratingWithCount": "{{rating}} ({{count, number}})",
+        "viewAllReviews": "すべてのレビューを表示",
+        "distributionAriaLabel": "{{rating}} 星: {{totalReviews, number}} 件中 {{count, number}} 件のレビュー",
+        "distributionsAriaLabel": "星評価の内訳、レビュー総数 {{total, number}} 件",
+        "seeCustomerReviews": "カスタマーレビューを見る >"
+    },
+    "writeReview": {
+        "buttonLabel": "レビューを書く",
+        "modalDescription": "レビュー投稿フォーム",
+        "starRatingDistributionDescription": "星評価の内訳",
+        "submitting": "送信しています",
+        "successMessage": "レビューを送信しました",
+        "errorMessage": "レビューの送信に失敗しました。もう一度お試しください。",
+        "validation": {
+            "pleaseFixFollowing": "以下を修正してください。",
+            "ratingRequired": "評価を選択してください。",
+            "reviewRequired": "このフィールドに入力してください。",
+            "reviewMinLength": "レビューは {{count}} 文字以上で入力してください。",
+            "reviewMaxLength": "{{count}} 文字以内で入力してください。",
+            "titleMaxLength": "{{count}} 文字以内で入力してください。"
+        },
+        "minCharactersHint": "最小 {{count}} 文字。",
+        "maxCharactersHint": "最大 {{count}} 文字。"
+    },
+    "orderLine": {
+        "rateAndReview": "評価とレビュー",
+        "reviewSubmitted": "レビューを送信しました",
+        "cta": "評価とレビュー"
+    }
+}

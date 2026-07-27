@@ -1,0 +1,71 @@
+{
+    "section": {
+        "heading": "Kundrecensioner",
+        "loading": "Laddar recensioner ...",
+        "loadError": "Vi kunde inte läsa in recensioner. Uppdatera sidan för att försöka igen.",
+        "noReviewsForProduct": "Inga recensioner för denna produkt.",
+        "noReviewsMatchFilters": "Inga recensioner matchar dina filter.",
+        "showingReviews": "Visar {{from}}–{{to}} av {{total}} recensioner",
+        "subtitleOne": "1 recension av {{productName}}",
+        "subtitleOther": "{{count}} recensioner av {{productName}}",
+        "aiReviewSummary": "AI-sammanfattning av recensioner"
+    },
+    "filters": {
+        "filterBy": "Filtrera efter:",
+        "withPhotos": "Med foton",
+        "searchPlaceholder": "Sök recensioner ...",
+        "sortLabel": "Sortera:",
+        "sortMostRecent": "Senaste",
+        "sortHighestRated": "Högst betyg",
+        "sortLowestRated": "Lägst betyg",
+        "sortMostHelpful": "Mest användbara",
+        "activeFilterStars": "{{count}} stjärnor",
+        "clearFilter": "Rensa filter",
+        "filterByStars": "Filtrera efter {{count}} stjärnor",
+        "clearStarFilter": "Rensa filter med {{count}} stjärna/stjärnor",
+        "clearPhotoFilter": "Rensa fotofilter"
+    },
+    "card": {
+        "verifiedPurchase": "Verifierat köp",
+        "helpful": "Användbar ({{count}})",
+        "helpfulNoCount": "Användbar",
+        "report": "Rapport",
+        "readMore": "Mer",
+        "readLess": "Mindre",
+        "imageAlt": "Granska bilden"
+    },
+    "rating": {
+        "starContainerAriaLabel": "{{rating}} av {{total}} stjärnor, {{count, number}} recensioner",
+        "ratingOutOfTotal": "{{rating}} av {{total}}",
+        "ratingValue": "{{rating}}",
+        "basedOnReviews": "Baserat på {{count, number}} recensioner",
+        "ratingWithCount": "{{rating}} ({{count, number}})",
+        "viewAllReviews": "Se alla recensioner",
+        "distributionAriaLabel": "{{rating}} stjärnor: {{count, number}} av {{totalReviews, number}} recensioner",
+        "distributionsAriaLabel": "Fördelning av stjärnbetyg, {{total, number}} totalt antal recensioner",
+        "seeCustomerReviews": "Se kundrecensioner >"
+    },
+    "writeReview": {
+        "buttonLabel": "Skriv en recension",
+        "modalDescription": "Formulär för att skriva en recension",
+        "starRatingDistributionDescription": "Detaljer om distribution av stjärnrecensioner",
+        "submitting": "Skickar in",
+        "successMessage": "Recension skickad",
+        "errorMessage": "Det gick inte att skicka recensionen. Försök igen.",
+        "validation": {
+            "pleaseFixFollowing": "Korrigera följande:",
+            "ratingRequired": "Välj ett betyg.",
+            "reviewRequired": "Fyll i detta fält.",
+            "reviewMinLength": "Din recension måste bestå av minst {{count}} tecken",
+            "reviewMaxLength": "Ange inte fler än {{count}} tecken.",
+            "titleMaxLength": "Ange inte fler än {{count}} tecken."
+        },
+        "minCharactersHint": "Minst {{count}} tecken.",
+        "maxCharactersHint": "Högst {{count}} tecken."
+    },
+    "orderLine": {
+        "rateAndReview": "Betygsätt och recensera",
+        "reviewSubmitted": "Recension skickad",
+        "cta": "Betygsätt och recensera"
+    }
+}

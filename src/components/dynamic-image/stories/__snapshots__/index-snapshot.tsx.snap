@@ -1,0 +1,74 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`DynamicImage stories snapshot > Default story renders and matches snapshot 1`] = `
+<div
+  class=""
+>
+  <img
+    alt="Example image"
+    class="object-cover"
+    fetchpriority="auto"
+    loading="lazy"
+    src="https://via.placeholder.com/800"
+  />
+</div>
+`;
+
+exports[`DynamicImage stories snapshot > DisDisabled story renders and matches snapshot 1`] = `
+<div
+  class=""
+>
+  <img
+    alt="DIS disabled image"
+    class="object-cover"
+    fetchpriority="auto"
+    loading="lazy"
+    src="/product.jpg"
+  />
+</div>
+`;
+
+exports[`DynamicImage stories snapshot > MissingSrc story renders and matches snapshot 1`] = `
+<div
+  class=""
+>
+  <img
+    alt="No image source provided"
+    class="object-cover"
+    fetchpriority="auto"
+    loading="lazy"
+  />
+</div>
+`;
+
+exports[`DynamicImage stories snapshot > Playground story renders and matches snapshot 1`] = `
+<div
+  class="w-96"
+>
+  <div
+    class=""
+  >
+    <img
+      alt="Responsive product image"
+      class="object-cover"
+      fetchpriority="auto"
+      loading="lazy"
+      src="https://via.placeholder.com/800"
+    />
+  </div>
+</div>
+`;
+
+exports[`DynamicImage stories snapshot > ResponsiveWidths story renders and matches snapshot 1`] = `
+<div
+  class=""
+>
+  <img
+    alt="Responsive object widths"
+    class="object-cover"
+    fetchpriority="auto"
+    loading="lazy"
+    src="https://via.placeholder.com/800"
+  />
+</div>
+`;

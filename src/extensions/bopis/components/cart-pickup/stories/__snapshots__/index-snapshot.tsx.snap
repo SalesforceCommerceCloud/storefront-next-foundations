@@ -1,0 +1,313 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CartPickup stories snapshot > Default story renders and matches snapshot 1`] = `
+<div>
+  <div
+    class="pb-4"
+    data-testid="cart-pickup-card"
+  >
+    <div
+      class="flex items-start justify-between gap-4"
+    >
+      <div
+        class="flex-1 space-y-2"
+      >
+        <div
+          class="flex items-center gap-2"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-store size-4 shrink-0"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15 21v-5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v5"
+            />
+            <path
+              d="M17.774 10.31a1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.451 0 1.12 1.12 0 0 0-1.548 0 2.5 2.5 0 0 1-3.452 0 1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.77-3.248l2.889-4.184A2 2 0 0 1 7 2h10a2 2 0 0 1 1.653.873l2.895 4.192a2.5 2.5 0 0 1-3.774 3.244"
+            />
+            <path
+              d="M4 10.95V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8.05"
+            />
+          </svg>
+          <h2
+            class="text-sm tracking-tight text-left leading-none font-normal"
+          >
+            Pick up in 
+            <span
+              class="font-semibold"
+            >
+              Downtown Store
+            </span>
+             - 1 out of 3 items
+          </h2>
+        </div>
+        <div
+          class="ml-7"
+        >
+          <div
+            class="text-muted-foreground text-left text-sm"
+          >
+            <div>
+              123 Main Street
+            </div>
+            <div>
+              San Francisco, CA 94102
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3"
+        data-size="default"
+        data-slot="button"
+        data-variant="outline"
+      >
+        Change Store
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CartPickup stories snapshot > DesktopLayout story renders and matches snapshot 1`] = `
+<div>
+  <div
+    class="pb-4"
+    data-testid="cart-pickup-card"
+  >
+    <div
+      class="flex items-start justify-between gap-4"
+    >
+      <div
+        class="flex-1 space-y-2"
+      >
+        <div
+          class="flex items-center gap-2"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-store size-4 shrink-0"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15 21v-5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v5"
+            />
+            <path
+              d="M17.774 10.31a1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.451 0 1.12 1.12 0 0 0-1.548 0 2.5 2.5 0 0 1-3.452 0 1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.77-3.248l2.889-4.184A2 2 0 0 1 7 2h10a2 2 0 0 1 1.653.873l2.895 4.192a2.5 2.5 0 0 1-3.774 3.244"
+            />
+            <path
+              d="M4 10.95V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8.05"
+            />
+          </svg>
+          <h2
+            class="text-sm tracking-tight text-left leading-none font-normal"
+          >
+            Pick up in 
+            <span
+              class="font-semibold"
+            >
+              Downtown Store
+            </span>
+             - 1 out of 3 items
+          </h2>
+        </div>
+        <div
+          class="ml-7"
+        >
+          <div
+            class="text-muted-foreground text-left text-sm"
+          >
+            <div>
+              123 Main Street
+            </div>
+            <div>
+              San Francisco, CA 94102
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3"
+        data-size="default"
+        data-slot="button"
+        data-variant="outline"
+      >
+        Change Store
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CartPickup stories snapshot > LongStoreName story renders and matches snapshot 1`] = `
+<div>
+  <div
+    class="pb-4"
+    data-testid="cart-pickup-card"
+  >
+    <div
+      class="flex items-start justify-between gap-4"
+    >
+      <div
+        class="flex-1 space-y-2"
+      >
+        <div
+          class="flex items-center gap-2"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-store size-4 shrink-0"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15 21v-5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v5"
+            />
+            <path
+              d="M17.774 10.31a1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.451 0 1.12 1.12 0 0 0-1.548 0 2.5 2.5 0 0 1-3.452 0 1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.77-3.248l2.889-4.184A2 2 0 0 1 7 2h10a2 2 0 0 1 1.653.873l2.895 4.192a2.5 2.5 0 0 1-3.774 3.244"
+            />
+            <path
+              d="M4 10.95V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8.05"
+            />
+          </svg>
+          <h2
+            class="text-sm tracking-tight text-left leading-none font-normal"
+          >
+            Pick up in 
+            <span
+              class="font-semibold"
+            >
+              Downtown San Francisco Flagship Store
+            </span>
+             - 1 out of 3 items
+          </h2>
+        </div>
+        <div
+          class="ml-7"
+        >
+          <div
+            class="text-muted-foreground text-left text-sm"
+          >
+            <div>
+              123 Main Street
+            </div>
+            <div>
+              San Francisco, CA 94102
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3"
+        data-size="default"
+        data-slot="button"
+        data-variant="outline"
+      >
+        Change Store
+      </button>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`CartPickup stories snapshot > MobileLayout story renders and matches snapshot 1`] = `
+<div>
+  <div
+    class="pb-4"
+    data-testid="cart-pickup-card"
+  >
+    <div
+      class="flex items-start justify-between gap-4"
+    >
+      <div
+        class="flex-1 space-y-2"
+      >
+        <div
+          class="flex items-center gap-2"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-store size-4 shrink-0"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M15 21v-5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v5"
+            />
+            <path
+              d="M17.774 10.31a1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.451 0 1.12 1.12 0 0 0-1.548 0 2.5 2.5 0 0 1-3.452 0 1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.77-3.248l2.889-4.184A2 2 0 0 1 7 2h10a2 2 0 0 1 1.653.873l2.895 4.192a2.5 2.5 0 0 1-3.774 3.244"
+            />
+            <path
+              d="M4 10.95V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8.05"
+            />
+          </svg>
+          <h2
+            class="text-sm tracking-tight text-left leading-none font-normal"
+          >
+            Pick up in 
+            <span
+              class="font-semibold"
+            >
+              Downtown Store
+            </span>
+             - 1 out of 3 items
+          </h2>
+        </div>
+        <div
+          class="ml-7"
+        >
+          <div
+            class="text-muted-foreground text-left text-sm"
+          >
+            <div>
+              123 Main Street
+            </div>
+            <div>
+              San Francisco, CA 94102
+            </div>
+          </div>
+        </div>
+      </div>
+      <button
+        class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3"
+        data-size="default"
+        data-slot="button"
+        data-variant="outline"
+      >
+        Change Store
+      </button>
+    </div>
+  </div>
+</div>
+`;

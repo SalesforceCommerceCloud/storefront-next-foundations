@@ -1,0 +1,71 @@
+{
+    "section": {
+        "heading": "Avis des clients",
+        "loading": "Chargement des avis...",
+        "loadError": "Nous n'avons pas pu charger les avis. Veuillez actualiser la page pour réessayer.",
+        "noReviewsForProduct": "Pas d’avis pour ce produit.",
+        "noReviewsMatchFilters": "Aucun avis ne correspond à vos filtres.",
+        "showingReviews": "Affichage des avis {{from}} à {{to}} sur {{total}}",
+        "subtitleOne": "1 avis pour {{productName}}",
+        "subtitleOther": "{{count}} avis pour {{productName}}",
+        "aiReviewSummary": "Résumé des avis par l’IA"
+    },
+    "filters": {
+        "filterBy": "Filtrer par :",
+        "withPhotos": "Avec photos",
+        "searchPlaceholder": "Rechercher des avis...",
+        "sortLabel": "Trier :",
+        "sortMostRecent": "Les plus récents",
+        "sortHighestRated": "Les mieux notés",
+        "sortLowestRated": "Les moins bien notés",
+        "sortMostHelpful": "Les plus utiles",
+        "activeFilterStars": "{{count}} étoile(s)",
+        "clearFilter": "Effacer le filtre",
+        "filterByStars": "Filtrer par {{count}} étoile(s)",
+        "clearStarFilter": "Effacer le filtre {{count}} étoile(s)",
+        "clearPhotoFilter": "Effacer le filtre photo"
+    },
+    "card": {
+        "verifiedPurchase": "Achat vérifié",
+        "helpful": "Utile(s) ({{count}})",
+        "helpfulNoCount": "Utile",
+        "report": "Rapport",
+        "readMore": "En voir plus",
+        "readLess": "En voir moins",
+        "imageAlt": "Image de l’avis"
+    },
+    "rating": {
+        "starContainerAriaLabel": "{{rating}} étoile(s) sur {{total}}, {{count, number}} avis",
+        "ratingOutOfTotal": "{{rating}} sur {{total}}",
+        "ratingValue": "{{rating}}",
+        "basedOnReviews": "D’après {{count, number}} avis",
+        "ratingWithCount": "{{rating}} ({{count, number}})",
+        "viewAllReviews": "Voir tous les avis",
+        "distributionAriaLabel": "{{rating}} étoiles : {{count, number}} avis sur {{totalReviews, number}}",
+        "distributionsAriaLabel": "Répartition du nombre d’étoiles, {{total, number}} avis au total",
+        "seeCustomerReviews": "Voir les avis des clients >"
+    },
+    "writeReview": {
+        "buttonLabel": "Écrire un avis",
+        "modalDescription": "Rédiger un formulaire d’avis",
+        "starRatingDistributionDescription": "Détails de la répartition du nombre d’étoiles",
+        "submitting": "Soumission",
+        "successMessage": "Avis envoyé",
+        "errorMessage": "Impossible d'envoyer l'avis. Veuillez réessayer.",
+        "validation": {
+            "pleaseFixFollowing": "Veuillez effectuer les corrections suivantes :",
+            "ratingRequired": "Veuillez sélectionner une note.",
+            "reviewRequired": "Veuillez remplir ce champ.",
+            "reviewMinLength": "Votre avis doit comporter au moins {{count}} caractères",
+            "reviewMaxLength": "Veuillez ne pas saisir plus de {{count}} caractères.",
+            "titleMaxLength": "Veuillez ne pas saisir plus de {{count}} caractères."
+        },
+        "minCharactersHint": "{{count}} caractères minimum.",
+        "maxCharactersHint": "{{count}} caractères maximum."
+    },
+    "orderLine": {
+        "rateAndReview": "Évaluer et commenter",
+        "reviewSubmitted": "Avis envoyé",
+        "cta": "Évaluer et commenter"
+    }
+}

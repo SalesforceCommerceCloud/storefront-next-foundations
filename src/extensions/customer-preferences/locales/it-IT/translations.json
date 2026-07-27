@@ -1,0 +1,35 @@
+{
+    "interestsPreferences": {
+        "title": "Interessi e preferenze",
+        "description": "Aggiungi i tuoi interessi e gestisci le tue preferenze di acquisto",
+        "successMessage": "I tuoi interessi e le tue preferenze sono stati aggiornati.",
+        "errorMessage": "Impossibile eseguire l'aggiornamento. Riprova.",
+        "loadError": "We couldn't load your interests and preferences. Please refresh the page to try again."
+    },
+    "interests": {
+        "title": "I tuoi interessi",
+        "noneSelected": "Nessun interesse selezionato",
+        "addMore": "Aggiungi altri",
+        "addInterestsTitle": "Aggiungi i tuoi interessi"
+    },
+    "preferences": {
+        "noneSelected": "Nessuna selezione",
+        "addMore": "Aggiungi altri",
+        "dialogTitle": "Seleziona opzioni",
+        "selectCategory": "Seleziona {{category}}"
+    },
+    "measures": {
+        "roomDimensionsLabel": "Room dimensions:",
+        "ceilingHeightLabel": "Ceiling height:",
+        "noneProvided": "No measures provided"
+    },
+    "size": {
+        "preferredSizeLabel": "Preferred product size:"
+    },
+    "common": {
+        "save": "Salva",
+        "saving": "Salvataggio in corso...",
+        "cancel": "Annulla",
+        "edit": "Modifica"
+    }
+}

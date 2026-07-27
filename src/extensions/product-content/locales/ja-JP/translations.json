@@ -1,0 +1,20 @@
+{
+    "contentComingSoon": "コンテンツは近日公開予定です。",
+    "faq": {
+        "askAssistant": "アシスタントに質問",
+        "faqQuestionSendToAssistantAriaLabel": "買い物客エージェントを開いて質問: {{question}}"
+    },
+    "returnsAndWarranty": {
+        "learnMore": "ポリシーを見る",
+        "returnConditions": "返品条件:",
+        "howToReturn": "返品方法:",
+        "note": "注意: ",
+        "whatsCovered": "保証対象:",
+        "whatsNotCovered": "保証対象外:",
+        "warrantyClaims": "保証請求:",
+        "exchangeProcess": "交換手続き:",
+        "needHelp": "お困りですか?",
+        "contactAt": "お問い合わせ先",
+        "orCall": "またはお電話でお問い合わせください"
+    }
+}

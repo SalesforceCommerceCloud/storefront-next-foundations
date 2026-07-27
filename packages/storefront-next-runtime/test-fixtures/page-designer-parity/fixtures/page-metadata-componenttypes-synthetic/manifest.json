@@ -1,0 +1,79 @@
+{
+    "pageId": "metadata-page",
+    "context": {
+        "campaignQualifiers": [],
+        "customerGroups": [],
+        "dataBindings": []
+    },
+    "variationOrder": ["default"],
+    "variations": {
+        "default": {
+            "ruleRequiresContext": false,
+            "pageRequiresContext": false,
+            "page": {
+                "id": "metadata-page",
+                "typeId": "storePage",
+                "name": "Default Page Name",
+                "aspectTypeId": "homeAspect",
+                "description": "Default storefront landing page.",
+                "pageTitle": "Welcome - My Shop",
+                "pageDescription": "Default page description for SEO.",
+                "pageKeywords": "shop,welcome,storefront",
+                "regions": [
+                    {
+                        "id": "main",
+                        "components": [
+                            {
+                                "id": "hero-1",
+                                "typeId": "commerce_assets.heroBanner",
+                                "regions": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            "pageContent": {
+                "fr_FR": {
+                    "name": "Nom de Page Localisé",
+                    "aspectTypeId": "homeAspect",
+                    "description": "Page d'accueil localisée du storefront.",
+                    "pageTitle": "Bienvenue - Ma Boutique",
+                    "pageDescription": "Description localisée pour le référencement.",
+                    "pageKeywords": "boutique,bienvenue,vitrine"
+                }
+            },
+            "regions": {
+                "main": {}
+            }
+        }
+    },
+    "defaultVariation": "default",
+    "componentTypes": {
+        "storePage": {
+            "attributeDefinitions": {}
+        },
+        "commerce_assets.heroBanner": {
+            "attributeDefinitions": {
+                "hero": { "type": "image" }
+            }
+        }
+    },
+    "componentInfo": {
+        "hero-1": {
+            "visibilityRules": [],
+            "content": {
+                "en_US": {
+                    "hero": {
+                        "focalPoint": { "x": 0.5, "y": 0.5 },
+                        "metaData": { "width": 1200, "height": 600 },
+                        "media": {
+                            "libraryDomain": "Library-Sites-MyLibrary",
+                            "path": "/images/hero/banner.jpg"
+                        }
+                    }
+                }
+            },
+            "regions": {}
+        }
+    }
+}

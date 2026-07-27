@@ -1,0 +1,9 @@
+{
+    "sourceStack": "synthetic",
+    "requestHost": "https://www.shop.example",
+    "locale": "en_US",
+    "defaultLocale": "en_US",
+    "siteId": "RefArch",
+    "capturedAt": "2026-05-07T00:00:00Z",
+    "description": "Trivial round-trip fixture: one component with one string-typed attribute. Validates the harness end-to-end with no host-stamping concerns. Synthetic capture — both inputs and outputs were authored by hand to match the existing v1 manifest semantics. Replace with a real ECOM/SCAPI capture when the parity gate moves into CI."
+}

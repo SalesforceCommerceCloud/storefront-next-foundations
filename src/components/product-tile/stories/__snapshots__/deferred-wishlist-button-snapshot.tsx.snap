@@ -1,0 +1,185 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`DeferredWishlistButton stories snapshot > Default story renders and matches snapshot 1`] = `
+<div
+  class="relative w-64 h-64"
+>
+  <button
+    aria-label="Add to Wishlist"
+    class="absolute top-2 right-2 z-10 bg-background w-9 h-9 p-2 shadow-md border-0 flex items-center justify-center rounded-ui transition-all duration-200 ease-in-out cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed"
+  >
+    <svg
+      aria-hidden="true"
+      class="w-5 h-5 transition-all duration-200 ease-in-out text-muted-foreground scale-100"
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.5"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`DeferredWishlistButton stories snapshot > LargeSize story renders and matches snapshot 1`] = `
+<div
+  class="relative w-64 h-64"
+>
+  <button
+    aria-label="Add to Wishlist"
+    class="absolute top-2 right-2 z-10 bg-background w-9 h-9 p-2 shadow-md border-0 flex items-center justify-center rounded-ui transition-all duration-200 ease-in-out cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed"
+  >
+    <svg
+      aria-hidden="true"
+      class="w-6 h-6 transition-all duration-200 ease-in-out text-muted-foreground scale-100"
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.5"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`DeferredWishlistButton stories snapshot > MinimalProps story renders and matches snapshot 1`] = `
+<div
+  class="relative w-64 h-64"
+>
+  <button
+    aria-label="Add to Wishlist"
+    class="absolute top-2 right-2 z-10 bg-background w-9 h-9 p-2 shadow-md border-0 flex items-center justify-center rounded-ui transition-all duration-200 ease-in-out cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed"
+  >
+    <svg
+      aria-hidden="true"
+      class="w-5 h-5 transition-all duration-200 ease-in-out text-muted-foreground scale-100"
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.5"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`DeferredWishlistButton stories snapshot > Playground story renders and matches snapshot 1`] = `
+<div
+  class="relative w-64 h-64"
+>
+  <button
+    aria-label="Add to Wishlist"
+    class="absolute top-2 right-2 z-10 bg-background w-9 h-9 p-2 shadow-md border-0 flex items-center justify-center rounded-ui transition-all duration-200 ease-in-out cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed"
+    tabindex="0"
+  >
+    <svg
+      aria-hidden="true"
+      class="w-5 h-5 transition-all duration-200 ease-in-out text-muted-foreground scale-100"
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.5"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`DeferredWishlistButton stories snapshot > SmallSize story renders and matches snapshot 1`] = `
+<div
+  class="relative w-64 h-64"
+>
+  <button
+    aria-label="Add to Wishlist"
+    class="absolute top-2 right-2 z-10 bg-background w-9 h-9 p-2 shadow-md border-0 flex items-center justify-center rounded-ui transition-all duration-200 ease-in-out cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed"
+  >
+    <svg
+      aria-hidden="true"
+      class="w-4 h-4 transition-all duration-200 ease-in-out text-muted-foreground scale-100"
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.5"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`DeferredWishlistButton stories snapshot > WithClassName story renders and matches snapshot 1`] = `
+<div
+  class="relative w-64 h-64"
+>
+  <button
+    aria-label="Add to Wishlist"
+    class="absolute top-2 right-2 z-10 bg-background w-9 h-9 p-2 shadow-md border-0 flex items-center justify-center rounded-ui transition-all duration-200 ease-in-out cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed custom-class"
+  >
+    <svg
+      aria-hidden="true"
+      class="w-5 h-5 transition-all duration-200 ease-in-out text-muted-foreground scale-100"
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.5"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+      />
+    </svg>
+  </button>
+</div>
+`;
+
+exports[`DeferredWishlistButton stories snapshot > WithTabIndex story renders and matches snapshot 1`] = `
+<div
+  class="relative w-64 h-64"
+>
+  <button
+    aria-label="Add to Wishlist"
+    class="absolute top-2 right-2 z-10 bg-background w-9 h-9 p-2 shadow-md border-0 flex items-center justify-center rounded-ui transition-all duration-200 ease-in-out cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:opacity-60 disabled:cursor-not-allowed"
+    tabindex="-1"
+  >
+    <svg
+      aria-hidden="true"
+      class="w-5 h-5 transition-all duration-200 ease-in-out text-muted-foreground scale-100"
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="1.5"
+      viewBox="0 0 24 24"
+    >
+      <path
+        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"
+      />
+    </svg>
+  </button>
+</div>
+`;

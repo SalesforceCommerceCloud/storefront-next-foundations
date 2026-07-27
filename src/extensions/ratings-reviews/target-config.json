@@ -1,0 +1,19 @@
+{
+    "components": [
+        {
+            "targetId": "sfcc.pdp.reviews.section",
+            "path": "extensions/ratings-reviews/components/target/reviews-section-target.tsx",
+            "order": 0
+        },
+        {
+            "targetId": "sfcc.pdp.reviews.rating",
+            "path": "extensions/ratings-reviews/components/target/reviews-summary-target.tsx",
+            "order": 0
+        },
+        {
+            "targetId": "sfcc.account.orderDetail.lineReview",
+            "path": "extensions/ratings-reviews/components/target/order-line-review-target.tsx",
+            "order": 0
+        }
+    ]
+}

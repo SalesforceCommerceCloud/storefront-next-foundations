@@ -1,0 +1,31 @@
+/*
+ * Status-specific tokens not in the core palette.
+ * Core tokens (--destructive, --success, --warning, --info and their -foreground pairs)
+ * are defined in core.css from the Figma source of truth — do not duplicate here.
+ *
+ * All tokens in this file are NOT in Figma JSON; they are storefront-specific
+ * compositions or legacy shades pending design-system unification.
+ */
+:root {
+    /* warning extras (e.g. caution messages, default-payment warning) */
+    --warning-bg: #fff7ed;
+    --warning-border: #fed7aa;
+
+    /* active status (e.g. authorized pickup person badge) */
+    --active-bg: #dcfce7;
+    --active-foreground: #15803d;
+
+    /* account/payment destructive actions (remove payment, remove address, etc.) — scoped so global --destructive is unchanged */
+    --account-action-destructive: var(--destructive);
+    --account-action-destructive-foreground: #ffffff;
+
+    /* status colors (for inventory, availability indicators, etc.) */
+    --status-positive: var(--success);
+    --status-warning: #c2410c;
+    --status-critical: #dc2626;
+    --status-critical-strong: #dc2626;
+    --status-critical-bg: #fef2f2;
+    --status-critical-foreground: #991b1b;
+    --status-critical-border: #fecaca;
+    --status-info: #2563eb;
+}

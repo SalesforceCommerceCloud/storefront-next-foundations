@@ -1,0 +1,34 @@
+/*
+ * Swatch tokens — NOT in Figma JSON.
+ * Storefront-specific composition: most slots alias core tokens (--secondary,
+ * --primary, --input). The literal --swatch-color-shadow and --swatch-color-border-hover
+ * values are storefront chrome with no Figma counterpart.
+ */
+:root {
+    --swatch-group-bg: transparent;
+    --swatch-bg: var(--secondary);
+    --swatch-bg-selected: var(--primary);
+    --swatch-border: var(--input);
+    --swatch-border-selected: var(--primary);
+    --swatch-text: var(--secondary-foreground);
+    --swatch-text-selected: var(--primary-foreground);
+    --swatch-color-label: inline;
+    --swatch-color-size: auto;
+    --swatch-color-padding: 0.25rem 0.75rem 0.25rem 0.375rem;
+    --swatch-color-dot: 1rem;
+    --swatch-color-bg: var(--swatch-bg);
+    --swatch-color-bg-selected: var(--swatch-bg-selected);
+    --swatch-color-text: var(--swatch-text);
+    --swatch-color-text-selected: var(--swatch-text-selected);
+    --swatch-color-border: var(--swatch-border);
+    --swatch-color-border-selected: var(--swatch-border-selected);
+    --swatch-color-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --swatch-color-dot-border: 1px solid white;
+    --swatch-color-border-hover: #000000;
+    --swatch-labeled-padding: 0.5rem 0.75rem;
+    --swatch-labeled-min-size: 0;
+    --swatch-border-width: 1px;
+    --swatch-pill-size: 1rem;
+    --swatch-pill-padding: 0px;
+    --swatch-pill-gap: 0.5rem;
+}

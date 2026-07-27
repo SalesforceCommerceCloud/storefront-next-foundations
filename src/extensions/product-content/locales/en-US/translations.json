@@ -1,0 +1,20 @@
+{
+    "contentComingSoon": "Content coming soon.",
+    "faq": {
+        "askAssistant": "Ask assistant",
+        "faqQuestionSendToAssistantAriaLabel": "Open shopper agent and ask: {{question}}"
+    },
+    "returnsAndWarranty": {
+        "learnMore": "View Policies",
+        "returnConditions": "Return Conditions:",
+        "howToReturn": "How to Return:",
+        "note": "Note:",
+        "whatsCovered": "What's Covered:",
+        "whatsNotCovered": "What's Not Covered:",
+        "warrantyClaims": "Warranty Claims:",
+        "exchangeProcess": "Exchange Process:",
+        "needHelp": "Need Help?",
+        "contactAt": "Contact us at",
+        "orCall": "or call"
+    }
+}

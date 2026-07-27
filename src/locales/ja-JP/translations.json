@@ -1,0 +1,1621 @@
+{
+    "actionCard": {
+        "edit": "編集",
+        "remove": "削除"
+    },
+    "categoryRefinements": {
+        "appliedFilters": "適用中の絞り込み: ",
+        "clearAll": "すべてクリア",
+        "filtersButtonLabel": "絞り込み",
+        "filtersButtonLabelWithCount": "{{label}}、{{count}} 件を選択中",
+        "noFilterOptionsAvailable": "利用可能な絞り込みオプションはありません。"
+    },
+    "common": {
+        "loading": "読み込み中",
+        "loadingMore": "さらに読み込んでいます...",
+        "product": "その商品",
+        "noImageAvailable": "画像はありません",
+        "productGeneric": "商品",
+        "noProductsFound": "商品が見つかりませんでした",
+        "productCarousel": "商品カルーセル",
+        "productImageAlt": "商品画像",
+        "suggestionImageAlt": "おすすめ画像",
+        "hero": {
+            "defaultTitle": "今すぐお買い物",
+            "defaultImageAlt": "ヒーロー画像",
+            "defaultCtaText": "今すぐお買い物"
+        },
+        "previousImage": "前の画像",
+        "nextImage": "次の画像"
+    },
+    "search": {
+        "results": "次の検索結果: ",
+        "suggestions": {
+            "didYouMean": "次の語句で検索しますか",
+            "categories": "カテゴリ",
+            "products": "商品",
+            "popularSearches": "人気の検索",
+            "recentSearches": "最近の検索",
+            "clearRecentSearches": "最近の検索をクリア",
+            "viewAll": "すべて表示"
+        }
+    },
+    "customer": {
+        "defaults": {
+            "guestFirstName": "ゲスト",
+            "guestLastName": "ユーザー",
+            "defaultAddressName": "ホーム",
+            "defaultBillingAddressName": "請求"
+        },
+        "messages": {
+            "currentUserRecommendation": "アカウント情報の使用",
+            "guestRecommendation": "ゲストとして続行します。アカウントをお持ちの場合は、後でログインできます。"
+        }
+    },
+    "removeItem": {
+        "success": "商品を削除しました。",
+        "failed": "商品を削除できませんでした。",
+        "title": "商品を削除",
+        "button": "削除",
+        "removing": "削除しています...",
+        "confirmTitle": "商品の削除を確認",
+        "cancelButton": "いいえ、商品を削除しない",
+        "keepItemButton": "商品を削除しない",
+        "confirmAction": "はい、商品を削除する",
+        "keepItemAriaLabel": "商品を削除しない - この商品を買い物カゴに残します",
+        "removeItemAriaLabel": "はい、商品を削除する - この商品を買い物カゴから削除します"
+    },
+    "editItem": {
+        "title": "買い物カゴの商品を編集",
+        "quickAddTitle": "クイック追加",
+        "loadError": "商品詳細を読み込めませんでした。もう一度お試しください。",
+        "retry": "再試行",
+        "loadingProduct": "読み込み中..."
+    },
+    "header": {
+        "logoAlt": "ホーム",
+        "openChat": "チャットを開く",
+        "searchPlaceholder": "検索",
+        "welcomeBack": "おかえりなさい!",
+        "signIn": "サインイン",
+        "signOut": "サインアウト",
+        "signingOut": "サインアウトしています...",
+        "cartTitle": "マイ買い物カゴ",
+        "checkout": "注文手続き",
+        "continueShopping": "買い物を続ける",
+        "openMenu": "メニューを開く",
+        "closeMenu": "メニューを閉じる",
+        "mobileNavigation": "モバイルナビゲーションメニュー",
+        "expandCategory": "{{category}} を展開する",
+        "collapseCategory": "{{category}} をたたむ",
+        "menu": {
+            "yourLists": "マイリスト",
+            "yourAccount": "アカウント",
+            "savedItems": "保存済み商品",
+            "overview": "概要",
+            "addressBook": "住所録",
+            "paymentMethods": "支払方法",
+            "signInForBestExperience": "より快適にご利用いただくには、サインインしてください。",
+            "newCustomer": "初めてご利用ですか?",
+            "createAccount": "アカウントの作成"
+        }
+    },
+    "login": {
+        "title": "アカウントにサインイン",
+        "subtitle": "認証情報を入力してアカウントにアクセスします",
+        "continueWithProvider": "{{provider}} で続行",
+        "checkEmailTitle": "メールをご確認ください",
+        "checkEmailDescription": "{{email}} にログイン用リンクを送信しました。リンクをクリックしてサインインしてください。",
+        "backToLogin": "ログインに戻る",
+        "emailLabel": "メールアドレス",
+        "emailPlaceholder": "メールアドレスを入力",
+        "passwordLabel": "パスワード",
+        "passwordPlaceholder": "パスワードを入力",
+        "loginWithoutPassword": "パスワードなしでログイン",
+        "loginWithPassword": "パスワードでログイン",
+        "forgotPassword": "パスワードをお忘れですか?",
+        "noAccountQuestion": "アカウントをお持ちではありませんか? ",
+        "signUp": "サインアップ",
+        "signingIn": "サインインしています...",
+        "sendLoginLink": "ログイン用リンクの送信",
+        "sendingLoginLink": "ログイン用リンクを送信しています...",
+        "signIn": "サインイン",
+        "socialOrContinueWith": "または次の方法で続行",
+        "otpCodeLabel": "確認コード",
+        "redirecting": "サインイン中...",
+        "otpModalTitle": "確認コードを入力",
+        "otpModalDescription": "{{otpLength}} 桁のコードを {{email}} に送信しました",
+        "otpRequired": "認証コードは必須です",
+        "otpInvalidFormat": "有効な {{otpLength}} 桁のコードを入力してください",
+        "verifying": "確認中...",
+        "checkoutAsGuest": "ゲストとして注文手続きへ進む",
+        "resendCode": "コードを再送信",
+        "resendCodeTimer": "{{timer}} 秒後に再送信",
+        "resendCodeError": "コードを再送信できませんでした。もう一度お試しください。"
+    },
+    "resetPassword": {
+        "title": "パスワードをリセット",
+        "subtitle": "パスワードのリセット方法を記載した案内をお送りしますので、メールアドレスを入力してください。",
+        "checkEmailTitle": "メールをご確認ください",
+        "checkEmailDescription": "まもなく {{email}} 宛てにパスワードをリセットするためのリンクを記載したメールが届きます。",
+        "backToSignIn": "サインインに戻る",
+        "emailLabel": "メールアドレス",
+        "emailPlaceholder": "メールアドレスを入力",
+        "or": "または ",
+        "goBackToLogin": "ログインページに戻る",
+        "emailRequired": "メールアドレスは必須です。",
+        "newPasswordRequired": "新しいパスワードは必須です。",
+        "confirmPasswordRequired": "パスワードの確認は必須です。",
+        "sendingEmail": "メールを送信しています...",
+        "resetButton": "パスワードをリセット",
+        "landingTitle": "新しいパスワードの設定",
+        "landingSubtitle": "新しいパスワードを以下に入力してください",
+        "newPasswordLabel": "新しいパスワード",
+        "newPasswordPlaceholder": "安全なパスワードを作成",
+        "confirmPasswordLabel": "パスワードの確認入力",
+        "confirmPasswordPlaceholder": "パスワードを再入力",
+        "passwordsMustMatch": "パスワードは一致する必要があります",
+        "resetPasswordButton": "パスワードをリセット",
+        "resettingPassword": "パスワードをリセットしています...",
+        "invalidToken": "パスワードリセットリンクが無効または期限切れです。新しいリンクをリクエストしてください。",
+        "resetSuccess": "パスワードがリセットされました!ログインしています...",
+        "resetSuccessToast": "パスワードがリセットされました! 新しいパスワードでサインインしてください。"
+    },
+    "signup": {
+        "title": "アカウントを作成",
+        "subtitle": "今すぐ登録して、お買い物を始めましょう",
+        "haveAccountQuestion": "アカウントをお持ちですか? ",
+        "signIn": "サインイン",
+        "allFieldsRequired": "すべてのフィールドは必須です。",
+        "passwordsDoNotMatch": "パスワードが一致しません。",
+        "passwordNotSecure": "パスワードがセキュリティ要件を満たしていません。",
+        "form": {
+            "firstNameLabel": "名",
+            "firstNamePlaceholder": "名を入力",
+            "lastNameLabel": "姓",
+            "lastNamePlaceholder": "姓を入力",
+            "emailLabel": "メールアドレス",
+            "emailPlaceholder": "メールアドレスを入力",
+            "passwordLabel": "パスワード",
+            "passwordPlaceholder": "安全なパスワードを作成",
+            "confirmPasswordLabel": "パスワードの確認入力",
+            "confirmPasswordPlaceholder": "パスワードを再入力",
+            "createAccountButton": "アカウントの作成"
+        },
+        "passwordRequirements": {
+            "title": "パスワードの要件:",
+            "minLength": "8 文字以上",
+            "hasUppercase": "大文字 1 文字",
+            "hasLowercase": "小文字 1 文字",
+            "hasNumber": "数字 1 文字",
+            "hasSpecialChar": "特殊文字 1 文字 (, ! % # @ $ & * など)"
+        }
+    },
+    "socialCallback": {
+        "socialError": "ソーシャルログインがキャンセルされたか、失敗しました。もう一度お試しください。"
+    },
+    "errors": {
+        "genericTryAgain": "問題が発生しました。もう一度お試しください。",
+        "somethingWentWrong": "問題が発生しました。もう一度お試しください。",
+        "loginFailed": "ログインに失敗しました。認証情報を確認してください。",
+        "accessTokenRefreshFailed": "更新されたアクセストークンを取得できませんでした。",
+        "guestAccessTokenFailed": "新しいアクセストークンを取得できませんでした。",
+        "codeVerifierMissing": "セッションにコードベリファイアが見つかりませんでした。",
+        "missingRegistrationField": "顧客登録に必要なフィールドが入力されていません。",
+        "autoLoginAfterRegistrationFailed": "登録後の自動ログインに失敗しました。",
+        "methodNotAllowed": "この操作は許可されていません。",
+        "featureUnavailable": "この機能は現在利用できません。サポートにお問い合わせください。",
+        "tooManyLoginAttempts": "ログイン試行回数の上限に達しました。セキュリティ保護のため、10 分待ってからもう一度お試しください。",
+        "tooManyPasswordResetAttempts": "パスワードのリセット回数の上限に達しました。セキュリティ保護のため、10 分待ってからもう一度お試しください。",
+        "invalidToken": "確認コードが無効です。もう一度お試しください。",
+        "expiredToken": "確認コードの有効期限が切れています。新しいコードをリクエストしてください。",
+        "promoCodeRequired": "プロモーションコードは必須です。",
+        "couponItemIdRequired": "クーポン品目 ID は必須です。",
+        "noBasketFound": "買い物カゴが見つかりません。",
+        "noCustomerFound": "セッションに顧客が見つかりません",
+        "api": {
+            "orderNotFound": "注文が見つかりません。注文番号を確認して、もう一度やり直してください。",
+            "basketNotFound": "買い物カゴが見つかりません。ページを再読み込みして、もう一度お試しください。",
+            "basketQuotaExceeded": "買い物カゴの上限数を超えています。既存の買い物カゴを使用してください。",
+            "paymentFailed": "支払いに失敗しました。お支払い情報をご確認のうえ、もう一度お試しください。",
+            "paymentInformationRequired": "ご注文を完了するには、お支払い情報が必要です。",
+            "unableToLoadCustomerProfile": "プロフィールを読み込めません。ページを更新して、もう一度お試しください。",
+            "inventoryUnavailable": "買い物カゴ内の一部の商品が利用できなくなりました。買い物カゴを確認してください。",
+            "invalidOrderData": "注文データが無効です。ご注文手続きの内容をご確認のうえ、もう一度お試しください。",
+            "shippingAddressRequired": "続行するには配送先住所が必須です。",
+            "billingAddressRequired": "ご注文を完了するには、請求先住所が必要です。",
+            "networkError": "ネットワークエラーが発生しました。接続をご確認のうえ、もう一度お試しください。",
+            "serverError": "サーバーエラーが発生しました。しばらくしてからもう一度お試しください。",
+            "unauthorized": "セッションの有効期限が切れています。再度ログインしてください。",
+            "badRequest": "リクエストが無効です。入力内容をご確認のうえ、もう一度お試しください。",
+            "forbidden": "アクセスが拒否されました。この操作を実行する権限がありません。",
+            "timeout": "リクエストがタイムアウトしました。もう一度お試しください。",
+            "unexpectedError": "予期しないエラーが発生しました。"
+        },
+        "validation": {
+            "required": "このフィールドには必ず入力してください。",
+            "invalidEmail": "有効なメールアドレスを入力してください。",
+            "invalidCreditCard": "有効なクレジットカード番号を入力してください。",
+            "invalidExpiryDate": "有効な有効期限を入力してください。",
+            "invalidCvv": "有効な CVV コードを入力してください。",
+            "minLength": "このフィールドの長さは {{min}} 文字以上である必要があります。",
+            "maxLength": "このフィールドは {{max}} 文字を超えることはできません。",
+            "invalidPhoneNumber": "有効な電話番号を入力してください。",
+            "invalidPostalCode": "有効な郵便番号を入力してください。"
+        },
+        "checkout": {
+            "noActiveBasket": "アクティブな買い物カゴが見つかりません。ページを再読み込みして、もう一度お試しください。",
+            "basketCalculationFailed": "注文合計を計算できませんでした。もう一度お試しください。",
+            "orderCreationFailed": "注文を作成できませんでした。もう一度お試しください。",
+            "paymentProcessingFailed": "お支払いを処理できませんでした。もう一度お試しください。",
+            "shippingMethodNotAvailable": "選択した配送方法はご利用いただけません。別の方法を選択してください。",
+            "shippingMethodRequired": "続行するには、配送方法を選択してください。",
+            "addressValidationFailed": "住所を検証できませんでした。住所を確認して、もう一度お試しください。",
+            "promoCodeInvalid": "プロモーションコードが無効です。ご確認のうえ、もう一度お試しください。",
+            "stockNotAvailable": "買い物カゴ内の 1 つ以上の商品の在庫が不足しています。"
+        },
+        "customer": {
+            "addressIdRequired": "住所には住所タイトルが必須です。",
+            "countryCodeRequired": "住所には国コードが必須です。",
+            "addressLine1Required": "住所には住所行 1 が必須です。",
+            "cityRequired": "住所には市区町村が必須です。",
+            "firstNameRequired": "住所には名が必須です。",
+            "lastNameRequired": "住所には姓が必須です。",
+            "postalCodeRequired": "住所には郵便番号が必須です。",
+            "invalidEmailFormat": "メールの形式が正しくありません",
+            "customerLookupUnavailable": "顧客検索サービスは現在利用できません。",
+            "registrationFailed": "登録に失敗しました。もう一度お試しください。",
+            "autoLoginFailed": "自動ログインに失敗しました。手動でログインしてください。",
+            "autoLoginAfterRegistrationFailed": "アカウントは作成されましたが、自動ログインに失敗しました。手動でログインしてください。",
+            "notAuthenticated": "顧客 ID が見つかりません。"
+        },
+        "passwordless": {
+            "missingToken": "トークンがありません。",
+            "missingCallbackToken": "x-slas-callback-token ヘッダーがありません。",
+            "missingRequiredFields": "必須フィールド「email_id」とトークンがありません。"
+        },
+        "jwks": {
+            "missingEnvironmentVariables": "必須の構成 shortCode と organizationId がありません。",
+            "invalidResponse": "無効な JWKS レスポンスです: キー配列が存在しないか、無効です。",
+            "unknownError": "不明なエラーが発生しました。"
+        },
+        "marketing": {
+            "clientIdMissing": "MARKETING_CLOUD_CLIENT_ID が環境変数に設定されていません。",
+            "clientSecretMissing": "MARKETING_CLOUD_CLIENT_SECRET が環境変数に設定されていません。",
+            "subdomainMissing": "MARKETING_CLOUD_SUBDOMAIN が環境変数に設定されていません。",
+            "templateIdMissing": "MARKETING_CLOUD_PASSWORDLESS_LOGIN_TEMPLATE が環境変数に設定されていません。"
+        }
+    },
+    "quantitySelector": {
+        "quantity": "数量: ",
+        "decreaseQuantity": "数量を減らす",
+        "increaseQuantity": "数量を増やす",
+        "decreaseQuantityForProduct": "{{productName}} の数量を減らす",
+        "increaseQuantityForProduct": "{{productName}} の数量を増やす",
+        "quantityInput": "数量",
+        "quantityUpdated": "数量が更新されました",
+        "quantityUpdateFailed": "数量を更新できませんでした。",
+        "onlyLeft": "残り {{stockLevel}} 点のみ!",
+        "onlyLeftForProduct": "{{productName}} は残り {{stockLevel}} 点のみ!",
+        "maxStockReached": "在庫の上限に達しました。",
+        "insufficientStock": "在庫が不足しています。"
+    },
+    "cart": {
+        "title": "買い物カゴ",
+        "delivery": {
+            "heading": "配送 - {{totalCount}} 点中 {{deliveryCount}} 点",
+            "heading_one": "Delivery - {{deliveryCount}} out of {{count}} item",
+            "heading_other": "Delivery - {{deliveryCount}} out of {{count}} items"
+        },
+        "itemCount_zero": "買い物カゴ (0 点)",
+        "itemCount_one": "買い物カゴ (1 点)",
+        "itemCount_other": "買い物カゴ ({{count}} 点)",
+        "empty": {
+            "title": "買い物カゴは空です。",
+            "registeredMessage": "買い物を続けて、買い物カゴに商品を追加してください。",
+            "guestMessage": "保存済み商品を表示するにはサインインするか、買い物を続けてください。",
+            "continueShopping": "買い物を続ける",
+            "signIn": "サインイン"
+        },
+        "summary": {
+            "orderSummary": "ご注文内容",
+            "showOrderSummary": "注文概要を表示",
+            "mobileHeadingTotal_one": "合計（1点）",
+            "mobileHeadingTotal_other": "合計（{{count}}点）",
+            "subtotal": "小計",
+            "shipping": "配送",
+            "shippingPromotionApplied": "(プロモーション適用済み)",
+            "shippingFree": "無料",
+            "shippingTbd": "後日決定",
+            "tax": "税金",
+            "taxTbd": "後日決定",
+            "estimatedTotal": "見積合計金額",
+            "orderTotal": "ご注文合計金額",
+            "noBasketData": "買い物カゴデータがありません",
+            "mobileHeading_one": "Estimated Total (1 item)",
+            "mobileHeading_other": "Estimated Total ({{count}} items)"
+        },
+        "promoCode": {
+            "label": "プロモーションコード",
+            "placeholder": "プロモーションコード...",
+            "apply": "適用",
+            "applying": "適用しています...",
+            "remove": "削除",
+            "removing": "削除しています...",
+            "accordionTitle": "プロモーションコードをお持ちですか?",
+            "successMessage": "プロモーションが適用されました。",
+            "errorMessage": "コードをご確認のうえ、もう一度お試しください。このプロモーションはすでに適用されているか、有効期限が切れています。",
+            "removeSuccessMessage": "プロモーションは削除されました。",
+            "removeErrorMessage": "プロモーションを削除できませんでした。",
+            "noBasketMessage": "買い物カゴがありません",
+            "requiredMessage": "プロモーションコードは必須です。",
+            "validation": {
+                "minLength": "プロモーションは 2 文字以上で入力してください。"
+            },
+            "errors": {
+                "invalidCode": "クーポンコード「{{code}}」は無効です。",
+                "expiredCode": "このプロモーションコードの有効期限が切れています。",
+                "alreadyApplied": "このプロモーションコードはすでに適用されています。",
+                "notApplicable": "このプロモーションコードはお客様の買い物カゴには適用できません。",
+                "generic": "プロモーションコードを適用できません。コードをご確認のうえ、もう一度お試しください。"
+            }
+        },
+        "items": {
+            "itemsInCart_zero": "買い物カゴ内に商品はありません",
+            "itemsInCart_one": "買い物カゴ内に商品が 1 点あります",
+            "itemsInCart_other": "買い物カゴ内に商品が {{count}} 点あります",
+            "editCart": "買い物カゴを編集する"
+        },
+        "checkout": {
+            "proceedToCheckout": "注文手続きに進む",
+            "secure": "安全"
+        },
+        "attributes": {
+            "quantity": "数量：",
+            "promotions": "プロモーション: "
+        },
+        "product": {
+            "defaultName": "商品名"
+        },
+        "removeItemConfirmDescription": "この商品を買い物カゴから削除しますか?",
+        "itemIdRequired": "品目 ID は必須です。",
+        "noBasketIdFound": "買い物カゴ ID が見つかりません。",
+        "discount": {
+            "type": {
+                "free": "無料"
+            }
+        },
+        "badge": {
+            "ariaLabel": "マイ買い物カゴ、商品数: {{count}}"
+        },
+        "bundle": {
+            "selectedOptions": "選択したオプション"
+        },
+        "bonusProducts": {
+            "selectBonusProducts": "買い物カゴでボーナス商品を選択",
+            "addedToCart": "ボーナス商品を買い物カゴに追加しました。",
+            "failedToAdd": "ボーナス商品を追加できませんでした: {{error}}",
+            "missingRequiredInfo": "必須情報が不足しています。"
+        }
+    },
+    "checkout": {
+        "contactInfo": {
+            "title": "連絡先情報",
+            "emailLabel": "メールアドレス",
+            "emailPlaceholder": "メールアドレス",
+            "emailRequired": "メールアドレスを入力してください。",
+            "emailInvalid": "有効なメールアドレスを入力してください。",
+            "countryCodeLabel": "コード",
+            "phoneLabel": "電話番号",
+            "phoneFormatDescription": "10桁の電話番号",
+            "phoneRequired": "電話番号を入力してください。",
+            "phoneInvalid": "有効な電話番号を入力してください。",
+            "notProvided": "まだ指定されていません",
+            "loginSuggestion": "💡 アカウントをお持ちですか?ゲストとして続行するか ",
+            "loginSuggestionLink": "サインインしてよりスムーズにチェックアウト",
+            "usingRegisteredAccount": "✓ 登録済みのアカウントを使用",
+            "continue": "配送先住所へ進む",
+            "saving": "保存しています...",
+            "lookupFallbackMessage": "顧客情報を確認できませんでした。ゲストとして続行します。",
+            "saveError": "連絡先情報を保存できませんでした",
+            "sessionExpired": "セッションの期限が切れました。もう一度サインインしてください。"
+        },
+        "addressModal": {
+            "title": "新しい住所を追加",
+            "editTitle": "住所を編集",
+            "description": "以下のフォームに配送先住所を入力してください。",
+            "editDescription": "以下のフォームで配送先住所を更新してください。",
+            "cancel": "キャンセル",
+            "save": "保存",
+            "saving": "保存しています..."
+        },
+        "shippingAddress": {
+            "title": "配送先住所",
+            "changeLabel": "編集",
+            "selectSavedAddress": "保存済みの住所を選択",
+            "viewAllLink": "すべて表示",
+            "viewAllMore": "(さらに {{count}} 件)",
+            "viewLessAddresses": "表示を減らす",
+            "addNewAddressButton": "新しい住所を追加",
+            "editAddressLink": "住所を編集",
+            "defaultBadge": "デフォルト",
+            "firstNameRequired": "名を入力してください。",
+            "lastNameRequired": "姓を入力してください。",
+            "addressRequired": "住所を入力してください。",
+            "cityRequired": "市区町村を入力してください。",
+            "stateRequired": "州を選択してください。",
+            "postalCodeRequired": "郵便番号を入力してください。",
+            "continue": "配送方法に進む",
+            "saving": "保存しています...",
+            "saved": "配送先住所が保存されました",
+            "failed": "配送先住所を保存できませんでした",
+            "confirmed": "配送先住所を確認しました",
+            "notProvided": "配送先住所がまだ指定されていません",
+            "completePreviousSteps": "続行するには、前の手順を完了してください。"
+        },
+        "addressForm": {
+            "firstNameLabel": "名",
+            "firstNamePlaceholder": "名",
+            "lastNameLabel": "姓",
+            "lastNamePlaceholder": "姓",
+            "countryLabel": "国",
+            "addressLabel": "住所行 1",
+            "addressPlaceholder": "住所行 1",
+            "address2Label": "住所行 2",
+            "address2Placeholder": "住所行 2",
+            "cityLabel": "市区町村",
+            "cityPlaceholder": "市区町村",
+            "stateLabel": "都道府県/州",
+            "statePlaceholder": "都道府県/州",
+            "provinceLabel": "州",
+            "provincePlaceholder": "州",
+            "zipLabel": "郵便番号",
+            "zipPlaceholder": "郵便番号",
+            "postalCodeLabel": "郵便番号",
+            "postalCodePlaceholder": "郵便番号",
+            "codeLabel": "番号",
+            "phoneLabel": "電話番号"
+        },
+        "shippingOptions": {
+            "title": "配送方法",
+            "giftWrappingLabel": "ギフトとして送る (ギフト包装)",
+            "giftWrappingDescription": "ギフトオプションはいつでも有効または無効にできます。",
+            "selectRequired": "配送方法を選択",
+            "saving": "保存しています...",
+            "continue": "お支払いへ進む",
+            "completePreviousSteps": "続行するには、前の手順を完了してください。",
+            "enterAddressFirst": "配送先住所を入力すると、利用可能な配送方法が表示されます。",
+            "arrives": "お届け予定: {{estimatedArrivalTime}}",
+            "free": "無料",
+            "noMethodsAvailable": "利用可能な配送方法はありません",
+            "noMethodsAvailableHelp": "配送先住所がすべて入力されていることをご確認のうえ、もう一度お試しください。",
+            "deliveryWindow": "Arrives {{window}}"
+        },
+        "payment": {
+            "title": "支払い",
+            "changeLabel": "編集",
+            "methodTitle": "お支払い方法",
+            "savedMethodDescription": "保存済みのお支払い方法を選択するか、新しいお支払い方法を追加してください",
+            "addNewPaymentMethod": "新しいお支払い方法を追加",
+            "creditCardOption": "クレジットカード",
+            "newPaymentMethodTitle": "新しいお支払い方法",
+            "cardholderLabel": "カード名義人",
+            "nameOnCardLabel": "カード名義人*",
+            "cardholderPlaceholder": "カード名義人*",
+            "cardholderRequired": "カード名義人名は必須です。",
+            "cardNumberLabel": "カード番号*",
+            "cardNumberPlaceholder": "カード番号*",
+            "cardNumberRequired": "カード番号は必須です。",
+            "cardNumberInvalid": "有効なカード番号を入力してください。",
+            "cardNumberInvalidLength": "有効なカード番号 (13〜19 桁) を入力してください。",
+            "expiryLabel": "MM/YY*",
+            "expiryPlaceholder": "MM/YY*",
+            "expiryRequired": "有効期限は必須です。",
+            "expiryInvalid": "有効な有効期限 (MM/YY) を入力してください。",
+            "cvvHelp": "カード裏面の 3 ～ 4 桁の数字",
+            "cvvShow": "CVV を表示",
+            "cvvHide": "CVV を非表示",
+            "cvvRequired": "CVV は必須です",
+            "cvvInvalid": "有効な CVV を入力してください。",
+            "cvvInvalidFormat": "有効な CVV (3〜4 桁) を入力してください。",
+            "billingAddressRequired": "配送先住所と異なる場合は、請求先住所が必須です。",
+            "useDifferentBilling": "別の請求先住所を使用",
+            "useDifferentBillingDescription": "請求先住所と配送先住所に同じ住所を使用",
+            "sameAsShippingAddress": "配送先住所と同じ",
+            "selectAnAddress": "住所を選択",
+            "noBillingAddressSaved": "保存済みの請求先住所はありません",
+            "continue": "確認へ進む",
+            "saving": "保存しています...",
+            "saved": "お支払い情報を保存しました。",
+            "failed": "お支払い情報を保存できませんでした",
+            "createAccountForFasterCheckout": "次回以降の注文手続きをよりスムーズにするためにアカウントを作成",
+            "saveForFutureUse": "次回以降のために保存",
+            "unknownCardType": "不明",
+            "defaultCardLabel": "カード",
+            "preferredBadge": "優先",
+            "defaultBadge": "デフォルト",
+            "endingIn": "末尾が {{lastDigits}} の ",
+            "expiresLabel": "有効期限: {{expiry}}",
+            "summaryLabel": "末尾が {{lastDigits}} の {{methodLabel}}",
+            "summarySavedLabel": "保存済みのお支払い方法: 末尾が {{lastDigits}} の {{methodLabel}}",
+            "noPaymentMethodSaved": "お支払い方法が保存されていません",
+            "billingSummaryTitle": "請求先住所",
+            "viewAllMore": "すべて表示 (さらに {{count}} 件)",
+            "viewLess": "表示を減らす",
+            "savePaymentToProfile": "今後のご利用のために支払い方法を保存"
+        },
+        "expressPayments": {
+            "separator": "または",
+            "venmoUnavailable": "このデバイスでは Venmo を利用できません。"
+        },
+        "common": {
+            "edit": "編集",
+            "submitting": "送信しています",
+            "notProvided": "指定されていません",
+            "backToCart": "買い物カゴに戻る",
+            "emptyCart": "買い物カゴ内に商品はありません。注文手続きに進む前に商品を追加してください。"
+        },
+        "orderSummary": {
+            "title": "ご注文内容",
+            "toggleLabel": "注文内容を表示"
+        },
+        "myCart": {
+            "title": "マイ買い物カゴ",
+            "saved": "{{amount}} お得"
+        },
+        "placeOrder": {
+            "button": "注文を確定 - {{total}}",
+            "processing": "注文を処理しています...",
+            "success": "注文が完了しました!",
+            "failed": "注文手続き中に予期しないエラーが発生しました。"
+        },
+        "confirmation": {
+            "title": "ご注文いただきありがとうございました!",
+            "orderNumber": "注文番号:",
+            "confirmationEmailSent": "{{email}} に確認メールを送信しました",
+            "orderNotFound": "注文が見つかりません",
+            "orderNotFoundDescription": "お探しの注文が見つかりませんでした。",
+            "orderNumberRequired": "注文番号は必須です",
+            "sections": {
+                "orderSummary": "ご注文内容",
+                "shippingDetails": "配送情報",
+                "paymentDetails": "お支払い詳細"
+            },
+            "fields": {
+                "orderNumber": "注文番号:",
+                "status": "ステータス:",
+                "total": "合計:",
+                "shippingAddress": "配送先住所",
+                "shippingMethod": "配送方法",
+                "billingAddress": "請求先住所",
+                "paymentMethod": "お支払い方法",
+                "defaultShippingMethod": "通常配送",
+                "defaultPaymentMethod": "クレジットカード",
+                "savedMethodDescription": "保存済みのお支払い方法を選択するか、新しいお支払い方法を追加してください"
+            },
+            "actions": {
+                "continueShopping": "買い物を続ける",
+                "viewAccount": "アカウントを表示"
+            },
+            "hero": {
+                "thankYou": "ありがとうございます、{{name}} さん!",
+                "orderConfirmed": "ご注文が確定しました。",
+                "emailConfirmation": "{{email}} に確認メールを送信しました。",
+                "needHelp": "お困りですか? ",
+                "defaultName": "顧客",
+                "emailFallback": "お客様のメールアドレス"
+            },
+            "helpLinks": {
+                "contact": "お問い合わせ",
+                "returns": "返品ポリシー"
+            },
+            "summaryLabels": {
+                "arriving": "お届け予定日",
+                "shippingAddress": "配送先住所",
+                "shippingMethod": "配送方法",
+                "noAddress": "利用可能な住所がありません",
+                "estimatedDatePlaceholder": "現在処理中",
+                "quantity": "数量: {{count}}",
+                "freeShipping": "無料",
+                "deliveryWindow": "{{window}}"
+            },
+            "totals": {
+                "subtotal": "小計",
+                "promotions": "プロモーション",
+                "shipping": "配送",
+                "tax": "税金",
+                "total": "合計"
+            },
+            "payment": {
+                "methodSummary": "末尾が {{lastDigits}} の {{method}}",
+                "noMethod": "登録済みのお支払い方法"
+            },
+            "newsletter": {
+                "title": "次回のご注文が 10% オフになります。メールリストに登録してください。",
+                "subtitle": "新商品の発売情報や限定オファーをいち早くお届けします。",
+                "placeholder": "メールアドレス",
+                "cta": "登録する"
+            },
+            "summaryTitle": "概要",
+            "emptyItemsFallback": "ご注文の商品を準備しています。",
+            "productPlaceholderInitial": "商品"
+        },
+        "errorBoundary": {
+            "title": "注文手続きは一時的に利用できません",
+            "description": "現在、注文手続きで技術的な問題が発生しています。買い物カゴ内の商品は安全に保存されています。",
+            "tryAgain": "もう一度試してください",
+            "returnToCart": "買い物カゴに戻る",
+            "componentError": {
+                "title": "コンポーネントは一時的に利用できません",
+                "description": "このセクションを正しく読み込めませんでした。注文手続きを続行するか、ページを再読み込みしてください。",
+                "tryAgain": "もう一度お試しください"
+            }
+        },
+        "registration": {
+            "emailNotFound": "アカウントを作成するには、メールアドレスが必須です。連絡先情報セクションにメールアドレスを入力してください。",
+            "initiationFailed": "確認コードを送信できませんでした。もう一度お試しください。",
+            "sendingVerificationCode": "確認コードを送信しています...",
+            "accountCreatedSuccess": "アカウントが正常に作成されました!",
+            "checkboxExpandedDescription": "ご注文時にアカウントが作成され、お支払い情報やその他の詳細情報が今後の購入のために保存されます。次回の注文手続き時には、お送りするコードでアカウントを確認できます。",
+            "accountCreatedTitle": "アカウントを作成しました",
+            "verified": "確認済み",
+            "accountCreatedDescription": "ご注文情報を使用して、アカウントを作成し、確認を完了しました。次回の注文手続き時には、お送りするコードを入力するだけでログインできます。パスワードは不要です。",
+            "accountCreationLabel": "アカウント作成",
+            "accountWillBeCreated": "アカウントが作成されます",
+            "continueAsGuest": "ゲストとして続行"
+        }
+    },
+    "account": {
+        "title": "アカウント詳細",
+        "subtitle": "個人情報を管理",
+        "myAccount": "マイアカウント",
+        "navigation": {
+            "overview": "概要",
+            "accountDetails": "アカウント詳細",
+            "wishlist": "ほしい物リスト",
+            "orderHistory": "注文履歴",
+            "addresses": "住所",
+            "manageAddresses": "住所を管理",
+            "paymentMethods": "支払方法",
+            "storePreferences": "店舗設定",
+            "logOut": "ログアウト"
+        },
+        "storePreferences": {
+            "title": "店舗設定",
+            "subtitle": "優先する店舗と受け取り設定を管理",
+            "preferredStore": {
+                "heading": "受け取り用の優先店舗",
+                "description": "店頭受け取りの注文に使用する優先店舗を選択",
+                "changeStore": "店舗を変更",
+                "noStoreSelected": "店舗が選択されていません。店舗検索を使用して、受け取り用の優先店舗を選択してください。",
+                "storeHoursTitle": "営業時間",
+                "error": "店舗の詳細を読み込めませんでした。しばらくしてから、もう一度お試しください。"
+            },
+            "authorizedPickupPeople": {
+                "heading": "代理受取人",
+                "description": "お客様に代わって注文を受け取ることができる人を追加",
+                "addPerson": "人を追加",
+                "idNote": "代理受取人は、注文を受け取る際に、登録されている氏名と一致する有効な身分証明書を提示する必要があります。",
+                "modal": {
+                    "addTitle": "代理受取人を追加",
+                    "editTitle": "代理受取人を編集",
+                    "firstName": "名",
+                    "firstNamePlaceholder": "名",
+                    "lastName": "姓",
+                    "lastNamePlaceholder": "姓",
+                    "email": "メールアドレス",
+                    "relationship": "続柄",
+                    "relationshipPlaceholder": "続柄を選択",
+                    "modalNote": "この人は、お客様に代わって注文を受け取ることができます。注文を受け取る際には、入力された氏名と一致する有効な身分証明書を提示する必要があります。",
+                    "cancel": "キャンセル",
+                    "save": "保存",
+                    "firstNameRequired": "名は必須です。",
+                    "firstNameMax": "名は 50 文字以内で入力してください。",
+                    "lastNameRequired": "姓は必須です。",
+                    "lastNameMax": "姓は 50 文字以内で入力してください。",
+                    "emailRequired": "メールアドレスは必須です。",
+                    "emailInvalid": "有効なメールアドレスを入力してください。",
+                    "emailMax": "メールアドレスは 100 文字以内で入力してください。",
+                    "relationshipRequired": "続柄を選択してください。"
+                },
+                "statusActive": "有効",
+                "relationshipLabel": "続柄: {{relationship}}",
+                "edit": "編集",
+                "delete": "削除",
+                "emptyState": "代理受取人はまだ登録されていません。お客様に代わって注文を受け取ることができる人を追加してください。",
+                "deleteConfirmTitle": "代理受取人を削除",
+                "deleteConfirmDescription": "{{name}}を削除してもよろしいですか? 今後、この人はお客様に代わって注文を受け取ることはできません。",
+                "deleteConfirmCancel": "キャンセル",
+                "deleteConfirmRemove": "削除",
+                "relationships": {
+                    "spouse": "配偶者",
+                    "familyMember": "家族",
+                    "friend": "友人",
+                    "other": "その他"
+                }
+            },
+            "pickupPreferences": {
+                "heading": "受け取り設定",
+                "description": "受け取り通知と店舗設定を管理",
+                "edit": "編集",
+                "save": "保存",
+                "cancel": "キャンセル",
+                "autoSelectStore": "優先店舗を自動選択",
+                "autoSelectStoreDescription": "受け取り注文に優先店舗を自動的に使用",
+                "pickupNotifications": "受け取り通知",
+                "pickupNotificationsDescription": "注文の受け取り準備ができたら通知を受け取る",
+                "storeEventsPromotions": "店舗イベントとプロモーション",
+                "storeEventsPromotionsDescription": "優先店舗のイベントやプロモーションに関する最新情報を受け取る",
+                "saveSuccess": "受け取り設定を保存しました。"
+            }
+        },
+        "overview": {
+            "welcomeBack": "おかえりなさい、{{name}} さん!",
+            "welcomeSubtitle": "アカウントを管理し、注文を確認して、お客様向けのおすすめをチェックできます。",
+            "defaultName": "そこ",
+            "quickLinks": {
+                "title": "クイックリンク",
+                "orderHistoryDesc": "注文を追跡",
+                "wishlistDesc": "保存済み商品",
+                "addressesDesc": "住所を管理",
+                "paymentMethodsDesc": "支払方法を管理"
+            },
+            "curatedForYou": {
+                "title": "あなたへのおすすめ",
+                "subtitle": "お客様のアクティビティに基づいて選ばれたおすすめ"
+            },
+            "appDownload": {
+                "title": "アプリをダウンロード",
+                "description": "外出先でも快適にお買い物いただけます。限定セールをチェックし、注文を追跡して、よりスムーズにお買い物できます。",
+                "qrCode": "QR コード"
+            }
+        },
+        "shopperAgentEntry": {
+            "title": "お困りですか?",
+            "description": "ご質問やご不明な点がありましたら、お気軽にお問い合わせください。",
+            "askQuestion": "質問する",
+            "contactInfo": "お問い合わせ先",
+            "browseFaq": "FAQ を見る"
+        },
+        "wishlist": {
+            "pageTitle": "マイほしい物リスト",
+            "pageSubtitle": "後で見るために保存した商品",
+            "savedItems": "保存済み商品",
+            "emptyTitle": "ほしい物リストは空です。",
+            "emptySubtitle": "商品をほしい物リストに追加しましょう!",
+            "itemCount_one": "{{count}} 点を保存しました。",
+            "itemCount_other": "{{count}} 点を保存しました。",
+            "empty": "ほしい物リストは空です。お気に入りの商品を追加しましょう!",
+            "wishlistName": "ほしい物リスト",
+            "failedToCreate": "ほしい物リストを作成できませんでした: 作成後に listId を取得できませんでした。",
+            "unableToRetrieveId": "ほしい物リスト ID を取得できません。もう一度お試しください。",
+            "notFound": "ほしい物リストが見つかりません",
+            "idNotFound": "ほしい物リスト ID が見つかりません",
+            "itemNotFound": "ほしい物リストに商品が見つかりません",
+            "mustLoginToAdd": "商品をほしい物リストに追加するには、ログインが必要です。",
+            "mustLoginToRemove": "商品をほしい物リストから削除するには、ログインが必要です。",
+            "sortBy": "並べ替え順",
+            "sort": {
+                "recentlyAdded": "追加日が新しい順",
+                "nameAZ": "名前順 (A-Z)",
+                "priceLow": "価格:安い順",
+                "priceHigh": "価格:高い順"
+            },
+            "filterBy": "絞り込み",
+            "filter": {
+                "all": "すべての商品",
+                "inStock": "在庫あり",
+                "outOfStock": "在庫切れ",
+                "onSale": "セール対象"
+            },
+            "noFilterResults": "絞り込み条件に一致する商品はありません。"
+        },
+        "orders": {
+            "empty": "まだ注文はありません。注文すると、詳細がここに表示されます。",
+            "continueShopping": "買い物を続ける",
+            "errorDescription": "注文履歴の読み込み中にエラーが発生しました。しばらくしてから、もう一度お試しください。",
+            "subtitle": "注文を確認して追跡",
+            "orderDate": "注文日",
+            "total": "合計",
+            "items": "商品",
+            "pickupLocation": "受け取り場所",
+            "location": "場所",
+            "address": "住所",
+            "viewOrderDetails": "注文の詳細を表示",
+            "tableHeaders": {
+                "orderNumber": "注文 ID",
+                "status": "status",
+                "method": "方法",
+                "amount": "金額",
+                "actions": "操作"
+            },
+            "viewDetails": "詳細を表示",
+            "orderDetailsTitle": "Order (注文)",
+            "orderDetailsPageTitle": "注文の詳細",
+            "status": {
+                "created": "作成済み",
+                "new": "新規",
+                "completed": "完了",
+                "cancelled": "キャンセル済み",
+                "replaced": "置き換え済み",
+                "failed": "失敗"
+            },
+            "shippingStatus": {
+                "notShipped": "未発送",
+                "partShipped": "一部発送済み",
+                "shipped": "発送済み"
+            },
+            "totalOrders_one": "{{count}} 件の注文を表示中",
+            "totalOrders_other": "{{count}} 件の注文を表示中",
+            "totalOrdersRange": "{{total}} 件中 {{start}} ～ {{end}} 件の注文を表示中",
+            "paginationLabel": "注文履歴のページ移動",
+            "paginationPrevious": "前のページ",
+            "paginationNext": "次のページ",
+            "invalidDate": "無効な日付",
+            "shipmentNumber": "配送 {{n}}",
+            "itemsOrdered": "注文商品",
+            "orderSummary": "注文概要",
+            "backToOrderHistory": "注文履歴に戻る",
+            "orderNotFound": "注文が見つかりません",
+            "orderNotFoundDescription": "お探しの注文が見つかりませんでした。",
+            "buyAgain": "再購入",
+            "emptyItemsFallback": "商品はありません。",
+            "productPlaceholderInitial": "商品",
+            "quantityLabel": "数量: {{count}}",
+            "trackingNumber": "追跡番号",
+            "shippingAddress": "配送先住所",
+            "paymentMethod": "お支払い方法",
+            "paymentMethodEndingIn": "末尾が {{lastDigits}} の {{cardType}}"
+        },
+        "addresses": {
+            "subtitle": "配送先住所を管理",
+            "empty": "注文手続きよりスムーズにするために住所を追加しましょう!",
+            "noSavedAddresses": "保存済みの住所はありません",
+            "addAddress": "住所を追加",
+            "addNewAddress": "新しい住所を追加",
+            "editAddress": "住所を編集",
+            "preferred": "優先",
+            "default": "デフォルト",
+            "setDefault": "デフォルトに設定",
+            "setDefaultSuccess": "住所をデフォルトに設定しました。",
+            "setDefaultError": "住所をデフォルトに設定できませんでした。もう一度お試しください。",
+            "billing": "請求先",
+            "shipping": "配送先",
+            "removeSuccess": "住所を削除しました。",
+            "removeError": "住所を削除できませんでした。もう一度お試しください。",
+            "addSuccess": "住所を追加しました。",
+            "addError": "住所を追加できませんでした。",
+            "updateSuccess": "住所を更新しました。",
+            "updateError": "住所を更新できませんでした。",
+            "removeDialogTitle": "住所を削除",
+            "removeDialogDescription": "この住所を削除してもよろしいですか?",
+            "removeDefaultWarning": "これはデフォルトの住所です。これを削除すると、利用可能な別の住所があれば自動的にデフォルトに設定されます。",
+            "removeButton": "削除",
+            "removeConfirmTitle": "住所削除の確認",
+            "removeConfirmDescription": "住所「{{addressName}}」を削除してもよろしいですか?",
+            "removeCancelButton": "キャンセル",
+            "removeConfirmButton": "はい、住所を削除します"
+        },
+        "paymentMethods": {
+            "pageSubtitle": "支払い方法、ギフトカード、ストアクレジットを管理",
+            "subtitle": "保存済みの支払い方法を管理",
+            "noSavedPaymentMethods": "保存済みの支払い方法はありません",
+            "empty": "注文手続きをよりスムーズにするために支払い方法を追加しましょう!",
+            "addPaymentMethod": "支払い方法を追加",
+            "setDefault": "デフォルトに設定",
+            "remove": "削除",
+            "default": "デフォルト",
+            "expires": "有効期限",
+            "addPaymentMethodTitle": "支払い方法を追加",
+            "creditCard": "クレジットカード",
+            "nameOnCard": "カード名義人*",
+            "cardNumberPlaceholder": "カード番号*",
+            "expiryPlaceholder": "MM/YY*",
+            "saveAsDefault": "デフォルトの支払い方法として保存",
+            "billingAddress": "請求先住所*",
+            "selectAddress": "住所を選択",
+            "addNewAddress": "新しい住所を追加",
+            "cancel": "キャンセル",
+            "save": "保存",
+            "removePaymentMethod": "支払い方法を削除",
+            "removeConfirmation": "この支払い方法を削除してもよろしいですか?",
+            "paymentMethod": "支払い方法",
+            "defaultRemovalWarning": "これはデフォルトの支払い方法です。これを削除すると、利用可能な別の支払い方法があれば自動的にデフォルトに設定されます。",
+            "addSuccess": "支払い方法を追加しました。",
+            "addError": "支払い方法を追加できませんでした。",
+            "removeSuccess": "支払い方法を削除しました。",
+            "removeError": "支払い方法を削除できませんでした。",
+            "setDefaultSuccess": "支払い方法をデフォルトに設定しました。",
+            "setDefaultError": "支払い方法をデフォルトに設定できませんでした。",
+            "validationError": "フォームのエラーを修正してください。",
+            "addressValidationError": "請求先住所のエラーを修正してください。",
+            "selectAddressError": "請求先住所を選択してください。",
+            "invalidExpiryFormat": "有効期限の形式が無効です。"
+        },
+        "addressForm": {
+            "addressTitleLabel": "住所タイトル",
+            "addressTitlePlaceholder": "例:自宅、勤務先、実家",
+            "firstNameLabel": "名",
+            "lastNameLabel": "姓",
+            "phoneLabel": "電話番号",
+            "countryLabel": "国",
+            "addressLabel": "住所",
+            "address2Label": "住所行 2",
+            "address2Placeholder": "アパート名、部屋番号など (オプション)",
+            "cityLabel": "市区町村",
+            "stateLabel": "都道府県/州",
+            "provinceLabel": "州",
+            "postalCodeLabel": "郵便番号",
+            "zipCodeLabel": "郵便番号",
+            "preferredLabel": "デフォルトに設定",
+            "saveButton": "保存",
+            "savingButton": "保存しています...",
+            "cancelButton": "キャンセル",
+            "selectStatePlaceholder": "都道府県/州を選択",
+            "selectProvincePlaceholder": "州を選択",
+            "successMessage": "住所を保存しました。",
+            "errorMessage": "住所を保存できませんでした。もう一度お試しください。",
+            "validation": {
+                "stateRequired": "都道府県/州は必須です",
+                "addressTitleRequired": "住所タイトルは必須です。",
+                "addressTitleMaxLength": "住所タイトルは 256 文字以内で入力してください。",
+                "phoneRequired": "電話番号は必須です。"
+            }
+        },
+        "profile": {
+            "title": "個人情報",
+            "description": "個人情報を管理",
+            "edit": "編集",
+            "fullName": "氏名",
+            "email": "メールアドレス",
+            "phoneNumber": "電話番号",
+            "notProvided": "指定されていません",
+            "firstName": "名",
+            "lastName": "姓",
+            "firstNamePlaceholder": "名を入力",
+            "lastNamePlaceholder": "姓を入力",
+            "phonePlaceholder": "電話番号を入力",
+            "gender": "性別",
+            "genderPlaceholder": "性別を選択",
+            "genderOptions": {
+                "male": "男性",
+                "female": "女性"
+            },
+            "dateOfBirth": "生年月日",
+            "dateOfBirthPlaceholder": "生年月日を選択",
+            "saveButton": "保存",
+            "savingButton": "保存しています...",
+            "cancelButton": "キャンセル",
+            "successMessage": "プロフィールを更新しました。",
+            "errorMessage": "プロフィールを更新できませんでした。もう一度お試しください。",
+            "validation": {
+                "firstNameRequired": "名は必須です。",
+                "lastNameRequired": "姓は必須です。",
+                "emailRequired": "メールアドレスは必須です。",
+                "emailInvalid": "有効なメールアドレスを入力してください。",
+                "phoneInvalid": "有効な電話番号を入力してください。",
+                "birthdayFuture": "生年月日に未来の日付は指定できません。"
+            }
+        },
+        "password": {
+            "title": "パスワードとセキュリティ",
+            "description": "パスワードとセキュリティ設定を管理",
+            "edit": "編集",
+            "password": "パスワード",
+            "changePassword": "パスワードを変更",
+            "currentPassword": "現在のパスワード",
+            "currentPasswordPlaceholder": "現在のパスワードを入力してください",
+            "newPassword": "新しいパスワード",
+            "newPasswordPlaceholder": "新しいパスワードを入力してください",
+            "confirmPassword": "新しいパスワードの確認",
+            "confirmPasswordPlaceholder": "新しいパスワードを確認してください",
+            "saveButton": "保存",
+            "cancelButton": "キャンセル",
+            "successMessage": "パスワードを更新しました。",
+            "errorMessage": "パスワードを更新できませんでした。もう一度お試しください。",
+            "validation": {
+                "currentPasswordRequired": "現在のパスワードは必須です。",
+                "newPasswordRequired": "新しいパスワードは必須です。",
+                "confirmPasswordRequired": "新しいパスワードを確認してください。",
+                "passwordsDoNotMatch": "新しいパスワードが一致しません。",
+                "passwordTooShort": "パスワードは 8 文字以上で入力してください。"
+            },
+            "requirements": {
+                "title": "パスワード要件",
+                "minLength": "8 文字以上",
+                "hasUppercase": "大文字を 1 文字以上含む",
+                "hasLowercase": "小文字を 1 文字以上含む",
+                "hasNumber": "数字を 1 文字以上含む",
+                "hasSpecial": "記号を 1 文字以上含む"
+            }
+        },
+        "common": {
+            "save": "保存",
+            "saving": "保存しています...",
+            "cancel": "キャンセル",
+            "edit": "編集",
+            "done": "終了",
+            "enabled": "有効",
+            "disabled": "無効"
+        },
+        "marketingConsent": {
+            "title": "マーケティングと配信の設定",
+            "edit": "編集",
+            "editA11y": "マーケティング設定を編集",
+            "optedIn": "受信する",
+            "optedOut": "受信しない",
+            "channelEmail": "メール",
+            "channelSms": "SMS / テキストメッセージ",
+            "disclaimer": "この配信設定を有効にすると、限定オファー、最新の商品情報、今後のコレクションに関するニュースなど、当社からのマーケティング情報の配信を受け取ることに同意したものとみなされます。詳しくは、利用規約およびプライバシーポリシーをご覧ください。",
+            "updateError": "マーケティング設定を更新できませんでした。もう一度お試しください。",
+            "partialSuccess": "一部の設定が保存されました。現在の設定を確認するには、画面を更新してください。"
+        }
+    },
+    "home": {
+        "hero": {
+            "slide1": {
+                "title": "新シーズン",
+                "subtitle": "コントラストとバランス、そしてモダンな感性が息づく新しいコレクション。これからのシーズンを彩るキーアイテムをご紹介します。",
+                "ctaText": "コレクションを見る",
+                "imageAlt": "レディーススラックス、ジャケット、バッグ"
+            },
+            "slide2": {
+                "title": "モダンなワードローブ",
+                "subtitle": "洗練されたシルエットと上質な質感で、日常の装いに大胆なエッセンスを。動きに寄り添うデザイン。",
+                "ctaText": "このルックを見る",
+                "imageAlt": "レディースホワイトリネンドレス"
+            },
+            "slide3": {
+                "title": "アフターアワーズ",
+                "subtitle": "夜のお出かけや遅い時間のひととき、その間のあらゆるシーンに寄り添う、存在感のあるアイテムと洗練されたレイヤード。",
+                "ctaText": "コレクションを見る",
+                "imageAlt": "レディースブラックスーツ"
+            },
+            "slide4": {
+                "title": "新たな視点",
+                "subtitle": "現代のファッションを新たに捉え直す、選び抜かれた存在感あふれるアイテム。自信に満ちて。自分らしく。妥協しない。",
+                "ctaText": "今すぐお買い物",
+                "imageAlt": "レディースグレードレス"
+            }
+        },
+        "meta": {
+            "description": "次世代のファッションストア"
+        },
+        "featuredProducts": {
+            "title": "おすすめ商品",
+            "shopAll": "すべて見る"
+        },
+        "categoryGrid": {
+            "title": "日常に寄り添うスタイル",
+            "description": "Market Street では、ファッションは気負わず、自分らしく、誰もが楽しめるものであるべきだと考えています。私たちのコレクションは、品質、多用途性、そして時代を超えて愛されるスタイルを大切にする現代的な一人ひとりのためにデザインされています。",
+            "shopNowButton": "今すぐお買い物"
+        },
+        "featuredContent": {
+            "women": {
+                "title": "レディース",
+                "description": "現代を生きる女性のためにデザインされた、洗練されたフットウェアの厳選コレクションをご紹介します。",
+                "ctaText": "コレクションを見る",
+                "imageAlt": "レディースコレクション"
+            },
+            "men": {
+                "title": "メンズ",
+                "description": "時代を超越したクラフツマンシップと現代的なスタイルが融合した、メンズフットウェアコレクション。",
+                "ctaText": "コレクションを見る",
+                "imageAlt": "メンズコレクション"
+            },
+            "styleForRealLife": {
+                "title": "日常に寄り添うスタイル",
+                "description": "Market Street では、ファッションは気負わず、自分らしく、誰もが楽しめるものであるべきだと考えています。私たちのコレクションは、品質、多用途性、そして時代を超えて愛されるスタイルを大切にする現代的な一人ひとりのためにデザインされています。\n\n動きに寄り添い、暮らしになじみ、いつでもどこでも活躍するワードローブの土台となるアイテムをご覧ください。"
+            }
+        }
+    },
+    "footer": {
+        "sections": {
+            "customerSupport": "カスタマーサポート",
+            "account": "アカウント",
+            "ourCompany": "会社情報",
+            "switchThemes": "テーマを切り替える",
+            "switchSite": "地域",
+            "switchLanguage": "言語",
+            "switchCurrency": "通貨",
+            "shop": "ショップ",
+            "help": "ヘルプ",
+            "about": "会社情報"
+        },
+        "links": {
+            "contactUs": "お問い合わせ",
+            "shipping": "配送",
+            "orderStatus": "注文状況",
+            "signInOrCreateAccount": "サインインまたはアカウントを作成",
+            "aboutUs": "会社情報",
+            "accessibility": "アクセシビリティに関する声明",
+            "privacyPolicy": "プライバシーポリシー",
+            "privacyChoices": "プライバシー設定",
+            "termsOfUse": "利用規約"
+        },
+        "newsletter": {
+            "title": "コミュニティに参加する",
+            "description": "新着アイテムや限定オファー、スタイルのヒントをいち早くチェックしましょう。",
+            "emailPlaceholder": "メールアドレス",
+            "subscribeButton": "登録する"
+        },
+        "copyright": "Salesforce またはその系列会社。All Rights Reserved. これはデモのみを目的とするストアです。注文を確定しても処理されません。"
+    },
+    "aboutUs": {
+        "breadcrumb": {
+            "home": "ホーム",
+            "aboutUs": "会社情報"
+        },
+        "title": "会社情報",
+        "subtitle": "私たちの会社とミッションについてご紹介します。",
+        "section": {
+            "ourGoal": {
+                "title": "動きのために設計し、日常のためにデザイン。",
+                "content": "都市カルチャーと躍動するエネルギーに着想を得て、Market Street は、機能性とスタイル、そして日常の必需品をひとつのシームレスな体験でつなぐために生まれました。優れた商品とは、街からスタジオへ、仕事から週末へと、あらゆるシーンであなたに寄り添うものであるべきだと、私たちは考えています。\nファッションやライフスタイルのショッピング体験をもっとシンプルにしたいというビジョンから始まり、今では、分かりやすさ、利用しやすさ、そして洗練されたデザインを大切にするブランドへと進化しました。すべてのコレクションは、多用途性、耐久性、そして時代を超えて愛される魅力を届けるために厳選されています。"
+            },
+            "ourVision": {
+                "title": "私たちのビジョン",
+                "content": "テクノロジー、デザイン、そして顧客体験を通じて現代のリテールを再定義し、自然で、心を動かし、人に寄り添うコマース体験を生み出すこと。私たちは、トレンドを追いかけません。長く心に残る体験をつくります。"
+            },
+            "ourValue": {
+                "title": "私たちの存在意義",
+                "content": "人と、その人が愛するものとの間にある障壁を取り除くために、私たちは存在しています。ショッピングを、直感的で、スピーディーで、価値あるものにするために。コミュニティとともに進化するブランドをつくるために。"
+            },
+            "ourMission": {
+                "title": "私たちが大切にすること",
+                "content": "目的あるデザイン — すべての商品、すべての接点、そしてあらゆる細部にまで意図があります。\n存在を感じさせないテクノロジー — 私たちは、複雑にするためではなく、シンプルにするためにイノベーションを活用します。\n顧客第一の姿勢 — 商品との出会いからお届けまで、あなたの体験を最優先に考えます。\nサステナビリティの実践 — 責任ある素材、サプライヤー、物流を優先します。"
+            },
+            "ourTeam": {
+                "title": "グローバルブランド。ストリートに根ざしたスピリット。",
+                "content": "優れたスタイルは、手の届かないものであってはならない。その考えから Market Street は生まれました。私たちは、グローバルなインスピレーションとストリートに根ざした視点を融合し、カルチャー、機能性、ライフスタイルをひとつのシームレスな表現へとつなげています。\n商品開発からデジタル体験に至るまで、私たちのすべての取り組みは、ひとつの原則に導かれています。\nコマースを、もっと自然なものにすること。"
+            }
+        },
+        "contact": {
+            "title": "私たちがお手伝いします",
+            "intro": "ご質問やご意見、サポートが必要ですか?私たちのチームが対応いたします。",
+            "phoneHref": "電話: 180080606453",
+            "hours": {
+                "weekdays": "月曜日～金曜日: 午前 9 時～午後 10 時 (米国東部時間)",
+                "weekends": "土曜日と日曜日: 午前 10 時～午後 7 時 (米国東部時間)"
+            },
+            "cta": "または、フォームからメッセージをお送りください。できるだけ早くご返信します。",
+            "form": {
+                "label": "件名",
+                "nameLabel": "氏名",
+                "emailLabel": "メール",
+                "messageLabel": "メッセージ",
+                "placeholders": {
+                    "fullName": "氏名を入力してください",
+                    "topic": "一般的なお問い合わせ",
+                    "message": "メッセージをお送りください"
+                },
+                "submit": "メッセージを送信"
+            },
+            "toast": {
+                "success": "メッセージを送信しました。"
+            }
+        }
+    },
+    "countries": {
+        "US": {
+            "name": "米国",
+            "states": {
+                "AL": "アラバマ",
+                "AK": "アラスカ",
+                "AZ": "アリゾナ",
+                "AR": "アーカンソー",
+                "CA": "カリフォルニア",
+                "CO": "コロラド",
+                "CT": "コネティカット",
+                "DE": "デラウェア",
+                "DC": "コロンビア特別区",
+                "FL": "フロリダ",
+                "GA": "ジョージア",
+                "HI": "ハワイ",
+                "ID": "アイダホ",
+                "IL": "イリノイ",
+                "IN": "インディアナ",
+                "IA": "アイオワ",
+                "KS": "カンザス",
+                "KY": "ケンタッキー",
+                "LA": "ルイジアナ",
+                "ME": "メイン",
+                "MD": "メリーランド",
+                "MA": "マサチューセッツ",
+                "MI": "ミシガン",
+                "MN": "ミネソタ",
+                "MS": "ミシシッピ",
+                "MO": "ミズーリ",
+                "MT": "モンタナ",
+                "NE": "ネブラスカ",
+                "NV": "ネバダ",
+                "NH": "ニューハンプシャー",
+                "NJ": "ニュージャージー",
+                "NM": "ニューメキシコ",
+                "NY": "ニューヨーク",
+                "NC": "ノースキャロライナ",
+                "ND": "ノースダコタ",
+                "OH": "オハイオ",
+                "OK": "オクラホマ",
+                "OR": "オレゴン",
+                "PA": "ペンシルベニア",
+                "RI": "ロードアイランド",
+                "SC": "サウスキャロライナ",
+                "SD": "サウスダコタ",
+                "TN": "テネシー",
+                "TX": "テキサス",
+                "UT": "ユタ",
+                "VT": "バーモント",
+                "VA": "バージニア",
+                "WA": "ワシントン",
+                "WV": "ウエストバージニア",
+                "WI": "ウィスコンシン",
+                "WY": "ワイオミング"
+            }
+        },
+        "CA": {
+            "name": "カナダ",
+            "states": {
+                "AB": "アルバータ",
+                "BC": "ブリティッシュコロンビア",
+                "MB": "マニトバ",
+                "NB": "ニューブランズウィック",
+                "NL": "ニューファンドランドおよびラブラドール",
+                "NS": "ノバスコシア",
+                "NT": "ノースウエストテリトリーズ",
+                "NU": "ヌナヴト",
+                "ON": "オンタリオ",
+                "PE": "プリンスエドワード島",
+                "QC": "ケベック",
+                "SK": "サスカチュワン",
+                "YT": "ユーコン"
+            }
+        }
+    },
+    "miniCart": {
+        "noImage": "画像なし",
+        "productAltFallback": "商品",
+        "quantityLabel": "数量: ",
+        "quantityAriaLabel": "数量",
+        "customQuantityAriaLabel": "カスタム数量",
+        "customOption": "カスタム...",
+        "editQuantityAriaLabel": "数量を編集",
+        "promotionApplied": "プロモーション適用済み",
+        "removeItemAriaLabel": "商品を買い物カゴから削除",
+        "emptyCart": "買い物カゴは空です",
+        "loading": "読み込み中...",
+        "viewCart": "買い物カゴを表示",
+        "saved": "{{amount}} お得",
+        "free": "無料",
+        "emptyTitle": "Your cart is empty",
+        "emptyMessage": "Looks like you haven't added anything to your cart yet. Start shopping to fill it up with amazing products!",
+        "startShopping": "Start Shopping",
+        "delivery": "Delivery",
+        "closeAriaLabel": "閉じる"
+    },
+    "trackingConsent": {
+        "title": "追跡に関する同意",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "accept": "同意する",
+        "decline": "同意しない",
+        "closeAriaLabel": "閉じる"
+    },
+    "localeSwitcher": {
+        "ariaLabel": "言語選択",
+        "validation": {
+            "unsupportedLocale": "地域情報はサポートされていません",
+            "usingDefault": "デフォルトの地域情報を使用しています: {{locale}}"
+        },
+        "locales": {
+            "en-GB": "English (UK)",
+            "en-US": "English (US)",
+            "da-DK": "Dansk (Danmark)",
+            "de-DE": "Deutsch (Deutschland)",
+            "es-ES": "Español (España)",
+            "fi-FI": "Suomi (Suomi)",
+            "fr-FR": "Français (France)",
+            "it-IT": "Italiano (Italia)",
+            "ja-JP": "日本語 (日本)",
+            "ko-KR": "한국어 (대한민국)",
+            "nb-NO": "Norsk bokmål (Norge)",
+            "nl-NL": "Nederlands (Nederland)",
+            "pl-PL": "Polski (Polska)",
+            "pt-PT": "Português (Portugal)",
+            "sv-SE": "Svenska (Sverige)",
+            "zh-CN": "中文 (简体)",
+            "zh-TW": "中文 (繁體)"
+        }
+    },
+    "currencySwitcher": {
+        "ariaLabel": "通貨切り替え",
+        "currencies": {
+            "USD": "米ドル ($)",
+            "MXN": "メキシコ・ペソ ($)",
+            "EUR": "ユーロ (€)",
+            "GBP": "英ポンド (£)",
+            "JPY": "日本円 (¥)",
+            "KRW": "韓国ウォン (₩)",
+            "BRL": "ブラジル・レアル (R$)",
+            "CNY": "中国元 (¥)",
+            "TWD": "台湾ドル (NT$)",
+            "DKK": "デンマーク・クローネ (kr)",
+            "PLN": "ポーランド・ズウォティ (zł)",
+            "SEK": "スウェーデン・クローナ (kr)"
+        },
+        "validation": {
+            "unsupportedCurrency": "通貨はサポートされていません",
+            "usingDefault": "デフォルトの通貨を使用しています: {{currency}}"
+        }
+    },
+    "addressSuggestionDropdown": {
+        "suggested": "提案",
+        "closeSuggestions": "提案を閉じる",
+        "loading": "提案を読み込んでいます..."
+    },
+    "infoModal": {
+        "paymentScheduleDescription": "支払スケジュールの詳細",
+        "writeReviewDescription": "レビュー投稿フォーム",
+        "starRatingDistributionDescription": "星評価の内訳",
+        "estimatedDeliveryDescription": "お届け予定の詳細",
+        "returnsAndWarrantyDescription": "返品および保証の詳細",
+        "close": "閉じる"
+    },
+    "estimatedDelivery": {
+        "cardTitle": "お届け予定",
+        "cardDescription": "利用可能な配送オプション",
+        "learnMore": "詳しく見る",
+        "sectionHeading": "お届け予定",
+        "shippingOptionsHeading": "配送オプションと料金",
+        "free": "無料"
+    },
+    "writeReview": {
+        "validation": {
+            "pleaseFixFollowing": "以下を修正してください。",
+            "ratingRequired": "評価を選択してください。",
+            "reviewRequired": "このフィールドに入力してください。",
+            "reviewMinLength": "レビューは {{count}} 文字以上で入力してください。",
+            "reviewMaxLength": "{{count}} 文字以内で入力してください。",
+            "titleMaxLength": "{{count}} 文字以内で入力してください。"
+        },
+        "minCharactersHint": "最小 {{count}} 文字。",
+        "maxCharactersHint": "最大 {{count}} 文字。"
+    },
+    "sitePicker": {
+        "title": "サイトを選択",
+        "description": "ご希望の店舗を選択すると、該当する商品と価格が表示されます。",
+        "ariaLabel": "サイトを選択",
+        "placeholder": "サイトを選択してください...",
+        "sites": {
+            "RefArchGlobal": "グローバル (英国)",
+            "RefArch": "米国"
+        }
+    },
+    "category": {
+        "banner": {
+            "productsAvailable_one": "1 product available",
+            "productsAvailable_other": "{{count}} products available"
+        }
+    },
+    "maintenancePage": {
+        "apology": "We apologise for any inconvenience. Thank you for your patience!"
+    },
+    "error": {
+        "403": {
+            "title": "Access restricted",
+            "message": "You don't have permission to view this page. If you believe this is an error, please contact our support team.",
+            "secondaryMessage": "In the meantime, feel free to browse our collection."
+        },
+        "404": {
+            "title": "Page not found",
+            "message": "We couldn't find the page you're looking for. It may have been moved or the link might be incorrect.",
+            "secondaryMessage": "Don't worry—you can still explore our collection or head back home.",
+            "details": "The requested page could not be found."
+        },
+        "500": {
+            "title": "Something went wrong",
+            "message": "We're sorry, but something unexpected happened on our end. Our team has been notified and is working to fix it.",
+            "secondaryMessage": "Please try again in a few moments, or browse our shop while we sort things out."
+        },
+        "defaultTitle": "Something went wrong",
+        "defaultDescription": "An error occurred",
+        "defaultDetails": "An unexpected error occurred.",
+        "notFoundTitle": "Page not found",
+        "notFoundDetails": "The requested page could not be found.",
+        "persistsMessage": "If this problem persists, please contact support.",
+        "tryAgainMessage": "An unexpected error occurred. Please try again later.",
+        "goToHomepage": "Go to Homepage",
+        "allRightsReserved": "All rights reserved.",
+        "recommendations": {
+            "title": "You might also like"
+        }
+    },
+    "product": {
+        "recommendations": {
+            "youMightAlsoLike": "こちらもどうぞ",
+            "completeTheLook": "ルックを完成",
+            "recentlyViewed": "最近見た商品"
+        },
+        "rating": {
+            "starContainerAriaLabel": "{{rating}}/{{total}} 星、{{count, number}} 件のレビュー",
+            "ratingOutOfTotal": "{{rating}}/{{total}}",
+            "ratingValue": "{{rating}}",
+            "basedOnReviews": "{{count, number}} 件のレビューに基づいています",
+            "ratingWithCount": "{{rating}} ({{count, number}})",
+            "viewAllReviews": "すべてのレビューを表示",
+            "distributionAriaLabel": "{{rating}} 星: {{totalReviews, number}} 件中 {{count, number}} 件のレビュー",
+            "distributionsAriaLabel": "星評価の内訳、レビュー総数 {{total, number}} 件",
+            "seeCustomerReviews": "カスタマーレビューを見る >"
+        },
+        "from": "から",
+        "outOfStock": "{{productName}} は在庫切れです",
+        "onlyLeft": "{{productName}} は残り {{stockLevel}} 点のみ!",
+        "inStock": "在庫あり",
+        "inStockCount": "在庫あり ({{stockDisplay}} 点)。すぐに発送できます",
+        "lowStock": "在庫わずか",
+        "lowStockCount": "在庫わずか - 残り {{stockDisplay}} 点のみ",
+        "preOrder": "予約注文可能",
+        "backOrder": "取り寄せ注文可能",
+        "outOfStockLabel": "在庫切れ",
+        "selectAllOptions": "上記のオプションをすべて選択してください",
+        "description": "説明",
+        "imageAlt": "商品画像",
+        "addingToCart": "買い物カゴに追加しています...",
+        "addToCart": "買い物カゴに追加",
+        "moreOptions": "その他のオプション",
+        "quickAdd": "クイック追加",
+        "buyItNow": "今すぐ購入",
+        "pickupAvailable": "店舗受け取り可能",
+        "selectProduct": "商品を選択",
+        "updatingCart": "更新中...",
+        "updateCart": "更新",
+        "addingToWishlist": "ほしい物リストに追加しています...",
+        "addToWishlist": "ほしい物リストに追加",
+        "updatingWishlist": "ほしい物リストを更新しています",
+        "share": "共有",
+        "expressPayments": {
+            "separatorBuyWith": "または次の方法で購入",
+            "venmoUnavailable": "このデバイスでは Venmo を利用できません。"
+        },
+        "productSetNotice": "これは商品セットです。以下の商品を個別に選択して買い物カゴに追加します。",
+        "productBundleNotice": "これは商品バンドルです。すべての商品がまとめて追加されます。",
+        "productDetails": "商品詳細",
+        "noDetailedDescription": "詳細な説明はありません。",
+        "brand": "ブランド:",
+        "manufacturer": "製造元:",
+        "sku": "SKU: ",
+        "sizeAndFit": "サイズとフィット感",
+        "sizeAndFitComingSoon": "サイズとフィット感の情報は近日公開予定です。",
+        "shippingAndReturns": "配送と返品",
+        "freeShipping": "50 ドル以上のご注文で送料無料",
+        "standardShipping": "通常配送:3～5 営業日",
+        "expressShipping": "お急ぎ便:1～2 営業日",
+        "priceMin": "最小",
+        "priceMax": "最大",
+        "priceTo": "～",
+        "returns": "返品: 30 日間の返品ポリシー",
+        "reviews": "レビュー",
+        "customerReviews": "カスタマーレビュー",
+        "oneReviewForProductName": "{{productName}}のレビュー 1 件",
+        "reviewsForProductName": "{{productName}}のレビュー {{count}} 件",
+        "aiReviewSummary": "AI レビューの要約",
+        "loadingReviews": "レビューを読み込んでいます...",
+        "noReviewsForProduct": "この商品にはレビューがありません。",
+        "noReviewsMatchFilters": "絞り込み条件に一致するレビューはありません。",
+        "verifiedPurchase": "購入確認済み",
+        "helpful": "参考になった ({{count}})",
+        "helpfulNoCount": "参考になった",
+        "report": "レポート",
+        "readMore": "もっと読む",
+        "readLess": "表示を減らす",
+        "reviewImageAlt": "レビュー画像",
+        "viewProductAriaLabel": "{{productName}}を表示",
+        "swatches": {
+            "availableColors": "Available colors",
+            "viewProductInColor": "View {{productName}} in {{colorName}}",
+            "viewAllColors": "View all {{count}} colors for {{productName}}",
+            "moreColorsTitle": "+{{count}} more"
+        },
+        "showingReviews": "{{total}} 件中 {{from}} - {{to}} 件のレビューを表示中",
+        "filterBy": "絞り込み:",
+        "withPhotos": "写真あり",
+        "searchReviewsPlaceholder": "レビューを検索...",
+        "sortLabel": "並べ替え:",
+        "sortMostRecent": "最新順",
+        "sortHighestRated": "評価の高い順",
+        "sortLowestRated": "評価の低い順",
+        "sortMostHelpful": "参考になった順",
+        "activeFilterStars": "{{count}} 星",
+        "clearFilter": "絞り込みをクリア",
+        "filterByStars": "{{count}} 星で絞り込む",
+        "clearStarFilter": "{{count}} 星の絞り込みをクリア",
+        "clearPhotoFilter": "写真の絞り込みをクリア",
+        "writeReviewButton": "レビューを書く",
+        "materials": "素材",
+        "usageInstructions": "使用方法",
+        "specifications": "仕様",
+        "careInstructions": "お手入れ方法",
+        "careInstructionsComingSoon": "お手入れ方法は近日公開予定です。",
+        "productSet": "商品セット",
+        "productBundle": "商品バンドル",
+        "setDescription": "以下の商品から選んで、理想のセットを作成してください",
+        "bundleDescription": "このバンドル内のすべての商品が一緒に買い物カゴに追加されます",
+        "selectedOf": "{{total}} 点のうち {{selected}} 点が選択されています",
+        "addSetToCart": "セットを買い物カゴに追加",
+        "addBundleToCart": "バンドルを買い物カゴに追加",
+        "adding": "追加しています...",
+        "selectAllOptionsAbove": "上記のオプションをすべて選択してください",
+        "outOfStockStatus": "在庫切れ",
+        "selected": "✓ 選択済み",
+        "selectOptionsAbove": "上記のオプションを選択してください",
+        "selectOptions": "オプションの選択",
+        "bonusProduct": "ボーナス商品",
+        "bonusProductAriaLabel": "この商品は無料のボーナス商品です",
+        "addedToCart": "{{productName}}を買い物カゴに追加しました。",
+        "updatedCart": "買い物カゴ内の{{productName}}を更新しました。",
+        "addedSetToCart": "商品セットを買い物カゴに追加しました。",
+        "addedBundleToCart": "商品バンドルを買い物カゴに追加しました。",
+        "failedToAddToCart": "買い物カゴに追加できませんでした: {{error}}。",
+        "failedToUpdateCart": "買い物カゴを更新できませんでした: {{error}}。",
+        "failedToAddItemsToCart": "商品を買い物カゴに追加できませんでした: {{error}}。",
+        "failedToAddBundleToCart": "バンドルを買い物カゴに追加できませんでした: {{error}}。",
+        "addedToWishlist": "{{productName}}をほしい物リストに追加しました。",
+        "alreadyInWishlist": "{{productName}}はすでにほしい物リストに追加されています。",
+        "failedToAddToWishlist": "商品をほしい物リストに追加できませんでした。",
+        "signInToAddToWishlist": "ほしい物リストに商品を追加するには、サインインしてください。",
+        "signInToContinue": "続行するには、サインインしてください。",
+        "removedFromWishlist": "ほしい物リストから削除しました。",
+        "failedToRemoveFromWishlist": "商品をほしい物リストから削除できませんでした。",
+        "removeFromWishlist": "ほしい物リストから削除",
+        "removedLabel": "削除しました",
+        "remove": "削除",
+        "selectVariantPlaceholder": "次に、",
+        "itemAlreadyInWishlist": "この商品はすでにほしい物リストに追加されています。",
+        "addedToWishlistGeneric": "ほしい物リストに追加しました。",
+        "productIdRequired": "商品 ID は必須です。",
+        "productOrItemIdRequired": "商品 ID または品目 ID は必須です。",
+        "methodNotAllowed": "この操作は許可されていません。",
+        "productItemRequired": "商品品目データは必須です。",
+        "productItemsRequired": "商品品目データは必須です。",
+        "bundleDataRequired": "バンドル品目と子選択データは必須です。",
+        "failedToAddItemToCart": "商品を買い物カゴに追加できませんでした。",
+        "failedToUpdateItemToCart": "買い物カゴ内の商品を更新できませんでした。",
+        "failedToRemoveItem": "商品を削除できませんでした。",
+        "failedToUpdateItemQuantity": "商品の数量を更新できませんでした。",
+        "failedToAddItemsToCartError": "商品を買い物カゴに追加できませんでした。",
+        "failedToAddBundleToCartError": "バンドルを買い物カゴに追加できませんでした。",
+        "failedToUpdateBundleToCartError": "買い物カゴ内のバンドルを更新できませんでした。",
+        "pleaseSelectOptionsFor": "{{productName}}のオプションを選択してください",
+        "productNotOrderable": "{{productName}}は注文できません。",
+        "cannotAddToCartValidationFailed": "買い物カゴに追加できません: 検証に失敗しました。",
+        "failedToAddProductToCart": "商品を買い物カゴに追加できませんでした。",
+        "failedToAddProductToWishlist": "商品をほしい物リストに追加できませんでした。",
+        "noProductIdForCart": "買い物カゴに追加するための商品 ID がありません",
+        "invalidQuantityForCart": "買い物カゴに追加する数量が無効です: {{quantity}}。",
+        "noProductSelectionsForSet": "セット商品を買い物カゴに追加するための商品選択が指定されていません。",
+        "noProductIdForBundle": "バンドル商品を買い物カゴに追加するための商品 ID がありません。",
+        "invalidQuantityForBundle": "バンドル商品を買い物カゴに追加する数量が無効です: {{quantity}}。",
+        "noChildSelectionsForBundle": "バンドル商品を買い物カゴに追加するための子商品選択が指定されていません。",
+        "cartOperationFailed": "買い物カゴの操作に失敗しました:",
+        "multipleItemsCartOperationFailed": "複数の商品の買い物カゴ操作に失敗しました:",
+        "bundleCartOperationFailed": "バンドル商品の買い物カゴ操作に失敗しました:",
+        "errorInHandleAddToCart": "handleAddToCart でエラーが発生しました:",
+        "errorInHandleProductSetAddToCart": "handleProductSetAddToCart でエラーが発生しました:",
+        "errorInHandleProductBundleAddToCart": "handleProductBundleAddToCart でエラーが発生しました:",
+        "failedToAddToWishlistError": "ほしい物リストに追加できませんでした:",
+        "addingToWishlistLog": "ほしい物リストに追加中:",
+        "failedToAddProductToCartError": "買い物カゴに商品を追加できませんでした:",
+        "failedToAddProductToWishlistError": "ほしい物リストに商品を追加できませんでした:",
+        "price": {
+            "unavailable": "価格情報がありません",
+            "currentPriceFrom": "現在価格: {{price}} から",
+            "currentPrice": "現在価格: {{price}}",
+            "from": "{{price}} から",
+            "range": "{{min}} ～ {{max}}",
+            "rangeA11y": "価格帯: {{min}} ～ {{max}}",
+            "listPriceFrom": "通常価格: {{price}} から",
+            "listPrice": "通常価格: {{price}}"
+        },
+        "removingFromWishlist": "Removing from wishlist...",
+        "inWishlist": "In your wishlist"
+    }
+}

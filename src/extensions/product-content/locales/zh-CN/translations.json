@@ -1,0 +1,20 @@
+{
+    "contentComingSoon": "内容即将推出。",
+    "faq": {
+        "askAssistant": "询问助手",
+        "faqQuestionSendToAssistantAriaLabel": "打开购物者代理并询问：{{question}}"
+    },
+    "returnsAndWarranty": {
+        "learnMore": "查看政策",
+        "returnConditions": "退货条件：",
+        "howToReturn": "如何退货：",
+        "note": "注：",
+        "whatsCovered": "涵盖范围：",
+        "whatsNotCovered": "不涵盖范围：",
+        "warrantyClaims": "保修索赔：",
+        "exchangeProcess": "换货流程：",
+        "needHelp": "需要帮助？",
+        "contactAt": "联系我们",
+        "orCall": "或致电"
+    }
+}

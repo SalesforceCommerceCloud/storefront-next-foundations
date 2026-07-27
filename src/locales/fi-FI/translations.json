@@ -1,0 +1,1566 @@
+{
+    "actionCard": {
+        "edit": "Muokkaa",
+        "remove": "Poista"
+    },
+    "categoryRefinements": {
+        "appliedFilters": "Käytetyt suodattimet:",
+        "clearAll": "Tyhjennä kaikki",
+        "filtersButtonLabel": "Suodattimet",
+        "filtersButtonLabelWithCount": "{{label}}, {{count}} valittu",
+        "noFilterOptionsAvailable": "Suodatinvaihtoehtoja ei ole saatavilla."
+    },
+    "common": {
+        "loading": "Ladataan",
+        "loadingMore": "Lataa lisää...",
+        "product": "tuote",
+        "noImageAvailable": "Kuvaa ei ole saatavilla",
+        "productGeneric": "Tuote",
+        "noProductsFound": "Tuotteita ei löytynyt",
+        "productCarousel": "Tuotekaruselli",
+        "productImageAlt": "Tuotteen kuva",
+        "suggestionImageAlt": "Ehdotuskuva",
+        "hero": {
+            "defaultTitle": "Osta nyt",
+            "defaultImageAlt": "Hero-kuva",
+            "defaultCtaText": "Osta nyt"
+        },
+        "previousImage": "Edellinen kuva",
+        "nextImage": "Seuraava kuva"
+    },
+    "search": {
+        "results": "Hakutulokset",
+        "suggestions": {
+            "didYouMean": "Tarkoititko",
+            "categories": "Kategoriat",
+            "products": "Tuotteet",
+            "popularSearches": "Suosittuja hakuja",
+            "recentSearches": "Viimeisimmät haut",
+            "clearRecentSearches": "Poista viimeisimmät haut",
+            "viewAll": "Näytä kaikki"
+        }
+    },
+    "customer": {
+        "defaults": {
+            "guestFirstName": "Vieras",
+            "guestLastName": "Käyttäjä",
+            "defaultAddressName": "Etusivu",
+            "defaultBillingAddressName": "Laskutus"
+        },
+        "messages": {
+            "currentUserRecommendation": "Tilisi tietojen käyttäminen",
+            "guestRecommendation": "Jatkuu vieraana. Voit kirjautua sisään myöhemmin, jos sinulla on tili."
+        }
+    },
+    "removeItem": {
+        "success": "Tuote poistettiin.",
+        "failed": "Tuotteen poistaminen epäonnistui.",
+        "title": "Poista tuote",
+        "button": "Poista",
+        "removing": "Poistetaan...",
+        "confirmTitle": "Vahvista tuotteen poisto",
+        "cancelButton": "Ei, pidä tuote",
+        "keepItemButton": "Pidä tuote",
+        "confirmAction": "Kyllä, poista tuote",
+        "keepItemAriaLabel": "Pidä tuote - Pidä tämä tuote ostoskorissa",
+        "removeItemAriaLabel": "Kyllä, poista tuote - Poista tämä tuote ostoskorista"
+    },
+    "editItem": {
+        "title": "Muokkaa ostoskorin tuotetta",
+        "quickAddTitle": "Pikalisäys",
+        "loadError": "Tuotetietojen lataaminen epäonnistui. Yritä uudelleen.",
+        "retry": "Yritä uudelleen",
+        "loadingProduct": "Ladataan..."
+    },
+    "header": {
+        "logoAlt": "Etusivu",
+        "openChat": "Avaa keskustelu",
+        "searchPlaceholder": "Etsi",
+        "welcomeBack": "Tervetuloa takaisin!",
+        "signIn": "Kirjaudu sisään",
+        "signOut": "Kirjaudu ulos",
+        "signingOut": "Kirjaudutaan ulos...",
+        "cartTitle": "Ostoskori",
+        "checkout": "Kassa",
+        "continueShopping": "Jatka ostoksia",
+        "openMenu": "Avaa valikko",
+        "closeMenu": "Sulje valikko",
+        "mobileNavigation": "Mobiilinavigointivalikko",
+        "expandCategory": "Laajenna {{category}}",
+        "collapseCategory": "Sulje {{category}}",
+        "menu": {
+            "yourLists": "Luettelosi",
+            "yourAccount": "Tilisi",
+            "savedItems": "Tallennetut tuotteet",
+            "overview": "Yleiskatsaus",
+            "addressBook": "Osoitekirja",
+            "paymentMethods": "Maksutavat",
+            "signInForBestExperience": "Kirjaudu sisään saadaksesi parhaan kokemuksen",
+            "newCustomer": "Oletko uusi asiakas?",
+            "createAccount": "Luo tili"
+        }
+    },
+    "login": {
+        "title": "Kirjaudu sisään tilillesi",
+        "subtitle": "Syötä käyttäjätietosi päästäksesi tilillesi",
+        "continueWithProvider": "Jatka palvelussa {{provider}}",
+        "checkEmailTitle": "Tarkista sähköpostisi",
+        "checkEmailDescription": "Olemme lähettäneet kirjautumislinkin osoitteeseen {{email}}. Napsauta linkkiä kirjautuaksesi sisään.",
+        "backToLogin": "Takaisin kirjautumiseen",
+        "emailLabel": "Sähköpostiosoite",
+        "emailPlaceholder": "Syötä sähköpostiosoitteesi",
+        "passwordLabel": "Salasana",
+        "passwordPlaceholder": "Syötä salasanasi",
+        "loginWithoutPassword": "Kirjaudu sisään ilman salasanaa",
+        "loginWithPassword": "Kirjaudu sisään salasanalla",
+        "forgotPassword": "Unohditko salasanasi?",
+        "noAccountQuestion": "Eikö sinulla ole tiliä? ",
+        "signUp": "Rekisteröidy",
+        "signingIn": "Kirjaudutaan sisään...",
+        "sendLoginLink": "Lähetä kirjautumislinkki",
+        "sendingLoginLink": "Lähetetään kirjautumislinkkiä...",
+        "signIn": "Kirjaudu sisään",
+        "socialOrContinueWith": "Tai jatka",
+        "otpCodeLabel": "Tarkistuskoodi",
+        "redirecting": "Kirjataan sinua sisään...",
+        "otpModalTitle": "Anna vahvistuskoodi",
+        "otpModalDescription": "Olemme lähettäneet {{otpLength}}-numeroisen koodin osoitteeseen {{email}}",
+        "otpRequired": "Vahvistuskoodi vaaditaan",
+        "otpInvalidFormat": "Syötä voimassa oleva {{otpLength}}-numeroinen koodi",
+        "verifying": "Tarkistetaan...",
+        "checkoutAsGuest": "Tee tilaus vieraana",
+        "resendCode": "Lähetä koodi uudelleen",
+        "resendCodeTimer": "Lähetä uudelleen {{timer}}s kuluttua",
+        "resendCodeError": "Koodin uudelleenlähetys epäonnistui. Yritä uudelleen."
+    },
+    "resetPassword": {
+        "title": "Nollaa salasana",
+        "subtitle": "Anna sähköpostiosoitteesi, niin saat ohjeet salasanasi nollaamiseen",
+        "checkEmailTitle": "Tarkista sähköpostisi",
+        "checkEmailDescription": "Saat pian osoitteeseen {{email}} sähköpostin, jossa on linkki salasanasi nollaamiseen.",
+        "backToSignIn": "Takaisin kirjautumiseen",
+        "emailLabel": "Sähköpostiosoite",
+        "emailPlaceholder": "Syötä sähköpostiosoitteesi",
+        "or": "tai ",
+        "goBackToLogin": "palaa takaisin kirjautumissivulle",
+        "emailRequired": "Sähköposti vaaditaan.",
+        "newPasswordRequired": "Tarvitaan uusi salasana.",
+        "confirmPasswordRequired": "Salasanan vahvistus vaaditaan.",
+        "sendingEmail": "Lähetetään sähköpostia...",
+        "resetButton": "Nollaa salasana",
+        "landingTitle": "Aseta uusi salasana",
+        "landingSubtitle": "Kirjoita uusi salasanasi alla olevaan kenttään",
+        "newPasswordLabel": "Uusi salasana",
+        "newPasswordPlaceholder": "Luo turvallinen salasana",
+        "confirmPasswordLabel": "Vahvista salasana",
+        "confirmPasswordPlaceholder": "Vahvista salasanasi",
+        "passwordsMustMatch": "Salasanojen on vastattava",
+        "resetPasswordButton": "Nollaa salasana",
+        "resettingPassword": "Palautetaan salasanaa...",
+        "invalidToken": "Virheellinen tai vanhentunut nollauslinkki. Pyydä uusi.",
+        "resetSuccess": "Salasana palautettiin! Kirjaudutaan sisään...",
+        "resetSuccessToast": "Salasana palautettiin! Kirjaudu sisään uudella salasanallasi."
+    },
+    "signup": {
+        "title": "Luo tilisi",
+        "subtitle": "Liity mukaan ja tee ostoksia jo tänään",
+        "haveAccountQuestion": "Onko sinulla tili? ",
+        "signIn": "Kirjaudu sisään",
+        "allFieldsRequired": "Kaikki kentät ovat pakollisia.",
+        "passwordsDoNotMatch": "Salasanat eivät täsmää.",
+        "passwordNotSecure": "Salasana ei täytä turvallisuusvaatimuksia.",
+        "form": {
+            "firstNameLabel": "Etunimi",
+            "firstNamePlaceholder": "Kirjoita etunimesi",
+            "lastNameLabel": "Sukunimi",
+            "lastNamePlaceholder": "Kirjoita sukunimesi",
+            "emailLabel": "Sähköpostiosoite",
+            "emailPlaceholder": "Kirjoita sähköpostiosoitteesi",
+            "passwordLabel": "Salasana",
+            "passwordPlaceholder": "Luo turvallinen salasana",
+            "confirmPasswordLabel": "Vahvista salasana",
+            "confirmPasswordPlaceholder": "Vahvista salasanasi",
+            "createAccountButton": "Luo tili"
+        },
+        "passwordRequirements": {
+            "title": "Salasanavaatimukset:",
+            "minLength": "Vähintään 8 merkkiä",
+            "hasUppercase": "Yksi iso kirjain",
+            "hasLowercase": "Yksi pieni kirjain",
+            "hasNumber": "Yksi numero",
+            "hasSpecialChar": "Yksi erikoismerkki (, ! % # @ $ & * jne.)"
+        }
+    },
+    "socialCallback": {
+        "socialError": "Kirjautuminen sosiaalisen median tunnuksilla peruutettiin tai epäonnistui. Yritä uudelleen."
+    },
+    "errors": {
+        "genericTryAgain": "Jokin meni vikaan. Yritä uudelleen.",
+        "somethingWentWrong": "Jokin meni vikaan. Yritä uudelleen.",
+        "loginFailed": "Kirjautuminen epäonnistui. Tarkista kirjautumistietosi.",
+        "accessTokenRefreshFailed": "Päivitetyn käyttöoikeustunnuksen haku epäonnistui.",
+        "guestAccessTokenFailed": "Uuden käyttöoikeuskoodin hakeminen epäonnistui.",
+        "codeVerifierMissing": "Koodin todentajaa ei löytynyt istunnosta.",
+        "missingRegistrationField": "Asiakkaan rekisteröinnistä puuttuu vaadittu kenttä.",
+        "autoLoginAfterRegistrationFailed": "Automaattinen kirjautuminen rekisteröinnin jälkeen epäonnistui.",
+        "methodNotAllowed": "Menetelmä ei ole sallittu.",
+        "featureUnavailable": "Tämä ominaisuus ei ole tällä hetkellä käytettävissä. Ota yhteyttä tukeen.",
+        "tooManyLoginAttempts": "Olet saavuttanut kirjautumisyritysten rajan. Odota varmuuden vuoksi 10 minuuttia ja yritä uudelleen.",
+        "tooManyPasswordResetAttempts": "Olet saavuttanut salasanojen nollausrajan. Odota varmuuden vuoksi 10 minuuttia ja yritä uudelleen.",
+        "invalidToken": "Vahvistuskoodi on virheellinen. Yritä uudelleen.",
+        "expiredToken": "Vahvistuskoodi on vanhentunut. Pyydä uusi.",
+        "promoCodeRequired": "Kampanjakoodi vaaditaan.",
+        "couponItemIdRequired": "Kupongin tuotetunnus vaaditaan.",
+        "noBasketFound": "Koria ei löytynyt.",
+        "noCustomerFound": "Asiakasta ei löytynyt istunnosta",
+        "api": {
+            "orderNotFound": "Tilausta ei löydy. Tarkista tilausnumero ja yritä uudelleen.",
+            "basketNotFound": "Ostoskoria ei löydy. Päivitä sivu ja yritä uudelleen.",
+            "basketQuotaExceeded": "Korien enimmäismäärä ylitetty. Käytä olemassa olevaa koria.",
+            "paymentFailed": "Maksu epäonnistui. Tarkista maksutietosi ja yritä uudelleen.",
+            "paymentInformationRequired": "Maksutiedot tarvitaan tilauksen tekemiseksi.",
+            "unableToLoadCustomerProfile": "Profiilia ei pystytä lataamaan. Päivitä sivu ja yritä uudelleen.",
+            "inventoryUnavailable": "Jotkin ostoskorissasi olevat tuotteet eivät ole enää saatavilla. Tarkista ostoskorisi.",
+            "invalidOrderData": "Virheelliset tilaustiedot. Tarkista kassatietosi ja yritä uudelleen.",
+            "shippingAddressRequired": "Toimitusosoite tarvitaan jatkamiseen.",
+            "billingAddressRequired": "Laskutusosoite tarvitaan tilauksen tekemiseksi.",
+            "networkError": "Verkkovirhe. Tarkista yhteys ja yritä uudelleen.",
+            "serverError": "Palvelinvirhe. Yritä myöhemmin uudelleen.",
+            "unauthorized": "Istuntosi on päättynyt. Kirjaudu sisään uudelleen.",
+            "badRequest": "Virheellinen pyyntö. Tarkista tietosi ja yritä uudelleen.",
+            "forbidden": "Käyttö estetty. Sinulla ei ole lupaa suorittaa tätä toimintoa.",
+            "timeout": "Pyynnön aikakatkaisu. Yritä uudelleen.",
+            "unexpectedError": "Tapahtui odottamaton virhe."
+        },
+        "validation": {
+            "required": "Tämä kenttä on pakollinen.",
+            "invalidEmail": "Kirjoita kelvollinen sähköpostiosoite.",
+            "invalidCreditCard": "Syötä voimassa olevan luottokortin numero.",
+            "invalidExpiryDate": "Syötä voimassa oleva viimeinen voimassaolopäivä.",
+            "invalidCvv": "Syötä voimassa oleva CVV-koodi.",
+            "minLength": "Tämän kentän on oltava vähintään {{min}} merkkiä pitkä.",
+            "maxLength": "Tämä kenttä voi olla enintään {{max}} merkkiä.",
+            "invalidPhoneNumber": "Anna kelvollinen puhelinnumero.",
+            "invalidPostalCode": "Syötä voimassa oleva postinumero."
+        },
+        "checkout": {
+            "noActiveBasket": "Aktiivista koria ei löytynyt. Päivitä sivu ja yritä uudelleen.",
+            "basketCalculationFailed": "Tilauksen loppusumman laskeminen epäonnistui. Yritä uudelleen.",
+            "orderCreationFailed": "Tilauksen luonti epäonnistui. Yritä uudelleen.",
+            "paymentProcessingFailed": "Maksun käsittely epäonnistui. Yritä uudelleen.",
+            "shippingMethodNotAvailable": "Valittu toimitustapa ei ole käytettävissä. Valitse toinen vaihtoehto.",
+            "shippingMethodRequired": "Valitse toimitustapa jatkaaksesi.",
+            "addressValidationFailed": "Osoitteen vahvistus epäonnistui. Tarkista osoitteesi ja yritä uudelleen.",
+            "promoCodeInvalid": "Virheellinen tarjouskoodi. Tarkista ja yritä uudelleen.",
+            "stockNotAvailable": "Yhden tai useamman ostoskorissasi olevan tuotteen varasto ei riitä."
+        },
+        "customer": {
+            "addressIdRequired": "Osoitteen nimi vaaditaan asiakkaan osoitetta varten.",
+            "countryCodeRequired": "Asiakkaan osoitteeseen tarvitaan maakoodi.",
+            "addressLine1Required": "Osoiterivi 1 tarvitaan asiakkaan osoitetta varten.",
+            "cityRequired": "Kaupunki vaaditaan asiakkaan osoitetta varten.",
+            "firstNameRequired": "Etunimi vaaditaan asiakkaan osoitetta varten.",
+            "lastNameRequired": "Sukunimi vaaditaan asiakkaan osoitetta varten.",
+            "postalCodeRequired": "Asiakkaan osoitetta varten tarvitaan postinumero.",
+            "invalidEmailFormat": "Virheellinen sähköpostimuoto",
+            "customerLookupUnavailable": "Asiakashakupalvelu ei ole käytettävissä.",
+            "registrationFailed": "Rekisteröinti epäonnistui. Yritä uudelleen.",
+            "autoLoginFailed": "Automaattinen kirjautuminen epäonnistui. Kirjaudu sisään manuaalisesti.",
+            "autoLoginAfterRegistrationFailed": "Tili luotiin, mutta automaattinen kirjautuminen epäonnistui. Kirjaudu sisään manuaalisesti.",
+            "notAuthenticated": "Asiakastunnusta ei löydy."
+        },
+        "passwordless": {
+            "missingToken": "Puuttuva tunnus.",
+            "missingCallbackToken": "Puuttuu x-slas-callback-token-otsikko.",
+            "missingRequiredFields": "Puuttuvat pakolliset kentät: email_id ja tunnus."
+        },
+        "jwks": {
+            "missingEnvironmentVariables": "Puuttuvat vaaditut asetukset: shortCode ja organizationId.",
+            "invalidResponse": "Virheellinen JWKS-vastaus: puuttuva tai virheellinen avainsarja.",
+            "unknownError": "Tuntematon virhe tapahtui."
+        },
+        "marketing": {
+            "clientIdMissing": "MARKETING_CLOUD_CLIENT_ID ei ole asetettu ympäristömuuttujiin.",
+            "clientSecretMissing": "MARKETING_CLOUD_CLIENT_SECRET ei ole asetettu ympäristömuuttujiin.",
+            "subdomainMissing": "MARKETING_CLOUD_SUBDOMAIN ei ole asetettu ympäristömuuttujiin.",
+            "templateIdMissing": "MARKETING_CLOUD_PASSWORDLESS_LOGIN_TEMPLATE ei ole asetettu ympäristömuuttujiin."
+        }
+    },
+    "quantitySelector": {
+        "quantity": "Määrä:",
+        "decreaseQuantity": "Vähennä määrää",
+        "increaseQuantity": "Lisää määrää",
+        "decreaseQuantityForProduct": "Vähennä tuotteen {{productName}} määrää",
+        "increaseQuantityForProduct": "Lisää tuotteen {{productName}} määrää",
+        "quantityInput": "Määrä",
+        "quantityUpdated": "Päivitetty määrä",
+        "quantityUpdateFailed": "Määrän päivitys epäonnistui",
+        "onlyLeft": "Vain {{stockLevel}} jäljellä!",
+        "onlyLeftForProduct": "Vain {{stockLevel}} tuotetta ({{productName}}) jäljellä!",
+        "maxStockReached": "Saavutettu enimmäisvarasto",
+        "insufficientStock": "Varastossa ei ole riittävästi"
+    },
+    "cart": {
+        "title": "Ostoskori",
+        "delivery": {
+            "heading": "Toimitus - {{deliveryCount}} /{{totalCount}} tuotetta",
+            "heading_one": "Delivery - {{deliveryCount}} out of {{count}} item",
+            "heading_other": "Delivery - {{deliveryCount}} out of {{count}} items"
+        },
+        "itemCount_zero": "Ostoskori (0 tuotetta)",
+        "itemCount_one": "Ostoskori (1 tuote)",
+        "itemCount_other": "Ostoskori ({{count}} tuotetta)",
+        "empty": {
+            "title": "Ostoskorisi on tyhjä.",
+            "registeredMessage": "Jatka ostoksia lisätäksesi tuotteita ostoskoriin.",
+            "guestMessage": "Kirjaudu sisään hakeaksesi tallennetut tuotteet tai jatka ostoksia.",
+            "continueShopping": "Jatka ostoksia",
+            "signIn": "Kirjaudu sisään"
+        },
+        "summary": {
+            "orderSummary": "Tilauksen yhteenveto",
+            "showOrderSummary": "Näytä tilauksen yhteenveto",
+            "mobileHeadingTotal_one": "Yhteensä (1 tuote)",
+            "mobileHeadingTotal_other": "Yhteensä ({{count}} tuotetta)",
+            "subtotal": "Yhteensä",
+            "shipping": "Toimitus",
+            "shippingPromotionApplied": "(Tarjous lisätty)",
+            "shippingFree": "ILMAINEN",
+            "tax": "Vero",
+            "estimatedTotal": "Arvioitu kokonaismäärä",
+            "orderTotal": "Tilauksen loppusumma",
+            "noBasketData": "Koritietoja ei ole saatavilla",
+            "mobileHeading_one": "Estimated Total (1 item)",
+            "mobileHeading_other": "Estimated Total ({{count}} items)"
+        },
+        "promoCode": {
+            "label": "Kampanjakoodi",
+            "placeholder": "Kampanjakoodi...",
+            "apply": "Käytä",
+            "applying": "Käytetään...",
+            "remove": "Poista",
+            "removing": "Poistetaan...",
+            "accordionTitle": "Onko sinulla tarjouskoodi?",
+            "successMessage": "Tarjous lisättiin.",
+            "errorMessage": "Tarkista koodi ja yritä uudelleen. Tarjous on jo lisätty tai se on päättynyt.",
+            "removeSuccessMessage": "Tarjous poistettiin.",
+            "removeErrorMessage": "Tarjouksen poisto epäonnistui",
+            "noBasketMessage": "Ei koria saatavilla",
+            "requiredMessage": "Kampanjakoodi vaaditaan.",
+            "validation": {
+                "minLength": "Kampanjakoodin on oltava vähintään 2 merkkiä pitkä."
+            },
+            "errors": {
+                "invalidCode": "Kuponkikoodi ”{{code}}” ei kelpaa.",
+                "expiredCode": "Tämä kampanjakoodi on vanhentunut.",
+                "alreadyApplied": "Tätä kampanjakoodia on jo käytetty.",
+                "notApplicable": "Tämä kampanjakoodi ei koske ostoskoriasi",
+                "generic": "Kampanjakoodia ei voi käyttää. Tarkista koodi ja yritä uudelleen."
+            }
+        },
+        "items": {
+            "itemsInCart_zero": "0 tuotetta ostoskorissa",
+            "itemsInCart_one": "1 tuote ostoskorissa",
+            "itemsInCart_other": "{{count}} tuotetta ostoskorissa",
+            "editCart": "Muokkaa ostoskoria"
+        },
+        "checkout": {
+            "proceedToCheckout": "Siirry kassalle",
+            "secure": "Turvallinen"
+        },
+        "attributes": {
+            "quantity": "Määrä:",
+            "promotions": "Kampanjat:"
+        },
+        "product": {
+            "defaultName": "Tuotteen nimi"
+        },
+        "removeItemConfirmDescription": "Haluatko varmasti poistaa tämän tuotteen ostoskoristasi?",
+        "itemIdRequired": "Tuotteen tunnus vaaditaan.",
+        "noBasketIdFound": "Ostoskorin tunnusta ei löydy.",
+        "discount": {
+            "type": {
+                "free": "ilmainen"
+            }
+        },
+        "badge": {
+            "ariaLabel": "Oma ostoskori, tuotteiden määrä: {{count}}"
+        },
+        "bundle": {
+            "selectedOptions": "Valitut vaihtoehdot"
+        },
+        "bonusProducts": {
+            "selectBonusProducts": "Valitse bonustuotteet ostoskoriin",
+            "addedToCart": "Bonustuote lisätty ostoskoriin",
+            "failedToAdd": "Bonustuotteen lisääminen epäonnistui: {{error}}",
+            "missingRequiredInfo": "Puuttuvat pakolliset tiedot"
+        }
+    },
+    "checkout": {
+        "contactInfo": {
+            "title": "Yhteystiedot",
+            "emailLabel": "Sähköpostiosoite",
+            "emailPlaceholder": "Sähköpostiosoite",
+            "emailRequired": "Anna sähköpostiosoitteesi.",
+            "emailInvalid": "Anna kelvollinen sähköpostiosoite.",
+            "countryCodeLabel": "Koodi",
+            "phoneLabel": "Puhelinnumero",
+            "phoneFormatDescription": "10-numeroinen puhelinnumero",
+            "phoneRequired": "Anna puhelinnumerosi.",
+            "phoneInvalid": "Kirjoita kelvollinen puhelinnumero.",
+            "notProvided": "Ei vielä annettu",
+            "loginSuggestion": "💡 Onko sinulla tili? Voit jatkaa vieraana tai ",
+            "loginSuggestionLink": "kirjaudu sisään nopeampaa maksua varten",
+            "usingRegisteredAccount": "✓ Rekisteröidyn tilin käyttäminen",
+            "continue": "Jatka toimitusosoitteeseen",
+            "saving": "Tallennetaan...",
+            "lookupFallbackMessage": "Asiakkaan haku epäonnistui. Jatkuu vieraana.",
+            "saveError": "Yhteystietojen tallentaminen epäonnistui",
+            "sessionExpired": "Istunto päättyi. Kirjaudu sisään uudelleen."
+        },
+        "addressModal": {
+            "title": "Lisää uusi osoite",
+            "editTitle": "Muokkaa osoitetta",
+            "description": "Kirjoita toimitusosoitteesi alla olevaan lomakkeeseen.",
+            "editDescription": "Päivitä toimitusosoitteesi alla olevalla lomakkeella.",
+            "cancel": "Peruuta",
+            "save": "Tallenna",
+            "saving": "Tallennetaan..."
+        },
+        "shippingAddress": {
+            "title": "Toimitusosoite",
+            "changeLabel": "Muokkaa",
+            "selectSavedAddress": "Valitse tallennettu osoite",
+            "viewAllLink": "Näytä kaikki",
+            "viewAllMore": "({{count}} lisää)",
+            "viewLessAddresses": "Näytä vähemmän",
+            "addNewAddressButton": "Lisää uusi osoite",
+            "editAddressLink": "Muokkaa osoitetta",
+            "defaultBadge": "Oletusarvoinen",
+            "firstNameRequired": "Anna etunimesi.",
+            "lastNameRequired": "Anna sukunimesi.",
+            "addressRequired": "Anna osoitteesi.",
+            "cityRequired": "Anna postitoimipaikkasi.",
+            "stateRequired": "Valitse osavaltiosi.",
+            "postalCodeRequired": "Anna postinumerosi.",
+            "continue": "Jatka lähetystapaan",
+            "saving": "Tallennetaan...",
+            "saved": "Toimitusosoite tallennettu",
+            "failed": "Toimitusosoitteen tallentaminen epäonnistui",
+            "confirmed": "Toimitusosoite vahvistettu",
+            "notProvided": "Toimitusosoitetta ei ole vielä annettu",
+            "completePreviousSteps": "Voit jatkaa, kun suoritat edelliset vaiheet"
+        },
+        "addressForm": {
+            "firstNameLabel": "Etunimi",
+            "firstNamePlaceholder": "Etunimi",
+            "lastNameLabel": "Sukunimi",
+            "lastNamePlaceholder": "Sukunimi",
+            "countryLabel": "Maa",
+            "addressLabel": "Osoiterivi 1",
+            "addressPlaceholder": "Osoiterivi 1",
+            "address2Label": "Osoiterivi 2",
+            "address2Placeholder": "Osoiterivi 2",
+            "cityLabel": "Postitoimipaikka",
+            "cityPlaceholder": "Postitoimipaikka",
+            "stateLabel": "Osavaltio",
+            "statePlaceholder": "Osavaltio",
+            "provinceLabel": "Provinssi",
+            "provincePlaceholder": "Provinssi",
+            "zipLabel": "Postinumero",
+            "zipPlaceholder": "Postinumero",
+            "postalCodeLabel": "Postinumero",
+            "postalCodePlaceholder": "Postinumero",
+            "codeLabel": "Koodi",
+            "phoneLabel": "Puhelinnumero"
+        },
+        "shippingOptions": {
+            "title": "Lähetystapa",
+            "giftWrappingLabel": "Lähetä lahjaksi (lahjapakkaus)",
+            "giftWrappingDescription": "Voit ottaa lahjavaihtoehdot käyttöön tai poistaa ne käytöstä milloin tahansa.",
+            "selectRequired": "Valitse toimitustapa",
+            "saving": "Tallennetaan...",
+            "continue": "Jatka maksuun",
+            "completePreviousSteps": "Voit jatkaa, kun suoritat edelliset vaiheet",
+            "enterAddressFirst": "Anna toimitusosoitteesi nähdäksesi käytettävissä olevat toimitustavat.",
+            "arrives": "Saapuu: {{estimatedArrivalTime}}",
+            "free": "Veloituksetta",
+            "noMethodsAvailable": "Ei käytettävissä olevia toimitustapoja",
+            "noMethodsAvailableHelp": "Varmista, että toimitusosoitteesi on täydellinen ja yritä uudelleen.",
+            "deliveryWindow": "Arrives {{window}}"
+        },
+        "payment": {
+            "title": "Maksu",
+            "changeLabel": "Muokkaa",
+            "methodTitle": "Maksutapa",
+            "savedMethodDescription": "Valitse tallennettu maksutapa tai lisää uusi",
+            "addNewPaymentMethod": "Lisää uusi maksutapa",
+            "creditCardOption": "Luottokortti",
+            "newPaymentMethodTitle": "Uusi maksutapa",
+            "cardholderLabel": "Kortinhaltijan nimi",
+            "nameOnCardLabel": "Nimi kortissa*",
+            "cardholderPlaceholder": "Nimi kortissa*",
+            "cardholderRequired": "Kortinhaltijan nimi vaaditaan.",
+            "cardNumberLabel": "Kortin numero*",
+            "cardNumberPlaceholder": "Kortin numero*",
+            "cardNumberRequired": "Kortin numero vaaditaan.",
+            "cardNumberInvalid": "Syötä voimassa oleva kortin numero.",
+            "cardNumberInvalidLength": "Syötä voimassa oleva korttinumero (13-19 numeroa).",
+            "expiryLabel": "kk/vv*",
+            "expiryPlaceholder": "kk/vv*",
+            "expiryRequired": "Viimeinen voimassaolopäivä vaaditaan",
+            "expiryInvalid": "Syötä voimassa oleva viimeinen voimassaolopäivä (KK/VV)",
+            "cvvHelp": "3-4 numeroa kortin kääntöpuolella",
+            "cvvShow": "Näytä CVV",
+            "cvvHide": "Piilota CVV",
+            "cvvRequired": "CVV vaaditaan",
+            "cvvInvalid": "Syötä voimassa oleva CVV",
+            "cvvInvalidFormat": "Syötä voimassa oleva CVV (3-4 numeroa).",
+            "billingAddressRequired": "Laskutusosoite vaaditaan, jos se eroaa toimitusosoitteesta.",
+            "useDifferentBilling": "Käytä eri laskutusosoitetta",
+            "useDifferentBillingDescription": "Käytä samaa osoitetta laskutukseen ja toimitukseen",
+            "sameAsShippingAddress": "Sama kuin toimitusosoite",
+            "selectAnAddress": "Valitse osoite",
+            "noBillingAddressSaved": "Laskutusosoitetta ei ole tallennettu",
+            "continue": "Jatka yhteenvetoon",
+            "saving": "Tallennetaan...",
+            "saved": "Maksutiedot tallennettu",
+            "failed": "Maksutietojen tallentaminen epäonnistui",
+            "createAccountForFasterCheckout": "Luo tili, jotta pääset maksamaan nopeammin seuraavalla kerralla",
+            "saveForFutureUse": "Tallenna tulevaa käyttöä varten",
+            "unknownCardType": "Tuntematon",
+            "defaultCardLabel": "Kortti",
+            "preferredBadge": "Ensisijainen",
+            "defaultBadge": "Oletusarvoinen",
+            "endingIn": "Päättyy numeroihin {{lastDigits}}",
+            "expiresLabel": "Vanhentuu {{expiry}}",
+            "summaryLabel": "{{methodLabel}} joka päättyy numeroihin {{lastDigits}}",
+            "summarySavedLabel": "Tallennettu maksutapa: {{methodLabel}} joka päättyy numeroihin {{lastDigits}}",
+            "noPaymentMethodSaved": "Maksutapaa ei ole tallennettu",
+            "billingSummaryTitle": "Laskutusosoite",
+            "viewAllMore": "Näytä kaikki ({{count}} lisää)",
+            "viewLess": "Näytä vähemmän",
+            "savePaymentToProfile": "Tallenna maksutapa tulevaa käyttöä varten"
+        },
+        "expressPayments": {
+            "separator": "Tai",
+            "venmoUnavailable": "Venmo ei ole käytettävissä tällä laitteella."
+        },
+        "common": {
+            "edit": "Muokkaa",
+            "submitting": "Toimittaminen",
+            "notProvided": "Ei annettu",
+            "backToCart": "Takaisin ostoskoriin",
+            "emptyCart": "Ostoskorissa ei ole tuotteita. Lisää tuotteita ennen kassalle siirtymistä."
+        },
+        "orderSummary": {
+            "title": "Tilauksen yhteenveto",
+            "toggleLabel": "Näytä tilauksen yhteenveto"
+        },
+        "myCart": {
+            "title": "Ostoskori",
+            "saved": "Tallennettu {{amount}}"
+        },
+        "placeOrder": {
+            "button": "Tee tilaus - {{total}}",
+            "processing": "Tehdään tilausta...",
+            "success": "Tilaus tehtiin!",
+            "failed": "Kassalla tapahtui odottamaton virhe."
+        },
+        "confirmation": {
+            "title": "Kiitos tilauksestasi!",
+            "orderNumber": "Tilausnumero:",
+            "confirmationEmailSent": "Olemme lähettäneet vahvistussähköpostin osoitteeseen {{email}}",
+            "orderNotFound": "Tilausta ei löydy",
+            "orderNotFoundDescription": "Emme löytäneet etsimääsi tilausta.",
+            "orderNumberRequired": "Tilausnumero vaaditaan",
+            "sections": {
+                "orderSummary": "Tilauksen yhteenveto",
+                "shippingDetails": "Toimitustiedot",
+                "paymentDetails": "Maksutiedot"
+            },
+            "fields": {
+                "orderNumber": "Tilausnumero:",
+                "status": "Tila:",
+                "total": "Yhteensä:",
+                "shippingAddress": "Toimitusosoite",
+                "shippingMethod": "Lähetystapa",
+                "billingAddress": "Laskutusosoite",
+                "paymentMethod": "Maksutapa",
+                "defaultShippingMethod": "Normaalitoimitus",
+                "defaultPaymentMethod": "Luottokortti",
+                "savedMethodDescription": "Valitse tallennettu maksutapa tai lisää uusi"
+            },
+            "actions": {
+                "continueShopping": "Jatka ostoksia",
+                "viewAccount": "Näytä tili"
+            },
+            "hero": {
+                "thankYou": "Kiitos {{name}}!",
+                "orderConfirmed": "Tilauksesi on vahvistettu.",
+                "emailConfirmation": "Olemme lähettäneet vahvistussähköpostin osoitteeseen {{email}}.",
+                "needHelp": "Tarvitsetko apua?",
+                "defaultName": "Asiakas",
+                "emailFallback": "sähköpostiosoitteesi"
+            },
+            "helpLinks": {
+                "faq": "UKK",
+                "contact": "Ota yhteyttä",
+                "returns": "Palautuskäytäntö"
+            },
+            "summaryLabels": {
+                "arriving": "Saapuu",
+                "shippingAddress": "Toimitusosoite",
+                "shippingMethod": "Lähetystapa",
+                "noAddress": "Osoitetta ei ole saatavilla",
+                "estimatedDatePlaceholder": "Käsitellään nyt",
+                "quantity": "Lkm: {{count}}",
+                "freeShipping": "Veloituksetta",
+                "deliveryWindow": "{{window}}"
+            },
+            "totals": {
+                "subtotal": "Yhteensä",
+                "promotions": "Tarjoukset",
+                "shipping": "Toimitus",
+                "tax": "Vero",
+                "total": "Yhteensä"
+            },
+            "payment": {
+                "methodSummary": "{{method}} joka päättyy numeroihin {{lastDigits}}",
+                "noMethod": "Tallennettu maksutapa"
+            },
+            "newsletter": {
+                "title": "Saat 10% alennuksen seuraavasta tilauksestasi. Liity sähköpostilistalle.",
+                "subtitle": "Pysy ajan tasalla tuoteuutuuksista ja erikoistarjouksista.",
+                "placeholder": "Sähköpostiosoite",
+                "cta": "Liity"
+            },
+            "summaryTitle": "Yhteenveto",
+            "emptyItemsFallback": "Tuotteitasi valmistellaan.",
+            "productPlaceholderInitial": "Tuote"
+        },
+        "errorBoundary": {
+            "title": "Kassa ei ole tilapäisesti käytettävissä",
+            "description": "Meillä on teknisiä ongelmia maksuprosessin kanssa. Ostoskorisi tuotteet ovat turvassa ja tallennettu.",
+            "tryAgain": "Yritä uudelleen",
+            "returnToCart": "Palaa ostoskoriin",
+            "componentError": {
+                "title": "Komponentti ei ole tilapäisesti käytettävissä",
+                "description": "Tätä osiota ei voitu ladata oikein. Voit jatkaa kassalla tai yrittää päivittää sivun.",
+                "tryAgain": "Yritä uudelleen"
+            }
+        },
+        "registration": {
+            "emailNotFound": "Sähköpostiosoite tarvitaan tilin luomiseen. Ilmoita sähköpostiosoitteesi yhteystieto-osassa.",
+            "initiationFailed": "Tarkistuskoodia ei pystytä lähettämään. Yritä uudelleen.",
+            "sendingVerificationCode": "Lähetetään vahvistuskoodia...",
+            "accountCreatedSuccess": "Tilin luonti onnistui!",
+            "checkboxExpandedDescription": "Kun teet tilauksen, luomme sinulle tilin ja tallennamme maksutietosi ja muut tiedot tulevia ostoksia varten. Vahvista tilisi seuraavan kassakäynnin aikana lähettämällämme koodilla.",
+            "accountCreatedTitle": "Tili luotu",
+            "verified": "Vahvistettu",
+            "accountCreatedDescription": "Olemme luoneet ja vahvistaneet tilisi käyttämällä tilauksesi tietoja. Seuraavan kerran, kun kirjaudut ulos, syötä vain lähettämämme koodi kirjautuaksesi sisään - salasanaa ei tarvita.",
+            "accountCreationLabel": "Tilin luominen",
+            "accountWillBeCreated": "Tili luodaan",
+            "continueAsGuest": "Jatka vieraana"
+        }
+    },
+    "account": {
+        "title": "Tilin tiedot",
+        "subtitle": "Hallitse henkilökohtaisia tietojasi",
+        "myAccount": "Oma tili",
+        "navigation": {
+            "overview": "Yleiskatsaus",
+            "accountDetails": "Tilin tiedot",
+            "wishlist": "Toivelista",
+            "orderHistory": "Tilaushistoria",
+            "addresses": "Osoitteet",
+            "manageAddresses": "Hallitse osoitteita",
+            "paymentMethods": "Maksutavat",
+            "storePreferences": "Kaupan asetukset",
+            "logOut": "Kirjaudu ulos"
+        },
+        "storePreferences": {
+            "title": "Kaupan asetukset",
+            "subtitle": "Hallitse haluamiasi myymälöiden sijainteja ja noutoasetuksia",
+            "preferredStore": {
+                "heading": "Haluttu myymälä noutoa varten",
+                "description": "Valitse haluamasi myymälä tilausten tilausten noutoa varten",
+                "changeStore": "Vaihda myymälä",
+                "noStoreSelected": "Ei valittua myymälää. Valitse haluamasi myymälä myymäläluettelosta noutoa varten.",
+                "storeHoursTitle": "Myymälän aukioloajat",
+                "error": "Myymälän tietojen lataaminen epäonnistui. Yritä myöhemmin uudelleen."
+            },
+            "authorizedPickupPeople": {
+                "heading": "Valtuutetut noutajat",
+                "description": "Lisää henkilöitä, joilla on oikeus noutaa tilauksia puolestasi",
+                "addPerson": "Lisää henkilö",
+                "idNote": "Valtuutettujen noutajien on esitettävä toimitusta noutaessaan voimassa oleva henkilöllisyystodistus, joka vastaa rekisteriin ilmoitettua nimeä.",
+                "modal": {
+                    "addTitle": "Lisää valtuutettu henkilö",
+                    "editTitle": "Muokkaa valtuutettua henkilöä",
+                    "firstName": "Etunimi",
+                    "firstNamePlaceholder": "Etunimi",
+                    "lastName": "Sukunimi",
+                    "lastNamePlaceholder": "Sukunimi",
+                    "email": "Sähköpostiosoite",
+                    "relationship": "Suhde",
+                    "relationshipPlaceholder": "Valitse suhde",
+                    "modalNote": "Tämä henkilö on valtuutettu noutamaan tilaukset puolestasi. Hänen on esitettävä tilausta noutaessaan voimassa oleva henkilöllisyystodistus, joka vastaa annettua nimeä.",
+                    "cancel": "Peruuta",
+                    "save": "Tallenna",
+                    "firstNameRequired": "Etunimi vaaditaan.",
+                    "firstNameMax": "Etunimi saa olla enintään 50 merkkiä pitkä.",
+                    "lastNameRequired": "Sukunimi vaaditaan.",
+                    "lastNameMax": "Sukunimi saa olla enintään 50 merkkiä pitkä.",
+                    "emailRequired": "Sähköposti vaaditaan.",
+                    "emailInvalid": "Anna kelvollinen sähköpostiosoite.",
+                    "emailMax": "Sähköposti saa olla enintään 100 merkkiä pitkä.",
+                    "relationshipRequired": "Valitse suhde."
+                },
+                "statusActive": "Aktiivinen",
+                "relationshipLabel": "Suhde: {{relationship}}",
+                "edit": "Muokkaa",
+                "delete": "Poista",
+                "emptyState": "Ei vielä valtuutettuja noutajia. Lisää joku, joka voi noutaa tilaukset puolestasi.",
+                "deleteConfirmTitle": "Poista valtuutettu henkilö",
+                "deleteConfirmDescription": "Haluatko varmasti poistaa henkilön {{name}}? Hän ei voi enää noutaa tilauksia puolestasi.",
+                "deleteConfirmCancel": "Peruuta",
+                "deleteConfirmRemove": "Poista",
+                "relationships": {
+                    "spouse": "Puoliso",
+                    "familyMember": "Perheenjäsen",
+                    "friend": "Ystävä",
+                    "other": "Muu"
+                }
+            },
+            "pickupPreferences": {
+                "heading": "Noutoasetukset",
+                "description": "Hallitse noutoilmoituksia ja myymäläasetuksia",
+                "edit": "Muokkaa",
+                "save": "Tallenna",
+                "cancel": "Peruuta",
+                "autoSelectStore": "Valitse automaattisesti haluamasi myymälä",
+                "autoSelectStoreDescription": "Käytä automaattisesti haluamaasi myymälää noutotilauksiin",
+                "pickupNotifications": "Noutoilmoitukset",
+                "pickupNotificationsDescription": "Saat ilmoituksen, kun tilauksesi on valmis noudettavaksi",
+                "storeEventsPromotions": "Myymälän tapahtumat ja kampanjat",
+                "storeEventsPromotionsDescription": "Saat päivityksiä haluamasi myymälän tapahtumista ja kampanjoista",
+                "saveSuccess": "Noutoasetukset tallennettu onnistuneesti"
+            }
+        },
+        "overview": {
+            "welcomeBack": "Tervetuloa takaisin, {{name}}!",
+            "welcomeSubtitle": "Hallitse tiliäsi, katso tilauksia ja löydä henkilökohtaisia suosituksia.",
+            "defaultName": "siellä",
+            "quickLinks": {
+                "title": "Pikalinkit",
+                "orderHistoryDesc": "Seuraa tilauksiasi",
+                "wishlistDesc": "Tallentamasi tuotteet",
+                "addressesDesc": "Hallitse osoitteitasi",
+                "paymentMethodsDesc": "Hallitse maksutapojasi"
+            },
+            "curatedForYou": {
+                "title": "Kuratoitu sinua varten",
+                "subtitle": "Valittu sinulle tekemiesi valintojen perusteella"
+            },
+            "appDownload": {
+                "title": "Lataa sovelluksemme",
+                "description": "Saat parhaan ostokokemuksen verkossa. Pääset käsiksi eksklusiivisiin tarjouksiin, voit seurata tilauksia ja tehdä ostoksia nopeammin.",
+                "qrCode": "QR-koodi"
+            }
+        },
+        "shopperAgentEntry": {
+            "title": "Tarvitsetko apua?",
+            "description": "Olemme täällä auttamassa sinua kaikissa kysymyksissä tai ongelmissa",
+            "askQuestion": "Kysy kysymys",
+            "contactInfo": "Yhteystiedot",
+            "browseFaq": "Selaa usein kysyttyjä kysymyksiä"
+        },
+        "wishlist": {
+            "pageTitle": "Toivelistani",
+            "pageSubtitle": "Tallennetut tuotteet myöhempää käyttöä varten",
+            "savedItems": "Tallennetut tuotteet",
+            "emptyTitle": "Tämä toivelista on tyhjä",
+            "emptySubtitle": "Aloita kohteiden lisääminen toivelistallesi!",
+            "itemCount_one": "{{count}} tuote tallennettu",
+            "itemCount_other": "{{count}} tuotetta tallennettu",
+            "empty": "Toivelistasi on tyhjä. Aloita suosikkituotteidesi lisääminen!",
+            "wishlistName": "Toivelista",
+            "failedToCreate": "Toivelistan luonti epäonnistui: listId ei ollut käytettävissä luomisen jälkeen.",
+            "unableToRetrieveId": "Toivelistan tunnusta ei voi hakea Yritä uudelleen.",
+            "notFound": "Toivelistaa ei löydy",
+            "idNotFound": "Toivelistan tunnusta ei löydy",
+            "itemNotFound": "Tuotetta ei löydy toivelistalta",
+            "mustLoginToAdd": "Sinun täytyy olla kirjautuneena sisään, jotta voit lisätä tuotteita toivelistallesi.",
+            "mustLoginToRemove": "Sinun täytyy olla kirjautuneena, jotta voit poistaa tuotteita toivelistaltasi.",
+            "sortBy": "Lajitteluperuste",
+            "sort": {
+                "recentlyAdded": "Äskettäin lisätty",
+                "nameAZ": "Nimi (A-Ö)",
+                "priceLow": "Hinta: Matalasta korkeaan",
+                "priceHigh": "Hinta: Korkeasta matalaan"
+            },
+            "filterBy": "Suodatusperuste",
+            "filter": {
+                "all": "Kaikki tuotteet",
+                "inStock": "Varastossa",
+                "outOfStock": "Ei varastossa",
+                "onSale": "Alennuksessa"
+            },
+            "noFilterResults": "Suodattimellesi ei löydy sopivia tuotteita."
+        },
+        "orders": {
+            "empty": "Et ole vielä tehnyt tilausta. Kun teet tilauksen, tiedot näkyvät täällä.",
+            "continueShopping": "Jatka ostoksia",
+            "errorDescription": "Tilaushistoriasi lataamisessa tapahtui virhe. Yritä myöhemmin uudelleen.",
+            "subtitle": "Näytä ja seuraa tilauksiasi",
+            "orderDate": "Tilauspäivä",
+            "total": "Yhteensä",
+            "items": "Tuotteet",
+            "pickupLocation": "Noutopaikka",
+            "location": "Sijainti",
+            "address": "Osoite",
+            "viewOrderDetails": "Näytä tilauksen tiedot",
+            "tableHeaders": {
+                "orderNumber": "Tilauksen tunnus",
+                "status": "Tila",
+                "method": "Menetelmä",
+                "amount": "Määrä",
+                "actions": "Toiminnot"
+            },
+            "viewDetails": "Näytä yksityiskohdat",
+            "orderDetailsTitle": "Tilaa",
+            "orderDetailsPageTitle": "Tilauksen tiedot",
+            "status": {
+                "created": "Luotu",
+                "new": "Uusi",
+                "completed": "Valmis",
+                "cancelled": "Peruutettu",
+                "replaced": "Korvattu",
+                "failed": "Epäonnistui"
+            },
+            "shippingStatus": {
+                "notShipped": "Ei lähetetty",
+                "partShipped": "Osa Lähetetty",
+                "shipped": "Lähetetty"
+            },
+            "totalOrders_one": "Näytetään {{count}} tilaus",
+            "totalOrders_other": "Näytetään {{count}} tilausta",
+            "totalOrdersRange": "Näytetään{{start}}–{{end}} / {{total}} tilausta",
+            "paginationLabel": "Tilaushistorian sivunumerointi",
+            "paginationPrevious": "Edellinen sivu",
+            "paginationNext": "Seuraava sivu",
+            "invalidDate": "Virheellinen päivämäärä",
+            "shipmentNumber": "Lähetys {{n}}",
+            "itemsOrdered": "Tilatut tuotteet",
+            "orderSummary": "Tilauksen yhteenveto",
+            "backToOrderHistory": "Takaisin tilaushistoriaan",
+            "orderNotFound": "Tilausta ei löydy",
+            "orderNotFoundDescription": "Emme löytäneet etsimääsi tilausta.",
+            "buyAgain": "Osta uudelleen",
+            "emptyItemsFallback": "Ei tuotteita.",
+            "productPlaceholderInitial": "Tuote",
+            "quantityLabel": "Lkm: {{count}}",
+            "trackingNumber": "Seurantanumero",
+            "shippingAddress": "Toimitusosoite",
+            "paymentMethod": "Maksutapa",
+            "paymentMethodEndingIn": "{{cardType}} Loppuu numeroihin {{lastDigits}}"
+        },
+        "addresses": {
+            "subtitle": "Hallitse toimitusosoitteita",
+            "empty": "Lisää osoite nopeuttaaksesi maksamista!",
+            "noSavedAddresses": "Ei tallennettuja osoitteita",
+            "addAddress": "Lisää osoite",
+            "addNewAddress": "Lisää uusi osoite",
+            "editAddress": "Muokkaa osoitetta",
+            "preferred": "Ensisijainen",
+            "default": "Oletusarvoinen",
+            "setDefault": "Aseta oletukseksi",
+            "setDefaultSuccess": "Osoite oli asetettu oletukseksi.",
+            "setDefaultError": "Osoitteen asettaminen oletukseksi epäonnistui. Yritä uudelleen.",
+            "billing": "Laskutus",
+            "shipping": "Toimitus",
+            "removeSuccess": "Osoite poistettiin.",
+            "removeError": "Osoitteen poisto epäonnistui. Yritä uudelleen.",
+            "addSuccess": "Osoite lisättiin.",
+            "addError": "Osoitteen lisääminen epäonnistui.",
+            "updateSuccess": "Osoite päivitettiin.",
+            "updateError": "Osoitteen päivittäminen epäonnistui.",
+            "removeDialogTitle": "Poista osoite",
+            "removeDialogDescription": "Haluatko varmasti poistaa tämän osoitteen?",
+            "removeDefaultWarning": "Tämä on oletusosoitteesi. Sen poistaminen asettaa automaattisesti toisen osoitteen oletusosoitteeksi, jos sellainen on saatavilla.",
+            "removeButton": "Poista",
+            "removeConfirmTitle": "Vahvista osoitteen poisto",
+            "removeConfirmDescription": "Haluatko varmasti poistaa osoitteen \"{{addressName}}\"?",
+            "removeCancelButton": "Peruuta",
+            "removeConfirmButton": "Kyllä, poista osoite"
+        },
+        "paymentMethods": {
+            "pageSubtitle": "Hallitse maksutapoja, lahjakortteja ja ostohyvityksiä",
+            "subtitle": "Hallitse tallennettuja maksutapoja",
+            "noSavedPaymentMethods": "Ei tallennettuja maksutapoja",
+            "empty": "Lisää maksutapa nopeuttaaksesi kassalle siirtymistä!",
+            "addPaymentMethod": "Lisää maksutapa",
+            "setDefault": "Aseta oletukseksi",
+            "remove": "Poista",
+            "default": "Oletusarvoinen",
+            "expires": "Vanhentuu",
+            "addPaymentMethodTitle": "Lisää maksutapa",
+            "creditCard": "Luottokortti",
+            "nameOnCard": "Nimi kortissa*",
+            "cardNumberPlaceholder": "Kortin numero*",
+            "expiryPlaceholder": "kk/vv*",
+            "saveAsDefault": "Tallenna oletusmaksuksi",
+            "billingAddress": "Laskutusosoite*",
+            "selectAddress": "Valitse osoite",
+            "addNewAddress": "Lisää uusi osoite",
+            "cancel": "Peruuta",
+            "save": "Tallenna",
+            "removePaymentMethod": "Poista maksutapa",
+            "removeConfirmation": "Haluatko varmasti poistaa tämän maksutavan?",
+            "paymentMethod": "Maksutapa",
+            "defaultRemovalWarning": "Tämä on oletusmaksutapasi. Sen poistaminen asettaa automaattisesti toisen maksutavan oletusarvoksi, jos se on käytettävissä.",
+            "addSuccess": "Maksutavan lisäys onnistui.",
+            "addError": "Maksutavan lisäys epäonnistui.",
+            "removeSuccess": "Maksutapa poisto onnistui.",
+            "removeError": "Maksutavan poisto epäonnistui.",
+            "setDefaultSuccess": "Maksutavan asetus oletuksesi onnistui.",
+            "setDefaultError": "Maksutavan asetus oletukseksi epäonnistui.",
+            "validationError": "Korjaa lomakkeessa olevat virheet.",
+            "addressValidationError": "Korjaa laskutusosoitteessa olevat virheet.",
+            "selectAddressError": "Valitse laskutusosoite.",
+            "invalidExpiryFormat": "Virheellinen voimassaolon päivämuoto."
+        },
+        "addressForm": {
+            "addressTitleLabel": "Osoitteen nimi",
+            "addressTitlePlaceholder": "esim. koti, työpaikka, äidin koti",
+            "firstNameLabel": "Etunimi",
+            "lastNameLabel": "Sukunimi",
+            "phoneLabel": "Puhelin",
+            "countryLabel": "Maa",
+            "addressLabel": "Osoite",
+            "address2Label": "Osoiterivi 2",
+            "address2Placeholder": "Asunto, huoneen nro jne. (valinnainen)",
+            "cityLabel": "Postitoimipaikka",
+            "stateLabel": "Osavaltio",
+            "provinceLabel": "Provinssi",
+            "postalCodeLabel": "Postinumero",
+            "zipCodeLabel": "Postinumero",
+            "preferredLabel": "Aseta oletusarvoksi",
+            "saveButton": "Tallenna",
+            "savingButton": "Tallennetaan...",
+            "cancelButton": "Peruuta",
+            "selectStatePlaceholder": "Valitse osavaltio",
+            "selectProvincePlaceholder": "Valitse maakunta",
+            "successMessage": "Osoite tallennettiin.",
+            "errorMessage": "Osoitteen tallennus epäonnistui. Yritä uudelleen.",
+            "validation": {
+                "stateRequired": "Osavaltio/maakunta vaaditaan",
+                "addressTitleRequired": "Osoitteen nimi vaaditaan.",
+                "addressTitleMaxLength": "Osoitteen nimi saa olla enintään 256 merkkiä.",
+                "phoneRequired": "Puhelinnumero vaaditaan."
+            }
+        },
+        "profile": {
+            "title": "Henkilötiedot",
+            "description": "Hallitse henkilökohtaisia tietojasi",
+            "edit": "Muokkaa",
+            "fullName": "Koko nimi",
+            "email": "Sähköpostiosoite",
+            "phoneNumber": "Puhelinnumero",
+            "notProvided": "Ei annettu",
+            "firstName": "Etunimi",
+            "lastName": "Sukunimi",
+            "firstNamePlaceholder": "Kirjoita etunimesi",
+            "lastNamePlaceholder": "Kirjoita sukunimesi",
+            "phonePlaceholder": "Syötä puhelinnumerosi",
+            "gender": "Sukupuoli",
+            "genderPlaceholder": "Valitse sukupuoli",
+            "genderOptions": {
+                "male": "Mies",
+                "female": "Nainen"
+            },
+            "dateOfBirth": "Syntymäaika",
+            "dateOfBirthPlaceholder": "Valitse syntymäaika",
+            "saveButton": "Tallenna",
+            "savingButton": "Tallennetaan...",
+            "cancelButton": "Peruuta",
+            "successMessage": "Profiilisi päivitettiin.",
+            "errorMessage": "Emme voineet päivittää profiiliasi. Yritä uudelleen.",
+            "validation": {
+                "firstNameRequired": "Etunimi vaaditaan.",
+                "lastNameRequired": "Sukunimi vaaditaan.",
+                "emailRequired": "Sähköposti vaaditaan.",
+                "emailInvalid": "Kirjoita kelvollinen sähköpostiosoite.",
+                "phoneInvalid": "Anna kelvollinen puhelinnumero.",
+                "birthdayFuture": "Syntymäaika ei voi olla tulevaisuudessa."
+            }
+        },
+        "password": {
+            "title": "Salasana ja turvallisuus",
+            "description": "Salasanan ja suojausasetusten hallinta",
+            "edit": "Muokkaa",
+            "password": "Salasana",
+            "changePassword": "Vaihda salasana",
+            "currentPassword": "Nykyinen salasana",
+            "currentPasswordPlaceholder": "Syötä nykyinen salasanasi",
+            "newPassword": "Uusi salasana",
+            "newPasswordPlaceholder": "Syötä uusi salasanasi",
+            "confirmPassword": "Vahvista uusi salasana",
+            "confirmPasswordPlaceholder": "Vahvista uusi salasanasi",
+            "saveButton": "Tallenna",
+            "cancelButton": "Peruuta",
+            "successMessage": "Salasana päivitettiin.",
+            "errorMessage": "Salasanan päivitys epäonnistui. Yritä uudelleen.",
+            "validation": {
+                "currentPasswordRequired": "Nykyinen salasana vaaditaan.",
+                "newPasswordRequired": "Tarvitaan uusi salasana.",
+                "confirmPasswordRequired": "Vahvista uusi salasanasi.",
+                "passwordsDoNotMatch": "Uudet salasanat eivät täsmää.",
+                "passwordTooShort": "Salasanan on oltava vähintään 8 merkkiä pitkä."
+            },
+            "requirements": {
+                "title": "Salasanavaatimukset",
+                "minLength": "Vähintään 8 merkkiä",
+                "hasUppercase": "Vähintään yksi iso kirjain",
+                "hasLowercase": "Vähintään yksi pieni kirjain",
+                "hasNumber": "Vähintään yksi numero",
+                "hasSpecial": "Vähintään yksi erikoismerkki"
+            }
+        },
+        "common": {
+            "save": "Tallenna",
+            "saving": "Tallennetaan...",
+            "cancel": "Peruuta",
+            "edit": "Muokkaa",
+            "done": "Valmis",
+            "enabled": "Käytössä",
+            "disabled": "Ei käytössä"
+        },
+        "marketingConsent": {
+            "title": "Markkinointi ja viestintäasetukset",
+            "edit": "Muokkaa",
+            "editA11y": "Muokkaa markkinointiasetuksia",
+            "optedIn": "Valittu",
+            "optedOut": "Ei valittu",
+            "channelEmail": "Sähköposti",
+            "channelSms": "SMS / Tekstiviestit",
+            "disclaimer": "Ottamalla nämä viestintäasetukset käyttöön hyväksyt, että saat meiltä markkinointiviestintää, mukaan lukien rajoitetusti saatavilla olevia tarjouksia, uusimpia tuotetietoja ja uutisia tulevista mallistoista. Katso lisätietoja käyttöehdoistamme ja tietosuojakäytännöstämme.",
+            "updateError": "Markkinointiasetusten päivittäminen epäonnistui. Yritä uudelleen.",
+            "partialSuccess": "Joitakin asetuksia tallennettu. Päivitä nähdäksesi nykyiset asetukset."
+        }
+    },
+    "home": {
+        "hero": {
+            "slide1": {
+                "title": "Uusi sesonki",
+                "subtitle": "Uusi mallisto, jota muovaavat kontrastit, mittasuhteet ja moderni asenne. Esittelyssä tulevan kauden avaintuotteet.",
+                "ctaText": "Tutustu kokoelmaan",
+                "imageAlt": "Naisten housut, takit ja laukut"
+            },
+            "slide2": {
+                "title": "Moderni vaatekaappi",
+                "subtitle": "Korkeatasoisia siluetteja, hienostuneita tekstuureja ja rohkea ote arkipukeutumiseen. Suunniteltu liikkumaan kanssasi.",
+                "ctaText": "Osta tämä look",
+                "imageAlt": "Naisten valkoinen pellavamekko"
+            },
+            "slide3": {
+                "subtitle": "Näyttäviä vaatekappaleita ja tarkasti valittuja kerroksia, jotka on suunniteltu juhliin, myöhäisiin hetkiin ja kaikkeen siltä väliltä.",
+                "ctaText": "Tutustu kokoelmaan",
+                "imageAlt": "Naisten musta puku"
+            },
+            "slide4": {
+                "title": "Uusia näkökulmia",
+                "subtitle": "Kuratoitu valikoima massasta erottuvia tuotteita, jotka määrittelevät nykymuodin uudelleen. Itsevarma. Ilmeikäs. Tinkimätön.",
+                "ctaText": "Osta nyt",
+                "imageAlt": "Naisten harmaa mekko"
+            }
+        },
+        "meta": {
+            "description": "Seuraavan sukupolven muotikauppa"
+        },
+        "featuredProducts": {
+            "title": "Esitellyt tuotteet",
+            "shopAll": "Osta kaikki"
+        },
+        "categoryGrid": {
+            "title": "Tyyliä tosielämään",
+            "description": "Me Market Streetillä uskomme, että muodin pitäisi olla vaivatonta, aitoa ja helposti lähestyttävää. Mallistomme on suunniteltu modernille ihmiselle, joka arvostaa laatua, monipuolisuutta ja ajatonta tyyliä.",
+            "shopNowButton": "Osta nyt"
+        },
+        "featuredContent": {
+            "women": {
+                "title": "Naiset",
+                "description": "Tutustu modernille naiselle suunniteltujen tyylikkäiden jalkineiden kuratoituun mallistoon.",
+                "ctaText": "TUTUSTU MALLISTOON",
+                "imageAlt": "Naisten mallisto"
+            },
+            "men": {
+                "title": "Miehet",
+                "description": "Ajaton käsityötaito kohtaa nykyaikaisen tyylin miesten jalkinemallistossamme.",
+                "ctaText": "TUTUSTU MALLISTOON",
+                "imageAlt": "Miesten mallisto"
+            },
+            "styleForRealLife": {
+                "title": "Tyyliä tosielämään",
+                "description": "Me Market Streetillä uskomme, että muodin pitäisi olla vaivatonta, aitoa ja helposti lähestyttävää. Mallistomme on suunniteltu modernille ihmiselle, joka arvostaa laatua, monipuolisuutta ja ajatonta tyyliä.\n\nLöydä vaatteita, jotka liikkuvat kanssasi, mukautuvat elämääsi ja muodostavat perustan vaatekaapille, joka toimii joka päivä ja kaikkialla."
+            }
+        }
+    },
+    "footer": {
+        "sections": {
+            "customerSupport": "Asiakastuki",
+            "account": "Tili",
+            "ourCompany": "Yrityksemme",
+            "switchThemes": "Vaihda teemoja",
+            "switchSite": "Alue",
+            "switchLanguage": "Kieli",
+            "switchCurrency": "Valuutta",
+            "shop": "Kauppa",
+            "help": "Apua",
+            "about": "Tietoja"
+        },
+        "links": {
+            "contactUs": "Ota yhteyttä",
+            "shipping": "Toimitus",
+            "orderStatus": "Tilauksen tila",
+            "signInOrCreateAccount": "Kirjaudu sisään tai luo tili",
+            "aboutUs": "Tietoa meistä",
+            "accessibility": "Saavutettavuusselvitys",
+            "privacyPolicy": "Tietosuojakäytäntö",
+            "privacyChoices": "Tietosuojavalintasi",
+            "termsOfUse": "Käyttöehdot"
+        },
+        "newsletter": {
+            "title": "Liity yhteisöömme",
+            "description": "Tutustu uutuuksiin, erikoistarjouksiin ja tyyli-inspiraatioon ensimmäisenä.",
+            "emailPlaceholder": "Sähköpostiosoitteesi",
+            "subscribeButton": "Tilaa"
+        },
+        "copyright": "Salesforce tai sen tytäryhtiöt. Kaikki oikeudet pidätetään. Tämä on vain demomyymälä. Tilauksia EI käsitellä."
+    },
+    "aboutUs": {
+        "breadcrumb": {
+            "home": "Etusivu",
+            "aboutUs": "Tietoa meistä"
+        },
+        "title": "Tietoa meistä",
+        "subtitle": "Lisätietoja yrityksestämme ja missiostamme",
+        "section": {
+            "ourGoal": {
+                "title": "Rakennettu liikkumista varten. Suunniteltu jokapäiväiseen elämään.",
+                "content": "Kaupunkikulttuurin ja liikkeen energian innoittama Market Street luotiin yhdistämään suorituskyky, tyyli ja jokapäiväiset välttämättömyystarvikkeet yhdeksi saumattomaksi kokemukseksi. Uskomme, että hyvien tuotteiden pitäisi kulkea mukanasi - kaduilta studioon, töistä viikonloppuun.\nAlkuperäinen visio yksinkertaistaa tapaa, jolla ihmiset kokevat muodin ja elämäntyylin vähittäiskaupan, on kehittynyt brändiksi, joka keskittyy selkeyteen, helppokäyttöisyyteen ja älykkääseen suunnitteluun. Jokainen mallisto on suunniteltu tarjoamaan monipuolisuutta, kestävyyttä ja ajatonta vetovoimaa."
+            },
+            "ourVision": {
+                "title": "Visiomme",
+                "content": "Uudistamme nykyaikaista vähittäiskauppaa teknologian, muotoilun ja asiakaskokemuksen avulla – luomme kaupankäyntiympäristön, joka tuntuu vaivattomalta, inspiroivalta ja inhimilliseltä. Emme jahtaa trendejä. Rakennamme pysyviä kokemuksia."
+            },
+            "ourValue": {
+                "title": "Miksi olemme olemassa",
+                "content": "Haluamme poistaa kitkan ihmisten ja heidän rakastamiensa asioiden väliltä. Jotta ostokset sujuisivat intuitiivisesti, nopeasti ja merkityksellisesti. Luoda brändi, joka kehittyy yhteisönsä mukana."
+            },
+            "ourMission": {
+                "title": "Mitä edustamme",
+                "content": "Design with purpose - jokainen tuote, jokainen vuorovaikutus, jokainen yksityiskohta on tarkoituksellinen.\nTeknologiaa, joka katoaa - käytämme innovaatioita ,jotta asiat olisivat helpompia, eivät monimutkaisempia.\nAsiakas ensin - sinä olet etusijalla tuotteen löytämisestä sen toimitukseen.\nKestävä kehitys liikkeessä - valitsemme vastuulliset materiaalit, toimittajat ja logistiikan."
+            },
+            "ourTeam": {
+                "title": "Maailmanlaajuinen brändi, katutason sielu",
+                "content": "Market Street syntyi ajatuksesta, että hyvän tyylin ei pitäisi tuntua saavuttamattomalta. Yhdistämme globaalin inspiraation ja katutason ajattelutavan yhdistämällä kulttuurin, suorituskyvyn ja elämäntyylin yhdeksi sujuvaksi ilmaisuksi.\nTuotekehityksestä digitaaliseen kokemukseen kaikkea toimintaamme ohjaa yksi periaate:\nTee kaupankäynnistä luonnollista."
+            }
+        },
+        "contact": {
+            "title": "Olemme täällä auttamassa",
+            "intro": "Onko sinulla kysymys, palautetta tai tarvitsetko tukea? Tiimimme on valmis auttamaan sinua.",
+            "phoneHref": "puh:180080606453",
+            "hours": {
+                "weekdays": "Maanantaista perjantaihin: 9.00 - 22.00 EST",
+                "weekends": "Lauantai ja sunnuntai: 10.00 - 19.00 EST"
+            },
+            "cta": "Tai lähetä meille viesti lomakkeella - otamme sinuun yhteyttä mahdollisimman pian.",
+            "form": {
+                "label": "Tarra",
+                "nameLabel": "Nimi",
+                "emailLabel": "Sähköposti",
+                "messageLabel": "Viesti",
+                "placeholders": {
+                    "fullName": "Kirjoita koko nimesi",
+                    "topic": "Yleisiä tietoja",
+                    "message": "Jätä meille viesti"
+                },
+                "submit": "Lähetä viesti"
+            },
+            "toast": {
+                "success": "Viestin lähetys onnistui."
+            }
+        }
+    },
+    "countries": {
+        "US": {
+            "name": "Yhdysvallat",
+            "states": {
+                "CA": "Kalifornia",
+                "DC": "District of Columbia",
+                "HI": "Havaiji",
+                "NC": "Pohjois-Carolina",
+                "ND": "Pohjois-Dakota",
+                "SC": "Etelä-Carolina",
+                "SD": "Etelä-Dakota",
+                "WV": "Länsi-Virginia"
+            }
+        },
+        "CA": {
+            "name": "Kanada",
+            "states": {
+                "BC": "Brittiläinen Kolumbia",
+                "NL": "Newfoundland ja Labrador",
+                "NT": "Luoteisalueet",
+                "PE": "Prinssi Edwardin saari"
+            }
+        }
+    },
+    "miniCart": {
+        "noImage": "Ei kuvaa",
+        "productAltFallback": "Tuote",
+        "quantityLabel": "Määrä:",
+        "quantityAriaLabel": "Määrä",
+        "customQuantityAriaLabel": "Mukautettu määrä",
+        "customOption": "Mukauta...",
+        "editQuantityAriaLabel": "Muokkaa määrää",
+        "promotionApplied": "Tarjous käytetty",
+        "removeItemAriaLabel": "Poista tuote ostoskorista",
+        "emptyCart": "Ostoskorisi on tyhjä",
+        "loading": "Ladataan...",
+        "viewCart": "Näytä ostoskori",
+        "saved": "Tallennettu {{amount}}",
+        "free": "Veloituksetta",
+        "emptyTitle": "Your cart is empty",
+        "emptyMessage": "Looks like you haven't added anything to your cart yet. Start shopping to fill it up with amazing products!",
+        "startShopping": "Start Shopping",
+        "delivery": "Delivery",
+        "closeAriaLabel": "Sulje"
+    },
+    "trackingConsent": {
+        "title": "Suostumuksen seuranta",
+        "accept": "Hyväksy",
+        "decline": "Kiellä",
+        "closeAriaLabel": "Sulje"
+    },
+    "localeSwitcher": {
+        "ariaLabel": "Kielenvalitsin",
+        "validation": {
+            "unsupportedLocale": "Kieltä ei tueta",
+            "usingDefault": "Käytetään oletuskieltä: {{locale}}"
+        },
+        "locales": {
+            "en-GB": "English (UK)",
+            "en-US": "English (US)",
+            "da-DK": "Dansk (Danmark)",
+            "de-DE": "Deutsch (Deutschland)",
+            "es-ES": "Español (España)",
+            "fi-FI": "Suomi (Suomi)",
+            "fr-FR": "Français (France)",
+            "it-IT": "Italiano (Italia)",
+            "ja-JP": "日本語 (日本)",
+            "ko-KR": "한국어 (대한민국)",
+            "nb-NO": "Norsk bokmål (Norge)",
+            "nl-NL": "Nederlands (Nederland)",
+            "pl-PL": "Polski (Polska)",
+            "pt-PT": "Português (Portugal)",
+            "sv-SE": "Svenska (Sverige)",
+            "zh-CN": "中文 (简体)",
+            "zh-TW": "中文 (繁體)"
+        }
+    },
+    "currencySwitcher": {
+        "ariaLabel": "Valuutanvaihtaja",
+        "currencies": {
+            "USD": "Yhdysvaltain dollari ($)",
+            "MXN": "Meksikon peso ($)",
+            "GBP": "Englannin punta (£)",
+            "JPY": "Japanin jeni (¥)",
+            "KRW": "Etelä-Korean won (₩)",
+            "BRL": "Brasilian real (R$)",
+            "CNY": "Kiinan yuan (¥)",
+            "TWD": "Taiwanin dollari (NT$)",
+            "DKK": "Tanskan kruunu (kr)",
+            "PLN": "Puolan zloty (zł)",
+            "SEK": "Ruotsin kruunu (kr)",
+            "EUR": "Euro (€)"
+        },
+        "validation": {
+            "unsupportedCurrency": "Valuutta ei tuettu",
+            "usingDefault": "Oletusvaluutan käyttäminen: {{currency}}"
+        }
+    },
+    "addressSuggestionDropdown": {
+        "suggested": "SUOSITELTU",
+        "closeSuggestions": "Sulje ehdotukset",
+        "loading": "Ladataan ehdotuksia..."
+    },
+    "infoModal": {
+        "paymentScheduleDescription": "Maksuaikataulun yksityiskohdat",
+        "writeReviewDescription": "Kirjoita arvostelulomake",
+        "starRatingDistributionDescription": "Tähtiluokituksen jakautumisen tiedot",
+        "estimatedDeliveryDescription": "Arvioidut toimitustiedot",
+        "returnsAndWarrantyDescription": "Palautukset ja takuutiedot",
+        "close": "Sulje"
+    },
+    "estimatedDelivery": {
+        "cardTitle": "Arvioitu toimitus",
+        "cardDescription": "Saatavilla olevat toimitusvaihtoehdot",
+        "learnMore": "Lue lisää",
+        "sectionHeading": "Arvioitu toimitus",
+        "shippingOptionsHeading": "Toimitusvaihtoehdot ja hinnat",
+        "free": "Veloituksetta"
+    },
+    "writeReview": {
+        "validation": {
+            "pleaseFixFollowing": "Korjaa seuraavat asiat:",
+            "ratingRequired": "Valitse luokitus.",
+            "reviewRequired": "Täytä tämä kenttä.",
+            "reviewMinLength": "Arvostelusi on oltava vähintään {{count}} merkkiä",
+            "reviewMaxLength": "Kirjoita enintään {{count}} merkkiä.",
+            "titleMaxLength": "Kirjoita enintään {{count}} merkkiä."
+        },
+        "minCharactersHint": "Vähintään {{count}} merkkiä.",
+        "maxCharactersHint": "Enintään {{count}} merkkiä."
+    },
+    "sitePicker": {
+        "title": "Valitse sivustosi",
+        "description": "Valitse haluamasi myymälä nähdäksesi olennaiset tuotteet ja hinnoittelun.",
+        "ariaLabel": "Valitse sivusto",
+        "placeholder": "Valitse sivusto...",
+        "sites": {
+            "RefArchGlobal": "Globaali (UK)",
+            "RefArch": "Yhdysvallat"
+        }
+    },
+    "category": {
+        "banner": {
+            "productsAvailable_one": "1 product available",
+            "productsAvailable_other": "{{count}} products available"
+        }
+    },
+    "maintenancePage": {
+        "apology": "We apologise for any inconvenience. Thank you for your patience!"
+    },
+    "error": {
+        "403": {
+            "title": "Access restricted",
+            "message": "You don't have permission to view this page. If you believe this is an error, please contact our support team.",
+            "secondaryMessage": "In the meantime, feel free to browse our collection."
+        },
+        "404": {
+            "title": "Page not found",
+            "message": "We couldn't find the page you're looking for. It may have been moved or the link might be incorrect.",
+            "secondaryMessage": "Don't worry—you can still explore our collection or head back home.",
+            "details": "The requested page could not be found."
+        },
+        "500": {
+            "title": "Something went wrong",
+            "message": "We're sorry, but something unexpected happened on our end. Our team has been notified and is working to fix it.",
+            "secondaryMessage": "Please try again in a few moments, or browse our shop while we sort things out."
+        },
+        "defaultTitle": "Something went wrong",
+        "defaultDescription": "An error occurred",
+        "defaultDetails": "An unexpected error occurred.",
+        "notFoundTitle": "Page not found",
+        "notFoundDetails": "The requested page could not be found.",
+        "persistsMessage": "If this problem persists, please contact support.",
+        "tryAgainMessage": "An unexpected error occurred. Please try again later.",
+        "goToHomepage": "Go to Homepage",
+        "allRightsReserved": "All rights reserved.",
+        "recommendations": {
+            "title": "You might also like"
+        }
+    },
+    "product": {
+        "recommendations": {
+            "youMightAlsoLike": "Saatat myös pitää näistä",
+            "completeTheLook": "Täydennä look",
+            "recentlyViewed": "Äskettäin katsottu"
+        },
+        "rating": {
+            "starContainerAriaLabel": "{{rating}} / {{total}} tähteä, {{count, number}} arvostelua",
+            "ratingOutOfTotal": "{{rating}} / {{total}}",
+            "ratingValue": "{{rating}}",
+            "basedOnReviews": "Perustuu {{count, number}} arvioon",
+            "ratingWithCount": "{{rating}} ({{count, number}})",
+            "viewAllReviews": "Näytä kaikki arvostelut",
+            "distributionAriaLabel": "{{rating}} tähteä: {{count, number}} /{{totalReviews, number}} arvostelusta",
+            "distributionsAriaLabel": "Tähtiluokitusten jakautuminen, {{total, number}} arvostelua yhteensä",
+            "seeCustomerReviews": "Katso asiakkaiden arvostelut >"
+        },
+        "from": "kohteesta",
+        "outOfStock": "{{productName}} ei varastossa",
+        "onlyLeft": "Vain {{stockLevel}} tuotetta ({{productName}}) jäljellä!",
+        "inStock": "Varastossa",
+        "inStockCount": "Varastossa ({{stockDisplay}} kpl) valmiina toimitettavaksi",
+        "lowStock": "Varasto vähissä",
+        "lowStockCount": "Varasto vähissä - Vain {{stockDisplay}} jäljellä",
+        "preOrder": "Ennakkotilattavissa",
+        "backOrder": "Saatavana jälkitilauksena",
+        "outOfStockLabel": "Ei varastossa",
+        "selectAllOptions": "Valitse kaikki vaihtoehdot yllä",
+        "description": "Kuvaus",
+        "imageAlt": "Tuotteen kuva",
+        "addingToCart": "Lisätään ostoskoriin...",
+        "addToCart": "Lisää ostoskoriin",
+        "moreOptions": "Lisää vaihtoehtoja",
+        "quickAdd": "Pikalisäys",
+        "buyItNow": "Osta se nyt",
+        "pickupAvailable": "Nouto saatavilla",
+        "selectProduct": "Valitse tuote",
+        "updatingCart": "Päivitetään...",
+        "updateCart": "Päivitys",
+        "addingToWishlist": "Lisätään toivelistalle...",
+        "addToWishlist": "Lisää toivelistalle",
+        "updatingWishlist": "Päivitetään toivelista",
+        "share": "Jaa",
+        "expressPayments": {
+            "separatorBuyWith": "Tai osta",
+            "venmoUnavailable": "Venmo ei ole käytettävissä tällä laitteella."
+        },
+        "productSetNotice": "Tämä on tuotesarja. Valitse alla olevat yksittäiset tuotteet lisätäksesi ne ostoskoriin.",
+        "productBundleNotice": "Tämä on tuotepaketti. Kaikki tuotteet lasketaan yhteen.",
+        "productDetails": "Tuotteen tiedot",
+        "noDetailedDescription": "Yksityiskohtaista kuvausta ei ole saatavilla.",
+        "brand": "Tuotemerkki:",
+        "manufacturer": "Valmistaja:",
+        "sku": "SKU:",
+        "sizeAndFit": "Koko ja malli",
+        "sizeAndFitComingSoon": "Koko- ja istuvuustiedot tulossa pian.",
+        "shippingAndReturns": "Toimitus ja palautukset",
+        "freeShipping": "Ilmainen toimitus yli 50 $:n tilauksille",
+        "standardShipping": "Vakiotoimitus: 3-5 arkipäivää",
+        "expressShipping": "Pikatoimitus: 1-2 arkipäivää",
+        "priceMin": "Min",
+        "priceMax": "Max",
+        "priceTo": "kohteeseen",
+        "returns": "Palautukset: 30 päivän palautusoikeus",
+        "reviews": "Arvostelut",
+        "customerReviews": "Asiakkaiden arvostelut",
+        "oneReviewForProductName": "1 arvostelu tuotteelle {{productName}}",
+        "reviewsForProductName": "{{count}} arvostelua tuotteelle {{productName}}",
+        "aiReviewSummary": "Tekoälyn arvosteluyhteenveto",
+        "loadingReviews": "Ladataan arvosteluja...",
+        "noReviewsForProduct": "Ei arvosteluja tälle tuotteelle.",
+        "noReviewsMatchFilters": "Yksikään arvostelu ei vastaa suodattimiasi.",
+        "verifiedPurchase": "Vahvistettu ostos",
+        "helpful": "Avulias ({{count}})",
+        "helpfulNoCount": "Avulias",
+        "report": "Raportti",
+        "readMore": "Lue lisää",
+        "readLess": "Lue vähemmän",
+        "reviewImageAlt": "Arvostelun kuva",
+        "viewProductAriaLabel": "Näytä {{productName}}",
+        "swatches": {
+            "availableColors": "Available colors",
+            "viewProductInColor": "View {{productName}} in {{colorName}}",
+            "viewAllColors": "View all {{count}} colors for {{productName}}",
+            "moreColorsTitle": "+{{count}} more"
+        },
+        "showingReviews": "Näytetään {{from}}-{{to}}/{{total}} arviosta",
+        "filterBy": "Suodatusperuste:",
+        "withPhotos": "Sisältää kuvat",
+        "searchReviewsPlaceholder": "Etsi arvioita...",
+        "sortLabel": "Lajittele:",
+        "sortMostRecent": "Viimeisin",
+        "sortHighestRated": "Parhaat arvostelut",
+        "sortLowestRated": "Heikoimmat arvostelut",
+        "sortMostHelpful": "Eniten apua",
+        "activeFilterStars": "{{count}} tähteä",
+        "clearFilter": "Tyhjennä suodatin",
+        "filterByStars": "Suodata {{count}} tähtien perusteella",
+        "clearStarFilter": "Tyhjennä {{count}} tähtisuodatin",
+        "clearPhotoFilter": "Tyhjennä valokuvasuodatin",
+        "writeReviewButton": "Kirjoita arvostelu",
+        "materials": "Materiaalit",
+        "usageInstructions": "Käyttöohjeet",
+        "specifications": "Tekniset tiedot",
+        "careInstructions": "Hoito-ohjeet",
+        "careInstructionsComingSoon": "Hoito-ohjeet tulossa pian.",
+        "productSet": "Tuotesetti",
+        "productBundle": "Tuotepaketti",
+        "setDescription": "Valitse alla olevista tuotteista täydellinen setti",
+        "bundleDescription": "Kaikki tämän paketin tuotteet lisätään ostoskoriin yhdessä",
+        "selectedOf": "{{selected}} /{{total}} valittu",
+        "addSetToCart": "Lisää setti ostoskoriin",
+        "addBundleToCart": "Lisää paketti ostoskoriin",
+        "adding": "Lisätään...",
+        "selectAllOptionsAbove": "Valitse kaikki vaihtoehdot yllä",
+        "outOfStockStatus": "Ei varastossa",
+        "selected": "✓ Valitut",
+        "selectOptionsAbove": "Valitse yllä olevat vaihtoehdot",
+        "selectOptions": "Valitse vaihtoehdot",
+        "bonusProduct": "Bonustuote",
+        "bonusProductAriaLabel": "Tämä tuote on ilmainen bonustuote",
+        "addedToCart": "{{productName}} lisätty ostoskoriin",
+        "updatedCart": "Päivitetty {{productName}} ostoskorissa.",
+        "addedSetToCart": "Tuotesarja lisätty ostoskoriin.",
+        "addedBundleToCart": "Tuotepaketti lisätty ostoskoriin.",
+        "failedToAddToCart": "Lisääminen ostoskoriin epäonnistui: {{error}}.",
+        "failedToUpdateCart": "Ostoskorin päivittäminen epäonnistui: {{error}}.",
+        "failedToAddItemsToCart": "Tuotteita ei onnistuttu lisäämään ostoskoriin: {{error}}.",
+        "failedToAddBundleToCart": "Tuotepaketin lisääminen ostoskoriin epäonnistui: {{error}}.",
+        "addedToWishlist": "Lisätty {{productName}} toivelistalle.",
+        "alreadyInWishlist": "{{productName}} on jo toivelistallasi.",
+        "failedToAddToWishlist": "Tuotteen lisääminen toivelistalle epäonnistui.",
+        "signInToAddToWishlist": "Kirjaudu sisään lisätäksesi kohteita toivelistallesi.",
+        "signInToContinue": "Kirjaudu sisään jatkaaksesi.",
+        "removedFromWishlist": "Poistettu toivelistalta.",
+        "failedToRemoveFromWishlist": "Kohteen poistaminen toivelistalta epäonnistui.",
+        "removeFromWishlist": "Poista toivelistalta.",
+        "removedLabel": "Poistettu",
+        "remove": "Poista",
+        "selectVariantPlaceholder": "Valitse",
+        "itemAlreadyInWishlist": "Tuote on jo toivelistallasi.",
+        "addedToWishlistGeneric": "Lisätty toivelistalle.",
+        "productIdRequired": "Tuotetunnus vaaditaan.",
+        "productOrItemIdRequired": "Tuote- tai nimiketunnus vaaditaan.",
+        "methodNotAllowed": "Menetelmä ei sallittu",
+        "productItemRequired": "Tuotekohtaiset tiedot vaaditaan.",
+        "productItemsRequired": "Tuotetietoja tarvitaan.",
+        "bundleDataRequired": "Tuotepakettituotteen ja alatason valinnan tiedot tarvitaan.",
+        "failedToAddItemToCart": "Tuotteen lisäys ostoskoriin epäonnistui.",
+        "failedToUpdateItemToCart": "Tuotteen päivittäminen ostoskoriin epäonnistui.",
+        "failedToRemoveItem": "Tuotteen poistaminen epäonnistui.",
+        "failedToUpdateItemQuantity": "Tuotemäärän päivittäminen epäonnistui.",
+        "failedToAddItemsToCartError": "Tuotteiden lisääminen ostoskoriin epäonnistui.",
+        "failedToAddBundleToCartError": "Tuotepaketin lisääminen ostoskoriin epäonnistui.",
+        "failedToUpdateBundleToCartError": "Tuotepaketin päivittäminen ostoskoriin epäonnistui.",
+        "pleaseSelectOptionsFor": "Valitse vaihtoehdot {{productName}}",
+        "productNotOrderable": "{{productName}} ei ole tilattavissa.",
+        "cannotAddToCartValidationFailed": "Ei voi lisätä ostoskoriin: validointi epäonnistui.",
+        "failedToAddProductToCart": "Tuotteen lisääminen ostoskoriin epäonnistui.",
+        "failedToAddProductToWishlist": "Tuotteen lisääminen toivelistalle epäonnistui.",
+        "noProductIdForCart": "Tuotetunnusta ei ole saatavilla ostoskoriin lisäämistä varten.",
+        "invalidQuantityForCart": "Ostoskoriin lisäys ei ole sallittu: {{quantity}}.",
+        "noProductSelectionsForSet": "Tuotevalintoja ei ole annettu ostoskorin lisäystä varten.",
+        "noProductIdForBundle": "Tuotetunnusta ei ole saatavilla tuotepaketin lisäämiseksi ostoskoriin.",
+        "invalidQuantityForBundle": "Virheellinen määrä tuotepaketin lisäämiseksi ostoskoriin: {{quantity}}.",
+        "noChildSelectionsForBundle": "Tuotepaketin ostoskoriin lisäämistä varten ei ole tarjolla alemman tason tuotevalintoja.",
+        "cartOperationFailed": "Ostoskoritoiminto epäonnistui:",
+        "multipleItemsCartOperationFailed": "Useiden tuotteiden ostoskoritoiminto epäonnistui:",
+        "bundleCartOperationFailed": "Tuotepaketin ostoskorin toiminta epäonnistui:",
+        "errorInHandleAddToCart": "Virhe handleAddToCart:",
+        "errorInHandleProductSetAddToCart": "Virhe handleProductSetAddToCart:",
+        "errorInHandleProductBundleAddToCart": "Virhe handleProductBundleAddToCart:",
+        "failedToAddToWishlistError": "Toivelistalle lisäys epäonnistui:",
+        "addingToWishlistLog": "Lisääminen toivelistalle:",
+        "failedToAddProductToCartError": "Tuotteen lisäys ostoskoriin epäonnistui:",
+        "failedToAddProductToWishlistError": "Tuotteen lisääminen toivelistalle epäonnistui:",
+        "price": {
+            "unavailable": "Hinta ei saatavilla",
+            "currentPriceFrom": "Nykyinen hinta alkaen {{price}}",
+            "currentPrice": "Nykyinen hinta: {{price}}",
+            "from": "Alkaen {{price}}",
+            "range": "{{min}} - {{max}}",
+            "rangeA11y": "Hintaväli {{min}} - {{max}}",
+            "listPriceFrom": "Listahinta alkaen {{price}}",
+            "listPrice": "Listahinta: {{price}}"
+        },
+        "removingFromWishlist": "Removing from wishlist...",
+        "inWishlist": "In your wishlist"
+    }
+}

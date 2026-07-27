@@ -1,0 +1,46 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`GooglePayLogo stories snapshot > Decorative story renders and matches snapshot 1`] = `
+<img
+  alt=""
+  aria-hidden="true"
+  class=" h-4 w-auto object-contain"
+  height="16"
+  src="__ASSET_MOCK__"
+  width="41"
+/>
+`;
+
+exports[`GooglePayLogo stories snapshot > Default story renders and matches snapshot 1`] = `
+<img
+  alt="Google Pay"
+  class=" h-4 w-auto object-contain"
+  height="16"
+  src="__ASSET_MOCK__"
+  width="41"
+/>
+`;
+
+exports[`GooglePayLogo stories snapshot > OnDarkBackground story renders and matches snapshot 1`] = `
+<div
+  style="background-color: rgb(0, 0, 0); padding: 20px; border-radius: 8px;"
+>
+  <img
+    alt="Google Pay"
+    class=" h-4 w-auto object-contain"
+    height="16"
+    src="__ASSET_MOCK__"
+    width="41"
+  />
+</div>
+`;
+
+exports[`GooglePayLogo stories snapshot > WithCustomClassName story renders and matches snapshot 1`] = `
+<img
+  alt="Google Pay"
+  class="custom-class h-4 w-auto object-contain"
+  height="16"
+  src="__ASSET_MOCK__"
+  width="41"
+/>
+`;

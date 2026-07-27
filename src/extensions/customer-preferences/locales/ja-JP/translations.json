@@ -1,0 +1,35 @@
+{
+    "interestsPreferences": {
+        "title": "興味と設定",
+        "description": "興味のあるデザインを追加し、ショッピング設定を管理します",
+        "successMessage": "興味と設定を更新しました。",
+        "errorMessage": "更新できませんでした。もう一度お試しください。",
+        "loadError": "We couldn't load your interests and preferences. Please refresh the page to try again."
+    },
+    "interests": {
+        "title": "興味",
+        "noneSelected": "興味が選択されていません",
+        "addMore": "さらに追加",
+        "addInterestsTitle": "興味を追加"
+    },
+    "preferences": {
+        "noneSelected": "選択されていません",
+        "addMore": "さらに追加",
+        "dialogTitle": "オプションの選択",
+        "selectCategory": "{{category}}の選択"
+    },
+    "measures": {
+        "roomDimensionsLabel": "Room dimensions:",
+        "ceilingHeightLabel": "Ceiling height:",
+        "noneProvided": "No measures provided"
+    },
+    "size": {
+        "preferredSizeLabel": "Preferred product size:"
+    },
+    "common": {
+        "save": "保存",
+        "saving": "保存しています...",
+        "cancel": "キャンセル",
+        "edit": "編集"
+    }
+}

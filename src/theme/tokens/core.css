@@ -1,0 +1,111 @@
+/*
+ * Foundations core tokens — PLACEHOLDER.
+ *
+ * These are scaffold placeholders, not the real Foundations brand palette.
+ * Only --primary diverges from the canonical (fashion) palette so the vertical
+ * renders a visibly different brand while the real tokens are pending. Real
+ * brand colors, logo, and full palette land in a later work item (W-23350046);
+ * replace this file wholesale then.
+ */
+:root {
+    /* core */
+    --background: #ffffff;
+    --foreground: #17171b;
+
+    --card: #ffffff;
+    --card-foreground: #3f3f46;
+
+    --popover: #ffffff;
+    --popover-foreground: #3f3f46;
+
+    /* Placeholder brand color — deep teal, diverges from fashion's near-black. */
+    --primary: #0f766e; /* teal-700 */
+    --primary-foreground: #ffffff; /* white — 5.48:1 on teal-700 (AA) */
+
+    --secondary: #f8f8f8;
+    --secondary-foreground: #33373d;
+
+    --tertiary: #1cb167;
+    --tertiary-foreground: #ffffff;
+
+    --muted: #f9fafb;
+    --muted-foreground: #35353b;
+    /* not in Figma JSON */
+    --muted-hover: #ebebeb;
+
+    --accent: #ececec;
+    --accent-foreground: #373737;
+
+    /*
+     * Status colors. Figma's source values (red-500 / green-600 / amber-600 / sky-600)
+     * fail WCAG AA 4.5:1 against white and against their -foreground companions.
+     * We darken each to the next Tailwind shade (-700/-800) so all default pairings
+     * pass AA. Hue is preserved; only luminance changes. Flag for UX whether to
+     * sync these darker values back into Figma.
+     */
+    /* WCAG AA: 6.47:1 on white; 5.30:1 on --destructive-foreground; 5.45:1 on bg-destructive/10 */
+    --destructive: #b91c1c;
+    --destructive-foreground: #fee2e2;
+
+    /* WCAG AA: 7.13:1 on white; 5.53:1 on --success-foreground */
+    --success: #166534;
+    --success-foreground: #cbead7;
+
+    /* WCAG AA: 5.02:1 on white; 4.68:1 on --warning-foreground */
+    --warning: #b45309;
+    --warning-foreground: #fef9c3;
+
+    /* WCAG AA: 5.93:1 on white; 4.86:1 on --info-foreground */
+    --info: #0369a1;
+    --info-foreground: #dbeafe;
+
+    --border: #9ca3af;
+    --border-subtle: #d1d5db;
+    /* not in Figma JSON for light mode (Figma only defines `input` in dark) */
+    --input: #e8e8e8;
+    /* 3.66:1 on #FFFFFF — meets WCAG SC 1.4.11 (3:1 for graphics); use for focus rings only,
+       not as text color on white. */
+    --ring: #3b82f6;
+
+    /* not in Figma JSON */
+    --separator: rgba(0, 0, 0, 0.08);
+    --separator-foreground: #9e9e9e;
+
+    /* not in Figma JSON */
+    --rating: #facc15;
+    --rating-foreground: #ffffff;
+
+    /*
+     * The aliases below inherit the WCAG-AA-passing values of their parent tokens.
+     */
+    /* not in Figma JSON: review-verified badge — semantic alias of --success* (5.53:1) */
+    --review-verified-bg: var(--success-foreground);
+    --review-verified-text: var(--success);
+
+    /* not in Figma JSON: selected filter chip — semantic alias of --info* (4.86:1) */
+    --filter-selected: var(--info-foreground);
+    --filter-selected-border: var(--info);
+
+    /* generic opacity helpers */
+    --opacity-90: 10%;
+    --opacity-80: 20%;
+    --opacity-50: 50%;
+    --opacity-30: 70%;
+
+    /* shape tokens — fashion uses sharp edges and no shadows on primitives.
+       Components that need rounding/shadow/border apply it explicitly.
+       The --ui-* names are the source values; tailwind.css bridges them into
+       Tailwind's rounded-ui / shadow-ui / border-ui utility namespaces. */
+    --ui-radius: 0;
+    --ui-shadow: none;
+    --ui-border-width: 0;
+
+    [role='radio']:not([data-labeled]) {
+        min-width: var(--swatch-pill-size);
+        min-height: var(--swatch-pill-size);
+    }
+
+    body {
+        @apply bg-background text-foreground;
+    }
+}

@@ -1,0 +1,9 @@
+{
+    "components": [
+        {
+            "targetId": "sfcc.header.before.cart",
+            "path": "extensions/store-locator/components/header/store-locator-badge.tsx",
+            "order": 0
+        }
+    ]
+}

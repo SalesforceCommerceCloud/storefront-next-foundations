@@ -1,0 +1,71 @@
+{
+    "section": {
+        "heading": "고객 리뷰",
+        "loading": "리뷰 로드 중...",
+        "loadError": "리뷰를 불러올 수 없습니다. 페이지를 새로 고친 후 다시 시도하세요.",
+        "noReviewsForProduct": "이 제품에 대한 리뷰가 없습니다.",
+        "noReviewsMatchFilters": "필터와 일치하는 리뷰가 없습니다.",
+        "showingReviews": "총 {{total}}개 중 {{from}}~{{to}} 리뷰 표시",
+        "subtitleOne": "{{productName}}에 대한 리뷰 1건",
+        "subtitleOther": "{{productName}}에 대한 리뷰 {{count}}건",
+        "aiReviewSummary": "AI 리뷰 요약"
+    },
+    "filters": {
+        "filterBy": "필터링 기준:",
+        "withPhotos": "사진 포함",
+        "searchPlaceholder": "리뷰 검색...",
+        "sortLabel": "정렬:",
+        "sortMostRecent": "최신순",
+        "sortHighestRated": "최고 평점",
+        "sortLowestRated": "최저 평점",
+        "sortMostHelpful": "유용한 순",
+        "activeFilterStars": "별점 {{count}}",
+        "clearFilter": "필터 지우기",
+        "filterByStars": "별점 {{count}}점으로 필터링",
+        "clearStarFilter": "별점 {{count}} 필터 지우기",
+        "clearPhotoFilter": "사진 필터 지유기"
+    },
+    "card": {
+        "verifiedPurchase": "확인된 구매",
+        "helpful": "도움이 됨({{count}})",
+        "helpfulNoCount": "도움이 됨",
+        "report": "보고서",
+        "readMore": "자세히 보기",
+        "readLess": "간단히 보기",
+        "imageAlt": "리뷰 이미지"
+    },
+    "rating": {
+        "starContainerAriaLabel": "별점 {{rating}}/{{count, number}}, 리뷰 {{total}}건",
+        "ratingOutOfTotal": "{{rating}}/{{total}}",
+        "ratingValue": "{{rating}}",
+        "basedOnReviews": "{{count, number}}개 리뷰 기준",
+        "ratingWithCount": "{{rating}}({{count, number}})",
+        "viewAllReviews": "모든 리뷰 보기",
+        "distributionAriaLabel": "별점 {{rating}}: {{count, number}}/{{totalReviews, number}}개 리뷰",
+        "distributionsAriaLabel": "별점 분포, 총 {{total, number}}개 리뷰",
+        "seeCustomerReviews": "고객 리뷰 보기 >"
+    },
+    "writeReview": {
+        "buttonLabel": "리뷰 작성하기",
+        "modalDescription": "리뷰 양식 작성",
+        "starRatingDistributionDescription": "별점 분포 세부 정보",
+        "submitting": "제출 중",
+        "successMessage": "리뷰가 제출되었습니다",
+        "errorMessage": "리뷰를 제출하지 못했습니다. 다시 시도하세요.",
+        "validation": {
+            "pleaseFixFollowing": "다음 문제를 해결하십시오.",
+            "ratingRequired": "평가 등급을 선택하십시오.",
+            "reviewRequired": "이 필드를 채우십시오.",
+            "reviewMinLength": "리뷰는 {{count}}자 이상이어야 합니다.",
+            "reviewMaxLength": "{{count}}자 이하로 입력하십시오.",
+            "titleMaxLength": "{{count}}자 이하로 입력하십시오."
+        },
+        "minCharactersHint": "최소 {{count}}자입니다.",
+        "maxCharactersHint": "최대 {{count}}자입니다."
+    },
+    "orderLine": {
+        "rateAndReview": "평가 및 리뷰",
+        "reviewSubmitted": "리뷰가 제출되었습니다",
+        "cta": "평가 및 리뷰"
+    }
+}

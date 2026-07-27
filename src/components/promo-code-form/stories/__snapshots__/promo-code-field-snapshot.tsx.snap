@@ -1,0 +1,148 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PromoCodeField stories snapshot > Default story renders and matches snapshot 1`] = `
+<div
+  class="max-w-md mx-auto p-6"
+>
+  <div
+    class="space-y-2"
+  >
+    <div
+      class="grid gap-2"
+      data-slot="form-item"
+    >
+      <label
+        class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive sr-only"
+        data-error="false"
+        data-slot="form-label"
+        for="_r_0_-form-item"
+      >
+        Promo code
+      </label>
+      <div
+        class="flex gap-2"
+      >
+        <input
+          aria-invalid="false"
+          class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive focus-visible:ring-0"
+          data-slot="input"
+          id="_r_0_-form-item"
+          name="code"
+          placeholder="Promo code..."
+          value=""
+        />
+        <button
+          class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground hover:bg-secondary/80 h-9 py-2 has-[>svg]:px-3 cursor-pointer px-4"
+          data-size="default"
+          data-slot="button"
+          data-variant="secondary"
+          type="submit"
+        >
+          Apply
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PromoCodeField stories snapshot > LoadingState story renders and matches snapshot 1`] = `
+<div
+  class="max-w-md mx-auto p-6"
+>
+  <div
+    class="space-y-2"
+  >
+    <div
+      class="grid gap-2"
+      data-slot="form-item"
+    >
+      <label
+        class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive sr-only"
+        data-error="false"
+        data-slot="form-label"
+        for="_r_1_-form-item"
+      >
+        Promo code
+      </label>
+      <div
+        class="flex gap-2"
+      >
+        <input
+          aria-invalid="false"
+          class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive focus-visible:ring-0"
+          data-slot="input"
+          id="_r_1_-form-item"
+          name="code"
+          placeholder="Promo code..."
+          value=""
+        />
+        <button
+          class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground hover:bg-secondary/80 h-9 py-2 has-[>svg]:px-3 cursor-pointer px-4"
+          data-size="default"
+          data-slot="button"
+          data-variant="secondary"
+          disabled=""
+          type="submit"
+        >
+          Applying...
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PromoCodeField stories snapshot > WithValidationError story renders and matches snapshot 1`] = `
+<div
+  class="max-w-md mx-auto p-6"
+>
+  <div
+    class="space-y-2"
+  >
+    <div
+      class="grid gap-2"
+      data-slot="form-item"
+    >
+      <label
+        class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive sr-only"
+        data-error="true"
+        data-slot="form-label"
+        for="_r_2_-form-item"
+      >
+        Promo code
+      </label>
+      <div
+        class="flex gap-2"
+      >
+        <input
+          aria-describedby="_r_2_-form-item-message"
+          aria-invalid="true"
+          class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive focus-visible:ring-0"
+          data-slot="input"
+          id="_r_2_-form-item"
+          name="code"
+          placeholder="Promo code..."
+          value="A"
+        />
+        <button
+          class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground hover:bg-secondary/80 h-9 py-2 has-[>svg]:px-3 cursor-pointer px-4"
+          data-size="default"
+          data-slot="button"
+          data-variant="secondary"
+          type="submit"
+        >
+          Apply
+        </button>
+      </div>
+      <p
+        class="text-destructive text-sm"
+        data-slot="form-message"
+        id="_r_2_-form-item-message"
+      >
+        Promo must be at least 2 characters long.
+      </p>
+    </div>
+  </div>
+</div>
+`;

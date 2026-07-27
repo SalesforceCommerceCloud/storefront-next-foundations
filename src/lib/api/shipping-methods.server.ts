@@ -1,0 +1,39 @@
+/**
+ * Copyright 2026 Salesforce, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+import type { RouterContextProvider } from 'react-router';
+import type { ShopperBasketsV2 } from '@/scapi';
+import { createApiClients } from '@/lib/api-clients.server';
+
+/**
+ * Get available shipping methods for a shipment using the Commerce API
+ * This follows the PWA Kit pattern for fetching real shipping methods
+ */
+export async function getShippingMethodsForShipment(
+    context: Readonly<RouterContextProvider>,
+    basketId: string,
+    shipmentId: string = 'me'
+): Promise<ShopperBasketsV2.schemas['ShippingMethodResult']> {
+    const clients = createApiClients(context);
+    const { data } = await clients.shopperBasketsV2.getShippingMethodsForShipment({
+        params: {
+            path: {
+                basketId,
+                shipmentId,
+            },
+        },
+    });
+    return data;
+}

@@ -1,0 +1,71 @@
+{
+    "section": {
+        "heading": "Opinie klientów",
+        "loading": "Ładowanie recenzji...",
+        "loadError": "Nie udało się załadować opinii. Odśwież stronę, aby spróbować ponownie.",
+        "noReviewsForProduct": "Brak opinii na temat tego produktu.",
+        "noReviewsMatchFilters": "Brak recenzji pasujących do filtrów.",
+        "showingReviews": "Wyświetlanie {{from}}-{{to}} z {{total}} recenzji",
+        "subtitleOne": "1 recenzja na temat {{productName}}",
+        "subtitleOther": "{{count}} recenzje na temat {{productName}}",
+        "aiReviewSummary": "Podsumowanie recenzji AI"
+    },
+    "filters": {
+        "filterBy": "Filtruj według:",
+        "withPhotos": "Ze zdjęciami",
+        "searchPlaceholder": "Szukaj recenzji...",
+        "sortLabel": "Sortuj:",
+        "sortMostRecent": "Najnowsze",
+        "sortHighestRated": "Najwyżej oceniane",
+        "sortLowestRated": "Najniższa ocena",
+        "sortMostHelpful": "Najbardziej pomocne",
+        "activeFilterStars": "Gwiazdki: {{count}}",
+        "clearFilter": "Wyczyść filtr",
+        "filterByStars": "Filtruj według liczby gwiazdek: {{count}}",
+        "clearStarFilter": "Wyczyść filtr liczby gwiazdek: {{count}}",
+        "clearPhotoFilter": "Wyczyść filtr zdjęć"
+    },
+    "card": {
+        "verifiedPurchase": "Zakup zweryfikowany",
+        "helpful": "Pomocna ({{count}})",
+        "helpfulNoCount": "Pomocna",
+        "report": "Zgłoś",
+        "readMore": "Czytaj więcej",
+        "readLess": "Czytaj mniej",
+        "imageAlt": "Sprawdź obraz"
+    },
+    "rating": {
+        "starContainerAriaLabel": "Gwiazdki:{{rating}} na {{total}}, recenzje: {{count, number}}",
+        "ratingOutOfTotal": "{{rating}} z {{total}}",
+        "ratingValue": "{{rating}}",
+        "basedOnReviews": "Na podstawie recenzji: {{count, number}}",
+        "ratingWithCount": "{{rating}} ({{count, number}})",
+        "viewAllReviews": "Zobacz wszystkie recenzje",
+        "distributionAriaLabel": "{{rating}} gwiazdki: {{count, number}} z {{totalReviews, number}} recenzji",
+        "distributionsAriaLabel": "Rozkład ocen w gwiazdkach, ogólna liczba recenzji: {{total, number}}",
+        "seeCustomerReviews": "Zobacz opinie klientów >"
+    },
+    "writeReview": {
+        "buttonLabel": "Napisz recenzję",
+        "modalDescription": "Wypełnij formularz recenzji",
+        "starRatingDistributionDescription": "Szczegóły przydziału gwiazdek",
+        "submitting": "Przesyłanie",
+        "successMessage": "Opinia została przesłana",
+        "errorMessage": "Nie udało się przesłać opinii. Spróbuj ponownie.",
+        "validation": {
+            "pleaseFixFollowing": "Popraw następujące błędy:",
+            "ratingRequired": "Wybierz ocenę.",
+            "reviewRequired": "Wypełnij to pole.",
+            "reviewMinLength": "Recenzja musi zawierać co najmniej {{count}} znaków",
+            "reviewMaxLength": "Wprowadź nie więcej niż {{count}} znaków.",
+            "titleMaxLength": "Wprowadź nie więcej niż {{count}} znaków."
+        },
+        "minCharactersHint": "Minimum znaków: {{count}}",
+        "maxCharactersHint": "Maksimum znaków: {{count}}."
+    },
+    "orderLine": {
+        "rateAndReview": "Oceń i zrecenzuj",
+        "reviewSubmitted": "Opinia została przesłana",
+        "cta": "Oceń i zrecenzuj"
+    }
+}

@@ -1,0 +1,15 @@
+:root {
+    --agentic: #8a38f5;
+    --agentic-foreground: #17171b;
+    --agentic-primary: #131315;
+    --agentic-primary-foreground: #ffffff;
+    --agentic-accent: #ececec;
+    --agentic-accent-foreground: #373737;
+    --agentic-border: #9ca3af;
+    --agentic-border-subtle: #d1d5db;
+    --agentic-ring: #3b82f6;
+    --agentic-muted: #f9fafb;
+    --agentic-muted-foreground: #35353b;
+    --agentic-message-output: #171717;
+    --agentic-message-input: #dbeafe;
+}

@@ -1,0 +1,71 @@
+{
+    "section": {
+        "heading": "Klantbeoordelingen",
+        "loading": "Beoordelingen laden...",
+        "loadError": "We konden de beoordelingen niet laden. Vernieuw de pagina om het opnieuw te proberen.",
+        "noReviewsForProduct": "Er zijn geen beoordelingen voor dit product.",
+        "noReviewsMatchFilters": "Er zijn geen beoordelingen die overeenkomen met je filters.",
+        "showingReviews": "{{from}}-{{to}} van {{total}} beoordelingen worden weergegeven",
+        "subtitleOne": "1 beoordeling voor {{productName}}",
+        "subtitleOther": "{{count}} beoordelingen voor {{productName}}",
+        "aiReviewSummary": "Samenvatting van AI-beoordeling"
+    },
+    "filters": {
+        "filterBy": "Filteren op:",
+        "withPhotos": "Met foto's",
+        "searchPlaceholder": "Beoordelingen doorzoeken...",
+        "sortLabel": "Sorteren:",
+        "sortMostRecent": "Meest recente",
+        "sortHighestRated": "Hoogste waardering",
+        "sortLowestRated": "Laagste waardering",
+        "sortMostHelpful": "Meest nuttig",
+        "activeFilterStars": "{{count}} sterren",
+        "clearFilter": "Filter wissen",
+        "filterByStars": "Filteren op {{count}} sterren",
+        "clearStarFilter": "Filter voor {{count}} sterren wissen",
+        "clearPhotoFilter": "Filter voor foto's wissen"
+    },
+    "card": {
+        "verifiedPurchase": "Geverifieerde aankoop",
+        "helpful": "Nuttig ({{count}})",
+        "helpfulNoCount": "Nuttig",
+        "report": "Rapport",
+        "readMore": "Meer lezen",
+        "readLess": "Minder lezen",
+        "imageAlt": "Beoordelingsafbeelding"
+    },
+    "rating": {
+        "starContainerAriaLabel": "{{rating}} van {{total}} sterren, {{count, number}} beoordelingen",
+        "ratingOutOfTotal": "{{rating}} van {{total}}",
+        "ratingValue": "{{rating}}",
+        "basedOnReviews": "Gebaseerd op {{count, number}} beoordelingen",
+        "ratingWithCount": "{{rating}} ({{count, number}})",
+        "viewAllReviews": "Alle beoordelingen weergeven",
+        "distributionAriaLabel": "{{rating}} sterren: {{count, number}} van {{totalReviews, number}} beoordelingen",
+        "distributionsAriaLabel": "Verdeling van sterren, {{total, number}} beoordelingen in totaal",
+        "seeCustomerReviews": "Klantbeoordelingen bekijken >"
+    },
+    "writeReview": {
+        "buttonLabel": "Schrijf een beoordeling",
+        "modalDescription": "Schrijf een beoordeling",
+        "starRatingDistributionDescription": "Details van verdeling van sterren",
+        "submitting": "Verzenden",
+        "successMessage": "Beoordeling ingediend",
+        "errorMessage": "Beoordeling kon niet worden ingediend. Probeer het opnieuw.",
+        "validation": {
+            "pleaseFixFollowing": "Los het volgende op:",
+            "ratingRequired": "Selecteer een waardering.",
+            "reviewRequired": "Vul dit veld in.",
+            "reviewMinLength": "Je recensie moet minimaal {{count}} tekens bevatten",
+            "reviewMaxLength": "Voer niet meer dan {{count}} tekens in.",
+            "titleMaxLength": "Voer niet meer dan {{count}} tekens in."
+        },
+        "minCharactersHint": "Minimaal {{count}} tekens.",
+        "maxCharactersHint": "Maximaal {{count}} tekens."
+    },
+    "orderLine": {
+        "rateAndReview": "Beoordelen en recenseren",
+        "reviewSubmitted": "Beoordeling ingediend",
+        "cta": "Beoordelen en recenseren"
+    }
+}

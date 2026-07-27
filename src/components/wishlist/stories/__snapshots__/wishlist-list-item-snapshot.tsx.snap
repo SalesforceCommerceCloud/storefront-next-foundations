@@ -1,0 +1,792 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`WishlistListItem stories snapshot > Default renders and matches snapshot 1`] = `
+<div
+  data-testid="wishlist-item-item-variant-1"
+>
+  <div
+    class="flex gap-4 p-4 rounded-ui border border-border bg-card"
+  >
+    <a
+      aria-label="Charcoal Flat Front Athletic Fit Shadow Striped Wool Suit"
+      class="flex-shrink-0 self-start"
+      href="/RefArchGlobal/en-GB/product/25686395M?color=CHARCWL&size=040&width=S"
+      to="/RefArchGlobal/en-GB/product/25686395M?color=CHARCWL&size=040&width=S"
+    >
+      <div
+        class="w-20 h-20 md:w-28 md:h-28 rounded-ui overflow-hidden bg-muted flex items-center justify-center"
+      >
+        <img
+          alt="Charcoal Flat Front Athletic Fit Shadow Striped Wool Suit, Charcoal, small"
+          class="w-full h-full object-contain"
+          src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dw79200f8a/images/small/PG.33330DAN84Q.CHARCWL.PZ.webp?sfrm=jpg&q=70"
+        />
+      </div>
+    </a>
+    <div
+      class="flex flex-1 flex-col md:flex-row gap-4 min-w-0"
+    >
+      <div
+        class="flex-1 min-w-0 space-y-1.5"
+      >
+        <a
+          class="text-base font-medium text-foreground hover:text-primary line-clamp-2 block"
+          href="/RefArchGlobal/en-GB/product/25686395M?color=CHARCWL&size=040&width=S"
+          to="/RefArchGlobal/en-GB/product/25686395M?color=CHARCWL&size=040&width=S"
+        >
+          Charcoal Flat Front Athletic Fit Shadow Striped Wool Suit
+        </a>
+        <div
+          class="text-sm text-muted-foreground space-y-0.5"
+        >
+          <div>
+            Color
+            : 
+            Charcoal
+          </div>
+          <div>
+            Size
+            : 
+            40
+          </div>
+          <div>
+            Width
+            : 
+            Short
+          </div>
+        </div>
+        <div
+          aria-atomic="true"
+          class="flex items-center gap-2 text-xs px-2 py-0.5"
+          data-slot="inventory-message"
+          role="status"
+        >
+          <span
+            aria-hidden="true"
+            class="h-2 w-2 shrink-0 rounded-full bg-current text-status-positive"
+          />
+          <p
+            class="text-sm font-medium text-status-positive"
+          >
+            <span
+              class="sr-only"
+            >
+              Available: 
+            </span>
+            In stock
+          </p>
+        </div>
+        <button
+          aria-label="Remove from wishlist."
+          class="block text-sm text-muted-foreground hover:text-destructive disabled:opacity-50 disabled:cursor-not-allowed transition-colors mt-2 cursor-pointer"
+          type="button"
+        >
+          Remove
+        </button>
+      </div>
+      <div
+        class="flex flex-col gap-2 flex-shrink-0 md:items-end md:text-right"
+      >
+        <div
+          class="items-center gap-2"
+        >
+          <span
+            aria-label="Current price: £299.99"
+            aria-live="polite"
+            class="leading-7 [&:not(:first-child)]:mt-6 text-left font-semibold"
+          >
+            £299.99
+          </span>
+          <span
+            aria-atomic="true"
+            aria-live="polite"
+            class="sr-only"
+          >
+             
+            Current price: £299.99
+          </span>
+           
+          <span
+            aria-label="List price from £500.00"
+            class="text-sm font-medium leading-none text-left line-through text-muted-foreground"
+          >
+            £500.00
+          </span>
+          <span
+            aria-atomic="true"
+            aria-live="polite"
+            class="sr-only"
+          >
+             
+            List price: £500.00
+          </span>
+        </div>
+        <div
+          class="items-center gap-2"
+        >
+          <span
+            class="line-clamp-2 text-[inherit] font-medium"
+          >
+            50% off for Salesforce employees
+          </span>
+        </div>
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground hover:bg-primary/90 h-8 rounded-ui gap-1.5 px-3 has-[>svg]:px-2.5 w-full md:w-auto md:min-w-28"
+          data-size="sm"
+          data-slot="button"
+          data-variant="default"
+        >
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WishlistListItem stories snapshot > MasterProduct renders and matches snapshot 1`] = `
+<div
+  data-testid="wishlist-item-item-master-1"
+>
+  <div
+    class="flex gap-4 p-4 rounded-ui border border-border bg-card"
+  >
+    <a
+      aria-label="Charcoal Flat Front Athletic Fit Shadow Striped Wool Suit"
+      class="flex-shrink-0 self-start"
+      href="/RefArchGlobal/en-GB/product/25686395M"
+      to="/RefArchGlobal/en-GB/product/25686395M"
+    >
+      <div
+        class="w-20 h-20 md:w-28 md:h-28 rounded-ui overflow-hidden bg-muted flex items-center justify-center"
+      >
+        <img
+          alt="Charcoal Flat Front Athletic Fit Shadow Striped Wool Suit, , small"
+          class="w-full h-full object-contain"
+          src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dw79200f8a/images/small/PG.33330DAN84Q.CHARCWL.PZ.webp?sfrm=jpg&q=70"
+        />
+      </div>
+    </a>
+    <div
+      class="flex flex-1 flex-col md:flex-row gap-4 min-w-0"
+    >
+      <div
+        class="flex-1 min-w-0 space-y-1.5"
+      >
+        <a
+          class="text-base font-medium text-foreground hover:text-primary line-clamp-2 block"
+          href="/RefArchGlobal/en-GB/product/25686395M"
+          to="/RefArchGlobal/en-GB/product/25686395M"
+        >
+          Charcoal Flat Front Athletic Fit Shadow Striped Wool Suit
+        </a>
+        <div
+          class="text-sm space-y-0.5"
+        >
+          <div
+            class="text-warning"
+          >
+            Color
+            : 
+            Select
+          </div>
+          <div
+            class="text-warning"
+          >
+            Size
+            : 
+            Select
+          </div>
+          <div
+            class="text-warning"
+          >
+            Width
+            : 
+            Select
+          </div>
+        </div>
+        <div
+          aria-atomic="true"
+          class="flex items-center gap-2 text-xs px-2 py-0.5"
+          data-slot="inventory-message"
+          role="status"
+        >
+          <span
+            aria-hidden="true"
+            class="h-2 w-2 shrink-0 rounded-full bg-current text-status-positive"
+          />
+          <p
+            class="text-sm font-medium text-status-positive"
+          >
+            <span
+              class="sr-only"
+            >
+              Available: 
+            </span>
+            In stock
+          </p>
+        </div>
+        <button
+          aria-label="Remove from wishlist."
+          class="block text-sm text-muted-foreground hover:text-destructive disabled:opacity-50 disabled:cursor-not-allowed transition-colors mt-2 cursor-pointer"
+          type="button"
+        >
+          Remove
+        </button>
+      </div>
+      <div
+        class="flex flex-col gap-2 flex-shrink-0 md:items-end md:text-right"
+      >
+        <div
+          class="items-center gap-2"
+        >
+          <span
+            aria-label="Current price: £299.99"
+            aria-live="polite"
+            class="leading-7 [&:not(:first-child)]:mt-6 text-left font-semibold"
+          >
+            £299.99
+          </span>
+          <span
+            aria-atomic="true"
+            aria-live="polite"
+            class="sr-only"
+          >
+             
+            Current price: £299.99
+          </span>
+           
+          <span
+            aria-label="List price from £500.00"
+            class="text-sm font-medium leading-none text-left line-through text-muted-foreground"
+          >
+            £500.00
+          </span>
+          <span
+            aria-atomic="true"
+            aria-live="polite"
+            class="sr-only"
+          >
+             
+            List price: £500.00
+          </span>
+        </div>
+        <div
+          class="items-center gap-2"
+        >
+          <span
+            class="line-clamp-2 text-[inherit] font-medium"
+          >
+            50% off for Salesforce employees
+          </span>
+        </div>
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-8 rounded-ui gap-1.5 px-3 has-[>svg]:px-2.5 w-full md:w-auto md:min-w-28"
+          data-size="sm"
+          data-slot="button"
+          data-variant="outline"
+          type="button"
+        >
+          Select Options
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WishlistListItem stories snapshot > MinimalData renders and matches snapshot 1`] = `
+<div
+  data-testid="wishlist-item-item-minimal-1"
+>
+  <div
+    class="flex gap-4 p-4 rounded-ui border border-border bg-card"
+  >
+    <a
+      aria-label="Simple Product"
+      class="flex-shrink-0 self-start"
+      href="/RefArchGlobal/en-GB/product/minimal-product-1"
+      to="/RefArchGlobal/en-GB/product/minimal-product-1"
+    >
+      <div
+        class="w-20 h-20 md:w-28 md:h-28 rounded-ui overflow-hidden bg-muted flex items-center justify-center"
+      >
+        <div
+          class="w-full h-full bg-muted"
+        />
+      </div>
+    </a>
+    <div
+      class="flex flex-1 flex-col md:flex-row gap-4 min-w-0"
+    >
+      <div
+        class="flex-1 min-w-0 space-y-1.5"
+      >
+        <a
+          class="text-base font-medium text-foreground hover:text-primary line-clamp-2 block"
+          href="/RefArchGlobal/en-GB/product/minimal-product-1"
+          to="/RefArchGlobal/en-GB/product/minimal-product-1"
+        >
+          Simple Product
+        </a>
+        <div
+          aria-atomic="true"
+          class="flex items-center gap-2 text-xs px-2 py-0.5"
+          data-slot="inventory-message"
+          role="status"
+        >
+          <span
+            aria-hidden="true"
+            class="h-2 w-2 shrink-0 rounded-full bg-current text-status-positive"
+          />
+          <p
+            class="text-sm font-medium text-status-positive"
+          >
+            <span
+              class="sr-only"
+            >
+              Available: 
+            </span>
+            In stock
+          </p>
+        </div>
+        <button
+          aria-label="Remove from wishlist."
+          class="block text-sm text-muted-foreground hover:text-destructive disabled:opacity-50 disabled:cursor-not-allowed transition-colors mt-2 cursor-pointer"
+          type="button"
+        >
+          Remove
+        </button>
+      </div>
+      <div
+        class="flex flex-col gap-2 flex-shrink-0 md:items-end md:text-right"
+      >
+        <div
+          class="items-center gap-2"
+        >
+          <span
+            aria-label="Current price: £19.99"
+            aria-live="polite"
+            class="leading-7 [&:not(:first-child)]:mt-6 text-left font-semibold"
+          >
+            £19.99
+          </span>
+          <span
+            aria-atomic="true"
+            aria-live="polite"
+            class="sr-only"
+          >
+             
+            Current price: £19.99
+          </span>
+           
+        </div>
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground hover:bg-primary/90 h-8 rounded-ui gap-1.5 px-3 has-[>svg]:px-2.5 w-full md:w-auto md:min-w-28"
+          data-size="sm"
+          data-slot="button"
+          data-variant="default"
+        >
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WishlistListItem stories snapshot > OnSale renders and matches snapshot 1`] = `
+<div
+  data-testid="wishlist-item-item-standard-1"
+>
+  <div
+    class="flex gap-4 p-4 rounded-ui border border-border bg-card"
+  >
+    <a
+      aria-label="Laptop Briefcase with wheels (37L)"
+      class="flex-shrink-0 self-start"
+      href="/RefArchGlobal/en-GB/product/P0048M"
+      to="/RefArchGlobal/en-GB/product/P0048M"
+    >
+      <div
+        class="w-20 h-20 md:w-28 md:h-28 rounded-ui overflow-hidden bg-muted flex items-center justify-center"
+      >
+        <img
+          alt="Laptop Briefcase with wheels (37L), , small"
+          class="w-full h-full object-contain"
+          src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwec87eecc/images/small/P0048_001.webp?sfrm=jpg&q=70"
+        />
+      </div>
+    </a>
+    <div
+      class="flex flex-1 flex-col md:flex-row gap-4 min-w-0"
+    >
+      <div
+        class="flex-1 min-w-0 space-y-1.5"
+      >
+        <a
+          class="text-base font-medium text-foreground hover:text-primary line-clamp-2 block"
+          href="/RefArchGlobal/en-GB/product/P0048M"
+          to="/RefArchGlobal/en-GB/product/P0048M"
+        >
+          Laptop Briefcase with wheels (37L)
+        </a>
+        <div
+          aria-atomic="true"
+          class="flex items-center gap-2 text-xs px-2 py-0.5"
+          data-slot="inventory-message"
+          role="status"
+        >
+          <span
+            aria-hidden="true"
+            class="h-2 w-2 shrink-0 rounded-full bg-current text-status-warning"
+          />
+          <p
+            class="text-sm font-medium text-status-warning"
+          >
+            <span
+              class="sr-only"
+            >
+              Back order: 
+            </span>
+            Available for back order
+          </p>
+        </div>
+        <button
+          aria-label="Remove from wishlist."
+          class="block text-sm text-muted-foreground hover:text-destructive disabled:opacity-50 disabled:cursor-not-allowed transition-colors mt-2 cursor-pointer"
+          type="button"
+        >
+          Remove
+        </button>
+      </div>
+      <div
+        class="flex flex-col gap-2 flex-shrink-0 md:items-end md:text-right"
+      >
+        <div
+          class="items-center gap-2"
+        >
+          <span
+            aria-label="Current price: £49.99"
+            aria-live="polite"
+            class="leading-7 [&:not(:first-child)]:mt-6 text-left font-semibold"
+          >
+            £49.99
+          </span>
+          <span
+            aria-atomic="true"
+            aria-live="polite"
+            class="sr-only"
+          >
+             
+            Current price: £49.99
+          </span>
+           
+          <span
+            aria-label="List price: £99.99"
+            class="text-sm font-medium leading-none text-left line-through text-muted-foreground"
+          >
+            £99.99
+          </span>
+          <span
+            aria-atomic="true"
+            aria-live="polite"
+            class="sr-only"
+          >
+             
+            List price: £99.99
+          </span>
+        </div>
+        <div
+          class="items-center gap-2"
+        >
+          <span
+            class="line-clamp-2 text-[inherit] font-medium"
+          >
+            50% off for Salesforce employees
+          </span>
+        </div>
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground hover:bg-primary/90 h-8 rounded-ui gap-1.5 px-3 has-[>svg]:px-2.5 w-full md:w-auto md:min-w-28"
+          data-size="sm"
+          data-slot="button"
+          data-variant="default"
+        >
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WishlistListItem stories snapshot > OutOfStock renders and matches snapshot 1`] = `
+<div
+  data-testid="wishlist-item-item-standard-1"
+>
+  <div
+    class="flex gap-4 p-4 rounded-ui border border-border bg-card"
+  >
+    <a
+      aria-label="Laptop Briefcase with wheels (37L)"
+      class="flex-shrink-0 self-start"
+      href="/RefArchGlobal/en-GB/product/P0048M"
+      to="/RefArchGlobal/en-GB/product/P0048M"
+    >
+      <div
+        class="w-20 h-20 md:w-28 md:h-28 rounded-ui overflow-hidden bg-muted flex items-center justify-center"
+      >
+        <img
+          alt="Laptop Briefcase with wheels (37L), , small"
+          class="w-full h-full object-contain"
+          src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwec87eecc/images/small/P0048_001.webp?sfrm=jpg&q=70"
+        />
+      </div>
+    </a>
+    <div
+      class="flex flex-1 flex-col md:flex-row gap-4 min-w-0"
+    >
+      <div
+        class="flex-1 min-w-0 space-y-1.5"
+      >
+        <a
+          class="text-base font-medium text-foreground hover:text-primary line-clamp-2 block"
+          href="/RefArchGlobal/en-GB/product/P0048M"
+          to="/RefArchGlobal/en-GB/product/P0048M"
+        >
+          Laptop Briefcase with wheels (37L)
+        </a>
+        <div
+          aria-atomic="true"
+          class="flex items-center gap-2 text-xs px-2 py-0.5"
+          data-slot="inventory-message"
+          role="status"
+        >
+          <span
+            aria-hidden="true"
+            class="h-2 w-2 shrink-0 rounded-full bg-current text-status-critical"
+          />
+          <p
+            class="text-sm font-medium text-status-critical"
+          >
+            <span
+              class="sr-only"
+            >
+              Not available: 
+            </span>
+            Out of stock
+          </p>
+        </div>
+        <button
+          aria-label="Remove from wishlist."
+          class="block text-sm text-muted-foreground hover:text-destructive disabled:opacity-50 disabled:cursor-not-allowed transition-colors mt-2 cursor-pointer"
+          type="button"
+        >
+          Remove
+        </button>
+      </div>
+      <div
+        class="flex flex-col gap-2 flex-shrink-0 md:items-end md:text-right"
+      >
+        <div
+          class="items-center gap-2"
+        >
+          <span
+            aria-label="Current price: £49.99"
+            aria-live="polite"
+            class="leading-7 [&:not(:first-child)]:mt-6 text-left font-semibold"
+          >
+            £49.99
+          </span>
+          <span
+            aria-atomic="true"
+            aria-live="polite"
+            class="sr-only"
+          >
+             
+            Current price: £49.99
+          </span>
+           
+          <span
+            aria-label="List price: £99.99"
+            class="text-sm font-medium leading-none text-left line-through text-muted-foreground"
+          >
+            £99.99
+          </span>
+          <span
+            aria-atomic="true"
+            aria-live="polite"
+            class="sr-only"
+          >
+             
+            List price: £99.99
+          </span>
+        </div>
+        <div
+          class="items-center gap-2"
+        >
+          <span
+            class="line-clamp-2 text-[inherit] font-medium"
+          >
+            50% off for Salesforce employees
+          </span>
+        </div>
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground hover:bg-primary/90 h-8 rounded-ui gap-1.5 px-3 has-[>svg]:px-2.5 w-full md:w-auto md:min-w-28"
+          data-size="sm"
+          data-slot="button"
+          data-variant="default"
+        >
+          Add to Cart
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`WishlistListItem stories snapshot > OutOfStockVariant renders and matches snapshot 1`] = `
+<div
+  data-testid="wishlist-item-item-variant-1"
+>
+  <div
+    class="flex gap-4 p-4 rounded-ui border border-border bg-card"
+  >
+    <a
+      aria-label="Charcoal Flat Front Athletic Fit Shadow Striped Wool Suit"
+      class="flex-shrink-0 self-start"
+      href="/RefArchGlobal/en-GB/product/25686395M?color=CHARCWL&size=040&width=S"
+      to="/RefArchGlobal/en-GB/product/25686395M?color=CHARCWL&size=040&width=S"
+    >
+      <div
+        class="w-20 h-20 md:w-28 md:h-28 rounded-ui overflow-hidden bg-muted flex items-center justify-center"
+      >
+        <img
+          alt="Charcoal Flat Front Athletic Fit Shadow Striped Wool Suit, Charcoal, small"
+          class="w-full h-full object-contain"
+          src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dw79200f8a/images/small/PG.33330DAN84Q.CHARCWL.PZ.webp?sfrm=jpg&q=70"
+        />
+      </div>
+    </a>
+    <div
+      class="flex flex-1 flex-col md:flex-row gap-4 min-w-0"
+    >
+      <div
+        class="flex-1 min-w-0 space-y-1.5"
+      >
+        <a
+          class="text-base font-medium text-foreground hover:text-primary line-clamp-2 block"
+          href="/RefArchGlobal/en-GB/product/25686395M?color=CHARCWL&size=040&width=S"
+          to="/RefArchGlobal/en-GB/product/25686395M?color=CHARCWL&size=040&width=S"
+        >
+          Charcoal Flat Front Athletic Fit Shadow Striped Wool Suit
+        </a>
+        <div
+          class="text-sm text-muted-foreground space-y-0.5"
+        >
+          <div>
+            Color
+            : 
+            Charcoal
+          </div>
+          <div>
+            Size
+            : 
+            40
+          </div>
+          <div>
+            Width
+            : 
+            Short
+          </div>
+        </div>
+        <div
+          aria-atomic="true"
+          class="flex items-center gap-2 text-xs px-2 py-0.5"
+          data-slot="inventory-message"
+          role="status"
+        >
+          <span
+            aria-hidden="true"
+            class="h-2 w-2 shrink-0 rounded-full bg-current text-status-critical"
+          />
+          <p
+            class="text-sm font-medium text-status-critical"
+          >
+            <span
+              class="sr-only"
+            >
+              Not available: 
+            </span>
+            Out of stock
+          </p>
+        </div>
+        <button
+          aria-label="Remove from wishlist."
+          class="block text-sm text-muted-foreground hover:text-destructive disabled:opacity-50 disabled:cursor-not-allowed transition-colors mt-2 cursor-pointer"
+          type="button"
+        >
+          Remove
+        </button>
+      </div>
+      <div
+        class="flex flex-col gap-2 flex-shrink-0 md:items-end md:text-right"
+      >
+        <div
+          class="items-center gap-2"
+        >
+          <span
+            aria-label="Current price: £299.99"
+            aria-live="polite"
+            class="leading-7 [&:not(:first-child)]:mt-6 text-left font-semibold"
+          >
+            £299.99
+          </span>
+          <span
+            aria-atomic="true"
+            aria-live="polite"
+            class="sr-only"
+          >
+             
+            Current price: £299.99
+          </span>
+           
+          <span
+            aria-label="List price from £500.00"
+            class="text-sm font-medium leading-none text-left line-through text-muted-foreground"
+          >
+            £500.00
+          </span>
+          <span
+            aria-atomic="true"
+            aria-live="polite"
+            class="sr-only"
+          >
+             
+            List price: £500.00
+          </span>
+        </div>
+        <div
+          class="items-center gap-2"
+        >
+          <span
+            class="line-clamp-2 text-[inherit] font-medium"
+          >
+            50% off for Salesforce employees
+          </span>
+        </div>
+        <button
+          class="inline-flex items-center justify-center whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground hover:bg-primary/90 h-8 rounded-ui gap-1.5 px-3 has-[>svg]:px-2.5 w-full md:w-auto md:min-w-28"
+          data-size="sm"
+          data-slot="button"
+          data-variant="default"
+          disabled=""
+          type="button"
+        >
+          Out of stock
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;

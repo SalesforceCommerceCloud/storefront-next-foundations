@@ -1,0 +1,60 @@
+# Cursor Rules for storefront-next-e2e
+
+## Skill Discovery (CRITICAL - READ FIRST)
+
+**ALWAYS check `AGENTS.md` at the root of this package before responding to ANY user request.**
+
+The `AGENTS.md` file contains a directory of specialized skills and workflows for E2E testing. If a user request matches a skill listed in `AGENTS.md`, you MUST:
+
+1. **Read the linked `SKILL.md` file** immediately
+2. **Follow the workflow** outlined in the skill
+3. **Do NOT proceed** without reading the skill instructions
+
+Example: If the user says "Create an E2E test for checkout", you must:
+- Read `AGENTS.md` 
+- Find the matching skill (Generate Storefront E2E Test)
+- Read `.claude/skills/generate-storefront-e2e-test/SKILL.md`
+- Follow the systematic workflow defined in the skill
+
+## Package Context
+
+This is the **storefront-next-e2e** package for E2E testing of Salesforce Commerce Cloud storefront.
+
+**Primary Documentation:**
+- `CLAUDE.md` - AI-specific guidance (coding standards, patterns, commands)
+- `AGENTS.md` - Skill directory (read this FIRST)
+- `README.md` - User-facing documentation
+- `ARCHITECTURE.md` - Technical architecture details
+
+## Core Principles
+
+1. **Skills First**: Check `AGENTS.md` before taking action
+2. **TypeScript**: All code is TypeScript (auto-generated definitions)
+3. **Commerce Focus**: Tests target actual storefront (NOT demo environments)
+4. **AI-Powered**: Leverage CodeceptJS AI features (`pause()`, `I.askForPageObject()`)
+5. **Chai Assertions**: Use `expect()` for value validation (NOT manual `throw new Error()`)
+6. **Self-Healing**: Update recipes when creating/modifying page objects
+
+## Quick Reference
+
+```bash
+# Run tests (definitions auto-generated)
+pnpm e2e
+
+# Run tests with AI features
+pnpm e2e --ai
+
+# Filter by tag
+pnpm e2e --grep "@homepage"
+
+# View report
+pnpm report
+```
+
+## Workflow
+
+1. Read `AGENTS.md` to find relevant skill
+2. Read linked `SKILL.md` for detailed instructions
+3. Follow skill workflow systematically
+4. Reference `CLAUDE.md` for coding standards
+5. Verify tests pass before claiming completion

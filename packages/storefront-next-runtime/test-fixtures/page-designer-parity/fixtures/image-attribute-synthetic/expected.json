@@ -1,0 +1,26 @@
+{
+    "id": "image-page",
+    "typeId": "storePage",
+    "regions": [
+        {
+            "id": "main",
+            "components": [
+                {
+                    "id": "hero-1",
+                    "typeId": "commerce_assets.heroBanner",
+                    "regions": [],
+                    "fragment": false,
+                    "localized": true,
+                    "visible": true,
+                    "data": {
+                        "hero": {
+                            "focalPoint": { "x": 0.5, "y": 0.5 },
+                            "metaData": { "width": 1200, "height": 600 },
+                            "url": "https://www.shop.example/on/demandware.static/-/Library-Sites-MyLibrary/en_US/v1/images/hero/banner.jpg"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

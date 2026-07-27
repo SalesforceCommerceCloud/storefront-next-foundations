@@ -1,0 +1,40 @@
+{
+    "include": ["**/*", "**/.server/**/*", "**/.client/**/*", ".react-router/types/**/*", ".storybook/**/*"],
+    "compilerOptions": {
+        "lib": ["ES2022", "DOM", "DOM.Iterable"],
+        "types": ["node", "vite/client", "vitest/globals"],
+        "target": "ES2022",
+        "module": "ES2022",
+        "moduleResolution": "bundler",
+        "jsx": "react-jsx",
+        "rootDirs": [".", "./.react-router/types"],
+        "baseUrl": ".",
+        "esModuleInterop": true,
+        "noEmit": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "strict": true,
+        "verbatimModuleSyntax": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "paths": {
+            "@/*": ["./src/*"],
+            "+types/*": ["./types/*"],
+            "@/config/server": ["./config.server.ts"],
+            "@storybook/test-utils": ["./.storybook/test-utils"]
+        }
+    },
+    "exclude": [
+        "dist",
+        "node_modules",
+        "**/*-snapshot.tsx",
+        ".storybook/tests/generated-stories/**",
+        "e2e",
+        "src/verticals/**/routes/**/*",
+        "e2e/**/*",
+        "**/*-snapshot.tsx",
+        ".storybook/tests/generated-stories/**"
+    ]
+}

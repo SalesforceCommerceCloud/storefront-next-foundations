@@ -1,0 +1,11 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Spinner stories snapshot > Default story renders and matches snapshot 1`] = `
+<div
+  class="min-h-[40vh] bg-background flex items-center justify-center"
+>
+  <div
+    class="animate-spin rounded-full border-2 border-border border-t-primary size-6"
+  />
+</div>
+`;

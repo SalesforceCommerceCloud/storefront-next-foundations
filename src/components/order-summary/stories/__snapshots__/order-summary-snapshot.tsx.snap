@@ -1,0 +1,2389 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`OrderSummary stories snapshot > CartItemsAccordionInteraction story renders and matches snapshot 1`] = `
+<div
+  class="bg-card text-card-foreground flex flex-col gap-6 rounded-ui border-ui border-border py-6 shadow-ui !py-4"
+  data-slot="card"
+>
+  <div
+    class="px-[var(--cart-summary-px)]"
+    data-slot="card-content"
+  >
+    <div
+      class="space-y-4"
+      data-testid="sf-order-summary"
+    >
+      <h2
+        class="text-left text-lg font-semibold leading-[120%] tracking-[-0.45px] text-card-foreground"
+        id="order-summary-heading-desktop"
+      >
+        Order Summary
+      </h2>
+      <hr
+        class="mx-[calc(var(--cart-summary-px)*-1)] border-border"
+      />
+      <div
+        aria-label="Order Summary"
+        class="space-y-2"
+        role="region"
+      >
+        <div
+          class="w-full"
+          data-orientation="vertical"
+          data-slot="accordion"
+        >
+          <div
+            class="border-b last:border-b-0"
+            data-orientation="vertical"
+            data-slot="accordion-item"
+            data-state="closed"
+          >
+            <h3
+              class="flex"
+              data-orientation="vertical"
+              data-state="closed"
+            >
+              <button
+                aria-controls="radix-«x»"
+                aria-expanded="false"
+                class="focus-visible:border-ring focus-visible:ring-ring flex flex-1 items-start justify-between gap-4 rounded-ui py-4 text-sm font-medium transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180 text-left"
+                data-orientation="vertical"
+                data-radix-collection-item=""
+                data-slot="accordion-trigger"
+                data-state="closed"
+                id="radix-«x»"
+                type="button"
+              >
+                <span
+                  class="flex-1 text-left text-sm text-primary"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-shopping-cart inline mr-2 w-4 h-4"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="8"
+                      cy="21"
+                      r="1"
+                    />
+                    <circle
+                      cx="19"
+                      cy="21"
+                      r="1"
+                    />
+                    <path
+                      d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                    />
+                  </svg>
+                  3 items in cart
+                </span>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+              </button>
+            </h3>
+            <div
+              aria-labelledby="radix-«x»"
+              class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm"
+              data-orientation="vertical"
+              data-slot="accordion-content"
+              data-state="closed"
+              hidden=""
+              id="radix-«x»"
+              role="region"
+              style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
+            />
+          </div>
+        </div>
+        <dl
+          class="grid grid-cols-[1fr_auto] gap-x-4 gap-y-2 items-center text-sm font-normal leading-5 text-muted-foreground pb-2"
+        >
+          <dt>
+            Subtotal
+          </dt>
+          <dd
+            class="justify-self-end"
+          >
+            £73.57
+          </dd>
+          <dt
+            class="flex items-center"
+          >
+            <span>
+              Shipping
+            </span>
+          </dt>
+          <dd
+            class="justify-self-end"
+          >
+            <span
+              class="text-muted-foreground"
+            >
+              TBD
+            </span>
+          </dd>
+          <dt
+            class="font-bold"
+          >
+            Total
+          </dt>
+          <dd
+            class="justify-self-end font-bold"
+          >
+            £73.57
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`OrderSummary stories snapshot > Default story renders and matches snapshot 1`] = `
+<div
+  class="bg-card text-card-foreground flex flex-col gap-6 rounded-ui border-ui border-border py-6 shadow-ui !py-4"
+  data-slot="card"
+>
+  <div
+    class="px-[var(--cart-summary-px)]"
+    data-slot="card-content"
+  >
+    <div
+      class="space-y-4"
+      data-testid="sf-order-summary"
+    >
+      <h2
+        class="text-left text-lg font-semibold leading-[120%] tracking-[-0.45px] text-card-foreground"
+        id="order-summary-heading-desktop"
+      >
+        Order Summary
+      </h2>
+      <hr
+        class="mx-[calc(var(--cart-summary-px)*-1)] border-border"
+      />
+      <div
+        aria-label="Order Summary"
+        class="space-y-2"
+        role="region"
+      >
+        <div
+          class="w-full"
+          data-orientation="vertical"
+          data-slot="accordion"
+        >
+          <div
+            class="border-b last:border-b-0"
+            data-orientation="vertical"
+            data-slot="accordion-item"
+            data-state="closed"
+          >
+            <h3
+              class="flex"
+              data-orientation="vertical"
+              data-state="closed"
+            >
+              <button
+                aria-controls="radix-«x»"
+                aria-expanded="false"
+                class="focus-visible:border-ring focus-visible:ring-ring flex flex-1 items-start justify-between gap-4 rounded-ui py-4 text-sm font-medium transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180 text-left"
+                data-orientation="vertical"
+                data-radix-collection-item=""
+                data-slot="accordion-trigger"
+                data-state="closed"
+                id="radix-«x»"
+                type="button"
+              >
+                <span
+                  class="flex-1 text-left text-sm text-primary"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-shopping-cart inline mr-2 w-4 h-4"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="8"
+                      cy="21"
+                      r="1"
+                    />
+                    <circle
+                      cx="19"
+                      cy="21"
+                      r="1"
+                    />
+                    <path
+                      d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                    />
+                  </svg>
+                  3 items in cart
+                </span>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+              </button>
+            </h3>
+            <div
+              aria-labelledby="radix-«x»"
+              class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm"
+              data-orientation="vertical"
+              data-slot="accordion-content"
+              data-state="closed"
+              hidden=""
+              id="radix-«x»"
+              role="region"
+              style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
+            />
+          </div>
+        </div>
+        <dl
+          class="grid grid-cols-[1fr_auto] gap-x-4 gap-y-2 items-center text-sm font-normal leading-5 text-muted-foreground pb-2"
+        >
+          <dt>
+            Subtotal
+          </dt>
+          <dd
+            class="justify-self-end"
+          >
+            £73.57
+          </dd>
+          <dt
+            class="flex items-center"
+          >
+            <span>
+              Shipping
+            </span>
+          </dt>
+          <dd
+            class="justify-self-end"
+          >
+            <span
+              class="text-muted-foreground"
+            >
+              TBD
+            </span>
+          </dd>
+          <dt
+            class="font-bold"
+          >
+            Total
+          </dt>
+          <dd
+            class="justify-self-end font-bold"
+          >
+            £73.57
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`OrderSummary stories snapshot > EmptyBasket story renders and matches snapshot 1`] = `
+<div
+  class="bg-card text-card-foreground flex flex-col gap-6 rounded-ui border-ui border-border py-6 shadow-ui !py-4"
+  data-slot="card"
+>
+  <div
+    class="px-[var(--cart-summary-px)]"
+    data-slot="card-content"
+  >
+    <div
+      class="space-y-4"
+      data-testid="sf-order-summary"
+    >
+      <h2
+        class="text-left text-lg font-semibold leading-[120%] tracking-[-0.45px] text-card-foreground"
+        id="order-summary-heading-desktop"
+      >
+        Order Summary
+      </h2>
+      <hr
+        class="mx-[calc(var(--cart-summary-px)*-1)] border-border"
+      />
+      <div
+        aria-label="Order Summary"
+        class="space-y-2"
+        role="region"
+      >
+        <div
+          class="w-full"
+          data-orientation="vertical"
+          data-slot="accordion"
+        >
+          <div
+            class="border-b last:border-b-0"
+            data-orientation="vertical"
+            data-slot="accordion-item"
+            data-state="closed"
+          >
+            <h3
+              class="flex"
+              data-orientation="vertical"
+              data-state="closed"
+            >
+              <button
+                aria-controls="radix-«x»"
+                aria-expanded="false"
+                class="focus-visible:border-ring focus-visible:ring-ring flex flex-1 items-start justify-between gap-4 rounded-ui py-4 text-sm font-medium transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180 text-left"
+                data-orientation="vertical"
+                data-radix-collection-item=""
+                data-slot="accordion-trigger"
+                data-state="closed"
+                id="radix-«x»"
+                type="button"
+              >
+                <span
+                  class="flex-1 text-left text-sm text-primary"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-shopping-cart inline mr-2 w-4 h-4"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="8"
+                      cy="21"
+                      r="1"
+                    />
+                    <circle
+                      cx="19"
+                      cy="21"
+                      r="1"
+                    />
+                    <path
+                      d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                    />
+                  </svg>
+                  0 items in cart
+                </span>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+              </button>
+            </h3>
+            <div
+              aria-labelledby="radix-«x»"
+              class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm"
+              data-orientation="vertical"
+              data-slot="accordion-content"
+              data-state="closed"
+              hidden=""
+              id="radix-«x»"
+              role="region"
+              style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
+            />
+          </div>
+        </div>
+        <dl
+          class="grid grid-cols-[1fr_auto] gap-x-4 gap-y-2 items-center text-sm font-normal leading-5 text-muted-foreground pb-2"
+        >
+          <dt>
+            Subtotal
+          </dt>
+          <dd
+            class="justify-self-end"
+          >
+            £0.00
+          </dd>
+          <dt
+            class="flex items-center"
+          >
+            <span>
+              Shipping
+            </span>
+          </dt>
+          <dd
+            class="justify-self-end"
+          >
+            <span
+              class="text-primary font-medium"
+            >
+              FREE
+            </span>
+          </dd>
+          <dt
+            class="font-bold"
+          >
+            Total
+          </dt>
+          <dd
+            class="justify-self-end font-bold"
+          >
+            £0.00
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`OrderSummary stories snapshot > EstimateMode story renders and matches snapshot 1`] = `
+<div
+  class="bg-card text-card-foreground flex flex-col gap-6 rounded-ui border-ui border-border py-6 shadow-ui !py-4"
+  data-slot="card"
+>
+  <div
+    class="px-[var(--cart-summary-px)]"
+    data-slot="card-content"
+  >
+    <div
+      class="space-y-4"
+      data-testid="sf-order-summary"
+    >
+      <h2
+        class="text-left text-lg font-semibold leading-[120%] tracking-[-0.45px] text-card-foreground"
+        id="order-summary-heading-desktop"
+      >
+        Order Summary
+      </h2>
+      <hr
+        class="mx-[calc(var(--cart-summary-px)*-1)] border-border"
+      />
+      <div
+        aria-label="Order Summary"
+        class="space-y-2"
+        role="region"
+      >
+        <div
+          class="w-full"
+          data-orientation="vertical"
+          data-slot="accordion"
+        >
+          <div
+            class="border-b last:border-b-0"
+            data-orientation="vertical"
+            data-slot="accordion-item"
+            data-state="closed"
+          >
+            <h3
+              class="flex"
+              data-orientation="vertical"
+              data-state="closed"
+            >
+              <button
+                aria-controls="radix-«x»"
+                aria-expanded="false"
+                class="focus-visible:border-ring focus-visible:ring-ring flex flex-1 items-start justify-between gap-4 rounded-ui py-4 text-sm font-medium transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180 text-left"
+                data-orientation="vertical"
+                data-radix-collection-item=""
+                data-slot="accordion-trigger"
+                data-state="closed"
+                id="radix-«x»"
+                type="button"
+              >
+                <span
+                  class="flex-1 text-left text-sm text-primary"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-shopping-cart inline mr-2 w-4 h-4"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="8"
+                      cy="21"
+                      r="1"
+                    />
+                    <circle
+                      cx="19"
+                      cy="21"
+                      r="1"
+                    />
+                    <path
+                      d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                    />
+                  </svg>
+                  3 items in cart
+                </span>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+              </button>
+            </h3>
+            <div
+              aria-labelledby="radix-«x»"
+              class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm"
+              data-orientation="vertical"
+              data-slot="accordion-content"
+              data-state="closed"
+              hidden=""
+              id="radix-«x»"
+              role="region"
+              style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
+            />
+          </div>
+        </div>
+        <dl
+          class="grid grid-cols-[1fr_auto] gap-x-4 gap-y-2 items-center text-sm font-normal leading-5 text-muted-foreground pb-2"
+        >
+          <dt>
+            Subtotal
+          </dt>
+          <dd
+            class="justify-self-end"
+          >
+            £73.57
+          </dd>
+          <dt
+            class="flex items-center"
+          >
+            <span>
+              Shipping
+            </span>
+          </dt>
+          <dd
+            class="justify-self-end"
+          >
+            <span
+              class="text-muted-foreground"
+            >
+              TBD
+            </span>
+          </dd>
+          <dt
+            class="font-bold"
+          >
+            Estimated Total
+          </dt>
+          <dd
+            class="justify-self-end font-bold"
+          >
+            £73.57
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`OrderSummary stories snapshot > GrossTaxation story renders and matches snapshot 1`] = `
+<div
+  class="bg-card text-card-foreground flex flex-col gap-6 rounded-ui border-ui border-border py-6 shadow-ui !py-4"
+  data-slot="card"
+>
+  <div
+    class="px-[var(--cart-summary-px)]"
+    data-slot="card-content"
+  >
+    <div
+      class="space-y-4"
+      data-testid="sf-order-summary"
+    >
+      <h2
+        class="text-left text-lg font-semibold leading-[120%] tracking-[-0.45px] text-card-foreground"
+        id="order-summary-heading-desktop"
+      >
+        Order Summary
+      </h2>
+      <hr
+        class="mx-[calc(var(--cart-summary-px)*-1)] border-border"
+      />
+      <div
+        aria-label="Order Summary"
+        class="space-y-2"
+        role="region"
+      >
+        <dl
+          class="grid grid-cols-[1fr_auto] gap-x-4 gap-y-2 items-center text-sm font-normal leading-5 text-muted-foreground pb-2"
+        >
+          <dt>
+            Subtotal
+          </dt>
+          <dd
+            class="justify-self-end"
+          >
+            £73.57
+          </dd>
+          <dt
+            class="flex items-center"
+          >
+            <span>
+              Shipping
+            </span>
+          </dt>
+          <dd
+            class="justify-self-end"
+          >
+            <span
+              class="text-muted-foreground"
+            >
+              TBD
+            </span>
+          </dd>
+          <dt
+            class="font-bold"
+          >
+            Total
+          </dt>
+          <dd
+            class="justify-self-end font-bold"
+          >
+            £118.50
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`OrderSummary stories snapshot > MobileCollapsible story renders and matches snapshot 1`] = `
+<div
+  class="w-full"
+  data-orientation="vertical"
+  data-slot="accordion"
+>
+  <div
+    class="last:border-b-0 border-b-0"
+    data-orientation="vertical"
+    data-slot="accordion-item"
+    data-state="closed"
+  >
+    <h3
+      class="flex"
+      data-orientation="vertical"
+      data-state="closed"
+    >
+      <button
+        aria-controls="radix-«x»"
+        aria-expanded="false"
+        class="focus-visible:border-ring focus-visible:ring-ring flex flex-1 items-start justify-between gap-4 rounded-ui text-left text-sm font-medium transition-all outline-none focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180 px-[var(--cart-summary-px)] py-4 hover:no-underline"
+        data-orientation="vertical"
+        data-radix-collection-item=""
+        data-slot="accordion-trigger"
+        data-state="closed"
+        id="radix-«x»"
+        type="button"
+      >
+        <span
+          class="flex-1 text-left text-sm font-semibold text-primary"
+        >
+          Estimated Total (
+          3
+           items)
+        </span>
+        <svg
+          aria-hidden="true"
+          class="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200"
+          fill="none"
+          height="24"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          viewBox="0 0 24 24"
+          width="24"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="m6 9 6 6 6-6"
+          />
+        </svg>
+      </button>
+    </h3>
+    <div
+      aria-labelledby="radix-«x»"
+      class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm"
+      data-orientation="vertical"
+      data-slot="accordion-content"
+      data-state="closed"
+      hidden=""
+      id="radix-«x»"
+      role="region"
+      style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
+    />
+  </div>
+</div>
+`;
+
+exports[`OrderSummary stories snapshot > NetTaxation story renders and matches snapshot 1`] = `
+<div
+  class="bg-card text-card-foreground flex flex-col gap-6 rounded-ui border-ui border-border py-6 shadow-ui !py-4"
+  data-slot="card"
+>
+  <div
+    class="px-[var(--cart-summary-px)]"
+    data-slot="card-content"
+  >
+    <div
+      class="space-y-4"
+      data-testid="sf-order-summary"
+    >
+      <h2
+        class="text-left text-lg font-semibold leading-[120%] tracking-[-0.45px] text-card-foreground"
+        id="order-summary-heading-desktop"
+      >
+        Order Summary
+      </h2>
+      <hr
+        class="mx-[calc(var(--cart-summary-px)*-1)] border-border"
+      />
+      <div
+        aria-label="Order Summary"
+        class="space-y-2"
+        role="region"
+      >
+        <dl
+          class="grid grid-cols-[1fr_auto] gap-x-4 gap-y-2 items-center text-sm font-normal leading-5 text-muted-foreground pb-2"
+        >
+          <dt>
+            Subtotal
+          </dt>
+          <dd
+            class="justify-self-end"
+          >
+            £73.57
+          </dd>
+          <dt
+            class="flex items-center"
+          >
+            <span>
+              Shipping
+            </span>
+          </dt>
+          <dd
+            class="justify-self-end"
+          >
+            <span
+              class="text-muted-foreground"
+            >
+              TBD
+            </span>
+          </dd>
+          <dt>
+            Tax
+          </dt>
+          <dd
+            class="justify-self-end"
+          >
+            £5.25
+          </dd>
+          <dt
+            class="font-bold"
+          >
+            Total
+          </dt>
+          <dd
+            class="justify-self-end font-bold"
+          >
+            £118.50
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`OrderSummary stories snapshot > WithAppliedPromotions story renders and matches snapshot 1`] = `
+<div
+  class="bg-card text-card-foreground flex flex-col gap-6 rounded-ui border-ui border-border py-6 shadow-ui !py-4"
+  data-slot="card"
+>
+  <div
+    class="px-[var(--cart-summary-px)]"
+    data-slot="card-content"
+  >
+    <div
+      class="space-y-4"
+      data-testid="sf-order-summary"
+    >
+      <h2
+        class="text-left text-lg font-semibold leading-[120%] tracking-[-0.45px] text-card-foreground"
+        id="order-summary-heading-desktop"
+      >
+        Order Summary
+      </h2>
+      <hr
+        class="mx-[calc(var(--cart-summary-px)*-1)] border-border"
+      />
+      <div
+        aria-label="Order Summary"
+        class="space-y-2"
+        role="region"
+      >
+        <div
+          class="w-full"
+          data-orientation="vertical"
+          data-slot="accordion"
+        >
+          <div
+            class="border-b last:border-b-0"
+            data-orientation="vertical"
+            data-slot="accordion-item"
+            data-state="closed"
+          >
+            <h3
+              class="flex"
+              data-orientation="vertical"
+              data-state="closed"
+            >
+              <button
+                aria-controls="radix-«x»"
+                aria-expanded="false"
+                class="focus-visible:border-ring focus-visible:ring-ring flex flex-1 items-start justify-between gap-4 rounded-ui py-4 text-sm font-medium transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180 text-left"
+                data-orientation="vertical"
+                data-radix-collection-item=""
+                data-slot="accordion-trigger"
+                data-state="closed"
+                id="radix-«x»"
+                type="button"
+              >
+                <span
+                  class="flex-1 text-left text-sm text-primary"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-shopping-cart inline mr-2 w-4 h-4"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="8"
+                      cy="21"
+                      r="1"
+                    />
+                    <circle
+                      cx="19"
+                      cy="21"
+                      r="1"
+                    />
+                    <path
+                      d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                    />
+                  </svg>
+                  3 items in cart
+                </span>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+              </button>
+            </h3>
+            <div
+              aria-labelledby="radix-«x»"
+              class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm"
+              data-orientation="vertical"
+              data-slot="accordion-content"
+              data-state="closed"
+              hidden=""
+              id="radix-«x»"
+              role="region"
+              style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
+            />
+          </div>
+        </div>
+        <dl
+          class="grid grid-cols-[1fr_auto] gap-x-4 gap-y-2 items-center text-sm font-normal leading-5 text-muted-foreground pb-2"
+        >
+          <dt>
+            Subtotal
+          </dt>
+          <dd
+            class="justify-self-end"
+          >
+            £73.57
+          </dd>
+          <dt
+            class="inline-flex w-fit max-w-full border-0 bg-muted px-2 py-0.5 text-xs font-semibold leading-4 text-secondary-foreground whitespace-normal break-words rounded-ui"
+            data-slot="badge"
+          >
+            20% Off Discount
+          </dt>
+          <dd
+            class="text-sm font-normal leading-5 text-muted-foreground text-right"
+          >
+            -£14.71
+          </dd>
+          <dt
+            class="flex items-center"
+          >
+            <span>
+              Shipping
+            </span>
+          </dt>
+          <dd
+            class="justify-self-end"
+          >
+            <span
+              class="text-muted-foreground"
+            >
+              TBD
+            </span>
+          </dd>
+          <dt
+            class="font-bold"
+          >
+            Total
+          </dt>
+          <dd
+            class="justify-self-end font-bold"
+          >
+            £73.57
+          </dd>
+        </dl>
+        <hr
+          class="mx-[calc(var(--cart-summary-px)*-1)] border-border"
+        />
+        <div
+          class="flex w-full flex-col gap-2 pt-2 pb-4"
+        >
+          <div
+            class="mb-0"
+            data-orientation="vertical"
+            data-slot="accordion"
+          >
+            <div
+              class="border-b last:border-b-0"
+              data-orientation="vertical"
+              data-slot="accordion-item"
+              data-state="open"
+            >
+              <h3
+                class="flex"
+                data-orientation="vertical"
+                data-state="open"
+              >
+                <button
+                  aria-controls="radix-«x»"
+                  aria-expanded="true"
+                  class="focus-visible:border-ring focus-visible:ring-ring flex flex-1 items-start rounded-ui py-4 text-left text-sm font-medium transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180 justify-start gap-2 pt-1 pb-0 [&>svg]:text-primary"
+                  data-orientation="vertical"
+                  data-radix-collection-item=""
+                  data-slot="accordion-trigger"
+                  data-state="open"
+                  id="radix-«x»"
+                  type="button"
+                >
+                  <span
+                    class="text-left text-sm font-medium leading-5 text-card-foreground"
+                  >
+                    Enter a Promotion Code
+                  </span>
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m6 9 6 6 6-6"
+                    />
+                  </svg>
+                </button>
+              </h3>
+              <div
+                aria-labelledby="radix-«x»"
+                class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm"
+                data-orientation="vertical"
+                data-slot="accordion-content"
+                data-state="open"
+                id="radix-«x»"
+                role="region"
+                style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width); transition-duration: 0s; animation-name: none;"
+              >
+                <div
+                  class="px-0 pt-2 pb-2"
+                >
+                  <form
+                    data-testid="promo-code-form"
+                  >
+                    <div
+                      class="space-y-2"
+                    >
+                      <div
+                        class="grid gap-2"
+                        data-slot="form-item"
+                      >
+                        <label
+                          class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive sr-only"
+                          data-error="false"
+                          data-slot="form-label"
+                          for="_r_6_-form-item"
+                        >
+                          Promo code
+                        </label>
+                        <div
+                          class="flex gap-2"
+                        >
+                          <input
+                            aria-invalid="false"
+                            class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive focus-visible:ring-0"
+                            data-slot="input"
+                            id="_r_6_-form-item"
+                            name="code"
+                            placeholder="Promo code..."
+                            value=""
+                          />
+                          <button
+                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground hover:bg-secondary/80 h-9 py-2 has-[>svg]:px-3 cursor-pointer px-4"
+                            data-size="default"
+                            data-slot="button"
+                            data-variant="secondary"
+                            type="submit"
+                          >
+                            Apply
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="space-y-1"
+            data-testid="applied-coupons"
+          >
+            <div
+              class="flex items-center justify-between py-1"
+            >
+              <div
+                class="inline-flex items-stretch"
+              >
+                <span
+                  class="inline-flex items-center justify-center rounded-full border px-2 py-0.5 w-fit shrink-0 [&>svg]:size-3 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent bg-secondary [a&]:hover:bg-secondary/90 gap-1 text-xs font-semibold leading-4 text-secondary-foreground whitespace-normal break-words"
+                  data-slot="badge"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-check size-3"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 6 9 17l-5-5"
+                    />
+                  </svg>
+                  SAVE20
+                </span>
+                <button
+                  aria-label="Remove SAVE20"
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground hover:bg-secondary/80 size-8 h-auto w-auto px-1.5 py-0.5"
+                  data-size="icon-sm"
+                  data-slot="button"
+                  data-variant="secondary"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-x size-3"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18 6 6 18"
+                    />
+                    <path
+                      d="m6 6 12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <span
+                class="text-sm font-normal leading-5 text-muted-foreground text-right"
+              >
+                -£14.71
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`OrderSummary stories snapshot > WithBonusProductLine story renders and matches snapshot 1`] = `
+<div
+  class="bg-card text-card-foreground flex flex-col gap-6 rounded-ui border-ui border-border py-6 shadow-ui !py-4"
+  data-slot="card"
+>
+  <div
+    class="px-[var(--cart-summary-px)]"
+    data-slot="card-content"
+  >
+    <div
+      class="space-y-4"
+      data-testid="sf-order-summary"
+    >
+      <h2
+        class="text-left text-lg font-semibold leading-[120%] tracking-[-0.45px] text-card-foreground"
+        id="order-summary-heading-desktop"
+      >
+        Order Summary
+      </h2>
+      <hr
+        class="mx-[calc(var(--cart-summary-px)*-1)] border-border"
+      />
+      <div
+        aria-label="Order Summary"
+        class="space-y-2"
+        role="region"
+      >
+        <div
+          class="w-full"
+          data-orientation="vertical"
+          data-slot="accordion"
+        >
+          <div
+            class="border-b last:border-b-0"
+            data-orientation="vertical"
+            data-slot="accordion-item"
+            data-state="open"
+          >
+            <h3
+              class="flex"
+              data-orientation="vertical"
+              data-state="open"
+            >
+              <button
+                aria-controls="radix-«x»"
+                aria-expanded="true"
+                class="focus-visible:border-ring focus-visible:ring-ring flex flex-1 items-start justify-between gap-4 rounded-ui py-4 text-sm font-medium transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180 text-left"
+                data-orientation="vertical"
+                data-radix-collection-item=""
+                data-slot="accordion-trigger"
+                data-state="open"
+                id="radix-«x»"
+                type="button"
+              >
+                <span
+                  class="flex-1 text-left text-sm text-primary"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-shopping-cart inline mr-2 w-4 h-4"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="8"
+                      cy="21"
+                      r="1"
+                    />
+                    <circle
+                      cx="19"
+                      cy="21"
+                      r="1"
+                    />
+                    <path
+                      d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                    />
+                  </svg>
+                  3 items in cart
+                </span>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+              </button>
+            </h3>
+            <div
+              aria-labelledby="radix-«x»"
+              class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm"
+              data-orientation="vertical"
+              data-slot="accordion-content"
+              data-state="open"
+              id="radix-«x»"
+              role="region"
+              style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width); transition-duration: 0s; animation-name: none;"
+            >
+              <div
+                class="px-0 py-4"
+              >
+                <div
+                  class="space-y-5"
+                >
+                  <ul
+                    class="space-y-5"
+                    role="list"
+                  >
+                    <li
+                      class="border-b border-muted-foreground/10 last:border-b-0"
+                    >
+                      <div
+                        class="grid md:grid-cols-[112px_1fr] grid-cols-[72px_1fr] gap-4"
+                        data-testid="sf-product-item-summary-shirt-123"
+                      >
+                        <div
+                          class="flex items-center justify-center"
+                        >
+                          <div
+                            class="bg-muted flex-shrink-0 flex items-center justify-center aspect-square overflow-hidden rounded-ui w-16"
+                            data-slot="product-item-image"
+                          >
+                            <img
+                              alt="Men's Classic Deer Gloves, , small"
+                              class="h-full w-full object-contain"
+                              src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwd4659c06/images/small/TG508_206.webp?sfrm=jpg&q=70"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="flex-1 space-y-1 min-w-0"
+                        >
+                          <div
+                            class="mb-2 md:mb-4 flex items-start gap-2 min-w-0"
+                          >
+                            <h2
+                              class="text-left text-xl font-semibold leading-7 tracking-[-0.5px] text-card-foreground min-w-0 flex-1"
+                            >
+                              <a
+                                class="hover:text-primary block break-words"
+                                href="/RefArchGlobal/en-GB/product/:productId"
+                                title="Classic Fit Shirt"
+                              >
+                                Classic Fit Shirt
+                              </a>
+                            </h2>
+                          </div>
+                          <div>
+                            <div
+                              class="text-sm text-muted-foreground"
+                            >
+                              Qty:
+                               
+                              1
+                            </div>
+                            <ul
+                              class="text-sm font-normal leading-5 text-muted-foreground space-y-1 mb-1"
+                              role="list"
+                            >
+                              <li>
+                                Size
+                                : 
+                                L
+                              </li>
+                            </ul>
+                            <span
+                              class="inline-flex items-center justify-center rounded-full w-fit shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent [a&]:hover:bg-primary/90 h-auto min-h-0 border-0 bg-muted px-1.5 py-0.5 text-xs font-semibold leading-4 text-secondary-foreground whitespace-normal break-words"
+                              data-slot="badge"
+                            >
+                              Saved £79.99
+                            </span>
+                          </div>
+                          <div
+                            class="items-center gap-2 text-sm"
+                          >
+                            <span
+                              aria-label="Current price: £20.00"
+                              aria-live="polite"
+                              class="[&:not(:first-child)]:mt-6 text-card-foreground text-right font-semibold text-sm leading-none relative"
+                            >
+                              £20.00
+                            </span>
+                            <span
+                              aria-atomic="true"
+                              aria-live="polite"
+                              class="sr-only"
+                            >
+                              Classic Fit Shirt
+                               
+                              Current price: £20.00
+                            </span>
+                             
+                            <span
+                              aria-label="List price: £99.99"
+                              class="font-medium line-through text-muted-foreground text-right text-sm leading-none relative"
+                            >
+                              £99.99
+                            </span>
+                            <span
+                              aria-atomic="true"
+                              aria-live="polite"
+                              class="sr-only"
+                            >
+                              Classic Fit Shirt
+                               
+                              List price: £99.99
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="border-b border-muted-foreground/10 last:border-b-0"
+                    >
+                      <div
+                        class="grid md:grid-cols-[112px_1fr] grid-cols-[72px_1fr] gap-4"
+                        data-testid="sf-product-item-summary-tie-red"
+                      >
+                        <div
+                          class="flex items-center justify-center"
+                        >
+                          <div
+                            class="bg-muted flex-shrink-0 flex items-center justify-center aspect-square overflow-hidden rounded-ui w-16"
+                            data-slot="product-item-image"
+                          >
+                            <img
+                              alt="Men's Classic Deer Gloves, , small"
+                              class="h-full w-full object-contain"
+                              src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwd4659c06/images/small/TG508_206.webp?sfrm=jpg&q=70"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="flex-1 space-y-1 min-w-0"
+                        >
+                          <div
+                            class="mb-2 md:mb-4 flex items-start gap-2 min-w-0"
+                          >
+                            <span
+                              aria-label="This item is a free bonus product"
+                              class="inline-flex items-center justify-center rounded-full border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent bg-primary text-primary-foreground [a&]:hover:bg-primary/90"
+                              data-slot="badge"
+                              role="status"
+                            >
+                              Bonus Product
+                            </span>
+                            <h2
+                              class="text-left text-xl font-semibold leading-7 tracking-[-0.5px] text-card-foreground min-w-0 flex-1"
+                            >
+                              <a
+                                class="hover:text-primary block break-words"
+                                href="/RefArchGlobal/en-GB/product/:productId"
+                                title="Red Tie"
+                              >
+                                Red Tie
+                              </a>
+                            </h2>
+                          </div>
+                          <div>
+                            <div
+                              class="text-sm text-muted-foreground"
+                            >
+                              Qty:
+                               
+                              1
+                            </div>
+                            <ul
+                              class="text-sm font-normal leading-5 text-muted-foreground space-y-1 mb-1"
+                              role="list"
+                            >
+                              <li>
+                                Size
+                                : 
+                                L
+                              </li>
+                            </ul>
+                          </div>
+                          <div
+                            class="items-center gap-2 text-sm"
+                          >
+                            <span
+                              aria-label="Current price: £0.00"
+                              aria-live="polite"
+                              class="[&:not(:first-child)]:mt-6 text-card-foreground text-right font-semibold text-sm leading-none relative"
+                            >
+                              £0.00
+                            </span>
+                            <span
+                              aria-atomic="true"
+                              aria-live="polite"
+                              class="sr-only"
+                            >
+                              Red Tie
+                               
+                              Current price: £0.00
+                            </span>
+                             
+                            <span
+                              aria-label="List price: £99.99"
+                              class="font-medium line-through text-muted-foreground text-right text-sm leading-none relative"
+                            >
+                              £99.99
+                            </span>
+                            <span
+                              aria-atomic="true"
+                              aria-live="polite"
+                              class="sr-only"
+                            >
+                              Red Tie
+                               
+                              List price: £99.99
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                    <li
+                      class="border-b border-muted-foreground/10 last:border-b-0"
+                    >
+                      <div
+                        class="grid md:grid-cols-[112px_1fr] grid-cols-[72px_1fr] gap-4"
+                        data-testid="sf-product-item-summary-tie-blue"
+                      >
+                        <div
+                          class="flex items-center justify-center"
+                        >
+                          <div
+                            class="bg-muted flex-shrink-0 flex items-center justify-center aspect-square overflow-hidden rounded-ui w-16"
+                            data-slot="product-item-image"
+                          >
+                            <img
+                              alt="Men's Classic Deer Gloves, , small"
+                              class="h-full w-full object-contain"
+                              src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwd4659c06/images/small/TG508_206.webp?sfrm=jpg&q=70"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="flex-1 space-y-1 min-w-0"
+                        >
+                          <div
+                            class="mb-2 md:mb-4 flex items-start gap-2 min-w-0"
+                          >
+                            <span
+                              aria-label="This item is a free bonus product"
+                              class="inline-flex items-center justify-center rounded-full border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent bg-primary text-primary-foreground [a&]:hover:bg-primary/90"
+                              data-slot="badge"
+                              role="status"
+                            >
+                              Bonus Product
+                            </span>
+                            <h2
+                              class="text-left text-xl font-semibold leading-7 tracking-[-0.5px] text-card-foreground min-w-0 flex-1"
+                            >
+                              <a
+                                class="hover:text-primary block break-words"
+                                href="/RefArchGlobal/en-GB/product/:productId"
+                                title="Blue Tie"
+                              >
+                                Blue Tie
+                              </a>
+                            </h2>
+                          </div>
+                          <div>
+                            <div
+                              class="text-sm text-muted-foreground"
+                            >
+                              Qty:
+                               
+                              1
+                            </div>
+                            <ul
+                              class="text-sm font-normal leading-5 text-muted-foreground space-y-1 mb-1"
+                              role="list"
+                            >
+                              <li>
+                                Size
+                                : 
+                                L
+                              </li>
+                            </ul>
+                          </div>
+                          <div
+                            class="items-center gap-2 text-sm"
+                          >
+                            <span
+                              aria-label="Current price: £0.00"
+                              aria-live="polite"
+                              class="[&:not(:first-child)]:mt-6 text-card-foreground text-right font-semibold text-sm leading-none relative"
+                            >
+                              £0.00
+                            </span>
+                            <span
+                              aria-atomic="true"
+                              aria-live="polite"
+                              class="sr-only"
+                            >
+                              Blue Tie
+                               
+                              Current price: £0.00
+                            </span>
+                             
+                            <span
+                              aria-label="List price: £99.99"
+                              class="font-medium line-through text-muted-foreground text-right text-sm leading-none relative"
+                            >
+                              £99.99
+                            </span>
+                            <span
+                              aria-atomic="true"
+                              aria-live="polite"
+                              class="sr-only"
+                            >
+                              Blue Tie
+                               
+                              List price: £99.99
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <a
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive text-primary underline-offset-4 hover:underline h-9 px-4 py-2 has-[>svg]:px-3 w-full justify-center"
+                    href="/RefArchGlobal/en-GB/cart"
+                  >
+                    Edit cart
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <dl
+          class="grid grid-cols-[1fr_auto] gap-x-4 gap-y-2 items-center text-sm font-normal leading-5 text-muted-foreground pb-2"
+        >
+          <dt>
+            Subtotal
+          </dt>
+          <dd
+            class="justify-self-end"
+          >
+            £20.00
+          </dd>
+          <dt
+            class="inline-flex w-fit max-w-full border-0 bg-muted px-2 py-0.5 text-xs font-semibold leading-4 text-secondary-foreground whitespace-normal break-words rounded-ui"
+            data-slot="badge"
+          >
+            Buy one Classic Fit Shirt, get 2 free ties!
+          </dt>
+          <dd
+            class="text-sm font-normal leading-5 text-muted-foreground text-right"
+          >
+            £0.00
+          </dd>
+          <dt
+            class="flex items-center"
+          >
+            <span>
+              Shipping
+            </span>
+          </dt>
+          <dd
+            class="justify-self-end"
+          >
+            <span
+              class="text-muted-foreground"
+            >
+              TBD
+            </span>
+          </dd>
+          <dt>
+            Tax
+          </dt>
+          <dd
+            class="justify-self-end text-muted-foreground"
+          >
+            TBD
+          </dd>
+          <dt
+            class="font-bold"
+          >
+            Estimated Total
+          </dt>
+          <dd
+            class="justify-self-end font-bold"
+          >
+            £20.00
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`OrderSummary stories snapshot > WithCouponDiscount story renders and matches snapshot 1`] = `
+<div
+  class="bg-card text-card-foreground flex flex-col gap-6 rounded-ui border-ui border-border py-6 shadow-ui !py-4"
+  data-slot="card"
+>
+  <div
+    class="px-[var(--cart-summary-px)]"
+    data-slot="card-content"
+  >
+    <div
+      class="space-y-4"
+      data-testid="sf-order-summary"
+    >
+      <h2
+        class="text-left text-lg font-semibold leading-[120%] tracking-[-0.45px] text-card-foreground"
+        id="order-summary-heading-desktop"
+      >
+        Order Summary
+      </h2>
+      <hr
+        class="mx-[calc(var(--cart-summary-px)*-1)] border-border"
+      />
+      <div
+        aria-label="Order Summary"
+        class="space-y-2"
+        role="region"
+      >
+        <dl
+          class="grid grid-cols-[1fr_auto] gap-x-4 gap-y-2 items-center text-sm font-normal leading-5 text-muted-foreground pb-2"
+        >
+          <dt>
+            Subtotal
+          </dt>
+          <dd
+            class="justify-self-end"
+          >
+            £38.38
+          </dd>
+          <dt
+            class="inline-flex w-fit max-w-full border-0 bg-muted px-2 py-0.5 text-xs font-semibold leading-4 text-secondary-foreground whitespace-normal break-words rounded-ui"
+            data-slot="badge"
+          >
+            10% Off Order
+          </dt>
+          <dd
+            class="text-sm font-normal leading-5 text-muted-foreground text-right"
+          >
+            -£3.84
+          </dd>
+          <dt
+            class="flex items-center"
+          >
+            <span>
+              Shipping
+            </span>
+          </dt>
+          <dd
+            class="justify-self-end"
+          >
+            <span
+              class="text-muted-foreground"
+            >
+              TBD
+            </span>
+          </dd>
+          <dt
+            class="font-bold"
+          >
+            Total
+          </dt>
+          <dd
+            class="justify-self-end font-bold"
+          >
+            £34.54
+          </dd>
+        </dl>
+        <hr
+          class="mx-[calc(var(--cart-summary-px)*-1)] border-border"
+        />
+        <div
+          class="flex w-full flex-col gap-2 pt-2 pb-4"
+        >
+          <div
+            class="mb-0"
+            data-orientation="vertical"
+            data-slot="accordion"
+          >
+            <div
+              class="border-b last:border-b-0"
+              data-orientation="vertical"
+              data-slot="accordion-item"
+              data-state="open"
+            >
+              <h3
+                class="flex"
+                data-orientation="vertical"
+                data-state="open"
+              >
+                <button
+                  aria-controls="radix-«x»"
+                  aria-expanded="true"
+                  class="focus-visible:border-ring focus-visible:ring-ring flex flex-1 items-start rounded-ui py-4 text-left text-sm font-medium transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180 justify-start gap-2 pt-1 pb-0 [&>svg]:text-primary"
+                  data-orientation="vertical"
+                  data-radix-collection-item=""
+                  data-slot="accordion-trigger"
+                  data-state="open"
+                  id="radix-«x»"
+                  type="button"
+                >
+                  <span
+                    class="text-left text-sm font-medium leading-5 text-card-foreground"
+                  >
+                    Enter a Promotion Code
+                  </span>
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="m6 9 6 6 6-6"
+                    />
+                  </svg>
+                </button>
+              </h3>
+              <div
+                aria-labelledby="radix-«x»"
+                class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm"
+                data-orientation="vertical"
+                data-slot="accordion-content"
+                data-state="open"
+                id="radix-«x»"
+                role="region"
+                style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width); transition-duration: 0s; animation-name: none;"
+              >
+                <div
+                  class="px-0 pt-2 pb-2"
+                >
+                  <form
+                    data-testid="promo-code-form"
+                  >
+                    <div
+                      class="space-y-2"
+                    >
+                      <div
+                        class="grid gap-2"
+                        data-slot="form-item"
+                      >
+                        <label
+                          class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive sr-only"
+                          data-error="false"
+                          data-slot="form-label"
+                          for="_r_d_-form-item"
+                        >
+                          Promo code
+                        </label>
+                        <div
+                          class="flex gap-2"
+                        >
+                          <input
+                            aria-invalid="false"
+                            class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive focus-visible:ring-0"
+                            data-slot="input"
+                            id="_r_d_-form-item"
+                            name="code"
+                            placeholder="Promo code..."
+                            value=""
+                          />
+                          <button
+                            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground hover:bg-secondary/80 h-9 py-2 has-[>svg]:px-3 cursor-pointer px-4"
+                            data-size="default"
+                            data-slot="button"
+                            data-variant="secondary"
+                            type="submit"
+                          >
+                            Apply
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="space-y-1"
+            data-testid="applied-coupons"
+          >
+            <div
+              class="flex items-center justify-between py-1"
+            >
+              <div
+                class="inline-flex items-stretch"
+              >
+                <span
+                  class="inline-flex items-center justify-center rounded-full border px-2 py-0.5 w-fit shrink-0 [&>svg]:size-3 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent bg-secondary [a&]:hover:bg-secondary/90 gap-1 text-xs font-semibold leading-4 text-secondary-foreground whitespace-normal break-words"
+                  data-slot="badge"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-check size-3"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M20 6 9 17l-5-5"
+                    />
+                  </svg>
+                  SAVE10
+                </span>
+                <button
+                  aria-label="Remove SAVE10"
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-secondary text-secondary-foreground hover:bg-secondary/80 size-8 h-auto w-auto px-1.5 py-0.5"
+                  data-size="icon-sm"
+                  data-slot="button"
+                  data-variant="secondary"
+                  type="button"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-x size-3"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M18 6 6 18"
+                    />
+                    <path
+                      d="m6 6 12 12"
+                    />
+                  </svg>
+                </button>
+              </div>
+              <span
+                class="text-sm font-normal leading-5 text-muted-foreground text-right"
+              >
+                -£3.84
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`OrderSummary stories snapshot > WithGiftLine story renders and matches snapshot 1`] = `
+<div
+  class="bg-card text-card-foreground flex flex-col gap-6 rounded-ui border-ui border-border py-6 shadow-ui !py-4"
+  data-slot="card"
+>
+  <div
+    class="px-[var(--cart-summary-px)]"
+    data-slot="card-content"
+  >
+    <div
+      class="space-y-4"
+      data-testid="sf-order-summary"
+    >
+      <h2
+        class="text-left text-lg font-semibold leading-[120%] tracking-[-0.45px] text-card-foreground"
+        id="order-summary-heading-desktop"
+      >
+        Order Summary
+      </h2>
+      <hr
+        class="mx-[calc(var(--cart-summary-px)*-1)] border-border"
+      />
+      <div
+        aria-label="Order Summary"
+        class="space-y-2"
+        role="region"
+      >
+        <div
+          class="w-full"
+          data-orientation="vertical"
+          data-slot="accordion"
+        >
+          <div
+            class="border-b last:border-b-0"
+            data-orientation="vertical"
+            data-slot="accordion-item"
+            data-state="open"
+          >
+            <h3
+              class="flex"
+              data-orientation="vertical"
+              data-state="open"
+            >
+              <button
+                aria-controls="radix-«x»"
+                aria-expanded="true"
+                class="focus-visible:border-ring focus-visible:ring-ring flex flex-1 items-start justify-between gap-4 rounded-ui py-4 text-sm font-medium transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180 text-left"
+                data-orientation="vertical"
+                data-radix-collection-item=""
+                data-slot="accordion-trigger"
+                data-state="open"
+                id="radix-«x»"
+                type="button"
+              >
+                <span
+                  class="flex-1 text-left text-sm text-primary"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="lucide lucide-shopping-cart inline mr-2 w-4 h-4"
+                    fill="none"
+                    height="24"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <circle
+                      cx="8"
+                      cy="21"
+                      r="1"
+                    />
+                    <circle
+                      cx="19"
+                      cy="21"
+                      r="1"
+                    />
+                    <path
+                      d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+                    />
+                  </svg>
+                  2 items in cart
+                </span>
+                <svg
+                  aria-hidden="true"
+                  class="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200"
+                  fill="none"
+                  height="24"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  viewBox="0 0 24 24"
+                  width="24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m6 9 6 6 6-6"
+                  />
+                </svg>
+              </button>
+            </h3>
+            <div
+              aria-labelledby="radix-«x»"
+              class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm"
+              data-orientation="vertical"
+              data-slot="accordion-content"
+              data-state="open"
+              id="radix-«x»"
+              role="region"
+              style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width); transition-duration: 0s; animation-name: none;"
+            >
+              <div
+                class="px-0 py-4"
+              >
+                <div
+                  class="space-y-5"
+                >
+                  <ul
+                    class="space-y-5"
+                    role="list"
+                  >
+                    <li
+                      class="border-b border-muted-foreground/10 last:border-b-0"
+                    >
+                      <div
+                        class="grid md:grid-cols-[112px_1fr] grid-cols-[72px_1fr] gap-4"
+                        data-testid="sf-product-item-summary-029407331227M"
+                      >
+                        <div
+                          class="flex items-center justify-center"
+                        >
+                          <div
+                            class="bg-muted flex-shrink-0 flex items-center justify-center aspect-square overflow-hidden rounded-ui w-16"
+                            data-slot="product-item-image"
+                          >
+                            <img
+                              alt="Men's Classic Deer Gloves, , small"
+                              class="h-full w-full object-contain"
+                              src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwd4659c06/images/small/TG508_206.webp?sfrm=jpg&q=70"
+                            />
+                          </div>
+                        </div>
+                        <div
+                          class="flex-1 space-y-1 min-w-0"
+                        >
+                          <div
+                            class="mb-2 md:mb-4 flex items-start gap-2 min-w-0"
+                          >
+                            <h2
+                              class="text-left text-xl font-semibold leading-7 tracking-[-0.5px] text-card-foreground min-w-0 flex-1"
+                            >
+                              <a
+                                class="hover:text-primary block break-words"
+                                href="/RefArchGlobal/en-GB/product/:productId"
+                                title="Solid Silk Tie"
+                              >
+                                Solid Silk Tie
+                              </a>
+                            </h2>
+                          </div>
+                          <div>
+                            <div
+                              class="text-sm text-muted-foreground"
+                            >
+                              Qty:
+                               
+                              2
+                            </div>
+                            <ul
+                              class="text-sm font-normal leading-5 text-muted-foreground space-y-1 mb-1"
+                              role="list"
+                            >
+                              <li>
+                                Size
+                                : 
+                                L
+                              </li>
+                            </ul>
+                            <span
+                              class="inline-flex items-center justify-center rounded-full w-fit shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent [a&]:hover:bg-primary/90 h-auto min-h-0 border-0 bg-muted px-1.5 py-0.5 text-xs font-semibold leading-4 text-secondary-foreground whitespace-normal break-words"
+                              data-slot="badge"
+                            >
+                              Saved £161.60
+                            </span>
+                          </div>
+                          <div
+                            class="items-center gap-2 text-sm"
+                          >
+                            <span
+                              aria-label="Current price: £19.19"
+                              aria-live="polite"
+                              class="[&:not(:first-child)]:mt-6 text-card-foreground text-right font-semibold text-sm leading-none relative"
+                            >
+                              £19.19
+                            </span>
+                            <span
+                              aria-atomic="true"
+                              aria-live="polite"
+                              class="sr-only"
+                            >
+                              Solid Silk Tie
+                               
+                              Current price: £19.19
+                            </span>
+                             
+                            <span
+                              aria-label="List price: £99.99"
+                              class="font-medium line-through text-muted-foreground text-right text-sm leading-none relative"
+                            >
+                              £99.99
+                            </span>
+                            <span
+                              aria-atomic="true"
+                              aria-live="polite"
+                              class="sr-only"
+                            >
+                              Solid Silk Tie
+                               
+                              List price: £99.99
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                  <a
+                    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive text-primary underline-offset-4 hover:underline h-9 px-4 py-2 has-[>svg]:px-3 w-full justify-center"
+                    href="/RefArchGlobal/en-GB/cart"
+                  >
+                    Edit cart
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <dl
+          class="grid grid-cols-[1fr_auto] gap-x-4 gap-y-2 items-center text-sm font-normal leading-5 text-muted-foreground pb-2"
+        >
+          <dt>
+            Subtotal
+          </dt>
+          <dd
+            class="justify-self-end"
+          >
+            £38.38
+          </dd>
+          <dt
+            class="flex items-center"
+          >
+            <span>
+              Shipping
+            </span>
+          </dt>
+          <dd
+            class="justify-self-end"
+          >
+            <span
+              class="text-muted-foreground"
+            >
+              TBD
+            </span>
+          </dd>
+          <dt
+            class="font-bold"
+          >
+            Estimated Total
+          </dt>
+          <dd
+            class="justify-self-end font-bold"
+          >
+            £38.38
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`OrderSummary stories snapshot > WithItemLevelPromotions story renders and matches snapshot 1`] = `
+<div
+  class="bg-card text-card-foreground flex flex-col gap-6 rounded-ui border-ui border-border py-6 shadow-ui !py-4"
+  data-slot="card"
+>
+  <div
+    class="px-[var(--cart-summary-px)]"
+    data-slot="card-content"
+  >
+    <div
+      class="space-y-4"
+      data-testid="sf-order-summary"
+    >
+      <h2
+        class="text-left text-lg font-semibold leading-[120%] tracking-[-0.45px] text-card-foreground"
+        id="order-summary-heading-desktop"
+      >
+        Order Summary
+      </h2>
+      <hr
+        class="mx-[calc(var(--cart-summary-px)*-1)] border-border"
+      />
+      <div
+        aria-label="Order Summary"
+        class="space-y-2"
+        role="region"
+      >
+        <dl
+          class="grid grid-cols-[1fr_auto] gap-x-4 gap-y-2 items-center text-sm font-normal leading-5 text-muted-foreground pb-2"
+        >
+          <dt>
+            Subtotal
+          </dt>
+          <dd
+            class="justify-self-end"
+          >
+            £58.29
+          </dd>
+          <dt
+            class="inline-flex w-fit max-w-full border-0 bg-muted px-2 py-0.5 text-xs font-semibold leading-4 text-secondary-foreground whitespace-normal break-words rounded-ui"
+            data-slot="badge"
+          >
+            $10 Off Ties
+          </dt>
+          <dd
+            class="text-sm font-normal leading-5 text-muted-foreground text-right"
+          >
+            -£10.00
+          </dd>
+          <dt
+            class="inline-flex w-fit max-w-full border-0 bg-muted px-2 py-0.5 text-xs font-semibold leading-4 text-secondary-foreground whitespace-normal break-words rounded-ui"
+            data-slot="badge"
+          >
+            15% Off Tops
+          </dt>
+          <dd
+            class="text-sm font-normal leading-5 text-muted-foreground text-right"
+          >
+            -£5.28
+          </dd>
+          <dt
+            class="flex items-center"
+          >
+            <span>
+              Shipping
+            </span>
+          </dt>
+          <dd
+            class="justify-self-end"
+          >
+            <span
+              class="text-muted-foreground"
+            >
+              TBD
+            </span>
+          </dd>
+          <dt
+            class="font-bold"
+          >
+            Total
+          </dt>
+          <dd
+            class="justify-self-end font-bold"
+          >
+            £58.29
+          </dd>
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
+`;

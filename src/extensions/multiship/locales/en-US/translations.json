@@ -1,0 +1,42 @@
+{
+    "checkout": {
+        "addressForm": {
+            "addAddressTitle": "Add Address",
+            "firstNamePlaceholder": "First name",
+            "lastNamePlaceholder": "Last name",
+            "countryPlaceholder": "Country",
+            "address1Placeholder": "Address Line 1",
+            "address2Placeholder": "Address Line 2",
+            "cityPlaceholder": "City",
+            "zipCodePlaceholder": "Zip code",
+            "postalCodePlaceholder": "Postal code",
+            "selectStatePlaceholder": "Select State",
+            "selectProvincePlaceholder": "Select Province",
+            "addressFormValidationError": "Please fill in all fields",
+            "deliveryAddressIdFallback": "Delivery Address {{firstName}} {{lastName}}",
+            "saveButton": "Save",
+            "cancelButton": "Cancel"
+        },
+        "edit": "Edit",
+        "shipItemsToOneAddress": "Ship items to one address",
+        "deliverToMultipleAddresses": "Deliver to multiple addresses",
+        "deliveryAddressLabel": "Delivery Address",
+        "quantity": "Qty",
+        "shippingMultiAddressTitle": "Shipping Address",
+        "shippingMultiOptionsTitle": "Shipping Method",
+        "noAddressAvailable": "No address available",
+        "noAddress": "No address",
+        "selectAddress": "Select an address",
+        "addNewAddress": "Add new address",
+        "missingAddresses": "Please select an address for all items",
+        "continue": "Continue to Shipping Options",
+        "submitting": "Submitting",
+        "shipmentNumber": "Shipment {{number}}:",
+        "shipmentNumberWithRecipient": "Shipment {{number}} → {{name}}",
+        "shippingMethodsForShipment": "Shipping methods for shipment {{number}}",
+        "noShipmentsAvailable": "No shipments available",
+        "noMethodSelected": "No method selected",
+        "error": "Something went wrong. Try again later.",
+        "shippingToMultipleLocations": "You are shipping to multiple locations."
+    }
+}

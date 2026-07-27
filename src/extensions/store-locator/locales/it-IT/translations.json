@@ -1,0 +1,49 @@
+{
+    "footer": {
+        "links": {
+            "storeLocator": "Trova negozio"
+        }
+    },
+    "storeLocator": {
+        "title": "Trova un negozio",
+        "description": "Cerchi negozi per paese e codice postale o utilizzi la Sua posizione attuale.",
+        "form": {
+            "searchFormAriaLabel": "Modulo di ricerca negozi",
+            "countryLabel": "Paese",
+            "selectCountry": "Selezioni un paese",
+            "selectCountryValidation": "Selezioni un paese.",
+            "postalCodeLabel": "Codice postale",
+            "postalCodePlaceholder": "Inserisca il codice postale",
+            "postalCodeValidation": "Inserisca un codice postale.",
+            "findButton": "Trova",
+            "or": "Oppure",
+            "useMyLocationButton": "Usa la mia posizione"
+        },
+        "trigger": {
+            "ariaLabel": "Trova un negozio",
+            "openAriaLabel": "Apri Trova un negozio"
+        },
+        "sheet": {
+            "closeAriaLabel": "Chiudi localizzatore negozi"
+        },
+        "list": {
+            "geoError": "Per utilizzare la Sua posizione, abiliti la condivisione della posizione.",
+            "noResults": "Spiacenti, non ci sono negozi in questa area.",
+            "statusInput": "Visualizzazione negozi entro {{distanceText}} da {{postal}} in {{countryName}}",
+            "statusLocation": "Visualizzazione negozi vicino alla Sua posizione",
+            "loadMoreButton": "Carica altri",
+            "fetchError": "Qualcosa è andato storto. Riprovi!"
+        },
+        "details": {
+            "phoneLabel": "Telefono:",
+            "emailLabel": "Email:",
+            "storeDetailsTitle": "Dettagli negozio",
+            "storeHoursTitle": "Orari del negozio",
+            "distanceAway": "{{distance}} {{unit}} di distanza"
+        },
+        "address": {
+            "multilineFormat": "{{address1}}\n{{city}}, {{stateCode}} {{postalCode}}",
+            "singleLineFormat": "{{address1}}, {{city}}, {{stateCode}} {{postalCode}}"
+        }
+    }
+}

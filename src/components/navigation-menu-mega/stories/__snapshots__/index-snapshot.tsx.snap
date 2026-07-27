@@ -1,0 +1,101 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CategoryNavigationMenuMega stories snapshot > Default story renders and matches snapshot 1`] = `
+<div
+  style="--header-height: 72px;"
+>
+  <div
+    class="relative z-50 flex h-[72px] items-center bg-header-background px-8 text-header-foreground shadow-sm"
+  >
+    <button
+      aria-expanded="false"
+      aria-label="Open menu"
+      class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:text-accent-foreground dark:hover:bg-accent/50 size-9 lg:hidden hover:bg-transparent hover:opacity-50 transition-opacity"
+      data-size="icon"
+      data-slot="button"
+      data-variant="ghost"
+    >
+      <svg
+        aria-hidden="true"
+        class="lucide lucide-menu size-5"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4 5h16"
+        />
+        <path
+          d="M4 12h16"
+        />
+        <path
+          d="M4 19h16"
+        />
+      </svg>
+    </button>
+    <div
+      class="hidden lg:flex items-center h-full"
+    />
+  </div>
+  <div
+    aria-hidden="true"
+    class="min-h-[520px] bg-background"
+  />
+</div>
+`;
+
+exports[`CategoryNavigationMenuMega stories snapshot > MobileView story renders and matches snapshot 1`] = `
+<div
+  style="--header-height: 72px;"
+>
+  <div
+    class="relative z-50 flex h-[72px] items-center bg-header-background px-8 text-header-foreground shadow-sm"
+  >
+    <button
+      aria-expanded="false"
+      aria-label="Open menu"
+      class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:text-accent-foreground dark:hover:bg-accent/50 size-9 lg:hidden hover:bg-transparent hover:opacity-50 transition-opacity"
+      data-size="icon"
+      data-slot="button"
+      data-variant="ghost"
+    >
+      <svg
+        aria-hidden="true"
+        class="lucide lucide-menu size-5"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M4 5h16"
+        />
+        <path
+          d="M4 12h16"
+        />
+        <path
+          d="M4 19h16"
+        />
+      </svg>
+    </button>
+    <div
+      class="hidden lg:flex items-center h-full"
+    />
+  </div>
+  <div
+    aria-hidden="true"
+    class="min-h-[520px] bg-background"
+  />
+</div>
+`;

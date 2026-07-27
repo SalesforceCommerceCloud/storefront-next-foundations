@@ -1,0 +1,32 @@
+{
+    "id": "metadata-page",
+    "typeId": "storePage",
+    "name": "Nom de Page Localisé",
+    "aspectTypeId": "homeAspect",
+    "description": "Page d'accueil localisée du storefront.",
+    "pageTitle": "Bienvenue - Ma Boutique",
+    "pageDescription": "Description localisée pour le référencement.",
+    "pageKeywords": "boutique,bienvenue,vitrine",
+    "regions": [
+        {
+            "id": "main",
+            "components": [
+                {
+                    "id": "hero-1",
+                    "typeId": "commerce_assets.heroBanner",
+                    "regions": [],
+                    "fragment": false,
+                    "localized": false,
+                    "visible": true,
+                    "data": {
+                        "hero": {
+                            "focalPoint": { "x": 0.5, "y": 0.5 },
+                            "metaData": { "width": 1200, "height": 600 },
+                            "url": "https://www.shop.example/on/demandware.static/-/Library-Sites-MyLibrary/fr_FR/v1/images/hero/banner.jpg"
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

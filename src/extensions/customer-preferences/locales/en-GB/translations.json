@@ -1,0 +1,35 @@
+{
+    "interestsPreferences": {
+        "title": "Interests & Preferences",
+        "description": "Add your design interests and manage your shopping preferences",
+        "successMessage": "Your interests and preferences were updated.",
+        "errorMessage": "Failed to update. Try again.",
+        "loadError": "We couldn't load your interests and preferences. Please refresh the page to try again."
+    },
+    "interests": {
+        "title": "Your Interests",
+        "noneSelected": "No interests selected",
+        "addMore": "Add more",
+        "addInterestsTitle": "Add Your Interests"
+    },
+    "preferences": {
+        "noneSelected": "None selected",
+        "addMore": "Add more",
+        "dialogTitle": "Select Options",
+        "selectCategory": "Select {{category}}"
+    },
+    "measures": {
+        "roomDimensionsLabel": "Room dimensions:",
+        "ceilingHeightLabel": "Ceiling height:",
+        "noneProvided": "No measures provided"
+    },
+    "size": {
+        "preferredSizeLabel": "Preferred product size:"
+    },
+    "common": {
+        "save": "Save",
+        "saving": "Saving...",
+        "cancel": "Cancel",
+        "edit": "Edit"
+    }
+}

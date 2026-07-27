@@ -1,0 +1,20 @@
+{
+    "contentComingSoon": "Content volgt binnenkort.",
+    "faq": {
+        "askAssistant": "Vraag de assistent",
+        "faqQuestionSendToAssistantAriaLabel": "Open de shopperagent en vraag: {{question}}"
+    },
+    "returnsAndWarranty": {
+        "learnMore": "Beleid bekijken",
+        "returnConditions": "Retourvoorwaarden:",
+        "howToReturn": "Retourneren:",
+        "note": "Opmerking:",
+        "whatsCovered": "Wat gedekt is:",
+        "whatsNotCovered": "Wat niet gedekt is:",
+        "warrantyClaims": "Garantieclaims:",
+        "exchangeProcess": "Uitwisselingsproces:",
+        "needHelp": "Hulp nodig?",
+        "contactAt": "Neem contact met ons op via",
+        "orCall": "of bel"
+    }
+}

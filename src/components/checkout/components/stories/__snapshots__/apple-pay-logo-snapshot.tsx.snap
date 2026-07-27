@@ -1,0 +1,47 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ApplePayLogo stories snapshot > Decorative story renders and matches snapshot 1`] = `
+<div
+  style="background-color: rgb(0, 0, 0); padding: 20px; border-radius: 8px;"
+>
+  <img
+    alt=""
+    aria-hidden="true"
+    class=" h-4 w-auto object-contain"
+    height="16"
+    src="__ASSET_MOCK__"
+    style="filter: brightness(0) invert(1);"
+    width="48"
+  />
+</div>
+`;
+
+exports[`ApplePayLogo stories snapshot > Default story renders and matches snapshot 1`] = `
+<div
+  style="background-color: rgb(0, 0, 0); padding: 20px; border-radius: 8px;"
+>
+  <img
+    alt="Apple Pay"
+    class=" h-4 w-auto object-contain"
+    height="16"
+    src="__ASSET_MOCK__"
+    style="filter: brightness(0) invert(1);"
+    width="48"
+  />
+</div>
+`;
+
+exports[`ApplePayLogo stories snapshot > WithCustomClassName story renders and matches snapshot 1`] = `
+<div
+  style="background-color: rgb(0, 0, 0); padding: 20px; border-radius: 8px;"
+>
+  <img
+    alt="Apple Pay"
+    class="custom-class h-4 w-auto object-contain"
+    height="16"
+    src="__ASSET_MOCK__"
+    style="filter: brightness(0) invert(1);"
+    width="48"
+  />
+</div>
+`;

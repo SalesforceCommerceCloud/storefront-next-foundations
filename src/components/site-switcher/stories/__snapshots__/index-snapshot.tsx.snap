@@ -1,0 +1,97 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SiteSwitcher stories snapshot > Default story renders and matches snapshot 1`] = `
+<div
+  class="*:not-first:mt-2"
+>
+  <div
+    class="group/native-select relative w-fit has-[select:disabled]:opacity-50"
+    data-slot="native-select-wrapper"
+  >
+    <select
+      aria-label="Select site"
+      class="border-input placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 dark:hover:bg-input/50 h-9 w-full min-w-0 appearance-none rounded-md border bg-transparent px-3 py-2 pr-9 text-sm shadow-xs transition-[color,box-shadow] outline-none disabled:pointer-events-none disabled:cursor-not-allowed data-[size=sm]:h-8 data-[size=sm]:py-1 focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+      data-size="default"
+      data-slot="native-select"
+      id="_r_0_"
+    >
+      <option
+        value="RefArchGlobal"
+      >
+        Global (UK)
+      </option>
+      <option
+        value="RefArch"
+      >
+        United States
+      </option>
+    </select>
+    <svg
+      aria-hidden="true"
+      class="lucide lucide-chevron-down text-muted-foreground pointer-events-none absolute top-1/2 right-3.5 size-4 -translate-y-1/2 opacity-50 select-none"
+      data-slot="native-select-icon"
+      fill="none"
+      height="24"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="m6 9 6 6 6-6"
+      />
+    </svg>
+  </div>
+</div>
+`;
+
+exports[`SiteSwitcher stories snapshot > MultipleSites story renders and matches snapshot 1`] = `
+<div
+  class="*:not-first:mt-2"
+>
+  <div
+    class="group/native-select relative w-fit has-[select:disabled]:opacity-50"
+    data-slot="native-select-wrapper"
+  >
+    <select
+      aria-label="Select site"
+      class="border-input placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 dark:hover:bg-input/50 h-9 w-full min-w-0 appearance-none rounded-md border bg-transparent px-3 py-2 pr-9 text-sm shadow-xs transition-[color,box-shadow] outline-none disabled:pointer-events-none disabled:cursor-not-allowed data-[size=sm]:h-8 data-[size=sm]:py-1 focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+      data-size="default"
+      data-slot="native-select"
+      id="_r_1_"
+    >
+      <option
+        value="RefArchGlobal"
+      >
+        Global (UK)
+      </option>
+      <option
+        value="RefArch"
+      >
+        United States
+      </option>
+    </select>
+    <svg
+      aria-hidden="true"
+      class="lucide lucide-chevron-down text-muted-foreground pointer-events-none absolute top-1/2 right-3.5 size-4 -translate-y-1/2 opacity-50 select-none"
+      data-slot="native-select-icon"
+      fill="none"
+      height="24"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="m6 9 6 6 6-6"
+      />
+    </svg>
+  </div>
+</div>
+`;

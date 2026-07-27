@@ -1,0 +1,14 @@
+/*
+ * Figma `colors.light.custom` palette — sub-palette for input-bg helpers
+ * and focus-state rgba overlays.
+ */
+:root {
+    /* focus states */
+    --focus: rgba(163, 163, 163, 0.5);
+    --destructive-focus: rgba(220, 40, 40, 0.4);
+
+    /* inputs background helpers */
+    --bg-input-30: #ffffff;
+    --bg-input-50: #fafafa;
+    --bg-input-80: #f4f4f5;
+}

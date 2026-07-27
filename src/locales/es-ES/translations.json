@@ -1,0 +1,1571 @@
+{
+    "actionCard": {
+        "edit": "Editar",
+        "remove": "Eliminar"
+    },
+    "categoryRefinements": {
+        "appliedFilters": "Filtros aplicados:",
+        "clearAll": "Borrar todo",
+        "filtersButtonLabel": "Filtros",
+        "filtersButtonLabelWithCount": "{{label}}, {{count}} seleccionado",
+        "noFilterOptionsAvailable": "No hay opciones de filtro disponibles."
+    },
+    "common": {
+        "loading": "Cargando",
+        "loadingMore": "Cargando más...",
+        "product": "El producto",
+        "noImageAvailable": "No hay imagen disponible",
+        "productGeneric": "Producto",
+        "noProductsFound": "No se han encontrado productos",
+        "productCarousel": "Carrusel de productos",
+        "productImageAlt": "Imagen de producto",
+        "suggestionImageAlt": "Imagen de sugerencia",
+        "hero": {
+            "defaultTitle": "COMPRAR AHORA",
+            "defaultImageAlt": "Imagen principal",
+            "defaultCtaText": "COMPRAR AHORA"
+        },
+        "previousImage": "Imagen anterior",
+        "nextImage": "Siguiente imagen"
+    },
+    "search": {
+        "results": "Resultados de la búsqueda para",
+        "suggestions": {
+            "didYouMean": "¿Quisiste decir",
+            "categories": "Categorías",
+            "products": "Productos",
+            "popularSearches": "Búsquedas populares",
+            "recentSearches": "Búsquedas recientes",
+            "clearRecentSearches": "Borrar búsquedas recientes",
+            "viewAll": "Ver todo"
+        }
+    },
+    "customer": {
+        "defaults": {
+            "guestFirstName": "Huésped",
+            "guestLastName": "Usuario",
+            "defaultAddressName": "Inicio",
+            "defaultBillingAddressName": "Facturación"
+        },
+        "messages": {
+            "currentUserRecommendation": "Uso de la información de tu cuenta",
+            "guestRecommendation": "Continuando como invitado. Puedes iniciar sesión más tarde si tienes una cuenta."
+        }
+    },
+    "removeItem": {
+        "success": "Se ha eliminado el artículo.",
+        "failed": "No se pudo eliminar el elemento.",
+        "title": "Eliminar artículo",
+        "button": "Eliminar",
+        "removing": "Quitar...",
+        "confirmTitle": "Confirmar eliminación del artículo",
+        "cancelButton": "No, conservar artículo",
+        "keepItemButton": "Conservar artículo",
+        "confirmAction": "Sí, eliminar artículo",
+        "keepItemAriaLabel": "Conservar artículo: mantén este artículo en tu carrito",
+        "removeItemAriaLabel": "Sí, eliminar artículo - Eliminar este artículo de la cesta"
+    },
+    "editItem": {
+        "title": "Editar artículo del carrito",
+        "quickAddTitle": "Adición rápida",
+        "loadError": "No se pudieron cargar los detalles del producto. Intenta de nuevo.",
+        "retry": "Intentar de nuevo",
+        "loadingProduct": "Cargando..."
+    },
+    "header": {
+        "logoAlt": "Inicio",
+        "openChat": "Chat abierto",
+        "searchPlaceholder": "Buscar",
+        "welcomeBack": "¡Bienvenido!",
+        "signIn": "Registrarse",
+        "signOut": "Cerrar sesión",
+        "signingOut": "Cerrar sesión...",
+        "cartTitle": "Mi Carrito",
+        "checkout": "Finalizar la compra",
+        "continueShopping": "Continuar comprando",
+        "openMenu": "Abrir menú",
+        "closeMenu": "Cerrar menú",
+        "mobileNavigation": "Menú de navegación móvil",
+        "expandCategory": "Ampliar {{category}}",
+        "collapseCategory": "Contraer {{category}}",
+        "menu": {
+            "yourLists": "Tus listas",
+            "yourAccount": "Tu cuenta",
+            "savedItems": "Elementos guardados",
+            "overview": "Información general",
+            "addressBook": "Libreta de direcciones",
+            "paymentMethods": "Métodos de pago",
+            "signInForBestExperience": "Inicia sesión para disfrutar de la mejor experiencia",
+            "newCustomer": "¿Nuevo cliente?",
+            "createAccount": "Crear cuenta"
+        }
+    },
+    "login": {
+        "title": "Inicia sesión en tu cuenta",
+        "subtitle": "Ingresa tus credenciales para acceder a tu cuenta",
+        "continueWithProvider": "Continuar con {{provider}}",
+        "checkEmailTitle": "Revisa tu correo electrónico",
+        "checkEmailDescription": "Hemos enviado un enlace de inicio de sesión a {{email}}. Haz clic en el enlace para iniciar sesión.",
+        "backToLogin": "Volver al inicio de sesión",
+        "emailLabel": "Dirección de correo electrónico",
+        "emailPlaceholder": "Ingresa tu correo electrónico",
+        "passwordLabel": "Contraseña",
+        "passwordPlaceholder": "Ingresa tu contraseña",
+        "loginWithoutPassword": "Iniciar sesión sin contraseña",
+        "loginWithPassword": "Iniciar sesión con contraseña",
+        "forgotPassword": "¿Olvidaste tu contraseña?",
+        "noAccountQuestion": "¿No tiene una cuenta? ",
+        "signUp": "Únete",
+        "signingIn": "Iniciando sesión...",
+        "sendLoginLink": "Enviar enlace de inicio de sesión",
+        "sendingLoginLink": "Enviando enlace de inicio de sesión...",
+        "signIn": "Registrarse",
+        "socialOrContinueWith": "O continuar con",
+        "otpCodeLabel": "Código de verificación",
+        "redirecting": "Iniciando sesión...",
+        "otpModalTitle": "Ingresa el código de verificación",
+        "otpModalDescription": "Hemos enviado un {{otpLength}}código de dígitos a {{email}}",
+        "otpRequired": "Se requiere un código de verificación",
+        "otpInvalidFormat": "Ingresa un código de dígitos válido {{otpLength}}",
+        "verifying": "Verificando...",
+        "checkoutAsGuest": "Proceso de compra como invitado",
+        "resendCode": "Reenviar código",
+        "resendCodeTimer": "Reenviar en {{timer}}s",
+        "resendCodeError": "No se pudo volver a enviar el código. Intenta de nuevo."
+    },
+    "resetPassword": {
+        "title": "Restablecer contraseña",
+        "subtitle": "Ingresa tu correo electrónico para recibir instrucciones sobre cómo restablecer tu contraseña",
+        "checkEmailTitle": "Revisa tu correo electrónico",
+        "checkEmailDescription": "Recibirás un correo electrónico en {{email}} con un vínculo para restablecer tu contraseña a la brevedad.",
+        "backToSignIn": "Regresar a Registrarse",
+        "emailLabel": "Dirección de correo electrónico",
+        "emailPlaceholder": "Ingresa tu correo electrónico",
+        "or": "o ",
+        "goBackToLogin": "Volver a la página de inicio de sesión",
+        "emailRequired": "La dirección de correo electrónico es obligatoria.",
+        "newPasswordRequired": "Se requiere una nueva contraseña.",
+        "confirmPasswordRequired": "Se requiere confirmar la contraseña.",
+        "sendingEmail": "Envío de correo electrónico...",
+        "resetButton": "Restablecer contraseña",
+        "landingTitle": "Establecer nueva contraseña",
+        "landingSubtitle": "Ingresa tu nueva contraseña a continuación",
+        "newPasswordLabel": "Contraseña nueva",
+        "newPasswordPlaceholder": "Crea una contraseña segura",
+        "confirmPasswordLabel": "Confirmar contraseña",
+        "confirmPasswordPlaceholder": "Confirma tu contraseña",
+        "passwordsMustMatch": "Las contraseñas deben coincidir",
+        "resetPasswordButton": "Restablecer contraseña",
+        "resettingPassword": "Restablecimiento de contraseña...",
+        "invalidToken": "Enlace de restablecimiento no válido o caducado. Solicitar una nueva.",
+        "resetSuccess": "¡Se restableció la contraseña! Iniciando sesión...",
+        "resetSuccessToast": "¡Se restableció la contraseña! Inicia sesión con tu nueva contraseña."
+    },
+    "signup": {
+        "title": "Crea tu cuenta",
+        "subtitle": "Únete a nosotros y comience a comprar hoy mismo",
+        "haveAccountQuestion": "¿Tienes una cuenta? ",
+        "signIn": "Registrarse",
+        "allFieldsRequired": "Todos los campos son obligatorios.",
+        "passwordsDoNotMatch": "Las contraseñas no coinciden.",
+        "passwordNotSecure": "La contraseña no cumple los requisitos de seguridad.",
+        "form": {
+            "firstNameLabel": "Nombre",
+            "firstNamePlaceholder": "Ingresa tu nombre",
+            "lastNameLabel": "Apellido",
+            "lastNamePlaceholder": "Ingresa tu apellido",
+            "emailLabel": "Dirección de correo electrónico",
+            "emailPlaceholder": "Ingresa tu dirección de correo electrónico",
+            "passwordLabel": "Contraseña",
+            "passwordPlaceholder": "Crea una contraseña segura",
+            "confirmPasswordLabel": "Confirmar contraseña",
+            "confirmPasswordPlaceholder": "Confirma tu contraseña",
+            "createAccountButton": "Crear cuenta"
+        },
+        "passwordRequirements": {
+            "title": "Requisitos de contraseña:",
+            "minLength": "Al menos 8 caracteres",
+            "hasUppercase": "Una letra mayúscula",
+            "hasLowercase": "Una letra minúscula",
+            "hasNumber": "Un número",
+            "hasSpecialChar": "Un carácter especial (, ! % # @ $ & * etc.)"
+        }
+    },
+    "socialCallback": {
+        "socialError": "El inicio de sesión social se canceló o falló. Intenta de nuevo."
+    },
+    "errors": {
+        "genericTryAgain": "Se produjo un error. Intenta de nuevo.",
+        "somethingWentWrong": "Se produjo un error. Intenta de nuevo.",
+        "loginFailed": "Error al iniciar sesión. Revisa tus credenciales.",
+        "accessTokenRefreshFailed": "Error al recuperar el token de acceso actualizado.",
+        "guestAccessTokenFailed": "Error al recuperar el nuevo token de acceso.",
+        "codeVerifierMissing": "No se encontró el comprobador de código en la sesión.",
+        "missingRegistrationField": "Falta el campo obligatorio para el registro del cliente.",
+        "autoLoginAfterRegistrationFailed": "Error en el inicio de sesión automático después del registro.",
+        "methodNotAllowed": "Método no permitido.",
+        "featureUnavailable": "Esta función no está disponible actualmente. Comuníquese con Soporte.",
+        "tooManyLoginAttempts": "Has alcanzado el límite de intentos de inicio de sesión. Por tu seguridad, espera 10 minutos y vuelve a intentarlo.",
+        "tooManyPasswordResetAttempts": "Has alcanzado el límite de restablecimientos de contraseña. Por tu seguridad, espera 10 minutos y vuelve a intentarlo.",
+        "invalidToken": "El código de verificación no es válido. Intenta de nuevo.",
+        "expiredToken": "El código de verificación ha caducado. Solicite uno nuevo.",
+        "promoCodeRequired": "Se requiere un código de promoción.",
+        "couponItemIdRequired": "Se requiere la identificación del artículo del cupón.",
+        "noBasketFound": "No se encontró ninguna canasta.",
+        "noCustomerFound": "No se encontró ningún cliente en la sesión",
+        "api": {
+            "orderNotFound": "Pedido no encontrado. Comprueba el número de pedido e inténtalo de nuevo.",
+            "basketNotFound": "No se ha encontrado la cesta de la compra. Actualiza la página e inténtalo de nuevo.",
+            "basketQuotaExceeded": "Se ha superado el número máximo de canastas. Utiliza tu canasta existente.",
+            "paymentFailed": "Error en el pago. Revisa tu información de pago e inténtalo de nuevo.",
+            "paymentInformationRequired": "La información de pago es necesaria para completar tu pedido.",
+            "unableToLoadCustomerProfile": "No se puede cargar tu perfil. Actualiza la página e inténtalo de nuevo.",
+            "inventoryUnavailable": "Algunos artículos en tu carrito ya no están disponibles. Revisa tu carrito.",
+            "invalidOrderData": "Datos de pedidos no válidos. Verifica la información de pago e inténtalo de nuevo.",
+            "shippingAddressRequired": "Se requiere la dirección de envío para continuar.",
+            "billingAddressRequired": "La dirección de facturación es necesaria para completar su pedido.",
+            "networkError": "Error de red. Comprueba tu conexión e inténtalo de nuevo.",
+            "serverError": "Error del servidor. Intenta de nuevo más tarde.",
+            "unauthorized": "Tu sesión caducó. Inicia sesión de nuevo.",
+            "badRequest": "Solicitud no válida. Revisa tu información e inténtalo de nuevo.",
+            "forbidden": "Acceso denegado. No tienes permiso para realizar esta acción.",
+            "timeout": "Solicite tiempo de espera. Intenta de nuevo.",
+            "unexpectedError": "Se produjo un error inesperado."
+        },
+        "validation": {
+            "required": "Este campo es obligatorio.",
+            "invalidEmail": "Ingresa una dirección de correo electrónico válida.",
+            "invalidCreditCard": "Ingresa un número de tarjeta de crédito válido.",
+            "invalidExpiryDate": "Ingresa una fecha de caducidad válida.",
+            "invalidCvv": "Ingresa un código CVV válido.",
+            "minLength": "Este campo debe tener al menos {{min}} caracteres.",
+            "maxLength": "Este campo no puede exceder de {{max}} caracteres.",
+            "invalidPhoneNumber": "Ingresa un número de teléfono válido.",
+            "invalidPostalCode": "Escribe un código postal válido."
+        },
+        "checkout": {
+            "noActiveBasket": "No se encontró ninguna canasta activa. Actualiza la página e inténtalo de nuevo.",
+            "basketCalculationFailed": "No se pudo calcular el total del pedido. Intenta de nuevo.",
+            "orderCreationFailed": "No se pudo crear el orden. Intenta de nuevo.",
+            "paymentProcessingFailed": "Error en el procesamiento del pago. Intenta de nuevo.",
+            "shippingMethodNotAvailable": "El método de envío seleccionado no está disponible. Elige otra opción.",
+            "shippingMethodRequired": "Selecciona un método de envío para continuar.",
+            "addressValidationFailed": "Error en la validación de la dirección. Comprueba tu dirección e inténtalo de nuevo.",
+            "promoCodeInvalid": "Código promocional no válido. Compruébalo e inténtalo de nuevo.",
+            "stockNotAvailable": "Existencias insuficientes para uno o más artículos en su carrito."
+        },
+        "customer": {
+            "addressIdRequired": "El título de la dirección es obligatorio para la dirección del cliente.",
+            "countryCodeRequired": "Se requiere el código de país para la dirección del cliente.",
+            "addressLine1Required": "La línea de dirección 1 es obligatoria para la dirección del cliente.",
+            "cityRequired": "Se requiere la ciudad para la dirección del cliente.",
+            "firstNameRequired": "Se requiere el nombre para la dirección del cliente.",
+            "lastNameRequired": "El apellido es obligatorio para la dirección del cliente.",
+            "postalCodeRequired": "Se requiere el código postal para la dirección del cliente.",
+            "invalidEmailFormat": "Formato de correo electrónico no válido",
+            "customerLookupUnavailable": "El servicio de búsqueda de clientes no está disponible.",
+            "registrationFailed": "Error en el registro. Intenta de nuevo.",
+            "autoLoginFailed": "Error en el inicio de sesión automático. Inicia sesión manualmente.",
+            "autoLoginAfterRegistrationFailed": "Se creó la cuenta, pero falló el inicio de sesión automático. Inicia sesión manualmente.",
+            "notAuthenticated": "No se encontró el ID de cliente."
+        },
+        "passwordless": {
+            "missingToken": "Falta el token.",
+            "missingCallbackToken": "Falta el encabezado x-slas-callback-token.",
+            "missingRequiredFields": "Faltan campos obligatorios: email_id y token."
+        },
+        "jwks": {
+            "missingEnvironmentVariables": "Falta la configuración requerida: shortCode y organizationId.",
+            "invalidResponse": "Respuesta JWKS no válida: matriz de claves faltante o no válida.",
+            "unknownError": "Se ha producido un error desconocido."
+        },
+        "marketing": {
+            "clientIdMissing": "MARKETING_CLOUD_CLIENT_ID no está establecido en las variables de entorno.",
+            "clientSecretMissing": "MARKETING_CLOUD_CLIENT_SECRET no está establecido en las variables de entorno.",
+            "subdomainMissing": "MARKETING_CLOUD_SUBDOMAIN no está establecido en las variables de entorno.",
+            "templateIdMissing": "MARKETING_CLOUD_PASSWORDLESS_LOGIN_TEMPLATE no está establecido en las variables de entorno."
+        }
+    },
+    "quantitySelector": {
+        "quantity": "Cantidad:",
+        "decreaseQuantity": "Disminuir la cantidad",
+        "increaseQuantity": "Aumentar la cantidad",
+        "decreaseQuantityForProduct": "Disminuir la cantidad de {{productName}}",
+        "increaseQuantityForProduct": "Incrementar cantidad de {{productName}}",
+        "quantityInput": "Cantidad",
+        "quantityUpdated": "Cantidad actualizada",
+        "quantityUpdateFailed": "No se pudo actualizar la cantidad",
+        "onlyLeft": "¡Solo quedan {{stockLevel}}!",
+        "onlyLeftForProduct": "¡Solo {{stockLevel}} queda para {{productName}}!",
+        "maxStockReached": "Stock máximo alcanzado",
+        "insufficientStock": "No hay suficiente stock disponible"
+    },
+    "cart": {
+        "title": "Carrito",
+        "delivery": {
+            "heading": "Entrega - {{deliveryCount}} {{totalCount}} sin artículos",
+            "heading_one": "Delivery - {{deliveryCount}} out of {{count}} item",
+            "heading_other": "Delivery - {{deliveryCount}} out of {{count}} items"
+        },
+        "itemCount_zero": "Carrito (0 artículos)",
+        "itemCount_one": "Carrito (1 artículo)",
+        "itemCount_other": "Carrito ({{count}} artículos)",
+        "empty": {
+            "title": "Tu carrito está vacío.",
+            "registeredMessage": "Continúa comprando para agregar artículos a tu carrito.",
+            "guestMessage": "Regístrate para recuperar tus artículos guardados o continuar comprando.",
+            "continueShopping": "Continuar comprando",
+            "signIn": "Registrarse"
+        },
+        "summary": {
+            "orderSummary": "Resumen del pedido",
+            "showOrderSummary": "Mostrar resumen del pedido",
+            "mobileHeadingTotal_one": "Total (1 artículo)",
+            "mobileHeadingTotal_other": "Total ({{count}} artículos)",
+            "shipping": "Envío",
+            "shippingPromotionApplied": "(Promoción aplicada)",
+            "shippingFree": "GRATIS",
+            "shippingTbd": "Por determinar",
+            "tax": "Impuesto",
+            "taxTbd": "Por determinar",
+            "estimatedTotal": "Total estimado",
+            "orderTotal": "Total del pedido",
+            "noBasketData": "No hay datos de canasta disponibles",
+            "mobileHeading_one": "Estimated Total (1 item)",
+            "mobileHeading_other": "Estimated Total ({{count}} items)"
+        },
+        "promoCode": {
+            "label": "Código promocional",
+            "placeholder": "Código promocional...",
+            "apply": "Aplicar",
+            "applying": "Aplicar...",
+            "remove": "Eliminar",
+            "removing": "Quitar...",
+            "accordionTitle": "¿Tiene un código promocional?",
+            "successMessage": "Se aplicó la promoción.",
+            "errorMessage": "Comprueba el código e inténtalo de nuevo. La promoción ya se puede aplicar o ha caducado.",
+            "removeSuccessMessage": "Se eliminó la promoción.",
+            "removeErrorMessage": "No se pudo eliminar la promoción",
+            "noBasketMessage": "No hay cesta disponible",
+            "requiredMessage": "Se requiere un código de promoción.",
+            "validation": {
+                "minLength": "La promoción debe tener al menos 2 caracteres."
+            },
+            "errors": {
+                "invalidCode": "El código de cupón «{{code}}» no es válido.",
+                "expiredCode": "Este código promocional ha caducado.",
+                "alreadyApplied": "Este código promocional ya está aplicado.",
+                "notApplicable": "Este código promocional no es aplicable a tu carrito",
+                "generic": "No se puede aplicar el código promocional. Comprueba el código e inténtalo de nuevo."
+            }
+        },
+        "items": {
+            "itemsInCart_zero": "0 artículos en el carrito",
+            "itemsInCart_one": "1 artículo en el carrito",
+            "itemsInCart_other": "{{count}} Artículos en el carrito",
+            "editCart": "Editar carrito"
+        },
+        "checkout": {
+            "proceedToCheckout": "Finalizar la compra",
+            "secure": "Seguro"
+        },
+        "attributes": {
+            "promotions": "Promociones:"
+        },
+        "product": {
+            "defaultName": "Nombre del producto"
+        },
+        "removeItemConfirmDescription": "¿Está seguro de que desea eliminar este artículo de su carrito?",
+        "itemIdRequired": "Se requiere la identificación del artículo.",
+        "noBasketIdFound": "No se encuentra el ID de la canasta.",
+        "discount": {
+            "type": {
+                "free": "gratuito"
+            }
+        },
+        "badge": {
+            "ariaLabel": "Mi carrito, número de artículos: {{count}}"
+        },
+        "bundle": {
+            "selectedOptions": "Opciones seleccionadas:"
+        },
+        "bonusProducts": {
+            "selectBonusProducts": "Selecciona productos de bonificación en el carrito",
+            "addedToCart": "Producto de regalo agregado al carrito",
+            "failedToAdd": "No se pudo agregar el producto de regalo: {{error}}",
+            "missingRequiredInfo": "Falta información requerida"
+        }
+    },
+    "checkout": {
+        "contactInfo": {
+            "title": "Información de contacto",
+            "emailLabel": "Dirección de correo electrónico",
+            "emailPlaceholder": "Dirección de correo electrónico",
+            "emailRequired": "Ingresa tu dirección de correo electrónico.",
+            "emailInvalid": "Ingresa una dirección de correo electrónico válida.",
+            "countryCodeLabel": "Código",
+            "phoneLabel": "Número de teléfono",
+            "phoneFormatDescription": "Número de teléfono de 10 dígitos",
+            "phoneRequired": "Ingresa tu número de teléfono.",
+            "phoneInvalid": "Ingresa un número de teléfono válido.",
+            "notProvided": "Todavía no se proporciona",
+            "loginSuggestion": "💡 ¿Tienes una cuenta? Puedes continuar como invitado o ",
+            "loginSuggestionLink": "Inicia sesión para un pago más rápido",
+            "usingRegisteredAccount": "✓ Uso de su cuenta registrada",
+            "continue": "Continuar a la dirección de envío",
+            "saving": "Guardando...",
+            "lookupFallbackMessage": "Error en la búsqueda de clientes. Continuando como invitado.",
+            "saveError": "No se pudo guardar la información de contacto",
+            "sessionExpired": "Sesión caducada. Inicia sesión de nuevo."
+        },
+        "addressModal": {
+            "title": "Agregar dirección nueva",
+            "editTitle": "Editar dirección",
+            "description": "Ingresa tu dirección de envío en el siguiente formulario.",
+            "editDescription": "Actualiza tu dirección de envío en el siguiente formulario.",
+            "cancel": "Cancelar",
+            "save": "Guardar",
+            "saving": "Guardando..."
+        },
+        "shippingAddress": {
+            "title": "Dirección de envío",
+            "changeLabel": "Editar",
+            "selectSavedAddress": "Selecciona una dirección guardada",
+            "viewAllLink": "Ver todo",
+            "viewAllMore": "{{count}}( más)",
+            "viewLessAddresses": "Ver menos",
+            "addNewAddressButton": "Agregar nueva dirección",
+            "editAddressLink": "Editar dirección",
+            "defaultBadge": "Predeterminado",
+            "firstNameRequired": "Ingresa tu nombre.",
+            "lastNameRequired": "Ingresa tu apellido.",
+            "addressRequired": "Ingresa tu dirección.",
+            "cityRequired": "Ingresa tu ciudad.",
+            "stateRequired": "Selecciona tu estado.",
+            "postalCodeRequired": "Ingresa tu código postal.",
+            "continue": "Continuar a método de envío",
+            "saving": "Guardando...",
+            "saved": "Dirección de envío guardada",
+            "failed": "No se pudo guardar la dirección de envío",
+            "confirmed": "Dirección de envío confirmada",
+            "notProvided": "La dirección de envío aún no se ha proporcionado",
+            "completePreviousSteps": "Completa los pasos anteriores para continuar"
+        },
+        "addressForm": {
+            "firstNameLabel": "Nombre",
+            "firstNamePlaceholder": "Nombre",
+            "lastNameLabel": "Apellido",
+            "lastNamePlaceholder": "Apellido",
+            "countryLabel": "País",
+            "addressLabel": "Línea de dirección 1",
+            "addressPlaceholder": "Línea de dirección 1",
+            "address2Label": "Línea de dirección 2",
+            "address2Placeholder": "Línea de dirección 2",
+            "cityLabel": "Ciudad",
+            "cityPlaceholder": "Ciudad",
+            "stateLabel": "Estado",
+            "statePlaceholder": "Estado",
+            "provinceLabel": "Provincia",
+            "provincePlaceholder": "Provincia",
+            "zipLabel": "Código postal",
+            "zipPlaceholder": "Cremallera",
+            "postalCodeLabel": "Código postal",
+            "postalCodePlaceholder": "Código postal",
+            "codeLabel": "Código",
+            "phoneLabel": "Número de teléfono"
+        },
+        "shippingOptions": {
+            "title": "Método de envío",
+            "giftWrappingLabel": "Enviar como regalo (envoltorio de regalo)",
+            "giftWrappingDescription": "Puedes activar o desactivar las opciones de regalo en cualquier momento.",
+            "selectRequired": "Selecciona un método de envío",
+            "saving": "Guardando...",
+            "continue": "Continuar a Pago",
+            "completePreviousSteps": "Completa los pasos anteriores para continuar",
+            "enterAddressFirst": "Ingresa tu dirección de envío para ver los métodos de envío disponibles.",
+            "arrives": "Llega: {{estimatedArrivalTime}}",
+            "free": "Gratis",
+            "noMethodsAvailable": "No hay métodos de envío disponibles",
+            "noMethodsAvailableHelp": "Asegúrate de que tu dirección de envío esté completa e inténtalo de nuevo.",
+            "deliveryWindow": "Arrives {{window}}"
+        },
+        "payment": {
+            "title": "Pago",
+            "changeLabel": "Editar",
+            "methodTitle": "Método de pago",
+            "savedMethodDescription": "Elige un método de pago guardado o agrega uno nuevo",
+            "addNewPaymentMethod": "Agregar nuevo método de pago",
+            "creditCardOption": "Tarjeta de crédito",
+            "newPaymentMethodTitle": "Forma de pago nueva",
+            "cardholderLabel": "Nombre del titular de la tarjeta",
+            "nameOnCardLabel": "Nombre en la tarjeta*",
+            "cardholderPlaceholder": "Nombre en la tarjeta*",
+            "cardholderRequired": "Se requiere el nombre del titular de la tarjeta.",
+            "cardNumberLabel": "Número de tarjeta*",
+            "cardNumberPlaceholder": "Número de tarjeta*",
+            "cardNumberRequired": "El número de tarjeta es obligatorio.",
+            "cardNumberInvalid": "Ingresa un número de tarjeta válido.",
+            "cardNumberInvalidLength": "Ingresa un número de tarjeta válido (13-19 dígitos).",
+            "expiryLabel": "mm/aa*",
+            "expiryPlaceholder": "mm/aa*",
+            "expiryRequired": "Se requiere fecha de caducidad",
+            "expiryInvalid": "Ingresa una fecha de caducidad válida (MM/AA)",
+            "cvvHelp": "3-4 dígitos en el reverso de la tarjeta",
+            "cvvShow": "Mostrar CVV",
+            "cvvHide": "Ocultar CVV",
+            "cvvRequired": "Se requiere CVV",
+            "cvvInvalid": "Ingresa un CVV válido",
+            "cvvInvalidFormat": "Ingresa un CVV válido (3-4 dígitos).",
+            "billingAddressRequired": "La dirección de facturación es obligatoria cuando es diferente de la del envío.",
+            "useDifferentBilling": "Usar una dirección de facturación diferente",
+            "useDifferentBillingDescription": "Usar la misma dirección para la facturación y el envío",
+            "sameAsShippingAddress": "Misma que la dirección de envío",
+            "selectAnAddress": "Selecciona una dirección",
+            "noBillingAddressSaved": "No se guarda ninguna dirección de facturación",
+            "continue": "Continuar revisando",
+            "saving": "Guardando...",
+            "saved": "Información de pago guardada",
+            "failed": "No se pudo guardar la información de pago",
+            "createAccountForFasterCheckout": "Crea una cuenta para un pago más rápido la próxima vez",
+            "saveForFutureUse": "Guardar para uso futuro",
+            "unknownCardType": "Desconocido",
+            "defaultCardLabel": "Tarjeta",
+            "preferredBadge": "Preferido",
+            "defaultBadge": "Predeterminado",
+            "endingIn": "Terminando en {{lastDigits}}",
+            "expiresLabel": "Expira {{expiry}}",
+            "summaryLabel": "{{methodLabel}} termina en {{lastDigits}}",
+            "summarySavedLabel": "Método de pago guardado: {{methodLabel}} terminado en {{lastDigits}}",
+            "noPaymentMethodSaved": "No se guarda ningún método de pago",
+            "billingSummaryTitle": "Dirección de facturación",
+            "viewAllMore": "Ver todo ({{count}} más)",
+            "viewLess": "Ver menos",
+            "savePaymentToProfile": "Guarda el método de pago para usarlo en el futuro"
+        },
+        "expressPayments": {
+            "separator": "O",
+            "venmoUnavailable": "Venmo no está disponible en este dispositivo.",
+            "amazonPayLabel": "Pago de Amazon"
+        },
+        "common": {
+            "edit": "Editar",
+            "submitting": "Presentar",
+            "notProvided": "No proporcionado",
+            "backToCart": "Volver al carrito",
+            "emptyCart": "No hay artículos en el carrito. Agrega artículos antes de pagar."
+        },
+        "orderSummary": {
+            "title": "Resumen del pedido",
+            "toggleLabel": "Mostrar resumen del pedido"
+        },
+        "myCart": {
+            "title": "Mi Carrito",
+            "saved": "Guardado {{amount}}"
+        },
+        "placeOrder": {
+            "button": "Hacer pedido - {{total}}",
+            "processing": "Realización de pedidos...",
+            "success": "¡Se hizo el pedido!",
+            "failed": "Se produjo un error inesperado durante el pago."
+        },
+        "confirmation": {
+            "title": "¡Gracias por tu pedido!",
+            "orderNumber": "Número de pedido:",
+            "confirmationEmailSent": "Hemos enviado un correo electrónico de confirmación a {{email}}",
+            "orderNotFound": "Pedido no encontrado",
+            "orderNotFoundDescription": "No hemos podido encontrar el pedido que buscas.",
+            "orderNumberRequired": "Se requiere el número de pedido",
+            "sections": {
+                "orderSummary": "Resumen del pedido",
+                "shippingDetails": "Detalles de envío",
+                "paymentDetails": "Información del pago"
+            },
+            "fields": {
+                "orderNumber": "Número de pedido:",
+                "status": "Estado:",
+                "shippingAddress": "Dirección de envío",
+                "shippingMethod": "Método de envío",
+                "billingAddress": "Dirección de facturación",
+                "paymentMethod": "Método de pago",
+                "defaultShippingMethod": "Envío estándar",
+                "defaultPaymentMethod": "Tarjeta de crédito",
+                "savedMethodDescription": "Elige un método de pago guardado o agrega uno nuevo"
+            },
+            "actions": {
+                "continueShopping": "Continuar comprando",
+                "viewAccount": "Ver cuenta"
+            },
+            "hero": {
+                "thankYou": "Gracias, {{name}}!",
+                "orderConfirmed": "Tu pedido está confirmado.",
+                "emailConfirmation": "Hemos enviado un correo electrónico de confirmación a {{email}}.",
+                "needHelp": "¿Necesita ayuda?",
+                "defaultName": "Cliente",
+                "emailFallback": "Tu correo electrónico"
+            },
+            "helpLinks": {
+                "faq": "Preguntas más frecuentes",
+                "contact": "Contáctanos",
+                "returns": "Política de devoluciones"
+            },
+            "summaryLabels": {
+                "arriving": "Llegando por",
+                "shippingAddress": "Dirección de envío",
+                "shippingMethod": "Método de envío",
+                "noAddress": "No hay dirección disponible",
+                "estimatedDatePlaceholder": "Procesando ahora",
+                "quantity": "Cantidad: {{count}}",
+                "freeShipping": "Gratis",
+                "deliveryWindow": "{{window}}"
+            },
+            "totals": {
+                "promotions": "Promociones",
+                "shipping": "Envío",
+                "tax": "Impuesto"
+            },
+            "payment": {
+                "methodSummary": "{{method}} termina en {{lastDigits}}",
+                "noMethod": "Método de pago registrado"
+            },
+            "newsletter": {
+                "title": "Obtén un 10% de descuento en tu próximo pedido. Únete a la lista de correo electrónico.",
+                "subtitle": "Mantente al día sobre lanzamientos de productos y ofertas exclusivas.",
+                "placeholder": "Dirección de correo electrónico",
+                "cta": "Unirse"
+            },
+            "summaryTitle": "Resumen",
+            "emptyItemsFallback": "Tus artículos están siendo preparados.",
+            "productPlaceholderInitial": "Elemento"
+        },
+        "errorBoundary": {
+            "title": "El proceso de compra no está disponible temporalmente",
+            "description": "Estamos experimentando algunas dificultades técnicas con el proceso de pago. Los artículos de su carrito están seguros y guardados.",
+            "tryAgain": "Intente de nuevo",
+            "returnToCart": "Volver a la cesta",
+            "componentError": {
+                "title": "Componente temporalmente no disponible",
+                "description": "Esta sección no se pudo cargar correctamente. Puedes continuar con el proceso de pago o intentar actualizar la página.",
+                "tryAgain": "Vuelve a intentarlo"
+            }
+        },
+        "registration": {
+            "emailNotFound": "Se requiere una dirección de correo electrónico para crear una cuenta. Proporciona tu correo electrónico en la sección de información de contacto.",
+            "initiationFailed": "No se puede enviar el código de verificación. Intenta de nuevo.",
+            "sendingVerificationCode": "Enviando código de verificación...",
+            "accountCreatedSuccess": "¡Cuenta creada con éxito!",
+            "checkboxExpandedDescription": "Cuando realiza tu pedido, creamos una cuenta para ti y guardamos tu información de pago y otros detalles para futuras compras. Durante tu próximo proceso de pago, confirma tu cuenta con el código que te enviaremos.",
+            "accountCreatedTitle": "Cuenta creada",
+            "verified": "Verificada",
+            "accountCreatedDescription": "Hemos creado y verificado tu cuenta utilizando la información de tu pedido. La próxima vez que realices el pago, simplemente ingresa el código que te enviamos para iniciar sesión, sin necesidad de contraseña.",
+            "accountCreationLabel": "Creación de la cuenta",
+            "accountWillBeCreated": "Se creará la cuenta",
+            "continueAsGuest": "Continuar como invitado"
+        }
+    },
+    "account": {
+        "title": "Detalles de la cuenta",
+        "subtitle": "Administra tu información personal",
+        "myAccount": "Mi cuenta",
+        "navigation": {
+            "overview": "Información general",
+            "accountDetails": "Detalles de la cuenta",
+            "wishlist": "Lista de deseos",
+            "orderHistory": "Historial de pedidos",
+            "addresses": "Direcciones",
+            "manageAddresses": "Administrar direcciones",
+            "paymentMethods": "Métodos de pago",
+            "storePreferences": "Preferencias de la tienda",
+            "logOut": "Cerrar sesión"
+        },
+        "storePreferences": {
+            "title": "Preferencias de la tienda",
+            "subtitle": "Gestiona las ubicaciones de tus tiendas preferidas y las preferencias de recogida",
+            "preferredStore": {
+                "heading": "Tienda preferida para recoger",
+                "description": "Seleccione su tienda preferida para pedidos para recoger en la tienda",
+                "changeStore": "Cambiar tienda",
+                "noStoreSelected": "No se ha seleccionado ninguna tienda. Utiliza el localizador de tiendas para elegir la tienda que prefieras para recoger.",
+                "storeHoursTitle": "Horario de tienda",
+                "error": "No se pudieron cargar los detalles de la tienda. Intente de nuevo más tarde."
+            },
+            "authorizedPickupPeople": {
+                "heading": "Personas de recogida autorizadas",
+                "description": "Agrega personas que estén autorizadas para recoger pedidos en tu nombre",
+                "addPerson": "Agregar persona",
+                "idNote": "Las personas autorizadas deberán mostrar una identificación válida que coincida con el nombre registrado al recoger los pedidos.",
+                "modal": {
+                    "addTitle": "Agregar persona autorizada",
+                    "editTitle": "Editar persona autorizada",
+                    "firstName": "Nombre",
+                    "firstNamePlaceholder": "Nombre",
+                    "lastName": "Apellido",
+                    "lastNamePlaceholder": "Apellido",
+                    "email": "Dirección de correo electrónico",
+                    "relationship": "Relación",
+                    "relationshipPlaceholder": "Seleccione Relación",
+                    "modalNote": "Esta persona estará autorizada a recoger los pedidos en su nombre. Deberán mostrar una identificación válida que coincida con el nombre proporcionado al recoger los pedidos.",
+                    "cancel": "Cancelar",
+                    "save": "Guardar",
+                    "firstNameRequired": "El nombre es obligatorio.",
+                    "firstNameMax": "El nombre debe tener 50 caracteres o menos.",
+                    "lastNameRequired": "El apellido es obligatorio.",
+                    "lastNameMax": "El apellido debe tener 50 caracteres o menos.",
+                    "emailRequired": "La dirección de correo electrónico es obligatoria.",
+                    "emailInvalid": "Ingresa una dirección de correo electrónico válida.",
+                    "emailMax": "El correo electrónico debe tener 100 caracteres o menos.",
+                    "relationshipRequired": "Por favor, seleccione una relación."
+                },
+                "statusActive": "Activo",
+                "relationshipLabel": "Relación: {{relationship}}",
+                "edit": "Editar",
+                "delete": "Eliminar",
+                "emptyState": "Todavía no hay personas autorizadas para recogerlas. Agrega a alguien que pueda recoger los pedidos en tu nombre.",
+                "deleteConfirmTitle": "Eliminar a la persona autorizada",
+                "deleteConfirmDescription": "¿Está seguro de que desea eliminar {{name}}? Ya no podrán recoger los pedidos en su nombre.",
+                "deleteConfirmCancel": "Cancelar",
+                "deleteConfirmRemove": "Eliminar",
+                "relationships": {
+                    "spouse": "Cónyuge",
+                    "familyMember": "Miembro de la familia",
+                    "friend": "Amigo",
+                    "other": "Otro"
+                }
+            },
+            "pickupPreferences": {
+                "heading": "Preferencias de recogida",
+                "description": "Gestiona las notificaciones de recogida y las preferencias de la tienda",
+                "edit": "Editar",
+                "save": "Guardar",
+                "cancel": "Cancelar",
+                "autoSelectStore": "Selección automática de la tienda preferida",
+                "autoSelectStoreDescription": "Utiliza automáticamente tu tienda preferida para recoger los pedidos",
+                "pickupNotifications": "Notificaciones de recogida",
+                "pickupNotificationsDescription": "Recibe una notificación cuando tu pedido esté listo para ser recogido",
+                "storeEventsPromotions": "Promociones de eventos & en la tienda",
+                "storeEventsPromotionsDescription": "Recibe actualizaciones sobre eventos y promociones en tu tienda preferida",
+                "saveSuccess": "Preferencias de recogida guardadas correctamente"
+            }
+        },
+        "overview": {
+            "welcomeBack": "¡Bienvenido de nuevo! {{name}}",
+            "welcomeSubtitle": "Administre su cuenta, vea pedidos y descubra recomendaciones personalizadas.",
+            "defaultName": "allí",
+            "quickLinks": {
+                "title": "Vínculos rápidos",
+                "orderHistoryDesc": "Realiza un seguimiento de tus pedidos",
+                "wishlistDesc": "Elementos que has guardado",
+                "addressesDesc": "Gestiona tus direcciones",
+                "paymentMethodsDesc": "Gestiona tus métodos de pago"
+            },
+            "curatedForYou": {
+                "title": "Seleccionado para ti",
+                "subtitle": "Elegido para ti en función de tu actividad"
+            },
+            "appDownload": {
+                "title": "Descarga nuestra aplicación",
+                "description": "Obtén la mejor experiencia de compra sobre la marcha. Acceda a ofertas exclusivas, realice un seguimiento de los pedidos y compre más rápido.",
+                "appStore": "Tienda de aplicaciones",
+                "qrCode": "Código QR"
+            }
+        },
+        "shopperAgentEntry": {
+            "title": "¿Necesita ayuda?",
+            "description": "Estamos aquí para ayudarte con cualquier pregunta o inquietud",
+            "askQuestion": "Hacer una pregunta",
+            "contactInfo": "Información de contacto",
+            "browseFaq": "Examinar las preguntas frecuentes"
+        },
+        "wishlist": {
+            "pageTitle": "Mi lista de deseos",
+            "pageSubtitle": "Tus elementos guardados para más tarde",
+            "savedItems": "Elementos guardados",
+            "emptyTitle": "Esta lista de deseos está vacía",
+            "emptySubtitle": "¡Empieza a añadir artículos a tu lista de deseos!",
+            "itemCount_one": "{{count}} Elemento guardado",
+            "itemCount_other": "{{count}} Artículos guardados",
+            "empty": "Tu lista de deseos está vacía. ¡Empieza a añadir artículos que te gusten!",
+            "wishlistName": "Lista de deseos",
+            "failedToCreate": "Error al crear la lista de deseos: listId no está disponible después de la creación.",
+            "unableToRetrieveId": "No se puede recuperar el ID de la lista de deseos. Intenta de nuevo.",
+            "notFound": "No se ha encontrado la lista de deseos",
+            "idNotFound": "No se ha encontrado el ID de la lista de deseos",
+            "itemNotFound": "Artículo no encontrado en la lista de deseos",
+            "mustLoginToAdd": "Debes iniciar sesión para añadir artículos a tu lista de deseos.",
+            "mustLoginToRemove": "Debes iniciar sesión para eliminar artículos de tu lista de deseos.",
+            "sortBy": "Clasificar por",
+            "sort": {
+                "recentlyAdded": "Añadido recientemente",
+                "nameAZ": "Nombre (A-Z)",
+                "priceLow": "Precio: De menor a mayor",
+                "priceHigh": "Precio: De mayor a menor"
+            },
+            "filterBy": "Filtrar por",
+            "filter": {
+                "all": "Todos los artículos",
+                "inStock": "Disponible",
+                "outOfStock": "Fuera de stock",
+                "onSale": "A la venta"
+            },
+            "noFilterResults": "No hay elementos que coincidan con su filtro."
+        },
+        "orders": {
+            "empty": "Aún no has hecho un pedido. Una vez que hagas un pedido, los detalles aparecerán aquí.",
+            "continueShopping": "Continuar comprando",
+            "errorDescription": "Hemos encontrado un error al cargar su historial de pedidos. Intente de nuevo más tarde.",
+            "subtitle": "Ver y realizar un seguimiento de sus pedidos",
+            "orderDate": "Fecha del pedido",
+            "items": "Artículos",
+            "pickupLocation": "Lugar de recogida",
+            "location": "Ubicación",
+            "address": "Dirección",
+            "viewOrderDetails": "Ver detalles del pedido",
+            "tableHeaders": {
+                "orderNumber": "N.º de identificación de pedido",
+                "status": "Estado",
+                "method": "Forma",
+                "amount": "Monto",
+                "actions": "Acciones"
+            },
+            "viewDetails": "Ver información",
+            "orderDetailsTitle": "Pedido",
+            "orderDetailsPageTitle": "Detelles del pedido",
+            "status": {
+                "created": "Creado",
+                "new": "Crear",
+                "completed": "Completado",
+                "cancelled": "Cancelado",
+                "replaced": "Sustituido",
+                "failed": "Error"
+            },
+            "shippingStatus": {
+                "notShipped": "No enviado",
+                "partShipped": "Pieza enviada",
+                "shipped": "Enviado"
+            },
+            "totalOrders_one": "Orden de visualización {{count}}",
+            "totalOrders_other": "Visualización de {{count}} pedidos",
+            "totalOrdersRange": "Visualización {{start}}{{end}} de {{total}} pedidos",
+            "paginationLabel": "Paginación del historial de pedidos",
+            "paginationPrevious": "Página anterior",
+            "paginationNext": "Página siguiente",
+            "invalidDate": "Fecha no válida",
+            "shipmentNumber": "Envío {{n}}",
+            "itemsOrdered": "Artículos pedidos",
+            "orderSummary": "Resumen del pedido",
+            "backToOrderHistory": "Regresar a Historial de pedidos",
+            "orderNotFound": "Pedido no encontrado",
+            "orderNotFoundDescription": "No hemos podido encontrar el pedido que buscas.",
+            "buyAgain": "Comprar de nuevo",
+            "emptyItemsFallback": "No hay artículos.",
+            "productPlaceholderInitial": "Elemento",
+            "quantityLabel": "Cantidad: {{count}}",
+            "trackingNumber": "Número de seguimiento",
+            "shippingAddress": "Dirección de envío",
+            "paymentMethod": "Método de pago",
+            "paymentMethodEndingIn": "{{cardType}} Terminando en {{lastDigits}}"
+        },
+        "addresses": {
+            "subtitle": "Gestiona tus direcciones de envío",
+            "empty": "¡Agregue una dirección para que el pago sea más rápido!",
+            "noSavedAddresses": "No hay direcciones guardadas",
+            "addAddress": "Agregar dirección",
+            "addNewAddress": "Agregar nueva dirección",
+            "editAddress": "Editar dirección",
+            "preferred": "Preferido",
+            "default": "Predeterminado",
+            "setDefault": "Establecer como predeterminado",
+            "setDefaultSuccess": "La dirección se estableció como predeterminada.",
+            "setDefaultError": "No se pudo establecer la dirección como predeterminada. Intenta de nuevo.",
+            "billing": "Facturación",
+            "shipping": "Envío",
+            "removeSuccess": "La dirección fue eliminada.",
+            "removeError": "No se pudo eliminar la dirección. Intenta de nuevo.",
+            "addSuccess": "Se agregó la dirección.",
+            "addError": "No se pudo agregar la dirección.",
+            "updateSuccess": "Se actualizó la dirección.",
+            "updateError": "No se pudo actualizar la dirección.",
+            "removeDialogTitle": "Eliminar dirección",
+            "removeDialogDescription": "¿Estás seguro de que quieres eliminar esta dirección?",
+            "removeDefaultWarning": "Esta es su dirección predeterminada. Al eliminarlo, se establecerá automáticamente otra dirección como predeterminada si está disponible.",
+            "removeButton": "Eliminar",
+            "removeConfirmTitle": "Confirmar Eliminar dirección",
+            "removeConfirmDescription": "¿Está seguro de que desea eliminar la dirección \"{{addressName}}\"?",
+            "removeCancelButton": "Cancelar",
+            "removeConfirmButton": "Sí, eliminar dirección"
+        },
+        "paymentMethods": {
+            "pageSubtitle": "Administre sus métodos de pago, tarjetas de regalo y crédito de la tienda",
+            "subtitle": "Gestiona tus métodos de pago guardados",
+            "noSavedPaymentMethods": "No hay métodos de pago guardados",
+            "empty": "¡Agrega un método de pago para que el pago sea más rápido!",
+            "addPaymentMethod": "Añadir método de pago",
+            "setDefault": "Establecer como predeterminado",
+            "remove": "Eliminar",
+            "default": "Predeterminado",
+            "expires": "Caducidad",
+            "addPaymentMethodTitle": "Agregar método de pago",
+            "creditCard": "Tarjeta de crédito",
+            "nameOnCard": "Nombre en la tarjeta*",
+            "cardNumberPlaceholder": "Número de tarjeta*",
+            "expiryPlaceholder": "mm/aa*",
+            "saveAsDefault": "Guardar como pago por defecto",
+            "billingAddress": "Dirección de facturación*",
+            "selectAddress": "Seleccione una dirección",
+            "addNewAddress": "Agregar dirección nueva",
+            "cancel": "Cancelar",
+            "save": "Guardar",
+            "removePaymentMethod": "Eliminar método de pago",
+            "removeConfirmation": "¿Estás seguro de que quieres eliminar este método de pago?",
+            "paymentMethod": "Método de pago",
+            "defaultRemovalWarning": "Este es su método de pago predeterminado. Al eliminarlo, se establecerá automáticamente otro método de pago como predeterminado, si está disponible.",
+            "addSuccess": "Método de pago agregado correctamente.",
+            "addError": "No se pudo agregar el método de pago.",
+            "removeSuccess": "El método de pago se eliminó correctamente.",
+            "removeError": "No se pudo eliminar el método de pago.",
+            "setDefaultSuccess": "El método de pago se estableció como predeterminado correctamente.",
+            "setDefaultError": "No se pudo establecer el método de pago como predeterminado.",
+            "validationError": "Por favor, corrija los errores en el formulario.",
+            "addressValidationError": "Por favor, corrija los errores en la dirección de facturación.",
+            "selectAddressError": "Seleccione una dirección de facturación.",
+            "invalidExpiryFormat": "Formato de fecha de caducidad no válido."
+        },
+        "addressForm": {
+            "addressTitleLabel": "Título de la dirección",
+            "addressTitlePlaceholder": "por ejemplo, el hogar, el trabajo, la casa de mamá",
+            "firstNameLabel": "Nombre",
+            "lastNameLabel": "Apellido",
+            "phoneLabel": "Teléfono",
+            "countryLabel": "País",
+            "addressLabel": "Dirección",
+            "address2Label": "Línea de dirección 2",
+            "address2Placeholder": "Apartamento, suite, etc. (opcional)",
+            "cityLabel": "Ciudad",
+            "stateLabel": "Estado",
+            "provinceLabel": "Provincia",
+            "postalCodeLabel": "Código postal",
+            "zipCodeLabel": "Código postal",
+            "preferredLabel": "Establecer como predeterminado",
+            "saveButton": "Guardar",
+            "savingButton": "Guardando...",
+            "cancelButton": "Cancelar",
+            "selectStatePlaceholder": "Seleccionar estado",
+            "selectProvincePlaceholder": "Seleccionar Provincia",
+            "successMessage": "La dirección se guardó.",
+            "errorMessage": "No se pudo guardar la dirección. Intenta de nuevo.",
+            "validation": {
+                "stateRequired": "Se requiere estado/provincia",
+                "addressTitleRequired": "Se requiere el título de la dirección.",
+                "addressTitleMaxLength": "El título de la dirección debe tener 256 caracteres o menos.",
+                "phoneRequired": "El número de teléfono es obligatorio."
+            }
+        },
+        "profile": {
+            "title": "Información personal",
+            "description": "Administra tu información personal",
+            "edit": "Editar",
+            "fullName": "Nombre completo",
+            "email": "Dirección de correo electrónico",
+            "phoneNumber": "Número de teléfono",
+            "notProvided": "No proporcionado",
+            "firstName": "Nombre",
+            "lastName": "Apellido",
+            "firstNamePlaceholder": "Ingresa tu nombre",
+            "lastNamePlaceholder": "Ingresa tu apellido",
+            "phonePlaceholder": "Ingresa tu número de teléfono",
+            "gender": "Género",
+            "genderPlaceholder": "Seleccione el género",
+            "genderOptions": {
+                "male": "Hombres",
+                "female": "Mujeres"
+            },
+            "dateOfBirth": "Fecha de nacimiento",
+            "dateOfBirthPlaceholder": "Seleccione la fecha de nacimiento",
+            "saveButton": "Guardar",
+            "savingButton": "Guardando...",
+            "cancelButton": "Cancelar",
+            "successMessage": "Su perfil se actualizó.",
+            "errorMessage": "No hemos podido actualizar tu perfil. Intenta de nuevo.",
+            "validation": {
+                "firstNameRequired": "El nombre es obligatorio.",
+                "lastNameRequired": "El apellido es obligatorio.",
+                "emailRequired": "La dirección de correo electrónico es obligatoria.",
+                "emailInvalid": "Ingresa una dirección de correo electrónico válida.",
+                "phoneInvalid": "Ingresa un número de teléfono válido.",
+                "birthdayFuture": "La fecha de nacimiento no puede ser en el futuro."
+            }
+        },
+        "password": {
+            "title": "Seguridad de contraseñas &",
+            "description": "Administre su contraseña y configuración de seguridad",
+            "edit": "Editar",
+            "password": "Contraseña",
+            "changePassword": "Cambiar contraseña",
+            "currentPassword": "Contraseña actual",
+            "currentPasswordPlaceholder": "Ingresa tu contraseña actual",
+            "newPassword": "Contraseña nueva",
+            "newPasswordPlaceholder": "Ingresa tu nueva contraseña",
+            "confirmPassword": "Confirmar contraseña nueva",
+            "confirmPasswordPlaceholder": "Confirme su nueva contraseña",
+            "saveButton": "Guardar",
+            "cancelButton": "Cancelar",
+            "successMessage": "Se actualizó la contraseña.",
+            "errorMessage": "No se pudo actualizar la contraseña. Intenta de nuevo.",
+            "validation": {
+                "currentPasswordRequired": "Se requiere la contraseña actual.",
+                "newPasswordRequired": "Se requiere una nueva contraseña.",
+                "confirmPasswordRequired": "Confirma tu nueva contraseña.",
+                "passwordsDoNotMatch": "Las contraseñas nuevas no coinciden.",
+                "passwordTooShort": "La contraseña debe tener al menos 8 caracteres."
+            },
+            "requirements": {
+                "title": "Requisitos de contraseña",
+                "minLength": "Al menos 8 caracteres",
+                "hasUppercase": "Al menos una letra mayúscula",
+                "hasLowercase": "Al menos una letra minúscula",
+                "hasNumber": "Al menos un número",
+                "hasSpecial": "Al menos un carácter especial"
+            }
+        },
+        "common": {
+            "save": "Guardar",
+            "saving": "Guardando...",
+            "cancel": "Cancelar",
+            "edit": "Editar",
+            "done": "Listo",
+            "enabled": "Habilitado",
+            "disabled": "Deshabilitado"
+        },
+        "marketingConsent": {
+            "title": "Preferencias de comunicación de marketing &",
+            "edit": "Editar",
+            "editA11y": "Editar preferencias de marketing",
+            "optedIn": "Optó por participar",
+            "optedOut": "No se ha incluido",
+            "channelEmail": "Correo electrónico",
+            "channelSms": "SMS / Mensajes de texto",
+            "disclaimer": "Al habilitar estas preferencias de comunicación, acepta recibir nuestras comunicaciones de marketing, incluidas ofertas exclusivas, la información más reciente sobre productos y noticias sobre próximas colecciones. Consulte nuestros Términos & , Condiciones y Política de Privacidad para obtener más detalles.",
+            "updateError": "No se pudo actualizar la preferencia de marketing. Intenta de nuevo.",
+            "partialSuccess": "Se han guardado algunas preferencias. Actualice para ver la configuración actual."
+        }
+    },
+    "home": {
+        "hero": {
+            "slide1": {
+                "title": "La nueva temporada",
+                "subtitle": "Una nueva colección marcada por el contraste, la proporción y la actitud moderna. Presentamos piezas clave para la próxima temporada.",
+                "ctaText": "Descubre la colección",
+                "imageAlt": "Pantalones, chaquetas y bolsos para mujer"
+            },
+            "slide2": {
+                "title": "El armario moderno",
+                "subtitle": "Siluetas elevadas, texturas refinadas y un enfoque audaz para la vestimenta diaria. Diseñado para moverse contigo.",
+                "ctaText": "Compra el look",
+                "imageAlt": "Vestido de lino blanco para mujer"
+            },
+            "slide3": {
+                "title": "Fuera del horario de atención",
+                "subtitle": "Piezas llamativas y capas refinadas diseñadas para salidas nocturnas, momentos posteriores y todo lo demás.",
+                "ctaText": "Explora la colección",
+                "imageAlt": "Traje negro de mujer"
+            },
+            "slide4": {
+                "title": "Nuevas perspectivas",
+                "subtitle": "Una colección de piezas destacadas que redefinen la moda contemporánea. Confiado. Expresivo. Sin concesiones.",
+                "ctaText": "COMPRAR AHORA",
+                "imageAlt": "Vestido gris para mujer"
+            }
+        },
+        "meta": {
+            "description": "Tienda de moda de última generación"
+        },
+        "featuredProducts": {
+            "title": "Productos destacados",
+            "shopAll": "Comprar todo"
+        },
+        "categoryGrid": {
+            "title": "Estilo para la vida real",
+            "description": "En Market Street, creemos que la moda debe ser sencilla, auténtica y accesible. Nuestras colecciones están diseñadas para el individuo moderno que valora la calidad, la versatilidad y el estilo atemporal.",
+            "shopNowButton": "COMPRAR AHORA"
+        },
+        "featuredContent": {
+            "women": {
+                "title": "Mujeres",
+                "description": "Descubre nuestra cuidada colección de calzado sofisticado diseñado para la mujer moderna.",
+                "ctaText": "EXPLORA LA COLECCIÓN",
+                "imageAlt": "Colección Mujer"
+            },
+            "men": {
+                "title": "Hombres",
+                "description": "La artesanía atemporal se une al estilo contemporáneo en nuestra colección de calzado para hombre.",
+                "ctaText": "EXPLORA LA COLECCIÓN",
+                "imageAlt": "Colección Hombre"
+            },
+            "styleForRealLife": {
+                "title": "Estilo para la vida real",
+                "description": "En Market Street, creemos que la moda debe ser sencilla, auténtica y accesible. Nuestras colecciones están diseñadas para el individuo moderno que valora la calidad, la versatilidad y el estilo atemporal.\n\nDescubre piezas que se mueven contigo, se adaptan a tu vida y se convierten en la base de un guardarropa que funciona, todos los días, en todas partes."
+            }
+        }
+    },
+    "footer": {
+        "sections": {
+            "customerSupport": "Soporte al cliente",
+            "account": "Cuenta",
+            "ourCompany": "Nuestra empresa",
+            "switchThemes": "Cambiar de tema",
+            "switchSite": "Región",
+            "switchLanguage": "Idioma:",
+            "switchCurrency": "Divisa",
+            "shop": "Tienda",
+            "help": "Ayuda",
+            "about": "Acerca de"
+        },
+        "links": {
+            "contactUs": "Contáctanos",
+            "shipping": "Envío",
+            "orderStatus": "Estado del pedido",
+            "signInOrCreateAccount": "Iniciar sesión o crear cuenta",
+            "aboutUs": "Acerca de nosotros",
+            "accessibility": "Declaración de accesibilidad",
+            "privacyPolicy": "Política de privacidad",
+            "privacyChoices": "Sus opciones de privacidad",
+            "termsOfUse": "Condiciones de uso"
+        },
+        "newsletter": {
+            "title": "Únete a nuestra comunidad",
+            "description": "Sé el primero en descubrir novedades, ofertas exclusivas e inspiración de estilo.",
+            "emailPlaceholder": "Tu correo electrónico",
+            "subscribeButton": "Subscribir"
+        },
+        "copyright": "Salesforce o sus afiliados. Todos los derechos reservados. Esta es solo una tienda de demostración. Los pedidos realizados NO se procesarán."
+    },
+    "aboutUs": {
+        "breadcrumb": {
+            "home": "Inicio",
+            "aboutUs": "Acerca de nosotros"
+        },
+        "title": "Acerca de nosotros",
+        "subtitle": "Conozca más sobre nuestra empresa y misión",
+        "section": {
+            "ourGoal": {
+                "title": "Diseñado para el movimiento. Diseñado para el día a día.",
+                "content": "Inspirada en la cultura urbana y la energía del movimiento, Market Street se creó para conectar el rendimiento, el estilo y los elementos esenciales del día a día en una experiencia perfecta. Creemos que los grandes productos deben moverse contigo, de las calles al estudio, del trabajo al fin de semana.\nLo que comenzó como una visión para simplificar la forma en que las personas experimentan el comercio minorista de moda y estilo de vida se ha convertido en una marca centrada en la claridad, la accesibilidad y el diseño inteligente. Cada colección está seleccionada para ofrecer versatilidad, durabilidad y un atractivo atemporal."
+            },
+            "ourVision": {
+                "title": "Nuestra Visión",
+                "content": "Redefinir el comercio minorista moderno a través de la tecnología, el diseño y la experiencia del cliente, creando un entorno comercial que se sienta sin esfuerzo, inspirador y humano. No perseguimos tendencias. Construimos experiencias duraderas."
+            },
+            "ourValue": {
+                "title": "¿Por qué existimos?",
+                "content": "Existimos para eliminar la fricción entre las personas y lo que aman. Para que las compras sean intuitivas, rápidas y significativas. Crear una marca que evolucione con su comunidad."
+            },
+            "ourMission": {
+                "title": "Lo que representamos",
+                "content": "Diseña con un propósito: cada producto, cada interacción, cada detalle es intencional.\nTecnología que desaparece: usamos la innovación para simplificar, no para complicar.\nMentalidad centrada en el cliente: desde el descubrimiento hasta la entrega, su viaje es lo primero.\nSostenibilidad en movimiento: priorizamos los materiales, los proveedores y la logística responsables."
+            },
+            "ourTeam": {
+                "title": "Una marca global, un alma a pie de calle",
+                "content": "Market Street nació de la idea de que el gran estilo no debe sentirse inalcanzable. Combinamos la inspiración global con una mentalidad a nivel de calle, conectando la cultura, el rendimiento y el estilo de vida en una expresión fluida.\nDesde el desarrollo de productos hasta la experiencia digital, todo lo que hacemos está guiado por un principio:\nhacer que el comercio se sienta natural."
+            }
+        },
+        "contact": {
+            "title": "Estamos aquí para ayudar",
+            "intro": "¿Tiene alguna pregunta, comentario o necesita ayuda? Nuestro equipo está listo para ayudarte.",
+            "phoneHref": "Tel:180080606453",
+            "hours": {
+                "weekdays": "Lunes – Viernes: 9 a. m. – 10 p. m. EST",
+                "weekends": "Sábado & Domingo: 10 a. m. – 7 p. m. EST"
+            },
+            "cta": "O envíenos un mensaje a través del formulario, nos pondremos en contacto con usted lo antes posible.",
+            "form": {
+                "label": "Etiqueta",
+                "nameLabel": "Nombre",
+                "emailLabel": "Correo electrónico",
+                "messageLabel": "Mensaje",
+                "placeholders": {
+                    "fullName": "Ingresa tu nombre completo",
+                    "topic": "Información general",
+                    "message": "Déjanos un mensaje"
+                },
+                "submit": "Enviar mensaje"
+            },
+            "toast": {
+                "success": "Mensaje enviado correctamente."
+            }
+        }
+    },
+    "countries": {
+        "US": {
+            "name": "Estados Unidos",
+            "states": {
+                "DC": "Distrito de Columbia",
+                "NH": "Nuevo Hampshire",
+                "NJ": "Nueva Jersey",
+                "NM": "Nuevo México",
+                "NY": "Nueva York",
+                "NC": "Carolina del Norte",
+                "ND": "Dakota del Norte",
+                "PA": "Pensilvania",
+                "SC": "Carolina del Sur",
+                "SD": "Dakota del Sur",
+                "WV": "Virginia Occidental"
+            }
+        },
+        "CA": {
+            "name": "Canadá",
+            "states": {
+                "BC": "Columbia Británica",
+                "NB": "Nuevo Brunswick",
+                "NL": "Terranova y Labrador",
+                "NS": "Nueva Escocia",
+                "NT": "Territorios del Noroeste",
+                "PE": "Isla del Príncipe Eduardo"
+            }
+        }
+    },
+    "miniCart": {
+        "noImage": "Sin imagen",
+        "productAltFallback": "Producto",
+        "quantityLabel": "Cantidad:",
+        "quantityAriaLabel": "Cantidad",
+        "customQuantityAriaLabel": "Cantidad personalizada",
+        "customOption": "Personalizado...",
+        "editQuantityAriaLabel": "Editar cantidad",
+        "promotionApplied": "Promoción aplicada",
+        "removeItemAriaLabel": "Eliminar artículo del carrito",
+        "emptyCart": "Tu carrito está vacío",
+        "loading": "Cargando...",
+        "viewCart": "Ver carrito",
+        "saved": "Guardado {{amount}}",
+        "free": "Gratis",
+        "emptyTitle": "Your cart is empty",
+        "emptyMessage": "Looks like you haven't added anything to your cart yet. Start shopping to fill it up with amazing products!",
+        "startShopping": "Start Shopping",
+        "delivery": "Delivery",
+        "closeAriaLabel": "Cerrar"
+    },
+    "trackingConsent": {
+        "title": "Consentimiento de seguimiento",
+        "accept": "Aceptar",
+        "decline": "Rechazar",
+        "closeAriaLabel": "Cerrar"
+    },
+    "localeSwitcher": {
+        "ariaLabel": "Selector de idioma",
+        "validation": {
+            "unsupportedLocale": "Configuración local no admitida",
+            "usingDefault": "Uso de la configuración local predeterminada: {{locale}}"
+        },
+        "locales": {
+            "en-GB": "English (UK)",
+            "en-US": "English (US)",
+            "da-DK": "Dansk (Danmark)",
+            "de-DE": "Deutsch (Deutschland)",
+            "es-ES": "Español (España)",
+            "fi-FI": "Suomi (Suomi)",
+            "fr-FR": "Français (France)",
+            "it-IT": "Italiano (Italia)",
+            "ja-JP": "日本語 (日本)",
+            "ko-KR": "한국어 (대한민국)",
+            "nb-NO": "Norsk bokmål (Norge)",
+            "nl-NL": "Nederlands (Nederland)",
+            "pl-PL": "Polski (Polska)",
+            "pt-PT": "Português (Portugal)",
+            "sv-SE": "Svenska (Sverige)",
+            "zh-CN": "中文 (简体)",
+            "zh-TW": "中文 (繁體)"
+        }
+    },
+    "currencySwitcher": {
+        "ariaLabel": "Conmutador de divisas",
+        "currencies": {
+            "USD": "Dólar estadounidense ($)",
+            "MXN": "Peso mexicano ($)",
+            "GBP": "Libra esterlina (£)",
+            "JPY": "Yen japonés (¥)",
+            "KRW": "Won surcoreano (₩)",
+            "BRL": "Real brasileño (R$)",
+            "CNY": "Yuan chino (¥)",
+            "TWD": "Dólar taiwanés (NT$)",
+            "DKK": "Corona danesa (kr)",
+            "PLN": "Esloti polaco (zł)",
+            "SEK": "Corona sueca (kr)",
+            "EUR": "Euro (€)"
+        },
+        "validation": {
+            "unsupportedCurrency": "Moneda no admitida",
+            "usingDefault": "Uso de la divisa por defecto: {{currency}}"
+        }
+    },
+    "addressSuggestionDropdown": {
+        "suggested": "SUGERIDO",
+        "closeSuggestions": "Cerrar sugerencias",
+        "loading": "Cargando sugerencias...",
+        "googleMapsLogoAlt": "Mapas de Google"
+    },
+    "infoModal": {
+        "paymentScheduleDescription": "Detalles del cronograma de pagos",
+        "writeReviewDescription": "Escribe un formulario de opinión",
+        "starRatingDistributionDescription": "Detalles de la distribución de la clasificación por estrellas",
+        "estimatedDeliveryDescription": "Detalles de la entrega estimada",
+        "returnsAndWarrantyDescription": "Devoluciones y detalles de la garantía",
+        "close": "Cerrar"
+    },
+    "estimatedDelivery": {
+        "cardTitle": "Entrega estimada",
+        "cardDescription": "Opciones de envío disponibles",
+        "learnMore": "Más información",
+        "sectionHeading": "Entrega estimada",
+        "shippingOptionsHeading": "Tarifas de opciones & de envío",
+        "free": "Gratis"
+    },
+    "writeReview": {
+        "validation": {
+            "pleaseFixFollowing": "Por favor, corrija lo siguiente:",
+            "ratingRequired": "Por favor, seleccione una valoración.",
+            "reviewRequired": "Rellene este campo.",
+            "reviewMinLength": "Tu reseña debe tener al menos {{count}} caracteres",
+            "reviewMaxLength": "Por favor, no introduzca más que {{count}} caracteres.",
+            "titleMaxLength": "Por favor, no introduzca más que {{count}} caracteres."
+        },
+        "minCharactersHint": "Mínimo de {{count}} caracteres.",
+        "maxCharactersHint": "Número máximo de {{count}} caracteres."
+    },
+    "sitePicker": {
+        "title": "Elige tu sitio",
+        "description": "Seleccione su tienda preferida para ver los productos y precios relevantes.",
+        "ariaLabel": "Seleccionar sitio",
+        "placeholder": "Seleccione un sitio...",
+        "sites": {
+            "RefArchGlobal": "Global (Reino Unido)",
+            "RefArch": "Estados Unidos"
+        }
+    },
+    "category": {
+        "banner": {
+            "productsAvailable_one": "1 product available",
+            "productsAvailable_other": "{{count}} products available"
+        }
+    },
+    "maintenancePage": {
+        "apology": "We apologise for any inconvenience. Thank you for your patience!"
+    },
+    "error": {
+        "403": {
+            "title": "Access restricted",
+            "message": "You don't have permission to view this page. If you believe this is an error, please contact our support team.",
+            "secondaryMessage": "In the meantime, feel free to browse our collection."
+        },
+        "404": {
+            "title": "Page not found",
+            "message": "We couldn't find the page you're looking for. It may have been moved or the link might be incorrect.",
+            "secondaryMessage": "Don't worry—you can still explore our collection or head back home.",
+            "details": "The requested page could not be found."
+        },
+        "500": {
+            "title": "Something went wrong",
+            "message": "We're sorry, but something unexpected happened on our end. Our team has been notified and is working to fix it.",
+            "secondaryMessage": "Please try again in a few moments, or browse our shop while we sort things out."
+        },
+        "defaultTitle": "Something went wrong",
+        "defaultDescription": "An error occurred",
+        "defaultDetails": "An unexpected error occurred.",
+        "notFoundTitle": "Page not found",
+        "notFoundDetails": "The requested page could not be found.",
+        "persistsMessage": "If this problem persists, please contact support.",
+        "tryAgainMessage": "An unexpected error occurred. Please try again later.",
+        "goToHomepage": "Go to Homepage",
+        "allRightsReserved": "All rights reserved.",
+        "recommendations": {
+            "title": "You might also like"
+        }
+    },
+    "product": {
+        "recommendations": {
+            "youMightAlsoLike": "Es posible que también le interese",
+            "completeTheLook": "Completa el look",
+            "recentlyViewed": "Recientemente vistos"
+        },
+        "rating": {
+            "starContainerAriaLabel": "{{rating}} de {{total}} estrellas, {{count, number}} reseñas",
+            "ratingOutOfTotal": "{{rating}} de {{total}}",
+            "ratingValue": "{{rating}}",
+            "basedOnReviews": "Basado en {{count, number}} reseñas",
+            "ratingWithCount": "{{rating}} ({{count, number}})",
+            "viewAllReviews": "Ver todas las reseñas",
+            "distributionAriaLabel": "{{rating}} estrellas: {{count, number}} de {{totalReviews, number}} reseñas",
+            "distributionsAriaLabel": "Distribución de la clasificación por estrellas, {{total, number}} reseñas totales",
+            "seeCustomerReviews": "Ver las opiniones de los clientes >"
+        },
+        "from": "de",
+        "outOfStock": "Agotado para {{productName}}",
+        "onlyLeft": "¡Solo {{stockLevel}} queda para {{productName}}!",
+        "inStock": "Disponible",
+        "inStockCount": "En stock ({{stockDisplay}} unidades) listas para ser enviadas",
+        "lowStock": "Poco stock",
+        "lowStockCount": "Existencias bajas - Solo {{stockDisplay}} queda",
+        "preOrder": "Disponible para pre-pedido",
+        "backOrder": "Disponible para pedidos pendientes",
+        "outOfStockLabel": "Agotado",
+        "selectAllOptions": "Selecciona todas tus opciones arriba",
+        "description": "Descripción",
+        "imageAlt": "Imagen de producto",
+        "addingToCart": "Añadiendo a la cesta...",
+        "addToCart": "Agregar al carrito",
+        "moreOptions": "Más opciones",
+        "quickAdd": "Adición rápida",
+        "buyItNow": "Comprar ahora",
+        "pickupAvailable": "Recogida disponible",
+        "selectProduct": "Selecciona un producto",
+        "updatingCart": "Actualizando...",
+        "updateCart": "Actualización",
+        "addingToWishlist": "Añadiendo a la lista de deseos...",
+        "addToWishlist": "Agregar a la lista de deseos",
+        "updatingWishlist": "Actualización de la lista de deseos",
+        "share": "Compartir",
+        "expressPayments": {
+            "separatorBuyWith": "O compra con",
+            "venmoUnavailable": "Venmo no está disponible en este dispositivo."
+        },
+        "productSetNotice": "Este es un conjunto de productos. Selecciona los artículos individuales a continuación para agregarlos al carrito.",
+        "productBundleNotice": "Este es un paquete de productos. Todos los elementos se agregarán.",
+        "productDetails": "Detalles del producto",
+        "noDetailedDescription": "No hay descripción detallada disponible.",
+        "brand": "Marca:",
+        "manufacturer": "Fabricante:",
+        "sku": "SKU.",
+        "sizeAndFit": "Tamaño y ajuste",
+        "sizeAndFitComingSoon": "Próximamente se publicará información sobre el tamaño y el ajuste.",
+        "shippingAndReturns": "Envío y devoluciones",
+        "freeShipping": "Envío gratuito en pedidos superiores a $50",
+        "standardShipping": "Envío estándar: 3-5 días hábiles",
+        "expressShipping": "Envío exprés: 1-2 días hábiles",
+        "priceMin": "Mín.",
+        "priceMax": "Máx.",
+        "priceTo": "hasta",
+        "returns": "Devoluciones: Política de devolución de 30 días",
+        "reviews": "Revisiones",
+        "customerReviews": "Reseñas de los clientes",
+        "oneReviewForProductName": "1 reseña de {{productName}}",
+        "reviewsForProductName": "{{count}} reseñas para {{productName}}",
+        "aiReviewSummary": "Resumen de la revisión de IA",
+        "loadingReviews": "Cargando reseñas...",
+        "noReviewsForProduct": "No hay reseñas para este producto.",
+        "noReviewsMatchFilters": "No hay reseñas que coincidan con tus filtros.",
+        "verifiedPurchase": "Compra verificada",
+        "helpful": "Útil ({{count}})",
+        "helpfulNoCount": "Útil",
+        "report": "Informe",
+        "readMore": "Más información",
+        "readLess": "Leer menos",
+        "reviewImageAlt": "Imagen de revisión",
+        "viewProductAriaLabel": "Ver {{productName}}",
+        "swatches": {
+            "availableColors": "Available colors",
+            "viewProductInColor": "View {{productName}} in {{colorName}}",
+            "viewAllColors": "View all {{count}} colors for {{productName}}",
+            "moreColorsTitle": "+{{count}} more"
+        },
+        "showingReviews": "Mostrando {{from}}-{{to}} de {{total}} opiniones",
+        "filterBy": "Filtrar por:",
+        "withPhotos": "Con fotos",
+        "searchReviewsPlaceholder": "Buscar reseñas...",
+        "sortLabel": "Ordenar:",
+        "sortMostRecent": "Más reciente",
+        "sortHighestRated": "Mejor valorado",
+        "sortLowestRated": "La calificación más baja",
+        "sortMostHelpful": "Más útil",
+        "activeFilterStars": "{{count}} estrellas",
+        "clearFilter": "Borrar filtro",
+        "filterByStars": "Filtrar por {{count}} estrellas",
+        "clearStarFilter": "Filtro de estrella transparente {{count}}",
+        "clearPhotoFilter": "Borrar filtro fotográfico",
+        "writeReviewButton": "Escribe una reseña",
+        "materials": "Materiales",
+        "usageInstructions": "Instrucciones de uso",
+        "specifications": "Especificaciones",
+        "careInstructions": "Instrucciones de cuidado",
+        "careInstructionsComingSoon": "Las instrucciones de cuidado estarán disponibles próximamente.",
+        "productSet": "Conjunto de productos",
+        "productBundle": "Paquete de productos",
+        "setDescription": "Elige entre los siguientes artículos para crear tu conjunto perfecto",
+        "bundleDescription": "Todos los artículos de este paquete se agregarán a tu carrito juntos",
+        "selectedOf": "{{selected}} de {{total}} seleccionados",
+        "addSetToCart": "Agregar conjunto al carrito",
+        "addBundleToCart": "Agregar paquete al carrito",
+        "adding": "Agregando...",
+        "selectAllOptionsAbove": "Selecciona todas tus opciones arriba",
+        "outOfStockStatus": "Agotado",
+        "selected": "✓ Seleccionado",
+        "selectOptionsAbove": "Selecciona las opciones anteriores",
+        "selectOptions": "Selecciona opciones",
+        "bonusProduct": "Producto de regalo",
+        "bonusProductAriaLabel": "Este artículo es un producto de regalo gratuito",
+        "addedToCart": "{{productName}} se agregó al carrito",
+        "updatedCart": "Actualizado {{productName}} en el carrito.",
+        "addedSetToCart": "Se agregó el conjunto de productos al carrito.",
+        "addedBundleToCart": "Se agregó un paquete de productos al carrito.",
+        "failedToAddToCart": "No se pudo agregar al carrito: {{error}}.",
+        "failedToUpdateCart": "No se pudo actualizar el carrito: {{error}}.",
+        "failedToAddItemsToCart": "No se pudieron agregar artículos al carrito: {{error}}.",
+        "failedToAddBundleToCart": "No se pudo agregar el paquete al carrito: {{error}}.",
+        "addedToWishlist": "Se agregó {{productName}} a la lista de deseos.",
+        "alreadyInWishlist": "{{productName}} ya está en tu lista de deseos.",
+        "failedToAddToWishlist": "No se pudo agregar el artículo a la lista de deseos.",
+        "signInToAddToWishlist": "Inicia sesión para añadir artículos a tu lista de deseos.",
+        "signInToContinue": "Inicie sesión para continuar.",
+        "removedFromWishlist": "Eliminado de la lista de deseos.",
+        "failedToRemoveFromWishlist": "No se pudo eliminar el artículo de la lista de deseos.",
+        "removeFromWishlist": "Eliminar de la lista de deseos.",
+        "removedLabel": "Eliminado",
+        "remove": "Eliminar",
+        "selectVariantPlaceholder": "Seleccionar",
+        "itemAlreadyInWishlist": "El artículo ya está en tu lista de deseos.",
+        "addedToWishlistGeneric": "Se agregó a la lista de deseos.",
+        "productIdRequired": "Se requiere la identificación del producto.",
+        "productOrItemIdRequired": "Se requiere la identificación del producto o la identificación del artículo.",
+        "methodNotAllowed": "Método no permitido",
+        "productItemRequired": "Los datos del artículo del producto son obligatorios.",
+        "productItemsRequired": "Los datos de los artículos del producto son obligatorios.",
+        "bundleDataRequired": "Se requieren los datos de las selecciones de artículos de paquete y secundarios.",
+        "failedToAddItemToCart": "No se pudo agregar el artículo al carrito.",
+        "failedToUpdateItemToCart": "No se pudo actualizar el artículo al carrito.",
+        "failedToRemoveItem": "No se pudo eliminar el artículo.",
+        "failedToUpdateItemQuantity": "No se pudo actualizar la cantidad del artículo.",
+        "failedToAddItemsToCartError": "No se pudieron agregar artículos al carrito.",
+        "failedToAddBundleToCartError": "No se pudo agregar el paquete al carrito.",
+        "failedToUpdateBundleToCartError": "No se pudo actualizar el paquete al carrito.",
+        "pleaseSelectOptionsFor": "Selecciona las opciones para {{productName}}",
+        "productNotOrderable": "{{productName}} no se puede pedir.",
+        "cannotAddToCartValidationFailed": "No se puede agregar al carrito: error de validación.",
+        "failedToAddProductToCart": "No se pudo agregar el producto al carrito.",
+        "failedToAddProductToWishlist": "No se pudo agregar el producto a la lista de deseos.",
+        "noProductIdForCart": "No hay identificación del producto disponible para agregar al carrito.",
+        "invalidQuantityForCart": "Cantidad no válida para agregar al carrito: {{quantity}}.",
+        "noProductSelectionsForSet": "No se proporcionan selecciones de productos para la adición del carrito establecido.",
+        "noProductIdForBundle": "No hay identificación del producto disponible para la adición del carrito de paquetes.",
+        "invalidQuantityForBundle": "Cantidad no válida para la adición del carrito de paquetes: {{quantity}}.",
+        "noChildSelectionsForBundle": "No se proporcionan selecciones de productos secundarios para la adición del carrito de paquetes.",
+        "cartOperationFailed": "Error en la operación del carrito:",
+        "multipleItemsCartOperationFailed": "Error en la operación del carrito de varios artículos:",
+        "bundleCartOperationFailed": "Error en la operación del carro de paquetes:",
+        "errorInHandleAddToCart": "Error en handleAddToCart:",
+        "errorInHandleProductSetAddToCart": "Error en handleProductSetAddToCart:",
+        "errorInHandleProductBundleAddToCart": "Error en handleProductBundleAddToCart:",
+        "failedToAddToWishlistError": "No se pudo agregar a la lista de deseos:",
+        "addingToWishlistLog": "Añadiendo a la lista de deseos:",
+        "failedToAddProductToCartError": "No se pudo agregar el producto al carrito:",
+        "failedToAddProductToWishlistError": "Error al agregar el producto a la lista de deseos:",
+        "price": {
+            "unavailable": "Precio no disponible",
+            "currentPriceFrom": "Precio actual desde {{price}}",
+            "currentPrice": "Precio actual: {{price}}",
+            "from": "De {{price}}",
+            "range": "{{min}} – {{max}}",
+            "rangeA11y": "Rango de precios desde {{min}} hasta {{max}}",
+            "listPriceFrom": "Precio de lista de {{price}}",
+            "listPrice": "Precio de lista: {{price}}"
+        },
+        "removingFromWishlist": "Removing from wishlist...",
+        "inWishlist": "In your wishlist"
+    }
+}

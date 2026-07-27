@@ -1,0 +1,32 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PayPalLogo stories snapshot > Decorative story renders and matches snapshot 1`] = `
+<img
+  alt=""
+  aria-hidden="true"
+  class=" h-4 w-auto object-contain"
+  height="18"
+  src="__ASSET_MOCK__"
+  width="74"
+/>
+`;
+
+exports[`PayPalLogo stories snapshot > Default story renders and matches snapshot 1`] = `
+<img
+  alt="PayPal"
+  class=" h-4 w-auto object-contain"
+  height="18"
+  src="__ASSET_MOCK__"
+  width="74"
+/>
+`;
+
+exports[`PayPalLogo stories snapshot > WithCustomClassName story renders and matches snapshot 1`] = `
+<img
+  alt="PayPal"
+  class="custom-class h-4 w-auto object-contain"
+  height="18"
+  src="__ASSET_MOCK__"
+  width="74"
+/>
+`;

@@ -1,0 +1,23 @@
+{
+    "id": "file-page",
+    "typeId": "storePage",
+    "regions": [
+        {
+            "id": "main",
+            "components": [
+                {
+                    "id": "download-1",
+                    "typeId": "commerce_assets.downloadLink",
+                    "regions": [],
+                    "fragment": false,
+                    "localized": true,
+                    "visible": true,
+                    "data": {
+                        "title": "Size Guide",
+                        "document": "https://www.shop.example/on/demandware.static/-/Library-Sites-RefArchSharedLibrary/en_US/v1/pdfs/size-guide.pdf"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,220 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProductContentSkeleton stories snapshot > Default story renders and matches snapshot 1`] = `
+<div
+  class="space-y-8"
+  data-testid="product-skeleton"
+>
+  <div
+    class="grid grid-cols-1 lg:grid-cols-2 gap-4 lg:gap-12"
+  >
+    <div
+      class="order-1"
+    >
+      <div
+        class="space-y-4"
+        data-testid="image-gallery-skeleton"
+      >
+        <div
+          class="bg-accent animate-pulse rounded-ui aspect-square w-full"
+          data-slot="skeleton"
+          data-testid="main-image-skeleton"
+        />
+        <div
+          class="flex space-x-2 overflow-x-auto"
+          data-testid="thumbnails-skeleton"
+        >
+          <div
+            class="bg-accent animate-pulse rounded-ui h-16 w-16 flex-shrink-0"
+            data-slot="skeleton"
+          />
+          <div
+            class="bg-accent animate-pulse rounded-ui h-16 w-16 flex-shrink-0"
+            data-slot="skeleton"
+          />
+          <div
+            class="bg-accent animate-pulse rounded-ui h-16 w-16 flex-shrink-0"
+            data-slot="skeleton"
+          />
+          <div
+            class="bg-accent animate-pulse rounded-ui h-16 w-16 flex-shrink-0"
+            data-slot="skeleton"
+          />
+          <div
+            class="bg-accent animate-pulse rounded-ui h-16 w-16 flex-shrink-0"
+            data-slot="skeleton"
+          />
+        </div>
+      </div>
+    </div>
+    <div
+      class="order-2"
+    >
+      <div
+        class="grid gap-4"
+        data-testid="product-info-skeleton"
+      >
+        <div
+          data-testid="desktop-title-skeleton"
+        >
+          <div
+            class="bg-accent animate-pulse rounded-ui h-9 w-3/4 mb-2"
+            data-slot="skeleton"
+          />
+          <div
+            class="bg-accent animate-pulse rounded-ui h-5 w-full mb-1"
+            data-slot="skeleton"
+          />
+          <div
+            class="bg-accent animate-pulse rounded-ui h-5 w-2/3"
+            data-slot="skeleton"
+          />
+        </div>
+        <div
+          data-testid="price-skeleton"
+        >
+          <div
+            class="bg-accent animate-pulse rounded-ui h-7 w-24"
+            data-slot="skeleton"
+          />
+        </div>
+        <div
+          data-testid="inventory-skeleton"
+        >
+          <div
+            class="bg-accent animate-pulse rounded-ui h-5 w-32"
+            data-slot="skeleton"
+          />
+        </div>
+        <div
+          class="space-y-4"
+          data-testid="variants-skeleton"
+        >
+          <div>
+            <div
+              class="bg-accent animate-pulse rounded-ui h-5 w-20 mb-2"
+              data-slot="skeleton"
+            />
+            <div
+              class="flex space-x-2"
+            >
+              <div
+                class="bg-accent animate-pulse rounded-ui h-10 w-10 rounded-full"
+                data-slot="skeleton"
+              />
+              <div
+                class="bg-accent animate-pulse rounded-ui h-10 w-10 rounded-full"
+                data-slot="skeleton"
+              />
+              <div
+                class="bg-accent animate-pulse rounded-ui h-10 w-10 rounded-full"
+                data-slot="skeleton"
+              />
+            </div>
+          </div>
+          <div>
+            <div
+              class="bg-accent animate-pulse rounded-ui h-5 w-16 mb-2"
+              data-slot="skeleton"
+            />
+            <div
+              class="flex space-x-2"
+            >
+              <div
+                class="bg-accent animate-pulse rounded-ui h-10 w-14"
+                data-slot="skeleton"
+              />
+              <div
+                class="bg-accent animate-pulse rounded-ui h-10 w-14"
+                data-slot="skeleton"
+              />
+              <div
+                class="bg-accent animate-pulse rounded-ui h-10 w-14"
+                data-slot="skeleton"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          data-testid="quantity-skeleton"
+        >
+          <div
+            class="bg-accent animate-pulse rounded-ui h-5 w-20 mb-2"
+            data-slot="skeleton"
+          />
+          <div
+            class="bg-accent animate-pulse rounded-ui h-10 w-24"
+            data-slot="skeleton"
+          />
+        </div>
+        <div
+          class="mt-6"
+          data-testid="delivery-options-skeleton"
+        >
+          <div
+            class="bg-accent animate-pulse rounded-ui h-5 w-32 mb-3"
+            data-slot="skeleton"
+          />
+          <div
+            class="space-y-2"
+          >
+            <div
+              class="bg-accent animate-pulse rounded-ui h-12 w-full"
+              data-slot="skeleton"
+            />
+            <div
+              class="bg-accent animate-pulse rounded-ui h-12 w-full"
+              data-slot="skeleton"
+            />
+          </div>
+        </div>
+        <div
+          class="space-y-2"
+          data-testid="features-skeleton"
+        >
+          <div
+            class="bg-accent animate-pulse rounded-ui h-4 w-full"
+            data-slot="skeleton"
+          />
+          <div
+            class="bg-accent animate-pulse rounded-ui h-4 w-5/6"
+            data-slot="skeleton"
+          />
+          <div
+            class="bg-accent animate-pulse rounded-ui h-4 w-4/5"
+            data-slot="skeleton"
+          />
+        </div>
+        <div
+          class="mt-6"
+          data-testid="cart-actions-skeleton"
+        >
+          <div
+            class="flex flex-col gap-3"
+          >
+            <div
+              class="bg-accent animate-pulse rounded-ui h-12 w-full"
+              data-slot="skeleton"
+              data-testid="add-to-cart-skeleton"
+            />
+            <div
+              class="grid grid-cols-2 gap-3"
+            >
+              <div
+                class="bg-accent animate-pulse rounded-ui h-12 w-full"
+                data-slot="skeleton"
+                data-testid="wishlist-skeleton"
+              />
+              <div
+                class="bg-accent animate-pulse rounded-ui h-12 w-full"
+                data-slot="skeleton"
+                data-testid="share-skeleton"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

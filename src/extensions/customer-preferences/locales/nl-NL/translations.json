@@ -1,0 +1,35 @@
+{
+    "interestsPreferences": {
+        "title": "Interesses en Voorkeuren",
+        "description": "Voeg toe in welke ontwerpen je interesse hebt en beheer je voorkeuren bij het shoppen",
+        "successMessage": "Je interesses en voorkeuren zijn bijgewerkt.",
+        "errorMessage": "Bijwerken is mislukt. Probeer het opnieuw.",
+        "loadError": "We couldn't load your interests and preferences. Please refresh the page to try again."
+    },
+    "interests": {
+        "title": "Jouw interesses",
+        "noneSelected": "Geen interesses geselecteerd",
+        "addMore": "Meer toevoegen",
+        "addInterestsTitle": "Voeg je interesses toe"
+    },
+    "preferences": {
+        "noneSelected": "Niets geselecteerd",
+        "addMore": "Meer toevoegen",
+        "dialogTitle": "Opties selecteren",
+        "selectCategory": "{{category}} selecteren"
+    },
+    "measures": {
+        "roomDimensionsLabel": "Room dimensions:",
+        "ceilingHeightLabel": "Ceiling height:",
+        "noneProvided": "No measures provided"
+    },
+    "size": {
+        "preferredSizeLabel": "Preferred product size:"
+    },
+    "common": {
+        "save": "Opslaan",
+        "saving": "Opslaan...",
+        "cancel": "Annuleren",
+        "edit": "Bewerken"
+    }
+}

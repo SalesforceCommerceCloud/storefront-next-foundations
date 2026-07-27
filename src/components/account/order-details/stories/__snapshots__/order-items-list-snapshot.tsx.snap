@@ -1,0 +1,308 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`OrderItemsList stories snapshot > Default story renders and matches snapshot 1`] = `
+<ul
+  class="space-y-4"
+>
+  <li
+    data-testid="order-item"
+  >
+    <div
+      class="flex flex-col gap-4 rounded-ui border border-muted-foreground/20 bg-card p-4 transition-colors hover:bg-muted/50 sm:flex-row sm:items-center"
+    >
+      <a
+        aria-label="View Sweater"
+        class="flex-shrink-0 block"
+        data-discover="true"
+        href="/RefArchGlobal/en-GB/product/701643108633M"
+      >
+        <div
+          class="bg-muted flex-shrink-0 flex items-center justify-center aspect-square overflow-hidden rounded-ui h-24 w-24"
+          data-slot="product-item-image"
+        >
+          <img
+            alt="Sweater"
+            class="h-full w-full object-contain"
+            src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dw97734cd6/images/large/PG.33330DAN84Q.CHARCWL.PZ.webp?sfrm=jpg&q=70"
+          />
+        </div>
+      </a>
+      <div
+        class="min-w-0 flex-1 space-y-1"
+      >
+        <div
+          class="mb-2 md:mb-4 flex items-start gap-2 min-w-0"
+        >
+          <h2
+            class="text-left text-xl font-semibold leading-7 tracking-[-0.5px] text-card-foreground min-w-0 flex-1"
+          >
+            <a
+              class="hover:text-primary block break-words"
+              data-discover="true"
+              href="/RefArchGlobal/en-GB/product/701643108633M"
+              title="Sweater"
+            >
+              Sweater
+            </a>
+          </h2>
+        </div>
+        <div>
+          <ul
+            class="text-sm font-normal leading-5 text-muted-foreground space-y-1 mb-1"
+            role="list"
+          >
+            <li>
+              Size
+              : 
+              M
+            </li>
+            <li>
+              Color
+              : 
+              Navy
+            </li>
+          </ul>
+        </div>
+        <p
+          class="text-xs text-muted-foreground"
+        >
+          Qty: 3
+        </p>
+      </div>
+      <div
+        class="flex shrink-0 flex-col items-end gap-1 sm:self-start"
+      >
+        <div
+          class="items-center gap-2"
+        >
+          <span
+            aria-label="Current price: £61.99"
+            aria-live="polite"
+            class="leading-7 [&:not(:first-child)]:mt-6 text-left font-semibold"
+          >
+            £61.99
+          </span>
+          <span
+            aria-atomic="true"
+            aria-live="polite"
+            class="sr-only"
+          >
+            Sweater
+             
+            Current price: £61.99
+          </span>
+           
+          <span
+            aria-label="List price: £185.97"
+            class="text-sm font-medium leading-none text-left line-through text-muted-foreground"
+          >
+            £185.97
+          </span>
+          <span
+            aria-atomic="true"
+            aria-live="polite"
+            class="sr-only"
+          >
+            Sweater
+             
+            List price: £185.97
+          </span>
+        </div>
+        <a
+          class="inline-flex items-center justify-center whitespace-nowrap rounded-ui font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-8 rounded-ui gap-1.5 px-3 has-[>svg]:px-2.5 bg-foreground text-background hover:bg-foreground/90 text-xs"
+          data-discover="true"
+          data-size="sm"
+          data-slot="button"
+          data-variant="default"
+          href="/RefArchGlobal/en-GB/product/701643108633M"
+        >
+          Buy Again
+        </a>
+      </div>
+    </div>
+  </li>
+</ul>
+`;
+
+exports[`OrderItemsList stories snapshot > Empty story renders and matches snapshot 1`] = `
+<p
+  class="leading-7 [&:not(:first-child)]:mt-6 text-left text-muted-foreground"
+>
+  No items.
+</p>
+`;
+
+exports[`OrderItemsList stories snapshot > MultipleItems story renders and matches snapshot 1`] = `
+<ul
+  class="space-y-4"
+>
+  <li
+    data-testid="order-item"
+  >
+    <div
+      class="flex flex-col gap-4 rounded-ui border border-muted-foreground/20 bg-card p-4 transition-colors hover:bg-muted/50 sm:flex-row sm:items-center"
+    >
+      <a
+        aria-label="View Product One"
+        class="flex-shrink-0 block"
+        data-discover="true"
+        href="/RefArchGlobal/en-GB/product/prod-1"
+      >
+        <div
+          class="bg-muted flex-shrink-0 flex items-center justify-center aspect-square overflow-hidden rounded-ui h-24 w-24"
+          data-slot="product-item-image"
+        >
+          <div
+            class="w-full h-full bg-muted"
+          />
+        </div>
+      </a>
+      <div
+        class="min-w-0 flex-1 space-y-1"
+      >
+        <div
+          class="mb-2 md:mb-4 flex items-start gap-2 min-w-0"
+        >
+          <h2
+            class="text-left text-xl font-semibold leading-7 tracking-[-0.5px] text-card-foreground min-w-0 flex-1"
+          >
+            <a
+              class="hover:text-primary block break-words"
+              data-discover="true"
+              href="/"
+              title="Product One"
+            >
+              Product One
+            </a>
+          </h2>
+        </div>
+        <div />
+        <p
+          class="text-xs text-muted-foreground"
+        >
+          Qty: 1
+        </p>
+      </div>
+      <div
+        class="flex shrink-0 flex-col items-end gap-1 sm:self-start"
+      >
+        <div
+          class="items-center gap-2"
+        >
+          <span
+            aria-label="Current price: £10.00"
+            aria-live="polite"
+            class="leading-7 [&:not(:first-child)]:mt-6 text-left font-semibold"
+          >
+            £10.00
+          </span>
+          <span
+            aria-atomic="true"
+            aria-live="polite"
+            class="sr-only"
+          >
+            Product One
+             
+            Current price: £10.00
+          </span>
+           
+        </div>
+        <a
+          class="inline-flex items-center justify-center whitespace-nowrap rounded-ui font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-8 rounded-ui gap-1.5 px-3 has-[>svg]:px-2.5 bg-foreground text-background hover:bg-foreground/90 text-xs"
+          data-discover="true"
+          data-size="sm"
+          data-slot="button"
+          data-variant="default"
+          href="/RefArchGlobal/en-GB/product/prod-1"
+        >
+          Buy Again
+        </a>
+      </div>
+    </div>
+  </li>
+  <li
+    data-testid="order-item"
+  >
+    <div
+      class="flex flex-col gap-4 rounded-ui border border-muted-foreground/20 bg-card p-4 transition-colors hover:bg-muted/50 sm:flex-row sm:items-center"
+    >
+      <a
+        aria-label="View Product Two"
+        class="flex-shrink-0 block"
+        data-discover="true"
+        href="/RefArchGlobal/en-GB/product/prod-2"
+      >
+        <div
+          class="bg-muted flex-shrink-0 flex items-center justify-center aspect-square overflow-hidden rounded-ui h-24 w-24"
+          data-slot="product-item-image"
+        >
+          <div
+            class="w-full h-full bg-muted"
+          />
+        </div>
+      </a>
+      <div
+        class="min-w-0 flex-1 space-y-1"
+      >
+        <div
+          class="mb-2 md:mb-4 flex items-start gap-2 min-w-0"
+        >
+          <h2
+            class="text-left text-xl font-semibold leading-7 tracking-[-0.5px] text-card-foreground min-w-0 flex-1"
+          >
+            <a
+              class="hover:text-primary block break-words"
+              data-discover="true"
+              href="/"
+              title="Product Two"
+            >
+              Product Two
+            </a>
+          </h2>
+        </div>
+        <div />
+        <p
+          class="text-xs text-muted-foreground"
+        >
+          Qty: 1
+        </p>
+      </div>
+      <div
+        class="flex shrink-0 flex-col items-end gap-1 sm:self-start"
+      >
+        <div
+          class="items-center gap-2"
+        >
+          <span
+            aria-label="Current price: £20.00"
+            aria-live="polite"
+            class="leading-7 [&:not(:first-child)]:mt-6 text-left font-semibold"
+          >
+            £20.00
+          </span>
+          <span
+            aria-atomic="true"
+            aria-live="polite"
+            class="sr-only"
+          >
+            Product Two
+             
+            Current price: £20.00
+          </span>
+           
+        </div>
+        <a
+          class="inline-flex items-center justify-center whitespace-nowrap rounded-ui font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive h-8 rounded-ui gap-1.5 px-3 has-[>svg]:px-2.5 bg-foreground text-background hover:bg-foreground/90 text-xs"
+          data-discover="true"
+          data-size="sm"
+          data-slot="button"
+          data-variant="default"
+          href="/RefArchGlobal/en-GB/product/prod-2"
+        >
+          Buy Again
+        </a>
+      </div>
+    </div>
+  </li>
+</ul>
+`;

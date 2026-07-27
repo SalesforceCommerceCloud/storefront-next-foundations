@@ -1,0 +1,529 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ToggleCard stories snapshot > Default story renders and matches snapshot 1`] = `
+<div
+  class="bg-card text-card-foreground flex flex-col rounded-ui border-ui border-border shadow-ui relative py-4 gap-4"
+  data-slot="card"
+>
+  <div
+    class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+    data-slot="card-header"
+  >
+    <div
+      class="text-base font-semibold text-foreground"
+      data-slot="card-title"
+      tabindex="-1"
+    >
+      Contact Information
+    </div>
+    <div
+      class="text-sm text-muted-foreground"
+      data-slot="card-description"
+    >
+      Manage your contact details
+    </div>
+    <div
+      class="col-start-2 row-span-2 row-start-1 self-start justify-self-end"
+      data-slot="card-action"
+    >
+      <button
+        aria-label="Edit"
+        class="inline-flex items-center justify-center whitespace-nowrap rounded-ui text-sm transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive text-primary underline-offset-4 hover:underline h-8 rounded-ui gap-1.5 px-3 has-[>svg]:px-2.5 font-bold"
+        data-size="sm"
+        data-slot="button"
+        data-variant="link"
+        type="button"
+      >
+        Edit
+      </button>
+    </div>
+  </div>
+  <div
+    class="px-6"
+    data-slot="card-content"
+  >
+    <div
+      class="space-y-2"
+    >
+      <div>
+        <label
+          class="flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-sm font-medium"
+          data-slot="label"
+        >
+          Name
+        </label>
+        <p
+          class="text-sm"
+        >
+          John Doe
+        </p>
+      </div>
+      <div>
+        <label
+          class="flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-sm font-medium"
+          data-slot="label"
+        >
+          Email
+        </label>
+        <p
+          class="text-sm"
+        >
+          john@example.com
+        </p>
+      </div>
+      <div>
+        <label
+          class="flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-sm font-medium"
+          data-slot="label"
+        >
+          Phone
+        </label>
+        <p
+          class="text-sm"
+        >
+          +1 (555) 123-4567
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ToggleCard stories snapshot > DisableEdit story renders and matches snapshot 1`] = `
+<div
+  class="bg-card text-card-foreground flex flex-col rounded-ui border-ui border-border shadow-ui relative py-4 gap-4"
+  data-slot="card"
+>
+  <div
+    class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+    data-slot="card-header"
+  >
+    <div
+      class="text-base font-semibold text-foreground"
+      data-slot="card-title"
+      tabindex="-1"
+    >
+      Read-Only Information
+    </div>
+    <div
+      class="text-sm text-muted-foreground"
+      data-slot="card-description"
+    >
+      This information cannot be edited
+    </div>
+    <div
+      class="col-start-2 row-span-2 row-start-1 self-start justify-self-end"
+      data-slot="card-action"
+    />
+  </div>
+  <div
+    class="px-6"
+    data-slot="card-content"
+  >
+    <div
+      class="space-y-2"
+    >
+      <div>
+        <label
+          class="flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-sm font-medium"
+          data-slot="label"
+        >
+          Name
+        </label>
+        <p
+          class="text-sm"
+        >
+          John Doe
+        </p>
+      </div>
+      <div>
+        <label
+          class="flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-sm font-medium"
+          data-slot="label"
+        >
+          Email
+        </label>
+        <p
+          class="text-sm"
+        >
+          john@example.com
+        </p>
+      </div>
+      <div>
+        <label
+          class="flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-sm font-medium"
+          data-slot="label"
+        >
+          Phone
+        </label>
+        <p
+          class="text-sm"
+        >
+          +1 (555) 123-4567
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ToggleCard stories snapshot > Disabled story renders and matches snapshot 1`] = `
+<div
+  aria-disabled="true"
+  class="bg-card text-card-foreground flex flex-col rounded-ui border-ui border-border shadow-ui relative py-4 gap-0"
+  data-slot="card"
+>
+  <div
+    class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+    data-slot="card-header"
+  >
+    <div
+      class="text-base font-semibold text-muted-foreground"
+      data-slot="card-title"
+      tabindex="-1"
+    >
+      Account Settings
+    </div>
+    <div
+      class="text-sm text-muted-foreground"
+      data-slot="card-description"
+    >
+      This section is currently disabled
+    </div>
+    <div
+      class="col-start-2 row-span-2 row-start-1 self-start justify-self-end"
+      data-slot="card-action"
+    />
+  </div>
+  <div
+    class="px-6"
+    data-slot="card-content"
+  >
+    <div
+      class="space-y-2"
+    >
+      <div>
+        <label
+          class="flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-sm font-medium"
+          data-slot="label"
+        >
+          Name
+        </label>
+        <p
+          class="text-sm"
+        >
+          John Doe
+        </p>
+      </div>
+      <div>
+        <label
+          class="flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-sm font-medium"
+          data-slot="label"
+        >
+          Email
+        </label>
+        <p
+          class="text-sm"
+        >
+          john@example.com
+        </p>
+      </div>
+      <div>
+        <label
+          class="flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-sm font-medium"
+          data-slot="label"
+        >
+          Phone
+        </label>
+        <p
+          class="text-sm"
+        >
+          +1 (555) 123-4567
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ToggleCard stories snapshot > Editing story renders and matches snapshot 1`] = `
+<div
+  class="bg-card text-card-foreground flex flex-col rounded-ui border-ui border-border shadow-ui relative py-4 gap-4"
+  data-slot="card"
+>
+  <div
+    class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+    data-slot="card-header"
+  >
+    <div
+      class="text-base font-semibold text-foreground"
+      data-slot="card-title"
+      tabindex="-1"
+    >
+      Contact Information
+    </div>
+    <div
+      class="text-sm text-muted-foreground"
+      data-slot="card-description"
+    >
+      Edit your contact details
+    </div>
+    <div
+      class="col-start-2 row-span-2 row-start-1 self-start justify-self-end"
+      data-slot="card-action"
+    >
+      <button
+        aria-label="Save"
+        class="inline-flex items-center justify-center whitespace-nowrap rounded-ui text-sm transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive text-primary underline-offset-4 hover:underline h-8 rounded-ui gap-1.5 px-3 has-[>svg]:px-2.5 cursor-pointer font-bold"
+        data-size="sm"
+        data-slot="button"
+        data-variant="link"
+        type="button"
+      >
+        Save
+      </button>
+    </div>
+  </div>
+  <div
+    class="px-6"
+    data-slot="card-content"
+  >
+    <div
+      class="space-y-4"
+    >
+      <div>
+        <label
+          class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50"
+          data-slot="label"
+          for="name"
+        >
+          Name
+        </label>
+        <input
+          class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+          data-slot="input"
+          id="name"
+          value="John Doe"
+        />
+      </div>
+      <div>
+        <label
+          class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50"
+          data-slot="label"
+          for="email"
+        >
+          Email
+        </label>
+        <input
+          class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+          data-slot="input"
+          id="email"
+          type="email"
+          value="john@example.com"
+        />
+      </div>
+      <div>
+        <label
+          class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50"
+          data-slot="label"
+          for="phone"
+        >
+          Phone
+        </label>
+        <input
+          class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+          data-slot="input"
+          id="phone"
+          value="+1 (555) 123-4567"
+        />
+      </div>
+      <div
+        class="flex gap-2"
+      >
+        <button
+          class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary text-primary-foreground hover:bg-primary/90 h-9 px-4 py-2 has-[>svg]:px-3"
+          data-size="default"
+          data-slot="button"
+          data-variant="default"
+        >
+          Save
+        </button>
+        <button
+          class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3"
+          data-size="default"
+          data-slot="button"
+          data-variant="outline"
+        >
+          Cancel
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ToggleCard stories snapshot > Loading story renders and matches snapshot 1`] = `
+<div
+  class="bg-card text-card-foreground flex flex-col rounded-ui border-ui border-border shadow-ui relative py-4 gap-4"
+  data-slot="card"
+>
+  <div
+    class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+    data-slot="card-header"
+  >
+    <div
+      class="text-base font-semibold text-foreground"
+      data-slot="card-title"
+      tabindex="-1"
+    >
+      Processing
+    </div>
+    <div
+      class="text-sm text-muted-foreground"
+      data-slot="card-description"
+    >
+      Saving your changes...
+    </div>
+    <div
+      class="col-start-2 row-span-2 row-start-1 self-start justify-self-end"
+      data-slot="card-action"
+    >
+      <button
+        aria-label="Edit"
+        class="inline-flex items-center justify-center whitespace-nowrap rounded-ui text-sm transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive text-primary underline-offset-4 hover:underline h-8 rounded-ui gap-1.5 px-3 has-[>svg]:px-2.5 font-bold"
+        data-size="sm"
+        data-slot="button"
+        data-variant="link"
+        type="button"
+      >
+        Edit
+      </button>
+    </div>
+  </div>
+  <div
+    class="px-6"
+    data-slot="card-content"
+  >
+    <div
+      class="space-y-2"
+    >
+      <div>
+        <label
+          class="flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-sm font-medium"
+          data-slot="label"
+        >
+          Name
+        </label>
+        <p
+          class="text-sm"
+        >
+          John Doe
+        </p>
+      </div>
+      <div>
+        <label
+          class="flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-sm font-medium"
+          data-slot="label"
+        >
+          Email
+        </label>
+        <p
+          class="text-sm"
+        >
+          john@example.com
+        </p>
+      </div>
+      <div>
+        <label
+          class="flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-sm font-medium"
+          data-slot="label"
+        >
+          Phone
+        </label>
+        <p
+          class="text-sm"
+        >
+          +1 (555) 123-4567
+        </p>
+      </div>
+    </div>
+  </div>
+  <div
+    class="absolute inset-0 z-10 bg-background/60"
+  >
+    <div
+      class="flex h-full w-full items-center justify-center"
+    >
+      <div
+        class="animate-spin rounded-full border-2 border-border border-t-primary size-6"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ToggleCard stories snapshot > StaticView story renders and matches snapshot 1`] = `
+<div
+  aria-disabled="true"
+  class="bg-card text-card-foreground flex flex-col rounded-ui border-ui border-border shadow-ui relative py-4 gap-0"
+  data-slot="card"
+>
+  <div
+    class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 px-6 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6"
+    data-slot="card-header"
+  >
+    <div
+      class="text-base font-semibold text-muted-foreground"
+      data-slot="card-title"
+      tabindex="-1"
+    >
+      Static Information
+    </div>
+    <div
+      class="text-sm text-muted-foreground"
+      data-slot="card-description"
+    >
+      This card cannot be edited
+    </div>
+    <div
+      class="col-start-2 row-span-2 row-start-1 self-start justify-self-end"
+      data-slot="card-action"
+    />
+  </div>
+  <div
+    class="px-6"
+    data-slot="card-content"
+  >
+    <div
+      class="space-y-2"
+    >
+      <div>
+        <label
+          class="flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-sm font-medium"
+          data-slot="label"
+        >
+          Status
+        </label>
+        <p
+          class="text-sm"
+        >
+          Active
+        </p>
+      </div>
+      <div>
+        <label
+          class="flex items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 text-sm font-medium"
+          data-slot="label"
+        >
+          Last Updated
+        </label>
+        <p
+          class="text-sm"
+        >
+          January 15, 2024
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+`;

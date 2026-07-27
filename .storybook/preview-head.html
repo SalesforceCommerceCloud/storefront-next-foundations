@@ -1,0 +1,167 @@
+<!--
+  CRITICAL: Initialize window.__APP_CONFIG__ before other modules load
+  This ensures getConfig() works during module initialization (e.g., AuthContext creation)
+  We inline the config object directly to avoid ESM import issues in static builds
+-->
+<script>
+  (function() {
+    // Mock build-time configuration for Storybook
+    const mockBuildConfig = {
+      metadata: {
+        projectName: 'Test Project',
+        projectSlug: 'test-project',
+      },
+      runtime: {
+        defaultMrtProject: '',
+        defaultMrtTarget: '',
+        ssrOnly: ['loader.js'],
+        ssrShared: ['static/**/*'],
+        ssrParameters: { ssrFunctionNodeVersion: '22.x' },
+      },
+      app: {
+        pages: {
+          home: { featuredProductsCount: 12 },
+          cart: {
+            quantityUpdateDebounce: 750,
+            enableRemoveConfirmation: true,
+            maxQuantityPerItem: 999,
+            enableSaveForLater: false,
+            removeAction: '/action/cart-item-remove',
+            confirmDescription: 'Are you sure you want to remove this item from your cart?',
+          },
+          search: {
+            placeholder: 'Search',
+            enableSearchSuggestions: true,
+            maxSuggestions: 8,
+            enableRecentSearches: true,
+            suggestionsDebounce: 100,
+          },
+        },
+        commerce: {
+          api: {
+            clientId: 'test-client',
+            organizationId: 'test-org',
+            siteId: 'test-site',
+            shortCode: 'test123',
+            proxy: '/mobify/proxy/api',
+            callback: '/callback',
+            privateKeyEnabled: false,
+          },
+        },
+        site: {
+          locale: 'en-GB',
+          currency: 'GBP',
+          cookies: {
+            domain: undefined,
+          },
+          features: {
+            passwordlessLogin: {
+              callbackUri: '/passwordless-login-callback',
+              landingUri: '/passwordless-login-landing',
+            },
+            resetPassword: {
+              callbackUri: '/reset-password-callback',
+              landingUri: '/reset-password-landing',
+            },
+            socialLogin: { enabled: true, callbackUri: '/social-callback', providers: ['Apple', 'Google'] },
+            socialShare: { enabled: true, providers: ['Twitter', 'Facebook', 'LinkedIn', 'Email'] },
+            guestCheckout: true,
+          },
+        },
+        i18n: {
+          fallbackLng: 'en-GB',
+          supportedLngs: ['es-MX', 'en-GB'],
+        },
+        global: {
+          branding: { name: 'Test Store', logoAlt: 'Home' },
+          productListing: {
+            defaultProductTileImgAspectRatio: 1,
+          },
+          carousel: { defaultItemCount: 4 },
+          badges: [
+            { propertyName: 'c_isSale', label: 'Sale', color: 'orange', priority: 1 },
+            { propertyName: 'c_isNew', label: 'New', color: 'green', priority: 2 },
+          ],
+          skeleton: {
+            thumbnails: 4,
+            colorVariants: 4,
+            sizeVariants: 3,
+            accordionSections: 3,
+            defaultItemCount: 4,
+          },
+          recommendations: {
+            search_limit: {
+              youMightLike: 8,
+              completeLook: 12,
+              recentlyViewed: 6,
+            },
+            types: {
+              'you-may-also-like': {
+                enabled: true,
+                priority: 1,
+                sort: 'best-matches',
+                titleKey: 'product.recommendations.youMightAlsoLike',
+              },
+              'complete-the-look': {
+                enabled: true,
+                priority: 2,
+                sort: 'price-low-to-high',
+                titleKey: 'product.recommendations.completeTheLook',
+              },
+              'recently-viewed': {
+                enabled: false,
+                priority: 3,
+                sort: 'most-popular',
+                titleKey: 'product.recommendations.recentlyViewed',
+              },
+            },
+          },
+        },
+        search: {
+          products: {
+            refine: {
+              orderableOnly: true,
+            },
+            hits: {
+              limit: 24,
+              critical: 2,
+            },
+          },
+        },
+        performance: {
+          images: { quality: 80, formats: ['webp', 'jpeg'], lazyLoading: true },
+          caching: { apiCacheTtl: 300, staticAssetCacheTtl: 31536000 },
+          metrics: {
+            serverPerformanceMetricsEnabled: true,
+            serverTimingHeaderEnabled: false,
+            clientPerformanceMetricsEnabled: true,
+          },
+        },
+        engagement: {
+          adapters: {},
+          analytics: {
+            doNotTrackPaths: [],
+          },
+        },
+        development: {
+          enableDevtools: true,
+          hotReload: true,
+          strictMode: true,
+        },
+      },
+    };
+
+    // Build the same app slice that mockBuildConfig.app exposes
+    window.__APP_CONFIG__ = {
+      pages: mockBuildConfig.app.pages,
+      commerce: mockBuildConfig.app.commerce,
+      site: mockBuildConfig.app.site,
+      i18n: mockBuildConfig.app.i18n,
+      global: mockBuildConfig.app.global,
+      performance: mockBuildConfig.app.performance,
+      engagement: mockBuildConfig.app.engagement,
+      development: mockBuildConfig.app.development,
+    };
+  })();
+</script>
+

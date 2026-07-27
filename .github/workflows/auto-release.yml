@@ -1,0 +1,317 @@
+name: Auto Release
+
+# This workflow automatically creates releases when stable versions are pushed
+# from release-* branches in the monorepo.
+#
+# ⚠️ FOR CUSTOMERS: After cloning this template, you can safely delete this workflow
+# file.
+#
+# Note: If you upgrade your project by merging changes from the template, you may
+# encounter merge conflicts in this file, you can safely remove these conflicts by
+# running: git rm .github/workflows/auto-release.yml
+
+on:
+  push:
+    branches:
+      - 'release-*'
+
+env:
+  NODE_VERSION: '24'
+  PNPM_VERSION: '10.28.0'
+
+jobs:
+  auto-release:
+    if: vars.IS_TEMPLATE_MIRROR_REPO == 'true'
+    runs-on: ${{ vars.RUNNER_UBUNTU || 'ubuntu-latest' }}
+    timeout-minutes: 20
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: ${{ env.PNPM_VERSION }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+
+      - name: Read version from package.json
+        id: version
+        run: |
+          VERSION=$(node -p "require('./package.json').version")
+
+          if [ -z "$VERSION" ]; then
+            echo "❌ Failed to read version from package.json"
+            exit 1
+          fi
+
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "tag=v$VERSION" >> $GITHUB_OUTPUT
+          echo "📦 Package version: $VERSION"
+
+      - name: Check if version is stable
+        id: check_stable
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+
+          # Check if version matches stable semver format (X.Y.Z only, no suffix)
+          if [[ "$VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "is-stable=true" >> $GITHUB_OUTPUT
+            echo "✅ Stable version detected: $VERSION"
+          else
+            echo "is-stable=false" >> $GITHUB_OUTPUT
+            echo "🚧 Prerelease version detected: $VERSION"
+          fi
+
+      - name: Get previous release tag
+        id: prev_release
+        if: steps.check_stable.outputs.is-stable == 'true'
+        run: |
+          # Find the most recent version tag (not sync tags) on this branch
+          PREV_TAG=$(git tag -l "v*.*.*" --merged HEAD | sort -V | tail -1)
+
+          if [ -z "$PREV_TAG" ]; then
+            echo "No previous release found on this branch"
+            echo "tag=" >> $GITHUB_OUTPUT
+          else
+            echo "tag=$PREV_TAG" >> $GITHUB_OUTPUT
+            echo "📋 Previous release: $PREV_TAG"
+          fi
+
+      - name: Install dependencies
+        if: steps.check_stable.outputs.is-stable == 'true'
+        run: pnpm install --no-frozen-lockfile
+
+      - name: Build project
+        if: steps.check_stable.outputs.is-stable == 'true'
+        run: pnpm build
+
+      - name: Create build tarball
+        id: tarball
+        if: steps.check_stable.outputs.is-stable == 'true'
+        run: |
+          VERSION="${{ steps.version.outputs.version }}"
+          TARBALL_NAME="storefront-next-build-${VERSION}.tar.gz"
+
+          # Create bundle using create-bundle command
+          echo "📦 Creating build bundle: ${TARBALL_NAME}"
+          pnpm exec sfnext create-bundle --project-directory "$(pwd)" --output-directory "$(pwd)/.bundle"
+
+          # Move and rename the bundle to match expected name
+          mv .bundle/bundle.tgz "${TARBALL_NAME}"
+
+          # Generate SHA256 checksum
+          sha256sum "${TARBALL_NAME}" > "${TARBALL_NAME}.sha256"
+          echo "🔐 Checksum: $(cat ${TARBALL_NAME}.sha256)"
+
+          # Get file size for summary
+          TARBALL_SIZE=$(du -h "${TARBALL_NAME}" | cut -f1)
+
+          # Output for later steps
+          echo "tarball_name=${TARBALL_NAME}" >> $GITHUB_OUTPUT
+          echo "tarball_path=$(pwd)/${TARBALL_NAME}" >> $GITHUB_OUTPUT
+          echo "checksum_path=$(pwd)/${TARBALL_NAME}.sha256" >> $GITHUB_OUTPUT
+          echo "tarball_size=${TARBALL_SIZE}" >> $GITHUB_OUTPUT
+
+          echo "✅ Build tarball created (${TARBALL_SIZE})"
+
+      - name: Create release
+        id: release
+        if: steps.check_stable.outputs.is-stable == 'true'
+        uses: ./.github/actions/create-release
+        with:
+          version: ${{ steps.version.outputs.version }}
+          tag: ${{ steps.version.outputs.tag }}
+          previous-tag: ${{ steps.prev_release.outputs.tag }}
+          github-token: ${{ github.token }}
+          skip-if-exists: true
+
+      - name: Upload build artifacts to release
+        if: steps.check_stable.outputs.is-stable == 'true' && steps.tarball.outputs.tarball_path != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          TAG="${{ steps.version.outputs.tag }}"
+          TARBALL_PATH="${{ steps.tarball.outputs.tarball_path }}"
+          CHECKSUM_PATH="${{ steps.tarball.outputs.checksum_path }}"
+
+          echo "📦 Uploading build artifacts to release ${TAG}"
+
+          # Use --clobber to overwrite if artifacts already exist (e.g., on re-run)
+          gh release upload "${TAG}" \
+            --clobber \
+            "${TARBALL_PATH}" \
+            "${CHECKSUM_PATH}"
+
+          echo "✅ Build artifacts uploaded to GitHub Release"
+
+      - name: Get current latest version
+        id: current_latest
+        if: steps.check_stable.outputs.is-stable == 'true'
+        run: |
+          # Get current version on latest branch (if it exists)
+          if git show-ref --verify --quiet refs/remotes/origin/latest; then
+            git fetch origin latest
+            # Use Node.js for robust JSON parsing
+            CURRENT_LATEST_VERSION=$(git show origin/latest:package.json | node -p "JSON.parse(fs.readFileSync(0, 'utf8')).version")
+            echo "📋 Current latest branch version: $CURRENT_LATEST_VERSION"
+
+            # Validate current latest version format
+            if ! [[ "$CURRENT_LATEST_VERSION" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+              echo "⚠️  WARNING: Current latest has invalid format: $CURRENT_LATEST_VERSION"
+              echo "   Treating as 0.0.0 and proceeding..."
+              CURRENT_LATEST_VERSION="0.0.0"
+            fi
+          else
+            CURRENT_LATEST_VERSION="0.0.0"
+            echo "📋 No latest branch exists yet, will create it"
+          fi
+
+          echo "version=$CURRENT_LATEST_VERSION" >> $GITHUB_OUTPUT
+
+      - name: Compare versions
+        id: compare
+        if: steps.check_stable.outputs.is-stable == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const v1 = '${{ steps.version.outputs.version }}';
+            const v2 = '${{ steps.current_latest.outputs.version }}';
+
+            // Parse semantic versions
+            const parseVersion = (v) => {
+              const parts = v.split('.').map(Number);
+              return { major: parts[0], minor: parts[1], patch: parts[2] };
+            };
+
+            const version1 = parseVersion(v1);
+            const version2 = parseVersion(v2);
+
+            // Compare versions
+            let isGreater = false;
+            let isEqual = false;
+            let isLess = false;
+
+            if (version1.major > version2.major) {
+              isGreater = true;
+              core.info(`🔼 ${v1} > ${v2} (major: ${version1.major} > ${version2.major})`);
+            } else if (version1.major < version2.major) {
+              isLess = true;
+              core.info(`🔽 ${v1} < ${v2} (major: ${version1.major} < ${version2.major})`);
+            } else if (version1.minor > version2.minor) {
+              isGreater = true;
+              core.info(`🔼 ${v1} > ${v2} (minor: ${version1.minor} > ${version2.minor})`);
+            } else if (version1.minor < version2.minor) {
+              isLess = true;
+              core.info(`🔽 ${v1} < ${v2} (minor: ${version1.minor} < ${version2.minor})`);
+            } else if (version1.patch > version2.patch) {
+              isGreater = true;
+              core.info(`🔼 ${v1} > ${v2} (patch: ${version1.patch} > ${version2.patch})`);
+            } else if (version1.patch < version2.patch) {
+              isLess = true;
+              core.info(`🔽 ${v1} < ${v2} (patch: ${version1.patch} < ${version2.patch})`);
+            } else {
+              isEqual = true;
+              core.info(`🟰 ${v1} == ${v2}`);
+            }
+
+            core.setOutput('is_greater', isGreater);
+            core.setOutput('is_equal', isEqual);
+            core.setOutput('is_less', isLess);
+
+      - name: Generate GitHub App Token for latest branch update
+        id: app-token
+        if: steps.check_stable.outputs.is-stable == 'true' && (steps.compare.outputs.is_greater == 'true' || steps.compare.outputs.is_equal == 'true')
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.MIRROR_SYNC_APP_ID }}
+          private-key: ${{ secrets.MIRROR_SYNC_APP_PRIVATE_KEY }}
+
+      - name: Update latest branch for stable releases
+        id: update_latest
+        if: steps.check_stable.outputs.is-stable == 'true' && (steps.compare.outputs.is_greater == 'true' || steps.compare.outputs.is_equal == 'true')
+        run: |
+          BRANCH_NAME="${{ github.ref_name }}"
+          NEW_VERSION="${{ steps.version.outputs.version }}"
+          CURRENT_LATEST_VERSION="${{ steps.current_latest.outputs.version }}"
+
+          echo "✅ $NEW_VERSION > $CURRENT_LATEST_VERSION - Updating latest branch..."
+
+          # Use app token to push to the protected default branch
+          git config --unset-all http.https://github.com/.extraheader
+          git remote set-url origin "https://x-access-token:${{ steps.app-token.outputs.token }}@github.com/${{ github.repository }}.git"
+          git push origin "HEAD:latest" --force
+
+          echo "✅ 'latest' branch updated to $NEW_VERSION from $BRANCH_NAME"
+          echo "🎯 'Use this template' button will now give customers version $NEW_VERSION"
+
+          # Set output for summary
+          echo "updated=true" >> $GITHUB_OUTPUT
+          echo "new_version=$NEW_VERSION" >> $GITHUB_OUTPUT
+          echo "previous_version=$CURRENT_LATEST_VERSION" >> $GITHUB_OUTPUT
+
+      - name: Log skipped latest update
+        if: steps.check_stable.outputs.is-stable == 'true' && steps.compare.outputs.is_less == 'true'
+        run: |
+          NEW_VERSION="${{ steps.version.outputs.version }}"
+          CURRENT_LATEST_VERSION="${{ steps.current_latest.outputs.version }}"
+
+          echo "⏭️  $NEW_VERSION <= $CURRENT_LATEST_VERSION - Skipping latest branch update"
+          echo "💡 This is a patch for an older major version, latest stays at $CURRENT_LATEST_VERSION"
+
+          # Set output for summary (store in step that always runs)
+          echo "SKIPPED_UPDATE=true" >> $GITHUB_ENV
+          echo "SKIPPED_NEW_VERSION=$NEW_VERSION" >> $GITHUB_ENV
+          echo "SKIPPED_CURRENT_LATEST=$CURRENT_LATEST_VERSION" >> $GITHUB_ENV
+
+      - name: Summary
+        if: always()
+        run: |
+          echo "## 🎉 Auto-Release Summary" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "- **Branch**: ${{ github.ref_name }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Version**: ${{ steps.version.outputs.version }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Tag**: ${{ steps.version.outputs.tag }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Is Stable**: ${{ steps.check_stable.outputs.is-stable || 'N/A' }}" >> $GITHUB_STEP_SUMMARY
+          echo "- **Release Skipped**: ${{ steps.release.outputs.skipped || 'N/A' }}" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+
+          if [ "${{ steps.check_stable.outputs.is-stable }}" = "true" ] && [ "${{ steps.tarball.outputs.tarball_path }}" != "" ]; then
+            # Show release status
+            if [ "${{ steps.release.outputs.skipped }}" = "false" ]; then
+              echo "✅ **Release Created**: ${{ steps.release.outputs.release-url }}" >> $GITHUB_STEP_SUMMARY
+            else
+              echo "✅ **Release Updated**: ${{ steps.version.outputs.tag }}" >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "ℹ️ Release already existed, updated with new build artifacts" >> $GITHUB_STEP_SUMMARY
+            fi
+
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### 📦 Build Artifacts" >> $GITHUB_STEP_SUMMARY
+            echo "- **Tarball**: \`${{ steps.tarball.outputs.tarball_name }}\`" >> $GITHUB_STEP_SUMMARY
+            echo "- **Size**: ${{ steps.tarball.outputs.tarball_size }}" >> $GITHUB_STEP_SUMMARY
+            echo "- **Checksum**: \`${{ steps.tarball.outputs.tarball_name }}.sha256\`" >> $GITHUB_STEP_SUMMARY
+
+            # Add latest branch status
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### 📌 Latest Branch Status" >> $GITHUB_STEP_SUMMARY
+            if [ "${{ steps.update_latest.outputs.updated }}" = "true" ]; then
+              echo "✅ **Updated** from ${{ steps.update_latest.outputs.previous_version }} → ${{ steps.update_latest.outputs.new_version }}" >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "🎯 Customers using \`Use this template\` will now get version **${{ steps.update_latest.outputs.new_version }}**" >> $GITHUB_STEP_SUMMARY
+            elif [ "$SKIPPED_UPDATE" = "true" ]; then
+              echo "⏭️ **Skipped** - Version $SKIPPED_NEW_VERSION ≤ current latest ($SKIPPED_CURRENT_LATEST)" >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "💡 This is a patch for an older major version. Latest branch stays at **$SKIPPED_CURRENT_LATEST**" >> $GITHUB_STEP_SUMMARY
+            fi
+          elif [ "${{ steps.check_stable.outputs.is-stable }}" = "false" ]; then
+            echo "ℹ️ **Skipped**: Prerelease version (${{ steps.version.outputs.version }})" >> $GITHUB_STEP_SUMMARY
+          fi

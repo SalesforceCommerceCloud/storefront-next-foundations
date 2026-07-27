@@ -1,0 +1,13 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Loading stories snapshot > Loading_ story renders and matches snapshot 1`] = `
+<div
+  class="min-h-screen bg-background"
+>
+  <p
+    class="p-4 text-sm text-muted-foreground"
+  >
+    Idle.
+  </p>
+</div>
+`;

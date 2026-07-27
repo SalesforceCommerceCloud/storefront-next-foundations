@@ -1,0 +1,35 @@
+{
+    "interestsPreferences": {
+        "title": "Intressen och inställningar",
+        "description": "Lägg till dina designintressen och hantera dina shoppinginställningar",
+        "successMessage": "Dina intressen och inställningar uppdaterades.",
+        "errorMessage": "Det gick inte att uppdatera. Försök igen.",
+        "loadError": "We couldn't load your interests and preferences. Please refresh the page to try again."
+    },
+    "interests": {
+        "title": "Dina intressen",
+        "noneSelected": "Inga intressen valda",
+        "addMore": "Lägg till fler",
+        "addInterestsTitle": "Lägg till dina intressen"
+    },
+    "preferences": {
+        "noneSelected": "Inget har valts",
+        "addMore": "Lägg till fler",
+        "dialogTitle": "Välj alternativ",
+        "selectCategory": "Välj {{category}}"
+    },
+    "measures": {
+        "roomDimensionsLabel": "Room dimensions:",
+        "ceilingHeightLabel": "Ceiling height:",
+        "noneProvided": "No measures provided"
+    },
+    "size": {
+        "preferredSizeLabel": "Preferred product size:"
+    },
+    "common": {
+        "save": "Spara",
+        "saving": "Sparar ...",
+        "cancel": "Avbryt",
+        "edit": "Redigera"
+    }
+}

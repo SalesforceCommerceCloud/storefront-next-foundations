@@ -1,0 +1,49 @@
+{
+    "footer": {
+        "links": {
+            "storeLocator": "Store Locator"
+        }
+    },
+    "storeLocator": {
+        "title": "Find a Store",
+        "description": "Search for stores by country and postal code or use your current location.",
+        "form": {
+            "searchFormAriaLabel": "Store search form",
+            "countryLabel": "Country",
+            "selectCountry": "Select a country",
+            "selectCountryValidation": "Select a country.",
+            "postalCodeLabel": "Postal Code",
+            "postalCodePlaceholder": "Enter postal code",
+            "postalCodeValidation": "Enter a postal code.",
+            "findButton": "Find",
+            "or": "Or",
+            "useMyLocationButton": "Use My Location"
+        },
+        "trigger": {
+            "ariaLabel": "Find a Store",
+            "openAriaLabel": "Open Find a Store"
+        },
+        "sheet": {
+            "closeAriaLabel": "Close store locator"
+        },
+        "list": {
+            "geoError": "To use your location, enable location sharing.",
+            "noResults": "Sorry, there are no locations in this area.",
+            "statusInput": "Viewing stores within {{distanceText}} of {{postal}} in {{countryName}}",
+            "statusLocation": "Viewing stores near your location",
+            "loadMoreButton": "Load More",
+            "fetchError": "Something went wrong. Try again!"
+        },
+        "details": {
+            "phoneLabel": "Phone:",
+            "emailLabel": "Email:",
+            "storeDetailsTitle": "Store Details",
+            "storeHoursTitle": "Store Hours",
+            "distanceAway": "{{distance}} {{unit}} away"
+        },
+        "address": {
+            "multilineFormat": "{{address1}}\n{{city}}, {{stateCode}} {{postalCode}}",
+            "singleLineFormat": "{{address1}}, {{city}}, {{stateCode}} {{postalCode}}"
+        }
+    }
+}

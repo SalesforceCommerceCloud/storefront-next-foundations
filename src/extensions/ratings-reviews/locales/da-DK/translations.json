@@ -1,0 +1,71 @@
+{
+    "section": {
+        "heading": "Kundeanmeldelser",
+        "loading": "Indlæser anmeldelser ...",
+        "loadError": "Vi kunne ikke indlæse anmeldelser. Genindlæs siden for at prøve igen.",
+        "noReviewsForProduct": "Der er ingen anmeldelser af dette produkt.",
+        "noReviewsMatchFilters": "Der er ingen anmeldelser, der matcher dine filtre.",
+        "showingReviews": "Viser {{from}}-{{to}} af {{total}} anmeldelser",
+        "subtitleOne": "1 anmeldelse for {{productName}}",
+        "subtitleOther": "{{count}} anmeldelser for {{productName}}",
+        "aiReviewSummary": "Sammenfatning af AI-anmeldelse"
+    },
+    "filters": {
+        "filterBy": "Filtrer efter:",
+        "withPhotos": "Med fotos",
+        "searchPlaceholder": "Søg efter anmeldelser ...",
+        "sortLabel": "Sortér:",
+        "sortMostRecent": "Seneste",
+        "sortHighestRated": "Højeste vurdering",
+        "sortLowestRated": "Laveste vurdering",
+        "sortMostHelpful": "Mest nyttig",
+        "activeFilterStars": "{{count}} stjerner",
+        "clearFilter": "Ryd filter",
+        "filterByStars": "Filtrer efter {{count}} stjerner",
+        "clearStarFilter": "Ryd {{count}} stjernefilter",
+        "clearPhotoFilter": "Ryd fotofilter"
+    },
+    "card": {
+        "verifiedPurchase": "Bekræftet køb",
+        "helpful": "Nyttig ({{count}})",
+        "helpfulNoCount": "Nyttig",
+        "report": "Rapport",
+        "readMore": "Læs mere",
+        "readLess": "Læs mindre",
+        "imageAlt": "Gennemgå billede"
+    },
+    "rating": {
+        "starContainerAriaLabel": "{{rating}} ud af {{total}} stjerner, {{count, number}} anmeldelser",
+        "ratingOutOfTotal": "{{rating}} ud af {{total}}",
+        "ratingValue": "{{rating}}",
+        "basedOnReviews": "Baseret på {{count, number}} anmeldelser",
+        "ratingWithCount": "{{rating}} ({{count, number}})",
+        "viewAllReviews": "Se alle anmeldelser",
+        "distributionAriaLabel": "{{rating}} stjerner: {{count, number}} ud af {{totalReviews, number}} anmeldelser",
+        "distributionsAriaLabel": "Fordeling af stjernebedømmelser, {{total, number}} samlede anmeldelser",
+        "seeCustomerReviews": "Se kundeanmeldelser >"
+    },
+    "writeReview": {
+        "buttonLabel": "Skriv en anmeldelse",
+        "modalDescription": "Skriv en anmeldelsesformular",
+        "starRatingDistributionDescription": "Oplysninger om fordeling af stjerner",
+        "submitting": "Indsender",
+        "successMessage": "Anmeldelse indsendt",
+        "errorMessage": "Anmeldelsen kunne ikke indsendes. Prøv igen.",
+        "validation": {
+            "pleaseFixFollowing": "Ret følgende:",
+            "ratingRequired": "Vælg en bedømmelse.",
+            "reviewRequired": "Udfyld dette felt.",
+            "reviewMinLength": "Din anmeldelse skal være på mindst {{count}} tegn",
+            "reviewMaxLength": "Indtast ikke mere end {{count}} tegn.",
+            "titleMaxLength": "Indtast ikke mere end {{count}} tegn."
+        },
+        "minCharactersHint": "Minimum {{count}} tegn.",
+        "maxCharactersHint": "Højst {{count}} tegn."
+    },
+    "orderLine": {
+        "rateAndReview": "Vurder og anmeld",
+        "reviewSubmitted": "Anmeldelse indsendt",
+        "cta": "Vurder og anmeld"
+    }
+}

@@ -1,0 +1,45 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProductImage Snapshots > Default snapshot 1`] = `
+<div>
+  <div>
+    <div
+      class="w-64 h-64"
+    >
+      <div
+        class=""
+      >
+        <img
+          alt="Placeholder Image"
+          class="object-cover"
+          fetchpriority="auto"
+          loading="lazy"
+          src="https://via.placeholder.com/300"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProductImage Snapshots > ErrorFallback snapshot 1`] = `
+<div>
+  <div>
+    <div
+      class="w-64 h-64"
+    >
+      <div
+        class=""
+      >
+        <img
+          alt="Broken Image"
+          class="object-cover"
+          fetchpriority="auto"
+          loading="lazy"
+          src="https://invalid-url.example.com/image.jpg"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

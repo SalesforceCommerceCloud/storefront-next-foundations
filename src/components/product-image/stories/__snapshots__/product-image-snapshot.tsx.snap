@@ -1,0 +1,316 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProductImage stories snapshot > CustomAspectRatio story renders and matches snapshot 1`] = `
+<div
+  class="w-64 h-64"
+>
+  <div
+    class="relative overflow-hidden bg-secondary/20 flex flex-col  "
+    style="aspect-ratio: 0.75;"
+  >
+    <a
+      aria-label="View Laptop Briefcase with wheels (37L)"
+      class="block w-full h-full flex-1"
+      href="/RefArchGlobal/en-GB/product/P0048M"
+      to="/RefArchGlobal/en-GB/product/P0048M"
+    >
+      <div
+        class="w-full h-full object-cover transition-all duration-200 group-hover:scale-105"
+      >
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            sizes="15vw"
+            srcset="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwcc8912f4/images/medium/P0048_001.webp?sw=230&q=70&sfrm=jpg 230w, https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwcc8912f4/images/medium/P0048_001.webp?sw=461&q=70&sfrm=jpg 461w"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1024px)"
+            sizes="15vw"
+            srcset="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwcc8912f4/images/medium/P0048_001.webp?sw=192&q=70&sfrm=jpg 192w, https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwcc8912f4/images/medium/P0048_001.webp?sw=384&q=70&sfrm=jpg 384w"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            sizes="15vw"
+            srcset="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwcc8912f4/images/medium/P0048_001.webp?sw=154&q=70&sfrm=jpg 154w, https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwcc8912f4/images/medium/P0048_001.webp?sw=307&q=70&sfrm=jpg 307w"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 640px)"
+            sizes="50vw"
+            srcset="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwcc8912f4/images/medium/P0048_001.webp?sw=384&q=70&sfrm=jpg 384w, https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwcc8912f4/images/medium/P0048_001.webp?sw=768&q=70&sfrm=jpg 768w"
+            type="image/webp"
+          />
+          <source
+            sizes="50vw"
+            srcset="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwcc8912f4/images/medium/P0048_001.webp?sw=320&q=70&sfrm=jpg 320w, https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwcc8912f4/images/medium/P0048_001.webp?sw=640&q=70&sfrm=jpg 640w"
+            type="image/webp"
+          />
+          <img
+            alt="Laptop Briefcase with wheels (37L), , medium"
+            class="object-cover"
+            fetchpriority="auto"
+            loading="lazy"
+            src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwcc8912f4/images/medium/P0048_001.jpg"
+          />
+        </picture>
+      </div>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`ProductImage stories snapshot > Default story renders and matches snapshot 1`] = `
+<div
+  class="w-64 h-64"
+>
+  <div
+    class="relative overflow-hidden bg-secondary/20 flex flex-col aspect-square "
+  >
+    <a
+      aria-label="View Laptop Briefcase with wheels (37L)"
+      class="block w-full h-full flex-1"
+      href="/RefArchGlobal/en-GB/product/P0048M"
+      to="/RefArchGlobal/en-GB/product/P0048M"
+    >
+      <div
+        class="w-full h-full object-cover transition-all duration-200 group-hover:scale-105"
+      >
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            sizes="15vw"
+            srcset="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwcc8912f4/images/medium/P0048_001.webp?sw=230&q=70&sfrm=jpg 230w, https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwcc8912f4/images/medium/P0048_001.webp?sw=461&q=70&sfrm=jpg 461w"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1024px)"
+            sizes="15vw"
+            srcset="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwcc8912f4/images/medium/P0048_001.webp?sw=192&q=70&sfrm=jpg 192w, https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwcc8912f4/images/medium/P0048_001.webp?sw=384&q=70&sfrm=jpg 384w"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            sizes="15vw"
+            srcset="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwcc8912f4/images/medium/P0048_001.webp?sw=154&q=70&sfrm=jpg 154w, https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwcc8912f4/images/medium/P0048_001.webp?sw=307&q=70&sfrm=jpg 307w"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 640px)"
+            sizes="50vw"
+            srcset="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwcc8912f4/images/medium/P0048_001.webp?sw=384&q=70&sfrm=jpg 384w, https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwcc8912f4/images/medium/P0048_001.webp?sw=768&q=70&sfrm=jpg 768w"
+            type="image/webp"
+          />
+          <source
+            sizes="50vw"
+            srcset="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwcc8912f4/images/medium/P0048_001.webp?sw=320&q=70&sfrm=jpg 320w, https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwcc8912f4/images/medium/P0048_001.webp?sw=640&q=70&sfrm=jpg 640w"
+            type="image/webp"
+          />
+          <img
+            alt="Laptop Briefcase with wheels (37L), , medium"
+            class="object-cover"
+            fetchpriority="auto"
+            loading="lazy"
+            src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwcc8912f4/images/medium/P0048_001.jpg"
+          />
+        </picture>
+      </div>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`ProductImage stories snapshot > MissingImages story renders and matches snapshot 1`] = `
+<div
+  class="w-64 h-64"
+>
+  <div
+    class="relative overflow-hidden bg-secondary/20 flex flex-col aspect-square "
+  >
+    <a
+      aria-label="View Laptop Briefcase with wheels (37L)"
+      class="block w-full h-full flex-1"
+      href="/RefArchGlobal/en-GB/product/P0048M"
+      to="/RefArchGlobal/en-GB/product/P0048M"
+    >
+      <div
+        class="w-full h-full object-cover transition-all duration-200 group-hover:scale-105"
+      >
+        <img
+          alt="Laptop Briefcase with wheels (37L)"
+          class="object-cover"
+          fetchpriority="auto"
+          loading="lazy"
+        />
+      </div>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`ProductImage stories snapshot > WithColorVariant story renders and matches snapshot 1`] = `
+<div
+  class="w-64 h-64"
+>
+  <div
+    class="relative overflow-hidden bg-secondary/20 flex flex-col aspect-square "
+  >
+    <a
+      aria-label="View Long Sleeve Embellished Boat Neck Top"
+      class="block w-full h-full flex-1"
+      href="/RefArchGlobal/en-GB/product/25518101M?color=JJ5QZXX"
+      to="/RefArchGlobal/en-GB/product/25518101M?color=JJ5QZXX"
+    >
+      <div
+        class="w-full h-full object-cover transition-all duration-200 group-hover:scale-105"
+      >
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            sizes="15vw"
+            srcset="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwed56b2da/images/medium/PG.10217069.JJ5QZXX.PZ.webp?sw=230&q=70&sfrm=jpg 230w, https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwed56b2da/images/medium/PG.10217069.JJ5QZXX.PZ.webp?sw=461&q=70&sfrm=jpg 461w"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1024px)"
+            sizes="15vw"
+            srcset="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwed56b2da/images/medium/PG.10217069.JJ5QZXX.PZ.webp?sw=192&q=70&sfrm=jpg 192w, https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwed56b2da/images/medium/PG.10217069.JJ5QZXX.PZ.webp?sw=384&q=70&sfrm=jpg 384w"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            sizes="15vw"
+            srcset="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwed56b2da/images/medium/PG.10217069.JJ5QZXX.PZ.webp?sw=154&q=70&sfrm=jpg 154w, https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwed56b2da/images/medium/PG.10217069.JJ5QZXX.PZ.webp?sw=307&q=70&sfrm=jpg 307w"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 640px)"
+            sizes="50vw"
+            srcset="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwed56b2da/images/medium/PG.10217069.JJ5QZXX.PZ.webp?sw=384&q=70&sfrm=jpg 384w, https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwed56b2da/images/medium/PG.10217069.JJ5QZXX.PZ.webp?sw=768&q=70&sfrm=jpg 768w"
+            type="image/webp"
+          />
+          <source
+            sizes="50vw"
+            srcset="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwed56b2da/images/medium/PG.10217069.JJ5QZXX.PZ.webp?sw=320&q=70&sfrm=jpg 320w, https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwed56b2da/images/medium/PG.10217069.JJ5QZXX.PZ.webp?sw=640&q=70&sfrm=jpg 640w"
+            type="image/webp"
+          />
+          <img
+            alt="Long Sleeve Embellished Boat Neck Top, Begonia Pink, medium"
+            class="object-cover"
+            fetchpriority="auto"
+            loading="lazy"
+            src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwed56b2da/images/medium/PG.10217069.JJ5QZXX.PZ.jpg"
+          />
+        </picture>
+      </div>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`ProductImage stories snapshot > WithNavigationArrows story renders and matches snapshot 1`] = `
+<div
+  class="w-64 h-64"
+>
+  <div
+    class="group/image relative overflow-hidden bg-secondary/20 flex flex-col aspect-square "
+  >
+    <a
+      aria-label="View Long Sleeve Embellished Boat Neck Top"
+      class="block w-full h-full flex-1"
+      href="/RefArchGlobal/en-GB/product/25518101M?color=JJ5QZXX"
+      to="/RefArchGlobal/en-GB/product/25518101M?color=JJ5QZXX"
+    >
+      <div
+        class="w-full h-full object-cover transition-all duration-200 group-hover:scale-105"
+      >
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            sizes="15vw"
+            srcset="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwed56b2da/images/medium/PG.10217069.JJ5QZXX.PZ.webp?sw=230&q=70&sfrm=jpg 230w, https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwed56b2da/images/medium/PG.10217069.JJ5QZXX.PZ.webp?sw=461&q=70&sfrm=jpg 461w"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 1024px)"
+            sizes="15vw"
+            srcset="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwed56b2da/images/medium/PG.10217069.JJ5QZXX.PZ.webp?sw=192&q=70&sfrm=jpg 192w, https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwed56b2da/images/medium/PG.10217069.JJ5QZXX.PZ.webp?sw=384&q=70&sfrm=jpg 384w"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 768px)"
+            sizes="15vw"
+            srcset="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwed56b2da/images/medium/PG.10217069.JJ5QZXX.PZ.webp?sw=154&q=70&sfrm=jpg 154w, https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwed56b2da/images/medium/PG.10217069.JJ5QZXX.PZ.webp?sw=307&q=70&sfrm=jpg 307w"
+            type="image/webp"
+          />
+          <source
+            media="(min-width: 640px)"
+            sizes="50vw"
+            srcset="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwed56b2da/images/medium/PG.10217069.JJ5QZXX.PZ.webp?sw=384&q=70&sfrm=jpg 384w, https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwed56b2da/images/medium/PG.10217069.JJ5QZXX.PZ.webp?sw=768&q=70&sfrm=jpg 768w"
+            type="image/webp"
+          />
+          <source
+            sizes="50vw"
+            srcset="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwed56b2da/images/medium/PG.10217069.JJ5QZXX.PZ.webp?sw=320&q=70&sfrm=jpg 320w, https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwed56b2da/images/medium/PG.10217069.JJ5QZXX.PZ.webp?sw=640&q=70&sfrm=jpg 640w"
+            type="image/webp"
+          />
+          <img
+            alt="Long Sleeve Embellished Boat Neck Top, Begonia Pink, medium"
+            class="object-cover"
+            fetchpriority="auto"
+            loading="lazy"
+            src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwed56b2da/images/medium/PG.10217069.JJ5QZXX.PZ.jpg"
+          />
+        </picture>
+      </div>
+    </a>
+    <button
+      aria-label="Previous image"
+      class="absolute top-1/2 -translate-y-1/2 cursor-pointer rounded-ui bg-background/90 hover:bg-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 left-2 p-1.5 shadow-md opacity-0 group-hover/image:opacity-100 transition-opacity"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="lucide lucide-chevron-left size-4"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m15 18-6-6 6-6"
+        />
+      </svg>
+    </button>
+    <button
+      aria-label="Next image"
+      class="absolute top-1/2 -translate-y-1/2 cursor-pointer rounded-ui bg-background/90 hover:bg-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 right-2 p-1.5 shadow-md opacity-0 group-hover/image:opacity-100 transition-opacity"
+      type="button"
+    >
+      <svg
+        aria-hidden="true"
+        class="lucide lucide-chevron-right size-4"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="m9 18 6-6-6-6"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;

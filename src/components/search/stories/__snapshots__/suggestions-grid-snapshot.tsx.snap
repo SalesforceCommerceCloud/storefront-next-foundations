@@ -1,0 +1,132 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SuggestionsGrid stories snapshot > Empty story renders and matches snapshot 1`] = `null`;
+
+exports[`SuggestionsGrid stories snapshot > FullyFeatured story renders and matches snapshot 1`] = `
+<div
+  class="overflow-hidden"
+  data-testid="sf-horizontal-product-suggestions"
+>
+  <div
+    class="flex gap-4 overflow-x-hidden pb-2"
+  >
+    <a
+      class="block hover:underline flex-1 max-w-[20%]"
+      data-testid="product-tile"
+      href="/RefArchGlobal/en-GB/products/running-shoes"
+    >
+      <div
+        class="w-full"
+      >
+        <div
+          class="mb-2"
+        >
+          <div
+            class="w-full relative aspect-[4/3]"
+          >
+            <div
+              class=""
+            >
+              <img
+                alt="Running Shoes"
+                class="absolute inset-0 w-full h-full object-cover block"
+                fetchpriority="auto"
+                loading="eager"
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=400&h=400&fit=crop"
+              />
+            </div>
+          </div>
+        </div>
+        <p
+          class="text-sm font-medium text-header-foreground mb-1 line-clamp-2"
+        >
+          Running Shoes
+        </p>
+        <p
+          class="text-sm font-medium text-header-foreground"
+        >
+          £99.99
+        </p>
+      </div>
+    </a>
+    <a
+      class="block hover:underline flex-1 max-w-[20%]"
+      data-testid="product-tile"
+      href="/RefArchGlobal/en-GB/products/hiking-boots"
+    >
+      <div
+        class="w-full"
+      >
+        <div
+          class="mb-2"
+        >
+          <div
+            class="w-full relative aspect-[4/3]"
+          >
+            <div
+              class=""
+            >
+              <img
+                alt="Hiking Boots"
+                class="absolute inset-0 w-full h-full object-cover block"
+                fetchpriority="auto"
+                loading="eager"
+                src="https://images.unsplash.com/photo-1608256246200-53bd35f3f44e?w=400&h=400&fit=crop"
+              />
+            </div>
+          </div>
+        </div>
+        <p
+          class="text-sm font-medium text-header-foreground mb-1 line-clamp-2"
+        >
+          Hiking Boots
+        </p>
+        <p
+          class="text-sm font-medium text-header-foreground"
+        >
+          £149.99
+        </p>
+      </div>
+    </a>
+    <a
+      class="block hover:underline flex-1 max-w-[20%]"
+      data-testid="product-tile"
+      href="/RefArchGlobal/en-GB/products/casual-sneakers"
+    >
+      <div
+        class="w-full"
+      >
+        <div
+          class="mb-2"
+        >
+          <div
+            class="w-full relative aspect-[4/3]"
+          >
+            <div
+              class=""
+            >
+              <img
+                alt="Casual Sneakers"
+                class="absolute inset-0 w-full h-full object-cover block"
+                fetchpriority="auto"
+                loading="eager"
+                src="https://images.unsplash.com/photo-1460353581641-37baddab0fa2?w=400&h=400&fit=crop"
+              />
+            </div>
+          </div>
+        </div>
+        <p
+          class="text-sm font-medium text-header-foreground mb-1 line-clamp-2"
+        >
+          Casual Sneakers
+        </p>
+        <p
+          class="text-sm font-medium text-header-foreground"
+        >
+          £79.99
+        </p>
+      </div>
+    </a>
+  </div>
+</div>
+`;

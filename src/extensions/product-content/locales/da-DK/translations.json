@@ -1,0 +1,20 @@
+{
+    "contentComingSoon": "Indhold kommer snart.",
+    "faq": {
+        "askAssistant": "Spørg assistent",
+        "faqQuestionSendToAssistantAriaLabel": "Åbn shopper-agenten, og spørg: {{question}}"
+    },
+    "returnsAndWarranty": {
+        "learnMore": "Se politikker",
+        "returnConditions": "Betingelser for returnering:",
+        "howToReturn": "Sådan sender du retur:",
+        "note": "Bemærk:",
+        "whatsCovered": "Hvad er dækket?",
+        "whatsNotCovered": "Hvad er ikke dækket?",
+        "warrantyClaims": "Krav om garanti:",
+        "exchangeProcess": "Ombytning:",
+        "needHelp": "Har du brug for hjælp?",
+        "contactAt": "Kontakt os på",
+        "orCall": "eller ring til"
+    }
+}

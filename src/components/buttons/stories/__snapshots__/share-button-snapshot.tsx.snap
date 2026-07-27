@@ -1,0 +1,33 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ShareButton stories snapshot > Default story renders and matches snapshot 1`] = `
+<button
+  aria-label="Share"
+  class="bg-background w-9 h-9 p-2 shadow-md flex items-center justify-center rounded-ui transition-all duration-200 ease-in-out border-0 cursor-pointer focus:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2"
+  type="button"
+>
+  <svg
+    aria-hidden="true"
+    class="w-5 h-5 text-muted-foreground transition-all duration-200 ease-in-out"
+    fill="none"
+    stroke="currentColor"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+    stroke-width="1.5"
+    viewBox="0 0 24 24"
+  >
+    <path
+      d="M4 12v8a2 2 0 002 2h12a2 2 0 002-2v-8"
+    />
+    <polyline
+      points="16 6 12 2 8 6"
+    />
+    <line
+      x1="12"
+      x2="12"
+      y1="2"
+      y2="15"
+    />
+  </svg>
+</button>
+`;

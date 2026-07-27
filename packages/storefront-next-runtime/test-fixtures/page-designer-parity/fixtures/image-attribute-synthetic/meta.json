@@ -1,0 +1,9 @@
+{
+    "sourceStack": "synthetic",
+    "requestHost": "https://www.shop.example",
+    "locale": "en_US",
+    "defaultLocale": "en_US",
+    "siteId": "RefArch",
+    "capturedAt": "2026-05-07T00:00:00Z",
+    "description": "Image attribute round-trip fixture: one hero component with an image attribute carrying focalPoint, metaData, and the host-agnostic media envelope. The expected page asserts the SCAPI ImageWO_v1 wire shape after MRT host-stamping (focalPoint + metaData passthrough; media collapsed into a fully-qualified url). Synthetic capture — both inputs and outputs were authored by hand. Replace with a real ECOM/SCAPI capture when an end-to-end stack is available."
+}

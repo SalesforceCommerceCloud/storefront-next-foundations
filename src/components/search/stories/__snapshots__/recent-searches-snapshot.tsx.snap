@@ -1,0 +1,51 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`RecentSearches stories snapshot > Empty story renders and matches snapshot 1`] = `
+<div
+  class="section-container py-6"
+/>
+`;
+
+exports[`RecentSearches stories snapshot > FullyFeatured story renders and matches snapshot 1`] = `
+<div
+  class="section-container py-6"
+>
+  <div>
+    <div
+      class="text-sm font-semibold text-muted-foreground tracking-wide mb-2"
+    >
+      Recent Searches
+    </div>
+    <div>
+      <button
+        class="w-full text-left pl-4 py-2 hover:bg-accent hover:text-foreground text-sm font-medium"
+        data-slot="suggestion"
+        type="button"
+      >
+        shoes
+      </button>
+      <button
+        class="w-full text-left pl-4 py-2 hover:bg-accent hover:text-foreground text-sm font-medium"
+        data-slot="suggestion"
+        type="button"
+      >
+        boots
+      </button>
+      <button
+        class="w-full text-left pl-4 py-2 hover:bg-accent hover:text-foreground text-sm font-medium"
+        data-slot="suggestion"
+        type="button"
+      >
+        sneakers
+      </button>
+      <button
+        class="w-full text-left py-2 hover:bg-accent hover:text-foreground text-sm font-medium"
+        data-slot="suggestion"
+        type="button"
+      >
+        Clear recent searches
+      </button>
+    </div>
+  </div>
+</div>
+`;

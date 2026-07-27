@@ -1,0 +1,146 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PopularCategories stories snapshot > Default story renders and matches snapshot 1`] = `
+<div>
+  <div
+    class="bg-background"
+  >
+    <div
+      class="pt-16"
+    >
+      <div
+        class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8"
+      >
+        <div
+          class="text-center mb-8"
+        >
+          <h2
+            class="tracking-tight text-center text-3xl font-extrabold text-foreground sm:text-4xl"
+          >
+            Step into Elegance
+          </h2>
+        </div>
+        <div
+          class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:grid-flow-col lg:auto-cols-fr"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PopularCategories stories snapshot > Desktop story renders and matches snapshot 1`] = `
+<div>
+  <div
+    class="bg-background"
+  >
+    <div
+      class="pt-16"
+    >
+      <div
+        class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8"
+      >
+        <div
+          class="text-center mb-8"
+        >
+          <h2
+            class="tracking-tight text-center text-3xl font-extrabold text-foreground sm:text-4xl"
+          >
+            Step into Elegance
+          </h2>
+        </div>
+        <div
+          class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:grid-flow-col lg:auto-cols-fr"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PopularCategories stories snapshot > Loading story renders and matches snapshot 1`] = `
+<div>
+  <div
+    class="bg-background"
+  >
+    <div
+      class="pt-16"
+    >
+      <div
+        class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8"
+      >
+        <div
+          class="text-center mb-8"
+        >
+          <h2
+            class="tracking-tight text-center text-3xl font-extrabold text-foreground sm:text-4xl"
+          >
+            Step into Elegance
+          </h2>
+        </div>
+        <div
+          class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:grid-flow-col lg:auto-cols-fr"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PopularCategories stories snapshot > Mobile story renders and matches snapshot 1`] = `
+<div>
+  <div
+    class="bg-background"
+  >
+    <div
+      class="pt-16"
+    >
+      <div
+        class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8"
+      >
+        <div
+          class="text-center mb-8"
+        >
+          <h2
+            class="tracking-tight text-center text-3xl font-extrabold text-foreground sm:text-4xl"
+          >
+            Step into Elegance
+          </h2>
+        </div>
+        <div
+          class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:grid-flow-col lg:auto-cols-fr"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PopularCategories stories snapshot > Tablet story renders and matches snapshot 1`] = `
+<div>
+  <div
+    class="bg-background"
+  >
+    <div
+      class="pt-16"
+    >
+      <div
+        class="max-w-screen-2xl mx-auto px-4 sm:px-6 lg:px-8"
+      >
+        <div
+          class="text-center mb-8"
+        >
+          <h2
+            class="tracking-tight text-center text-3xl font-extrabold text-foreground sm:text-4xl"
+          >
+            Step into Elegance
+          </h2>
+        </div>
+        <div
+          class="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 lg:grid-flow-col lg:auto-cols-fr"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

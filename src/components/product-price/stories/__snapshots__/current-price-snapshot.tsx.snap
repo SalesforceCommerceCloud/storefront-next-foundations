@@ -1,0 +1,41 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CurrentPrice Snapshots > CustomElement snapshot 1`] = `
+<div>
+  <h3
+    aria-label="Current price: €1,234.56"
+    aria-live="polite"
+    class="[&:not(:first-child)]:mt-6 text-left font-semibold text-2xl text-blue-600"
+  >
+    €1,234.56
+  </h3>
+  <span
+    aria-atomic="true"
+    aria-live="polite"
+    class="sr-only"
+  >
+     
+    Current price: €1,234.56
+  </span>
+</div>
+`;
+
+exports[`CurrentPrice Snapshots > Default snapshot 1`] = `
+<div>
+  <span
+    aria-label="Current price: $99.99"
+    aria-live="polite"
+    class="leading-7 [&:not(:first-child)]:mt-6 text-left font-semibold"
+  >
+    $99.99
+  </span>
+  <span
+    aria-atomic="true"
+    aria-live="polite"
+    class="sr-only"
+  >
+     
+    Current price: $99.99
+  </span>
+</div>
+`;

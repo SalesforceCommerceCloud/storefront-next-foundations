@@ -1,0 +1,173 @@
+name: Deploy
+
+# This workflow deploys your storefront when changes are pushed to the
+# latest branch or when manually triggered.
+#
+# Two independent jobs run in parallel:
+#
+#   deploy-mrt        - Pushes the built storefront bundle to Managed Runtime.
+#     Secrets:  MRT_API_KEY
+#     Variables: MRT_PROJECT, MRT_TARGET (optional, defaults to 'production'),
+#                MRT_CLOUD_ORIGIN (optional)
+#
+#   deploy-cartridges  - Deploys cartridges to a B2C Commerce instance.
+#     Page Designer cartridge metadata is generated automatically during `pnpm build`.
+#     Secrets:  SFCC_CLIENT_SECRET
+#     Variables: SFCC_CLIENT_ID, SFCC_SERVER,
+#                SFCC_CODE_VERSION (optional, auto-generated if unset),
+#                SFCC_ACCOUNT_MANAGER_HOST (optional)
+#
+#     Prerequisites:
+#       The SFCC_CLIENT_ID / SFCC_CLIENT_SECRET API client must be configured
+#       with the following permissions in Business Manager:
+#
+#       1. WebDAV file access (for uploading cartridge code):
+#          https://salesforcecommercecloud.github.io/b2c-developer-tooling/guide/authentication.html#option-b-oauth-based-webdav
+#
+#       2. OCAPI Data API access for code version activation (reload: true):
+#          The `reload` flag activates the deployed code version on the instance,
+#          which requires the code_versions OCAPI resource to be configured.
+#          https://salesforcecommercecloud.github.io/b2c-developer-tooling/guide/authentication.html#configuring-ocapi-in-business-manager
+#
+# Shared (optional):
+#   Variables: SFCC_LOG_LEVEL (trace, debug, info, warn, error, silent)
+#
+# Each job logs a notice and exits cleanly when its required configuration
+# is not present, so the workflow never fails due to missing optional config.
+
+on:
+  push:
+    branches:
+      - 'latest'
+  workflow_dispatch:
+    inputs:
+      environment:
+        type: environment
+        description: Select the environment to deploy to
+        required: false
+      mrt_environment:
+        type: string
+        description: MRT target environment (overrides MRT_TARGET variable)
+        required: false
+      message:
+        type: string
+        description: The message to set for the deployed bundle
+        required: false
+      code_version:
+        type: string
+        description: Code version for cartridge deployment (overrides SFCC_CODE_VERSION variable)
+        required: false
+
+concurrency:
+  group: deploy-${{ github.event.inputs.environment || 'Production' }}
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+env:
+  NODE_VERSION: '24'
+  PNPM_VERSION: '10.28.0'
+  SFCC_LOG_LEVEL: ${{ vars.SFCC_LOG_LEVEL }}
+
+jobs:
+  deploy-mrt:
+    runs-on: ${{ vars.RUNNER_UBUNTU || 'ubuntu-latest' }}
+    environment: ${{ github.event.inputs.environment || 'Production' }}
+    timeout-minutes: 30
+    env:
+      MRT_API_KEY: ${{ secrets.MRT_API_KEY }}
+
+    steps:
+      - name: Check required configuration
+        id: config
+        run: |
+          if [ -z "$MRT_API_KEY" ]; then
+            echo "::notice title=MRT deploy skipped::MRT deployment was skipped because MRT_API_KEY is not set. Configure the secret in repository settings to enable MRT deploys."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout
+        if: steps.config.outputs.skip != 'true'
+        uses: actions/checkout@v4
+
+      - name: Build Bundle
+        if: steps.config.outputs.skip != 'true'
+        uses: './.github/actions/build-bundle'
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          pnpm-version: ${{ env.PNPM_VERSION }}
+
+      - name: Push to MRT
+        if: steps.config.outputs.skip != 'true'
+        run: |
+          PUSH_ARGS=(--wait)
+          if [ -n "$MESSAGE" ]; then
+            PUSH_ARGS+=(--message "$MESSAGE")
+          fi
+          pnpm push "${PUSH_ARGS[@]}"
+        env:
+          MRT_PROJECT: ${{ vars.MRT_PROJECT }}
+          MRT_TARGET: ${{ github.event.inputs.mrt_environment || vars.MRT_TARGET }}
+          MRT_CLOUD_ORIGIN: ${{ vars.MRT_CLOUD_ORIGIN }}
+          MESSAGE: ${{ github.event.inputs.message }}
+
+  deploy-cartridges:
+    runs-on: ${{ vars.RUNNER_UBUNTU || 'ubuntu-latest' }}
+    environment: ${{ github.event.inputs.environment || 'Production' }}
+    timeout-minutes: 15
+    env:
+      SFCC_SERVER: ${{ vars.SFCC_SERVER }}
+      SFCC_CLIENT_ID: ${{ vars.SFCC_CLIENT_ID }}
+      SFCC_CLIENT_SECRET: ${{ secrets.SFCC_CLIENT_SECRET }}
+      SFCC_ACCOUNT_MANAGER_HOST: ${{ vars.SFCC_ACCOUNT_MANAGER_HOST }}
+
+    steps:
+      - name: Check required configuration
+        id: config
+        run: |
+          if [ -z "$SFCC_SERVER" ] || [ -z "$SFCC_CLIENT_ID" ] || [ -z "$SFCC_CLIENT_SECRET" ]; then
+            echo "::notice title=Cartridge deploy skipped::Cartridge deployment was skipped because one or more required variables are not set (SFCC_SERVER, SFCC_CLIENT_ID, SFCC_CLIENT_SECRET). Configure these in repository settings to enable cartridge deploys."
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout
+        if: steps.config.outputs.skip != 'true'
+        uses: actions/checkout@v4
+
+      - name: Build Bundle
+        if: steps.config.outputs.skip != 'true'
+        uses: './.github/actions/build-bundle'
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          pnpm-version: ${{ env.PNPM_VERSION }}
+
+      - name: Generate code version
+        if: steps.config.outputs.skip != 'true'
+        id: code-version
+        run: |
+          if [ -n "${{ github.event.inputs.code_version }}" ]; then
+            echo "value=${{ github.event.inputs.code_version }}" >> "$GITHUB_OUTPUT"
+          elif [ -n "${{ vars.SFCC_CODE_VERSION }}" ]; then
+            echo "value=${{ vars.SFCC_CODE_VERSION }}" >> "$GITHUB_OUTPUT"
+          else
+            DATESTAMP=$(date -u +%Y%m%d_%H%M%S)
+            SHORT_SHA="${{ github.sha }}"
+            SHORT_SHA="${SHORT_SHA:0:7}"
+            echo "value=${{ github.ref_name }}_${DATESTAMP}_${SHORT_SHA}" >> "$GITHUB_OUTPUT"
+          fi
+        shell: bash
+
+      - name: Deploy cartridge
+        if: steps.config.outputs.skip != 'true'
+        uses: SalesforceCommerceCloud/b2c-developer-tooling/actions/code-deploy@v1
+        with:
+          cartridge-path: cartridges/
+          code-version: ${{ steps.code-version.outputs.value }}
+          server: ${{ vars.SFCC_SERVER }}
+          client-id: ${{ vars.SFCC_CLIENT_ID }}
+          client-secret: ${{ secrets.SFCC_CLIENT_SECRET }}
+          account-manager-host: ${{ vars.SFCC_ACCOUNT_MANAGER_HOST }}
+          # Activate the deployed code version on the instance (requires OCAPI code_versions access).
+          # Note: this flag will be renamed to `activate` in a future version of the action.
+          reload: 'true'

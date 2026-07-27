@@ -1,0 +1,382 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Hero stories snapshot > Default story renders and matches snapshot 1`] = `
+<div
+  class="relative w-full overflow-hidden h-[100vh] md:h-[85vh]"
+  data-hero-id="_r_1_"
+>
+  <div
+    class="absolute inset-0 w-full h-full"
+  >
+    <img
+      alt="Hero background"
+      class="w-full h-full object-cover"
+      fetchpriority="high"
+      loading="eager"
+      src="/images/hero-01.webp"
+      style="object-position: 50% 50%;"
+    />
+  </div>
+  <div
+    class="absolute inset-0 z-10 flex items-center"
+  >
+    <div
+      class="container mx-auto w-full section-container"
+    >
+      <div
+        class="max-w-2xl mx-auto text-center"
+      >
+        <h1
+          class="text-6xl font-bold leading-none [letter-spacing:-1.5px] mb-3 sm:mb-4 md:mb-6 text-primary-foreground"
+        >
+          Welcome to Our Store
+        </h1>
+        <p
+          class="text-lg font-normal leading-[120%] mb-4 sm:mb-6 md:mb-8 text-primary-foreground"
+        >
+          Discover amazing products for your everyday needs
+        </p>
+        <div
+          class="flex justify-center"
+        >
+          <a
+            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary hover:bg-primary/90 h-9 has-[>svg]:px-3 text-sm font-medium leading-5 text-primary-foreground p-3 sm:p-4 md:p-5 lg:p-6"
+            data-size="default"
+            data-slot="button"
+            data-variant="default"
+            href="/category/all"
+          >
+            Shop Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Hero stories snapshot > LongCopy story renders and matches snapshot 1`] = `
+<div
+  class="relative w-full overflow-hidden h-[100vh] md:h-[85vh]"
+  data-hero-id="_r_4_"
+>
+  <div
+    class="absolute inset-0 w-full h-full"
+  >
+    <img
+      alt="Hero background"
+      class="w-full h-full object-cover"
+      fetchpriority="high"
+      loading="eager"
+      src="/images/hero-01.webp"
+      style="object-position: 50% 50%;"
+    />
+  </div>
+  <div
+    class="absolute inset-0 z-10 flex items-center"
+  >
+    <div
+      class="container mx-auto w-full section-container"
+    >
+      <div
+        class="max-w-2xl mx-auto text-center"
+      >
+        <h1
+          class="text-6xl font-bold leading-none [letter-spacing:-1.5px] mb-3 sm:mb-4 md:mb-6 text-primary-foreground"
+        >
+          A Substantially Longer Headline That Tests How the Hero Handles Multi-Line Authored Content Across Responsive Breakpoints
+        </h1>
+        <p
+          class="text-lg font-normal leading-[120%] mb-4 sm:mb-6 md:mb-8 text-primary-foreground"
+        >
+          A multi-sentence subtitle of the kind merchants actually author for editorial homepage takeovers. Used for seasonal campaigns, brand stories, or category storytelling where the copy is the entire creative — no separate marketing image, no carousel, just one large hero with rich typography. Verifies that long copy reflows cleanly within the overlay container at the default Middle Center placement.
+        </p>
+        <div
+          class="flex justify-center"
+        >
+          <a
+            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary hover:bg-primary/90 h-9 has-[>svg]:px-3 text-sm font-medium leading-5 text-primary-foreground p-3 sm:p-4 md:p-5 lg:p-6"
+            data-size="default"
+            data-slot="button"
+            data-variant="default"
+            href="/category/editorial"
+          >
+            Browse the Editorial Collection
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Hero stories snapshot > PageDesignerStyling story renders and matches snapshot 1`] = `
+<div
+  class="relative w-full overflow-hidden h-[100vh] md:h-[85vh]"
+  data-hero-id="_r_5_"
+>
+  <div
+    class="absolute inset-0 w-full h-full"
+  >
+    <img
+      alt="Hero background"
+      class="w-full h-full object-cover"
+      fetchpriority="high"
+      loading="eager"
+      src="/images/hero-01.webp"
+      style="object-position: 50% 50%;"
+    />
+  </div>
+  <div
+    class="absolute inset-0 z-10 flex items-center"
+  >
+    <div
+      class="container mx-auto w-full section-container"
+    >
+      <div
+        class="max-w-2xl mx-auto text-center"
+      >
+        <h1
+          class="text-3xl font-semibold tracking-tight mb-3 sm:mb-4 md:mb-6"
+          style="color: rgb(248, 250, 252);"
+        >
+          Styled headline
+        </h1>
+        <p
+          class="text-base font-normal leading-7 mb-4 sm:mb-6 md:mb-8"
+          style="color: rgb(226, 232, 240);"
+        >
+          Subtitle with custom color and paragraph scale
+        </p>
+        <div
+          class="flex justify-center"
+        >
+          <a
+            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 has-[>svg]:px-3 text-sm font-medium leading-5 text-primary-foreground p-3 sm:p-4 md:p-5 lg:p-6"
+            data-size="default"
+            data-slot="button"
+            data-variant="outline"
+            href="/category/all"
+          >
+            Shop
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Hero stories snapshot > Playground story renders and matches snapshot 1`] = `
+<div
+  class="relative w-full overflow-hidden h-[100vh] md:h-[85vh]"
+  data-hero-id="_r_0_"
+>
+  <div
+    class="absolute inset-0 w-full h-full"
+  >
+    <img
+      alt="Hero background"
+      class="w-full h-full object-cover"
+      fetchpriority="high"
+      loading="eager"
+      src="/images/hero-01.webp"
+      style="object-position: 50% 50%;"
+    />
+  </div>
+  <div
+    class="absolute inset-0 z-10 flex items-center"
+  >
+    <div
+      class="container mx-auto w-full section-container"
+    >
+      <div
+        class="max-w-2xl mx-auto text-center"
+      >
+        <h1
+          class="text-6xl font-bold leading-none [letter-spacing:-1.5px] mb-3 sm:mb-4 md:mb-6 text-primary-foreground"
+        >
+          Welcome to Our Store
+        </h1>
+        <p
+          class="text-lg font-normal leading-[120%] mb-4 sm:mb-6 md:mb-8 text-primary-foreground"
+        >
+          Discover amazing products for your everyday needs
+        </p>
+        <div
+          class="flex justify-center"
+        >
+          <a
+            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary hover:bg-primary/90 h-9 has-[>svg]:px-3 text-sm font-medium leading-5 text-primary-foreground p-3 sm:p-4 md:p-5 lg:p-6"
+            data-size="default"
+            data-slot="button"
+            data-variant="default"
+            href="/category/all"
+          >
+            Shop Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Hero stories snapshot > RightBlockCenteredText story renders and matches snapshot 1`] = `
+<div
+  class="relative w-full overflow-hidden h-[100vh] md:h-[85vh]"
+  data-hero-id="_r_7_"
+>
+  <div
+    class="absolute inset-0 w-full h-full"
+  >
+    <img
+      alt="Hero background"
+      class="w-full h-full object-cover"
+      fetchpriority="high"
+      loading="eager"
+      src="/images/hero-01.webp"
+      style="object-position: 50% 50%;"
+    />
+  </div>
+  <div
+    class="absolute inset-0 z-10 flex items-center"
+  >
+    <div
+      class="container mx-auto w-full section-container"
+    >
+      <div
+        class="max-w-2xl ml-auto text-center"
+      >
+        <h1
+          class="text-6xl font-bold leading-none [letter-spacing:-1.5px] mb-3 sm:mb-4 md:mb-6 text-primary-foreground"
+        >
+          Right-aligned column
+        </h1>
+        <p
+          class="text-lg font-normal leading-[120%] mb-4 sm:mb-6 md:mb-8 text-primary-foreground"
+        >
+          Text stays centered inside the content block
+        </p>
+        <div
+          class="flex justify-center"
+        >
+          <a
+            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary hover:bg-primary/90 h-9 has-[>svg]:px-3 text-sm font-medium leading-5 text-primary-foreground p-3 sm:p-4 md:p-5 lg:p-6"
+            data-size="default"
+            data-slot="button"
+            data-variant="default"
+            href="/category/all"
+          >
+            Shop Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Hero stories snapshot > StyleOverrideWithDesignTokens story renders and matches snapshot 1`] = `
+<style>
+  [data-hero-id="_r_6_"] { & { outline: 3px solid var(--primary-foreground); outline-offset: -12px; }
+& [data-slot="button"] { background-color: transparent; color: var(--primary-foreground); border: 2px solid var(--primary-foreground); }
+& [data-slot="button"]:hover { background-color: var(--primary-foreground); color: var(--primary); transform: scale(1.03); } }
+</style>
+`;
+
+exports[`Hero stories snapshot > WithoutImage story renders and matches snapshot 1`] = `
+<div
+  class="relative w-full overflow-hidden h-[100vh] md:h-[85vh]"
+  data-hero-id="_r_3_"
+>
+  <div
+    class="absolute inset-0 bg-muted"
+  />
+  <div
+    class="absolute inset-0 z-10 flex items-center"
+  >
+    <div
+      class="container mx-auto w-full section-container"
+    >
+      <div
+        class="max-w-2xl mx-auto text-center"
+      >
+        <h1
+          class="text-6xl font-bold leading-none [letter-spacing:-1.5px] mb-3 sm:mb-4 md:mb-6 text-primary-foreground"
+        >
+          Missing Background Image
+        </h1>
+        <p
+          class="text-lg font-normal leading-[120%] mb-4 sm:mb-6 md:mb-8 text-primary-foreground"
+        >
+          When imageUrl is unauthored, the hero renders a flat muted placeholder behind the overlay text.
+        </p>
+        <div
+          class="flex justify-center"
+        >
+          <a
+            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary hover:bg-primary/90 h-9 has-[>svg]:px-3 text-sm font-medium leading-5 text-primary-foreground p-3 sm:p-4 md:p-5 lg:p-6"
+            data-size="default"
+            data-slot="button"
+            data-variant="default"
+            href="/category/all"
+          >
+            Shop Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Hero stories snapshot > WithoutSubtitle story renders and matches snapshot 1`] = `
+<div
+  class="relative w-full overflow-hidden h-[100vh] md:h-[85vh]"
+  data-hero-id="_r_2_"
+>
+  <div
+    class="absolute inset-0 w-full h-full"
+  >
+    <img
+      alt="Hero background"
+      class="w-full h-full object-cover"
+      fetchpriority="high"
+      loading="eager"
+      src="/images/hero-01.webp"
+      style="object-position: 50% 50%;"
+    />
+  </div>
+  <div
+    class="absolute inset-0 z-10 flex items-center"
+  >
+    <div
+      class="container mx-auto w-full section-container"
+    >
+      <div
+        class="max-w-2xl mx-auto text-center"
+      >
+        <h1
+          class="text-6xl font-bold leading-none [letter-spacing:-1.5px] mb-3 sm:mb-4 md:mb-6 text-primary-foreground"
+        >
+          Simple Hero
+        </h1>
+        <div
+          class="flex justify-center"
+        >
+          <a
+            class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive bg-primary hover:bg-primary/90 h-9 has-[>svg]:px-3 text-sm font-medium leading-5 text-primary-foreground p-3 sm:p-4 md:p-5 lg:p-6"
+            data-size="default"
+            data-slot="button"
+            data-variant="default"
+            href="/explore"
+          >
+            Explore
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

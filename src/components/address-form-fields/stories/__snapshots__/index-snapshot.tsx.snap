@@ -1,0 +1,1887 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AddressFormFields stories snapshot > BillingAddress story renders and matches snapshot 1`] = `
+<div
+  class="max-w-2xl"
+>
+  <div>
+    <form
+      class="space-y-4"
+      data-testid="billing-address-form-fields-form"
+    >
+      <div>
+        <div
+          class="grid grid-cols-2 gap-2 mb-4 items-start"
+        >
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive sr-only"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_k_-form-item"
+            >
+              First Name
+              *
+            </label>
+            <input
+              aria-invalid="false"
+              autocomplete="billing given-name"
+              class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+              data-slot="input"
+              id="_r_k_-form-item"
+              name="billingFirstName"
+              placeholder="First Name*"
+              value=""
+            />
+          </div>
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive sr-only"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_l_-form-item"
+            >
+              Last Name
+              *
+            </label>
+            <input
+              aria-invalid="false"
+              autocomplete="billing family-name"
+              class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+              data-slot="input"
+              id="_r_l_-form-item"
+              name="billingLastName"
+              placeholder="Last Name*"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="mb-4"
+        >
+          <div
+            class="grid gap-2 relative"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive sr-only"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_m_-form-item"
+            >
+              Address Line 1
+              *
+            </label>
+            <input
+              aria-invalid="false"
+              autocomplete="billing street-address"
+              class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+              data-slot="input"
+              id="_r_m_-form-item"
+              name="billingAddress1"
+              placeholder="Address Line 1*"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="mb-4"
+        >
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive sr-only"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_n_-form-item"
+            >
+              Address Line 2
+            </label>
+            <input
+              aria-invalid="false"
+              autocomplete="billing address-line2"
+              class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+              data-slot="input"
+              id="_r_n_-form-item"
+              name="billingAddress2"
+              placeholder="Address Line 2"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-2 gap-2 mb-4 items-start"
+        >
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive sr-only"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_o_-form-item"
+            >
+              City
+              *
+            </label>
+            <input
+              aria-invalid="false"
+              autocomplete="billing address-level2"
+              class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+              data-slot="input"
+              id="_r_o_-form-item"
+              name="billingCity"
+              placeholder="City*"
+              value=""
+            />
+          </div>
+          <div
+            class="grid gap-2 [&_[data-slot=native-select-wrapper]]:w-full"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive sr-only"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_p_-form-item"
+            >
+              State
+              *
+            </label>
+            <div
+              class="group/native-select relative w-fit has-[select:disabled]:opacity-50"
+              data-slot="native-select-wrapper"
+            >
+              <select
+                aria-invalid="false"
+                autocomplete="billing address-level1"
+                class="border-input placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 dark:hover:bg-input/50 h-9 w-full min-w-0 appearance-none rounded-ui border bg-transparent px-3 py-2 pr-9 text-sm shadow-ui transition-[color,box-shadow] outline-none disabled:pointer-events-none disabled:cursor-not-allowed data-[size=sm]:h-8 data-[size=sm]:py-1 focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive text-muted-foreground"
+                data-size="default"
+                data-slot="native-select"
+                id="_r_p_-form-item"
+                name="billingStateCode"
+              >
+                <option
+                  class="text-muted-foreground"
+                  data-slot="native-select-option"
+                  value=""
+                >
+                  State*
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="AL"
+                >
+                  Alabama
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="AK"
+                >
+                  Alaska
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="AZ"
+                >
+                  Arizona
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="AR"
+                >
+                  Arkansas
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="CA"
+                >
+                  California
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="CO"
+                >
+                  Colorado
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="CT"
+                >
+                  Connecticut
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="DE"
+                >
+                  Delaware
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="DC"
+                >
+                  District Of Columbia
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="FL"
+                >
+                  Florida
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="GA"
+                >
+                  Georgia
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="HI"
+                >
+                  Hawaii
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="ID"
+                >
+                  Idaho
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="IL"
+                >
+                  Illinois
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="IN"
+                >
+                  Indiana
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="IA"
+                >
+                  Iowa
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="KS"
+                >
+                  Kansas
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="KY"
+                >
+                  Kentucky
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="LA"
+                >
+                  Louisiana
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="ME"
+                >
+                  Maine
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="MD"
+                >
+                  Maryland
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="MA"
+                >
+                  Massachusetts
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="MI"
+                >
+                  Michigan
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="MN"
+                >
+                  Minnesota
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="MS"
+                >
+                  Mississippi
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="MO"
+                >
+                  Missouri
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="MT"
+                >
+                  Montana
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="NE"
+                >
+                  Nebraska
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="NV"
+                >
+                  Nevada
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="NH"
+                >
+                  New Hampshire
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="NJ"
+                >
+                  New Jersey
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="NM"
+                >
+                  New Mexico
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="NY"
+                >
+                  New York
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="NC"
+                >
+                  North Carolina
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="ND"
+                >
+                  North Dakota
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="OH"
+                >
+                  Ohio
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="OK"
+                >
+                  Oklahoma
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="OR"
+                >
+                  Oregon
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="PA"
+                >
+                  Pennsylvania
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="RI"
+                >
+                  Rhode Island
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="SC"
+                >
+                  South Carolina
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="SD"
+                >
+                  South Dakota
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="TN"
+                >
+                  Tennessee
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="TX"
+                >
+                  Texas
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="UT"
+                >
+                  Utah
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="VT"
+                >
+                  Vermont
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="VA"
+                >
+                  Virginia
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="WA"
+                >
+                  Washington
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="WV"
+                >
+                  West Virginia
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="WI"
+                >
+                  Wisconsin
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="WY"
+                >
+                  Wyoming
+                </option>
+              </select>
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-chevron-down text-muted-foreground pointer-events-none absolute top-1/2 right-3.5 size-4 -translate-y-1/2 opacity-50 select-none"
+                data-slot="native-select-icon"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m6 9 6 6 6-6"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-2 gap-2 items-start "
+        >
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive sr-only"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_q_-form-item"
+            >
+              Zip Code
+              *
+            </label>
+            <input
+              aria-invalid="false"
+              autocomplete="billing postal-code"
+              class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+              data-slot="input"
+              id="_r_q_-form-item"
+              name="billingPostalCode"
+              placeholder="Zip Code*"
+              value=""
+            />
+          </div>
+          <div
+            class="grid gap-2 [&_[data-slot=native-select-wrapper]]:w-full"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive sr-only"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_r_-form-item"
+            >
+              Country
+              *
+            </label>
+            <div
+              class="group/native-select relative w-fit has-[select:disabled]:opacity-50"
+              data-slot="native-select-wrapper"
+            >
+              <select
+                aria-invalid="false"
+                aria-label="Country"
+                autocomplete="billing country"
+                class="border-input placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 dark:hover:bg-input/50 h-9 w-full min-w-0 appearance-none rounded-ui border bg-transparent px-3 py-2 pr-9 text-sm shadow-ui transition-[color,box-shadow] outline-none disabled:pointer-events-none disabled:cursor-not-allowed data-[size=sm]:h-8 data-[size=sm]:py-1 focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+                data-size="default"
+                data-slot="native-select"
+                id="_r_r_-form-item"
+                name="billingCountryCode"
+              >
+                <option
+                  data-slot="native-select-option"
+                  value="US"
+                >
+                  United States
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="CA"
+                >
+                  Canada
+                </option>
+              </select>
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-chevron-down text-muted-foreground pointer-events-none absolute top-1/2 right-3.5 size-4 -translate-y-1/2 opacity-50 select-none"
+                data-slot="native-select-icon"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m6 9 6 6 6-6"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`AddressFormFields stories snapshot > Playground story renders and matches snapshot 1`] = `
+<div
+  class="max-w-2xl"
+>
+  <div>
+    <form
+      class="space-y-4"
+      data-testid="address-form-fields-form"
+    >
+      <div>
+        <div
+          class="grid grid-cols-2 gap-2 mb-4 items-start"
+        >
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_0_-form-item"
+            >
+              First Name
+              *
+            </label>
+            <input
+              aria-invalid="false"
+              autocomplete="shipping given-name"
+              class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+              data-slot="input"
+              id="_r_0_-form-item"
+              name="firstName"
+              placeholder="First Name"
+              value=""
+            />
+          </div>
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_1_-form-item"
+            >
+              Last Name
+              *
+            </label>
+            <input
+              aria-invalid="false"
+              autocomplete="shipping family-name"
+              class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+              data-slot="input"
+              id="_r_1_-form-item"
+              name="lastName"
+              placeholder="Last Name"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="mb-4"
+        >
+          <div
+            class="grid gap-2 relative"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_2_-form-item"
+            >
+              Address Line 1
+              *
+            </label>
+            <input
+              aria-invalid="false"
+              autocomplete="shipping street-address"
+              class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+              data-slot="input"
+              id="_r_2_-form-item"
+              name="address1"
+              placeholder="Address Line 1"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="mb-4"
+        >
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_3_-form-item"
+            >
+              Address Line 2
+            </label>
+            <input
+              aria-invalid="false"
+              autocomplete="shipping address-line2"
+              class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+              data-slot="input"
+              id="_r_3_-form-item"
+              name="address2"
+              placeholder="Address Line 2"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-2 gap-2 mb-4 items-start"
+        >
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_4_-form-item"
+            >
+              City
+              *
+            </label>
+            <input
+              aria-invalid="false"
+              autocomplete="shipping address-level2"
+              class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+              data-slot="input"
+              id="_r_4_-form-item"
+              name="city"
+              placeholder="City"
+              value=""
+            />
+          </div>
+          <div
+            class="grid gap-2 [&_[data-slot=native-select-wrapper]]:w-full"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_5_-form-item"
+            >
+              State
+              *
+            </label>
+            <div
+              class="group/native-select relative w-fit has-[select:disabled]:opacity-50"
+              data-slot="native-select-wrapper"
+            >
+              <select
+                aria-invalid="false"
+                autocomplete="shipping address-level1"
+                class="border-input placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 dark:hover:bg-input/50 h-9 w-full min-w-0 appearance-none rounded-ui border bg-transparent px-3 py-2 pr-9 text-sm shadow-ui transition-[color,box-shadow] outline-none disabled:pointer-events-none disabled:cursor-not-allowed data-[size=sm]:h-8 data-[size=sm]:py-1 focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive text-muted-foreground"
+                data-size="default"
+                data-slot="native-select"
+                id="_r_5_-form-item"
+                name="stateCode"
+              >
+                <option
+                  class="text-muted-foreground"
+                  data-slot="native-select-option"
+                  value=""
+                >
+                  State
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="AL"
+                >
+                  Alabama
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="AK"
+                >
+                  Alaska
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="AZ"
+                >
+                  Arizona
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="AR"
+                >
+                  Arkansas
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="CA"
+                >
+                  California
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="CO"
+                >
+                  Colorado
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="CT"
+                >
+                  Connecticut
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="DE"
+                >
+                  Delaware
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="DC"
+                >
+                  District Of Columbia
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="FL"
+                >
+                  Florida
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="GA"
+                >
+                  Georgia
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="HI"
+                >
+                  Hawaii
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="ID"
+                >
+                  Idaho
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="IL"
+                >
+                  Illinois
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="IN"
+                >
+                  Indiana
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="IA"
+                >
+                  Iowa
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="KS"
+                >
+                  Kansas
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="KY"
+                >
+                  Kentucky
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="LA"
+                >
+                  Louisiana
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="ME"
+                >
+                  Maine
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="MD"
+                >
+                  Maryland
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="MA"
+                >
+                  Massachusetts
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="MI"
+                >
+                  Michigan
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="MN"
+                >
+                  Minnesota
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="MS"
+                >
+                  Mississippi
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="MO"
+                >
+                  Missouri
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="MT"
+                >
+                  Montana
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="NE"
+                >
+                  Nebraska
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="NV"
+                >
+                  Nevada
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="NH"
+                >
+                  New Hampshire
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="NJ"
+                >
+                  New Jersey
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="NM"
+                >
+                  New Mexico
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="NY"
+                >
+                  New York
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="NC"
+                >
+                  North Carolina
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="ND"
+                >
+                  North Dakota
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="OH"
+                >
+                  Ohio
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="OK"
+                >
+                  Oklahoma
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="OR"
+                >
+                  Oregon
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="PA"
+                >
+                  Pennsylvania
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="RI"
+                >
+                  Rhode Island
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="SC"
+                >
+                  South Carolina
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="SD"
+                >
+                  South Dakota
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="TN"
+                >
+                  Tennessee
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="TX"
+                >
+                  Texas
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="UT"
+                >
+                  Utah
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="VT"
+                >
+                  Vermont
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="VA"
+                >
+                  Virginia
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="WA"
+                >
+                  Washington
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="WV"
+                >
+                  West Virginia
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="WI"
+                >
+                  Wisconsin
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="WY"
+                >
+                  Wyoming
+                </option>
+              </select>
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-chevron-down text-muted-foreground pointer-events-none absolute top-1/2 right-3.5 size-4 -translate-y-1/2 opacity-50 select-none"
+                data-slot="native-select-icon"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m6 9 6 6 6-6"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-2 gap-2 items-start mb-4"
+        >
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_6_-form-item"
+            >
+              Zip Code
+              *
+            </label>
+            <input
+              aria-invalid="false"
+              autocomplete="shipping postal-code"
+              class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+              data-slot="input"
+              id="_r_6_-form-item"
+              name="postalCode"
+              placeholder="Zip"
+              value=""
+            />
+          </div>
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_7_-form-item"
+            >
+              Country
+              *
+            </label>
+            <input
+              aria-label="Country"
+              class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive text-foreground bg-background cursor-default"
+              data-slot="input"
+              readonly=""
+              tabindex="-1"
+              value="United States"
+            />
+          </div>
+        </div>
+        <div
+          class="flex items-start gap-2"
+        >
+          <div
+            class="grid gap-2 w-20"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_8_-form-item"
+            >
+              Code
+            </label>
+            <div
+              class="group/native-select relative w-fit has-[select:disabled]:opacity-50"
+              data-slot="native-select-wrapper"
+            >
+              <select
+                aria-invalid="false"
+                aria-label="Code"
+                class="border-input placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 dark:hover:bg-input/50 h-9 w-full min-w-0 appearance-none rounded-ui border bg-transparent px-3 py-2 pr-9 text-sm shadow-ui transition-[color,box-shadow] outline-none disabled:pointer-events-none disabled:cursor-not-allowed data-[size=sm]:h-8 data-[size=sm]:py-1 focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+                data-size="default"
+                data-slot="native-select"
+                id="_r_8_-form-item"
+              >
+                <option
+                  value="+1"
+                >
+                  +1
+                </option>
+              </select>
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-chevron-down text-muted-foreground pointer-events-none absolute top-1/2 right-3.5 size-4 -translate-y-1/2 opacity-50 select-none"
+                data-slot="native-select-icon"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m6 9 6 6 6-6"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            class="grid gap-2 flex-1"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_9_-form-item"
+            >
+              Phone Number
+            </label>
+            <input
+              aria-invalid="false"
+              autocomplete="tel-national"
+              class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+              data-slot="input"
+              id="_r_9_-form-item"
+              inputmode="numeric"
+              maxlength="14"
+              name="phone"
+              placeholder="(000) 000-0000"
+              type="tel"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+`;
+
+exports[`AddressFormFields stories snapshot > WithValidationErrors story renders and matches snapshot 1`] = `
+<div
+  class="max-w-2xl"
+>
+  <div>
+    <form
+      class="space-y-4"
+      data-testid="address-form-fields-form"
+    >
+      <div>
+        <div
+          class="grid grid-cols-2 gap-2 mb-4 items-start"
+        >
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_a_-form-item"
+            >
+              First Name
+              *
+            </label>
+            <input
+              aria-invalid="false"
+              autocomplete="shipping given-name"
+              class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+              data-slot="input"
+              id="_r_a_-form-item"
+              name="firstName"
+              placeholder="First Name"
+              value=""
+            />
+          </div>
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_b_-form-item"
+            >
+              Last Name
+              *
+            </label>
+            <input
+              aria-invalid="false"
+              autocomplete="shipping family-name"
+              class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+              data-slot="input"
+              id="_r_b_-form-item"
+              name="lastName"
+              placeholder="Last Name"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="mb-4"
+        >
+          <div
+            class="grid gap-2 relative"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_c_-form-item"
+            >
+              Address Line 1
+              *
+            </label>
+            <input
+              aria-invalid="false"
+              autocomplete="shipping street-address"
+              class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+              data-slot="input"
+              id="_r_c_-form-item"
+              name="address1"
+              placeholder="Address Line 1"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="mb-4"
+        >
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_d_-form-item"
+            >
+              Address Line 2
+            </label>
+            <input
+              aria-invalid="false"
+              autocomplete="shipping address-line2"
+              class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+              data-slot="input"
+              id="_r_d_-form-item"
+              name="address2"
+              placeholder="Address Line 2"
+              value=""
+            />
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-2 gap-2 mb-4 items-start"
+        >
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_e_-form-item"
+            >
+              City
+              *
+            </label>
+            <input
+              aria-invalid="false"
+              autocomplete="shipping address-level2"
+              class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+              data-slot="input"
+              id="_r_e_-form-item"
+              name="city"
+              placeholder="City"
+              value=""
+            />
+          </div>
+          <div
+            class="grid gap-2 [&_[data-slot=native-select-wrapper]]:w-full"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_f_-form-item"
+            >
+              State
+              *
+            </label>
+            <div
+              class="group/native-select relative w-fit has-[select:disabled]:opacity-50"
+              data-slot="native-select-wrapper"
+            >
+              <select
+                aria-invalid="false"
+                autocomplete="shipping address-level1"
+                class="border-input placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 dark:hover:bg-input/50 h-9 w-full min-w-0 appearance-none rounded-ui border bg-transparent px-3 py-2 pr-9 text-sm shadow-ui transition-[color,box-shadow] outline-none disabled:pointer-events-none disabled:cursor-not-allowed data-[size=sm]:h-8 data-[size=sm]:py-1 focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive text-muted-foreground"
+                data-size="default"
+                data-slot="native-select"
+                id="_r_f_-form-item"
+                name="stateCode"
+              >
+                <option
+                  class="text-muted-foreground"
+                  data-slot="native-select-option"
+                  value=""
+                >
+                  State
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="AL"
+                >
+                  Alabama
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="AK"
+                >
+                  Alaska
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="AZ"
+                >
+                  Arizona
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="AR"
+                >
+                  Arkansas
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="CA"
+                >
+                  California
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="CO"
+                >
+                  Colorado
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="CT"
+                >
+                  Connecticut
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="DE"
+                >
+                  Delaware
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="DC"
+                >
+                  District Of Columbia
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="FL"
+                >
+                  Florida
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="GA"
+                >
+                  Georgia
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="HI"
+                >
+                  Hawaii
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="ID"
+                >
+                  Idaho
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="IL"
+                >
+                  Illinois
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="IN"
+                >
+                  Indiana
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="IA"
+                >
+                  Iowa
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="KS"
+                >
+                  Kansas
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="KY"
+                >
+                  Kentucky
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="LA"
+                >
+                  Louisiana
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="ME"
+                >
+                  Maine
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="MD"
+                >
+                  Maryland
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="MA"
+                >
+                  Massachusetts
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="MI"
+                >
+                  Michigan
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="MN"
+                >
+                  Minnesota
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="MS"
+                >
+                  Mississippi
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="MO"
+                >
+                  Missouri
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="MT"
+                >
+                  Montana
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="NE"
+                >
+                  Nebraska
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="NV"
+                >
+                  Nevada
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="NH"
+                >
+                  New Hampshire
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="NJ"
+                >
+                  New Jersey
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="NM"
+                >
+                  New Mexico
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="NY"
+                >
+                  New York
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="NC"
+                >
+                  North Carolina
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="ND"
+                >
+                  North Dakota
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="OH"
+                >
+                  Ohio
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="OK"
+                >
+                  Oklahoma
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="OR"
+                >
+                  Oregon
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="PA"
+                >
+                  Pennsylvania
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="RI"
+                >
+                  Rhode Island
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="SC"
+                >
+                  South Carolina
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="SD"
+                >
+                  South Dakota
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="TN"
+                >
+                  Tennessee
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="TX"
+                >
+                  Texas
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="UT"
+                >
+                  Utah
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="VT"
+                >
+                  Vermont
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="VA"
+                >
+                  Virginia
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="WA"
+                >
+                  Washington
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="WV"
+                >
+                  West Virginia
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="WI"
+                >
+                  Wisconsin
+                </option>
+                <option
+                  data-slot="native-select-option"
+                  value="WY"
+                >
+                  Wyoming
+                </option>
+              </select>
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-chevron-down text-muted-foreground pointer-events-none absolute top-1/2 right-3.5 size-4 -translate-y-1/2 opacity-50 select-none"
+                data-slot="native-select-icon"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m6 9 6 6 6-6"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="grid grid-cols-2 gap-2 items-start mb-4"
+        >
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_g_-form-item"
+            >
+              Zip Code
+              *
+            </label>
+            <input
+              aria-invalid="false"
+              autocomplete="shipping postal-code"
+              class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+              data-slot="input"
+              id="_r_g_-form-item"
+              name="postalCode"
+              placeholder="Zip"
+              value=""
+            />
+          </div>
+          <div
+            class="grid gap-2"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_h_-form-item"
+            >
+              Country
+              *
+            </label>
+            <input
+              aria-label="Country"
+              class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive text-foreground bg-background cursor-default"
+              data-slot="input"
+              readonly=""
+              tabindex="-1"
+              value="United States"
+            />
+          </div>
+        </div>
+        <div
+          class="flex items-start gap-2"
+        >
+          <div
+            class="grid gap-2 w-20"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_i_-form-item"
+            >
+              Code
+            </label>
+            <div
+              class="group/native-select relative w-fit has-[select:disabled]:opacity-50"
+              data-slot="native-select-wrapper"
+            >
+              <select
+                aria-invalid="false"
+                aria-label="Code"
+                class="border-input placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 dark:hover:bg-input/50 h-9 w-full min-w-0 appearance-none rounded-ui border bg-transparent px-3 py-2 pr-9 text-sm shadow-ui transition-[color,box-shadow] outline-none disabled:pointer-events-none disabled:cursor-not-allowed data-[size=sm]:h-8 data-[size=sm]:py-1 focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+                data-size="default"
+                data-slot="native-select"
+                id="_r_i_-form-item"
+              >
+                <option
+                  value="+1"
+                >
+                  +1
+                </option>
+              </select>
+              <svg
+                aria-hidden="true"
+                class="lucide lucide-chevron-down text-muted-foreground pointer-events-none absolute top-1/2 right-3.5 size-4 -translate-y-1/2 opacity-50 select-none"
+                data-slot="native-select-icon"
+                fill="none"
+                height="24"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                width="24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="m6 9 6 6 6-6"
+                />
+              </svg>
+            </div>
+          </div>
+          <div
+            class="grid gap-2 flex-1"
+            data-slot="form-item"
+          >
+            <label
+              class="flex items-center gap-2 text-sm leading-none font-medium select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 data-[error=true]:text-destructive"
+              data-error="false"
+              data-slot="form-label"
+              for="_r_j_-form-item"
+            >
+              Phone Number
+            </label>
+            <input
+              aria-invalid="false"
+              autocomplete="tel-national"
+              class="file:text-foreground placeholder:text-muted-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input h-9 w-full min-w-0 rounded-ui border bg-transparent px-3 py-1 text-base shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive"
+              data-slot="input"
+              id="_r_j_-form-item"
+              inputmode="numeric"
+              maxlength="14"
+              name="phone"
+              placeholder="(000) 000-0000"
+              type="tel"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <button
+        type="submit"
+      >
+        Save
+      </button>
+    </form>
+  </div>
+</div>
+`;

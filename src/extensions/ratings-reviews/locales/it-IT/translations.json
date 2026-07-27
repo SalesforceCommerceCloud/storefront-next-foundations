@@ -1,0 +1,71 @@
+{
+    "section": {
+        "heading": "Recensioni dei clienti",
+        "loading": "Caricamento  recensioni in corso...",
+        "loadError": "Impossibile caricare le recensioni. Aggiorna la pagina per riprovare.",
+        "noReviewsForProduct": "Non ci sono recensioni per questo prodotto.",
+        "noReviewsMatchFilters": "Nessuna recensione corrisponde ai filtri impostati.",
+        "showingReviews": "Mostra {{from}}-{{to}} di {{total}} recensioni",
+        "subtitleOne": "1 recensione per {{productName}}",
+        "subtitleOther": "{{count}} recensioni per {{productName}}",
+        "aiReviewSummary": "Riepilogo revisione IA"
+    },
+    "filters": {
+        "filterBy": "Filtra per:",
+        "withPhotos": "Con foto",
+        "searchPlaceholder": "Cerca recensioni...",
+        "sortLabel": "Ordina:",
+        "sortMostRecent": "Più recenti",
+        "sortHighestRated": "Con valutazione più alta",
+        "sortLowestRated": "Con valutazione più bassa",
+        "sortMostHelpful": "Più utili",
+        "activeFilterStars": "{{count}} stelle",
+        "clearFilter": "Cancella filtro",
+        "filterByStars": "Filtra per {{count}} stelle",
+        "clearStarFilter": "Cancella filtro {{count}} stelle",
+        "clearPhotoFilter": "Cancella filtro foto"
+    },
+    "card": {
+        "verifiedPurchase": "Acquisto verificato",
+        "helpful": "Utile ({{count}})",
+        "helpfulNoCount": "Utile",
+        "report": "Report",
+        "readMore": "Ulteriori informazioni",
+        "readLess": "Meno informazioni",
+        "imageAlt": "Rivedi immagine"
+    },
+    "rating": {
+        "starContainerAriaLabel": "{{rating}} su {{total}} stelle, {{count, number}} recensioni",
+        "ratingOutOfTotal": "{{rating}} su {{total}}",
+        "ratingValue": "{{rating}}",
+        "basedOnReviews": "Sulla base di {{count, number}} recensioni",
+        "ratingWithCount": "{{rating}} ({{count, number}})",
+        "viewAllReviews": "Vedi tutte le recensioni",
+        "distributionAriaLabel": "{{rating}} stelle: {{count, number}} di {{totalReviews, number}} recensioni",
+        "distributionsAriaLabel": "Distribuzione valutazioni a stelle, {{total, number}} recensioni totali",
+        "seeCustomerReviews": "Vedi le recensioni dei clienti >"
+    },
+    "writeReview": {
+        "buttonLabel": "Scrivi una recensione",
+        "modalDescription": "Scrivi un modulo di recensione",
+        "starRatingDistributionDescription": "Dettagli sulla distribuzione delle valutazioni a stelle",
+        "submitting": "Inoltro in corso",
+        "successMessage": "Recensione inviata",
+        "errorMessage": "Impossibile inviare la recensione. Riprova.",
+        "validation": {
+            "pleaseFixFollowing": "Risolvi i seguenti problemi:",
+            "ratingRequired": "Seleziona una valutazione.",
+            "reviewRequired": "Compila questo campo.",
+            "reviewMinLength": "La tua recensione deve contenere almeno {{count}} caratteri",
+            "reviewMaxLength": "Non inserire più di {{count}} caratteri.",
+            "titleMaxLength": "Non inserire più di {{count}} caratteri."
+        },
+        "minCharactersHint": "Minimo {{count}} caratteri.",
+        "maxCharactersHint": "Massimo {{count}} caratteri."
+    },
+    "orderLine": {
+        "rateAndReview": "Valuta e recensisci",
+        "reviewSubmitted": "Recensione inviata",
+        "cta": "Valuta e recensisci"
+    }
+}

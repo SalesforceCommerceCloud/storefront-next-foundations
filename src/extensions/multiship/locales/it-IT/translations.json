@@ -1,0 +1,42 @@
+{
+    "checkout": {
+        "addressForm": {
+            "addAddressTitle": "Aggiungi indirizzo",
+            "firstNamePlaceholder": "Nome",
+            "lastNamePlaceholder": "Cognome",
+            "countryPlaceholder": "Nazione",
+            "address1Placeholder": "Indirizzo",
+            "address2Placeholder": "Numero di telefono",
+            "cityPlaceholder": "Città",
+            "zipCodePlaceholder": "CAP",
+            "postalCodePlaceholder": "CAP",
+            "selectStatePlaceholder": "Seleziona stato",
+            "selectProvincePlaceholder": "Seleziona provincia",
+            "addressFormValidationError": "Per favore, riempi tutti i campi",
+            "deliveryAddressIdFallback": "Indirizzo di consegna {{firstName}} {{lastName}}",
+            "saveButton": "Salva",
+            "cancelButton": "Annulla"
+        },
+        "edit": "Editar",
+        "shipItemsToOneAddress": "Enviar artículos a una dirección",
+        "deliverToMultipleAddresses": "Entregar a múltiples direcciones",
+        "deliveryAddressLabel": "Dirección de entrega",
+        "quantity": "Cant",
+        "shippingMultiAddressTitle": "Dirección de envío",
+        "shippingMultiOptionsTitle": "Método de envío",
+        "noAddressAvailable": "No hay dirección disponible",
+        "noAddress": "Sin dirección",
+        "selectAddress": "Seleccionar una dirección",
+        "addNewAddress": "Agregar nueva dirección",
+        "missingAddresses": "Por favor, seleccione una dirección para todos los artículos",
+        "continue": "Continuar a opciones de envío",
+        "submitting": "Enviando",
+        "shipmentNumber": "Envío {{number}}:",
+        "shipmentNumberWithRecipient": "Envío {{number}} → {{name}}",
+        "shippingMethodsForShipment": "Métodos de envío para envío {{number}}",
+        "noShipmentsAvailable": "No hay envíos disponibles",
+        "noMethodSelected": "Ningún método seleccionado",
+        "error": "Algo salió mal. Inténtalo de nuevo más tarde.",
+        "shippingToMultipleLocations": "Estás enviando a múltiples ubicaciones."
+    }
+}

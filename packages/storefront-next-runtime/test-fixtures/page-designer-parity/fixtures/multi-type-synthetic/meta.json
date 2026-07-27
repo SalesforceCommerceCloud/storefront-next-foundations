@@ -1,0 +1,9 @@
+{
+    "sourceStack": "synthetic",
+    "requestHost": "https://www.shop.example",
+    "locale": "fr_FR",
+    "defaultLocale": "en_US",
+    "siteId": "RefArch",
+    "capturedAt": "2026-05-11T00:00:00Z",
+    "description": "Multi-type fixture exercising all attribute types on a single page at a non-default locale (fr_FR). Tests locale overlay for component content, type-driven dispatch across string, image, file, markup, url, and cms_record in one pass. Also exercises the per-attribute merge (default + locale content). Synthetic capture."
+}

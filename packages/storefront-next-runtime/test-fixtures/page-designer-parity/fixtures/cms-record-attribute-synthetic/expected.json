@@ -1,0 +1,43 @@
+{
+    "id": "cms-record-page",
+    "typeId": "storePage",
+    "regions": [
+        {
+            "id": "main",
+            "components": [
+                {
+                    "id": "card-1",
+                    "typeId": "commerce_assets.contentCard",
+                    "regions": [],
+                    "fragment": false,
+                    "localized": true,
+                    "visible": true,
+                    "data": {
+                        "heading": "Featured Article",
+                        "record": {
+                            "id": "article-42",
+                            "type": {
+                                "id": "editorial_article",
+                                "name": "Editorial Article",
+                                "attributeDefinitions": [
+                                    { "id": "title", "type": "string" },
+                                    { "id": "thumbnail", "type": "image" },
+                                    { "id": "attachment", "type": "file" }
+                                ]
+                            },
+                            "attributes": {
+                                "title": "Summer Style Guide",
+                                "thumbnail": {
+                                    "focalPoint": { "x": 0.5, "y": 0.3 },
+                                    "metaData": { "width": 800, "height": 400 },
+                                    "url": "https://www.shop.example/on/demandware.static/-/Library-Sites-RefArchSharedLibrary/en_US/v1/articles/summer-style-thumb.jpg"
+                                },
+                                "attachment": "https://www.shop.example/on/demandware.static/-/Library-Sites-RefArchSharedLibrary/en_US/v1/articles/summer-style-full.pdf"
+                            }
+                        }
+                    }
+                }
+            ]
+        }
+    ]
+}

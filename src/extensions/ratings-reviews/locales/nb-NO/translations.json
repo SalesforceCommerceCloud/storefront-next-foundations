@@ -1,0 +1,71 @@
+{
+    "section": {
+        "heading": "Kundeomtaler",
+        "loading": "Laster inn omtaler ...",
+        "loadError": "Vi kunne ikke laste inn anmeldelser. Last inn siden på nytt for å prøve igjen.",
+        "noReviewsForProduct": "Ingen omtaler for dette produktet.",
+        "noReviewsMatchFilters": "Ingen omtaler samsvarer med filtrene dine.",
+        "showingReviews": "Viser {{from}}–{{to}} av {{total}} omtaler",
+        "subtitleOne": "1 omtale for {{productName}}",
+        "subtitleOther": "{{count}} omtaler for {{productName}}",
+        "aiReviewSummary": "Sammendrag av KI-omtale"
+    },
+    "filters": {
+        "filterBy": "Filtrer etter:",
+        "withPhotos": "Med bilder",
+        "searchPlaceholder": "Søk i omtaler ...",
+        "sortLabel": "Sortere:",
+        "sortMostRecent": "Siste nytt",
+        "sortHighestRated": "Høyest rangert",
+        "sortLowestRated": "Lavest rangert",
+        "sortMostHelpful": "Mest nyttig",
+        "activeFilterStars": "{{count}} stjerner",
+        "clearFilter": "Tøm filteret",
+        "filterByStars": "Filtrer etter {{count}} stjerner",
+        "clearStarFilter": "Tøm {{count}}-stjernefilter",
+        "clearPhotoFilter": "Tydelig fotofilter"
+    },
+    "card": {
+        "verifiedPurchase": "Bekreftet kjøp",
+        "helpful": "Nyttig ({{count}})",
+        "helpfulNoCount": "Nyttig",
+        "report": "Rapport",
+        "readMore": "Les mer",
+        "readLess": "Les mindre",
+        "imageAlt": "Gjennomgå bilde"
+    },
+    "rating": {
+        "starContainerAriaLabel": "{{rating}} av {{total}} stjerner, {{count, number}} omtaler",
+        "ratingOutOfTotal": "{{rating}} av {{total}}",
+        "ratingValue": "{{rating}}",
+        "basedOnReviews": "Basert på {{count, number}} omtaler",
+        "ratingWithCount": "{{rating}} ({{count, number}})",
+        "viewAllReviews": "Se alle omtaler",
+        "distributionAriaLabel": "{{rating}} stjerner: {{count, number}} av {{totalReviews, number}} omtaler",
+        "distributionsAriaLabel": "Fordeling av stjerner, {{total, number}} totalt antall omtaler",
+        "seeCustomerReviews": "Se kundenes omtaler >"
+    },
+    "writeReview": {
+        "buttonLabel": "Skriv en omtale",
+        "modalDescription": "Skriv et omtaleskjema",
+        "starRatingDistributionDescription": "Opplysninger om fordeling av stjerneklassifisering",
+        "submitting": "Sender inn",
+        "successMessage": "Anmeldelse sendt inn",
+        "errorMessage": "Kunne ikke sende inn anmeldelsen. Prøv igjen.",
+        "validation": {
+            "pleaseFixFollowing": "Rett opp følgende:",
+            "ratingRequired": "Velg en vurdering.",
+            "reviewRequired": "Fyll ut dette feltet.",
+            "reviewMinLength": "Omtalen din må inneholde minst {{count}} tegn",
+            "reviewMaxLength": "Ikke skriv inn mer enn {{count}} tegn.",
+            "titleMaxLength": "Ikke skriv inn mer enn {{count}} tegn."
+        },
+        "minCharactersHint": "Minst {{count}} tegn.",
+        "maxCharactersHint": "Maksimalt {{count}} tegn."
+    },
+    "orderLine": {
+        "rateAndReview": "Vurder og anmeld",
+        "reviewSubmitted": "Anmeldelse sendt inn",
+        "cta": "Vurder og anmeld"
+    }
+}

@@ -1,0 +1,10 @@
+{
+    "inlineMessage": "Pay in {{paymentCount}} interest-free payments of <bold>{{installment}}</bold>.",
+    "learnMoreLabel": "Learn more",
+    "learnMore": {
+        "title": "Pay in {{paymentCount}} interest-free payments",
+        "summary": "Split your purchase of {{totalAmount}} into {{paymentCount}} with no impact on credit score and no late fees.",
+        "paymentScheduleHeading": "Payment Schedule",
+        "howItWorksHeading": "How it works"
+    }
+}

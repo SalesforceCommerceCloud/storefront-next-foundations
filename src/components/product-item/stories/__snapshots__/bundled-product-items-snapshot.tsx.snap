@@ -1,0 +1,102 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`BundledProductItems Snapshots > Default snapshot 1`] = `
+<div>
+  <div>
+    <div
+      class="max-w-md border p-4"
+    >
+      <div
+        class="mt-2 space-y-2"
+        data-testid="bundledProductItems"
+      >
+        <div
+          class="text-sm font-medium"
+        >
+          Selected Options
+          :
+        </div>
+        <div
+          class="space-y-2 pl-2"
+        >
+          <div
+            class="space-y-0.5"
+          >
+            <div
+              class="text-sm text-foreground"
+            >
+              Turquoise and Gold Bracelet
+            </div>
+            <div
+              class="text-sm text-muted-foreground"
+            >
+              <span>
+                Color
+                : 
+                Gold
+              </span>
+            </div>
+            <div
+              class="text-sm text-muted-foreground"
+            >
+              Qty:
+               
+              1
+            </div>
+          </div>
+          <div
+            class="space-y-0.5"
+          >
+            <div
+              class="text-sm text-foreground"
+            >
+              Turquoise and Gold Necklace
+            </div>
+            <div
+              class="text-sm text-muted-foreground"
+            >
+              <span>
+                Color
+                : 
+                Gold
+              </span>
+            </div>
+            <div
+              class="text-sm text-muted-foreground"
+            >
+              Qty:
+               
+              1
+            </div>
+          </div>
+          <div
+            class="space-y-0.5"
+          >
+            <div
+              class="text-sm text-foreground"
+            >
+              Turquoise and Gold Hoop Earring
+            </div>
+            <div
+              class="text-sm text-muted-foreground"
+            >
+              <span>
+                Color
+                : 
+                Gold
+              </span>
+            </div>
+            <div
+              class="text-sm text-muted-foreground"
+            >
+              Qty:
+               
+              1
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

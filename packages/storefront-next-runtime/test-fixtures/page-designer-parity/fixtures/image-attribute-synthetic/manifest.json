@@ -1,0 +1,53 @@
+{
+    "pageId": "image-page",
+    "context": {
+        "campaignQualifiers": [],
+        "customerGroups": [],
+        "dataBindings": []
+    },
+    "variationOrder": ["default"],
+    "variations": {
+        "default": {
+            "ruleRequiresContext": false,
+            "pageRequiresContext": false,
+            "page": {
+                "id": "image-page",
+                "typeId": "storePage",
+                "regions": [
+                    {
+                        "id": "main",
+                        "components": [
+                            {
+                                "id": "hero-1",
+                                "typeId": "commerce_assets.heroBanner",
+                                "regions": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            "regions": {
+                "main": {}
+            }
+        }
+    },
+    "defaultVariation": "default",
+    "componentInfo": {
+        "hero-1": {
+            "visibilityRules": [],
+            "content": {
+                "en_US": {
+                    "hero": {
+                        "focalPoint": { "x": 0.5, "y": 0.5 },
+                        "metaData": { "width": 1200, "height": 600 },
+                        "media": {
+                            "libraryDomain": "Library-Sites-MyLibrary",
+                            "path": "/images/hero/banner.jpg"
+                        }
+                    }
+                }
+            },
+            "regions": {}
+        }
+    }
+}

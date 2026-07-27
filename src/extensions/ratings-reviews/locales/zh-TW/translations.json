@@ -1,0 +1,71 @@
+{
+    "section": {
+        "heading": "客戶評價",
+        "loading": "正在載入評價…",
+        "loadError": "無法載入評論。請重新整理頁面以再試一次。",
+        "noReviewsForProduct": "此產品無評價。",
+        "noReviewsMatchFilters": "沒有任何評價符合您的篩選條件。",
+        "showingReviews": "顯示 {{total}} 則評價中的 {{from}}-{{to}} 則",
+        "subtitleOne": "1 則關於 {{productName}} 的評價",
+        "subtitleOther": "{{count}} 則關於 {{productName}} 的評價",
+        "aiReviewSummary": "AI 評價摘要"
+    },
+    "filters": {
+        "filterBy": "篩選依據：",
+        "withPhotos": "附照片",
+        "searchPlaceholder": "搜尋評價…",
+        "sortLabel": "排序：",
+        "sortMostRecent": "最新",
+        "sortHighestRated": "評價最高",
+        "sortLowestRated": "評價最低",
+        "sortMostHelpful": "最有幫助",
+        "activeFilterStars": "{{count}} 顆星",
+        "clearFilter": "清除篩選條件",
+        "filterByStars": "依 {{count}} 星篩選",
+        "clearStarFilter": "清除 {{count}} 星級篩選條件",
+        "clearPhotoFilter": "清除照片篩選條件"
+    },
+    "card": {
+        "verifiedPurchase": "已驗證購買",
+        "helpful": "有幫助（{{count}} 個）",
+        "helpfulNoCount": "有幫助",
+        "report": "報告",
+        "readMore": "閱讀更多",
+        "readLess": "閱讀更少",
+        "imageAlt": "查看圖像"
+    },
+    "rating": {
+        "starContainerAriaLabel": "{{rating}} / {{total}} 星，{{count, number}} 則評價",
+        "ratingOutOfTotal": "{{rating}} / {{total}}",
+        "ratingValue": "{{rating}}",
+        "basedOnReviews": "根據 {{count, number}} 則評價",
+        "ratingWithCount": "{{rating}} ({{count, number}})",
+        "viewAllReviews": "檢視所有評價",
+        "distributionAriaLabel": "{{rating}} 星： {{count, number}}/{{totalReviews, number}}",
+        "distributionsAriaLabel": "星級分布，總計 {{total, number}} 則評價",
+        "seeCustomerReviews": "請參閱客戶評價 >"
+    },
+    "writeReview": {
+        "buttonLabel": "編寫評價",
+        "modalDescription": "撰寫評價表單",
+        "starRatingDistributionDescription": "星級分發詳細資料",
+        "submitting": "提交",
+        "successMessage": "評論已提交",
+        "errorMessage": "提交評論失敗。請再試一次。",
+        "validation": {
+            "pleaseFixFollowing": "請修正以下內容：",
+            "ratingRequired": "請選取評分。",
+            "reviewRequired": "請填寫此欄位。",
+            "reviewMinLength": "您的評價必須至少包含 {{count}} 個字元",
+            "reviewMaxLength": "請輸入不超過 {{count}} 個字元。",
+            "titleMaxLength": "請輸入不超過 {{count}} 個字元。"
+        },
+        "minCharactersHint": "最少 {{count}} 個字元。",
+        "maxCharactersHint": "最多 {{count}} 個字元。"
+    },
+    "orderLine": {
+        "rateAndReview": "評分與評論",
+        "reviewSubmitted": "評論已提交",
+        "cta": "評分與評論"
+    }
+}

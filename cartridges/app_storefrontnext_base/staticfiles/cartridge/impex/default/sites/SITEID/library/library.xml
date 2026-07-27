@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='utf-8'?>
+<library xmlns="http://www.demandware.com/xml/impex/library/2006-10-31" library-id="LIBRARYID">
+    <folder folder-id="root">
+        <online-flag>true</online-flag>
+        <page-attributes>
+            <page-title xml:lang="x-default">Market Street Online Store</page-title>
+            <page-description xml:lang="x-default">Online shopping with the leader in on-demand eCommerce solutions.</page-description>
+            <page-keywords xml:lang="x-default">new arrivals,mens,womens,electronics</page-keywords>
+        </page-attributes>
+        <refinement-definitions>
+            <refinement-definition type="folder" bucket-type="none">
+                <display-name xml:lang="x-default">Folder</display-name>
+                <sort-mode>folder-position</sort-mode>
+                <cutoff-threshold>5</cutoff-threshold>
+            </refinement-definition>
+        </refinement-definitions>
+    </folder>
+
+    <content content-id="homepage">
+        <display-name xml:lang="x-default">homepage</display-name>
+        <description xml:lang="x-default">Sample homepage</description>
+        <type>page.homePage</type>
+        <config>{
+            "visibility" : [ ]
+            }</config>
+        <visibility-mode xml:lang="x-default">visible</visibility-mode>
+        <online-flag>false</online-flag>
+        <online-flag site-id="SITEID">true</online-flag>
+        <searchable-flag>false</searchable-flag>
+        <searchable-flag site-id="SITEID">false</searchable-flag>
+        <page-attributes />
+        <content-links>
+            <content-link content-id="c648bffe3976756a770520d54b" type="page.homePage.headerbanner">
+                <position>1.0</position>
+            </content-link>
+            <content-link content-id="988da893ff20206963adeb486f" type="page.homePage.main">
+                <position>1.0</position>
+            </content-link>
+        </content-links>
+        <sitemap-included-flag site-id="SITEID">false</sitemap-included-flag>
+    </content>
+
+    <content content-id="c648bffe3976756a770520d54b">
+        <type>component.Layout.heroCarousel</type>
+        <config>{
+            "visibility" : [ ]
+            }</config>
+        <data xml:lang="x-default">{
+            "showDots" : true,
+            "showNavigation" : false,
+            "autoPlayInterval" : 5000,
+            "autoPlay" : false
+            }</data>
+        <online-flag>true</online-flag>
+        <online-flag site-id="SITEID">true</online-flag>
+        <page-attributes/>
+    </content>
+
+    <content content-id="988da893ff20206963adeb486f">
+        <type>component.Layout.productCarousel</type>
+        <config>{
+            "visibility" : [ ]
+            }</config>
+        <data xml:lang="x-default">{
+            "title" : "Featured Products"
+            }</data>
+        <online-flag>true</online-flag>
+        <online-flag site-id="SITEID">true</online-flag>
+        <page-attributes/>
+    </content>
+
+    <content content-id="pdp">
+        <display-name xml:lang="x-default">Product Detail Page</display-name>
+        <type>page.productDetailPage</type>
+        <config>{
+            "visibility" : [ ]
+            }</config>
+        <visibility-mode xml:lang="x-default">visible</visibility-mode>
+        <data xml:lang="x-default">{ }</data>
+        <aspect-type>pdp</aspect-type>
+        <online-flag>false</online-flag>
+        <online-flag site-id="SITEID">true</online-flag>
+        <searchable-flag>false</searchable-flag>
+        <searchable-flag site-id="SITEID">false</searchable-flag>
+        <page-attributes/>
+        <content-object-assignments>
+            <content-object-assignment object-id="root" lookup-mode="category-implicit" object-type="category"/>
+        </content-object-assignments>
+        <sitemap-included-flag site-id="SITEID">false</sitemap-included-flag>
+    </content>
+
+    <content content-id="plp">
+        <display-name xml:lang="x-default">Product List Page</display-name>
+        <type>page.productListingPage</type>
+        <config>{
+            "visibility" : [ ]
+            }</config>
+        <visibility-mode xml:lang="x-default">visible</visibility-mode>
+        <data xml:lang="x-default">{ }</data>
+        <aspect-type>plp</aspect-type>
+        <online-flag>false</online-flag>
+        <online-flag site-id="SITEID">true</online-flag>
+        <searchable-flag>false</searchable-flag>
+        <searchable-flag site-id="SITEID">false</searchable-flag>
+        <page-attributes/>
+        <content-object-assignments>
+            <content-object-assignment object-id="root" lookup-mode="category-implicit" object-type="category"/>
+        </content-object-assignments>
+        <sitemap-included-flag site-id="SITEID">false</sitemap-included-flag>
+    </content>
+
+    <content content-id="about-us">
+        <display-name xml:lang="x-default">about-us</display-name>
+        <type>page.aboutUsPage</type>
+        <config>{
+            "visibility" : [ ]
+            }</config>
+        <visibility-mode xml:lang="x-default">visible</visibility-mode>
+        <data xml:lang="x-default">{ }</data>
+        <online-flag>false</online-flag>
+        <online-flag site-id="SITEID">true</online-flag>
+        <searchable-flag>false</searchable-flag>
+        <searchable-flag site-id="SITEID">false</searchable-flag>
+        <page-attributes/>
+        <sitemap-included-flag site-id="SITEID">false</sitemap-included-flag>
+    </content>
+
+</library>

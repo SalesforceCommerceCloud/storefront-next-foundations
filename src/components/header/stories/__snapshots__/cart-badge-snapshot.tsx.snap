@@ -1,0 +1,98 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CartBadge stories snapshot > Empty story renders and matches snapshot 1`] = `
+<div
+  class="p-8"
+>
+  <div>
+    <button
+      aria-label="My cart, number of items: 0"
+      class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:text-accent-foreground dark:hover:bg-accent/50 h-9 px-4 py-2 has-[>svg]:px-3 relative cursor-pointer hover:bg-transparent hover:opacity-50 transition-opacity"
+      data-size="default"
+      data-slot="button"
+      data-variant="ghost"
+    >
+      <svg
+        aria-hidden="true"
+        class="lucide lucide-shopping-cart size-5"
+        data-testid="shopping-cart-icon"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="8"
+          cy="21"
+          r="1"
+        />
+        <circle
+          cx="19"
+          cy="21"
+          r="1"
+        />
+        <path
+          d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+        />
+      </svg>
+    </button>
+  </div>
+</div>
+`;
+
+exports[`CartBadge stories snapshot > WithItems story renders and matches snapshot 1`] = `
+<div
+  class="p-8"
+>
+  <div>
+    <button
+      aria-label="My cart, number of items: 1"
+      class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive hover:text-accent-foreground dark:hover:bg-accent/50 h-9 px-4 py-2 has-[>svg]:px-3 relative cursor-pointer hover:bg-transparent hover:opacity-50 transition-opacity"
+      data-size="default"
+      data-slot="button"
+      data-variant="ghost"
+    >
+      <svg
+        aria-hidden="true"
+        class="lucide lucide-shopping-cart size-5"
+        data-testid="shopping-cart-icon"
+        fill="none"
+        height="24"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        width="24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <circle
+          cx="8"
+          cy="21"
+          r="1"
+        />
+        <circle
+          cx="19"
+          cy="21"
+          r="1"
+        />
+        <path
+          d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"
+        />
+      </svg>
+      <span
+        class="border py-0.5 w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent bg-primary text-primary-foreground [a&]:hover:bg-primary/90 absolute -top-1 -right-1 min-w-[18px] h-[18px] rounded-full px-1 text-xs font-medium flex items-center justify-center"
+        data-slot="badge"
+        data-testid="shopping-cart-badge"
+      >
+        1
+      </span>
+    </button>
+  </div>
+</div>
+`;

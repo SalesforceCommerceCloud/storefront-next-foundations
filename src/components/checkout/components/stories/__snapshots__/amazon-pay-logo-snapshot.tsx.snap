@@ -1,0 +1,32 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AmazonPayLogo stories snapshot > Decorative story renders and matches snapshot 1`] = `
+<img
+  alt=""
+  aria-hidden="true"
+  class=" h-[19px] w-auto object-contain"
+  height="19"
+  src="__ASSET_MOCK__"
+  width="99"
+/>
+`;
+
+exports[`AmazonPayLogo stories snapshot > Default story renders and matches snapshot 1`] = `
+<img
+  alt="Amazon Pay"
+  class=" h-[19px] w-auto object-contain"
+  height="19"
+  src="__ASSET_MOCK__"
+  width="99"
+/>
+`;
+
+exports[`AmazonPayLogo stories snapshot > WithCustomClassName story renders and matches snapshot 1`] = `
+<img
+  alt="Amazon Pay"
+  class="custom-class h-[19px] w-auto object-contain"
+  height="19"
+  src="__ASSET_MOCK__"
+  width="99"
+/>
+`;

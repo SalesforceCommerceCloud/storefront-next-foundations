@@ -1,0 +1,113 @@
+# Claude Rules for storefront-next-e2e
+
+## Agent Capabilities (READ FIRST)
+
+**Reference `AGENTS.md` at the root of this package for a directory of specialized skills.**
+
+Before responding to any user request, check if the task matches one of the skills listed in `AGENTS.md`. If it does, **immediately read the linked `SKILL.md` file** and follow its instructions.
+
+Do NOT ignore the instructions found in the Markdown files under `.claude/skills/` when performing relevant tasks.
+
+## Package Overview
+
+This is the **storefront-next-e2e** package for end-to-end testing of Salesforce Commerce Cloud storefront built with React Server Components.
+
+**Technology Stack:**
+- CodeceptJS 3.7.5 + Playwright 1.61.1
+- TypeScript 5.6.0
+- Mocha test runner
+- AI-powered test development
+
+**Essential Documentation:**
+- `AGENTS.md` - Skill directory (check this FIRST for all tasks)
+- `CLAUDE.md` - AI-specific guidance for test development
+- `README.md` - Commands, setup, troubleshooting
+- `ARCHITECTURE.md` - Technical architecture (helpers vs services, test organization)
+
+## Systematic Workflow
+
+When the user requests a task:
+
+1. **Read `AGENTS.md`** to identify if a specialized skill exists
+2. **If skill exists:**
+   - Read the linked `SKILL.md` file
+   - Follow the systematic workflow in the skill
+   - Reference `CLAUDE.md` for coding standards
+3. **If no skill exists:**
+   - Proceed with best practices from `CLAUDE.md`
+   - Consider creating a new skill if the task is complex/repeatable
+
+## Core Principles
+
+### Testing Approach
+- Focus on **commerce-specific flows** (search, cart, checkout, products)
+- Target **actual storefront** (NOT demo/workbench environments)
+- Use **Scenario-Mocha style** test structure
+- Apply **meaningful tags** for organization and filtering
+
+### Code Quality
+- Use **Chai `expect()` assertions** for value validation (counts, text, URLs)
+- Use **CodeceptJS page object methods** for UI interactions
+- Create **page objects with semantic locators** using `.as('Name')`
+- Update **self-healing recipes** when adding/modifying page objects
+- Add `export {};` at end of spec files
+
+### AI Features
+- Leverage **`pause()`** for interactive test development
+- Use **`I.askForPageObject()`** for DOM-driven page object generation
+- AI self-healing is available with `pnpm e2e --ai`
+- TypeScript definitions **auto-generated** before test runs
+
+## Quick Commands
+
+```bash
+# Run all tests (auto-generates definitions)
+pnpm e2e
+
+# Run tests with AI features
+pnpm e2e --ai
+
+# Filter tests by tag
+pnpm e2e --grep "@cart"
+pnpm e2e --grep "@core|@smoke"
+
+# View test report
+pnpm report
+```
+
+## Decision Guides
+
+### When to Create:
+- **Page Object**: New page/component with interactions → `*.page.ts`
+- **Spec**: New test case → `*.spec.ts`
+- **Flow**: Reusable 3+ page workflow → `*.flow.ts`
+- **Recipe**: New/updated page object locators → Update `helpers/self-healing/recipes.ts`
+
+### When to Update:
+- **Helper**: Test execution enhancements (e.g., Allure reporting)
+- **Service**: Test environment configuration (e.g., config-provider)
+
+## Best Practices
+
+### DO:
+- ✅ Check `AGENTS.md` before starting any task
+- ✅ Read linked `SKILL.md` files for systematic workflows
+- ✅ Use Chai `expect()` for assertions
+- ✅ Create semantic locators with `.as('Name')`
+- ✅ Update self-healing recipes for new page objects
+- ✅ Focus on commerce-specific test scenarios
+- ✅ Tag tests for easy filtering
+
+### DON'T:
+- ❌ Skip reading `AGENTS.md` when a task matches a skill
+- ❌ Use manual `throw new Error()` for assertions
+- ❌ Create page objects without updating healing recipes
+- ❌ Use dynamic CSS classes/IDs as locators
+- ❌ Test against demo/workbench environments
+- ❌ Commit sensitive data to `.env`
+
+## Troubleshooting
+
+See `README.md` for common issues and solutions.
+
+For AI-specific issues, see `CLAUDE.md` troubleshooting section.

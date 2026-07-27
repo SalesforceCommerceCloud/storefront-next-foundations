@@ -1,0 +1,230 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProductAccordion stories snapshot > Playground story renders and matches snapshot 1`] = `
+<div
+  class="max-w-4xl"
+>
+  <div
+    class="w-full"
+    data-orientation="vertical"
+    data-slot="accordion"
+  >
+    <div
+      class="border-b last:border-b-0"
+      data-orientation="vertical"
+      data-slot="accordion-item"
+      data-state="closed"
+    >
+      <h3
+        class="flex"
+        data-orientation="vertical"
+        data-state="closed"
+      >
+        <button
+          aria-controls="radix-_r_1_"
+          aria-expanded="false"
+          class="focus-visible:border-ring focus-visible:ring-ring flex flex-1 items-start justify-between gap-4 rounded-ui py-4 transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180 text-left font-semibold text-sm"
+          data-orientation="vertical"
+          data-radix-collection-item=""
+          data-slot="accordion-trigger"
+          data-state="closed"
+          id="radix-_r_0_"
+          type="button"
+        >
+          Product Details
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m6 9 6 6 6-6"
+            />
+          </svg>
+        </button>
+      </h3>
+      <div
+        aria-labelledby="radix-_r_0_"
+        class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm"
+        data-orientation="vertical"
+        data-slot="accordion-content"
+        data-state="closed"
+        hidden=""
+        id="radix-_r_1_"
+        role="region"
+        style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
+      />
+    </div>
+    <div
+      class="border-b last:border-b-0"
+      data-orientation="vertical"
+      data-slot="accordion-item"
+      data-state="closed"
+    >
+      <h3
+        class="flex"
+        data-orientation="vertical"
+        data-state="closed"
+      >
+        <button
+          aria-controls="radix-_r_3_"
+          aria-expanded="false"
+          class="focus-visible:border-ring focus-visible:ring-ring flex flex-1 items-start justify-between gap-4 rounded-ui py-4 transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180 text-left font-semibold text-sm"
+          data-orientation="vertical"
+          data-radix-collection-item=""
+          data-slot="accordion-trigger"
+          data-state="closed"
+          id="radix-_r_2_"
+          type="button"
+        >
+          Size & Fit
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m6 9 6 6 6-6"
+            />
+          </svg>
+        </button>
+      </h3>
+      <div
+        aria-labelledby="radix-_r_2_"
+        class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm"
+        data-orientation="vertical"
+        data-slot="accordion-content"
+        data-state="closed"
+        hidden=""
+        id="radix-_r_3_"
+        role="region"
+        style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
+      />
+    </div>
+    <div
+      class="border-b last:border-b-0"
+      data-orientation="vertical"
+      data-slot="accordion-item"
+      data-state="closed"
+    >
+      <h3
+        class="flex"
+        data-orientation="vertical"
+        data-state="closed"
+      >
+        <button
+          aria-controls="radix-_r_5_"
+          aria-expanded="false"
+          class="focus-visible:border-ring focus-visible:ring-ring flex flex-1 items-start justify-between gap-4 rounded-ui py-4 transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180 text-left font-semibold text-sm"
+          data-orientation="vertical"
+          data-radix-collection-item=""
+          data-slot="accordion-trigger"
+          data-state="closed"
+          id="radix-_r_4_"
+          type="button"
+        >
+          Shipping & Returns
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m6 9 6 6 6-6"
+            />
+          </svg>
+        </button>
+      </h3>
+      <div
+        aria-labelledby="radix-_r_4_"
+        class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm"
+        data-orientation="vertical"
+        data-slot="accordion-content"
+        data-state="closed"
+        hidden=""
+        id="radix-_r_5_"
+        role="region"
+        style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
+      />
+    </div>
+    <div
+      class="border-b last:border-b-0"
+      data-orientation="vertical"
+      data-slot="accordion-item"
+      data-state="closed"
+    >
+      <h3
+        class="flex"
+        data-orientation="vertical"
+        data-state="closed"
+      >
+        <button
+          aria-controls="radix-_r_7_"
+          aria-expanded="false"
+          class="focus-visible:border-ring focus-visible:ring-ring flex flex-1 items-start justify-between gap-4 rounded-ui py-4 transition-all outline-none hover:underline focus-visible:ring-[3px] disabled:pointer-events-none disabled:opacity-50 [&[data-state=open]>svg]:rotate-180 text-left font-semibold text-sm"
+          data-orientation="vertical"
+          data-radix-collection-item=""
+          data-slot="accordion-trigger"
+          data-state="closed"
+          id="radix-_r_6_"
+          type="button"
+        >
+          Care Instructions
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-4 shrink-0 translate-y-0.5 transition-transform duration-200"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="m6 9 6 6 6-6"
+            />
+          </svg>
+        </button>
+      </h3>
+      <div
+        aria-labelledby="radix-_r_6_"
+        class="data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down overflow-hidden text-sm"
+        data-orientation="vertical"
+        data-slot="accordion-content"
+        data-state="closed"
+        hidden=""
+        id="radix-_r_7_"
+        role="region"
+        style="--radix-accordion-content-height: var(--radix-collapsible-content-height); --radix-accordion-content-width: var(--radix-collapsible-content-width);"
+      />
+    </div>
+  </div>
+</div>
+`;

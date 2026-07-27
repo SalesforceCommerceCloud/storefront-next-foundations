@@ -1,0 +1,20 @@
+{
+    "contentComingSoon": "Content bald verfügbar.",
+    "faq": {
+        "askAssistant": "Assistenten fragen",
+        "faqQuestionSendToAssistantAriaLabel": "Shopping Agent aufrufen und fragen: {{question}}"
+    },
+    "returnsAndWarranty": {
+        "learnMore": "Richtlinien anzeigen",
+        "returnConditions": "Rückgabebedingungen:",
+        "howToReturn": "So geben Sie einen Artikel zurück:",
+        "note": "Hinweis:",
+        "whatsCovered": "Akzeptierte Rückgabegründe:",
+        "whatsNotCovered": "Nicht akzeptierte Rückgabegründe:",
+        "warrantyClaims": "Garantieansprüche:",
+        "exchangeProcess": "Austauschprozess:",
+        "needHelp": "Benötigen Sie Hilfe?",
+        "contactAt": "Kontaktieren Sie uns unter",
+        "orCall": "oder rufen Sie folgende Nummer an:"
+    }
+}

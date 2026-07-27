@@ -1,0 +1,8 @@
+@keyframes menuSlideDown {
+    0% {
+        transform: translateY(-8px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}

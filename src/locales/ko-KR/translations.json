@@ -1,0 +1,1617 @@
+{
+    "actionCard": {
+        "edit": "편집",
+        "remove": "제거"
+    },
+    "categoryRefinements": {
+        "appliedFilters": "적용된 필터:",
+        "clearAll": "모두 지우기",
+        "filtersButtonLabel": "필터",
+        "filtersButtonLabelWithCount": "{{label}}, {{count}}개 선택",
+        "noFilterOptionsAvailable": "사용할 수 있는 필터 옵션이 없습니다."
+    },
+    "common": {
+        "loading": "로드 중",
+        "loadingMore": "추가 로드 중...",
+        "product": "제품",
+        "noImageAvailable": "사용 가능한 이미지가 없습니다.",
+        "productGeneric": "제품",
+        "noProductsFound": "제품을 찾을 수 없습니다.",
+        "productCarousel": "제품 캐러셀",
+        "productImageAlt": "제품 이미지",
+        "suggestionImageAlt": "추천 이미지",
+        "hero": {
+            "defaultTitle": "지금 쇼핑하기",
+            "defaultImageAlt": "히어로 이미지",
+            "defaultCtaText": "지금 쇼핑하기"
+        },
+        "previousImage": "이전 이미지",
+        "nextImage": "다음 이미지"
+    },
+    "search": {
+        "results": "검색 결과",
+        "suggestions": {
+            "didYouMean": "다음을 찾으셨나요?",
+            "categories": "카테고리",
+            "products": "제품",
+            "popularSearches": "인기 검색",
+            "recentSearches": "최근 검색",
+            "clearRecentSearches": "최근 검색 지우기",
+            "viewAll": "모두 보기"
+        }
+    },
+    "customer": {
+        "defaults": {
+            "guestFirstName": "게스트",
+            "guestLastName": "사용자",
+            "defaultAddressName": "홈",
+            "defaultBillingAddressName": "청구"
+        },
+        "messages": {
+            "currentUserRecommendation": "계정 정보 사용",
+            "guestRecommendation": "게스트로 계속 진행합니다. 계정이 있으면 나중에 로그인하시면 됩니다."
+        }
+    },
+    "removeItem": {
+        "success": "항목이 제거되었습니다.",
+        "failed": "항목을 제거하지 못했습니다.",
+        "title": "항목 제거",
+        "button": "제거",
+        "removing": "제거 중...",
+        "confirmTitle": "품목 제거 확인",
+        "cancelButton": "아니요. 품목을 보관합니다.",
+        "keepItemButton": "품목 보관",
+        "confirmAction": "예. 품목을 제거합니다.",
+        "keepItemAriaLabel": "품목 보관 - 이 품목을 카트에 보관합니다.",
+        "removeItemAriaLabel": "예, 품목을 제거합니다 - 카트에서 이 품목을 제거합니다."
+    },
+    "editItem": {
+        "title": "카트 품목 편집",
+        "quickAddTitle": "빠른 추가",
+        "loadError": "제품 세부 정보를 로드하지 못했습니다. 다시 시도하십시오.",
+        "retry": "다시 시도",
+        "loadingProduct": "로드 중..."
+    },
+    "header": {
+        "logoAlt": "홈",
+        "openChat": "채팅 열기",
+        "searchPlaceholder": "검색",
+        "welcomeBack": "다시 오신 것을 환영합니다!",
+        "signIn": "로그인",
+        "signOut": "로그아웃",
+        "signingOut": "로그아웃 중...",
+        "cartTitle": "내 카트",
+        "checkout": "체크아웃",
+        "continueShopping": "계속 쇼핑하기",
+        "openMenu": "메뉴 열기",
+        "closeMenu": "메뉴 닫기",
+        "mobileNavigation": "모바일 탐색 메뉴",
+        "expandCategory": "{{category}} 펼치기",
+        "collapseCategory": "{{category}} 접기",
+        "menu": {
+            "yourLists": "내 목록",
+            "yourAccount": "내 계정",
+            "savedItems": "저장된 항목",
+            "overview": "개요",
+            "addressBook": "주소록",
+            "paymentMethods": "결제 방법",
+            "signInForBestExperience": "로그인해 최고의 경험을 즐겨보세요.",
+            "newCustomer": "신규 고객이신가요?",
+            "createAccount": "계정 생성"
+        }
+    },
+    "login": {
+        "title": "계정에 로그인",
+        "subtitle": "계정에 액세스하기 위한 자격 증명을 입력합니다.",
+        "continueWithProvider": "{{provider}}(으)로 계속 진행",
+        "checkEmailTitle": "이메일을 확인하십시오.",
+        "checkEmailDescription": "{{email}}(으)로 로그인 링크를 보냈습니다. 링크를 클릭하여 로그인합니다.",
+        "backToLogin": "로그인으로 돌아가기",
+        "emailLabel": "이메일 주소",
+        "emailPlaceholder": "이메일 주소 입력",
+        "passwordLabel": "암호",
+        "passwordPlaceholder": "암호 입력",
+        "loginWithoutPassword": "암호 없이 로그인",
+        "loginWithPassword": "암호로 로그인",
+        "forgotPassword": "암호가 기억나지 않습니까?",
+        "noAccountQuestion": "계정이 없습니까? ",
+        "signUp": "등록",
+        "signingIn": "로그인 중...",
+        "sendLoginLink": "로그인 링크 보내기",
+        "sendingLoginLink": "로그인 링크 전송 중...",
+        "signIn": "로그인",
+        "socialOrContinueWith": "또는 다음으로 계속하기",
+        "otpCodeLabel": "검증 코드",
+        "redirecting": "로그인 중...",
+        "otpModalTitle": "검증 코드 입력",
+        "otpModalDescription": "{{otpLength}}자리 코드를 {{email}}(으)로 보냈습니다.",
+        "otpRequired": "검증 코드는 필수입니다.",
+        "otpInvalidFormat": "올바른 {{otpLength}}자리 코드를 입력하십시오.",
+        "verifying": "검증 중...",
+        "checkoutAsGuest": "비회원으로 체크아웃",
+        "resendCode": "코드 재전송",
+        "resendCodeTimer": "{{timer}}초 후 재전송",
+        "resendCodeError": "코드를 재전송하지 못했습니다. 다시 시도하십시오."
+    },
+    "resetPassword": {
+        "title": "암호 재설정",
+        "subtitle": "암호를 재설정하는 방법에 대한 지침을 안내받으려면 이메일을 입력하십시오.",
+        "checkEmailTitle": "이메일을 확인하십시오.",
+        "checkEmailDescription": "{{email}}(으)로 암호 재설정 링크가 포함된 이메일이 곧 발송됩니다.",
+        "backToSignIn": "로그인 페이지로 돌아가기",
+        "emailLabel": "이메일 주소",
+        "emailPlaceholder": "이메일 주소 입력",
+        "or": "또는 ",
+        "goBackToLogin": "로그인 페이지로 돌아가기",
+        "emailRequired": "이메일은 필수입니다.",
+        "newPasswordRequired": "새 암호는 필수입니다.",
+        "confirmPasswordRequired": "암호 확인은 필수입니다.",
+        "sendingEmail": "이메일 전송 중...",
+        "resetButton": "암호 재설정",
+        "landingTitle": "새 암호 설정",
+        "landingSubtitle": "아래에 새 암호를 입력하십시오.",
+        "newPasswordLabel": "새 암호",
+        "newPasswordPlaceholder": "안전한 암호 생성",
+        "confirmPasswordLabel": "암호 확인",
+        "confirmPasswordPlaceholder": "암호 확인",
+        "passwordsMustMatch": "암호가 일치해야 합니다.",
+        "resetPasswordButton": "암호 재설정",
+        "resettingPassword": "암호 재설정 중...",
+        "invalidToken": "유효하지 않거나 만료된 재설정 링크입니다. 새로 요청하십시오.",
+        "resetSuccess": "암호가 재설정되었습니다! 로그인 중...",
+        "resetSuccessToast": "암호가 재설정되었습니다! 새 암호로 로그인하십시오."
+    },
+    "signup": {
+        "title": "계정 생성",
+        "subtitle": "지금 가입하고 쇼핑을 시작하세요.",
+        "haveAccountQuestion": "계정이 있으신가요? ",
+        "signIn": "로그인",
+        "allFieldsRequired": "모든 필드가 필수입니다.",
+        "passwordsDoNotMatch": "암호가 일치하지 않습니다.",
+        "passwordNotSecure": "암호가 보안 요구 사항을 충족하지 않습니다.",
+        "form": {
+            "firstNameLabel": "이름",
+            "firstNamePlaceholder": "이름을 입력하십시오.",
+            "lastNameLabel": "성",
+            "lastNamePlaceholder": "성을 입력하십시오.",
+            "emailLabel": "이메일 주소",
+            "emailPlaceholder": "이메일 주소를 입력하십시오.",
+            "passwordLabel": "암호",
+            "passwordPlaceholder": "안전한 암호 생성",
+            "confirmPasswordLabel": "암호 확인",
+            "confirmPasswordPlaceholder": "암호 확인",
+            "createAccountButton": "계정 생성"
+        },
+        "passwordRequirements": {
+            "title": "암호 요구 사항:",
+            "minLength": "8자 이상",
+            "hasUppercase": "대문자 1개",
+            "hasLowercase": "소문자 1개",
+            "hasNumber": "숫자 1개",
+            "hasSpecialChar": "특수 문자 1개(, ! % # @ $ & * 등)"
+        }
+    },
+    "socialCallback": {
+        "socialError": "소셜 로그인이 취소되었거나 실패했습니다. 다시 시도하십시오."
+    },
+    "errors": {
+        "genericTryAgain": "문제가 발생했습니다. 다시 시도하십시오.",
+        "somethingWentWrong": "문제가 발생했습니다. 다시 시도하십시오.",
+        "loginFailed": "로그인에 실패했습니다. 자격 증명을 확인하십시오.",
+        "accessTokenRefreshFailed": "새로 고친 액세스 토큰을 검색하지 못했습니다.",
+        "guestAccessTokenFailed": "새 액세스 토큰을 검색하지 못했습니다.",
+        "codeVerifierMissing": "세션에서 코드 검증 도구를 찾을 수 없습니다.",
+        "missingRegistrationField": "고객 등록에 필수 필드가 없습니다.",
+        "autoLoginAfterRegistrationFailed": "등록 후 자동 로그인이 실패했습니다.",
+        "methodNotAllowed": "메서드가 허용되지 않습니다.",
+        "featureUnavailable": "이 기능은 현재 사용할 수 없습니다. 지원 센터에 문의하십시오.",
+        "tooManyLoginAttempts": "로그인 시도 한도에 도달했습니다. 보안을 위해 10분 정도 기다렸다가 다시 시도하십시오.",
+        "tooManyPasswordResetAttempts": "암호 재설정 한도에 도달했습니다. 보안을 위해 10분 정도 기다렸다가 다시 시도하십시오.",
+        "invalidToken": "검증 코드가 잘못되었습니다. 다시 시도하십시오.",
+        "expiredToken": "검증 코드가 만료되었습니다. 새 링크를 요청하십시오.",
+        "promoCodeRequired": "프로모션 코드는 필수입니다.",
+        "couponItemIdRequired": "쿠폰 항목 ID는 필수입니다.",
+        "noBasketFound": "장바구니를 찾을 수 없습니다.",
+        "noCustomerFound": "세션에서 고객을 찾을 수 없습니다.",
+        "api": {
+            "orderNotFound": "주문을 찾을 수 없습니다. 주문 번호를 확인하고 다시 시도하십시오.",
+            "basketNotFound": "장바구니를 찾을 수 없습니다. 페이지를 새로고침 후 다시 시도하십시오.",
+            "basketQuotaExceeded": "최대 장바구니 수를 초과했습니다. 기존 장바구니를 사용하십시오.",
+            "paymentFailed": "결제에 실패했습니다. 결제 정보를 확인하고 다시 시도하십시오.",
+            "paymentInformationRequired": "주문을 완료하려면 결제 정보는 필수입니다.",
+            "unableToLoadCustomerProfile": "프로필을 로드할 수 없습니다. 페이지를 새로고침 후 다시 시도하십시오.",
+            "inventoryUnavailable": "장바구니의 일부 품목을 더 이상 사용할 수 없습니다. 카트를 검토하십시오.",
+            "invalidOrderData": "잘못된 주문 데이터입니다. 체크아웃 정보를 확인한 후 다시 시도하십시오.",
+            "shippingAddressRequired": "계속하려면 배송 주소는 필수입니다.",
+            "billingAddressRequired": "주문을 완료하려면 청구서 수신 주소는 필수입니다.",
+            "networkError": "네트워크 오류입니다. 연결 상태를 확인하고 다시 시도하십시오.",
+            "serverError": "서버 오류입니다. 나중에 다시 시도하십시오.",
+            "unauthorized": "세션이 만료되었습니다. 다시 로그인하십시오.",
+            "badRequest": "잘못된 요청입니다. 정보를 확인하고 다시 시도하십시오.",
+            "forbidden": "액세스가 거부되었습니다. 이 작업을 수행할 권한이 없습니다.",
+            "timeout": "요청 시간이 초과되었습니다. 다시 시도하십시오.",
+            "unexpectedError": "예상치 못한 오류가 발생했습니다."
+        },
+        "validation": {
+            "required": "이 필드는 필수입니다.",
+            "invalidEmail": "올바른 이메일 주소를 입력합니다.",
+            "invalidCreditCard": "유효한 신용카드 번호를 입력하십시오.",
+            "invalidExpiryDate": "유효한 만료일을 입력하십시오.",
+            "invalidCvv": "유효한 CVV 코드를 입력하십시오.",
+            "minLength": "이 필드는 {{min}}자 이상이어야 합니다.",
+            "maxLength": "이 필드는 {{max}}자를 초과할 수 없습니다.",
+            "invalidPhoneNumber": "올바른 전화번호를 입력하십시오.",
+            "invalidPostalCode": "올바른 우편 번호를 입력하십시오."
+        },
+        "checkout": {
+            "noActiveBasket": "활성 장바구니를 찾을 수 없습니다. 페이지를 새로고침 후 다시 시도하십시오.",
+            "basketCalculationFailed": "주문 합계를 계산하지 못했습니다. 다시 시도하십시오.",
+            "orderCreationFailed": "주문을 생성하지 못했습니다. 다시 시도하십시오.",
+            "paymentProcessingFailed": "결제 처리에 실패했습니다. 다시 시도하십시오.",
+            "shippingMethodNotAvailable": "선택한 배송 방법을 사용할 수 없습니다. 다른 옵션을 선택하십시오.",
+            "shippingMethodRequired": "계속하려면 배송 방법을 선택하십시오.",
+            "addressValidationFailed": "주소 검증에 실패했습니다. 주소를 확인하고 다시 시도하십시오.",
+            "promoCodeInvalid": "유효하지 않은 프로모션 코드입니다. 확인하고 다시 시도하십시오.",
+            "stockNotAvailable": "카트에 있는 품목 중 하나 이상이 재고가 부족합니다."
+        },
+        "customer": {
+            "addressIdRequired": "고객 주소에 주소 제목은 필수입니다.",
+            "countryCodeRequired": "고객 주소에 국가 코드는 필수입니다.",
+            "addressLine1Required": "고객 주소에 주소 입력란 1은 필수입니다.",
+            "cityRequired": "고객 주소에 구/군/시는 필수입니다.",
+            "firstNameRequired": "고객 주소에 이름은 필수입니다.",
+            "lastNameRequired": "고객 주소에 성은 필수입니다.",
+            "postalCodeRequired": "고객 주소에 우편번호는 필수입니다.",
+            "invalidEmailFormat": "잘못된 이메일 형식",
+            "customerLookupUnavailable": "고객 조회 서비스를 사용할 수 없습니다.",
+            "registrationFailed": "등록에 실패했습니다. 다시 시도하십시오.",
+            "autoLoginFailed": "자동 로그인에 실패했습니다. 수동으로 로그인하십시오.",
+            "autoLoginAfterRegistrationFailed": "계정이 생성되었지만 자동 로그인에 실패했습니다. 수동으로 로그인하십시오.",
+            "notAuthenticated": "고객 ID를 찾을 수 없습니다."
+        },
+        "passwordless": {
+            "missingToken": "토큰이 누락되었습니다.",
+            "missingCallbackToken": "x-slas-callback-token 헤더가 누락되었습니다.",
+            "missingRequiredFields": "필수 필드 누락: email_id 및 토큰."
+        },
+        "jwks": {
+            "missingEnvironmentVariables": "필수 구성 누락: shortCode 및 organizationId.",
+            "invalidResponse": "잘못된 JWKS 응답: 키 배열이 누락되었거나 잘못되었습니다.",
+            "unknownError": "알 수 없는 오류가 발생했습니다."
+        },
+        "marketing": {
+            "clientIdMissing": "환경 변수에 MARKETING_CLOUD_CLIENT_ID이(가) 설정되어 있지 않습니다.",
+            "clientSecretMissing": "환경 변수에 MARKETING_CLOUD_CLIENT_SECRET이(가) 설정되어 있지 않습니다.",
+            "subdomainMissing": "환경 변수에 MARKETING_CLOUD_SUBDOMAIN이(가) 설정되어 있지 않습니다.",
+            "templateIdMissing": "환경 변수에 MARKETING_CLOUD_PASSWORDLESS_LOGIN_TEMPLATE이(가) 설정되어 있지 않습니다."
+        }
+    },
+    "quantitySelector": {
+        "quantity": "수량:",
+        "decreaseQuantity": "수량 줄이기",
+        "increaseQuantity": "수량 늘리기",
+        "decreaseQuantityForProduct": "{{productName}}의 감소 수량",
+        "increaseQuantityForProduct": "{{productName}}에 대한 증분 수량",
+        "quantityInput": "수량",
+        "quantityUpdated": "수량 업데이트",
+        "quantityUpdateFailed": "수량을 업데이트하지 못했습니다.",
+        "onlyLeft": "품절 임박({{stockLevel}}개 남음)",
+        "onlyLeftForProduct": "{{productName}}이(가) {{stockLevel}}개 남았습니다!",
+        "maxStockReached": "최대 재고 도달",
+        "insufficientStock": "재고가 부족합니다"
+    },
+    "cart": {
+        "title": "카트",
+        "delivery": {
+            "heading": "배송 - {{deliveryCount}}/{{totalCount}}개 품목",
+            "heading_one": "Delivery - {{deliveryCount}} out of {{count}} item",
+            "heading_other": "Delivery - {{deliveryCount}} out of {{count}} items"
+        },
+        "itemCount_zero": "카트(0개 품목)",
+        "itemCount_one": "카트(1개 품목)",
+        "itemCount_other": "카트({{count}}개 품목)",
+        "empty": {
+            "title": "카트가 비어 있습니다.",
+            "registeredMessage": "계속 쇼핑하면서 카트에 항목을 추가합니다.",
+            "guestMessage": "로그인하여 저장된 항목을 검색하거나 쇼핑을 계속하십시오.",
+            "continueShopping": "계속 쇼핑하기",
+            "signIn": "로그인"
+        },
+        "summary": {
+            "orderSummary": "주문 요약",
+            "showOrderSummary": "주문 요약 표시",
+            "mobileHeadingTotal_one": "합계 (1개)",
+            "mobileHeadingTotal_other": "합계 ({{count}}개)",
+            "subtotal": "소계",
+            "shipping": "배송",
+            "shippingPromotionApplied": "(프로모션 적용)",
+            "shippingFree": "무료",
+            "tax": "세금",
+            "estimatedTotal": "예상 합계",
+            "orderTotal": "주문 합계",
+            "noBasketData": "사용 가능한 장바구니 데이터 없음",
+            "mobileHeading_one": "Estimated Total (1 item)",
+            "mobileHeading_other": "Estimated Total ({{count}} items)"
+        },
+        "promoCode": {
+            "label": "프로모션 코드",
+            "placeholder": "프로모션 코드...",
+            "apply": "적용",
+            "applying": "적용 중...",
+            "remove": "제거",
+            "removing": "제거 중...",
+            "accordionTitle": "프로모션 코드가 있습니까?",
+            "successMessage": "프로모션이 적용되었습니다.",
+            "errorMessage": "코드를 확인하고 다시 시도하십시오. 프로모션이 이미 적용되었거나 만료되었을 수 있습니다.",
+            "removeSuccessMessage": "프로모션이 제거되었습니다.",
+            "removeErrorMessage": "프로모션을 제거하지 못했습니다.",
+            "noBasketMessage": "사용 가능한 장바구니가 없습니다.",
+            "requiredMessage": "프로모션 코드는 필수입니다.",
+            "validation": {
+                "minLength": "프로모션은 2자 이상이어야 합니다."
+            },
+            "errors": {
+                "invalidCode": "쿠폰 코드 '{{code}}'은(는) 유효하지 않습니다.",
+                "expiredCode": "이 프로모션 코드는 만료되었습니다.",
+                "alreadyApplied": "이 프로모션 코드는 이미 적용되었습니다.",
+                "notApplicable": "이 프로모션 코드는 카트에 적용할 수 없습니다.",
+                "generic": "프로모션 코드를 적용할 수 없습니다. 코드를 확인하고 다시 시도하십시오."
+            }
+        },
+        "items": {
+            "itemsInCart_zero": "카트에 있는 품목 0개",
+            "itemsInCart_one": "카트에 있는 품목 1개",
+            "itemsInCart_other": "카트에 있는 품목 {{count}}개",
+            "editCart": "카트 편집"
+        },
+        "checkout": {
+            "proceedToCheckout": "체크아웃 진행",
+            "secure": "보안"
+        },
+        "attributes": {
+            "quantity": "수량:",
+            "promotions": "프로모션:"
+        },
+        "product": {
+            "defaultName": "제품 이름"
+        },
+        "removeItemConfirmDescription": "이 항목을 카트에서 제거하시겠습니까?",
+        "itemIdRequired": "품목 ID는 필수입니다.",
+        "noBasketIdFound": "장바구니 ID를 찾을 수 없습니다.",
+        "discount": {
+            "type": {
+                "free": "무료"
+            }
+        },
+        "badge": {
+            "ariaLabel": "내 카트, 품목 수: {{count}}"
+        },
+        "bundle": {
+            "selectedOptions": "선택한 옵션"
+        },
+        "bonusProducts": {
+            "selectBonusProducts": "카트에서 보너스 상품 선택",
+            "addedToCart": "카트에 추가된 보너스 제품",
+            "failedToAdd": "보너스 상품 추가 실패: {{error}}",
+            "missingRequiredInfo": "필수 정보 누락"
+        }
+    },
+    "checkout": {
+        "contactInfo": {
+            "title": "연락처 정보",
+            "emailLabel": "이메일 주소",
+            "emailPlaceholder": "이메일 주소",
+            "emailRequired": "이메일 주소를 입력하십시오.",
+            "emailInvalid": "유효한 이메일 주소를 입력하십시오.",
+            "countryCodeLabel": "코드",
+            "phoneLabel": "전화번호",
+            "phoneFormatDescription": "10자리 전화번호",
+            "phoneRequired": "전화번호를 입력하십시오.",
+            "phoneInvalid": "올바른 전화번호를 입력하십시오.",
+            "notProvided": "아직 제공되지 않음",
+            "loginSuggestion": "💡 계정이 있으신가요? 게스트로 계속 진행하거나 ",
+            "loginSuggestionLink": "더 빠른 체크아웃을 위해 로그인하세요.",
+            "usingRegisteredAccount": "✓ 등록된 계정 사용",
+            "continue": "배송 주소로 계속하기",
+            "saving": "저장 중...",
+            "lookupFallbackMessage": "고객 조회에 실패했습니다. 게스트로 계속 진행합니다.",
+            "saveError": "연락처 정보를 저장하지 못했습니다.",
+            "sessionExpired": "세션이 만료되었습니다. 다시 로그인하십시오."
+        },
+        "addressModal": {
+            "title": "새 주소 추가",
+            "editTitle": "주소 편집",
+            "description": "아래 양식에 배송 주소를 입력하십시오.",
+            "editDescription": "아래 양식에서 배송 주소를 업데이트하십시오.",
+            "cancel": "취소",
+            "save": "저장",
+            "saving": "저장 중..."
+        },
+        "shippingAddress": {
+            "title": "배송 주소",
+            "changeLabel": "편집",
+            "selectSavedAddress": "저장된 주소 선택",
+            "viewAllLink": "전체 보기",
+            "viewAllMore": "(추가 {{count}}개)",
+            "viewLessAddresses": "간단히 보기",
+            "addNewAddressButton": "새 주소 추가",
+            "editAddressLink": "주소 편집",
+            "defaultBadge": "기본값",
+            "firstNameRequired": "이름을 입력하십시오.",
+            "lastNameRequired": "성을 입력하십시오.",
+            "addressRequired": "주소를 입력하십시오.",
+            "cityRequired": "구/군/시를 입력하십시오.",
+            "stateRequired": "주를 선택하십시오.",
+            "postalCodeRequired": "우편번호를 입력하십시오.",
+            "continue": "배송 방법으로 계속 진행하기",
+            "saving": "저장 중...",
+            "saved": "배송 주소가 저장됨",
+            "failed": "배송 주소를 저장하지 못함",
+            "confirmed": "배송 주소 확인",
+            "notProvided": "배송 주소가 아직 제공되지 않았습니다.",
+            "completePreviousSteps": "계속하려면 이전 단계를 완료하십시오."
+        },
+        "addressForm": {
+            "firstNameLabel": "이름",
+            "firstNamePlaceholder": "이름",
+            "lastNameLabel": "성",
+            "lastNamePlaceholder": "성",
+            "countryLabel": "국가",
+            "addressLabel": "주소 행 1",
+            "addressPlaceholder": "주소 행 1",
+            "address2Label": "주소 행 2",
+            "address2Placeholder": "주소 행 2",
+            "cityLabel": "구/군/시",
+            "cityPlaceholder": "구/군/시",
+            "stateLabel": "시/도",
+            "statePlaceholder": "시/도",
+            "provinceLabel": "시/도",
+            "provincePlaceholder": "시/도",
+            "zipLabel": "우편번호",
+            "zipPlaceholder": "우편번호",
+            "postalCodeLabel": "우편번호",
+            "postalCodePlaceholder": "우편번호",
+            "codeLabel": "코드",
+            "phoneLabel": "전화번호"
+        },
+        "shippingOptions": {
+            "title": "배송 방법",
+            "giftWrappingLabel": "선물로 보내기(선물 포장)",
+            "giftWrappingDescription": "언제든지 선물 옵션을 활성화하거나 비활성화할 수 있습니다.",
+            "selectRequired": "배송 방법 선택",
+            "saving": "저장 중...",
+            "continue": "결제로 계속 진행하기",
+            "completePreviousSteps": "계속하려면 이전 단계를 완료하십시오.",
+            "enterAddressFirst": "사용 가능한 배송 방법을 보려면 배송 주소를 입력하십시오.",
+            "arrives": "도착: {{estimatedArrivalTime}}",
+            "free": "무료",
+            "noMethodsAvailable": "사용 가능한 배송 방법이 없습니다.",
+            "noMethodsAvailableHelp": "배송 주소가 완전한지 확인하고 다시 시도하십시오.",
+            "deliveryWindow": "Arrives {{window}}"
+        },
+        "payment": {
+            "title": "결제",
+            "changeLabel": "편집",
+            "methodTitle": "결제 수단",
+            "savedMethodDescription": "저장된 결제 방법을 선택하거나 새 결제 방법을 추가합니다.",
+            "addNewPaymentMethod": "새 결제 방법 추가",
+            "creditCardOption": "신용카드",
+            "newPaymentMethodTitle": "새 결제 방법",
+            "cardholderLabel": "카드 명의자 이름",
+            "nameOnCardLabel": "카드에 표시된 이름*",
+            "cardholderPlaceholder": "카드에 표시된 이름*",
+            "cardholderRequired": "카드 명의자 이름은 필수입니다.",
+            "cardNumberLabel": "카드 번호*",
+            "cardNumberPlaceholder": "카드 번호*",
+            "cardNumberRequired": "카드 번호는 필수입니다.",
+            "cardNumberInvalid": "올바른 카드 번호를 입력하십시오.",
+            "cardNumberInvalidLength": "올바른 카드 번호(13~19자리)를 입력하십시오.",
+            "expiryRequired": "만료 날짜는 필수입니다.",
+            "expiryInvalid": "유효한 만료 날짜(MM/YY)를 입력하십시오.",
+            "cvvHelp": "카드 뒷면의 3~4자리 숫자",
+            "cvvShow": "CVV 표시",
+            "cvvHide": "CVV 숨기기",
+            "cvvRequired": "CVV는 필수입니다.",
+            "cvvInvalid": "유효한 CVV를 입력하십시오.",
+            "cvvInvalidFormat": "유효한 CVV(3~4자리)를 입력하십시오.",
+            "billingAddressRequired": "배송지와 다른 경우 청구지 주소는 필수입니다.",
+            "useDifferentBilling": "다른 청구서 수신 주소 사용",
+            "useDifferentBillingDescription": "청구 및 배송에 동일한 주소를 사용합니다.",
+            "sameAsShippingAddress": "배송 주소와 동일",
+            "selectAnAddress": "주소 선택",
+            "noBillingAddressSaved": "청구지 주소가 저장되지 않음",
+            "continue": "계속 검토",
+            "saving": "저장 중...",
+            "saved": "저장된 결제 정보",
+            "failed": "결제 정보를 저장하지 못했습니다.",
+            "createAccountForFasterCheckout": "다음 번 결제를 더 빠르게 진행하려면 계정을 생성하십시오.",
+            "saveForFutureUse": "나중에 사용할 수 있도록 저장",
+            "unknownCardType": "알 수 없음",
+            "defaultCardLabel": "카드",
+            "preferredBadge": "선호",
+            "defaultBadge": "기본값",
+            "endingIn": "{{lastDigits}}(으)로 끝남",
+            "expiresLabel": "{{expiry}}에 만료",
+            "summaryLabel": "{{methodLabel}}이(가) {{lastDigits}}(으)로 끝남",
+            "summarySavedLabel": "저장된 결제 방법: {{methodLabel}}이(가) {{lastDigits}}(으)로 끝남",
+            "noPaymentMethodSaved": "저장된 결제 방법이 없음",
+            "billingSummaryTitle": "청구 주소",
+            "viewAllMore": "전체 보기(추가 {{count}}개)",
+            "viewLess": "간단히 보기",
+            "savePaymentToProfile": "나중에 사용할 수 있도록 결제 방법 저장"
+        },
+        "expressPayments": {
+            "separator": "또는",
+            "venmoUnavailable": "이 기기에서는 Venmo를 사용할 수 없습니다."
+        },
+        "common": {
+            "edit": "편집",
+            "submitting": "제출 중",
+            "notProvided": "제공되지 않음",
+            "backToCart": "카트로 돌아가기",
+            "emptyCart": "카트에 품목이 없습니다. 체크아웃 전에 품목을 추가하십시오."
+        },
+        "orderSummary": {
+            "title": "주문 요약",
+            "toggleLabel": "주문 요약 표시"
+        },
+        "myCart": {
+            "title": "내 카트",
+            "saved": "{{amount}}개 저장됨"
+        },
+        "placeOrder": {
+            "button": "주문하기 - {{total}}",
+            "processing": "주문 처리 중...",
+            "success": "주문이 접수되었습니다!",
+            "failed": "체크아웃하는 중에 예상치 못한 오류가 발생했습니다. "
+        },
+        "confirmation": {
+            "title": "주문해 주셔서 감사합니다.",
+            "orderNumber": "주문 번호:",
+            "confirmationEmailSent": "{{email}}(으)로 확인 이메일을 보냈습니다.",
+            "orderNotFound": "주문을 찾을 수 없음",
+            "orderNotFoundDescription": "원하는 주문을 찾을 수 없습니다.",
+            "orderNumberRequired": "주문 번호는 필수입니다.",
+            "sections": {
+                "orderSummary": "주문 요약",
+                "shippingDetails": "배송 정보",
+                "paymentDetails": "결제 정보"
+            },
+            "fields": {
+                "orderNumber": "주문 번호:",
+                "status": "상태:",
+                "total": "합계:",
+                "shippingAddress": "배송 주소",
+                "shippingMethod": "배송 방법",
+                "billingAddress": "청구 주소",
+                "paymentMethod": "결제 방법",
+                "defaultShippingMethod": "표준 배송",
+                "defaultPaymentMethod": "신용카드",
+                "savedMethodDescription": "저장된 결제 방법을 선택하거나 새 결제 방법을 추가합니다."
+            },
+            "actions": {
+                "continueShopping": "계속 쇼핑하기",
+                "viewAccount": "계정 보기"
+            },
+            "hero": {
+                "thankYou": "{{name}} 님, 감사합니다!",
+                "orderConfirmed": "주문이 확인되었습니다.",
+                "emailConfirmation": "{{email}}(으)로 확인 이메일을 보냈습니다.",
+                "needHelp": "도움이 필요하신가요?",
+                "defaultName": "고객",
+                "emailFallback": "이메일 주소"
+            },
+            "helpLinks": {
+                "faq": "자주 묻는 질문(FAQ)",
+                "contact": "문의",
+                "returns": "반품 정책"
+            },
+            "summaryLabels": {
+                "arriving": "도착 시간",
+                "shippingAddress": "배송 주소",
+                "shippingMethod": "배송 방법",
+                "noAddress": "주소를 사용할 수 없음",
+                "estimatedDatePlaceholder": "지금 처리 중",
+                "quantity": "수량: {{count}}개",
+                "freeShipping": "무료",
+                "deliveryWindow": "{{window}}"
+            },
+            "totals": {
+                "subtotal": "소계",
+                "promotions": "프로모션",
+                "shipping": "배송",
+                "tax": "세금",
+                "total": "합계"
+            },
+            "payment": {
+                "methodSummary": "{{method}}이(가) {{lastDigits}}(으)로 끝남",
+                "noMethod": "등록된 결제 방법"
+            },
+            "newsletter": {
+                "title": "다음 주문 시 10% 할인을 받으세요. 이메일 목록에 가입합니다.",
+                "subtitle": "신제품 출시와 독점 혜택에 대한 최신 정보를 받아보세요.",
+                "placeholder": "이메일 주소",
+                "cta": "가입"
+            },
+            "summaryTitle": "요약",
+            "emptyItemsFallback": "품목을 준비하고 있습니다.",
+            "productPlaceholderInitial": "품목"
+        },
+        "errorBoundary": {
+            "title": "체크아웃을 일시적으로 사용할 수 없음",
+            "description": "체크아웃 절차에 기술적인 문제가 있습니다. 카트 품목은 안전하고 저장됩니다.",
+            "tryAgain": "다시 시도",
+            "returnToCart": "카트로 돌아가기",
+            "componentError": {
+                "title": "구성 요소를 일시적으로 사용할 수 없음",
+                "description": "이 섹션을 제대로 로드할 수 없습니다. 체크아웃을 계속하거나 페이지 새로 고침을 시도할 수 있습니다.",
+                "tryAgain": "다시 한 번 시도해 보세요"
+            }
+        },
+        "registration": {
+            "emailNotFound": "계정을 만들려면 이메일 주소가 필요합니다. 연락처 정보 섹션에 이메일을 입력하십시오.",
+            "initiationFailed": "검증 코드를 전송할 수 없습니다. 다시 시도하십시오.",
+            "sendingVerificationCode": "검증 코드 전송 중...",
+            "accountCreatedSuccess": "계정이 생성되었습니다!",
+            "checkboxExpandedDescription": "주문이 접수되면 자동으로 계정을 생성하고 향후 구매를 위해 고객의 결제 정보 및 기타 세부 정보를 저장합니다. 다음 결제 시 전송된 코드를 사용하여 계정을 확인합니다.",
+            "accountCreatedTitle": "계정 생성됨",
+            "verified": "확인됨",
+            "accountCreatedDescription": "주문 정보를 사용하여 계정을 만들고 확인했습니다. 다음에 체크아웃할 때는 전송된 코드를 입력하여 로그인하기만 하면 됩니다. 암호가 필요하지 않습니다.",
+            "accountCreationLabel": "계정 생성",
+            "accountWillBeCreated": "계정이 생성됩니다.",
+            "continueAsGuest": "게스트로 계속하기"
+        }
+    },
+    "account": {
+        "title": "계정 세부 정보",
+        "subtitle": "개인 정보 관리",
+        "myAccount": "내 계정",
+        "navigation": {
+            "overview": "개요",
+            "accountDetails": "계정 세부 정보",
+            "wishlist": "위시리스트",
+            "orderHistory": "주문 내역",
+            "addresses": "주소",
+            "manageAddresses": "주소 관리",
+            "paymentMethods": "결제 방법",
+            "storePreferences": "매장 기본 설정",
+            "logOut": "로그아웃"
+        },
+        "storePreferences": {
+            "title": "매장 기본 설정",
+            "subtitle": "선호하는 매장 위치 및 수령 기본 설정 관리",
+            "preferredStore": {
+                "heading": "선호 수령 매장",
+                "description": "매장 수령 주문을 위해 선호하는 매장을 선택하십시오.",
+                "changeStore": "매장 변경",
+                "noStoreSelected": "선택한 매장이 없습니다. 매장 찾기를 사용하여 선호하는 수령 매장을 선택하십시오.",
+                "storeHoursTitle": "매장 영업 시간",
+                "error": "매장 세부 정보를 로드하지 못했습니다. 나중에 다시 시도하십시오."
+            },
+            "authorizedPickupPeople": {
+                "heading": "허가된 수령 대리자",
+                "description": "나를 대신하여 주문을 수령할 수 있는 권한이 있는 사람 추가",
+                "addPerson": "사람 추가",
+                "idNote": "허가된 수령 대리자는 주문을 수령할 때 등록된 이름과 일치하는 유효한 신분증을 제시해야 합니다.",
+                "modal": {
+                    "addTitle": "허가된 대리자 추가",
+                    "editTitle": "허가된 대리자 편집",
+                    "firstName": "이름",
+                    "firstNamePlaceholder": "이름",
+                    "lastName": "성",
+                    "lastNamePlaceholder": "성",
+                    "email": "이메일 주소",
+                    "relationship": "관계",
+                    "relationshipPlaceholder": "관계 선택",
+                    "modalNote": "이 사람은 귀하를 대신하여 주문을 수령할 권한을 갖게 됩니다. 주문 수령 시 제공한 이름과 일치하는 유효한 신분증을 제시해야 합니다.",
+                    "cancel": "취소",
+                    "save": "저장",
+                    "firstNameRequired": "이름은 필수입니다.",
+                    "firstNameMax": "이름은 50자 이하여야 합니다.",
+                    "lastNameRequired": "성은 필수입니다.",
+                    "lastNameMax": "성은 50자 이하여야 합니다.",
+                    "emailRequired": "이메일은 필수입니다.",
+                    "emailInvalid": "유효한 이메일 주소를 입력하십시오.",
+                    "emailMax": "이메일은 100자 이하여야 합니다.",
+                    "relationshipRequired": "관계를 선택하십시오."
+                },
+                "statusActive": "활성",
+                "relationshipLabel": "관계: {{relationship}}",
+                "edit": "편집",
+                "delete": "삭제",
+                "emptyState": "아직 허가된 수령 대리자가 없습니다. 대신 주문을 수령할 수 있는 사람을 추가합니다.",
+                "deleteConfirmTitle": "허가된 대리자 제거",
+                "deleteConfirmDescription": "{{name}}을(를) 제거하시겠습니까? 더 이상 귀하를 대신하여 주문을 수령할 수 없게 됩니다.",
+                "deleteConfirmCancel": "취소",
+                "deleteConfirmRemove": "제거",
+                "relationships": {
+                    "spouse": "배우자",
+                    "familyMember": "가족 구성원",
+                    "friend": "친구",
+                    "other": "기타"
+                }
+            },
+            "pickupPreferences": {
+                "heading": "수령 기본 설정",
+                "description": "수령 알림 및 매장 기본 설정 관리",
+                "edit": "편집",
+                "save": "저장",
+                "cancel": "취소",
+                "autoSelectStore": "선호하는 매장 자동 선택",
+                "autoSelectStoreDescription": "선호하는 매장을 자동으로 선택하여 주문 처리",
+                "pickupNotifications": "수령 알림",
+                "pickupNotificationsDescription": "주문을 수령할 준비가 되면 알림 받기",
+                "storeEventsPromotions": "매장 이벤트 및 프로모션",
+                "storeEventsPromotionsDescription": "선호하는 매장의 이벤트 및 프로모션에 대한 업데이트 받기",
+                "saveSuccess": "수령 기본 설정이 저장되었습니다."
+            }
+        },
+        "overview": {
+            "welcomeBack": "{{name}} 님, 다시 오신 것을 환영합니다!",
+            "welcomeSubtitle": "계정을 관리하고, 주문을 보고, 개인화된 추천을 찾아보세요.",
+            "defaultName": "거기",
+            "quickLinks": {
+                "title": "빠른 링크",
+                "orderHistoryDesc": "주문 추적",
+                "wishlistDesc": "저장한 품목",
+                "addressesDesc": "주소 관리",
+                "paymentMethodsDesc": "결제 방법 관리"
+            },
+            "curatedForYou": {
+                "title": "고객 님을 위해 엄선된 상품",
+                "subtitle": "활동에 따라 선택됨"
+            },
+            "appDownload": {
+                "title": "앱 다운로드",
+                "description": "이동 중에도 최고의 쇼핑 경험을 누리십시오. 독점 혜택을 이용하고, 주문을 추적하고, 더 빠르게 쇼핑하세요.",
+                "qrCode": "QR 코드"
+            }
+        },
+        "shopperAgentEntry": {
+            "title": "도움이 필요하신가요?",
+            "description": "질문이나 우려 사항에 대해 도움을 드리겠습니다.",
+            "askQuestion": "질문하기",
+            "contactInfo": "연락처 정보",
+            "browseFaq": "FAQ 찾아보기"
+        },
+        "wishlist": {
+            "pageTitle": "내 위시리스트",
+            "pageSubtitle": "나중에 구매하기 위해 저장한 품목",
+            "savedItems": "저장된 항목",
+            "emptyTitle": "이 위시리스트는 비어 있습니다.",
+            "emptySubtitle": "위시리스트에 품목을 추가하세요!",
+            "itemCount_one": "{{count}}개 품목 저장됨",
+            "itemCount_other": "{{count}}개 품목 저장됨",
+            "empty": "위시리스트가 비어 있습니다. 마음에 드는 품목을 추가해 보세요!",
+            "wishlistName": "위시리스트",
+            "failedToCreate": "위시리스트 생성 실패: 위시리스트 생성 후 listId를 사용할 수 없습니다.",
+            "unableToRetrieveId": "위시리스트 ID를 가져올 수 없습니다. 다시 시도하십시오.",
+            "notFound": "위시리스트를 찾을 수 없음",
+            "idNotFound": "위시리스트 ID를 찾을 수 없음",
+            "itemNotFound": "위시리스트에서 품목을 찾을 수 없음",
+            "mustLoginToAdd": "위시리스트에 품목을 추가하려면 로그인해야 합니다.",
+            "mustLoginToRemove": "위시리스트에서 품목을 제거하려면 로그인해야 합니다.",
+            "sortBy": "정렬 기준",
+            "sort": {
+                "recentlyAdded": "최근에 추가된 품목",
+                "nameAZ": "이름(A-Z)",
+                "priceLow": "가격: 낮은순",
+                "priceHigh": "가격: 높은순"
+            },
+            "filterBy": "필터링 기준",
+            "filter": {
+                "all": "모든 품목",
+                "inStock": "재고 보유",
+                "outOfStock": "품절",
+                "onSale": "판매 중"
+            },
+            "noFilterResults": "필터와 일치하는 품목이 없습니다."
+        },
+        "orders": {
+            "empty": "아직 주문한 내역이 없습니다. 주문을 하면 여기에 세부 정보가 표시됩니다.",
+            "continueShopping": "계속 쇼핑하기",
+            "errorDescription": "주문 내역을 로드하는 중에 오류가 발생했습니다. 나중에 다시 시도하십시오.",
+            "subtitle": "주문 보기 및 추적",
+            "orderDate": "주문 날짜",
+            "total": "합계",
+            "items": "항목",
+            "pickupLocation": "수령 위치",
+            "location": "위치",
+            "address": "주소",
+            "viewOrderDetails": "주문 세부 정보 보기",
+            "tableHeaders": {
+                "orderNumber": "주문 ID",
+                "status": "상태",
+                "method": "메서드",
+                "amount": "금액",
+                "actions": "작업"
+            },
+            "viewDetails": "세부 정보 보기",
+            "orderDetailsTitle": "주문",
+            "orderDetailsPageTitle": "주문 세부 정보",
+            "status": {
+                "created": "생성됨",
+                "new": "새로 만들기",
+                "completed": "완료됨",
+                "cancelled": "취소됨",
+                "replaced": "대체됨",
+                "failed": "실패"
+            },
+            "shippingStatus": {
+                "notShipped": "출고되지 않음",
+                "partShipped": "부분 배송됨",
+                "shipped": "출고됨"
+            },
+            "totalOrders_one": "{{count}}개 주문 표시",
+            "totalOrders_other": "{{count}}개 주문 표시",
+            "totalOrdersRange": "총 {{total}}개 주문 중 {{start}}~{{end}} 표시",
+            "paginationLabel": "주문 내역 페이지 매기기",
+            "paginationPrevious": "이전 페이지",
+            "paginationNext": "다음 페이지",
+            "invalidDate": "올바르지 않은 날짜",
+            "shipmentNumber": "배송 {{n}}",
+            "itemsOrdered": "주문한 품목",
+            "orderSummary": "주문 요약",
+            "backToOrderHistory": "주문 내역으로 돌아가기",
+            "orderNotFound": "주문을 찾을 수 없음",
+            "orderNotFoundDescription": "원하는 주문을 찾을 수 없습니다.",
+            "buyAgain": "다시 구매하기",
+            "emptyItemsFallback": "품목이 없습니다.",
+            "productPlaceholderInitial": "품목",
+            "quantityLabel": "수량: {{count}}개",
+            "trackingNumber": "추적 번호",
+            "shippingAddress": "배송 주소",
+            "paymentMethod": "결제 방법",
+            "paymentMethodEndingIn": "{{cardType}}이(가) {{lastDigits}}(으)로 끝남"
+        },
+        "addresses": {
+            "subtitle": "배송 주소 관리",
+            "empty": "더 빠르게 결제할 수 있도록 주소를 추가하세요!",
+            "noSavedAddresses": "저장된 주소 없음",
+            "addAddress": "주소 추가",
+            "addNewAddress": "새 주소 추가",
+            "editAddress": "주소 편집",
+            "preferred": "선호",
+            "default": "기본값",
+            "setDefault": "기본값 설정",
+            "setDefaultSuccess": "주소가 기본값으로 설정되었습니다.",
+            "setDefaultError": "주소를 기본값으로 설정하지 못했습니다. 다시 시도하십시오.",
+            "billing": "청구",
+            "shipping": "배송",
+            "removeSuccess": "주소가 제거되었습니다.",
+            "removeError": "주소를 제거하지 못했습니다. 다시 시도하십시오.",
+            "addSuccess": "주소가 추가되었습니다.",
+            "addError": "주소를 추가하지 못했습니다.",
+            "updateSuccess": "주소가 업데이트되었습니다.",
+            "updateError": "주소를 업데이트하지 못했습니다.",
+            "removeDialogTitle": "주소 제거",
+            "removeDialogDescription": "이 주소를 제거하시겠습니까?",
+            "removeDefaultWarning": "이 주소는 기본 주소입니다. 제거하면 다른 주소가 기본값으로 자동 설정됩니다(가능한 경우).",
+            "removeButton": "제거",
+            "removeConfirmTitle": "주소 제거 확인",
+            "removeConfirmDescription": "주소 \"{{addressName}}\"을(를) 제거하시겠습니까?",
+            "removeCancelButton": "취소",
+            "removeConfirmButton": "예, 주소를 제거합니다."
+        },
+        "paymentMethods": {
+            "pageSubtitle": "결제 방법, 기프트 카드 및 매장 크레딧 관리",
+            "subtitle": "저장된 결제 방법 관리",
+            "noSavedPaymentMethods": "저장된 결제 방법 없음",
+            "empty": "결제 방법을 추가하면 더 빠르게 체크아웃할 수 있습니다!",
+            "addPaymentMethod": "결제 방법 추가",
+            "setDefault": "기본값 설정",
+            "remove": "제거",
+            "default": "기본값",
+            "expires": "만료",
+            "addPaymentMethodTitle": "결제 방법 추가",
+            "creditCard": "신용카드",
+            "nameOnCard": "카드에 표시된 이름*",
+            "cardNumberPlaceholder": "카드 번호*",
+            "saveAsDefault": "기본 결제로 저장",
+            "billingAddress": "청구 주소*",
+            "selectAddress": "주소 선택",
+            "addNewAddress": "새 주소 추가",
+            "cancel": "취소",
+            "save": "저장",
+            "removePaymentMethod": "결제 방법 제거",
+            "removeConfirmation": "이 결제 방법을 제거하시겠습니까?",
+            "paymentMethod": "결제 방법",
+            "defaultRemovalWarning": "기본 결제 방법입니다. 이 옵션을 제거하면 다른 결제 방법이 기본값으로 자동 설정됩니다(가능한 경우).",
+            "addSuccess": "결제 방법이 추가되었습니다.",
+            "addError": "결제 방법을 추가하지 못했습니다.",
+            "removeSuccess": "결제 방법이 제거되었습니다.",
+            "removeError": "결제 방법을 제거하지 못했습니다.",
+            "setDefaultSuccess": "결제 방법이 기본값으로 설정되었습니다.",
+            "setDefaultError": "결제 방법을 기본값으로 설정하지 못했습니다.",
+            "validationError": "양식의 오류를 수정하십시오.",
+            "addressValidationError": "청구 주소의 오류를 수정하십시오.",
+            "selectAddressError": "청구 주소를 선택하십시오.",
+            "invalidExpiryFormat": "만료 날짜 형식이 잘못되었습니다."
+        },
+        "addressForm": {
+            "addressTitleLabel": "주소 제목",
+            "addressTitlePlaceholder": "예: 집, 직장, 엄마 집",
+            "firstNameLabel": "이름",
+            "lastNameLabel": "성",
+            "phoneLabel": "전화번호",
+            "countryLabel": "국가",
+            "addressLabel": "주소",
+            "address2Label": "주소 행 2",
+            "address2Placeholder": "아파트, 동·호수 등(선택 사항)",
+            "cityLabel": "구/군/시",
+            "stateLabel": "시/도",
+            "provinceLabel": "시/도",
+            "postalCodeLabel": "우편번호",
+            "zipCodeLabel": "우편번호",
+            "preferredLabel": "기본값으로 설정",
+            "saveButton": "저장",
+            "savingButton": "저장 중...",
+            "cancelButton": "취소",
+            "selectStatePlaceholder": "시/도 선택",
+            "selectProvincePlaceholder": "시/도 선택",
+            "successMessage": "주소가 저장되었습니다.",
+            "errorMessage": "주소를 저장하지 못했습니다. 다시 시도하십시오.",
+            "validation": {
+                "stateRequired": "시/도는 필수입니다.",
+                "addressTitleRequired": "주소 제목은 필수입니다.",
+                "addressTitleMaxLength": "주소 제목은 256자 이하여야 합니다.",
+                "phoneRequired": "전화번호는 필수입니다."
+            }
+        },
+        "profile": {
+            "title": "개인 정보",
+            "description": "개인 정보 관리",
+            "edit": "편집",
+            "fullName": "성명",
+            "email": "이메일 주소",
+            "phoneNumber": "전화번호",
+            "notProvided": "제공되지 않음",
+            "firstName": "이름",
+            "lastName": "성",
+            "firstNamePlaceholder": "이름을 입력하십시오.",
+            "lastNamePlaceholder": "성을 입력하십시오.",
+            "phonePlaceholder": "전화번호를 입력하십시오.",
+            "gender": "성별",
+            "genderPlaceholder": "성별 선택",
+            "genderOptions": {
+                "male": "남성",
+                "female": "여성"
+            },
+            "dateOfBirth": "생년월일",
+            "dateOfBirthPlaceholder": "생년월일 선택",
+            "saveButton": "저장",
+            "savingButton": "저장 중...",
+            "cancelButton": "취소",
+            "successMessage": "프로필이 업데이트되었습니다.",
+            "errorMessage": "프로필을 업데이트할 수 없습니다. 다시 시도하십시오.",
+            "validation": {
+                "firstNameRequired": "이름은 필수입니다.",
+                "lastNameRequired": "성은 필수입니다.",
+                "emailRequired": "이메일은 필수입니다.",
+                "emailInvalid": "올바른 이메일 주소를 입력합니다.",
+                "phoneInvalid": "올바른 전화번호를 입력하십시오.",
+                "birthdayFuture": "생년월일은 미래일 수 없습니다."
+            }
+        },
+        "password": {
+            "title": "암호 및 보안",
+            "description": "암호 및 보안 설정 관리",
+            "edit": "편집",
+            "password": "암호",
+            "changePassword": "암호 변경",
+            "currentPassword": "현재 암호",
+            "currentPasswordPlaceholder": "현재 암호 입력",
+            "newPassword": "새 암호",
+            "newPasswordPlaceholder": "새 암호 입력",
+            "confirmPassword": "새 암호 확인",
+            "confirmPasswordPlaceholder": "새 암호 확인",
+            "saveButton": "저장",
+            "cancelButton": "취소",
+            "successMessage": "암호가 업데이트되었습니다.",
+            "errorMessage": "암호를 업데이트하지 못했습니다. 다시 시도하십시오.",
+            "validation": {
+                "currentPasswordRequired": "현재 암호는 필수입니다.",
+                "newPasswordRequired": "새 암호는 필수입니다.",
+                "confirmPasswordRequired": "새 암호를 확인하십시오.",
+                "passwordsDoNotMatch": "새 암호가 일치하지 않습니다.",
+                "passwordTooShort": "암호는 8자 이상이어야 합니다."
+            },
+            "requirements": {
+                "title": "암호 요구 사항",
+                "minLength": "8자 이상",
+                "hasUppercase": "1개 이상의 대문자",
+                "hasLowercase": "1개 이상의 소문자",
+                "hasNumber": "1개 이상의 숫자",
+                "hasSpecial": "1개 이상의 특수 문자"
+            }
+        },
+        "common": {
+            "save": "저장",
+            "saving": "저장 중...",
+            "cancel": "취소",
+            "edit": "편집",
+            "done": "완료",
+            "enabled": "활성화됨",
+            "disabled": "비활성화됨"
+        },
+        "marketingConsent": {
+            "title": "마케팅 및 커뮤니케이션 기본 설정",
+            "edit": "편집",
+            "editA11y": "마케팅 기본 설정 편집",
+            "optedIn": "수신 동의",
+            "optedOut": "수신 거부",
+            "channelEmail": "이메일",
+            "channelSms": "SMS/문자 메시지",
+            "disclaimer": "이 커뮤니케이션 기본 설정을 활성화하면 독점 오퍼, 최신 제품 정보 및 예정된 컬렉션의 소식을 비롯한 마케팅 커뮤니케이션을 수신하는 데 동의하는 것으로 간주됩니다. 자세한 내용은 이용 약관 및 개인정보보호 정책을 참조하십시오.",
+            "updateError": "마케팅 기본 설정을 업데이트하지 못했습니다. 다시 시도하십시오.",
+            "partialSuccess": "일부 기본 설정이 저장되었습니다. 현재 설정을 확인하려면 새로 고치십시오."
+        }
+    },
+    "home": {
+        "hero": {
+            "slide1": {
+                "title": "새로운 시즌",
+                "subtitle": "대비, 비율, 현대적인 애티튜드로 구성된 새로운 컬렉션입니다. 다가오는 시즌의 핵심 아이템을 소개합니다.",
+                "ctaText": "컬렉션 살펴보기",
+                "imageAlt": "여성용 슬랙스 재킷 및 지갑"
+            },
+            "slide2": {
+                "title": "모던 스타일",
+                "subtitle": "고상한 실루엣, 세련된 질감, 일상적인 옷차림에 대한 대담한 접근 방식. 활동이 편한 디자인.",
+                "ctaText": "스타일 쇼핑하기",
+                "imageAlt": "여성용 화이트 린넨 드레스"
+            },
+            "slide3": {
+                "title": "퇴근 후",
+                "subtitle": "강렬한 아이템과 세련된 레이어는 저녁 외출, 늦은 밤 등 소중한 시간을 위해 디자인되었습니다.",
+                "ctaText": "컬렉션 살펴보기",
+                "imageAlt": "여성용 블랙 정장"
+            },
+            "slide4": {
+                "title": "새로운 관점",
+                "subtitle": "컨템포러리 패션을 재정의하는 눈에 띄는 상품을 엄선했습니다. 자신감. 표현. 당당함.",
+                "ctaText": "지금 쇼핑하기",
+                "imageAlt": "여성용 그레이 드레스"
+            }
+        },
+        "meta": {
+            "description": "차세대 패션 매장"
+        },
+        "featuredProducts": {
+            "title": "주요 제품",
+            "shopAll": "모두 쇼핑하기"
+        },
+        "categoryGrid": {
+            "title": "실생활에 어울리는 스타일",
+            "description": "Market Street는 패션이 수월하고 진정성 있고 접근하기 쉬워야 한다고 믿습니다. Market Street의 컬렉션은 품질, 다재다능함, 시대를 초월한 스타일을 중시하는 현대인에게 어울리도록 디자인되었습니다.",
+            "shopNowButton": "지금 쇼핑하기"
+        },
+        "featuredContent": {
+            "women": {
+                "title": "여성",
+                "description": "현대 여성을 위해 디자인된 세련된 신발 컬렉션을 만나보세요.",
+                "ctaText": "컬렉션 살펴보기",
+                "imageAlt": "여성 컬렉션"
+            },
+            "men": {
+                "title": "남성",
+                "description": "시대를 초월한 장인 정신이 남성 신발 컬렉션에서 현대적인 스타일과 만났습니다.",
+                "ctaText": "컬렉션 살펴보기",
+                "imageAlt": "남성 컬렉션"
+            },
+            "styleForRealLife": {
+                "title": "실생활에 어울리는 스타일",
+                "description": "Market Street는 패션이 수월하고 진정성 있고 접근하기 쉬워야 한다고 믿습니다. Market Street의 컬렉션은 품질, 다재다능함, 시대를 초월한 스타일을 중시하는 현대인에게 어울리도록 디자인되었습니다.\n\n활동하기 편하고, 생활 속에 잘 어울리며, 매일 언제 어디서든 가볍게 착용할 수 있는 기본 아이템을 찾아보세요."
+            }
+        }
+    },
+    "footer": {
+        "sections": {
+            "customerSupport": "고객 지원",
+            "account": "계정",
+            "ourCompany": "회사",
+            "switchThemes": "테마 전환",
+            "switchSite": "지역",
+            "switchLanguage": "언어",
+            "switchCurrency": "통화",
+            "shop": "쇼핑",
+            "help": "도움말",
+            "about": "소개"
+        },
+        "links": {
+            "contactUs": "문의",
+            "shipping": "배송",
+            "orderStatus": "주문 상태",
+            "signInOrCreateAccount": "로그인 또는 계정 생성",
+            "aboutUs": "회사 정보",
+            "accessibility": "접근성 고지",
+            "privacyPolicy": "개인정보보호 정책",
+            "privacyChoices": "개인정보보호 선택",
+            "termsOfUse": "이용 약관"
+        },
+        "newsletter": {
+            "title": "커뮤니티 가입하기",
+            "description": "새로운 상품, 독점 오퍼 및 스타일 아이디어를 가장 먼저 접해보세요.",
+            "emailPlaceholder": "이메일 주소",
+            "subscribeButton": "구독"
+        },
+        "copyright": "Salesforce or its affiliates. All rights reserved. 데모용 매장입니다. 주문이 처리되지 않습니다."
+    },
+    "aboutUs": {
+        "breadcrumb": {
+            "home": "홈",
+            "aboutUs": "회사 정보"
+        },
+        "title": "회사 정보",
+        "subtitle": "회사와 사명에 대해 자세히 알아보기",
+        "section": {
+            "ourGoal": {
+                "title": "활동이 편한 디자인. 일상 생활을 위한 디자인.",
+                "content": "도시 문화와 활동적인 에너지에서 영감을 받은 Market Street는 성능, 스타일, 일상 필수품을 하나의 원활한 경험으로 연결하도록 만들어졌습니다. 훌륭한 제품이 거리에서 스튜디오까지, 직장에서 주말 외출에 이르기까지 여러분과 함께 움직여야 한다고 믿습니다.\n사람들이 패션과 라이프스타일 리테일을 경험하는 방식을 단순화하겠다는 비전으로 시작된 저희 제품은 명확성, 접근성, 스마트한 디자인에 중점을 둔 브랜드로 발전했습니다. 모든 컬렉션은 다재다능함, 내구성 및 시대를 초월한 매력을 제공하도록 선별되었습니다."
+            },
+            "ourVision": {
+                "title": "회사 비전",
+                "content": "기술, 디자인, 고객 경험을 통해 현대 소매업을 재정의하여 수월하고 영감을 주며 인간적으로 느껴지는 커머스 환경을 조성합니다. 저희는 트렌드를 쫓지 않습니다. 저희는 오래 지속되는 경험을 구축합니다."
+            },
+            "ourValue": {
+                "title": "브랜드의 존재 이유",
+                "content": "저희는 사람들의 생활을 더 편하게 만들기 위해 존재합니다. 직관적이고, 빠르고, 의미 있는 쇼핑을 할 수 있습니다. 커뮤니티와 함께 진화하는 브랜드를 만듭니다."
+            },
+            "ourMission": {
+                "title": "회사의 신념",
+                "content": "목적이 있는 디자인 - 모든 제품, 모든 상호 작용, 모든 세부 사항은 의도적입니다.\n사라지는 기술 - 저희는 복잡하게 만드는 것이 아니라 단순화하기 위해 혁신합니다.\n고객 우선 사고방식 - 발견부터 배송까지, 고객 여정을 최우선으로 합니다.\n지속 가능성 - 저희는 책임 있는 자재, 공급업체 및 물류를 우선시합니다."
+            },
+            "ourTeam": {
+                "title": "글로벌 브랜드, 스트리트 소울",
+                "content": "Market Street는 누구나 쉽게 훌륭한 스타일을 접할 수 있어야 한다는 생각에서 탄생했습니다. 글로벌한 디자인과 스트리트 정신을 결합하여 문화, 성능 및 라이프스타일을 하나의 유려한 표현으로 연결합니다.\n제품 개발에서 디지털 경험에 이르기까지, 저희가 하는 모든 일은 커머스가 자연스럽게 느껴지도록 한다는 한 가지 원칙\n에 따라 진행됩니다."
+            }
+        },
+        "contact": {
+            "title": "도움 받기",
+            "intro": "질문이나 피드백이 있거나 지원이 필요하신가요? 언제든 도와드리겠습니다.",
+            "phoneHref": "전화: 180080606453",
+            "hours": {
+                "weekdays": "월요일~금요일: 오전 9시~오후 10시(동부 표준시)",
+                "weekends": "토요일, 일요일: 오전 10시~오후 7시(동부 표준시)"
+            },
+            "cta": "또는 양식을 사용하여 메시지를 보내주시면 최대한 빨리 연락드리겠습니다.",
+            "form": {
+                "label": "레이블",
+                "nameLabel": "이름",
+                "emailLabel": "이메일",
+                "messageLabel": "메시지",
+                "placeholders": {
+                    "fullName": "성명 입력",
+                    "topic": "일반 정보",
+                    "message": "메시지 남기기"
+                },
+                "submit": "메시지 제출"
+            },
+            "toast": {
+                "success": "메시지가 전송되었습니다."
+            }
+        }
+    },
+    "countries": {
+        "US": {
+            "name": "미국",
+            "states": {
+                "AL": "알라바마",
+                "AK": "알래스카",
+                "AZ": "애리조나",
+                "AR": "아칸소",
+                "CA": "캘리포니아",
+                "CO": "콜로라도",
+                "CT": "코네티컷",
+                "DE": "델라웨어",
+                "DC": "워싱턴 D.C.(District of Columbia)",
+                "FL": "플로리다",
+                "GA": "조지아",
+                "HI": "하와이",
+                "ID": "아이다호",
+                "IL": "일리노이",
+                "IN": "인디애나",
+                "IA": "아이오와",
+                "KS": "캔자스",
+                "KY": "켄터키",
+                "LA": "루이지애나",
+                "ME": "메인",
+                "MD": "메릴랜드",
+                "MA": "매사추세츠",
+                "MI": "미시간",
+                "MN": "미네소타",
+                "MS": "미시시피",
+                "MO": "미주리",
+                "MT": "몬타나",
+                "NE": "네브라스카",
+                "NV": "네바다",
+                "NH": "뉴햄프셔",
+                "NJ": "뉴저지",
+                "NM": "뉴멕시코",
+                "NY": "뉴욕",
+                "NC": "노스캐롤라이나",
+                "ND": "노스다코타",
+                "OH": "오하이오",
+                "OK": "오클라호마",
+                "OR": "오레곤",
+                "PA": "펜실베이니아",
+                "RI": "로드 아일랜드",
+                "SC": "사우스캐롤라이나",
+                "SD": "사우스다코타",
+                "TN": "테네시",
+                "TX": "텍사스",
+                "UT": "유타",
+                "VT": "버몬트",
+                "VA": "버지니아",
+                "WA": "워싱턴",
+                "WV": "웨스트버지니아",
+                "WI": "위스콘신",
+                "WY": "와이오밍"
+            }
+        },
+        "CA": {
+            "name": "캐나다",
+            "states": {
+                "AB": "앨버타",
+                "BC": "브리티시컬럼비아",
+                "MB": "매니토바",
+                "NB": "뉴브런즈윅",
+                "NL": "뉴펀들랜드와 래브라도",
+                "NS": "노바스코샤",
+                "NT": "노스웨스트 준주",
+                "NU": "누나부트",
+                "ON": "온타리오",
+                "PE": "프린스 에드워드 아일랜드",
+                "QC": "퀘벡",
+                "SK": "서스캐처원",
+                "YT": "유콘"
+            }
+        }
+    },
+    "miniCart": {
+        "noImage": "이미지 없음",
+        "productAltFallback": "제품",
+        "quantityLabel": "수량:",
+        "quantityAriaLabel": "수량",
+        "customQuantityAriaLabel": "맞춤형 수량",
+        "customOption": "맞춤형...",
+        "editQuantityAriaLabel": "수량 편집",
+        "promotionApplied": "프로모션 적용",
+        "removeItemAriaLabel": "카트에서 품목 제거",
+        "emptyCart": "카트가 비어 있습니다.",
+        "loading": "로드 중...",
+        "viewCart": "카트 보기",
+        "saved": "{{amount}}개 저장됨",
+        "free": "무료",
+        "emptyTitle": "Your cart is empty",
+        "emptyMessage": "Looks like you haven't added anything to your cart yet. Start shopping to fill it up with amazing products!",
+        "startShopping": "Start Shopping",
+        "delivery": "Delivery",
+        "closeAriaLabel": "닫기"
+    },
+    "trackingConsent": {
+        "title": "추적 동의",
+        "accept": "채택",
+        "decline": "거부",
+        "closeAriaLabel": "닫기"
+    },
+    "localeSwitcher": {
+        "ariaLabel": "언어 선택기",
+        "validation": {
+            "unsupportedLocale": "로캘이 지원되지 않음",
+            "usingDefault": "기본 로캘 사용: {{locale}}"
+        },
+        "locales": {
+            "en-GB": "English (UK)",
+            "en-US": "English (US)",
+            "da-DK": "Dansk (Danmark)",
+            "de-DE": "Deutsch (Deutschland)",
+            "es-ES": "Español (España)",
+            "fi-FI": "Suomi (Suomi)",
+            "fr-FR": "Français (France)",
+            "it-IT": "Italiano (Italia)",
+            "ja-JP": "日本語 (日本)",
+            "ko-KR": "한국어 (대한민국)",
+            "nb-NO": "Norsk bokmål (Norge)",
+            "nl-NL": "Nederlands (Nederland)",
+            "pl-PL": "Polski (Polska)",
+            "pt-PT": "Português (Portugal)",
+            "sv-SE": "Svenska (Sverige)",
+            "zh-CN": "中文 (简体)",
+            "zh-TW": "中文 (繁體)"
+        }
+    },
+    "currencySwitcher": {
+        "ariaLabel": "통화 전환",
+        "currencies": {
+            "USD": "미국 달러 ($)",
+            "MXN": "멕시코 페소 ($)",
+            "EUR": "유로 (€)",
+            "GBP": "영국 파운드 (£)",
+            "JPY": "일본 엔 (¥)",
+            "KRW": "대한민국 원 (₩)",
+            "BRL": "브라질 헤알 (R$)",
+            "CNY": "중국 위안 (¥)",
+            "TWD": "대만 달러 (NT$)",
+            "DKK": "덴마크 크로네 (kr)",
+            "PLN": "폴란드 즈워티 (zł)",
+            "SEK": "스웨덴 크로나 (kr)"
+        },
+        "validation": {
+            "unsupportedCurrency": "통화가 지원되지 않음",
+            "usingDefault": "기본 통화 사용: {{currency}}"
+        }
+    },
+    "addressSuggestionDropdown": {
+        "suggested": "추천",
+        "closeSuggestions": "추천 닫기",
+        "loading": "추천 로드 중...",
+        "googleMapsLogoAlt": "Google 지도"
+    },
+    "infoModal": {
+        "paymentScheduleDescription": "결제 일정 세부 정보",
+        "writeReviewDescription": "리뷰 양식 작성",
+        "starRatingDistributionDescription": "별점 분포 세부 정보",
+        "estimatedDeliveryDescription": "예상 배송 세부 정보",
+        "returnsAndWarrantyDescription": "반품 및 보증 세부 정보",
+        "close": "닫기"
+    },
+    "estimatedDelivery": {
+        "cardTitle": "예상 배송",
+        "cardDescription": "사용 가능한 배송 옵션",
+        "learnMore": "자세히 알아보기",
+        "sectionHeading": "예상 배송",
+        "shippingOptionsHeading": "배송 옵션 및 요금",
+        "free": "무료"
+    },
+    "writeReview": {
+        "validation": {
+            "pleaseFixFollowing": "다음 문제를 해결하십시오.",
+            "ratingRequired": "평가 등급을 선택하십시오.",
+            "reviewRequired": "이 필드를 채우십시오.",
+            "reviewMinLength": "리뷰는 {{count}}자 이상이어야 합니다.",
+            "reviewMaxLength": "{{count}}자 이하로 입력하십시오.",
+            "titleMaxLength": "{{count}}자 이하로 입력하십시오."
+        },
+        "minCharactersHint": "최소 {{count}}자입니다.",
+        "maxCharactersHint": "최대 {{count}}자입니다."
+    },
+    "sitePicker": {
+        "title": "사이트 선택",
+        "description": "원하는 매장을 선택하면 관련 제품과 가격을 확인할 수 있습니다.",
+        "ariaLabel": "사이트 선택",
+        "placeholder": "사이트 선택...",
+        "sites": {
+            "RefArchGlobal": "글로벌(영국)",
+            "RefArch": "미국"
+        }
+    },
+    "category": {
+        "banner": {
+            "productsAvailable_one": "1 product available",
+            "productsAvailable_other": "{{count}} products available"
+        }
+    },
+    "maintenancePage": {
+        "apology": "We apologise for any inconvenience. Thank you for your patience!"
+    },
+    "error": {
+        "403": {
+            "title": "Access restricted",
+            "message": "You don't have permission to view this page. If you believe this is an error, please contact our support team.",
+            "secondaryMessage": "In the meantime, feel free to browse our collection."
+        },
+        "404": {
+            "title": "Page not found",
+            "message": "We couldn't find the page you're looking for. It may have been moved or the link might be incorrect.",
+            "secondaryMessage": "Don't worry—you can still explore our collection or head back home.",
+            "details": "The requested page could not be found."
+        },
+        "500": {
+            "title": "Something went wrong",
+            "message": "We're sorry, but something unexpected happened on our end. Our team has been notified and is working to fix it.",
+            "secondaryMessage": "Please try again in a few moments, or browse our shop while we sort things out."
+        },
+        "defaultTitle": "Something went wrong",
+        "defaultDescription": "An error occurred",
+        "defaultDetails": "An unexpected error occurred.",
+        "notFoundTitle": "Page not found",
+        "notFoundDetails": "The requested page could not be found.",
+        "persistsMessage": "If this problem persists, please contact support.",
+        "tryAgainMessage": "An unexpected error occurred. Please try again later.",
+        "goToHomepage": "Go to Homepage",
+        "allRightsReserved": "All rights reserved.",
+        "recommendations": {
+            "title": "You might also like"
+        }
+    },
+    "product": {
+        "recommendations": {
+            "youMightAlsoLike": "추천 상품",
+            "completeTheLook": "룩 완성",
+            "recentlyViewed": "최근에 본 제품"
+        },
+        "rating": {
+            "starContainerAriaLabel": "별점 {{rating}}/{{count, number}}, 리뷰 {{total}}건",
+            "ratingOutOfTotal": "{{rating}}/{{total}}",
+            "ratingValue": "{{rating}}",
+            "basedOnReviews": "{{count, number}}개 리뷰 기준",
+            "ratingWithCount": "{{rating}}({{count, number}})",
+            "viewAllReviews": "모든 리뷰 보기",
+            "distributionAriaLabel": "별점 {{rating}}: {{count, number}}/{{totalReviews, number}}개 리뷰",
+            "distributionsAriaLabel": "별점 분포, 총 {{total, number}}개 리뷰",
+            "seeCustomerReviews": "고객 리뷰 보기 >"
+        },
+        "from": "시작",
+        "outOfStock": "{{productName}}이(가) 품절입니다.",
+        "onlyLeft": "{{productName}}이(가) {{stockLevel}}개 남았습니다!",
+        "inStock": "재고 보유",
+        "inStockCount": "배송 가능 재고 보유({{stockDisplay}}개)",
+        "lowStock": "재고 부족",
+        "lowStockCount": "재고 부족 - {{stockDisplay}}개 남음",
+        "preOrder": "사전 주문 가능",
+        "backOrder": "이월 주문 가능",
+        "outOfStockLabel": "품절",
+        "selectAllOptions": "위에서 옵션을 모두 선택하십시오.",
+        "description": "설명",
+        "imageAlt": "제품 이미지",
+        "addingToCart": "카트에 추가 중...",
+        "addToCart": "카트에 추가",
+        "moreOptions": "추가 옵션",
+        "quickAdd": "빠른 추가",
+        "buyItNow": "지금 구매하기",
+        "pickupAvailable": "수령 가능",
+        "selectProduct": "제품 선택",
+        "updatingCart": "업데이트 중...",
+        "updateCart": "업데이트",
+        "addingToWishlist": "위시리스트에 추가 중...",
+        "addToWishlist": "위시리스트에 추가",
+        "updatingWishlist": "위시리스트 업데이트 중",
+        "share": "공유",
+        "expressPayments": {
+            "separatorBuyWith": "또는 함께 구매",
+            "venmoUnavailable": "이 기기에서는 Venmo를 사용할 수 없습니다."
+        },
+        "productSetNotice": "제품 세트입니다. 아래에서 개별 품목을 선택하여 카트에 추가하십시오.",
+        "productBundleNotice": "제품 번들입니다. 모든 품목이 함께 추가됩니다.",
+        "productDetails": "제품 세부 정보",
+        "noDetailedDescription": "자세한 설명이 없습니다.",
+        "brand": "브랜드:",
+        "manufacturer": "제조업체:",
+        "sku": "SKU:",
+        "sizeAndFit": "사이즈와 핏",
+        "sizeAndFitComingSoon": "사이즈 및 핏 정보는 곧 제공될 예정입니다.",
+        "shippingAndReturns": "배송 및 반품",
+        "freeShipping": "$50 이상 주문 시 무료 배송",
+        "standardShipping": "표준 배송: 영업일 기준 3~5일",
+        "expressShipping": "특급 배송: 영업일 기준 1~2일",
+        "priceMin": "최소값",
+        "priceMax": "최대값",
+        "priceTo": "~",
+        "returns": "반품: 30일 반품 정책",
+        "reviews": "리뷰",
+        "customerReviews": "고객 리뷰",
+        "oneReviewForProductName": "{{productName}}에 대한 리뷰 1건",
+        "reviewsForProductName": "{{productName}}에 대한 리뷰 {{count}}건",
+        "aiReviewSummary": "AI 리뷰 요약",
+        "loadingReviews": "리뷰 로드 중...",
+        "noReviewsForProduct": "이 제품에 대한 리뷰가 없습니다.",
+        "noReviewsMatchFilters": "필터와 일치하는 리뷰가 없습니다.",
+        "verifiedPurchase": "확인된 구매",
+        "helpful": "도움이 됨({{count}})",
+        "helpfulNoCount": "도움이 됨",
+        "report": "보고서",
+        "readMore": "자세히 보기",
+        "readLess": "간단히 보기",
+        "reviewImageAlt": "리뷰 이미지",
+        "viewProductAriaLabel": "{{productName}} 보기",
+        "swatches": {
+            "availableColors": "Available colors",
+            "viewProductInColor": "View {{productName}} in {{colorName}}",
+            "viewAllColors": "View all {{count}} colors for {{productName}}",
+            "moreColorsTitle": "+{{count}} more"
+        },
+        "showingReviews": "총 {{total}}개 중 {{from}}~{{to}} 리뷰 표시",
+        "filterBy": "필터링 기준:",
+        "withPhotos": "사진 포함",
+        "searchReviewsPlaceholder": "리뷰 검색...",
+        "sortLabel": "정렬:",
+        "sortMostRecent": "최신순",
+        "sortHighestRated": "최고 평점",
+        "sortLowestRated": "최저 평점",
+        "sortMostHelpful": "유용한 순",
+        "activeFilterStars": "별점 {{count}}",
+        "clearFilter": "필터 지우기",
+        "filterByStars": "별점 {{count}}점으로 필터링",
+        "clearStarFilter": "별점 {{count}} 필터 지우기",
+        "clearPhotoFilter": "사진 필터 지유기",
+        "writeReviewButton": "리뷰 작성하기",
+        "materials": "자료",
+        "usageInstructions": "사용 지침",
+        "specifications": "사양",
+        "careInstructions": "관리 지침",
+        "careInstructionsComingSoon": "관리 지침이 곧 제공될 예정입니다.",
+        "productSet": "제품 세트",
+        "productBundle": "제품 번들",
+        "setDescription": "아래 항목 중에서 선택하여 완벽한 세트를 만드십시오.",
+        "bundleDescription": "이 번들의 모든 품목이 카트에 함께 추가됩니다.",
+        "selectedOf": "{{total}}개 중 {{selected}}개 선택",
+        "addSetToCart": "카트에 세트 추가",
+        "addBundleToCart": "카트에 번들 추가",
+        "adding": "추가 중...",
+        "selectAllOptionsAbove": "위에서 옵션을 모두 선택하십시오.",
+        "outOfStockStatus": "품절",
+        "selected": "✓ 선택됨",
+        "selectOptionsAbove": "위의 옵션 선택",
+        "selectOptions": "옵션 선택",
+        "bonusProduct": "보너스 상품",
+        "bonusProductAriaLabel": "이 품목은 무료 보너스 상품입니다.",
+        "addedToCart": "카트에 {{productName}}이(가) 추가됨",
+        "updatedCart": "카트에서 {{productName}}이(가) 업데이트되었습니다.",
+        "addedSetToCart": "카트에 제품 세트를 추가했습니다.",
+        "addedBundleToCart": "카트에 제품 번들을 추가했습니다.",
+        "failedToAddToCart": "카트에 추가하지 못했습니다. {{error}}",
+        "failedToUpdateCart": "카트를 업데이트하지 못했습니다. {{error}}",
+        "failedToAddItemsToCart": "카트에 품목을 추가하지 못했습니다. {{error}}",
+        "failedToAddBundleToCart": "카트에 번들을 추가하지 못했습니다. {{error}}",
+        "addedToWishlist": "위시리스트에 {{productName}}이(가) 추가되었습니다.",
+        "alreadyInWishlist": "{{productName}}이(가) 이미 위시리스트에 있습니다.",
+        "failedToAddToWishlist": "위시리스트에 품목을 추가하지 못했습니다.",
+        "signInToAddToWishlist": "로그인하여 위시리스트에 품목을 추가합니다.",
+        "signInToContinue": "계속하려면 로그인하십시오.",
+        "removedFromWishlist": "위시리스트에서 제거되었습니다.",
+        "failedToRemoveFromWishlist": "위시리스트에서 품목을 제거하지 못했습니다.",
+        "removeFromWishlist": "위시리스트에서 제거합니다.",
+        "removedLabel": "제거됨",
+        "remove": "제거",
+        "selectVariantPlaceholder": "선택",
+        "itemAlreadyInWishlist": "위시리스트에 이미 있는 품목입니다.",
+        "addedToWishlistGeneric": "위시리스트에 추가되었습니다.",
+        "productIdRequired": "제품 ID는 필수입니다.",
+        "productOrItemIdRequired": "제품 ID 또는 항목 ID는 필수입니다.",
+        "methodNotAllowed": "허용되지 않는 메서드입니다.",
+        "productItemRequired": "제품 품목 데이터는 필수입니다.",
+        "productItemsRequired": "제품 품목 데이터가 필수입니다.",
+        "bundleDataRequired": "번들 품목 및 하위 선택 데이터는 필수입니다.",
+        "failedToAddItemToCart": "카트에 품목을 추가하지 못했습니다.",
+        "failedToUpdateItemToCart": "품목을 카트로 업데이트하지 못했습니다.",
+        "failedToRemoveItem": "항목을 제거하지 못했습니다.",
+        "failedToUpdateItemQuantity": "품목 수량을 업데이트하지 못했습니다.",
+        "failedToAddItemsToCartError": "카트에 품목을 추가하지 못했습니다.",
+        "failedToAddBundleToCartError": "카트에 번들을 추가하지 못했습니다.",
+        "failedToUpdateBundleToCartError": "번들을 카트로 업데이트하지 못했습니다.",
+        "pleaseSelectOptionsFor": "{{productName}}의 옵션 선택",
+        "productNotOrderable": "{{productName}}을(를) 주문할 수 없습니다.",
+        "cannotAddToCartValidationFailed": "카트에 추가할 수 없음: 검증 실패",
+        "failedToAddProductToCart": "카트에 제품을 추가하지 못했습니다.",
+        "failedToAddProductToWishlist": "위시리스트에 제품을 추가하지 못했습니다.",
+        "noProductIdForCart": "카트 추가에 사용할 수 있는 제품 ID가 없습니다.",
+        "invalidQuantityForCart": "카트 추가에 대한 잘못된 수량: {{quantity}}.",
+        "noProductSelectionsForSet": "세트로 카트에 추가할 제품이 선택되지 않았습니다.",
+        "noProductIdForBundle": "번들 카트 추가를 위한 제품 ID가 없습니다.",
+        "invalidQuantityForBundle": "번들 카트 추가에 대한 잘못된 수량: {{quantity}}.",
+        "noChildSelectionsForBundle": "번들 카트 추가를 위해 제공된 하위 제품 선택 사항이 없습니다.",
+        "cartOperationFailed": "카트 작업 실패:",
+        "multipleItemsCartOperationFailed": "여러 품목 카트 작업이 실패했습니다.",
+        "bundleCartOperationFailed": "번들 카트 작업 실패:",
+        "errorInHandleAddToCart": "handleAddToCart 오류 :",
+        "errorInHandleProductSetAddToCart": "handleProductSetAddToCart 오류:",
+        "errorInHandleProductBundleAddToCart": "handleProductBundleAddToCart 오류:",
+        "failedToAddToWishlistError": "위시리스트에 추가하지 못함:",
+        "addingToWishlistLog": "위시리스트에 추가:",
+        "failedToAddProductToCartError": "카트에 제품을 추가하지 못함:",
+        "failedToAddProductToWishlistError": "위시리스트에 제품을 추가하지 못함:",
+        "price": {
+            "unavailable": "가격 정보 없음",
+            "currentPriceFrom": "현재 가격(시작가: {{price}})",
+            "currentPrice": "현재 가격: {{price}}",
+            "from": "{{price}}부터 시작",
+            "range": "{{min}}~{{max}}",
+            "rangeA11y": "{{min}}~{{max}}의 가격대",
+            "listPriceFrom": "정가(시작가: {{price}})",
+            "listPrice": "정가: {{price}}"
+        },
+        "removingFromWishlist": "Removing from wishlist...",
+        "inWishlist": "In your wishlist"
+    }
+}

@@ -1,0 +1,1648 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProductItem stories snapshot > AutoBonusProduct story renders and matches snapshot 1`] = `
+<div
+  class="max-w-2xl mx-auto"
+>
+  <div
+    class="relative"
+    data-testid="sf-product-item-061492183589M"
+  >
+    <div
+      class="bg-card text-card-foreground border-0 "
+    >
+      <div
+        class="px-3 py-4 md:px-6 md:py-7 relative overflow-hidden"
+      >
+        <div
+          class="grid md:grid-cols-[140px_1fr] grid-cols-[72px_1fr] gap-5 min-w-0"
+        >
+          <div
+            class="flex-shrink-0 flex items-start justify-center"
+          >
+            <div
+              class="bg-muted flex-shrink-0 flex items-center justify-center aspect-square overflow-hidden rounded-ui md:w-32 w-16"
+              data-slot="product-item-image"
+            >
+              <img
+                alt="Men's Classic Deer Gloves, , small"
+                class="h-full w-full object-contain"
+                src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwd4659c06/images/small/TG508_206.webp?sfrm=jpg&q=70"
+              />
+            </div>
+          </div>
+          <div
+            class="flex-1 space-y-3 min-w-0"
+          >
+            <div
+              class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-2 md:gap-x-6 md:gap-y-1 min-w-0"
+            >
+              <div
+                class="min-w-0"
+              >
+                <div
+                  class="md:hidden float-right ml-2"
+                />
+                <div
+                  class="mb-2 md:mb-4 flex items-start gap-2 min-w-0"
+                >
+                  <span
+                    aria-label="This item is a free bonus product"
+                    class="inline-flex items-center justify-center rounded-full border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent bg-primary text-primary-foreground [a&]:hover:bg-primary/90"
+                    data-slot="badge"
+                    role="status"
+                  >
+                    Bonus Product
+                  </span>
+                  <h2
+                    class="text-left text-xl font-semibold leading-7 tracking-[-0.5px] text-card-foreground min-w-0 flex-1"
+                  >
+                    <a
+                      class="hover:text-primary block break-words"
+                      href="/RefArchGlobal/en-GB/product/TG508M"
+                      title="Men's Classic Deer Gloves"
+                      to="/RefArchGlobal/en-GB/product/TG508M"
+                    >
+                      Men's Classic Deer Gloves
+                    </a>
+                  </h2>
+                </div>
+                <div>
+                  <ul
+                    class="text-sm font-normal leading-5 text-muted-foreground space-y-1 mb-1"
+                    role="list"
+                  >
+                    <li>
+                      Size
+                      : 
+                      L
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="flex min-w-0 flex-shrink-0 flex-col items-end gap-2 md:gap-4 md:row-span-2"
+              >
+                <div
+                  class="hidden w-full shrink-0 justify-end md:flex"
+                />
+                <div
+                  class="flex w-full max-w-full shrink-0 flex-col items-end gap-2 md:gap-3"
+                >
+                  <div
+                    class="text-right"
+                    data-testid="desktop-product-price"
+                  >
+                    <div
+                      class="inline-flex flex-col items-end font-semibold text-base"
+                    >
+                      <span
+                        class="text-xl font-semibold text-status-positive"
+                      >
+                        Free
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex shrink-0 justify-end"
+                >
+                  <div
+                    class="relative flex w-fit max-w-full flex-col items-start gap-2"
+                  >
+                    <label
+                      class="items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 block text-left font-sans text-base font-semibold leading-6 text-card-foreground"
+                      data-slot="label"
+                      for="quantity"
+                    >
+                      Quantity
+                    </label>
+                    <div
+                      class="inline-flex items-center border border-input rounded-ui overflow-hidden"
+                    >
+                      <button
+                        aria-label="Decrement Quantity for the product"
+                        class="px-2.5 py-1.5 text-base font-semibold leading-normal text-foreground hover:bg-muted transition-colors focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
+                        data-testid="quantity-decrement"
+                        disabled=""
+                      >
+                        −
+                      </button>
+                      <input
+                        aria-label="Quantity"
+                        class="w-9 text-center text-sm font-semibold leading-normal text-foreground border-0 bg-transparent focus:outline-none focus:ring-0 disabled:opacity-50 disabled:cursor-not-allowed [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                        disabled=""
+                        max="98"
+                        min="0"
+                        step="1"
+                        type="number"
+                        value="1"
+                      />
+                      <button
+                        aria-label="Increment Quantity for the product"
+                        class="px-2.5 py-1.5 text-base font-semibold leading-normal text-foreground hover:bg-muted transition-colors focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
+                        data-testid="quantity-increment"
+                        disabled=""
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProductItem stories snapshot > ChoiceBasedBonusProduct story renders and matches snapshot 1`] = `
+<div
+  class="max-w-2xl mx-auto"
+>
+  <div
+    class="relative"
+    data-testid="sf-product-item-choice-bonus-product-1"
+  >
+    <div
+      class="bg-card text-card-foreground border-0 "
+    >
+      <div
+        class="px-3 py-4 md:px-6 md:py-7 relative overflow-hidden"
+      >
+        <div
+          class="grid md:grid-cols-[140px_1fr] grid-cols-[72px_1fr] gap-5 min-w-0"
+        >
+          <div
+            class="flex-shrink-0 flex items-start justify-center"
+          >
+            <div
+              class="bg-muted flex-shrink-0 flex items-center justify-center aspect-square overflow-hidden rounded-ui md:w-32 w-16"
+              data-slot="product-item-image"
+            >
+              <img
+                alt="Men's Classic Deer Gloves, , small"
+                class="h-full w-full object-contain"
+                src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwd4659c06/images/small/TG508_206.webp?sfrm=jpg&q=70"
+              />
+            </div>
+          </div>
+          <div
+            class="flex-1 space-y-3 min-w-0"
+          >
+            <div
+              class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-2 md:gap-x-6 md:gap-y-1 min-w-0"
+            >
+              <div
+                class="min-w-0"
+              >
+                <div
+                  class="md:hidden float-right ml-2"
+                />
+                <div
+                  class="mb-2 md:mb-4 flex items-start gap-2 min-w-0"
+                >
+                  <span
+                    aria-label="This item is a free bonus product"
+                    class="inline-flex items-center justify-center rounded-full border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent bg-primary text-primary-foreground [a&]:hover:bg-primary/90"
+                    data-slot="badge"
+                    role="status"
+                  >
+                    Bonus Product
+                  </span>
+                  <h2
+                    class="text-left text-xl font-semibold leading-7 tracking-[-0.5px] text-card-foreground min-w-0 flex-1"
+                  >
+                    <a
+                      class="hover:text-primary block break-words"
+                      href="/RefArchGlobal/en-GB/product/TG508M"
+                      title="Choice Bonus Gift"
+                      to="/RefArchGlobal/en-GB/product/TG508M"
+                    >
+                      Choice Bonus Gift
+                    </a>
+                  </h2>
+                </div>
+                <div>
+                  <ul
+                    class="text-sm font-normal leading-5 text-muted-foreground space-y-1 mb-1"
+                    role="list"
+                  >
+                    <li>
+                      Size
+                      : 
+                      L
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="mt-2"
+                >
+                  <button
+                    class="text-primary"
+                  >
+                    Edit
+                  </button>
+                </div>
+              </div>
+              <div
+                class="flex min-w-0 flex-shrink-0 flex-col items-end gap-2 md:gap-4 md:row-span-2"
+              >
+                <div
+                  class="hidden w-full shrink-0 justify-end md:flex"
+                />
+                <div
+                  class="flex w-full max-w-full shrink-0 flex-col items-end gap-2 md:gap-3"
+                >
+                  <div
+                    class="text-right"
+                    data-testid="desktop-product-price"
+                  >
+                    <div
+                      class="inline-flex flex-col items-end font-semibold text-base"
+                    >
+                      <span
+                        class="text-xl font-semibold text-status-positive"
+                      >
+                        Free
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex shrink-0 justify-end"
+                >
+                  <div
+                    class="relative flex w-fit max-w-full flex-col items-start gap-2"
+                  >
+                    <label
+                      class="items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 block text-left font-sans text-base font-semibold leading-6 text-card-foreground"
+                      data-slot="label"
+                      for="quantity"
+                    >
+                      Quantity
+                    </label>
+                    <div
+                      class="inline-flex items-center border border-input rounded-ui overflow-hidden"
+                    >
+                      <button
+                        aria-label="Decrement Quantity for the product"
+                        class="px-2.5 py-1.5 text-base font-semibold leading-normal text-foreground hover:bg-muted transition-colors focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
+                        data-testid="quantity-decrement"
+                        disabled=""
+                      >
+                        −
+                      </button>
+                      <input
+                        aria-label="Quantity"
+                        class="w-9 text-center text-sm font-semibold leading-normal text-foreground border-0 bg-transparent focus:outline-none focus:ring-0 disabled:opacity-50 disabled:cursor-not-allowed [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                        max="3"
+                        min="0"
+                        step="1"
+                        type="number"
+                        value="1"
+                      />
+                      <button
+                        aria-label="Increment Quantity for the product"
+                        class="px-2.5 py-1.5 text-base font-semibold leading-normal text-foreground hover:bg-muted transition-colors focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
+                        data-testid="quantity-increment"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="min-w-0 md:col-start-1 md:row-start-2"
+              >
+                <div
+                  data-testid="mobile-primary-action"
+                >
+                  <button
+                    class="text-destructive"
+                  >
+                    Remove
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProductItem stories snapshot > Default story renders and matches snapshot 1`] = `
+<div
+  class="max-w-2xl mx-auto"
+>
+  <div
+    class="relative"
+    data-testid="sf-product-item-061492183589M"
+  >
+    <div
+      class="bg-card text-card-foreground border-0 "
+    >
+      <div
+        class="px-3 py-4 md:px-6 md:py-7 relative overflow-hidden"
+      >
+        <div
+          class="grid md:grid-cols-[140px_1fr] grid-cols-[72px_1fr] gap-5 min-w-0"
+        >
+          <div
+            class="flex-shrink-0 flex items-start justify-center"
+          >
+            <div
+              class="bg-muted flex-shrink-0 flex items-center justify-center aspect-square overflow-hidden rounded-ui md:w-32 w-16"
+              data-slot="product-item-image"
+            >
+              <img
+                alt="Men's Classic Deer Gloves, , small"
+                class="h-full w-full object-contain"
+                src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwd4659c06/images/small/TG508_206.webp?sfrm=jpg&q=70"
+              />
+            </div>
+          </div>
+          <div
+            class="flex-1 space-y-3 min-w-0"
+          >
+            <div
+              class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-2 md:gap-x-6 md:gap-y-1 min-w-0"
+            >
+              <div
+                class="min-w-0"
+              >
+                <div
+                  class="md:hidden float-right ml-2"
+                />
+                <div
+                  class="mb-2 md:mb-4 flex items-start gap-2 min-w-0"
+                >
+                  <h2
+                    class="text-left text-xl font-semibold leading-7 tracking-[-0.5px] text-card-foreground min-w-0 flex-1"
+                  >
+                    <a
+                      class="hover:text-primary block break-words"
+                      href="/RefArchGlobal/en-GB/product/TG508M"
+                      title="Men's Classic Deer Gloves"
+                      to="/RefArchGlobal/en-GB/product/TG508M"
+                    >
+                      Men's Classic Deer Gloves
+                    </a>
+                  </h2>
+                </div>
+                <div>
+                  <ul
+                    class="text-sm font-normal leading-5 text-muted-foreground space-y-1 mb-1"
+                    role="list"
+                  >
+                    <li>
+                      Size
+                      : 
+                      L
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="flex min-w-0 flex-shrink-0 flex-col items-end gap-2 md:gap-4 md:row-span-2"
+              >
+                <div
+                  class="hidden w-full shrink-0 justify-end md:flex"
+                />
+                <div
+                  class="flex w-full max-w-full shrink-0 flex-col items-end gap-2 md:gap-3"
+                >
+                  <div
+                    class="text-right"
+                    data-testid="desktop-product-price"
+                  >
+                    <div
+                      class="inline-flex flex-col items-end font-semibold text-base"
+                    >
+                      <div
+                        class="flex flex-row-reverse flex-wrap items-baseline justify-end gap-2"
+                      >
+                        <span
+                          aria-label="Current price: £99.99"
+                          aria-live="polite"
+                          class="[&:not(:first-child)]:mt-6 text-xl font-bold leading-[120%] tracking-[-0.6px] text-card-foreground text-right relative"
+                        >
+                          £99.99
+                        </span>
+                        <span
+                          aria-atomic="true"
+                          aria-live="polite"
+                          class="sr-only"
+                        >
+                          Men's Classic Deer Gloves
+                           
+                          Current price: £99.99
+                        </span>
+                         
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex shrink-0 justify-end"
+                >
+                  <div
+                    class="relative flex w-fit max-w-full flex-col items-start gap-2"
+                  >
+                    <label
+                      class="items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 block text-left font-sans text-base font-semibold leading-6 text-card-foreground"
+                      data-slot="label"
+                      for="quantity"
+                    >
+                      Quantity
+                    </label>
+                    <div
+                      class="inline-flex items-center border border-input rounded-ui overflow-hidden"
+                    >
+                      <button
+                        aria-label="Decrement Quantity for the product"
+                        class="px-2.5 py-1.5 text-base font-semibold leading-normal text-foreground hover:bg-muted transition-colors focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
+                        data-testid="quantity-decrement"
+                        disabled=""
+                      >
+                        −
+                      </button>
+                      <input
+                        aria-label="Quantity"
+                        class="w-9 text-center text-sm font-semibold leading-normal text-foreground border-0 bg-transparent focus:outline-none focus:ring-0 disabled:opacity-50 disabled:cursor-not-allowed [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                        max="98"
+                        min="0"
+                        step="1"
+                        type="number"
+                        value="1"
+                      />
+                      <button
+                        aria-label="Increment Quantity for the product"
+                        class="px-2.5 py-1.5 text-base font-semibold leading-normal text-foreground hover:bg-muted transition-colors focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
+                        data-testid="quantity-increment"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProductItem stories snapshot > DiscountedPrice story renders and matches snapshot 1`] = `
+<div
+  class="max-w-2xl mx-auto"
+>
+  <div
+    class="relative"
+    data-testid="sf-product-item-061492183589M"
+  >
+    <div
+      class="bg-card text-card-foreground border-0 "
+    >
+      <div
+        class="px-3 py-4 md:px-6 md:py-7 relative overflow-hidden"
+      >
+        <div
+          class="grid md:grid-cols-[140px_1fr] grid-cols-[72px_1fr] gap-5 min-w-0"
+        >
+          <div
+            class="flex-shrink-0 flex items-start justify-center"
+          >
+            <div
+              class="bg-muted flex-shrink-0 flex items-center justify-center aspect-square overflow-hidden rounded-ui md:w-32 w-16"
+              data-slot="product-item-image"
+            >
+              <img
+                alt="Men's Classic Deer Gloves, , small"
+                class="h-full w-full object-contain"
+                src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwd4659c06/images/small/TG508_206.webp?sfrm=jpg&q=70"
+              />
+            </div>
+          </div>
+          <div
+            class="flex-1 space-y-3 min-w-0"
+          >
+            <div
+              class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-2 md:gap-x-6 md:gap-y-1 min-w-0"
+            >
+              <div
+                class="min-w-0"
+              >
+                <div
+                  class="md:hidden float-right ml-2"
+                />
+                <div
+                  class="mb-2 md:mb-4 flex items-start gap-2 min-w-0"
+                >
+                  <h2
+                    class="text-left text-xl font-semibold leading-7 tracking-[-0.5px] text-card-foreground min-w-0 flex-1"
+                  >
+                    <a
+                      class="hover:text-primary block break-words"
+                      href="/RefArchGlobal/en-GB/product/TG508M"
+                      title="Men's Classic Deer Gloves"
+                      to="/RefArchGlobal/en-GB/product/TG508M"
+                    >
+                      Men's Classic Deer Gloves
+                    </a>
+                  </h2>
+                </div>
+                <div>
+                  <ul
+                    class="text-sm font-normal leading-5 text-muted-foreground space-y-1 mb-1"
+                    role="list"
+                  >
+                    <li>
+                      Size
+                      : 
+                      L
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="flex min-w-0 flex-shrink-0 flex-col items-end gap-2 md:gap-4 md:row-span-2"
+              >
+                <div
+                  class="hidden w-full shrink-0 justify-end md:flex"
+                />
+                <div
+                  class="flex w-full max-w-full shrink-0 flex-col items-end gap-2 md:gap-3"
+                >
+                  <div
+                    class="text-right"
+                    data-testid="desktop-product-price"
+                  >
+                    <div
+                      class="inline-flex flex-col items-end font-semibold text-base"
+                    >
+                      <div
+                        class="flex flex-row-reverse flex-wrap items-baseline justify-end gap-2"
+                      >
+                        <span
+                          aria-label="Current price: £79.99"
+                          aria-live="polite"
+                          class="[&:not(:first-child)]:mt-6 text-xl font-bold leading-[120%] tracking-[-0.6px] text-card-foreground text-right relative"
+                        >
+                          £79.99
+                        </span>
+                        <span
+                          aria-atomic="true"
+                          aria-live="polite"
+                          class="sr-only"
+                        >
+                          Men's Classic Deer Gloves
+                           
+                          Current price: £79.99
+                        </span>
+                         
+                        <span
+                          aria-label="List price: £99.99"
+                          class="text-xl font-normal leading-[120%] tracking-[-0.6px] text-card-foreground text-right line-through relative"
+                        >
+                          £99.99
+                        </span>
+                        <span
+                          aria-atomic="true"
+                          aria-live="polite"
+                          class="sr-only"
+                        >
+                          Men's Classic Deer Gloves
+                           
+                          List price: £99.99
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex w-full justify-end"
+                  >
+                    <span
+                      class="inline-flex items-center justify-center rounded-full w-fit shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent [a&]:hover:bg-primary/90 h-auto min-h-0 border-0 bg-muted px-1.5 py-0.5 text-xs font-semibold leading-4 text-secondary-foreground whitespace-normal break-words"
+                      data-slot="badge"
+                    >
+                      Saved £20.00
+                    </span>
+                  </div>
+                </div>
+                <div
+                  class="flex shrink-0 justify-end"
+                >
+                  <div
+                    class="relative flex w-fit max-w-full flex-col items-start gap-2"
+                  >
+                    <label
+                      class="items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 block text-left font-sans text-base font-semibold leading-6 text-card-foreground"
+                      data-slot="label"
+                      for="quantity"
+                    >
+                      Quantity
+                    </label>
+                    <div
+                      class="inline-flex items-center border border-input rounded-ui overflow-hidden"
+                    >
+                      <button
+                        aria-label="Decrement Quantity for the product"
+                        class="px-2.5 py-1.5 text-base font-semibold leading-normal text-foreground hover:bg-muted transition-colors focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
+                        data-testid="quantity-decrement"
+                        disabled=""
+                      >
+                        −
+                      </button>
+                      <input
+                        aria-label="Quantity"
+                        class="w-9 text-center text-sm font-semibold leading-normal text-foreground border-0 bg-transparent focus:outline-none focus:ring-0 disabled:opacity-50 disabled:cursor-not-allowed [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                        max="98"
+                        min="0"
+                        step="1"
+                        type="number"
+                        value="1"
+                      />
+                      <button
+                        aria-label="Increment Quantity for the product"
+                        class="px-2.5 py-1.5 text-base font-semibold leading-normal text-foreground hover:bg-muted transition-colors focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
+                        data-testid="quantity-increment"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProductItem stories snapshot > LongProductName story renders and matches snapshot 1`] = `
+<div
+  class="max-w-2xl mx-auto"
+>
+  <div
+    class="relative"
+    data-testid="sf-product-item-061492183589M"
+  >
+    <div
+      class="bg-card text-card-foreground border-0 "
+    >
+      <div
+        class="px-3 py-4 md:px-6 md:py-7 relative overflow-hidden"
+      >
+        <div
+          class="grid md:grid-cols-[140px_1fr] grid-cols-[72px_1fr] gap-5 min-w-0"
+        >
+          <div
+            class="flex-shrink-0 flex items-start justify-center"
+          >
+            <div
+              class="bg-muted flex-shrink-0 flex items-center justify-center aspect-square overflow-hidden rounded-ui md:w-32 w-16"
+              data-slot="product-item-image"
+            >
+              <img
+                alt="Men's Classic Deer Gloves, , small"
+                class="h-full w-full object-contain"
+                src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwd4659c06/images/small/TG508_206.webp?sfrm=jpg&q=70"
+              />
+            </div>
+          </div>
+          <div
+            class="flex-1 space-y-3 min-w-0"
+          >
+            <div
+              class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-2 md:gap-x-6 md:gap-y-1 min-w-0"
+            >
+              <div
+                class="min-w-0"
+              >
+                <div
+                  class="md:hidden float-right ml-2"
+                />
+                <div
+                  class="mb-2 md:mb-4 flex items-start gap-2 min-w-0"
+                >
+                  <h2
+                    class="text-left text-xl font-semibold leading-7 tracking-[-0.5px] text-card-foreground min-w-0 flex-1"
+                  >
+                    <a
+                      class="hover:text-primary block break-words"
+                      href="/RefArchGlobal/en-GB/product/TG508M"
+                      title="Women's Premium Extra-Fine Italian Merino Wool Blend Long-Sleeve Quarter-Zip Sweater with Elbow Patches and Reinforced Stitching"
+                      to="/RefArchGlobal/en-GB/product/TG508M"
+                    >
+                      Women's Premium Extra-Fine Italian Merino Wool Blend Long-Sleeve Quarter-Zip Sweater with Elbow Patches and Reinforced Stitching
+                    </a>
+                  </h2>
+                </div>
+                <div>
+                  <ul
+                    class="text-sm font-normal leading-5 text-muted-foreground space-y-1 mb-1"
+                    role="list"
+                  >
+                    <li>
+                      Size
+                      : 
+                      L
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="flex min-w-0 flex-shrink-0 flex-col items-end gap-2 md:gap-4 md:row-span-2"
+              >
+                <div
+                  class="hidden w-full shrink-0 justify-end md:flex"
+                />
+                <div
+                  class="flex w-full max-w-full shrink-0 flex-col items-end gap-2 md:gap-3"
+                >
+                  <div
+                    class="text-right"
+                    data-testid="desktop-product-price"
+                  >
+                    <div
+                      class="inline-flex flex-col items-end font-semibold text-base"
+                    >
+                      <div
+                        class="flex flex-row-reverse flex-wrap items-baseline justify-end gap-2"
+                      >
+                        <span
+                          aria-label="Current price: £99.99"
+                          aria-live="polite"
+                          class="[&:not(:first-child)]:mt-6 text-xl font-bold leading-[120%] tracking-[-0.6px] text-card-foreground text-right relative"
+                        >
+                          £99.99
+                        </span>
+                        <span
+                          aria-atomic="true"
+                          aria-live="polite"
+                          class="sr-only"
+                        >
+                          Women's Premium Extra-Fine Italian Merino Wool Blend Long-Sleeve Quarter-Zip Sweater with Elbow Patches and Reinforced Stitching
+                           
+                          Current price: £99.99
+                        </span>
+                         
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex shrink-0 justify-end"
+                >
+                  <div
+                    class="relative flex w-fit max-w-full flex-col items-start gap-2"
+                  >
+                    <label
+                      class="items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 block text-left font-sans text-base font-semibold leading-6 text-card-foreground"
+                      data-slot="label"
+                      for="quantity"
+                    >
+                      Quantity
+                    </label>
+                    <div
+                      class="inline-flex items-center border border-input rounded-ui overflow-hidden"
+                    >
+                      <button
+                        aria-label="Decrement Quantity for the product"
+                        class="px-2.5 py-1.5 text-base font-semibold leading-normal text-foreground hover:bg-muted transition-colors focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
+                        data-testid="quantity-decrement"
+                        disabled=""
+                      >
+                        −
+                      </button>
+                      <input
+                        aria-label="Quantity"
+                        class="w-9 text-center text-sm font-semibold leading-normal text-foreground border-0 bg-transparent focus:outline-none focus:ring-0 disabled:opacity-50 disabled:cursor-not-allowed [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                        max="98"
+                        min="0"
+                        step="1"
+                        type="number"
+                        value="1"
+                      />
+                      <button
+                        aria-label="Increment Quantity for the product"
+                        class="px-2.5 py-1.5 text-base font-semibold leading-normal text-foreground hover:bg-muted transition-colors focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
+                        data-testid="quantity-increment"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProductItem stories snapshot > MissingImages story renders and matches snapshot 1`] = `
+<div
+  class="max-w-2xl mx-auto"
+>
+  <div
+    class="relative"
+    data-testid="sf-product-item-061492183589M"
+  >
+    <div
+      class="bg-card text-card-foreground border-0 "
+    >
+      <div
+        class="px-3 py-4 md:px-6 md:py-7 relative overflow-hidden"
+      >
+        <div
+          class="grid md:grid-cols-[140px_1fr] grid-cols-[72px_1fr] gap-5 min-w-0"
+        >
+          <div
+            class="flex-shrink-0 flex items-start justify-center"
+          >
+            <div
+              class="bg-muted flex-shrink-0 flex items-center justify-center aspect-square overflow-hidden rounded-ui md:w-32 w-16"
+              data-slot="product-item-image"
+            >
+              <div
+                class="w-full h-full bg-muted"
+              />
+            </div>
+          </div>
+          <div
+            class="flex-1 space-y-3 min-w-0"
+          >
+            <div
+              class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-2 md:gap-x-6 md:gap-y-1 min-w-0"
+            >
+              <div
+                class="min-w-0"
+              >
+                <div
+                  class="md:hidden float-right ml-2"
+                />
+                <div
+                  class="mb-2 md:mb-4 flex items-start gap-2 min-w-0"
+                >
+                  <h2
+                    class="text-left text-xl font-semibold leading-7 tracking-[-0.5px] text-card-foreground min-w-0 flex-1"
+                  >
+                    <a
+                      class="hover:text-primary block break-words"
+                      href="/RefArchGlobal/en-GB/product/TG508M"
+                      title="Men's Classic Deer Gloves"
+                      to="/RefArchGlobal/en-GB/product/TG508M"
+                    >
+                      Men's Classic Deer Gloves
+                    </a>
+                  </h2>
+                </div>
+                <div>
+                  <ul
+                    class="text-sm font-normal leading-5 text-muted-foreground space-y-1 mb-1"
+                    role="list"
+                  >
+                    <li>
+                      Size
+                      : 
+                      L
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="flex min-w-0 flex-shrink-0 flex-col items-end gap-2 md:gap-4 md:row-span-2"
+              >
+                <div
+                  class="hidden w-full shrink-0 justify-end md:flex"
+                />
+                <div
+                  class="flex w-full max-w-full shrink-0 flex-col items-end gap-2 md:gap-3"
+                >
+                  <div
+                    class="text-right"
+                    data-testid="desktop-product-price"
+                  >
+                    <div
+                      class="inline-flex flex-col items-end font-semibold text-base"
+                    >
+                      <div
+                        class="flex flex-row-reverse flex-wrap items-baseline justify-end gap-2"
+                      >
+                        <span
+                          aria-label="Current price: £99.99"
+                          aria-live="polite"
+                          class="[&:not(:first-child)]:mt-6 text-xl font-bold leading-[120%] tracking-[-0.6px] text-card-foreground text-right relative"
+                        >
+                          £99.99
+                        </span>
+                        <span
+                          aria-atomic="true"
+                          aria-live="polite"
+                          class="sr-only"
+                        >
+                          Men's Classic Deer Gloves
+                           
+                          Current price: £99.99
+                        </span>
+                         
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex shrink-0 justify-end"
+                >
+                  <div
+                    class="relative flex w-fit max-w-full flex-col items-start gap-2"
+                  >
+                    <label
+                      class="items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 block text-left font-sans text-base font-semibold leading-6 text-card-foreground"
+                      data-slot="label"
+                      for="quantity"
+                    >
+                      Quantity
+                    </label>
+                    <div
+                      class="inline-flex items-center border border-input rounded-ui overflow-hidden"
+                    >
+                      <button
+                        aria-label="Decrement Quantity for the product"
+                        class="px-2.5 py-1.5 text-base font-semibold leading-normal text-foreground hover:bg-muted transition-colors focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
+                        data-testid="quantity-decrement"
+                        disabled=""
+                      >
+                        −
+                      </button>
+                      <input
+                        aria-label="Quantity"
+                        class="w-9 text-center text-sm font-semibold leading-normal text-foreground border-0 bg-transparent focus:outline-none focus:ring-0 disabled:opacity-50 disabled:cursor-not-allowed [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                        max="98"
+                        min="0"
+                        step="1"
+                        type="number"
+                        value="1"
+                      />
+                      <button
+                        aria-label="Increment Quantity for the product"
+                        class="px-2.5 py-1.5 text-base font-semibold leading-normal text-foreground hover:bg-muted transition-colors focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
+                        data-testid="quantity-increment"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProductItem stories snapshot > MultipleQuantity story renders and matches snapshot 1`] = `
+<div
+  class="max-w-2xl mx-auto"
+>
+  <div
+    class="relative"
+    data-testid="sf-product-item-061492183589M"
+  >
+    <div
+      class="bg-card text-card-foreground border-0 "
+    >
+      <div
+        class="px-3 py-4 md:px-6 md:py-7 relative overflow-hidden"
+      >
+        <div
+          class="grid md:grid-cols-[140px_1fr] grid-cols-[72px_1fr] gap-5 min-w-0"
+        >
+          <div
+            class="flex-shrink-0 flex items-start justify-center"
+          >
+            <div
+              class="bg-muted flex-shrink-0 flex items-center justify-center aspect-square overflow-hidden rounded-ui md:w-32 w-16"
+              data-slot="product-item-image"
+            >
+              <img
+                alt="Men's Classic Deer Gloves, , small"
+                class="h-full w-full object-contain"
+                src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwd4659c06/images/small/TG508_206.webp?sfrm=jpg&q=70"
+              />
+            </div>
+          </div>
+          <div
+            class="flex-1 space-y-3 min-w-0"
+          >
+            <div
+              class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-2 md:gap-x-6 md:gap-y-1 min-w-0"
+            >
+              <div
+                class="min-w-0"
+              >
+                <div
+                  class="md:hidden float-right ml-2"
+                />
+                <div
+                  class="mb-2 md:mb-4 flex items-start gap-2 min-w-0"
+                >
+                  <h2
+                    class="text-left text-xl font-semibold leading-7 tracking-[-0.5px] text-card-foreground min-w-0 flex-1"
+                  >
+                    <a
+                      class="hover:text-primary block break-words"
+                      href="/RefArchGlobal/en-GB/product/TG508M"
+                      title="Men's Classic Deer Gloves"
+                      to="/RefArchGlobal/en-GB/product/TG508M"
+                    >
+                      Men's Classic Deer Gloves
+                    </a>
+                  </h2>
+                </div>
+                <div>
+                  <ul
+                    class="text-sm font-normal leading-5 text-muted-foreground space-y-1 mb-1"
+                    role="list"
+                  >
+                    <li>
+                      Size
+                      : 
+                      L
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="flex min-w-0 flex-shrink-0 flex-col items-end gap-2 md:gap-4 md:row-span-2"
+              >
+                <div
+                  class="hidden w-full shrink-0 justify-end md:flex"
+                />
+                <div
+                  class="flex w-full max-w-full shrink-0 flex-col items-end gap-2 md:gap-3"
+                >
+                  <div
+                    class="text-right"
+                    data-testid="desktop-product-price"
+                  >
+                    <div
+                      class="inline-flex flex-col items-end font-semibold text-base"
+                    >
+                      <div
+                        class="flex flex-row-reverse flex-wrap items-baseline justify-end gap-2"
+                      >
+                        <span
+                          aria-label="Current price: £299.97"
+                          aria-live="polite"
+                          class="[&:not(:first-child)]:mt-6 text-xl font-bold leading-[120%] tracking-[-0.6px] text-card-foreground text-right relative"
+                        >
+                          £299.97
+                        </span>
+                        <span
+                          aria-atomic="true"
+                          aria-live="polite"
+                          class="sr-only"
+                        >
+                          Men's Classic Deer Gloves
+                           
+                          Current price: £299.97
+                        </span>
+                         
+                      </div>
+                    </div>
+                    <div
+                      class="text-right text-muted-foreground text-sm"
+                    >
+                      £99.99
+                       
+                      each
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex shrink-0 justify-end"
+                >
+                  <div
+                    class="relative flex w-fit max-w-full flex-col items-start gap-2"
+                  >
+                    <label
+                      class="items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 block text-left font-sans text-base font-semibold leading-6 text-card-foreground"
+                      data-slot="label"
+                      for="quantity"
+                    >
+                      Quantity
+                    </label>
+                    <div
+                      class="inline-flex items-center border border-input rounded-ui overflow-hidden"
+                    >
+                      <button
+                        aria-label="Decrement Quantity for the product"
+                        class="px-2.5 py-1.5 text-base font-semibold leading-normal text-foreground hover:bg-muted transition-colors focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
+                        data-testid="quantity-decrement"
+                      >
+                        −
+                      </button>
+                      <input
+                        aria-label="Quantity"
+                        class="w-9 text-center text-sm font-semibold leading-normal text-foreground border-0 bg-transparent focus:outline-none focus:ring-0 disabled:opacity-50 disabled:cursor-not-allowed [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                        max="98"
+                        min="0"
+                        step="1"
+                        type="number"
+                        value="3"
+                      />
+                      <button
+                        aria-label="Increment Quantity for the product"
+                        class="px-2.5 py-1.5 text-base font-semibold leading-normal text-foreground hover:bg-muted transition-colors focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
+                        data-testid="quantity-increment"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProductItem stories snapshot > NoProductItem story renders and matches snapshot 1`] = `
+<div
+  class="max-w-2xl mx-auto"
+>
+  <div
+    data-testid="product-item-error"
+  >
+    Product data not available
+  </div>
+</div>
+`;
+
+exports[`ProductItem stories snapshot > SummaryVariant story renders and matches snapshot 1`] = `
+<div
+  class="max-w-2xl mx-auto"
+>
+  <div
+    class="grid md:grid-cols-[112px_1fr] grid-cols-[72px_1fr] gap-4"
+    data-testid="sf-product-item-summary-061492183589M"
+  >
+    <div
+      class="flex items-center justify-center"
+    >
+      <div
+        class="bg-muted flex-shrink-0 flex items-center justify-center aspect-square overflow-hidden rounded-ui w-16"
+        data-slot="product-item-image"
+      >
+        <img
+          alt="Men's Classic Deer Gloves, , small"
+          class="h-full w-full object-contain"
+          src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwd4659c06/images/small/TG508_206.webp?sfrm=jpg&q=70"
+        />
+      </div>
+    </div>
+    <div
+      class="flex-1 space-y-1 min-w-0"
+    >
+      <div
+        class="mb-2 md:mb-4 flex items-start gap-2 min-w-0"
+      >
+        <h2
+          class="text-left text-xl font-semibold leading-7 tracking-[-0.5px] text-card-foreground min-w-0 flex-1"
+        >
+          <a
+            class="hover:text-primary block break-words"
+            href="/RefArchGlobal/en-GB/product/TG508M"
+            title="Men's Classic Deer Gloves"
+            to="/RefArchGlobal/en-GB/product/TG508M"
+          >
+            Men's Classic Deer Gloves
+          </a>
+        </h2>
+      </div>
+      <div>
+        <div
+          class="text-sm text-muted-foreground"
+        >
+          Qty:
+           
+          1
+        </div>
+        <ul
+          class="text-sm font-normal leading-5 text-muted-foreground space-y-1 mb-1"
+          role="list"
+        >
+          <li>
+            Size
+            : 
+            L
+          </li>
+        </ul>
+      </div>
+      <div
+        class="items-center gap-2 text-sm"
+      >
+        <span
+          aria-label="Current price: £99.99"
+          aria-live="polite"
+          class="[&:not(:first-child)]:mt-6 text-card-foreground text-right font-semibold text-sm leading-none relative"
+        >
+          £99.99
+        </span>
+        <span
+          aria-atomic="true"
+          aria-live="polite"
+          class="sr-only"
+        >
+          Men's Classic Deer Gloves
+           
+          Current price: £99.99
+        </span>
+         
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProductItem stories snapshot > WithActions story renders and matches snapshot 1`] = `
+<div
+  class="max-w-2xl mx-auto"
+>
+  <div
+    class="relative"
+    data-testid="sf-product-item-061492183589M"
+  >
+    <div
+      class="bg-card text-card-foreground border-0 "
+    >
+      <div
+        class="px-3 py-4 md:px-6 md:py-7 relative overflow-hidden"
+      >
+        <div
+          class="grid md:grid-cols-[140px_1fr] grid-cols-[72px_1fr] gap-5 min-w-0"
+        >
+          <div
+            class="flex-shrink-0 flex items-start justify-center"
+          >
+            <div
+              class="bg-muted flex-shrink-0 flex items-center justify-center aspect-square overflow-hidden rounded-ui md:w-32 w-16"
+              data-slot="product-item-image"
+            >
+              <img
+                alt="Men's Classic Deer Gloves, , small"
+                class="h-full w-full object-contain"
+                src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwd4659c06/images/small/TG508_206.webp?sfrm=jpg&q=70"
+              />
+            </div>
+          </div>
+          <div
+            class="flex-1 space-y-3 min-w-0"
+          >
+            <div
+              class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-2 md:gap-x-6 md:gap-y-1 min-w-0"
+            >
+              <div
+                class="min-w-0"
+              >
+                <div
+                  class="md:hidden float-right ml-2"
+                />
+                <div
+                  class="mb-2 md:mb-4 flex items-start gap-2 min-w-0"
+                >
+                  <h2
+                    class="text-left text-xl font-semibold leading-7 tracking-[-0.5px] text-card-foreground min-w-0 flex-1"
+                  >
+                    <a
+                      class="hover:text-primary block break-words"
+                      href="/RefArchGlobal/en-GB/product/TG508M"
+                      title="Men's Classic Deer Gloves"
+                      to="/RefArchGlobal/en-GB/product/TG508M"
+                    >
+                      Men's Classic Deer Gloves
+                    </a>
+                  </h2>
+                </div>
+                <div>
+                  <ul
+                    class="text-sm font-normal leading-5 text-muted-foreground space-y-1 mb-1"
+                    role="list"
+                  >
+                    <li>
+                      Size
+                      : 
+                      L
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="mt-2"
+                >
+                  <button
+                    class="text-primary"
+                  >
+                    Edit
+                  </button>
+                </div>
+              </div>
+              <div
+                class="flex min-w-0 flex-shrink-0 flex-col items-end gap-2 md:gap-4 md:row-span-2"
+              >
+                <div
+                  class="hidden w-full shrink-0 justify-end md:flex"
+                />
+                <div
+                  class="flex w-full max-w-full shrink-0 flex-col items-end gap-2 md:gap-3"
+                >
+                  <div
+                    class="text-right"
+                    data-testid="desktop-product-price"
+                  >
+                    <div
+                      class="inline-flex flex-col items-end font-semibold text-base"
+                    >
+                      <div
+                        class="flex flex-row-reverse flex-wrap items-baseline justify-end gap-2"
+                      >
+                        <span
+                          aria-label="Current price: £99.99"
+                          aria-live="polite"
+                          class="[&:not(:first-child)]:mt-6 text-xl font-bold leading-[120%] tracking-[-0.6px] text-card-foreground text-right relative"
+                        >
+                          £99.99
+                        </span>
+                        <span
+                          aria-atomic="true"
+                          aria-live="polite"
+                          class="sr-only"
+                        >
+                          Men's Classic Deer Gloves
+                           
+                          Current price: £99.99
+                        </span>
+                         
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex shrink-0 justify-end"
+                >
+                  <div
+                    class="relative flex w-fit max-w-full flex-col items-start gap-2"
+                  >
+                    <label
+                      class="items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 block text-left font-sans text-base font-semibold leading-6 text-card-foreground"
+                      data-slot="label"
+                      for="quantity"
+                    >
+                      Quantity
+                    </label>
+                    <div
+                      class="inline-flex items-center border border-input rounded-ui overflow-hidden"
+                    >
+                      <button
+                        aria-label="Decrement Quantity for the product"
+                        class="px-2.5 py-1.5 text-base font-semibold leading-normal text-foreground hover:bg-muted transition-colors focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
+                        data-testid="quantity-decrement"
+                        disabled=""
+                      >
+                        −
+                      </button>
+                      <input
+                        aria-label="Quantity"
+                        class="w-9 text-center text-sm font-semibold leading-normal text-foreground border-0 bg-transparent focus:outline-none focus:ring-0 disabled:opacity-50 disabled:cursor-not-allowed [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                        max="98"
+                        min="0"
+                        step="1"
+                        type="number"
+                        value="1"
+                      />
+                      <button
+                        aria-label="Increment Quantity for the product"
+                        class="px-2.5 py-1.5 text-base font-semibold leading-normal text-foreground hover:bg-muted transition-colors focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
+                        data-testid="quantity-increment"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div
+                class="min-w-0 md:col-start-1 md:row-start-2"
+              >
+                <div
+                  data-testid="mobile-primary-action"
+                >
+                  <button
+                    class="text-destructive"
+                  >
+                    Remove
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`ProductItem stories snapshot > WithInventoryMessage story renders and matches snapshot 1`] = `
+<div
+  class="max-w-2xl mx-auto"
+>
+  <div
+    class="relative"
+    data-testid="sf-product-item-061492183589M"
+  >
+    <div
+      class="bg-card text-card-foreground border-0 "
+    >
+      <div
+        class="px-3 py-4 md:px-6 md:py-7 relative overflow-hidden"
+      >
+        <div
+          class="grid md:grid-cols-[140px_1fr] grid-cols-[72px_1fr] gap-5 min-w-0"
+        >
+          <div
+            class="flex-shrink-0 flex items-start justify-center"
+          >
+            <div
+              class="bg-muted flex-shrink-0 flex items-center justify-center aspect-square overflow-hidden rounded-ui md:w-32 w-16"
+              data-slot="product-item-image"
+            >
+              <img
+                alt="Men's Classic Deer Gloves, , small"
+                class="h-full w-full object-contain"
+                src="https://edge.disstg.commercecloud.salesforce.com/dw/image/v2/ZZRF_001/on/demandware.static/-/Sites-apparel-m-catalog/default/dwd4659c06/images/small/TG508_206.webp?sfrm=jpg&q=70"
+              />
+            </div>
+          </div>
+          <div
+            class="flex-1 space-y-3 min-w-0"
+          >
+            <div
+              class="grid grid-cols-1 md:grid-cols-[3fr_2fr] gap-2 md:gap-x-6 md:gap-y-1 min-w-0"
+            >
+              <div
+                class="min-w-0"
+              >
+                <div
+                  class="md:hidden float-right ml-2"
+                />
+                <div
+                  class="mb-2 md:mb-4 flex items-start gap-2 min-w-0"
+                >
+                  <h2
+                    class="text-left text-xl font-semibold leading-7 tracking-[-0.5px] text-card-foreground min-w-0 flex-1"
+                  >
+                    <a
+                      class="hover:text-primary block break-words"
+                      href="/RefArchGlobal/en-GB/product/TG508M"
+                      title="Men's Classic Deer Gloves"
+                      to="/RefArchGlobal/en-GB/product/TG508M"
+                    >
+                      Men's Classic Deer Gloves
+                    </a>
+                  </h2>
+                </div>
+                <div>
+                  <ul
+                    class="text-sm font-normal leading-5 text-muted-foreground space-y-1 mb-1"
+                    role="list"
+                  >
+                    <li>
+                      Size
+                      : 
+                      L
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="flex min-w-0 flex-shrink-0 flex-col items-end gap-2 md:gap-4 md:row-span-2"
+              >
+                <div
+                  class="hidden w-full shrink-0 justify-end md:flex"
+                />
+                <div
+                  class="flex w-full max-w-full shrink-0 flex-col items-end gap-2 md:gap-3"
+                >
+                  <div
+                    class="text-right"
+                    data-testid="desktop-product-price"
+                  >
+                    <div
+                      class="inline-flex flex-col items-end font-semibold text-base"
+                    >
+                      <div
+                        class="flex flex-row-reverse flex-wrap items-baseline justify-end gap-2"
+                      >
+                        <span
+                          aria-label="Current price: £99.99"
+                          aria-live="polite"
+                          class="[&:not(:first-child)]:mt-6 text-xl font-bold leading-[120%] tracking-[-0.6px] text-card-foreground text-right relative"
+                        >
+                          £99.99
+                        </span>
+                        <span
+                          aria-atomic="true"
+                          aria-live="polite"
+                          class="sr-only"
+                        >
+                          Men's Classic Deer Gloves
+                           
+                          Current price: £99.99
+                        </span>
+                         
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="flex shrink-0 justify-end"
+                >
+                  <div
+                    class="relative flex w-fit max-w-full flex-col items-start gap-2"
+                  >
+                    <label
+                      class="items-center gap-2 select-none group-data-[disabled=true]:pointer-events-none group-data-[disabled=true]:opacity-50 peer-disabled:cursor-not-allowed peer-disabled:opacity-50 block text-left font-sans text-base font-semibold leading-6 text-card-foreground"
+                      data-slot="label"
+                      for="quantity"
+                    >
+                      Quantity
+                    </label>
+                    <div
+                      class="inline-flex items-center border border-input rounded-ui overflow-hidden"
+                    >
+                      <button
+                        aria-label="Decrement Quantity for the product"
+                        class="px-2.5 py-1.5 text-base font-semibold leading-normal text-foreground hover:bg-muted transition-colors focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
+                        data-testid="quantity-decrement"
+                        disabled=""
+                      >
+                        −
+                      </button>
+                      <input
+                        aria-label="Quantity"
+                        class="w-9 text-center text-sm font-semibold leading-normal text-foreground border-0 bg-transparent focus:outline-none focus:ring-0 disabled:opacity-50 disabled:cursor-not-allowed [appearance:textfield] [&::-webkit-outer-spin-button]:appearance-none [&::-webkit-inner-spin-button]:appearance-none"
+                        max="98"
+                        min="0"
+                        step="1"
+                        type="number"
+                        value="1"
+                      />
+                      <button
+                        aria-label="Increment Quantity for the product"
+                        class="px-2.5 py-1.5 text-base font-semibold leading-normal text-foreground hover:bg-muted transition-colors focus:outline-none focus:ring-2 focus:ring-primary disabled:opacity-50 disabled:cursor-not-allowed"
+                        data-testid="quantity-increment"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="text-destructive font-semibold text-sm break-words"
+            >
+              Only 2 left in stock — order soon
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

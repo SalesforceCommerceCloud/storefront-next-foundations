@@ -1,0 +1,20 @@
+{
+    "contentComingSoon": "컨텐츠가 곧 제공될 예정입니다.",
+    "faq": {
+        "askAssistant": "어시스턴트에게 물어보기",
+        "faqQuestionSendToAssistantAriaLabel": "구매자 에이전트를 열고 다음 질문을 합니다. {{question}}"
+    },
+    "returnsAndWarranty": {
+        "learnMore": "정책 보기",
+        "returnConditions": "반품 조건:",
+        "howToReturn": "반품 방법:",
+        "note": "참고:",
+        "whatsCovered": "보장 내용:",
+        "whatsNotCovered": "보장되지 않는 항목:",
+        "warrantyClaims": "보증 청구:",
+        "exchangeProcess": "교환 절차:",
+        "needHelp": "도움이 필요하신가요?",
+        "contactAt": "연락처",
+        "orCall": "또는 전화"
+    }
+}

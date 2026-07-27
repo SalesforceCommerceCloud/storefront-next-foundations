@@ -1,0 +1,821 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`SocialLoginButtons stories snapshot > CustomProvider story renders and matches snapshot 1`] = `
+<div
+  data-social-login-harness="true"
+>
+  <div
+    class="space-y-3"
+  >
+    <div
+      class="relative"
+    >
+      <div
+        class="absolute inset-0 flex items-center"
+      >
+        <span
+          class="w-full border-t border-border/60"
+        />
+      </div>
+      <div
+        class="relative flex justify-center text-xs uppercase"
+      >
+        <span
+          class="bg-background px-2 text-muted-foreground"
+        >
+          Or continue with
+        </span>
+      </div>
+    </div>
+    <div
+      class="grid gap-2"
+    >
+      <form
+        method="post"
+      >
+        <input
+          name="loginMode"
+          type="hidden"
+          value="social"
+        />
+        <input
+          name="provider"
+          type="hidden"
+          value="GitHub"
+        />
+        <button
+          class="justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3 flex w-full items-start"
+          data-size="default"
+          data-slot="button"
+          data-variant="outline"
+          type="submit"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-key-round size-4 shrink-0"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"
+            />
+            <circle
+              cx="16.5"
+              cy="7.5"
+              fill="currentColor"
+              r=".5"
+            />
+          </svg>
+          <span>
+            Continue with GitHub
+          </span>
+        </button>
+      </form>
+      <form
+        method="post"
+      >
+        <input
+          name="loginMode"
+          type="hidden"
+          value="social"
+        />
+        <input
+          name="provider"
+          type="hidden"
+          value="Discord"
+        />
+        <button
+          class="justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3 flex w-full items-start"
+          data-size="default"
+          data-slot="button"
+          data-variant="outline"
+          type="submit"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-key-round size-4 shrink-0"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"
+            />
+            <circle
+              cx="16.5"
+              cy="7.5"
+              fill="currentColor"
+              r=".5"
+            />
+          </svg>
+          <span>
+            Continue with Discord
+          </span>
+        </button>
+      </form>
+      <form
+        method="post"
+      >
+        <input
+          name="loginMode"
+          type="hidden"
+          value="social"
+        />
+        <input
+          name="provider"
+          type="hidden"
+          value="Twitter"
+        />
+        <button
+          class="justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3 flex w-full items-start"
+          data-size="default"
+          data-slot="button"
+          data-variant="outline"
+          type="submit"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-key-round size-4 shrink-0"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"
+            />
+            <circle
+              cx="16.5"
+              cy="7.5"
+              fill="currentColor"
+              r=".5"
+            />
+          </svg>
+          <span>
+            Continue with Twitter
+          </span>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SocialLoginButtons stories snapshot > Default story renders and matches snapshot 1`] = `
+<div
+  data-social-login-harness="true"
+>
+  <div
+    class="space-y-3"
+  >
+    <div
+      class="relative"
+    >
+      <div
+        class="absolute inset-0 flex items-center"
+      >
+        <span
+          class="w-full border-t border-border/60"
+        />
+      </div>
+      <div
+        class="relative flex justify-center text-xs uppercase"
+      >
+        <span
+          class="bg-background px-2 text-muted-foreground"
+        >
+          Or continue with
+        </span>
+      </div>
+    </div>
+    <div
+      class="grid gap-2"
+    >
+      <form
+        method="post"
+      >
+        <input
+          name="loginMode"
+          type="hidden"
+          value="social"
+        />
+        <input
+          name="provider"
+          type="hidden"
+          value="Apple"
+        />
+        <button
+          class="justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3 flex w-full items-start"
+          data-size="default"
+          data-slot="button"
+          data-variant="outline"
+          type="submit"
+        >
+          <svg
+            aria-hidden="true"
+            class="size-4 shrink-0"
+            fill="currentColor"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>
+              Apple
+            </title>
+            <path
+              d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"
+            />
+          </svg>
+          <span>
+            Continue with Apple
+          </span>
+        </button>
+      </form>
+      <form
+        method="post"
+      >
+        <input
+          name="loginMode"
+          type="hidden"
+          value="social"
+        />
+        <input
+          name="provider"
+          type="hidden"
+          value="Google"
+        />
+        <button
+          class="justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3 flex w-full items-start"
+          data-size="default"
+          data-slot="button"
+          data-variant="outline"
+          type="submit"
+        >
+          <svg
+            aria-hidden="true"
+            class="size-4 shrink-0 self-center"
+            fill="none"
+            viewBox="10 10 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M29.6 20.2273C29.6 19.5182 29.5364 18.8364 29.4182 18.1818H20V22.05H25.3818C25.15 23.3 24.4455 24.3591 23.3864 25.0682V27.5773H26.6182C28.5091 25.8364 29.6 23.2727 29.6 20.2273Z"
+              fill="#4285F4"
+            />
+            <path
+              d="M20 30C22.7 30 24.9636 29.1045 26.6181 27.5773L23.3863 25.0682C22.4909 25.6682 21.3454 26.0227 20 26.0227C17.3954 26.0227 15.1909 24.2636 14.4045 21.9H11.0636V24.4909C12.7091 27.7591 16.0909 30 20 30Z"
+              fill="#34A853"
+            />
+            <path
+              d="M14.4045 21.9C14.2045 21.3 14.0909 20.6591 14.0909 20C14.0909 19.3409 14.2045 18.7 14.4045 18.1V15.5091H11.0636C10.3864 16.8591 10 18.3864 10 20C10 21.6136 10.3864 23.1409 11.0636 24.4909L14.4045 21.9Z"
+              fill="#FBBC04"
+            />
+            <path
+              d="M20 13.9773C21.4681 13.9773 22.7863 14.4818 23.8227 15.4727L26.6909 12.6045C24.9591 10.9909 22.6954 10 20 10C16.0909 10 12.7091 12.2409 11.0636 15.5091L14.4045 18.1C15.1909 15.7364 17.3954 13.9773 20 13.9773Z"
+              fill="#E94235"
+            />
+          </svg>
+          <span>
+            Continue with Google
+          </span>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SocialLoginButtons stories snapshot > InLoginForm story renders and matches snapshot 1`] = `
+<div
+  data-social-login-harness="true"
+>
+  <div
+    class="w-full max-w-md p-6 bg-background border rounded-none"
+  >
+    <div
+      class="mb-6"
+    >
+      <h1
+        class="text-2xl font-bold text-foreground"
+      >
+        Welcome Back
+      </h1>
+      <p
+        class="text-sm text-muted-foreground mt-1"
+      >
+        Sign in to your account using your preferred method
+      </p>
+    </div>
+    <div
+      class="space-y-3"
+    >
+      <div
+        class="relative"
+      >
+        <div
+          class="absolute inset-0 flex items-center"
+        >
+          <span
+            class="w-full border-t border-border/60"
+          />
+        </div>
+        <div
+          class="relative flex justify-center text-xs uppercase"
+        >
+          <span
+            class="bg-background px-2 text-muted-foreground"
+          >
+            Or continue with
+          </span>
+        </div>
+      </div>
+      <div
+        class="grid gap-2"
+      >
+        <form
+          method="post"
+        >
+          <input
+            name="loginMode"
+            type="hidden"
+            value="social"
+          />
+          <input
+            name="provider"
+            type="hidden"
+            value="Apple"
+          />
+          <button
+            class="justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3 flex w-full items-start"
+            data-size="default"
+            data-slot="button"
+            data-variant="outline"
+            type="submit"
+          >
+            <svg
+              aria-hidden="true"
+              class="size-4 shrink-0"
+              fill="currentColor"
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>
+                Apple
+              </title>
+              <path
+                d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"
+              />
+            </svg>
+            <span>
+              Continue with Apple
+            </span>
+          </button>
+        </form>
+        <form
+          method="post"
+        >
+          <input
+            name="loginMode"
+            type="hidden"
+            value="social"
+          />
+          <input
+            name="provider"
+            type="hidden"
+            value="Google"
+          />
+          <button
+            class="justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3 flex w-full items-start"
+            data-size="default"
+            data-slot="button"
+            data-variant="outline"
+            type="submit"
+          >
+            <svg
+              aria-hidden="true"
+              class="size-4 shrink-0 self-center"
+              fill="none"
+              viewBox="10 10 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M29.6 20.2273C29.6 19.5182 29.5364 18.8364 29.4182 18.1818H20V22.05H25.3818C25.15 23.3 24.4455 24.3591 23.3864 25.0682V27.5773H26.6182C28.5091 25.8364 29.6 23.2727 29.6 20.2273Z"
+                fill="#4285F4"
+              />
+              <path
+                d="M20 30C22.7 30 24.9636 29.1045 26.6181 27.5773L23.3863 25.0682C22.4909 25.6682 21.3454 26.0227 20 26.0227C17.3954 26.0227 15.1909 24.2636 14.4045 21.9H11.0636V24.4909C12.7091 27.7591 16.0909 30 20 30Z"
+                fill="#34A853"
+              />
+              <path
+                d="M14.4045 21.9C14.2045 21.3 14.0909 20.6591 14.0909 20C14.0909 19.3409 14.2045 18.7 14.4045 18.1V15.5091H11.0636C10.3864 16.8591 10 18.3864 10 20C10 21.6136 10.3864 23.1409 11.0636 24.4909L14.4045 21.9Z"
+                fill="#FBBC04"
+              />
+              <path
+                d="M20 13.9773C21.4681 13.9773 22.7863 14.4818 23.8227 15.4727L26.6909 12.6045C24.9591 10.9909 22.6954 10 20 10C16.0909 10 12.7091 12.2409 11.0636 15.5091L14.4045 18.1C15.1909 15.7364 17.3954 13.9773 20 13.9773Z"
+                fill="#E94235"
+              />
+            </svg>
+            <span>
+              Continue with Google
+            </span>
+          </button>
+        </form>
+      </div>
+    </div>
+    <div
+      class="mt-6"
+    >
+      <div
+        class="relative"
+      >
+        <div
+          class="absolute inset-0 flex items-center"
+        >
+          <span
+            class="w-full border-t border-border/60"
+          />
+        </div>
+        <div
+          class="relative flex justify-center text-xs uppercase"
+        >
+          <span
+            class="bg-background px-2 text-muted-foreground"
+          >
+            Or continue with email
+          </span>
+        </div>
+      </div>
+      <form
+        class="mt-6 space-y-4"
+      >
+        <div>
+          <label
+            class="block text-sm font-medium mb-1"
+            for="email"
+          >
+            Email
+          </label>
+          <input
+            class="w-full px-3 py-2 border border-border rounded-md"
+            id="email"
+            placeholder="Enter your email"
+            type="email"
+          />
+        </div>
+        <div>
+          <label
+            class="block text-sm font-medium mb-1"
+            for="password"
+          >
+            Password
+          </label>
+          <input
+            class="w-full px-3 py-2 border border-border rounded-md"
+            id="password"
+            placeholder="Enter your password"
+            type="password"
+          />
+        </div>
+        <button
+          class="w-full bg-primary text-primary-foreground py-2 px-4 rounded-md hover:bg-primary/90"
+          type="submit"
+        >
+          Sign In
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SocialLoginButtons stories snapshot > MultipleProviders story renders and matches snapshot 1`] = `
+<div
+  data-social-login-harness="true"
+>
+  <div
+    class="space-y-3"
+  >
+    <div
+      class="relative"
+    >
+      <div
+        class="absolute inset-0 flex items-center"
+      >
+        <span
+          class="w-full border-t border-border/60"
+        />
+      </div>
+      <div
+        class="relative flex justify-center text-xs uppercase"
+      >
+        <span
+          class="bg-background px-2 text-muted-foreground"
+        >
+          Or continue with
+        </span>
+      </div>
+    </div>
+    <div
+      class="grid gap-2"
+    >
+      <form
+        method="post"
+      >
+        <input
+          name="loginMode"
+          type="hidden"
+          value="social"
+        />
+        <input
+          name="provider"
+          type="hidden"
+          value="Apple"
+        />
+        <button
+          class="justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3 flex w-full items-start"
+          data-size="default"
+          data-slot="button"
+          data-variant="outline"
+          type="submit"
+        >
+          <svg
+            aria-hidden="true"
+            class="size-4 shrink-0"
+            fill="currentColor"
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <title>
+              Apple
+            </title>
+            <path
+              d="M12.152 6.896c-.948 0-2.415-1.078-3.96-1.04-2.04.027-3.91 1.183-4.961 3.014-2.117 3.675-.546 9.103 1.519 12.09 1.013 1.454 2.208 3.09 3.792 3.039 1.52-.065 2.09-.987 3.935-.987 1.831 0 2.35.987 3.96.948 1.637-.026 2.676-1.48 3.676-2.948 1.156-1.688 1.636-3.325 1.662-3.415-.039-.013-3.182-1.221-3.22-4.857-.026-3.04 2.48-4.494 2.597-4.559-1.429-2.09-3.623-2.324-4.39-2.376-2-.156-3.675 1.09-4.61 1.09zM15.53 3.83c.843-1.012 1.4-2.427 1.245-3.83-1.207.052-2.662.805-3.532 1.818-.78.896-1.454 2.338-1.273 3.714 1.338.104 2.715-.688 3.559-1.701"
+            />
+          </svg>
+          <span>
+            Continue with Apple
+          </span>
+        </button>
+      </form>
+      <form
+        method="post"
+      >
+        <input
+          name="loginMode"
+          type="hidden"
+          value="social"
+        />
+        <input
+          name="provider"
+          type="hidden"
+          value="Google"
+        />
+        <button
+          class="justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3 flex w-full items-start"
+          data-size="default"
+          data-slot="button"
+          data-variant="outline"
+          type="submit"
+        >
+          <svg
+            aria-hidden="true"
+            class="size-4 shrink-0 self-center"
+            fill="none"
+            viewBox="10 10 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M29.6 20.2273C29.6 19.5182 29.5364 18.8364 29.4182 18.1818H20V22.05H25.3818C25.15 23.3 24.4455 24.3591 23.3864 25.0682V27.5773H26.6182C28.5091 25.8364 29.6 23.2727 29.6 20.2273Z"
+              fill="#4285F4"
+            />
+            <path
+              d="M20 30C22.7 30 24.9636 29.1045 26.6181 27.5773L23.3863 25.0682C22.4909 25.6682 21.3454 26.0227 20 26.0227C17.3954 26.0227 15.1909 24.2636 14.4045 21.9H11.0636V24.4909C12.7091 27.7591 16.0909 30 20 30Z"
+              fill="#34A853"
+            />
+            <path
+              d="M14.4045 21.9C14.2045 21.3 14.0909 20.6591 14.0909 20C14.0909 19.3409 14.2045 18.7 14.4045 18.1V15.5091H11.0636C10.3864 16.8591 10 18.3864 10 20C10 21.6136 10.3864 23.1409 11.0636 24.4909L14.4045 21.9Z"
+              fill="#FBBC04"
+            />
+            <path
+              d="M20 13.9773C21.4681 13.9773 22.7863 14.4818 23.8227 15.4727L26.6909 12.6045C24.9591 10.9909 22.6954 10 20 10C16.0909 10 12.7091 12.2409 11.0636 15.5091L14.4045 18.1C15.1909 15.7364 17.3954 13.9773 20 13.9773Z"
+              fill="#E94235"
+            />
+          </svg>
+          <span>
+            Continue with Google
+          </span>
+        </button>
+      </form>
+      <form
+        method="post"
+      >
+        <input
+          name="loginMode"
+          type="hidden"
+          value="social"
+        />
+        <input
+          name="provider"
+          type="hidden"
+          value="Facebook"
+        />
+        <button
+          class="justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3 flex w-full items-start"
+          data-size="default"
+          data-slot="button"
+          data-variant="outline"
+          type="submit"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-key-round size-4 shrink-0"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"
+            />
+            <circle
+              cx="16.5"
+              cy="7.5"
+              fill="currentColor"
+              r=".5"
+            />
+          </svg>
+          <span>
+            Continue with Facebook
+          </span>
+        </button>
+      </form>
+      <form
+        method="post"
+      >
+        <input
+          name="loginMode"
+          type="hidden"
+          value="social"
+        />
+        <input
+          name="provider"
+          type="hidden"
+          value="Microsoft"
+        />
+        <button
+          class="justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3 flex w-full items-start"
+          data-size="default"
+          data-slot="button"
+          data-variant="outline"
+          type="submit"
+        >
+          <svg
+            aria-hidden="true"
+            class="lucide lucide-key-round size-4 shrink-0"
+            fill="none"
+            height="24"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.586 17.414A2 2 0 0 0 2 18.828V21a1 1 0 0 0 1 1h3a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h1a1 1 0 0 0 1-1v-1a1 1 0 0 1 1-1h.172a2 2 0 0 0 1.414-.586l.814-.814a6.5 6.5 0 1 0-4-4z"
+            />
+            <circle
+              cx="16.5"
+              cy="7.5"
+              fill="currentColor"
+              r=".5"
+            />
+          </svg>
+          <span>
+            Continue with Microsoft
+          </span>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SocialLoginButtons stories snapshot > NoProviders story renders and matches snapshot 1`] = `
+<div
+  data-social-login-harness="true"
+/>
+`;
+
+exports[`SocialLoginButtons stories snapshot > SingleProvider story renders and matches snapshot 1`] = `
+<div
+  data-social-login-harness="true"
+>
+  <div
+    class="space-y-3"
+  >
+    <div
+      class="relative"
+    >
+      <div
+        class="absolute inset-0 flex items-center"
+      >
+        <span
+          class="w-full border-t border-border/60"
+        />
+      </div>
+      <div
+        class="relative flex justify-center text-xs uppercase"
+      >
+        <span
+          class="bg-background px-2 text-muted-foreground"
+        >
+          Or continue with
+        </span>
+      </div>
+    </div>
+    <div
+      class="grid gap-2"
+    >
+      <form
+        method="post"
+      >
+        <input
+          name="loginMode"
+          type="hidden"
+          value="social"
+        />
+        <input
+          name="provider"
+          type="hidden"
+          value="Google"
+        />
+        <button
+          class="justify-center gap-2 whitespace-nowrap rounded-ui text-sm font-medium transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border bg-background shadow-ui hover:bg-accent hover:text-accent-foreground dark:bg-input/30 dark:border-input dark:hover:bg-input/50 h-9 px-4 py-2 has-[>svg]:px-3 flex w-full items-start"
+          data-size="default"
+          data-slot="button"
+          data-variant="outline"
+          type="submit"
+        >
+          <svg
+            aria-hidden="true"
+            class="size-4 shrink-0 self-center"
+            fill="none"
+            viewBox="10 10 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M29.6 20.2273C29.6 19.5182 29.5364 18.8364 29.4182 18.1818H20V22.05H25.3818C25.15 23.3 24.4455 24.3591 23.3864 25.0682V27.5773H26.6182C28.5091 25.8364 29.6 23.2727 29.6 20.2273Z"
+              fill="#4285F4"
+            />
+            <path
+              d="M20 30C22.7 30 24.9636 29.1045 26.6181 27.5773L23.3863 25.0682C22.4909 25.6682 21.3454 26.0227 20 26.0227C17.3954 26.0227 15.1909 24.2636 14.4045 21.9H11.0636V24.4909C12.7091 27.7591 16.0909 30 20 30Z"
+              fill="#34A853"
+            />
+            <path
+              d="M14.4045 21.9C14.2045 21.3 14.0909 20.6591 14.0909 20C14.0909 19.3409 14.2045 18.7 14.4045 18.1V15.5091H11.0636C10.3864 16.8591 10 18.3864 10 20C10 21.6136 10.3864 23.1409 11.0636 24.4909L14.4045 21.9Z"
+              fill="#FBBC04"
+            />
+            <path
+              d="M20 13.9773C21.4681 13.9773 22.7863 14.4818 23.8227 15.4727L26.6909 12.6045C24.9591 10.9909 22.6954 10 20 10C16.0909 10 12.7091 12.2409 11.0636 15.5091L14.4045 18.1C15.1909 15.7364 17.3954 13.9773 20 13.9773Z"
+              fill="#E94235"
+            />
+          </svg>
+          <span>
+            Continue with Google
+          </span>
+        </button>
+      </form>
+    </div>
+  </div>
+</div>
+`;

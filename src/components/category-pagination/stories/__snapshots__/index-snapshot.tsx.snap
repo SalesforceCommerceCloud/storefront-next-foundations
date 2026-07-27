@@ -1,0 +1,25 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CategoryPagination stories snapshot > FirstPage story renders and matches snapshot 1`] = `
+<h2>
+  Unexpected Application Error!
+</h2>
+`;
+
+exports[`CategoryPagination stories snapshot > FullyFeatured story renders and matches snapshot 1`] = `
+<h2>
+  Unexpected Application Error!
+</h2>
+`;
+
+exports[`CategoryPagination stories snapshot > LastPage story renders and matches snapshot 1`] = `
+<h2>
+  Unexpected Application Error!
+</h2>
+`;
+
+exports[`CategoryPagination stories snapshot > SinglePage story renders and matches snapshot 1`] = `
+<h2>
+  Unexpected Application Error!
+</h2>
+`;

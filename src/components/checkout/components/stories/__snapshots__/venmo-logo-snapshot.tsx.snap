@@ -1,0 +1,44 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`VenmoLogo stories snapshot > Decorative story renders and matches snapshot 1`] = `
+<div
+  style="background-color: rgb(0, 140, 255); padding: 20px; border-radius: 8px;"
+>
+  <img
+    alt=""
+    aria-hidden="true"
+    class=" h-3 w-auto object-contain"
+    height="11"
+    src="__ASSET_MOCK__"
+    width="54"
+  />
+</div>
+`;
+
+exports[`VenmoLogo stories snapshot > Default story renders and matches snapshot 1`] = `
+<div
+  style="background-color: rgb(0, 140, 255); padding: 20px; border-radius: 8px;"
+>
+  <img
+    alt="Venmo"
+    class=" h-3 w-auto object-contain"
+    height="11"
+    src="__ASSET_MOCK__"
+    width="54"
+  />
+</div>
+`;
+
+exports[`VenmoLogo stories snapshot > WithCustomClassName story renders and matches snapshot 1`] = `
+<div
+  style="background-color: rgb(0, 140, 255); padding: 20px; border-radius: 8px;"
+>
+  <img
+    alt="Venmo"
+    class="custom-class h-3 w-auto object-contain"
+    height="11"
+    src="__ASSET_MOCK__"
+    width="54"
+  />
+</div>
+`;

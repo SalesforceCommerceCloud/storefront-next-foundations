@@ -1,0 +1,125 @@
+name: Create Release
+description: Create a Git tag and GitHub release with auto-generated notes
+
+inputs:
+  version:
+    description: 'Version to release (e.g., 1.0.0)'
+    required: true
+  tag:
+    description: 'Git tag name (e.g., v1.0.0). Defaults to v-prefixed version'
+    required: false
+  previous-tag:
+    description: 'Previous release tag for generating release notes (optional)'
+    required: false
+  github-token:
+    description: 'GitHub token for creating releases'
+    required: true
+  skip-if-exists:
+    description: 'Skip if tag already exists (default: true)'
+    required: false
+    default: 'true'
+
+outputs:
+  tag:
+    description: 'The created tag name'
+    value: ${{ steps.create.outputs.tag }}
+  release-url:
+    description: 'URL of the created GitHub release'
+    value: ${{ steps.create.outputs.release_url }}
+  skipped:
+    description: 'true if release was skipped because tag exists'
+    value: ${{ steps.check.outputs.skipped }}
+
+runs:
+  using: composite
+  steps:
+    - name: Prepare tag name
+      id: prepare
+      shell: bash
+      run: |
+        TAG="${{ inputs.tag }}"
+        if [ -z "$TAG" ]; then
+          TAG="v${{ inputs.version }}"
+        fi
+        echo "tag=$TAG" >> $GITHUB_OUTPUT
+        echo "📌 Tag: $TAG"
+
+    - name: Check if tag exists
+      id: check
+      shell: bash
+      run: |
+        TAG="${{ steps.prepare.outputs.tag }}"
+
+        if git rev-parse "$TAG" >/dev/null 2>&1; then
+          echo "exists=true" >> $GITHUB_OUTPUT
+          echo "⚠️  Tag $TAG already exists"
+
+          if [ "${{ inputs.skip-if-exists }}" = "true" ]; then
+            echo "skipped=true" >> $GITHUB_OUTPUT
+            echo "⏭️  Skipping release creation"
+          else
+            echo "❌ Tag already exists and skip-if-exists is false"
+            exit 1
+          fi
+        else
+          echo "exists=false" >> $GITHUB_OUTPUT
+          echo "skipped=false" >> $GITHUB_OUTPUT
+          echo "✅ Tag $TAG is available"
+        fi
+
+    - name: Create and push tag
+      id: tag
+      if: steps.check.outputs.exists == 'false'
+      shell: bash
+      run: |
+        TAG="${{ steps.prepare.outputs.tag }}"
+        VERSION="${{ inputs.version }}"
+        BRANCH="${GITHUB_REF_NAME:-unknown}"
+
+        # Configure git
+        git config user.name "github-actions[bot]"
+        git config user.email "github-actions[bot]@users.noreply.github.com"
+
+        # Create annotated tag
+        git tag -a "$TAG" -m "Release $VERSION" \
+          -m "" \
+          -m "Released from branch: $BRANCH" \
+          -m "Commit: ${GITHUB_SHA:-unknown}" \
+          -m "Release date: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+
+        # Push tag
+        git push origin "$TAG"
+
+        echo "✅ Created and pushed tag $TAG"
+
+    - name: Create GitHub Release
+      id: create
+      if: steps.check.outputs.exists == 'false'
+      shell: bash
+      env:
+        GH_TOKEN: ${{ inputs.github-token }}
+      run: |
+        TAG="${{ steps.prepare.outputs.tag }}"
+        VERSION="${{ inputs.version }}"
+        PREV_TAG="${{ inputs.previous-tag }}"
+
+        # Build release notes from commit history
+        if [ -n "$PREV_TAG" ]; then
+          echo "📝 Generating release notes from $PREV_TAG to $TAG"
+          gh release create "$TAG" \
+            --title "$VERSION" \
+            --generate-notes \
+            --notes-start-tag "$PREV_TAG"
+        else
+          echo "📝 Generating release notes for initial release"
+          gh release create "$TAG" \
+            --title "$VERSION" \
+            --generate-notes
+        fi
+
+        # Get release URL
+        RELEASE_URL=$(gh release view "$TAG" --json url -q .url)
+
+        echo "tag=$TAG" >> $GITHUB_OUTPUT
+        echo "release_url=$RELEASE_URL" >> $GITHUB_OUTPUT
+        echo "✅ GitHub Release created: $RELEASE_URL"

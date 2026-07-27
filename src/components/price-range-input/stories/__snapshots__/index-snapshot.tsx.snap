@@ -1,0 +1,169 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`PriceRangeInput stories snapshot > FullyFeatured story renders and matches snapshot 1`] = `
+<div>
+  <div
+    class="space-y-4 w-96"
+  >
+    <div
+      class="flex flex-row gap-3 items-center justify-start self-stretch shrink-0 relative"
+    >
+      <div
+        class="flex-1"
+      >
+        <label
+          class="sr-only"
+          for="_r_0_-price-min"
+        >
+          Min
+        </label>
+        <div
+          class="border-solid border-[var(--input)] border py-2 px-3 flex flex-row gap-2 items-center justify-start relative overflow-hidden rounded-ui shadow-xs"
+        >
+          <span
+            aria-hidden="true"
+            class="shrink-0 flex items-center justify-center text-sm text-muted-foreground"
+          >
+            £
+          </span>
+          <div
+            class="text-muted-foreground text-left text-sm leading-normal font-normal relative overflow-hidden flex-1 truncate whitespace-nowrap"
+          >
+            <input
+              class="file:text-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input min-w-0 rounded-ui shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border-0 p-0 h-auto text-sm bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 placeholder:text-muted-foreground w-full"
+              data-slot="input"
+              id="_r_0_-price-min"
+              min="0"
+              placeholder="Min"
+              type="number"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="text-foreground text-left text-sm leading-none font-normal relative"
+      >
+        to
+      </div>
+      <div
+        class="flex-1"
+      >
+        <label
+          class="sr-only"
+          for="_r_0_-price-max"
+        >
+          Max
+        </label>
+        <div
+          class="border-solid border-[var(--input)] border py-2 px-3 flex flex-row gap-2 items-center justify-start relative overflow-hidden rounded-ui shadow-xs"
+        >
+          <span
+            aria-hidden="true"
+            class="shrink-0 flex items-center justify-center text-sm text-muted-foreground"
+          >
+            £
+          </span>
+          <div
+            class="text-muted-foreground text-left text-sm leading-normal font-normal relative overflow-hidden flex-1 truncate whitespace-nowrap"
+          >
+            <input
+              class="file:text-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input min-w-0 rounded-ui shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border-0 p-0 h-auto text-sm bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 placeholder:text-muted-foreground w-full"
+              data-slot="input"
+              id="_r_0_-price-max"
+              min="0"
+              placeholder="Max"
+              type="number"
+              value=""
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`PriceRangeInput stories snapshot > OutOfRange story renders and matches snapshot 1`] = `
+<div>
+  <div
+    class="space-y-4 w-96"
+  >
+    <div
+      class="flex flex-row gap-3 items-center justify-start self-stretch shrink-0 relative"
+    >
+      <div
+        class="flex-1"
+      >
+        <label
+          class="sr-only"
+          for="_r_1_-price-min"
+        >
+          Min
+        </label>
+        <div
+          class="border-solid border-[var(--input)] border py-2 px-3 flex flex-row gap-2 items-center justify-start relative overflow-hidden rounded-ui shadow-xs"
+        >
+          <span
+            aria-hidden="true"
+            class="shrink-0 flex items-center justify-center text-sm text-muted-foreground"
+          >
+            £
+          </span>
+          <div
+            class="text-muted-foreground text-left text-sm leading-normal font-normal relative overflow-hidden flex-1 truncate whitespace-nowrap"
+          >
+            <input
+              class="file:text-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input min-w-0 rounded-ui shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border-0 p-0 h-auto text-sm bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 placeholder:text-muted-foreground w-full text-destructive"
+              data-slot="input"
+              id="_r_1_-price-min"
+              min="0"
+              placeholder="Min"
+              type="number"
+              value="600"
+            />
+          </div>
+        </div>
+      </div>
+      <div
+        class="text-foreground text-left text-sm leading-none font-normal relative"
+      >
+        to
+      </div>
+      <div
+        class="flex-1"
+      >
+        <label
+          class="sr-only"
+          for="_r_1_-price-max"
+        >
+          Max
+        </label>
+        <div
+          class="border-solid border-[var(--input)] border py-2 px-3 flex flex-row gap-2 items-center justify-start relative overflow-hidden rounded-ui shadow-xs"
+        >
+          <span
+            aria-hidden="true"
+            class="shrink-0 flex items-center justify-center text-sm text-muted-foreground"
+          >
+            £
+          </span>
+          <div
+            class="text-muted-foreground text-left text-sm leading-normal font-normal relative overflow-hidden flex-1 truncate whitespace-nowrap"
+          >
+            <input
+              class="file:text-foreground selection:bg-primary selection:text-primary-foreground dark:bg-input/30 border-input min-w-0 rounded-ui shadow-ui transition-[color,box-shadow] outline-none file:inline-flex file:h-7 file:border-0 file:bg-transparent file:text-sm file:font-medium disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-50 md:text-sm focus-visible:border-ring focus-visible:ring-ring aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive border-0 p-0 h-auto text-sm bg-transparent focus-visible:ring-0 focus-visible:ring-offset-0 placeholder:text-muted-foreground w-full text-destructive"
+              data-slot="input"
+              id="_r_1_-price-max"
+              min="0"
+              placeholder="Max"
+              type="number"
+              value="50"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

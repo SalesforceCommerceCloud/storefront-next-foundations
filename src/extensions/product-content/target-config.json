@@ -1,0 +1,14 @@
+{
+    "components": [
+        {
+            "targetId": "sfcc.pdp.returnsWarranty",
+            "path": "extensions/product-content/components/target/returns-and-warranty-target.tsx",
+            "order": 0
+        },
+        {
+            "targetId": "sfcc.pdp.collapsibles",
+            "path": "extensions/product-content/components/target/pdp-collapsibles-target.tsx",
+            "order": 0
+        }
+    ]
+}

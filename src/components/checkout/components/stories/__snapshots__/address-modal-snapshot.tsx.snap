@@ -1,0 +1,9 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AddressModal stories snapshot > _DocsAnchor story renders and matches snapshot 1`] = `null`;
+
+exports[`AddressModal stories snapshot > AddAddress story renders and matches snapshot 1`] = `null`;
+
+exports[`AddressModal stories snapshot > EditAddress story renders and matches snapshot 1`] = `null`;
+
+exports[`AddressModal stories snapshot > Saving story renders and matches snapshot 1`] = `null`;

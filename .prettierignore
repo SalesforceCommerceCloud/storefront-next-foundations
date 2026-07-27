@@ -1,0 +1,5 @@
+# Ignore artifacts:
+build
+src/components/ui
+src/scapi/generated
+src/scapi/custom-clients.ts

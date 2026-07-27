@@ -1,0 +1,20 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ListPrice Snapshots > Default snapshot 1`] = `
+<div>
+  <span
+    aria-label="List price: $129.99"
+    class="text-sm font-medium leading-none text-left line-through text-muted-foreground"
+  >
+    $129.99
+  </span>
+  <span
+    aria-atomic="true"
+    aria-live="polite"
+    class="sr-only"
+  >
+     
+    List price: $129.99
+  </span>
+</div>
+`;

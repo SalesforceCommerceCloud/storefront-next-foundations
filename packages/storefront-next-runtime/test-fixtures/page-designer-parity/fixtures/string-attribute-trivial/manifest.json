@@ -1,0 +1,46 @@
+{
+    "pageId": "trivial-string-page",
+    "context": {
+        "campaignQualifiers": [],
+        "customerGroups": [],
+        "dataBindings": []
+    },
+    "variationOrder": ["default"],
+    "variations": {
+        "default": {
+            "ruleRequiresContext": false,
+            "pageRequiresContext": false,
+            "page": {
+                "id": "trivial-string-page",
+                "typeId": "storePage",
+                "regions": [
+                    {
+                        "id": "main",
+                        "components": [
+                            {
+                                "id": "banner-1",
+                                "typeId": "commerce_assets.heroBanner",
+                                "regions": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            "regions": {
+                "main": {}
+            }
+        }
+    },
+    "defaultVariation": "default",
+    "componentInfo": {
+        "banner-1": {
+            "visibilityRules": [],
+            "content": {
+                "en_US": {
+                    "heading": "Welcome to the Storefront"
+                }
+            },
+            "regions": {}
+        }
+    }
+}

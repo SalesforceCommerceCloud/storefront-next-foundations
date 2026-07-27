@@ -1,0 +1,71 @@
+{
+    "section": {
+        "heading": "Asiakkaiden arvostelut",
+        "loading": "Ladataan arvosteluja...",
+        "loadError": "Arvostelujen lataaminen epäonnistui. Päivitä sivu yrittääksesi uudelleen.",
+        "noReviewsForProduct": "Ei arvosteluja tälle tuotteelle.",
+        "noReviewsMatchFilters": "Yksikään arvostelu ei vastaa suodattimiasi.",
+        "showingReviews": "Näytetään {{from}}-{{to}}/{{total}} arviosta",
+        "subtitleOne": "1 arvostelu tuotteelle {{productName}}",
+        "subtitleOther": "{{count}} arvostelua tuotteelle {{productName}}",
+        "aiReviewSummary": "Tekoälyn arvosteluyhteenveto"
+    },
+    "filters": {
+        "filterBy": "Suodatusperuste:",
+        "withPhotos": "Sisältää kuvat",
+        "searchPlaceholder": "Etsi arvioita...",
+        "sortLabel": "Lajittele:",
+        "sortMostRecent": "Viimeisin",
+        "sortHighestRated": "Parhaat arvostelut",
+        "sortLowestRated": "Heikoimmat arvostelut",
+        "sortMostHelpful": "Eniten apua",
+        "activeFilterStars": "{{count}} tähteä",
+        "clearFilter": "Tyhjennä suodatin",
+        "filterByStars": "Suodata {{count}} tähtien perusteella",
+        "clearStarFilter": "Tyhjennä {{count}} tähtisuodatin",
+        "clearPhotoFilter": "Tyhjennä valokuvasuodatin"
+    },
+    "card": {
+        "verifiedPurchase": "Vahvistettu ostos",
+        "helpful": "Avulias ({{count}})",
+        "helpfulNoCount": "Avulias",
+        "report": "Raportti",
+        "readMore": "Lue lisää",
+        "readLess": "Lue vähemmän",
+        "imageAlt": "Arvostelun kuva"
+    },
+    "rating": {
+        "starContainerAriaLabel": "{{rating}} / {{total}} tähteä, {{count, number}} arvostelua",
+        "ratingOutOfTotal": "{{rating}} / {{total}}",
+        "ratingValue": "{{rating}}",
+        "basedOnReviews": "Perustuu {{count, number}} arvioon",
+        "ratingWithCount": "{{rating}} ({{count, number}})",
+        "viewAllReviews": "Näytä kaikki arvostelut",
+        "distributionAriaLabel": "{{rating}} tähteä: {{count, number}} /{{totalReviews, number}} arvostelusta",
+        "distributionsAriaLabel": "Tähtiluokitusten jakautuminen, {{total, number}} arvostelua yhteensä",
+        "seeCustomerReviews": "Katso asiakkaiden arvostelut >"
+    },
+    "writeReview": {
+        "buttonLabel": "Kirjoita arvostelu",
+        "modalDescription": "Kirjoita arvostelulomake",
+        "starRatingDistributionDescription": "Tähtiluokituksen jakautumisen tiedot",
+        "submitting": "Toimittaminen",
+        "successMessage": "Arvostelu lähetetty",
+        "errorMessage": "Arvostelun lähettäminen epäonnistui. Yritä uudelleen.",
+        "validation": {
+            "pleaseFixFollowing": "Korjaa seuraavat asiat:",
+            "ratingRequired": "Valitse luokitus.",
+            "reviewRequired": "Täytä tämä kenttä.",
+            "reviewMinLength": "Arvostelusi on oltava vähintään {{count}} merkkiä",
+            "reviewMaxLength": "Kirjoita enintään {{count}} merkkiä.",
+            "titleMaxLength": "Kirjoita enintään {{count}} merkkiä."
+        },
+        "minCharactersHint": "Vähintään {{count}} merkkiä.",
+        "maxCharactersHint": "Enintään {{count}} merkkiä."
+    },
+    "orderLine": {
+        "rateAndReview": "Arvioi ja arvostele",
+        "reviewSubmitted": "Arvostelu lähetetty",
+        "cta": "Arvioi ja arvostele"
+    }
+}

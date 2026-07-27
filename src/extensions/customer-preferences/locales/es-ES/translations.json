@@ -1,0 +1,35 @@
+{
+    "interestsPreferences": {
+        "title": "Preferencias de intereses &",
+        "description": "Agrega  tus intereses de diseño y gestiona tus preferencias de compra",
+        "successMessage": "Sus intereses y preferencias fueron actualizados.",
+        "errorMessage": "No se pudo actualizar. Intenta de nuevo.",
+        "loadError": "We couldn't load your interests and preferences. Please refresh the page to try again."
+    },
+    "interests": {
+        "title": "Sus intereses",
+        "noneSelected": "No hay intereses seleccionados",
+        "addMore": "Agrega más",
+        "addInterestsTitle": "Agrega tus intereses"
+    },
+    "preferences": {
+        "noneSelected": "No hay ninguna opción seleccionada",
+        "addMore": "Agrega más",
+        "dialogTitle": "Seleccionar opciones",
+        "selectCategory": "Seleccionar {{category}}"
+    },
+    "measures": {
+        "roomDimensionsLabel": "Room dimensions:",
+        "ceilingHeightLabel": "Ceiling height:",
+        "noneProvided": "No measures provided"
+    },
+    "size": {
+        "preferredSizeLabel": "Preferred product size:"
+    },
+    "common": {
+        "save": "Guardar",
+        "saving": "Guardando...",
+        "cancel": "Cancelar",
+        "edit": "Editar"
+    }
+}

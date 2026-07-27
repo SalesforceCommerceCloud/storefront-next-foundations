@@ -1,0 +1,88 @@
+{
+    "deliveryOptions": {
+        "pickupOrDelivery": {
+            "shipToAddress": "Spedisci a indirizzo",
+            "pickUpInStore": "Ritiro gratuito in",
+            "unavailablePickUpIn": "Ritiro non disponibile presso",
+            "selectStore": "Seleziona negozio",
+            "inStockAtStore": "Ora disponibile per il ritiro oggi.",
+            "outOfStockAtStore": "Prova un altro negozio",
+            "storePickup": "Ritiro in negozio",
+            "storePickupLabel": "Ritiro",
+            "delivery": "Consegna",
+            "deliverTo": "Consegna a",
+            "deliverToZip": "Consegna a {{zipCode}}",
+            "deliveryInDays": "Consegna in {{days}} giorni lavorativi",
+            "estimatedDeliveryInDays": "Consegna stimata: {{days}} giorni lavorativi",
+            "enterZipPrompt": "Inserisci il CAP per vedere la stima di consegna",
+            "pickupUnavailable": "Ritiro non disponibile",
+            "tryAnotherStore": "Prova un altro negozio",
+            "calculatorTitle": "Calcola spedizione",
+            "calculatorInstructionMessage": "Inserisci un CAP di 5 cifre per vedere le stime di consegna.",
+            "zipPlaceholder": "Inserisci CAP",
+            "zipAriaLabel": "CAP",
+            "calculateButton": "Calcola",
+            "calculateAriaLabel": "Calcola stima di consegna",
+            "invalidZipCode": "Inserisci un CAP valido di 5 cifre.",
+            "free": "Gratuita",
+            "calculating": "Calcolando...",
+            "errorFetchingEstimates": "Non siamo riusciti a ottenere le stime di consegna al momento. Riprova.",
+            "retry": "Riprova",
+            "shippingCost": "Costo di spedizione:"
+        }
+    },
+    "storeInventoryFilter": {
+        "heading": "Acquista per disponibilità",
+        "label": "Disponibile presso {{storeName}}",
+        "inStock": "Disponibile",
+        "checkboxAriaLabel": "Filtra prodotti per disponibilità nel negozio presso {{storeName}}",
+        "selectStore": "Seleziona negozio",
+        "changeStore": "Cambia negozio",
+        "openStoreLocator": "Apri localizzatore negozi per {{action}}",
+        "selectStoreLink": "Seleziona un negozio"
+    },
+    "storePickup": {
+        "title": "Dettagli ritiro in negozio",
+        "pickupLocationTitle": "Luogo di ritiro",
+        "changePickupLocation": "Cambia luogo di ritiro",
+        "viewButton": "Visualizza",
+        "closeButton": "Chiudi",
+        "pickupDetailsTitle": "Dettagli luogo di ritiro",
+        "phoneLabel": "Telefono:",
+        "storeHoursTitle": "Orari del negozio",
+        "pickupLastName": "Ritiro"
+    },
+    "cart": {
+        "deliveryItemsHeading_one": "Consegna - {{deliveryCount}} di {{count}} articolo",
+        "deliveryItemsHeading_other": "Consegna - {{deliveryCount}} di {{count}} articoli",
+        "pickupStoreInfo": {
+            "pickupHeadingWithCounts_one": "Ritira presso <0>{{storeName}}</0> - {{pickupCount}} di {{count}} articolo",
+            "pickupHeadingWithCounts_other": "Ritira presso <0>{{storeName}}</0> - {{pickupCount}} di {{count}} articoli",
+            "pickupInStore": "Ritira presso {{storeName}}",
+            "changeStore": "Cambia negozio",
+            "storeChanged": "Il negozio di ritiro è stato cambiato.",
+            "changeStoreError": "Impossibile cambiare negozio di ritiro",
+            "itemsOutOfStock": "Alcuni articoli non sono disponibili presso {{storeName}}. Selezioni un negozio diverso.",
+            "missingStoreIdOrInventoryIdError": "ID negozio o ID inventario mancante. Selezioni un negozio valido."
+        },
+        "deliveryOptionChangeError": "Impossibile cambiare opzione di consegna. {{error}}",
+        "deliveryOptionProductUnavailable": "Non abbiamo potuto aggiornare l'opzione di consegna per \"{{productName}}\" perché non c'è abbastanza stock per {{quantity}} articoli. Prova a ridurre la quantità o scegli un altro negozio.",
+        "addToCartValidation": {
+            "changeStoreError": "Ha già un articolo nel carrello da un negozio diverso.",
+            "changeToDeliveryError": "Ha già un articolo nel carrello contrassegnato per il ritiro.",
+            "changeToPickupError": "Ha già un articolo nel carrello contrassegnato per la consegna.",
+            "mixedPickupDeliveryError": "Impossibile mescolare articoli per ritiro e consegna nello stesso set."
+        }
+    },
+    "checkout": {
+        "contactInfo": {
+            "continueToPickup": "Continua al ritiro"
+        },
+        "pickUp": {
+            "title": "Dettagli ritiro in negozio",
+            "pickupLocationTitle": "Luogo di ritiro",
+            "continueToPayment": "Continua al pagamento",
+            "continueToShipping": "Continua alla spedizione"
+        }
+    }
+}

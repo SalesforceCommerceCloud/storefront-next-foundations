@@ -1,0 +1,50 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`OrderLineRateReview stories snapshot > Default story renders and matches snapshot 1`] = `
+<div
+  class="p-2"
+>
+  <button
+    aria-busy="false"
+    aria-expanded="false"
+    aria-haspopup="dialog"
+    class="inline-flex items-center justify-center whitespace-nowrap transition-all disabled:pointer-events-none disabled:opacity-50 [&_svg]:pointer-events-none [&_svg:not([class*='size-'])]:size-4 shrink-0 [&_svg]:shrink-0 outline-none focus-visible:border-ring focus-visible:ring-ring/50 focus-visible:ring-[3px] aria-invalid:ring-destructive/20 aria-invalid:border-destructive text-primary underline-offset-4 hover:underline rounded-md gap-1.5 has-[>svg]:px-2.5 h-auto p-0 text-sm font-medium"
+    data-size="sm"
+    data-slot="button"
+    data-testid="order-line-rate-review"
+    data-variant="link"
+    type="button"
+  >
+    Rate & Review
+  </button>
+</div>
+`;
+
+exports[`OrderLineRateReview stories snapshot > ReviewSubmitted story renders and matches snapshot 1`] = `
+<div
+  class="p-2"
+>
+  <span
+    class="inline-flex items-center gap-1.5 text-sm font-medium text-status-positive"
+  >
+    <svg
+      aria-hidden="true"
+      class="lucide lucide-check size-4 shrink-0"
+      fill="none"
+      height="24"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M20 6 9 17l-5-5"
+      />
+    </svg>
+    Review submitted
+  </span>
+</div>
+`;

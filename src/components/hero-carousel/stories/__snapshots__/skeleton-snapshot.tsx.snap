@@ -1,0 +1,79 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`HeroCarouselSkeleton stories snapshot > Default story renders and matches snapshot 1`] = `
+<div
+  class="relative w-full overflow-hidden animate-pulse h-[400px] md:h-[500px] lg:h-[600px]"
+>
+  <div
+    class="relative w-full h-full overflow-hidden"
+  >
+    <div
+      class="bg-accent animate-pulse rounded-ui absolute inset-0 w-full h-full"
+      data-slot="skeleton"
+    />
+    <div
+      class="absolute inset-0 bg-gradient-to-r from-black/60 via-black/40 to-transparent z-[5]"
+    />
+    <div
+      class="absolute inset-0 z-10 flex items-center"
+    >
+      <div
+        class="section-container w-full"
+      >
+        <div
+          class="max-w-xl flex flex-col"
+        >
+          <div
+            class="animate-pulse rounded-ui h-6 sm:h-8 md:h-9 lg:h-10 w-3/4 bg-white/20 mb-3 sm:mb-4 md:mb-6"
+            data-slot="skeleton"
+          />
+          <div
+            class="animate-pulse rounded-ui h-4 sm:h-5 md:h-6 lg:h-7 w-full bg-white/15 mb-4 sm:mb-6 md:mb-8"
+            data-slot="skeleton"
+          />
+          <div
+            class="animate-pulse rounded-ui h-10 sm:h-12 md:h-14 lg:h-16 w-32 sm:w-36 md:w-40 lg:w-44 bg-white/25"
+            data-slot="skeleton"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="absolute bottom-6 left-1/2 -translate-x-1/2 z-20 flex space-x-2"
+  >
+    <div
+      class="animate-pulse rounded-ui h-2 bg-white/30 w-8"
+      data-slot="skeleton"
+    />
+    <div
+      class="animate-pulse rounded-ui h-2 bg-white/30 w-2"
+      data-slot="skeleton"
+    />
+    <div
+      class="animate-pulse rounded-ui h-2 bg-white/30 w-2"
+      data-slot="skeleton"
+    />
+  </div>
+  <div
+    class="absolute bottom-6 right-6 z-30 flex gap-2"
+  >
+    <div
+      class="animate-pulse rounded-ui w-12 h-12 bg-white/20"
+      data-slot="skeleton"
+    />
+    <div
+      class="animate-pulse rounded-ui w-12 h-12 bg-white/20"
+      data-slot="skeleton"
+    />
+  </div>
+  <div
+    class="sr-only"
+  >
+    <div
+      class="animate-pulse rounded-ui h-4 w-32 bg-transparent"
+      data-slot="skeleton"
+    />
+  </div>
+</div>
+`;

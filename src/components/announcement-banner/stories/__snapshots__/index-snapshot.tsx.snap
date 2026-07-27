@@ -1,0 +1,186 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AnnouncementBanner stories snapshot > AlignmentCenter story renders and matches snapshot 1`] = `
+<div
+  class="relative flex items-center gap-2 px-4 md:px-10 tracking-wide justify-center bg-primary text-primary-foreground py-3 text-sm"
+  role="status"
+>
+  <p
+    class="text-center"
+  >
+    Center-aligned message
+  </p>
+</div>
+`;
+
+exports[`AnnouncementBanner stories snapshot > AlignmentLeft story renders and matches snapshot 1`] = `
+<div
+  class="relative flex items-center gap-2 px-4 md:px-10 tracking-wide justify-start bg-primary text-primary-foreground py-3 text-sm"
+  role="status"
+>
+  <p
+    class="text-left"
+  >
+    Left-aligned message
+  </p>
+</div>
+`;
+
+exports[`AnnouncementBanner stories snapshot > AlignmentRight story renders and matches snapshot 1`] = `
+<div
+  class="relative flex items-center gap-2 px-4 md:px-10 tracking-wide justify-end bg-primary text-primary-foreground py-3 text-sm"
+  role="status"
+>
+  <p
+    class="text-right"
+  >
+    Right-aligned message
+  </p>
+</div>
+`;
+
+exports[`AnnouncementBanner stories snapshot > ColorSchemeDestructive story renders and matches snapshot 1`] = `
+<div
+  class="relative flex items-center gap-2 px-4 md:px-10 tracking-wide justify-center bg-destructive text-white py-3 text-sm"
+  role="status"
+>
+  <p
+    class="text-center"
+  >
+    Service disruption — please try again later
+  </p>
+</div>
+`;
+
+exports[`AnnouncementBanner stories snapshot > ColorSchemePrimary story renders and matches snapshot 1`] = `
+<div
+  class="relative flex items-center gap-2 px-4 md:px-10 tracking-wide justify-center bg-primary text-primary-foreground py-3 text-sm"
+  role="status"
+>
+  <p
+    class="text-center"
+  >
+    Primary color scheme
+  </p>
+</div>
+`;
+
+exports[`AnnouncementBanner stories snapshot > ColorSchemeSecondary story renders and matches snapshot 1`] = `
+<div
+  class="relative flex items-center gap-2 px-4 md:px-10 tracking-wide justify-center bg-secondary text-secondary-foreground py-3 text-sm"
+  role="status"
+>
+  <p
+    class="text-center"
+  >
+    Subdued informational message
+  </p>
+</div>
+`;
+
+exports[`AnnouncementBanner stories snapshot > Default story renders and matches snapshot 1`] = `
+<div
+  class="relative flex items-center gap-2 px-4 md:px-10 tracking-wide justify-center bg-primary text-primary-foreground py-3 text-sm"
+  role="status"
+>
+  <p
+    class="text-center"
+  >
+    Free shipping on all orders over $50!
+  </p>
+</div>
+`;
+
+exports[`AnnouncementBanner stories snapshot > HeightLarge story renders and matches snapshot 1`] = `
+<div
+  class="relative flex items-center gap-2 px-4 md:px-10 tracking-wide justify-center bg-primary text-primary-foreground py-5 text-base"
+  role="status"
+>
+  <p
+    class="text-center"
+  >
+    Tall, attention-grabbing banner
+  </p>
+</div>
+`;
+
+exports[`AnnouncementBanner stories snapshot > HeightMedium story renders and matches snapshot 1`] = `
+<div
+  class="relative flex items-center gap-2 px-4 md:px-10 tracking-wide justify-center bg-primary text-primary-foreground py-3 text-sm"
+  role="status"
+>
+  <p
+    class="text-center"
+  >
+    Medium-density banner
+  </p>
+</div>
+`;
+
+exports[`AnnouncementBanner stories snapshot > HeightSmall story renders and matches snapshot 1`] = `
+<div
+  class="relative flex items-center gap-2 px-4 md:px-10 tracking-wide justify-center bg-primary text-primary-foreground py-1.5 text-xs"
+  role="status"
+>
+  <p
+    class="text-center"
+  >
+    Compact banner
+  </p>
+</div>
+`;
+
+exports[`AnnouncementBanner stories snapshot > LongText story renders and matches snapshot 1`] = `
+<div
+  class="relative flex items-center gap-2 px-4 md:px-10 tracking-wide justify-center bg-primary text-primary-foreground py-3 text-sm"
+  role="status"
+>
+  <p
+    class="text-center"
+  >
+    Use code SUMMER2026 at checkout for an extra 15% off all clearance items. Valid through June 30th. Exclusions may apply.
+     
+    <a
+      class="underline font-medium whitespace-nowrap"
+      href="/RefArchGlobal/en-GB/clearance"
+      to="/RefArchGlobal/en-GB/clearance"
+    >
+      Shop Clearance
+    </a>
+  </p>
+</div>
+`;
+
+exports[`AnnouncementBanner stories snapshot > Playground story renders and matches snapshot 1`] = `
+<div
+  class="relative flex items-center gap-2 px-4 md:px-10 tracking-wide justify-center bg-primary text-primary-foreground py-3 text-sm"
+  role="status"
+>
+  <p
+    class="text-center"
+  >
+    FREE WORLDWIDE SHIPPING from $90
+  </p>
+</div>
+`;
+
+exports[`AnnouncementBanner stories snapshot > WithCTA story renders and matches snapshot 1`] = `
+<div
+  class="relative flex items-center gap-2 px-4 md:px-10 tracking-wide justify-center bg-primary text-primary-foreground py-3 text-sm"
+  role="status"
+>
+  <p
+    class="text-center"
+  >
+    Summer Sale — Up to 40% off
+     
+    <a
+      class="underline font-medium whitespace-nowrap"
+      href="/RefArchGlobal/en-GB/sale"
+      to="/RefArchGlobal/en-GB/sale"
+    >
+      Shop Now
+    </a>
+  </p>
+</div>
+`;

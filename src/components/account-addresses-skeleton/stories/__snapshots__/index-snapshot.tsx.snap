@@ -1,0 +1,151 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`AccountAddressesSkeleton stories snapshot > Default story renders and matches snapshot 1`] = `
+<div
+  class="space-y-5"
+>
+  <div
+    class="text-card-foreground flex flex-col gap-6 rounded-ui border-ui py-6 shadow-ui bg-card border-border"
+    data-slot="card"
+  >
+    <div
+      class="px-6 py-3"
+      data-slot="card-content"
+    >
+      <div
+        class="flex items-start justify-between"
+      >
+        <div>
+          <h1
+            class="text-2xl font-semibold text-foreground mb-1"
+          >
+            Addresses
+          </h1>
+          <div
+            class="bg-accent animate-pulse rounded-ui h-4 w-48"
+            data-slot="skeleton"
+          />
+        </div>
+        <div
+          class="bg-accent animate-pulse rounded-ui h-9 w-36"
+          data-slot="skeleton"
+        />
+      </div>
+    </div>
+  </div>
+  <div
+    class="flex flex-col gap-4"
+  >
+    <div
+      class="bg-card text-card-foreground flex flex-col rounded-ui border-ui shadow-ui rounded-ui border-border gap-0 py-4"
+      data-slot="card"
+    >
+      <div
+        class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 px-6 pb-2"
+        data-slot="card-header"
+      >
+        <div
+          class="leading-none font-semibold flex items-center gap-2"
+          data-slot="card-title"
+        >
+          <div
+            class="bg-accent animate-pulse rounded-ui h-5 w-32"
+            data-slot="skeleton"
+          />
+          <div
+            class="bg-accent animate-pulse rounded-ui h-5 w-14"
+            data-slot="skeleton"
+          />
+        </div>
+      </div>
+      <div
+        class="px-6 py-2"
+        data-slot="card-content"
+      >
+        <div
+          class="space-y-1"
+        >
+          <div
+            class="bg-accent animate-pulse rounded-ui h-4 w-48"
+            data-slot="skeleton"
+          />
+          <div
+            class="bg-accent animate-pulse rounded-ui h-4 w-56"
+            data-slot="skeleton"
+          />
+        </div>
+      </div>
+      <div
+        class="flex items-center [.border-t]:pt-6 gap-4 px-6 pt-2"
+        data-slot="card-footer"
+      >
+        <div
+          class="bg-accent animate-pulse rounded-ui h-4 w-20"
+          data-slot="skeleton"
+        />
+        <div
+          class="bg-accent animate-pulse rounded-ui h-4 w-20"
+          data-slot="skeleton"
+        />
+        <div
+          class="bg-accent animate-pulse rounded-ui h-4 w-16"
+          data-slot="skeleton"
+        />
+      </div>
+    </div>
+    <div
+      class="bg-card text-card-foreground flex flex-col rounded-ui border-ui shadow-ui rounded-ui border-border gap-0 py-4"
+      data-slot="card"
+    >
+      <div
+        class="@container/card-header grid auto-rows-min grid-rows-[auto_auto] items-start gap-2 has-data-[slot=card-action]:grid-cols-[1fr_auto] [.border-b]:pb-6 px-6 pb-2"
+        data-slot="card-header"
+      >
+        <div
+          class="leading-none font-semibold flex items-center gap-2"
+          data-slot="card-title"
+        >
+          <div
+            class="bg-accent animate-pulse rounded-ui h-5 w-32"
+            data-slot="skeleton"
+          />
+        </div>
+      </div>
+      <div
+        class="px-6 py-2"
+        data-slot="card-content"
+      >
+        <div
+          class="space-y-1"
+        >
+          <div
+            class="bg-accent animate-pulse rounded-ui h-4 w-48"
+            data-slot="skeleton"
+          />
+          <div
+            class="bg-accent animate-pulse rounded-ui h-4 w-56"
+            data-slot="skeleton"
+          />
+        </div>
+      </div>
+      <div
+        class="flex items-center [.border-t]:pt-6 gap-4 px-6 pt-2"
+        data-slot="card-footer"
+      >
+        <div
+          class="bg-accent animate-pulse rounded-ui h-4 w-20"
+          data-slot="skeleton"
+        />
+        <div
+          class="bg-accent animate-pulse rounded-ui h-4 w-20"
+          data-slot="skeleton"
+        />
+        <div
+          class="bg-accent animate-pulse rounded-ui h-4 w-16"
+          data-slot="skeleton"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

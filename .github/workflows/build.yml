@@ -1,0 +1,36 @@
+name: Build
+
+# This workflow builds the storefront to validate that the code compiles correctly.
+# It runs on pull requests and pushes to help catch build errors early.
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize, ready_for_review]
+    branches: ['*']
+  push:
+    branches: ['*']
+  workflow_dispatch:
+
+env:
+  NODE_VERSION: '24'
+  PNPM_VERSION: '10.28.0'
+
+jobs:
+  build:
+    if: ${{ github.event_name == 'push' || github.event_name == 'workflow_dispatch' || (
+      github.event_name == 'pull_request' &&
+      github.event.pull_request.head.repo.full_name == github.repository
+      ) }}
+    name: Run Build
+    runs-on: ${{ vars.RUNNER_UBUNTU || 'ubuntu-latest' }}
+    timeout-minutes: 15
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build Bundle
+        uses: './.github/actions/build-bundle'
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          pnpm-version: ${{ env.PNPM_VERSION }}

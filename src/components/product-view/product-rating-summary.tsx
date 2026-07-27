@@ -1,0 +1,187 @@
+/**
+ * Copyright 2026 Salesforce, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+/** @sfdc-extension-file SFDC_EXT_RATINGS_REVIEWS */
+import { type ReactElement, useMemo, useState, useCallback, useRef, useEffect, lazy, Suspense } from 'react';
+import { StarRating } from '@/components/product-ratings/star-rating';
+import { Popover, PopoverContent, PopoverTrigger } from '@/components/ui/popover';
+import { useProductReviews } from '@/extensions/ratings-reviews/providers/product-reviews-context';
+import { cn } from '@/lib/utils';
+
+const StarRatingDistributionModalContent = lazy(() =>
+    import('@/components/info-modal/renderers/star-rating-distribution-modal-content').then((m) => ({
+        default: m.StarRatingDistributionModalContent,
+    }))
+);
+
+const CUSTOMER_REVIEWS_ID = 'customer-reviews';
+/** Delay before closing popover on mouse leave so user can move to content (portaled). */
+const POPOVER_CLOSE_DELAY_MS = 150;
+
+/**
+ * Star rating summary shown under the product description on PDP.
+ * Displays stars and average (count). Hovering over the entire rating opens an inline
+ * popover underneath with distribution and "See customer reviews". Clicking that
+ * link scrolls to the customer reviews accordion.
+ */
+export function ProductRatingSummary({ interactive = true }: { interactive?: boolean }): ReactElement | null {
+    const { reviewsSummary, reviews, expandReviews, registerOnExpanded } = useProductReviews();
+    const [popoverOpen, setPopoverOpen] = useState(false);
+    const closeTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+
+    const clearCloseTimeout = useCallback(() => {
+        if (closeTimeoutRef.current != null) {
+            clearTimeout(closeTimeoutRef.current);
+            closeTimeoutRef.current = null;
+        }
+    }, []);
+
+    const scheduleClose = useCallback(() => {
+        clearCloseTimeout();
+        closeTimeoutRef.current = setTimeout(() => {
+            closeTimeoutRef.current = null;
+            setPopoverOpen(false);
+        }, POPOVER_CLOSE_DELAY_MS);
+    }, [clearCloseTimeout]);
+
+    useEffect(() => () => clearCloseTimeout(), [clearCloseTimeout]);
+
+    const aggregateRating = useMemo(() => {
+        if (reviews.length > 0) {
+            const sum = reviews.reduce((acc, r) => acc + r.rating, 0);
+            return { average: sum / reviews.length, count: reviews.length };
+        }
+        return {
+            average: reviewsSummary?.averageRating ?? 0,
+            count: reviewsSummary?.totalCount ?? 0,
+        };
+    }, [reviews, reviewsSummary]);
+
+    const ratingDistributions = useMemo(() => {
+        if (reviews.length > 0) {
+            const counts: Record<number, number> = { 1: 0, 2: 0, 3: 0, 4: 0, 5: 0 };
+            reviews.forEach((r) => {
+                if (r.rating >= 1 && r.rating <= 5) counts[r.rating] = (counts[r.rating] ?? 0) + 1;
+            });
+            return [
+                { rating: 5, count: counts[5] ?? 0 },
+                { rating: 4, count: counts[4] ?? 0 },
+                { rating: 3, count: counts[3] ?? 0 },
+                { rating: 2, count: counts[2] ?? 0 },
+                { rating: 1, count: counts[1] ?? 0 },
+            ];
+        }
+        const d = reviewsSummary?.distribution;
+        if (!d)
+            return [
+                { rating: 5, count: 0 },
+                { rating: 4, count: 0 },
+                { rating: 3, count: 0 },
+                { rating: 2, count: 0 },
+                { rating: 1, count: 0 },
+            ];
+        return [
+            { rating: 5, count: d.fiveStars ?? 0 },
+            { rating: 4, count: d.fourStars ?? 0 },
+            { rating: 3, count: d.threeStars ?? 0 },
+            { rating: 2, count: d.twoStars ?? 0 },
+            { rating: 1, count: d.oneStar ?? 0 },
+        ];
+    }, [reviews, reviewsSummary]);
+
+    const hasReviews = aggregateRating.count > 0;
+    const canInteract = interactive && hasReviews;
+
+    const scrollToReviews = useCallback(() => {
+        document.getElementById(CUSTOMER_REVIEWS_ID)?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, []);
+
+    const handleSeeReviewsClick = useCallback(() => {
+        setPopoverOpen(false);
+        registerOnExpanded(scrollToReviews);
+        expandReviews();
+    }, [expandReviews, registerOnExpanded, scrollToReviews]);
+
+    const handleSummaryClick = useCallback(() => {
+        setPopoverOpen(false);
+        registerOnExpanded(scrollToReviews);
+        expandReviews();
+    }, [expandReviews, registerOnExpanded, scrollToReviews]);
+
+    const handleKeyDown = useCallback(
+        (e: React.KeyboardEvent) => {
+            if (!canInteract) return;
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                handleSummaryClick();
+            }
+        },
+        [canInteract, handleSummaryClick]
+    );
+
+    return (
+        <div className="relative mt-2 inline-block">
+            <Popover open={popoverOpen} onOpenChange={setPopoverOpen}>
+                <PopoverTrigger asChild>
+                    <div
+                        className={cn('relative inline-block', canInteract && 'cursor-pointer')}
+                        onMouseEnter={() => {
+                            if (!canInteract) return;
+                            clearCloseTimeout();
+                            setPopoverOpen(true);
+                        }}
+                        onMouseLeave={() => canInteract && scheduleClose()}
+                        onClick={() => canInteract && handleSummaryClick()}
+                        onKeyDown={handleKeyDown}
+                        role={canInteract ? 'button' : undefined}
+                        tabIndex={canInteract ? 0 : undefined}
+                        aria-label={canInteract ? 'View customer reviews' : undefined}
+                        aria-expanded={canInteract ? popoverOpen : undefined}>
+                        <div className="flex items-center gap-2">
+                            <StarRating
+                                rating={aggregateRating.average}
+                                reviewCount={aggregateRating.count}
+                                showRatingLabel={false}
+                                showRatingLink={false}
+                                starSize="default"
+                            />
+                            {aggregateRating.count > 0 && (
+                                <span className="text-sm text-muted-foreground">({aggregateRating.count})</span>
+                            )}
+                        </div>
+                    </div>
+                </PopoverTrigger>
+                <PopoverContent
+                    side="bottom"
+                    align="start"
+                    sideOffset={4}
+                    className="min-w-[280px] max-w-[304px] p-4 bg-card text-card-foreground"
+                    aria-label="Star rating distribution"
+                    onCloseAutoFocus={(e) => e.preventDefault()}
+                    onMouseEnter={clearCloseTimeout}
+                    onMouseLeave={scheduleClose}>
+                    <Suspense fallback={null}>
+                        <StarRatingDistributionModalContent
+                            rating={aggregateRating.average}
+                            reviewCount={aggregateRating.count}
+                            distributions={ratingDistributions}
+                            onSeeReviewsClick={handleSeeReviewsClick}
+                        />
+                    </Suspense>
+                </PopoverContent>
+            </Popover>
+        </div>
+    );
+}

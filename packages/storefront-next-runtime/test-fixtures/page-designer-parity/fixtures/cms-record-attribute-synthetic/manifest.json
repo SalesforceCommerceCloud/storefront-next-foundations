@@ -1,0 +1,86 @@
+{
+    "pageId": "cms-record-page",
+    "context": {
+        "campaignQualifiers": [],
+        "customerGroups": [],
+        "dataBindings": []
+    },
+    "variationOrder": ["default"],
+    "variations": {
+        "default": {
+            "ruleRequiresContext": false,
+            "pageRequiresContext": false,
+            "page": {
+                "id": "cms-record-page",
+                "typeId": "storePage",
+                "regions": [
+                    {
+                        "id": "main",
+                        "components": [
+                            {
+                                "id": "card-1",
+                                "typeId": "commerce_assets.contentCard",
+                                "regions": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            "regions": {
+                "main": {}
+            }
+        }
+    },
+    "defaultVariation": "default",
+    "componentTypes": {
+        "storePage": {
+            "attributeDefinitions": {}
+        },
+        "commerce_assets.contentCard": {
+            "attributeDefinitions": {
+                "heading": { "type": "string" },
+                "record": { "type": "cms_record" }
+            }
+        }
+    },
+    "componentInfo": {
+        "card-1": {
+            "visibilityRules": [],
+            "content": {
+                "en_US": {
+                    "heading": "Featured Article",
+                    "record": {
+                        "id": "article-42",
+                        "type": {
+                            "id": "editorial_article",
+                            "name": "Editorial Article",
+                            "attributeDefinitions": [
+                                { "id": "title", "type": "string" },
+                                { "id": "thumbnail", "type": "image" },
+                                { "id": "attachment", "type": "file" }
+                            ]
+                        },
+                        "attributes": {
+                            "title": "Summer Style Guide",
+                            "thumbnail": {
+                                "focalPoint": { "x": 0.5, "y": 0.3 },
+                                "metaData": { "width": 800, "height": 400 },
+                                "media": {
+                                    "libraryDomain": "Library-Sites-RefArchSharedLibrary",
+                                    "path": "/articles/summer-style-thumb.jpg"
+                                }
+                            },
+                            "attachment": {
+                                "media": {
+                                    "libraryDomain": "Library-Sites-RefArchSharedLibrary",
+                                    "path": "/articles/summer-style-full.pdf"
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "regions": {}
+        }
+    }
+}

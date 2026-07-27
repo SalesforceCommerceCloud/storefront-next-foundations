@@ -1,0 +1,130 @@
+{
+    "pageId": "multi-type-page",
+    "pageLibraryDomain": "Library-Sites-RefArchSharedLibrary",
+    "context": {
+        "campaignQualifiers": [],
+        "customerGroups": [],
+        "dataBindings": []
+    },
+    "variationOrder": ["default"],
+    "variations": {
+        "default": {
+            "ruleRequiresContext": false,
+            "pageRequiresContext": false,
+            "page": {
+                "id": "multi-type-page",
+                "typeId": "storePage",
+                "name": "Multi-Type Test Page",
+                "regions": [
+                    {
+                        "id": "main",
+                        "components": [
+                            {
+                                "id": "hero-1",
+                                "typeId": "commerce_assets.heroFull",
+                                "regions": []
+                            },
+                            {
+                                "id": "promo-1",
+                                "typeId": "commerce_assets.promoTile",
+                                "regions": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            "pageContent": {
+                "fr_FR": {
+                    "name": "Page Test Multi-Type"
+                }
+            },
+            "regions": {
+                "main": {}
+            }
+        }
+    },
+    "defaultVariation": "default",
+    "componentTypes": {
+        "storePage": {
+            "attributeDefinitions": {}
+        },
+        "commerce_assets.heroFull": {
+            "attributeDefinitions": {
+                "heading": { "type": "string" },
+                "backgroundImage": { "type": "image" },
+                "ctaLink": { "type": "url" },
+                "body": { "type": "markup" }
+            }
+        },
+        "commerce_assets.promoTile": {
+            "attributeDefinitions": {
+                "title": { "type": "string" },
+                "document": { "type": "file" },
+                "relatedContent": { "type": "cms_record" }
+            }
+        }
+    },
+    "componentInfo": {
+        "hero-1": {
+            "visibilityRules": [],
+            "content": {
+                "en_US": {
+                    "heading": "Summer Collection",
+                    "backgroundImage": {
+                        "focalPoint": { "x": 0.5, "y": 0.25 },
+                        "metaData": { "width": 1920, "height": 1080 },
+                        "media": {
+                            "libraryDomain": "Library-Sites-RefArchSharedLibrary",
+                            "path": "/heroes/summer-2026.jpg"
+                        }
+                    },
+                    "ctaLink": "/search?cgid=new-arrivals",
+                    "body": "<p>Explore our <a href=\"/page/summer-lookbook\">lookbook</a>. <img src=\"icons/arrow.svg?$staticlink$\"/></p>"
+                },
+                "fr_FR": {
+                    "heading": "Collection Été",
+                    "body": "<p>Découvrez notre <a href=\"/page/summer-lookbook\">lookbook</a>. <img src=\"icons/arrow.svg?$staticlink$\"/></p>"
+                }
+            },
+            "regions": {}
+        },
+        "promo-1": {
+            "visibilityRules": [],
+            "content": {
+                "en_US": {
+                    "title": "Free Shipping Guide",
+                    "document": {
+                        "media": {
+                            "libraryDomain": "Library-Sites-RefArchSharedLibrary",
+                            "path": "/docs/shipping-guide.pdf"
+                        }
+                    },
+                    "relatedContent": {
+                        "id": "promo-banner-rec",
+                        "type": {
+                            "id": "promo_record",
+                            "attributeDefinitions": [
+                                { "id": "promoName", "type": "string" },
+                                { "id": "promoImage", "type": "image" }
+                            ]
+                        },
+                        "attributes": {
+                            "promoName": "Holiday Promo",
+                            "promoImage": {
+                                "metaData": { "width": 400, "height": 200 },
+                                "media": {
+                                    "libraryDomain": "Library-Sites-RefArchSharedLibrary",
+                                    "path": "/promos/holiday.png"
+                                }
+                            }
+                        }
+                    }
+                },
+                "fr_FR": {
+                    "title": "Guide Livraison Gratuite"
+                }
+            },
+            "regions": {}
+        }
+    }
+}

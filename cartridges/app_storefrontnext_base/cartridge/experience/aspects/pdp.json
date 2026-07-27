@@ -1,0 +1,15 @@
+{
+    "name": "Product detail page",
+    "description": "A product detail page",
+    "arch_type": "headless",
+    "attribute_definitions": [
+        {
+            "id": "productId",
+            "name": "Product",
+            "description": "The product to show the detail page for-",
+            "type": "product",
+            "required": false
+        }
+    ],
+    "supported_object_types": ["category", "product"]
+}

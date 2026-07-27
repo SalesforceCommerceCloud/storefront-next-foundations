@@ -1,0 +1,242 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CollapsibleHtmlSection stories snapshot > BulletedList story renders and matches snapshot 1`] = `
+<details
+  class="group border-b border-border"
+  open=""
+>
+  <summary
+    class="flex items-center justify-between gap-4 py-4 text-base font-medium text-foreground cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground transition-colors"
+  >
+    <span
+      class="flex items-center gap-2"
+    >
+      Features:
+    </span>
+    <svg
+      aria-hidden="true"
+      class="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-5 shrink-0 translate-y-0.5 transition-transform duration-200 group-open:rotate-180"
+      fill="none"
+      height="24"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="m6 9 6 6 6-6"
+      />
+    </svg>
+  </summary>
+  <div
+    class="pb-4"
+  >
+    <div
+      class="text-sm text-foreground [&_ul]:flex [&_ul]:flex-col [&_ul]:gap-1.5 [&_ul]:list-none [&_ul]:m-0 [&_ul]:p-0 [&_li]:flex [&_li]:items-center [&_li]:gap-2 [&_li]:before:content-[''] [&_li]:before:h-1.5 [&_li]:before:w-1.5 [&_li]:before:flex-shrink-0 [&_li]:before:rounded-full [&_li]:before:bg-foreground"
+      data-testid="html-fragment"
+    >
+      <ul>
+        <li>
+          Premium cotton blend
+        </li>
+        <li>
+          Machine washable
+        </li>
+        <li>
+          Breathable fabric
+        </li>
+      </ul>
+    </div>
+  </div>
+</details>
+`;
+
+exports[`CollapsibleHtmlSection stories snapshot > OpenByDefault story renders and matches snapshot 1`] = `
+<details
+  class="group border-b border-border"
+  open=""
+>
+  <summary
+    class="flex items-center justify-between gap-4 py-4 text-base font-medium text-foreground cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground transition-colors"
+  >
+    <span
+      class="flex items-center gap-2"
+    >
+      Details:
+    </span>
+    <svg
+      aria-hidden="true"
+      class="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-5 shrink-0 translate-y-0.5 transition-transform duration-200 group-open:rotate-180"
+      fill="none"
+      height="24"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="m6 9 6 6 6-6"
+      />
+    </svg>
+  </summary>
+  <div
+    class="pb-4"
+  >
+    <div
+      class="text-sm text-foreground leading-relaxed"
+      data-testid="html-fragment"
+    >
+      This content is visible on load because defaultOpen is true.
+    </div>
+  </div>
+</details>
+`;
+
+exports[`CollapsibleHtmlSection stories snapshot > PlainText story renders and matches snapshot 1`] = `
+<details
+  class="group border-b border-border"
+  open=""
+>
+  <summary
+    class="flex items-center justify-between gap-4 py-4 text-base font-medium text-foreground cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground transition-colors"
+  >
+    <span
+      class="flex items-center gap-2"
+    >
+      Description:
+    </span>
+    <svg
+      aria-hidden="true"
+      class="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-5 shrink-0 translate-y-0.5 transition-transform duration-200 group-open:rotate-180"
+      fill="none"
+      height="24"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="m6 9 6 6 6-6"
+      />
+    </svg>
+  </summary>
+  <div
+    class="pb-4"
+  >
+    <div
+      class="text-sm text-foreground leading-relaxed"
+      data-testid="html-fragment"
+    >
+      This is a premium quality product with excellent durability and comfort.
+    </div>
+  </div>
+</details>
+`;
+
+exports[`CollapsibleHtmlSection stories snapshot > Table2Column story renders and matches snapshot 1`] = `
+<details
+  class="group border-b border-border"
+  open=""
+>
+  <summary
+    class="flex items-center justify-between gap-4 py-4 text-base font-medium text-foreground cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground transition-colors"
+  >
+    <span
+      class="flex items-center gap-2"
+    >
+      Specifications:
+    </span>
+    <svg
+      aria-hidden="true"
+      class="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-5 shrink-0 translate-y-0.5 transition-transform duration-200 group-open:rotate-180"
+      fill="none"
+      height="24"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="m6 9 6 6 6-6"
+      />
+    </svg>
+  </summary>
+  <div
+    class="pb-4"
+  >
+    <div
+      class="text-sm text-foreground [&_table]:w-full [&_table]:border-collapse [&_td]:py-1.5 [&_td]:pr-4 [&_td]:align-top [&_td:first-child]:font-semibold [&_td:first-child]:w-1/2 [&_tr]:border-b [&_tr]:border-border"
+      data-testid="html-fragment"
+    >
+      <table>
+        <tbody>
+          <tr>
+            <td>
+              Material:
+            </td>
+            <td>
+              Full-grain leather
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Sole:
+            </td>
+            <td>
+              Rubber
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</details>
+`;
+
+exports[`CollapsibleHtmlSection stories snapshot > ToggleInteraction story renders and matches snapshot 1`] = `
+<details
+  class="group border-b border-border"
+>
+  <summary
+    class="flex items-center justify-between gap-4 py-4 text-base font-medium text-foreground cursor-pointer list-none [&::-webkit-details-marker]:hidden hover:bg-accent focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-foreground transition-colors"
+  >
+    <span
+      class="flex items-center gap-2"
+    >
+      Click to expand:
+    </span>
+    <svg
+      aria-hidden="true"
+      class="lucide lucide-chevron-down text-muted-foreground pointer-events-none size-5 shrink-0 translate-y-0.5 transition-transform duration-200 group-open:rotate-180"
+      fill="none"
+      height="24"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      viewBox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="m6 9 6 6 6-6"
+      />
+    </svg>
+  </summary>
+  <div
+    class="pb-4"
+  />
+</details>
+`;

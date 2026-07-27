@@ -1,0 +1,20 @@
+{
+    "contentComingSoon": "Innehåll kommer snart.",
+    "faq": {
+        "askAssistant": "Fråga assistent",
+        "faqQuestionSendToAssistantAriaLabel": "Öppna agenten för shopping och fråga: {{question}}"
+    },
+    "returnsAndWarranty": {
+        "learnMore": "Visa policyer",
+        "returnConditions": "Returvillkor:",
+        "howToReturn": "Hur man returnerar en produkt:",
+        "note": "Obs!",
+        "whatsCovered": "Vad som omfattas:",
+        "whatsNotCovered": "Vad som inte omfattas:",
+        "warrantyClaims": "Garantianspråk:",
+        "exchangeProcess": "Bytesprocess:",
+        "needHelp": "Behöver du hjälp?",
+        "contactAt": "Kontakta oss på",
+        "orCall": "eller ring"
+    }
+}

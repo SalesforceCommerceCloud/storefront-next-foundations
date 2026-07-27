@@ -1,0 +1,223 @@
+{
+  "name": "@salesforce/storefront-next-dev",
+  "version": "1.2.0-dev",
+  "description": "Dev and build tools for SFCC Storefront Next",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    },
+    "./logger": {
+      "import": {
+        "types": "./dist/logger/index.d.ts",
+        "default": "./dist/logger/index.js"
+      }
+    },
+    "./react-router-preset": {
+      "import": {
+        "types": "./dist/configs/react-router.config.d.ts",
+        "default": "./dist/configs/react-router.config.js"
+      }
+    },
+    "./react-router/Scripts": {
+      "import": {
+        "types": "./dist/react-router/Scripts.d.ts",
+        "default": "./dist/react-router/Scripts.js"
+      }
+    },
+    "./mrt/streamingHandler": {
+      "import": {
+        "types": "./dist/mrt/streamingHandler.d.ts",
+        "default": "./dist/mrt/streamingHandler.mjs"
+      }
+    },
+    "./mrt/ssr": {
+      "import": {
+        "types": "./dist/mrt/ssr.d.ts",
+        "default": "./dist/mrt/ssr.mjs"
+      }
+    },
+    "./cartridge-services": {
+      "import": {
+        "types": "./dist/cartridge-services/index.d.ts",
+        "default": "./dist/cartridge-services/index.js"
+      }
+    },
+    "./entry/server": {
+      "import": {
+        "types": "./dist/entry/server.d.ts",
+        "default": "./dist/entry/server.js"
+      }
+    },
+    "./entry/client": {
+      "import": {
+        "types": "./dist/entry/client.d.ts",
+        "default": "./dist/entry/client.js"
+      }
+    }
+  },
+  "bin": {
+    "sfnext": "./bin/run.js"
+  },
+  "oclif": {
+    "bin": "sfnext",
+    "dirname": "sfnext",
+    "commands": "./dist/commands",
+    "topicSeparator": " ",
+    "hooks": {
+      "init": "./dist/hooks/init"
+    },
+    "plugins": [
+      "@oclif/plugin-help",
+      "@oclif/plugin-plugins",
+      "@oclif/plugin-not-found"
+    ],
+    "topics": {
+      "extensions": {
+        "description": "Manage storefront extensions"
+      },
+      "scapi": {
+        "description": "Manage SCAPI client overrides and custom APIs"
+      },
+      "config": {
+        "description": "Inspect and manage storefront configuration"
+      },
+      "locales": {
+        "description": "Manage locale and translation files"
+      }
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsdown",
+    "dev": "tsdown --watch",
+    "test": "pnpm typecheck && vitest --run --coverage",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint src --ext .ts,.tsx",
+    "lint:fix": "eslint src --ext .ts,.tsx --fix",
+    "clean": "shx rm -rf dist",
+    "push": "./bin/run.js push",
+    "create-bundle": "./bin/run.js create-bundle",
+    "generate-cartridge": "./bin/run.js generate-cartridge",
+    "deploy-cartridge": "./bin/run.js deploy-cartridge"
+  },
+  "keywords": [
+    "vite",
+    "plugin",
+    "salesforce",
+    "storefront-next",
+    "commerce-cloud",
+    "pwa-kit",
+    "deployment",
+    "bundle"
+  ],
+  "author": "cc-pwa-kit@salesforce.com",
+  "license": "Apache-2.0",
+  "peerDependencies": {
+    "@react-router/dev": ">=7.0.0",
+    "@salesforce/storefront-next-runtime": "workspace:^",
+    "react": ">=19.0.0",
+    "react-dom": ">=19.0.0",
+    "react-router": ">=7.0.0",
+    "vite": ">=7.0.0"
+  },
+  "devDependencies": {
+    "@oclif/test": "^4.1.15",
+    "@react-router/dev": "7.18.0",
+    "@react-router/node": "7.18.0",
+    "@serverless/event-mocks": "1.1.1",
+    "@types/archiver": "^6.0.2",
+    "@types/aws-lambda": "8.10.159",
+    "@types/babel__generator": "7.27.0",
+    "@types/babel__traverse": "7.28.0",
+    "@types/compressible": "2.0.3",
+    "@types/compression": "^1.7.5",
+    "@types/express": "5.0.6",
+    "@types/fs-extra": "^11.0.4",
+    "@types/glob": "^8.1.0",
+    "@types/http-proxy": "1.17.17",
+    "@types/jest": "30.0.0",
+    "@types/minimatch": "^5.1.2",
+    "@types/morgan": "^1.9.9",
+    "@types/negotiator": "0.6.4",
+    "@types/node": "^24.0.0",
+    "@types/prompts": "2.4.9",
+    "@types/react": "19.1.13",
+    "@types/react-dom": "19.1.9",
+    "@types/semver": "7.7.1",
+    "@vitest/coverage-v8": "4.1.8",
+    "fs-extra": "11.3.2",
+    "jest": "^29.7.0",
+    "memfs": "^4.42.0",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "react-router": "7.18.0",
+    "shx": "^0.4.0",
+    "ts-jest": "29.4.1",
+    "tsdown": "^0.15.4",
+    "typescript": "^5.6.0",
+    "vite": "7.3.5",
+    "vitest": "4.1.8"
+  },
+  "dependencies": {
+    "@babel/generator": "7.28.5",
+    "@babel/parser": "^7.28.4",
+    "@babel/traverse": "^7.28.4",
+    "@babel/types": "7.28.4",
+    "@codegenie/serverless-express": "4.17.0",
+    "@h4ad/serverless-adapter": "4.4.0",
+    "@oclif/core": "^4.2.10",
+    "@oclif/plugin-help": "^6.2.36",
+    "@oclif/plugin-not-found": "^3.2.73",
+    "@oclif/plugin-plugins": "^5",
+    "@opentelemetry/api": "^1.9.0",
+    "@opentelemetry/core": "^1.30.0",
+    "@opentelemetry/instrumentation": "0.213.0",
+    "@opentelemetry/instrumentation-undici": "0.23.0",
+    "@opentelemetry/resources": "^1.30.0",
+    "@opentelemetry/sdk-trace-base": "^1.30.0",
+    "@opentelemetry/sdk-trace-node": "^1.30.0",
+    "@opentelemetry/semantic-conventions": "^1.28.0",
+    "@react-router/express": "7.18.0",
+    "@salesforce/b2c-tooling-sdk": "1.19.0",
+    "archiver": "^7.0.1",
+    "babel-dead-code-elimination": "1.0.12",
+    "chalk": "^5.3.0",
+    "compressible": "2.0.18",
+    "compression": "^1.7.4",
+    "express": "5.1.0",
+    "fs-extra": "^11.2.0",
+    "glob": "^11.0.0",
+    "handlebars": "4.7.9",
+    "http-proxy": "1.18.1",
+    "http-proxy-middleware": "^3.0.0",
+    "jiti": "^2.6.1",
+    "minimatch": "10.2.5",
+    "morgan": "^1.10.0",
+    "negotiator": "1.0.0",
+    "npm-run-path": "6.0.0",
+    "openapi-typescript": "7.10.1",
+    "prettier": "3.6.2",
+    "prompts": "2.4.2",
+    "ts-morph": "^24.0.0",
+    "tsdown": "^0.15.4",
+    "tsx": "^4.20.5",
+    "undici": "7.28.0",
+    "yaml": "2.9.0",
+    "zod": "4.1.13"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

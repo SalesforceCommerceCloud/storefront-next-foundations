@@ -1,0 +1,63 @@
+{
+    "pageId": "file-page",
+    "context": {
+        "campaignQualifiers": [],
+        "customerGroups": [],
+        "dataBindings": []
+    },
+    "variationOrder": ["default"],
+    "variations": {
+        "default": {
+            "ruleRequiresContext": false,
+            "pageRequiresContext": false,
+            "page": {
+                "id": "file-page",
+                "typeId": "storePage",
+                "regions": [
+                    {
+                        "id": "main",
+                        "components": [
+                            {
+                                "id": "download-1",
+                                "typeId": "commerce_assets.downloadLink",
+                                "regions": []
+                            }
+                        ]
+                    }
+                ]
+            },
+            "regions": {
+                "main": {}
+            }
+        }
+    },
+    "defaultVariation": "default",
+    "componentTypes": {
+        "storePage": {
+            "attributeDefinitions": {}
+        },
+        "commerce_assets.downloadLink": {
+            "attributeDefinitions": {
+                "title": { "type": "string" },
+                "document": { "type": "file" }
+            }
+        }
+    },
+    "componentInfo": {
+        "download-1": {
+            "visibilityRules": [],
+            "content": {
+                "en_US": {
+                    "title": "Size Guide",
+                    "document": {
+                        "media": {
+                            "libraryDomain": "Library-Sites-RefArchSharedLibrary",
+                            "path": "/pdfs/size-guide.pdf"
+                        }
+                    }
+                }
+            },
+            "regions": {}
+        }
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "extends": "./tsconfig.json",
+    "compilerOptions": {
+        "module": "CommonJS",
+        "target": "ES2020",
+        "moduleResolution": "node",
+        "strict": false,
+        "types": ["codeceptjs", "node", "mocha", "chai"]
+    },
+    "ts-node": {
+        "transpileOnly": true,
+        "compilerOptions": {
+            "module": "CommonJS",
+            "target": "ES2020"
+        }
+    },
+    "include": ["src/**/*", "steps.d.ts", "node_modules/codeceptjs/types.d.ts"],
+    "exclude": ["node_modules", "**/*.cjs", "codecept.conf.cjs"]
+}

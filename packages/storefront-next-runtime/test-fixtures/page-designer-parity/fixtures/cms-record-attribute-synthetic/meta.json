@@ -1,0 +1,9 @@
+{
+    "sourceStack": "synthetic",
+    "requestHost": "https://www.shop.example",
+    "locale": "en_US",
+    "defaultLocale": "en_US",
+    "siteId": "RefArch",
+    "capturedAt": "2026-05-11T00:00:00Z",
+    "description": "CMS Record attribute round-trip fixture: one component with a cms_record-typed attribute containing inner image and string attributes. The expected output shows the record's inner image attribute resolved (media envelope → URL) while string passes through. Exercises recursive dispatch. Synthetic capture."
+}

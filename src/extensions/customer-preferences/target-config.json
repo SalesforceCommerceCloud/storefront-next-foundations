@@ -1,0 +1,9 @@
+{
+    "components": [
+        {
+            "targetId": "sfcc.myAccount.preferences",
+            "path": "extensions/customer-preferences/components/target/preferences-target.tsx",
+            "order": 0
+        }
+    ]
+}

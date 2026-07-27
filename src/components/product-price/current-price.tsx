@@ -1,0 +1,79 @@
+/**
+ * Copyright 2026 Salesforce, Inc.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+import { Typography } from '@/components/typography';
+import { useTranslation } from 'react-i18next';
+import { formatCurrency } from '@/lib/currency';
+
+interface CurrentPriceProps {
+    labelForA11y?: string;
+    price: number;
+    as?: 'span' | 'div' | 'p' | 'h3' | 'h5';
+    isRange?: boolean;
+    /** When set with isRange, display as "min – max" price range */
+    maxPrice?: number;
+    currency: string;
+    className?: string;
+}
+
+/**
+ * Component that displays current price of a product with a11y
+ * @param price - price of the product
+ * @param as - an HTML tag or component to be rendered as
+ * @param isRange - show price as range or not
+ * @param currency - currency to show the price in
+ * @param labelForA11y - label to be used for a11y
+ * @param className - additional CSS classes
+ * @returns {JSX.Element}
+ */
+export default function CurrentPrice({
+    labelForA11y,
+    price,
+    as = 'span',
+    isRange = false,
+    maxPrice,
+    currency,
+    className,
+}: CurrentPriceProps) {
+    const { t, i18n } = useTranslation('product');
+
+    // Format currency using i18next's current language
+    const currentPriceText = formatCurrency(price, i18n.language, currency);
+    const showMinMax = isRange && maxPrice != null && maxPrice > price;
+    const maxPriceText = showMinMax ? formatCurrency(maxPrice, i18n.language, currency) : '';
+
+    const ariaLabel = showMinMax
+        ? t('price.rangeA11y', { min: currentPriceText, max: maxPriceText })
+        : t('price.currentPrice', { price: currentPriceText });
+
+    const displayText = showMinMax ? t('price.range', { min: currentPriceText, max: maxPriceText }) : currentPriceText;
+
+    return (
+        <>
+            <Typography
+                as={as}
+                className={`font-semibold ${className || ''}`}
+                aria-live="polite"
+                aria-label={ariaLabel}>
+                {displayText}
+            </Typography>
+            {/*For screen reader, we want to make sure the product name is announced before the price to avoid confusion*/}
+            <span className="sr-only" aria-live="polite" aria-atomic={true}>
+                {labelForA11y} {ariaLabel}
+            </span>
+        </>
+    );
+}

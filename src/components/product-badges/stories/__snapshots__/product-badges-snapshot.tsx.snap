@@ -1,0 +1,59 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`ProductBadges stories snapshot > Default story renders and matches snapshot 1`] = `
+<div
+  aria-label="Product badges: New, Sale"
+  class="absolute top-2 left-2 z-10 flex flex-row pointer-events-none gap-1"
+  role="group"
+>
+  <span
+    aria-label="New product"
+    class="inline-flex items-center justify-center rounded-full border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent bg-success text-success-foreground [a&]:hover:bg-success/90"
+    data-slot="badge"
+    role="status"
+  >
+    New
+  </span>
+  <span
+    aria-label="Sale product"
+    class="inline-flex items-center justify-center rounded-full border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent bg-product-badge-promo-bg text-product-badge-promo-foreground [a&]:hover:bg-product-badge-promo-bg/90"
+    data-slot="badge"
+    role="status"
+  >
+    Sale
+  </span>
+</div>
+`;
+
+exports[`ProductBadges stories snapshot > WithBadgeOverride story renders and matches snapshot 1`] = `
+<div
+  aria-label="Product badges: New, Sale, Special"
+  class="absolute top-2 left-2 z-10 flex flex-row pointer-events-none gap-1"
+  role="group"
+>
+  <span
+    aria-label="New product"
+    class="inline-flex items-center justify-center rounded-full border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent bg-success text-success-foreground [a&]:hover:bg-success/90"
+    data-slot="badge"
+    role="status"
+  >
+    New
+  </span>
+  <span
+    aria-label="Sale product"
+    class="inline-flex items-center justify-center rounded-full border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent bg-product-badge-promo-bg text-product-badge-promo-foreground [a&]:hover:bg-product-badge-promo-bg/90"
+    data-slot="badge"
+    role="status"
+  >
+    Sale
+  </span>
+  <span
+    aria-label="Special product"
+    class="inline-flex items-center justify-center rounded-full border px-2 py-0.5 text-xs font-medium w-fit whitespace-nowrap shrink-0 [&>svg]:size-3 gap-1 [&>svg]:pointer-events-none focus-visible:border-ring focus-visible:ring-ring focus-visible:ring-[3px] aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 aria-invalid:border-destructive transition-[color,box-shadow] overflow-hidden border-transparent bg-info text-info-foreground [a&]:hover:bg-info/90"
+    data-slot="badge"
+    role="status"
+  >
+    Special
+  </span>
+</div>
+`;

@@ -1,0 +1,156 @@
+@theme inline {
+    /* Font families */
+    --font-sans: 'Sen', -apple-system, 'system-ui', 'Helvetica Neue', Arial, sans-serif;
+    --font-serif: 'Sen', Georgia, serif;
+    --font-mono: 'Sen', 'Courier New', monospace;
+
+    /* Error page tokens */
+    --text-error-status: 12rem; /* Large status code display for error pages */
+
+    /* -- shape tokens -- shadcn primitives use rounded-ui / shadow-ui so
+       the corner radius and drop shadow re-skin per vertical without
+       touching the primitive class strings. The --ui-* source tokens are
+       defined in tokens/core.css (per vertical); these lines bridge them
+       into Tailwind's utility namespaces. border-ui is defined via @utility
+       below (no automatic namespace for border-width in Tailwind v4). */
+    --radius-ui: var(--ui-radius);
+    --shadow-ui: var(--ui-shadow);
+
+    /* -- core colors -- */
+    --color-background: var(--background);
+    --color-foreground: var(--foreground);
+    --color-card: var(--card);
+    --color-card-foreground: var(--card-foreground);
+    --color-popover: var(--popover);
+    --color-popover-foreground: var(--popover-foreground);
+    --color-primary: var(--primary);
+    --color-primary-foreground: var(--primary-foreground);
+    --color-secondary: var(--secondary);
+    --color-secondary-foreground: var(--secondary-foreground);
+    --color-tertiary: var(--tertiary);
+    --color-tertiary-foreground: var(--tertiary-foreground);
+    --color-muted: var(--muted);
+    --color-muted-foreground: var(--muted-foreground);
+    --color-muted-hover: var(--muted-hover);
+    --color-accent: var(--accent);
+    --color-accent-foreground: var(--accent-foreground);
+    --color-border: var(--border);
+    --color-border-subtle: var(--border-subtle);
+    --color-input: var(--input);
+    --color-ring: var(--ring);
+    --color-sidebar: var(--sidebar);
+    --color-sidebar-foreground: var(--sidebar-foreground);
+    --color-sidebar-primary: var(--sidebar-primary);
+    --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+    --color-sidebar-accent: var(--sidebar-accent);
+    --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+    --color-sidebar-border: var(--sidebar-border);
+    --color-sidebar-ring: var(--sidebar-ring);
+    --color-separator: var(--separator);
+    --color-separator-foreground: var(--separator-foreground);
+    --color-rating: var(--rating);
+    --color-rating-foreground: var(--rating-foreground);
+
+    /* -- status & feedback colors -- */
+    --color-destructive: var(--destructive);
+    --color-destructive-foreground: var(--destructive-foreground);
+    --color-success: var(--success);
+    --color-success-foreground: var(--success-foreground);
+    --color-info: var(--info);
+    --color-info-foreground: var(--info-foreground);
+    --color-warning: var(--warning);
+    --color-warning-foreground: var(--warning-foreground);
+    --color-warning-bg: var(--warning-bg);
+    --color-warning-border: var(--warning-border);
+    --color-active-bg: var(--active-bg);
+    --color-active-foreground: var(--active-foreground);
+    --color-account-action-destructive: var(--account-action-destructive);
+    --color-account-action-destructive-foreground: var(--account-action-destructive-foreground);
+    --color-status-positive: var(--status-positive);
+    --color-status-warning: var(--status-warning);
+    --color-status-critical: var(--status-critical);
+    --color-status-critical-strong: var(--status-critical-strong);
+    --color-status-critical-bg: var(--status-critical-bg);
+    --color-status-critical-foreground: var(--status-critical-foreground);
+    --color-status-critical-border: var(--status-critical-border);
+    --color-status-info: var(--status-info);
+
+    /* -- swatch colors -- */
+    --color-swatch-group-bg: var(--swatch-group-bg);
+    --color-swatch-bg: var(--swatch-bg);
+    --color-swatch-bg-selected: var(--swatch-bg-selected);
+    --color-swatch-border: var(--swatch-border);
+    --color-swatch-border-selected: var(--swatch-border-selected);
+    --color-swatch-text: var(--swatch-text);
+    --color-swatch-text-selected: var(--swatch-text-selected);
+
+    /* -- review verified badge (themeable) -- */
+    --color-review-verified-bg: var(--review-verified-bg);
+    --color-review-verified-text: var(--review-verified-text);
+
+    /* -- payment provider colors -- */
+    --color-paypal-gold: var(--paypal-gold);
+    --color-venmo-blue: var(--venmo-blue);
+
+    /* -- product badge -- */
+    --color-product-badge-promo-bg: var(--product-badge-promo-bg);
+    --color-product-badge-promo-foreground: var(--product-badge-promo-foreground);
+
+    /* -- header & navigation -- */
+    --color-header-background: var(--header-background);
+    --color-header-foreground: var(--header-foreground);
+    --color-header-border: var(--header-border);
+    --color-header-divider: var(--header-divider);
+    --color-header-menu-background: var(--header-menu-background);
+    --color-header-menu-foreground: var(--header-menu-foreground);
+    --color-header-menu-border: var(--header-menu-border);
+    --color-header-menu-hover-background: var(--header-menu-hover-background);
+    --color-header-menu-active-background: var(--header-menu-active-background);
+    --color-header-menu-icon: var(--header-menu-icon);
+
+    /* -- footer -- */
+    --color-footer-background: var(--footer-background);
+    --color-footer-foreground: var(--footer-foreground);
+
+    /* -- agentic palette -- */
+    --color-agentic: var(--agentic);
+    --color-agentic-foreground: var(--agentic-foreground);
+    --color-agentic-primary: var(--agentic-primary);
+    --color-agentic-primary-foreground: var(--agentic-primary-foreground);
+    --color-agentic-accent: var(--agentic-accent);
+    --color-agentic-accent-foreground: var(--agentic-accent-foreground);
+    --color-agentic-border: var(--agentic-border);
+    --color-agentic-ring: var(--agentic-ring);
+    --color-agentic-muted: var(--agentic-muted);
+    --color-agentic-muted-foreground: var(--agentic-muted-foreground);
+    --color-agentic-border-subtle: var(--agentic-border-subtle);
+    --color-agentic-message-output: var(--agentic-message-output);
+    --color-agentic-message-input: var(--agentic-message-input);
+
+    /* -- filter -- */
+    --color-filter-selected: var(--filter-selected);
+    --color-filter-selected-border: var(--filter-selected-border);
+
+    /* -- brand colors -- */
+    --color-brand-black: var(--brand-black);
+    --color-brand-black-off: var(--brand-black-off);
+    --color-brand-black-charcoal: var(--brand-black-charcoal);
+    --color-brand-white: var(--brand-white);
+    --color-brand-white-bone: var(--brand-white-bone);
+    --color-brand-white-ivory: var(--brand-white-ivory);
+    --color-brand-gray-50: var(--brand-gray-50);
+    --color-brand-gray-100: var(--brand-gray-100);
+    --color-brand-gray-200: var(--brand-gray-200);
+    --color-brand-gray-300: var(--brand-gray-300);
+    --color-brand-gray-400: var(--brand-gray-400);
+    --color-brand-gray-500: var(--brand-gray-500);
+    --color-brand-gray-600: var(--brand-gray-600);
+    --color-brand-gray-700: var(--brand-gray-700);
+    --color-brand-gray-800: var(--brand-gray-800);
+    --color-brand-gray-900: var(--brand-gray-900);
+}
+
+@utility border-ui {
+    border-style: solid;
+    border-width: var(--ui-border-width);
+}
