@@ -14,6 +14,28 @@
  * limitations under the License.
  */
 
+/**
+ * Foundations home route test overlay.
+ *
+ * Route overlays replace (they do not merge), so the foundations home overlay
+ * (`_app._index.tsx`) ships its own test — the canonical test asserts a 3-card
+ * layout that the foundations Figma design does not have.
+ *
+ * The foundations home renders only TWO featured content cards (Women, Men);
+ * it intentionally omits the canonical "Style for Real Life" text-only card
+ * (see the route overlay header). So this overlay differs from the canonical
+ * test in exactly two places:
+ *
+ *   1. `renders all content cards with correct count` asserts a length of 2.
+ *   2. `passes categories promise to PopularCategories component` asserts the
+ *      PopularCategories mock's own heading ("Step into Elegance") rather than
+ *      "Style for Real Life", which the canonical test only saw because it was
+ *      the third card's title.
+ *
+ * Everything else mirrors the canonical test — the foundations loader and the
+ * remaining static sections are structurally identical.
+ */
+
 import { render, screen, waitFor } from '@testing-library/react';
 import { beforeEach, describe, expect, test, vi } from 'vitest';
 import type { LoaderFunctionArgs } from 'react-router';
@@ -157,19 +179,15 @@ vi.mock('react-i18next', async () => {
                 // Handle both with and without the 'home:' namespace prefix
                 const normalizedKey = key.startsWith('home:') ? key.substring(5) : key;
                 const translations: Record<string, string> = {
-                    'hero.slide1.title': 'Welcome to Our Store',
-                    'hero.slide1.subtitle': 'Discover amazing products',
-                    'hero.slide1.imageAlt': 'Hero image',
-                    'hero.slide1.ctaText': 'Shop Now',
-                    'hero.slide2.title': 'Summer Collection',
-                    'hero.slide2.subtitle': 'Hot deals on trending items',
-                    'hero.slide2.ctaText': 'Explore',
-                    'hero.slide3.title': 'Free Shipping',
-                    'hero.slide3.subtitle': 'On orders over $50',
-                    'hero.slide3.ctaText': 'Learn More',
-                    'featuredProducts.title': 'Featured Products',
+                    'hero.slide1.title': 'Geometric Elegance',
+                    'hero.slide1.subtitle': 'Discover our curated selection of minimalist design pieces',
+                    'hero.slide1.imageAlt': 'A minimalist geometric cube on a neutral studio backdrop',
+                    'hero.slide1.ctaText': 'Explore now',
+                    'featuredProducts.title': 'Featured Collection',
                     'categoryGrid.title': 'Style for Real Life',
                     'categoryGrid.shopNowButton': 'Shop Now',
+                    // Foundations does not override the Women/Men card copy, so it
+                    // inherits the base bundle strings asserted here.
                     'featuredContent.women.title': 'Women',
                     'featuredContent.women.description':
                         'Discover our curated collection of sophisticated footwear designed for the modern woman.',
@@ -180,9 +198,6 @@ vi.mock('react-i18next', async () => {
                         "Timeless craftsmanship meets contemporary style in our men's footwear collection.",
                     'featuredContent.men.imageAlt': "Men's Collection",
                     'featuredContent.men.ctaText': 'EXPLORE COLLECTION',
-                    'featuredContent.styleForRealLife.title': 'Style for Real Life',
-                    'featuredContent.styleForRealLife.description':
-                        'We believe style should be effortless, authentic, and accessible. Our collections are designed for the modern individual who values quality, versatility, and timeless appeal.\n\nDiscover pieces that move with you, adapt to your life, and become the foundation of a wardrobe that works—every day, everywhere.',
                 };
                 return translations[normalizedKey] || key;
             },
@@ -342,7 +357,7 @@ describe('HomePage', () => {
             renderComponent();
             await waitFor(() => {
                 expect(screen.getByTestId('popular-categories')).toBeInTheDocument();
-                expect(screen.getByText('Style for Real Life')).toBeInTheDocument();
+                expect(screen.getByText('Step into Elegance')).toBeInTheDocument();
             });
         });
     });
@@ -373,7 +388,8 @@ describe('HomePage', () => {
         test('renders all content cards with correct count', () => {
             renderComponent();
             const contentCards = screen.getAllByTestId('content-card');
-            expect(contentCards).toHaveLength(3); // Women, Men, and Style for Real Life card
+            // Women and Men. Foundations home renders no third "Style for Real Life" card.
+            expect(contentCards).toHaveLength(2);
         });
     });
 

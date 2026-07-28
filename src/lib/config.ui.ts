@@ -21,7 +21,9 @@
  *   the count-only baseline.
  *
  * Every other flag matches the canonical baseline, so cart and category behaviour
- * is unchanged from the default.
+ * is unchanged from the default — including `category.pagination`, which mirrors
+ * the canonical load-more defaults verbatim (this override module must declare the
+ * full `UIConfig` shape inline; see the mirror note below).
  */
 interface UIConfig {
     pages: {
@@ -34,6 +36,12 @@ interface UIConfig {
         };
         category: {
             showCategoryLabel: boolean;
+            pagination: {
+                mode: 'load-more' | 'traditional';
+                batchSize: number;
+                mobileBatchSize: number;
+                maxProducts: number;
+            };
         };
         product: {
             showRatingAverage: boolean;
@@ -52,6 +60,12 @@ export const uiConfig: UIConfig = {
         },
         category: {
             showCategoryLabel: false,
+            pagination: {
+                mode: 'load-more',
+                batchSize: 24,
+                mobileBatchSize: 12,
+                maxProducts: 200,
+            },
         },
         product: {
             showRatingAverage: true,
