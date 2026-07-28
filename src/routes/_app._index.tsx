@@ -13,6 +13,34 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+
+/**
+ * Foundations home route overlay.
+ *
+ * A full replacement of the canonical `src/routes/_app._index.tsx` (route overlays
+ * replace, they do not merge — see docs/internal/multi-vertical/README-VITE-RESOLVER.md).
+ *
+ * Foundations follows the Figma "Storefront Home" design (node 10002:82198), which
+ * structures the page as fixed static sections with empty Page Designer slots
+ * (`🧩 Custom Region 1–7`) interspersed between them. So this overlay differs from
+ * the canonical layout in two structural ways:
+ *
+ *   1. The marketing sections (hero, featured collection, content cards, category
+ *      rail) are ALWAYS rendered as static content — not as the `errorElement`
+ *      fallback of an empty region. Adding a Page Designer component therefore
+ *      renders IN ADDITION to the static content (in the adjacent slot), rather
+ *      than replacing the whole section as the canonical/fallback pattern does.
+ *   2. Empty `<Region>` slots are placed between each section. With no components
+ *      and no `errorElement`, an empty slot renders nothing until a merchant drops
+ *      a component into it via Page Designer.
+ *
+ * Copy/typography also match Figma: "Featured Collection" (via the foundations
+ * locale override `home.featuredProducts.title`) and the H2 section-heading scale
+ * (text-4xl / font-medium / leading-none). The Newsletter band is rendered by the
+ * footer (`main-footer.tsx`, gated by `isHomepage`), not here.
+ *
+ * Fashion and cosmetic keep the canonical layout untouched.
+ */
 import { Suspense } from 'react';
 import { Await, redirect, useAsyncError } from 'react-router';
 import type { Route } from './+types/_app._index';
@@ -31,36 +59,59 @@ import { fetchPageWithComponentData } from '@/lib/page-designer/page-loader.serv
 import { getLogger } from '@/lib/logger.server';
 
 import hero01 from '/images/hero-01.webp';
-import hero02 from '/images/hero-02.webp';
 import hero03 from '/images/hero-03.webp';
 import hero04 from '/images/hero-04.webp';
-import HeroCarousel, { HeroCarouselSkeleton, type HeroSlide } from '@/components/hero-carousel';
+// Foundations hero visual from the Figma "Storefront Home" design (node 10002:82198):
+// a single centered "Geometric Elegance" cube. Overlaid via the foundations public dir.
+import heroGeometric from '/images/hero-geometric.webp';
+import HeroCarousel, { type HeroSlide } from '@/components/hero-carousel';
 import { ProductCarouselSkeleton } from '@/components/product-carousel';
 import { ProductCarouselWithData } from '@/components/product-carousel/carousel';
 import { SeoMeta } from '@/components/seo-meta';
 import { buildCanonicalUrl } from '@/utils/canonical-url';
 import { useTranslation } from 'react-i18next';
-import { NormalizedApiError } from '@/lib/api/normalized-api-error';
+import type { NormalizedApiError } from '@/lib/api/normalized-api-error';
 
 export { shouldRevalidate } from '@/lib/revalidation/routes/home';
 
+/** Figma home section-heading scale (H2): text-4xl / font-medium / leading-none, standard Tailwind tokens. */
+const featuredHeadingClassName = 'text-4xl font-medium leading-none tracking-tight text-foreground';
+
 @PageType({
     name: 'Home Page',
-    description: 'Main landing page with hero carousel, featured products, and help sections',
+    description: 'Main landing page with static marketing sections and interspersed Page Designer slots',
     supportedAspectTypes: [],
 })
 @RegionDefinition([
     {
-        id: 'headerbanner',
-        name: 'Header Banner Region',
-        description: 'Region for promotional banners and hero content',
+        id: 'top',
+        name: 'Top Slot',
+        description: 'Empty slot above the hero carousel',
         maxComponents: 3,
     },
     {
-        id: 'main',
-        name: 'Main Content Region',
-        description: 'Region for main content',
-        maxComponents: 10,
+        id: 'afterHero',
+        name: 'After Hero Slot',
+        description: 'Empty slot between the hero carousel and the featured collection',
+        maxComponents: 3,
+    },
+    {
+        id: 'afterFeatured',
+        name: 'After Featured Slot',
+        description: 'Empty slot between the featured collection and the content cards',
+        maxComponents: 3,
+    },
+    {
+        id: 'afterContent',
+        name: 'After Content Slot',
+        description: 'Empty slot between the content cards and the category section',
+        maxComponents: 3,
+    },
+    {
+        id: 'bottom',
+        name: 'Bottom Slot',
+        description: 'Empty slot below the category section',
+        maxComponents: 3,
     },
 ])
 export class HomePageMetadata {}
@@ -133,54 +184,26 @@ export function loader(args: Route.LoaderArgs): HomePageData {
 }
 
 /**
- * Home page component that displays the home page content with granular Suspense boundaries.
- * Components within the page handle their own Suspense boundaries for progressive loading.
+ * Home page component.
+ *
+ * Renders fixed static marketing sections with empty Page Designer slots
+ * interspersed between them (see the file header for the Figma rationale).
  * @returns JSX element representing the home page layout
  */
 export default function HomePage({ loaderData }: { loaderData: HomePageData }) {
     const { t } = useTranslation('home');
 
+    // Figma designs a single "Geometric Elegance" hero slide (node 10002:82198); the 5 dots there
+    // are placeholder carousel chrome, not additional designed slides. So foundations renders one
+    // slide — the HeroCarousel already hides dots/nav when slideCount === 1.
     const heroSlides: HeroSlide[] = [
         {
             id: 'slide-1',
             title: t('hero.slide1.title'),
             subtitle: t('hero.slide1.subtitle'),
-            imageUrl: hero01,
+            imageUrl: heroGeometric,
             imageAlt: t('hero.slide1.imageAlt'),
             ctaText: t('hero.slide1.ctaText'),
-            ctaLink: '/category/root',
-            overlayPosition: 'Middle Center',
-            overlayAlignment: 'center',
-        },
-        {
-            id: 'slide-2',
-            title: t('hero.slide2.title'),
-            subtitle: t('hero.slide2.subtitle'),
-            imageUrl: hero02,
-            imageAlt: t('hero.slide2.imageAlt'),
-            ctaText: t('hero.slide2.ctaText'),
-            ctaLink: '/category/root',
-            overlayPosition: 'Middle Center',
-            overlayAlignment: 'center',
-        },
-        {
-            id: 'slide-3',
-            title: t('hero.slide3.title'),
-            subtitle: t('hero.slide3.subtitle'),
-            imageUrl: hero03,
-            imageAlt: t('hero.slide3.imageAlt'),
-            ctaText: t('hero.slide3.ctaText'),
-            ctaLink: '/category/root',
-            overlayPosition: 'Middle Center',
-            overlayAlignment: 'center',
-        },
-        {
-            id: 'slide-4',
-            title: t('hero.slide4.title'),
-            subtitle: t('hero.slide4.subtitle'),
-            imageUrl: hero04,
-            imageAlt: t('hero.slide4.imageAlt'),
-            ctaText: t('hero.slide4.ctaText'),
             ctaLink: '/category/root',
             overlayPosition: 'Middle Center',
             overlayAlignment: 'center',
@@ -188,116 +211,93 @@ export default function HomePage({ loaderData }: { loaderData: HomePageData }) {
     ];
 
     return (
-        <>
-            <div className="pb-16 -mt-8">
-                <SeoMeta
-                    rawTitle
-                    title={t('meta.title', { defaultValue: 'NextGen PWA Kit Store' })}
-                    description={t('meta.description', {
-                        defaultValue: 'Welcome to our web store for high performers!',
-                    })}
-                    openGraph={{
-                        type: 'website',
-                        url: loaderData.pageUrl,
-                        image: loaderData.ogImageUrl,
-                    }}
-                />
-                {/* Header Banner Region - Region component handles its own Suspense internally */}
-                <div>
-                    <Region
-                        page={loaderData.page}
-                        regionId="headerbanner"
-                        fallbackElement={
-                            <>
-                                {/* Provide fallback skeletons for the above the fold content */}
-                                <HeroCarouselSkeleton showDots={true} showNavigation={true} />
-                                <ProductCarouselSkeleton title={t('featuredProducts.title')} />
-                            </>
-                        }
-                        errorElement={
-                            <>
-                                <HeroCarousel
-                                    slides={heroSlides}
-                                    autoPlay={true}
-                                    autoPlayInterval={6000}
-                                    showNavigation={true}
-                                    showDots={true}
-                                />
+        <div className="pb-16 -mt-8">
+            <SeoMeta
+                rawTitle
+                title={t('meta.title', { defaultValue: 'NextGen PWA Kit Store' })}
+                description={t('meta.description', {
+                    defaultValue: 'Welcome to our web store for high performers!',
+                })}
+                openGraph={{
+                    type: 'website',
+                    url: loaderData.pageUrl,
+                    image: loaderData.ogImageUrl,
+                }}
+            />
 
-                                {/* Featured Products */}
-                                <Suspense fallback={<ProductCarouselSkeleton title={t('featuredProducts.title')} />}>
-                                    <Await resolve={loaderData.searchResult} errorElement={<FeaturedProductsError />}>
-                                        {(searchResult) => (
-                                            <ProductCarouselWithData
-                                                data={searchResult}
-                                                title={t('featuredProducts.title')}
-                                                shopAllUrl="/category/root"
-                                                shopAllText={t('featuredProducts.shopAll')}
-                                            />
-                                        )}
-                                    </Await>
-                                </Suspense>
-                            </>
-                        }
-                    />
+            {/* Empty PD slot above the hero (Figma: Custom Region 1). */}
+            <Region page={loaderData.page} regionId="top" />
+
+            {/* Hero carousel — static */}
+            <HeroCarousel
+                slides={heroSlides}
+                autoPlay={true}
+                autoPlayInterval={6000}
+                showNavigation={true}
+                showDots={true}
+            />
+
+            {/* Empty PD slot between hero and featured collection (Figma: Custom Region 2). */}
+            <Region page={loaderData.page} regionId="afterHero" />
+
+            {/* Featured Collection — static (Suspense while product data resolves) */}
+            <Suspense fallback={<ProductCarouselSkeleton title={t('featuredProducts.title')} />}>
+                <Await resolve={loaderData.searchResult} errorElement={<FeaturedProductsError />}>
+                    {(searchResult) => (
+                        <ProductCarouselWithData
+                            data={searchResult}
+                            title={t('featuredProducts.title')}
+                            titleClassName={featuredHeadingClassName}
+                            shopAllUrl="/category/root"
+                            shopAllText={t('featuredProducts.shopAll')}
+                        />
+                    )}
+                </Await>
+            </Suspense>
+
+            {/* Empty PD slot between featured collection and content cards (Figma: Custom Region 3). */}
+            <Region page={loaderData.page} regionId="afterFeatured" />
+
+            {/* Women/Men content cards — static */}
+            <div className="pt-16">
+                <div className="section-container">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <ContentCard
+                            title={t('featuredContent.women.title')}
+                            description={t('featuredContent.women.description')}
+                            imageUrl={hero03}
+                            imageAlt={t('featuredContent.women.imageAlt')}
+                            buttonText={t('featuredContent.women.ctaText')}
+                            buttonLink="/category/womens"
+                            showBackground={false}
+                            showBorder={false}
+                            loading="lazy"
+                        />
+                        <ContentCard
+                            title={t('featuredContent.men.title')}
+                            description={t('featuredContent.men.description')}
+                            imageUrl={hero04}
+                            imageAlt={t('featuredContent.men.imageAlt')}
+                            buttonText={t('featuredContent.men.ctaText')}
+                            buttonLink="/category/mens"
+                            showBackground={false}
+                            showBorder={false}
+                            loading="lazy"
+                        />
+                    </div>
                 </div>
-
-                {/* Main Region - Region component handles its own Suspense internally */}
-                {/* Note: This region doesn't provide fallback skeletons right now as it's located below the fold */}
-                <Region
-                    page={loaderData.page}
-                    regionId="main"
-                    errorElement={
-                        <>
-                            {/* Popular Categories - full-width section with its own gray bg and container */}
-                            <PopularCategories categoriesPromise={loaderData.categories} />
-
-                            {/* Featured Content Cards - Static content */}
-                            <div className="pt-16">
-                                <div className="section-container">
-                                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                                        <ContentCard
-                                            title={t('featuredContent.women.title')}
-                                            description={t('featuredContent.women.description')}
-                                            imageUrl={hero03}
-                                            imageAlt={t('featuredContent.women.imageAlt')}
-                                            buttonText={t('featuredContent.women.ctaText')}
-                                            buttonLink="/category/womens"
-                                            showBackground={false}
-                                            showBorder={false}
-                                            loading="lazy"
-                                        />
-                                        <ContentCard
-                                            title={t('featuredContent.men.title')}
-                                            description={t('featuredContent.men.description')}
-                                            imageUrl={hero04}
-                                            imageAlt={t('featuredContent.men.imageAlt')}
-                                            buttonText={t('featuredContent.men.ctaText')}
-                                            buttonLink="/category/mens"
-                                            showBackground={false}
-                                            showBorder={false}
-                                            loading="lazy"
-                                        />
-                                    </div>
-
-                                    {/* Text-only card below women/men cards */}
-                                    <div className="mt-16 max-w-4xl mx-auto layout-gutter text-center">
-                                        <ContentCard
-                                            title={t('featuredContent.styleForRealLife.title')}
-                                            description={t('featuredContent.styleForRealLife.description')}
-                                            showBackground={false}
-                                            showBorder={false}
-                                            cardFooterClassName="items-center text-center p-0"
-                                            cardDescriptionClassName="text-center"
-                                            className="[&_h3]:text-3xl [&_h3]:md:text-4xl [&_h3]:font-normal [&_h3]:text-brand-black [&_h3]:mb-6 [&_h3]:tracking-tight [&_p]:text-sm [&_p]:text-brand-gray-700 [&_p]:leading-relaxed [&_p]:font-normal [&_p:last-of-type]:text-base [&_p:last-of-type]:text-brand-gray-600"
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                        </>
-                    }
-                />
             </div>
-        </>
+
+            {/* Empty PD slot between content cards and the category section (Figma: Custom Region 4). */}
+            <Region page={loaderData.page} regionId="afterContent" />
+
+            {/* "Style for Real Life" category rail — static (Suspense while categories resolve) */}
+            <div className="pt-16">
+                <PopularCategories categoriesPromise={loaderData.categories} />
+            </div>
+
+            {/* Empty PD slot below the category section (Figma: Custom Region 5). */}
+            <Region page={loaderData.page} regionId="bottom" />
+        </div>
     );
 }

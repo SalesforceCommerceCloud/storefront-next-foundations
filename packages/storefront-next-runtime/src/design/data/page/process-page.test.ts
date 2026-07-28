@@ -259,6 +259,7 @@ describe('processPage', () => {
 
             const result = processPage(page, context);
             const child = result.regions?.[0].components?.[0].regions?.[0].components?.[0];
+            // oxlint-disable-next-line no-unsafe-optional-chaining -- oxlint is stricter than core eslint here; child is known to be defined in this assertion
             expect((child?.data as Record<string, unknown>).heading).toBe('Resolved Title');
         });
 
@@ -1503,5 +1504,108 @@ describe('processPage', () => {
         // The original page should still have the nested-vip component
         expect(page.regions?.[0].components?.[0].regions?.[0].components).toHaveLength(1);
         expect(page.regions?.[0].components?.[0].regions?.[0].components?.[0].id).toBe('nested-vip');
+    });
+
+    describe('component-rooted (ComponentManifest) input', () => {
+        test('processes a component root and filters nested components by visibility', () => {
+            const root: Component = {
+                id: 'header',
+                typeId: 'embedded.header',
+                regions: [
+                    {
+                        id: 'main',
+                        components: [makeComponent('public-logo'), makeComponent('vip-banner')],
+                    },
+                ],
+            };
+            const context: PageProcessorContext = {
+                kind: 'component',
+                attrCtx: testAttrCtx,
+                qualifiers: { customerGroups: {}, campaignQualifiers: {} },
+                locale: 'en_US',
+                defaultLocale: 'en_US',
+                componentInfo: {
+                    'public-logo': { visibilityRules: [], regions: {} },
+                    'vip-banner': {
+                        visibilityRules: [{ activeLocales: ['en_US'], customerGroups: ['vip'] }],
+                        regions: {},
+                    },
+                },
+            };
+
+            const result = processPage(root, context);
+
+            expect(result.id).toBe('header');
+            expect(result.regions?.[0].components?.map((c) => c.id)).toEqual(['public-logo']);
+        });
+
+        test('applies locale content overlay on a component-rooted tree', () => {
+            const root: Component = {
+                id: 'header',
+                typeId: 'embedded.header',
+                regions: [
+                    {
+                        id: 'main',
+                        components: [
+                            makeComponent('greeting', {
+                                data: { text: 'Hello' } as unknown as Component['data'],
+                            }),
+                        ],
+                    },
+                ],
+            };
+            const context: PageProcessorContext = {
+                kind: 'component',
+                attrCtx: testAttrCtx,
+                qualifiers: null,
+                locale: 'fr_FR',
+                defaultLocale: 'en_US',
+                componentInfo: {
+                    greeting: {
+                        visibilityRules: [],
+                        regions: {},
+                        content: {
+                            en_US: { text: 'Hello' },
+                            fr_FR: { text: 'Bonjour' },
+                        },
+                    },
+                },
+            };
+
+            const result = processPage(root, context);
+
+            expect(result.regions?.[0].components?.[0].data).toEqual({ text: 'Bonjour' });
+            expect(result.regions?.[0].components?.[0].localized).toBe(true);
+        });
+
+        test("honors region maxComponents on the root component's nested regions", () => {
+            const root: Component = {
+                id: 'header',
+                typeId: 'embedded.header',
+                regions: [
+                    {
+                        id: 'main',
+                        components: [makeComponent('a'), makeComponent('b'), makeComponent('c')],
+                    },
+                ],
+            };
+            const context: PageProcessorContext = {
+                kind: 'component',
+                attrCtx: testAttrCtx,
+                qualifiers: null,
+                locale: 'en_US',
+                defaultLocale: 'en_US',
+                componentInfo: {
+                    header: { visibilityRules: [], regions: { main: regionConfig(2) } },
+                    a: { visibilityRules: [], regions: {} },
+                    b: { visibilityRules: [], regions: {} },
+                    c: { visibilityRules: [], regions: {} },
+                },
+            };
+
+            const result = processPage(root, context);
+
+            expect(result.regions?.[0].components?.map((c) => c.id)).toEqual(['a', 'b']);
+        });
     });
 });

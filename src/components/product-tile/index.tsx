@@ -65,6 +65,7 @@ const PRODUCT_TILE_MAX_SWATCHES = 3;
     group: 'Content',
 })
 @RegionDefinition([])
+// oxlint-disable-next-line react/only-export-components -- oxlint flags the co-exported Page Designer metadata class; eslint-plugin-react-refresh does not
 export class ProductTileMetadata {
     @AttributeDefinition({
         id: 'productId',
@@ -498,12 +499,11 @@ const ProductTile = memo(
                                     </div>
                                 )}
 
-                                <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                                <div className="opacity-0 group-hover:opacity-100 focus-within:opacity-100 transition-opacity duration-300">
                                     <DeferredWishlistButton
                                         product={product}
                                         surface="plp"
                                         size="sm"
-                                        tabIndex={-1}
                                         className="relative top-auto right-auto z-20 bg-muted hover:bg-background shadow-sm border-0"
                                     />
                                 </div>

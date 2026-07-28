@@ -413,6 +413,15 @@ function ProductContent({
  * Product detail shell that composes the page layout with granular Suspense boundaries.
  * Regions render independently (they manage their own async via Suspense/Await),
  * while the core product content renders synchronously from the resolved loader data.
+ *
+ * Foundations override: the engagement recommendations render as always-on static
+ * components below the PD `engagementContent` region — not as its error fallback. The
+ * Foundations brand PDP treats "Complete the Look / You Might Also Like / Recently
+ * Viewed" as permanent page furniture, so a PD-authored engagement region layers
+ * *above* them rather than replacing them. Each `ProductRecommendations` still
+ * fails closed to `null` internally (no title / no recs / error), so the section
+ * simply collapses when a recommender is empty. This is the only divergence from the
+ * canonical route; loader, providers, and extension blocks are identical.
  */
 function ProductDetailView({ loaderData }: { loaderData: ProductPageData }) {
     const { t } = useTranslation('product');
@@ -446,31 +455,32 @@ function ProductDetailView({ loaderData }: { loaderData: ProductPageData }) {
                     // @sfdc-extension-block-end SFDC_EXT_PRODUCT_CONTENT
                 />
 
-                {/* Engagement Content Region - Shows page content or recommendations */}
-                <Region
-                    className="mt-16"
-                    page={loaderData.page}
-                    regionId="engagementContent"
-                    errorElement={
-                        <div className="mt-16 space-y-16">
-                            <ProductRecommendations
-                                recommenderName={EINSTEIN_RECOMMENDERS.PDP_COMPLETE_SET}
-                                recommenderTitle={t('recommendations.completeTheLook')}
-                                className="max-w-none px-0"
-                            />
-                            <ProductRecommendations
-                                recommenderName={EINSTEIN_RECOMMENDERS.PDP_MIGHT_ALSO_LIKE}
-                                recommenderTitle={t('recommendations.youMightAlsoLike')}
-                                className="max-w-none px-0"
-                            />
-                            <ProductRecommendations
-                                recommenderName={EINSTEIN_RECOMMENDERS.PDP_RECENTLY_VIEWED}
-                                recommenderTitle={t('recommendations.recentlyViewed')}
-                                className="max-w-none px-0"
-                            />
-                        </div>
-                    }
-                />
+                {/* Engagement Content Region - PD-authored engagement content, layered
+                    above the always-on recommendations below. No errorElement: when the
+                    region is empty (no assigned page) it renders nothing rather than
+                    substituting the recommendations, since those now render statically. */}
+                <Region className="mt-16" page={loaderData.page} regionId="engagementContent" />
+
+                {/* Always-on recommendation carousels. Each ProductRecommendations fails
+                    closed to null (no title / empty recs / fetch error), so an empty
+                    recommender collapses without leaving a headless carousel. */}
+                <div className="mt-16 space-y-16">
+                    <ProductRecommendations
+                        recommenderName={EINSTEIN_RECOMMENDERS.PDP_COMPLETE_SET}
+                        recommenderTitle={t('recommendations.completeTheLook')}
+                        className="max-w-none px-0"
+                    />
+                    <ProductRecommendations
+                        recommenderName={EINSTEIN_RECOMMENDERS.PDP_MIGHT_ALSO_LIKE}
+                        recommenderTitle={t('recommendations.youMightAlsoLike')}
+                        className="max-w-none px-0"
+                    />
+                    <ProductRecommendations
+                        recommenderName={EINSTEIN_RECOMMENDERS.PDP_RECENTLY_VIEWED}
+                        recommenderTitle={t('recommendations.recentlyViewed')}
+                        className="max-w-none px-0"
+                    />
+                </div>
             </div>
         </div>
     );

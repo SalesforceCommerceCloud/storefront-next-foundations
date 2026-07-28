@@ -1,7 +1,9 @@
+/* Geist — the Foundations kit's typeface (font/family/font-sans in Figma).
+ * Variable font, weight axis 100–900. */
 @font-face {
-    font-family: 'Sen';
-    src: url('/fonts/sen-variable.woff2') format('woff2');
-    font-weight: 400 800;
+    font-family: 'Geist';
+    src: url('/fonts/geist-variable.woff2') format('woff2');
+    font-weight: 100 900;
     font-style: normal;
     font-display: swap;
 }
@@ -12,6 +14,40 @@
     }
 }
 
+/* Logo sizing — the canonical header caps the logo <img> at h-3 lg:h-4 (12/16px),
+ * tuned for fashion's compact single-line wordmark. The Foundations lockup is a
+ * cube + "Foundations Next" two-line wordmark (viewBox 110x28), which 16px shrinks
+ * to an illegible mark. In Figma the desktop header bar is 84px tall and the logo
+ * is drawn at its natural 28px height (x=64 inset). Match that: 28px everywhere. */
+[data-testid="header-logo"] img {
+    height: 1.75rem;   /* 28px — the logo's natural drawn height in Figma */
+    width: auto;
+}
+
+/* Tinted "info pill" contrast — canonical badges/chips pair `text-primary` with a
+ * `bg-primary/10` tint (e.g. the Default-address badge). With foundations' brand
+ * blue (--primary: #2563eb) the same-hue text on its own 10% tint (#e9effd) lands
+ * at 4.48:1 — just under WCAG AA (4.5:1). Darkening only the *text* to blue-700
+ * (#1d4ed8) on the tint gives 5.82:1 without shifting --primary (CTAs/links keep
+ * the Figma brand hue). Unlayered + compound so it beats the Tailwind `text-primary`
+ * utility without !important; changes computed color only, so DOM/snapshots are
+ * unaffected. Scoped to the tint+primary-text combo, so it covers every such pill. */
+.bg-primary\/10.text-primary {
+    color: #1d4ed8;
+}
+
+/* Product-tile "Sale"/"New" badge — the shared ProductTile paints the corner
+ * badge with `bg-foreground text-background` (a dark chip), but the Foundations
+ * kit draws it as a brand-blue pill with white text (--primary on
+ * --primary-foreground). Repoint just the color here; compound + unlayered so it
+ * beats the `bg-foreground`/`text-background` utilities without !important, and
+ * changes computed color only (DOM/snapshots unaffected). Scoped to the tile's
+ * badge slot so it can't reach other badges; foundations-only file. */
+.product-card [data-slot='badge'] {
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+}
+
 @layer base {
     * {
         @apply border-border outline-ring/50;
@@ -20,55 +56,90 @@
         @apply bg-background text-foreground;
         font-family: var(--font-sans);
     }
+    html {
+        scrollbar-gutter: stable;
+    }
 
     /* Cursor pointer for all interactive elements */
     button:not(:disabled),
-    [role='button']:not([aria-disabled='true']):not([data-disabled]),
-    [role='tab']:not([aria-disabled='true']):not([data-disabled]),
+    [role="button"]:not([aria-disabled="true"]):not([data-disabled]),
+    [role="tab"]:not([aria-disabled="true"]):not([data-disabled]),
     a[href],
     select:not(:disabled),
-    input[type='button']:not(:disabled),
-    input[type='submit']:not(:disabled),
-    input[type='reset']:not(:disabled),
-    input[type='date']:not(:disabled),
-    input[type='datetime-local']:not(:disabled),
-    input[type='month']:not(:disabled),
-    input[type='time']:not(:disabled),
-    input[type='week']:not(:disabled),
-    input[type='color']:not(:disabled),
-    input[type='file']:not(:disabled),
+    input[type="button"]:not(:disabled),
+    input[type="submit"]:not(:disabled),
+    input[type="reset"]:not(:disabled),
+    input[type="date"]:not(:disabled),
+    input[type="datetime-local"]:not(:disabled),
+    input[type="month"]:not(:disabled),
+    input[type="time"]:not(:disabled),
+    input[type="week"]:not(:disabled),
+    input[type="color"]:not(:disabled),
+    input[type="file"]:not(:disabled),
     summary {
         cursor: pointer;
     }
 
     /* Cursor not-allowed for disabled interactive elements */
     button:disabled,
-    [role='button'][aria-disabled='true'],
-    [role='button'][data-disabled],
-    [role='tab'][aria-disabled='true'],
-    [role='tab'][data-disabled],
+    [role="button"][aria-disabled="true"],
+    [role="button"][data-disabled],
+    [role="tab"][aria-disabled="true"],
+    [role="tab"][data-disabled],
     select:disabled,
-    input[type='button']:disabled,
-    input[type='submit']:disabled,
-    input[type='reset']:disabled,
-    input[type='date']:disabled,
-    input[type='datetime-local']:disabled,
-    input[type='month']:disabled,
-    input[type='time']:disabled,
-    input[type='week']:disabled,
-    input[type='color']:disabled,
-    input[type='file']:disabled {
+    input[type="button"]:disabled,
+    input[type="submit"]:disabled,
+    input[type="reset"]:disabled,
+    input[type="date"]:disabled,
+    input[type="datetime-local"]:disabled,
+    input[type="month"]:disabled,
+    input[type="time"]:disabled,
+    input[type="week"]:disabled,
+    input[type="color"]:disabled,
+    input[type="file"]:disabled {
         cursor: not-allowed;
     }
 }
 
-/* Fashion uses --ui-border-width: 0 (borderless Cards by default).
-   Pages where Cards sit on white backgrounds need visible borders for
-   delineation. :where() keeps specificity low so per-card className
-   overrides (e.g. [--ui-border-width:0px]) still win. */
-:where([data-testid='account-layout']) [data-slot='card'],
-:where([data-section='auth']) [data-slot='card'],
-:where([data-section='checkout']) [data-slot='card'],
-:where([data-section='order-confirmation']) [data-slot='card'] {
-    --ui-border-width: 1px;
+/* NOTE: fashion's borderless-Card :where() block is intentionally omitted —
+   foundations sets --ui-border-width: 1px globally in core.css, so Cards already
+   have visible borders everywhere and don't need the per-section re-enable. */
+
+/* Product-gallery rounding — the shared ImageGallery renders a square hero and
+ * square thumbnails (they're plain <img> wrappers, not shape-token primitives),
+ * but the Foundations kit rounds them to var(--radius) = 14px, matching the
+ * card/button corners on the fold. Round them via the gallery's data hooks so
+ * the rule lives only in this vertical's theme (fashion/cosmetic ship their own
+ * base.css); scoped to the hooks, it can't reach the canonical component. */
+[data-gallery-hero],
+[data-gallery-thumbs] button,
+[data-gallery-strip] button {
+    border-radius: var(--ui-radius);
+    overflow: hidden;
+}
+
+/* Product-tile image rounding — the shared ProductTile wraps its image in a
+ * square `.product-image` container with no corner radius (the card's own
+ * rounding doesn't reach it because the image sits in an inner overflow-hidden
+ * div). The Foundations kit rounds the tile image to var(--radius) = 14px, to
+ * match the card/gallery corners. Round the image wrapper via the tile's
+ * `.product-image` hook so the rule lives only in this vertical's theme
+ * (fashion/cosmetic ship their own base.css); scoped to the hook, it can't
+ * reach the canonical component. */
+.product-card .product-image > div {
+    border-radius: var(--ui-radius);
+    overflow: hidden;
+}
+
+/* Pagination links — the shared CategoryPagination renders Previous/Next and the
+ * page numbers as ghost/outline buttons in --foreground (dark). The Foundations
+ * kit draws them in the brand blue (--primary). Repoint the text/icon color of
+ * every pagination control, scoped to the pagination nav's `data-slot` marker so
+ * the rule targets only these buttons (never a toolbar/tab nav elsewhere) and
+ * doesn't depend on the localized aria-label. Compound + unlayered so it beats
+ * the button utilities without !important; color-only, so the outlined
+ * active-page box is unaffected. Foundations-only file (fashion/cosmetic ship
+ * their own base.css). */
+[data-slot='pagination'] [data-slot='button'] {
+    color: var(--primary);
 }

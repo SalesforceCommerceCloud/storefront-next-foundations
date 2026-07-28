@@ -1,19 +1,37 @@
 {
     "name": "Home Page",
-    "description": "Main landing page with hero carousel, featured products, and help sections",
+    "description": "Main landing page with static marketing sections and interspersed Page Designer slots",
     "arch_type": "headless",
     "region_definitions": [
         {
-            "id": "headerbanner",
-            "name": "Header Banner Region",
-            "description": "Region for promotional banners and hero content",
+            "id": "top",
+            "name": "Top Slot",
+            "description": "Empty slot above the hero carousel",
             "max_components": 3
         },
         {
-            "id": "main",
-            "name": "Main Content Region",
-            "description": "Region for main content",
-            "max_components": 10
+            "id": "afterHero",
+            "name": "After Hero Slot",
+            "description": "Empty slot between the hero carousel and the featured collection",
+            "max_components": 3
+        },
+        {
+            "id": "afterFeatured",
+            "name": "After Featured Slot",
+            "description": "Empty slot between the featured collection and the content cards",
+            "max_components": 3
+        },
+        {
+            "id": "afterContent",
+            "name": "After Content Slot",
+            "description": "Empty slot between the content cards and the category section",
+            "max_components": 3
+        },
+        {
+            "id": "bottom",
+            "name": "Bottom Slot",
+            "description": "Empty slot below the category section",
+            "max_components": 3
         }
     ],
     "supported_aspect_types": [],

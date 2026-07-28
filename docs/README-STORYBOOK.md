@@ -111,8 +111,7 @@ pnpm storybook:test --type=a11y --static
 
 | Command | Description |
 |---------|-------------|
-| `pnpm storybook` | Start Storybook development server on port 6006 (default vertical: `fashion`) |
-| `VERTICAL=cosmetic pnpm storybook` | Start Storybook rendering a specific vertical's overlays (`fashion` \| `cosmetic`) |
+| `pnpm storybook` | Start Storybook development server on port 6006 |
 | `pnpm storybook:build` | Build static Storybook for production deployment |
 | `pnpm storybook:test --type=snapshot` | Run snapshot tests |
 | `pnpm storybook:test --type=snapshot --update` | Update snapshot files locally and run tests |
@@ -122,11 +121,10 @@ pnpm storybook:test --type=a11y --static
 | `pnpm storybook:test --type=a11y --static` | Run a11y tests against static Storybook build |
 | `pnpm storybook:test --type=snapshot --coverage` | Run snapshot tests with code coverage (auto-generates story tests first) |
 | `pnpm storybook:test --type=snapshot --stories=<name>` | Snapshot only — narrow the run to story files whose path contains `<name>` (e.g. `account/order-details`) |
-| `pnpm storybook:test:mirror <vertical>` | Run a vertical's suite against the flattened mirror exactly as CI does (default `cosmetic`; forwards extra args, e.g. `--type=interaction`) |
 
 ## CI execution
 
-All three suites run on every PR in a single CI job (in this repo, the `storybook-tests` job) inside the `mcr.microsoft.com/playwright` container (browsers pre-installed), executing the same commands you'd run locally: `snapshot --coverage`, `interaction --static`, `a11y --static`, then the coverage report.
+All three suites run on every PR in a single CI job inside the `mcr.microsoft.com/playwright` container (browsers pre-installed), executing the same commands you'd run locally: `snapshot --coverage`, `interaction --static`, `a11y --static`, then the coverage report.
 
 ## Features & Addons
 
@@ -325,14 +323,9 @@ export const Basic: Story = {
 - **Promises through `args`.** They don't serialize; the controls panel breaks. Move them to `parameters` (e.g. `parameters.routeLoaderData`).
 - **`vi.mock(...)` of hooks inside a story.** Should be route-level (a mock loader/action) or replaced with a prop.
 
-## ESLint Integration
+## Linting
 
-This project includes `eslint-plugin-storybook` for Storybook-specific linting:
-
-- Enforces Storybook best practices
-- Catches common mistakes in story files
-- Ensures consistent story structure
-- Validates story naming conventions
+Story files (`*.stories.tsx`) are linted by the project's standard OxLint config like any other source file. There is no Storybook-specific lint plugin — OxLint does not ship one, and the previous ESLint setup's `eslint-plugin-storybook` block was inert (it spread a config shape that resolved to no rules under the plugin's v10 API), so nothing is lost.
 
 ## Troubleshooting
 

@@ -38,6 +38,7 @@ import { RegionDefinition } from '@/lib/decorators';
     component_id: 'header',
 })
 @RegionDefinition([{ id: 'announcement', name: 'Announcement', description: 'Displayed above the header' }])
+// oxlint-disable-next-line react/only-export-components -- oxlint flags the co-exported Page Designer metadata class; eslint-plugin-react-refresh does not
 export class HeaderMetadata {}
 
 interface HeaderProps extends PropsWithChildren {
@@ -90,7 +91,9 @@ export default function Header({
 
     if (variant === 'checkout') {
         return (
-            <header ref={headerRef} className="bg-header-background text-header-foreground sticky top-0 z-50">
+            <header
+                ref={headerRef}
+                className="bg-header-background text-header-foreground sticky top-0 z-50 [@media(max-height:400px)]:static">
                 <div className="section-container">
                     <div className="flex items-center h-16">
                         <Link to="/" className="flex-shrink-0 flex items-center" data-testid="header-logo">
@@ -109,7 +112,9 @@ export default function Header({
     }
 
     return (
-        <header ref={headerRef} className="bg-header-background text-header-foreground sticky top-0 z-50">
+        <header
+            ref={headerRef}
+            className="bg-header-background text-header-foreground sticky top-0 z-50 [@media(max-height:400px)]:static">
             {announcementSlot}
             <div className="flex justify-end section-container">{beforeHeader}</div>
             <div className="section-container py-6">

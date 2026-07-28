@@ -1,29 +1,37 @@
 /*
- * Storefront header/footer chrome — auto-derived for foundations (PLACEHOLDER).
+ * Storefront header/footer chrome — Foundations real brand.
  *
- * Chrome tracks the placeholder --primary (teal) so the scaffold renders a
- * visibly different header than fashion's #18181B. Replace alongside the real
- * brand palette in a later work item (W-23350046) if the brand wants different
- * chrome than its primary.
+ * Extracted from the Foundations Figma header (Device=Desktop symbol). The
+ * chrome is LIGHT: a white bar with dark-gray text and a blue accent, over a
+ * soft-blue announcement/promo strip. The delivered logo is full-color (blue
+ * cube + gray wordmark), so it renders as-is with NO filter.
  */
 :root {
-    /* header & navigation — teal primary shows through the chrome */
-    --header-background: var(--primary);
-    --header-foreground: var(--primary-foreground);
-    --header-border: rgba(255, 255, 255, 0.12); /* --primary is dark; light hairline */
+    /* header & navigation — white bar, dark-gray text (Figma header/*) */
+    --header-background: #ffffff;               /* header/header */
+    --header-foreground: #3f3f46;               /* header/foreground */
+    --header-border: #eeeeee;                   /* hairline, matches --border */
     --header-divider: var(--header-border);
-    /* header menu dropdowns — same chrome as the bar; hover inverts to accent */
+    /* header menu dropdowns — same light chrome; hover tints to the blue accent */
     --header-menu-background: var(--header-background);
-    --header-menu-foreground: var(--header-foreground);
+    --header-menu-foreground: #3f3f46;          /* header/menu-foreground */
     --header-menu-border: var(--header-border);
-    --header-menu-hover-background: var(--accent);
-    --header-menu-hover-foreground: var(--accent-foreground);
-    --header-menu-active-background: rgba(255, 255, 255, 0.08);
-    --header-menu-icon: rgba(255, 255, 255, 0.78);
-    /* logo.svg is black; invert to white on the dark teal header */
-    --header-logo-filter: brightness(0) invert(1);
+    --header-menu-hover-background: #dbeafe;     /* header/accent */
+    --header-menu-hover-foreground: #1e3a8a;     /* header/accent-foreground */
+    --header-menu-active-background: #dbeafe;
+    --header-menu-icon: #3f3f46;
+    /* Delivered logo is full-color (blue cube + gray wordmark) on white — no filter. */
+    --header-logo-filter: none;
 
     /* footer — page background to avoid a hard chrome edge */
     --footer-background: var(--background);
     --footer-foreground: var(--foreground);
+
+    /* newsletter band — Figma renders the homepage "Stay Updated" block in the
+     * dark foreground gray (#3f3f46), NOT the blue --primary. (The kit's Figma
+     * variable panel mis-binds this band to --primary; the rendered fill is the
+     * authority — same class of mis-map as the destructive-green note in
+     * core.css.) White text/input and the blue CTA button read correctly on it. */
+    --newsletter-background: var(--foreground);
+    --newsletter-foreground: #ffffff;
 }

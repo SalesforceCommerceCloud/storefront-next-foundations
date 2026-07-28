@@ -7,11 +7,16 @@
 :root {
     --swatch-group-bg: transparent;
     --swatch-bg: var(--secondary);
-    --swatch-bg-selected: var(--primary);
+    /* Figma binds the selected PDP variant swatch to --foreground (dark fill) with
+     * --background text — NOT the blue --primary used for filled CTAs. Repoint the
+     * three selected slots to match; the unselected/hover/border-hover slots keep
+     * their canonical aliases. Foundations-only file (fashion/cosmetic each ship
+     * their own swatch.css that keeps --primary), so no cross-vertical impact. */
+    --swatch-bg-selected: var(--foreground);
     --swatch-border: var(--input);
-    --swatch-border-selected: var(--primary);
+    --swatch-border-selected: var(--foreground);
     --swatch-text: var(--secondary-foreground);
-    --swatch-text-selected: var(--primary-foreground);
+    --swatch-text-selected: var(--background);
     --swatch-color-label: inline;
     --swatch-color-size: auto;
     --swatch-color-padding: 0.25rem 0.75rem 0.25rem 0.375rem;
@@ -31,4 +36,14 @@
     --swatch-pill-size: 1rem;
     --swatch-pill-padding: 0px;
     --swatch-pill-gap: 0.5rem;
+}
+
+/* Swatch corner radius — the Foundations kit binds every variant swatch (the
+ * color pill and the size squares) to `radius/swatch = 4` (rounded-sm). The
+ * swatch button sits outside the shared shape-token primitives, so it renders
+ * square by default; round it here to match Figma. Scoped to the swatch role,
+ * so it can't touch the canonical primitives or the other verticals (fashion
+ * and cosmetic ship their own swatch.css). */
+[role='radio'][data-swatch-type] {
+    border-radius: var(--radius-sm);
 }

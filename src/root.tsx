@@ -38,7 +38,7 @@ import { createInstance, type i18n } from 'i18next';
 import { I18nextProvider, useTranslation, initReactI18next } from 'react-i18next';
 import { PageDesignerProvider } from '@salesforce/storefront-next-runtime/design/react/core';
 import { isDesignModeActive, isPreviewModeActive } from '@salesforce/storefront-next-runtime/design/mode';
-import { dataStoreMiddlewareLazy } from '@salesforce/storefront-next-runtime/data-store';
+import { dataStoreMiddlewareLazy, sitesMiddlewareLazy } from '@salesforce/storefront-next-runtime/data-store';
 import {
     buildUrl,
     SiteProvider,
@@ -63,6 +63,7 @@ import { appConfigMiddlewareClient } from '@/middlewares/app-config.client';
 import { ConfigProvider, getConfig, clientAppConfigContext } from '@salesforce/storefront-next-runtime/config';
 import type { ClientAppConfig } from '@/lib/app-config-client';
 import { siteContextMiddleware } from '@/middlewares/site-context.server';
+import { sitesConfigMiddleware } from '@/middlewares/sites-config.server';
 import { i18nextMiddleware } from '@/middlewares/i18next.server';
 // @sfdc-extension-block-start SFDC_EXT_STORE_LOCATOR
 import {
@@ -75,7 +76,7 @@ import { correlationMiddleware } from '@/middlewares/correlation.server';
 import { requestOriginMiddleware } from '@/middlewares/request-origin';
 import { getAppOrigin } from '@/lib/origin';
 import { loggingMiddleware } from '@/middlewares/logging.server';
-import { pageDesignerResolutionMiddleware } from '@/middlewares/page-designer-page-resolution.server';
+import { pageDesignerResolutionMiddleware } from '@/middlewares/page-designer-content-resolution.server';
 import { siteUrlConfigMiddleware } from '@/middlewares/site-url-config.server';
 import { modeDetectionMiddlewareServer, modeDetectionMiddlewareClient } from '@/middlewares/mode-detection';
 import { maintenanceMiddleware } from '@/middlewares/maintenance.server';
@@ -150,6 +151,11 @@ export const middleware: MiddlewareFunction<Response>[] = [
     modeDetectionMiddlewareServer,
     appConfigMiddlewareServer,
     securityHeadersMiddleware,
+    // Registers the lazy DAL sites loader, then (behind commerce.sitesFromDal) rewrites
+    // commerce.sites before siteContextMiddleware reads it. Both must run after appConfig
+    // populates the config contexts and before siteContextMiddleware resolves the site.
+    sitesMiddlewareLazy,
+    sitesConfigMiddleware,
     siteContextMiddleware, // Must run after appConfig, before i18next and currency
     ...dataStoreMiddlewareLazy,
     siteUrlConfigMiddleware, // Must run after siteContextMiddleware (entry key uses site id)

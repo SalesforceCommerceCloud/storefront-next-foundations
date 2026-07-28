@@ -127,39 +127,38 @@ vi.mock('@/hooks/use-analytics', () => ({
     useAnalytics: () => mockUseAnalytics(),
 }));
 
-const ExpressPaymentsMock = ({
-    onApplePayClick,
-    onGooglePayClick,
-    onAmazonPayClick,
-    onVenmoClick,
-    onPayPalClick,
-}: {
-    onApplePayClick: () => void;
-    onGooglePayClick: () => void;
-    onAmazonPayClick: () => void;
-    onVenmoClick: () => void;
-    onPayPalClick: () => void;
-}) => (
-    <div data-testid="express-payments">
-        <button type="button" onClick={onApplePayClick}>
-            Apple Pay
-        </button>
-        <button type="button" onClick={onGooglePayClick}>
-            Google Pay
-        </button>
-        <button type="button" onClick={onAmazonPayClick}>
-            Amazon Pay
-        </button>
-        <button type="button" onClick={onVenmoClick}>
-            Venmo
-        </button>
-        <button type="button" onClick={onPayPalClick}>
-            PayPal
-        </button>
-    </div>
-);
 vi.mock('./components/express-payments', () => ({
-    default: ExpressPaymentsMock,
+    default: ({
+        onApplePayClick,
+        onGooglePayClick,
+        onAmazonPayClick,
+        onVenmoClick,
+        onPayPalClick,
+    }: {
+        onApplePayClick: () => void;
+        onGooglePayClick: () => void;
+        onAmazonPayClick: () => void;
+        onVenmoClick: () => void;
+        onPayPalClick: () => void;
+    }) => (
+        <div data-testid="express-payments">
+            <button type="button" onClick={onApplePayClick}>
+                Apple Pay
+            </button>
+            <button type="button" onClick={onGooglePayClick}>
+                Google Pay
+            </button>
+            <button type="button" onClick={onAmazonPayClick}>
+                Amazon Pay
+            </button>
+            <button type="button" onClick={onVenmoClick}>
+                Venmo
+            </button>
+            <button type="button" onClick={onPayPalClick}>
+                PayPal
+            </button>
+        </div>
+    ),
 }));
 
 // Mock the checkout context
@@ -2074,6 +2073,7 @@ describe('CheckoutFormPage', () => {
             expect(fetchMock).toHaveBeenCalledTimes(2);
             expect(fetchMock.mock.calls[0]?.[0]).toBe('/action/place-order-prepare');
             expect(fetchMock.mock.calls[1]?.[0]).toBe('/action/place-order-finalize');
+            // oxlint-disable-next-line no-unsafe-optional-chaining -- oxlint is stricter than core eslint here (test assertion)
             const finalizeFormData = (fetchMock.mock.calls[1]?.[1] as { body: FormData }).body;
             expect(finalizeFormData.get('orderNo')).toBe('ORD-9001');
         });
@@ -2386,6 +2386,7 @@ describe('CheckoutFormPage', () => {
 
             expect(fetchMock).toHaveBeenCalledTimes(3);
             expect(fetchMock.mock.calls[0]?.[0]).toBe('/resource/update-basket-billing-address');
+            // oxlint-disable-next-line no-unsafe-optional-chaining -- oxlint is stricter than core eslint here (test assertion)
             const billingBody = JSON.parse((fetchMock.mock.calls[0]?.[1] as { body: string }).body) as Record<
                 string,
                 unknown

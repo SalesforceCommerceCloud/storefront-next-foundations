@@ -13,8 +13,6 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
+import geist from '/fonts/geist-variable.woff2';
 
-/** The site's primary font, bound to `<body>` in `root.tsx`. */
-import sen from '/fonts/sen-variable.woff2';
-
-export const primaryFont = sen;
+export const primaryFont = geist;

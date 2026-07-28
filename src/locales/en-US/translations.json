@@ -11,7 +11,7 @@
         "noFilterOptionsAvailable": "No filter options available."
     },
     "common": {
-        "defaultSiteName": "Foundations",
+        "defaultSiteName": "Foundations Next",
         "loading": "Loading",
         "loadingMore": "Loading more...",
         "product": "the product",
@@ -25,9 +25,9 @@
         "productImageAlt": "Product Image",
         "suggestionImageAlt": "Suggestion Image",
         "hero": {
-            "defaultTitle": "Built to last",
+            "defaultTitle": "Shop Now",
             "defaultImageAlt": "Hero Image",
-            "defaultCtaText": "Shop the range"
+            "defaultCtaText": "Shop Now"
         },
         "previousImage": "Previous image",
         "nextImage": "Next image",
@@ -209,7 +209,7 @@
         }
     },
     "socialCallback": {
-        "socialError": "Social login was cancelled or failed. Try again."
+        "socialError": "Social login was canceled or failed. Try again."
     },
     "errors": {
         "genericTryAgain": "Something went wrong. Try again.",
@@ -316,6 +316,7 @@
         "quantityInput": "Quantity",
         "quantityUpdated": "Quantity updated",
         "quantityUpdateFailed": "Failed to update quantity",
+        "quantityForProduct": "Quantity for {{productName}}",
         "onlyLeft": "Only {{stockLevel}} left!",
         "onlyLeftForProduct": "Only {{stockLevel}} left for {{productName}}!",
         "maxStockReached": "Maximum stock reached",
@@ -712,7 +713,8 @@
                 "title": "Get 10% off your next order. Join email list.",
                 "subtitle": "Stay up to date on product drops and exclusive offers.",
                 "placeholder": "Email address",
-                "cta": "Join"
+                "cta": "Join",
+                "label": "Email address"
             },
             "postOrderRegistration": {
                 "title": "Create an account for a faster checkout next time",
@@ -960,7 +962,7 @@
                 "created": "Created",
                 "new": "New",
                 "completed": "Completed",
-                "cancelled": "Cancelled",
+                "cancelled": "Canceled",
                 "replaced": "Replaced",
                 "failed": "Failed"
             },
@@ -1028,27 +1030,27 @@
             "returnAvailableToReturn": "Up to {{count}} available to return",
             "returnQuantityLabel": "Quantity",
             "returnReasonFor": "Reason for {{name}}",
-            "returnReviewButton": "Review return",
+            "returnReviewButton": "Review Return",
             "returnBackButton": "Back",
-            "returnSubmitButton": "Submit return",
+            "returnSubmitButton": "Submit Return",
             "returnCancelButton": "Cancel",
             "returnReviewTitle": "Review your return",
-            "returnReviewSubtitle": "Confirm the items below. We'll email a return label once your request is submitted.",
-            "returnReviewSubtitleNoReasons": "Confirm the items below. A return reason will be assigned automatically, and we'll email a return label once your request is submitted.",
+            "returnReviewSubtitle": "Confirm these items. We'll email you a return label once your request is submitted.",
+            "returnReviewSubtitleNoReasons": "Confirm these items. A return reason will be assigned automatically, and we'll email you a return label once your request is submitted.",
             "returnReviewQuantity": "Quantity: {{count}}",
             "returnReviewReason": "Reason: {{reason}}",
             "returnSuccessTitle": "Return submitted",
-            "returnSuccessMessage": "We'll email a return label shortly.",
-            "returnError400InvalidReasonMessage": "The selected reason is no longer available. Please choose another.",
-            "returnError400UnknownItemsMessage": "One or more items couldn't be found on this order. Please refresh and try again.",
-            "returnError400QuantityMessage": "The quantity you selected exceeds what's available to return. Please adjust and try again.",
-            "returnError404Message": "We could not find this order. Please refresh and try again.",
-            "returnError409Message": "This order can't be returned right now. Please reach out to the merchant.",
-            "returnErrorGenericTitle": "Something went wrong",
-            "returnErrorGenericMessage": "We couldn't process your return right now. Please wait a moment and try again.",
+            "returnSuccessMessage": "We'll email you a return label shortly.",
+            "returnError400InvalidReasonMessage": "The selected reason is no longer available. Choose another reason.",
+            "returnError400UnknownItemsMessage": "We can't find one or more items on this order. Refresh and try again.",
+            "returnError400QuantityMessage": "The quantity you selected exceeds what's available to return. Adjust the quantity and try again.",
+            "returnError404Message": "We can't find this order. Refresh and try again.",
+            "returnError409Message": "This order can't be returned right now. Reach out to the merchant.",
+            "returnErrorGenericTitle": "Something went wrong.",
+            "returnErrorGenericMessage": "We couldn't process your return right now. Try again in a few minutes.",
             "returnReasonAutoAssigned": "A return reason will be assigned automatically.",
             "cancelOrder": "Cancel order",
-            "cancelUnavailable": "This order can no longer be cancelled.",
+            "cancelUnavailable": "This order can no longer be canceled.",
             "cancelDialogTitle": "Cancel order {{orderNo}}",
             "cancelDialogSubtitle": "Select a reason and confirm cancellation.",
             "cancelDialogSubtitleNoReasons": "Confirm cancellation below.",
@@ -1057,13 +1059,13 @@
             "cancelReasonPlaceholder": "Select a reason (optional)",
             "cancelKeepOrder": "Keep order",
             "cancelConfirm": "Confirm cancellation",
-            "cancelConfirmSubmitting": "Cancelling…",
-            "cancelSuccessTitle": "Order cancelled",
-            "cancelSuccessDescription": "Your order was cancelled successfully.",
+            "cancelConfirmSubmitting": "Canceling…",
+            "cancelSuccessTitle": "Order canceled",
+            "cancelSuccessDescription": "Your order was canceled successfully.",
             "cancelErrorNotFoundTitle": "Unable to cancel order",
             "cancelErrorNotFoundDescription": "We could not find this order. Please refresh and try again.",
             "cancelErrorConflictTitle": "Unable to cancel order",
-            "cancelErrorConflictDescription": "This order is already being processed and cannot be cancelled. Please reach out to the merchant.",
+            "cancelErrorConflictDescription": "This order is already being processed and cannot be canceled. Please reach out to the merchant.",
             "cancelErrorGenericTitle": "Something went wrong",
             "cancelErrorGenericDescription": "We couldn't process your cancellation right now. Please wait a moment and try again."
         },
@@ -1198,7 +1200,8 @@
                 "emailInvalid": "Enter a valid email address.",
                 "phoneInvalid": "Enter a valid phone number.",
                 "birthdayFuture": "Date of birth cannot be in the future."
-            }
+            },
+            "phoneDescription": "Enter phone number including area code"
         },
         "email": {
             "title": "Email Address",
@@ -1289,10 +1292,10 @@
     "home": {
         "hero": {
             "slide1": {
-                "title": "The New Season",
-                "subtitle": "A new collection shaped by contrast, proportion, and modern attitude. Introducing key pieces for the season ahead.",
-                "ctaText": "Discover the Collection",
-                "imageAlt": "Women's Slacks Jackets and Purses"
+                "title": "Geometric Elegance",
+                "subtitle": "Discover our curated selection of minimalist design pieces",
+                "ctaText": "Explore now",
+                "imageAlt": "A minimalist geometric cube on a neutral studio backdrop"
             },
             "slide2": {
                 "title": "The Modern Wardrobe",
@@ -1314,17 +1317,17 @@
             }
         },
         "meta": {
-            "title": "Foundations",
-            "description": "Everyday essentials, made well."
+            "title": "Foundations Next",
+            "description": "Next gen fashion store"
         },
         "featuredProducts": {
-            "title": "Featured Products",
+            "title": "Featured Collection",
             "shopAll": "Shop all",
             "loadFailed": "Unable to load featured products."
         },
         "categoryGrid": {
             "title": "Style for Real Life",
-            "description": "At Market Street, we believe fashion should be effortless, authentic, and accessible. Our collections are designed for the modern individual who values quality, versatility, and timeless style.",
+            "description": "At Foundations Next, we believe fashion should be effortless, authentic, and accessible. Our collections are designed for the modern individual who values quality, versatility, and timeless style.",
             "shopNowButton": "Shop Now",
             "loadFailed": "Unable to load categories."
         },
@@ -1343,7 +1346,7 @@
             },
             "styleForRealLife": {
                 "title": "Style for Real Life",
-                "description": "At Market Street, we believe fashion should be effortless, authentic, and accessible. Our collections are designed for the modern individual who values quality, versatility, and timeless style.\n\nDiscover pieces that move with you, adapt to your life, and become the foundation of a wardrobe that works—every day, everywhere."
+                "description": "At Foundations Next, we believe fashion should be effortless, authentic, and accessible. Our collections are designed for the modern individual who values quality, versatility, and timeless style.\n\nDiscover pieces that move with you, adapt to your life, and become the foundation of a wardrobe that works—every day, everywhere."
             }
         }
     },
@@ -1388,7 +1391,7 @@
         },
         "copyright": "Salesforce or its affiliates. All rights reserved. This is a demo store only. Orders made WILL NOT be processed.",
         "address": "415 Mission St, San Francisco, CA 94105",
-        "logoAlt": "Market Street"
+        "logoAlt": "Foundations Next"
     },
     "aboutUs": {
         "breadcrumb": {
@@ -1400,7 +1403,7 @@
         "section": {
             "ourGoal": {
                 "title": "Built for movement. Designed for everyday life.",
-                "content": "Inspired by urban culture and the energy of movement, Market Street was created to connect performance, style, and everyday essentials in one seamless experience. We believe that great products should move with you—from the streets to the studio, from work to the weekend.\nWhat started as a vision to simplify the way people experience fashion and lifestyle retail has evolved into a brand focused on clarity, accessibility, and smart design. Every collection is curated to deliver versatility, durability, and timeless appeal."
+                "content": "Inspired by urban culture and the energy of movement, Foundations Next was created to connect performance, style, and everyday essentials in one seamless experience. We believe that great products should move with you—from the streets to the studio, from work to the weekend.\nWhat started as a vision to simplify the way people experience fashion and lifestyle retail has evolved into a brand focused on clarity, accessibility, and smart design. Every collection is curated to deliver versatility, durability, and timeless appeal."
             },
             "ourVision": {
                 "title": "Our Vision",
@@ -1416,7 +1419,7 @@
             },
             "ourTeam": {
                 "title": "A Global Brand, A Street-Level Soul",
-                "content": "Market Street was born from the idea that great style shouldn’t feel unreachable. We blend global inspiration with a street-level mindset, connecting culture, performance, and lifestyle into one fluid expression.\nFrom product development to digital experience, everything we do is guided by one principle:\nMake commerce feel natural."
+                "content": "Foundations Next was born from the idea that great style shouldn’t feel unreachable. We blend global inspiration with a street-level mindset, connecting culture, performance, and lifestyle into one fluid expression.\nFrom product development to digital experience, everything we do is guided by one principle:\nMake commerce feel natural."
             }
         },
         "contact": {
@@ -1666,6 +1669,15 @@
             "next": "Next",
             "nextPage": "Next page",
             "page": "Page {{number}}"
+        },
+        "loadMore": {
+            "button": "Load more",
+            "loading": "Loading…",
+            "retry": "Try again",
+            "status": "Showing {{loaded}} of {{total}}",
+            "error": "Something went wrong. Please try again.",
+            "end": "You've reached the end of the results",
+            "capReached": "You've viewed {{loaded}} products. Refine your filters to narrow down the results."
         }
     },
     "maintenancePage": {
@@ -1720,7 +1732,8 @@
             "viewAllReviews": "View all reviews",
             "distributionAriaLabel": "{{rating}} stars: {{count, number}} out of {{totalReviews, number}} reviews",
             "distributionsAriaLabel": "Star rating distribution, {{total, number}} total reviews",
-            "seeCustomerReviews": "See customer reviews >"
+            "seeCustomerReviews": "See customer reviews >",
+            "reviewCount": "{{count, number}} reviews"
         },
         "from": "from",
         "outOfStock": "Out of stock for {{productName}}",
