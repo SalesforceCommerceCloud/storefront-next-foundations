@@ -598,7 +598,6 @@
             "hero": {
                 "thankYou": "Kiitos {{name}}!",
                 "orderConfirmed": "Tilauksesi on vahvistettu.",
-                "statusAnnouncement": "Tilauksesi on vahvistettu. Tilausnumero {{orderNo}}.",
                 "emailConfirmation": "Olemme lähettäneet vahvistussähköpostin osoitteeseen {{email}}.",
                 "needHelp": "Tarvitsetko apua?",
                 "defaultName": "Asiakas",

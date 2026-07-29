@@ -608,12 +608,6 @@ exports[`ProductInfo stories snapshot > ControlledSwatchMode story renders and m
         +
       </button>
     </div>
-    <div
-      aria-atomic="true"
-      aria-live="polite"
-      id="quantity-_r_1j_-inventory-msg"
-      role="status"
-    />
   </div>
 </div>
 `;
@@ -1232,12 +1226,6 @@ exports[`ProductInfo stories snapshot > FocusOrderActionIcons story renders and 
         +
       </button>
     </div>
-    <div
-      aria-atomic="true"
-      aria-live="polite"
-      id="quantity-_r_20_-inventory-msg"
-      role="status"
-    />
   </div>
 </div>
 `;
@@ -1853,12 +1841,6 @@ exports[`ProductInfo stories snapshot > OutOfStockStatus story renders and match
         +
       </button>
     </div>
-    <div
-      aria-atomic="true"
-      aria-live="polite"
-      id="quantity-_r_p_-inventory-msg"
-      role="status"
-    />
   </div>
 </div>
 `;
@@ -2477,12 +2459,6 @@ exports[`ProductInfo stories snapshot > Playground story renders and matches sna
         +
       </button>
     </div>
-    <div
-      aria-atomic="true"
-      aria-live="polite"
-      id="quantity-_r_c_-inventory-msg"
-      role="status"
-    />
   </div>
 </div>
 `;
@@ -3036,12 +3012,6 @@ exports[`ProductInfo stories snapshot > WithDisabledVariants story renders and m
         +
       </button>
     </div>
-    <div
-      aria-atomic="true"
-      aria-live="polite"
-      id="quantity-_r_16_-inventory-msg"
-      role="status"
-    />
   </div>
 </div>
 `;

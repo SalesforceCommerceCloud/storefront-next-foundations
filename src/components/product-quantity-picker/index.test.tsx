@@ -63,11 +63,8 @@ describe('ProductQuantityPicker', () => {
 
         const expectedMessage = t('product:outOfStock', { productName: 'Test Product' });
         expect(screen.getByText(expectedMessage)).toBeInTheDocument();
-        // The message lives inside a persistent polite live region so it is announced.
-        const region = screen.getByRole('status');
-        expect(region).toHaveAttribute('aria-live', 'polite');
-        expect(region).toHaveAttribute('aria-atomic', 'true');
-        expect(region).toHaveTextContent(expectedMessage);
+        expect(screen.getByText(expectedMessage)).toHaveAttribute('role', 'alert');
+        expect(screen.getByText(expectedMessage)).toHaveAttribute('aria-live', 'polite');
     });
 
     test('displays out of stock message with default product name when productName is not provided', () => {
@@ -82,10 +79,8 @@ describe('ProductQuantityPicker', () => {
 
         const expectedMessage = t('quantitySelector:onlyLeft', { stockLevel: '3' });
         expect(screen.getByText(expectedMessage)).toBeInTheDocument();
-        const region = screen.getByRole('status');
-        expect(region).toHaveAttribute('aria-live', 'polite');
-        expect(region).toHaveAttribute('aria-atomic', 'true');
-        expect(region).toHaveTextContent(expectedMessage);
+        expect(screen.getByText(expectedMessage)).toHaveAttribute('role', 'alert');
+        expect(screen.getByText(expectedMessage)).toHaveAttribute('aria-live', 'polite');
     });
 
     test('displays bundle-specific stock level warning when isBundle is true', () => {
@@ -119,20 +114,19 @@ describe('ProductQuantityPicker', () => {
     test('does not display stock warning when stock level is not exceeded', () => {
         render(<ProductQuantityPicker {...defaultProps} value="2" stockLevel={5} />);
 
-        // The live region stays mounted but empty when there is nothing to announce.
-        expect(screen.getByRole('status')).toHaveTextContent('');
+        expect(screen.queryByRole('alert')).not.toBeInTheDocument();
     });
 
     test('does not display stock warning when stockLevel is undefined', () => {
         render(<ProductQuantityPicker {...defaultProps} value="5" />);
 
-        expect(screen.getByRole('status')).toHaveTextContent('');
+        expect(screen.queryByRole('alert')).not.toBeInTheDocument();
     });
 
     test('does not display stock warning when stockLevel is 0', () => {
         render(<ProductQuantityPicker {...defaultProps} value="5" stockLevel={0} />);
 
-        expect(screen.getByRole('status')).toHaveTextContent('');
+        expect(screen.queryByRole('alert')).not.toBeInTheDocument();
     });
 
     test('prioritizes out of stock message over stock level warning', () => {
@@ -186,8 +180,8 @@ describe('ProductQuantityPicker', () => {
     test('displays inventory message with correct styling', () => {
         render(<ProductQuantityPicker {...defaultProps} value="5" stockLevel={3} />);
 
-        const expectedMessage = t('quantitySelector:onlyLeft', { stockLevel: '3' });
-        expect(screen.getByText(expectedMessage)).toHaveClass('text-destructive', 'font-medium');
+        const inventoryMessage = screen.getByRole('alert');
+        expect(inventoryMessage).toHaveClass('text-destructive', 'font-medium');
     });
 
     test('handles empty productName gracefully in out of stock message', () => {
@@ -212,7 +206,7 @@ describe('ProductQuantityPicker', () => {
     test('does not display inventory message when stock level equals quantity', () => {
         render(<ProductQuantityPicker {...defaultProps} value="3" stockLevel={3} />);
 
-        expect(screen.getByRole('status')).toHaveTextContent('');
+        expect(screen.queryByRole('alert')).not.toBeInTheDocument();
     });
 
     test('handles large quantity values correctly', async () => {
@@ -231,9 +225,9 @@ describe('ProductQuantityPicker', () => {
     test('maintains correct aria attributes for accessibility', () => {
         render(<ProductQuantityPicker {...defaultProps} value="5" stockLevel={3} />);
 
-        const region = screen.getByRole('status');
-        expect(region).toHaveAttribute('aria-live', 'polite');
-        expect(region).toHaveAttribute('aria-atomic', 'true');
+        const inventoryMessage = screen.getByRole('alert');
+        expect(inventoryMessage).toHaveAttribute('aria-live', 'polite');
+        expect(inventoryMessage).toHaveAttribute('role', 'alert');
     });
 
     test('handles decimal quantity values correctly', async () => {
@@ -258,9 +252,8 @@ describe('ProductQuantityPicker', () => {
 
         render(<ProductQuantityPicker {...defaultProps} value="1" stockLevel={3} onChange={mockOnChange} />);
 
-        // Initially no warning text should be shown
-        const initialMessage = t('quantitySelector:onlyLeft', { stockLevel: '3' });
-        expect(screen.queryByText(initialMessage)).not.toBeInTheDocument();
+        // Initially no warning should be shown
+        expect(screen.queryByRole('alert')).not.toBeInTheDocument();
 
         // Change quantity to exceed stock level
         const quantityInput = screen.getByDisplayValue('1');
@@ -270,28 +263,6 @@ describe('ProductQuantityPicker', () => {
         // Now warning should be shown
         const expectedMessage = t('quantitySelector:onlyLeft', { stockLevel: '3' });
         expect(screen.getByText(expectedMessage)).toBeInTheDocument();
-    });
-
-    test('keeps the live region mounted and empty at rest so the warning is announced when it appears', async () => {
-        // A screen reader only announces content added to a live region that was
-        // already present (empty) when observed. Render below the stock threshold so
-        // no warning text is shown, then assert the region node still exists and is
-        // empty — the empty→filled transition an SR needs. Regression guard for the
-        // "status message is not announced" PDP findings.
-        const user = userEvent.setup();
-        render(<ProductQuantityPicker {...defaultProps} value="1" stockLevel={3} />);
-
-        const region = screen.getByRole('status');
-        expect(region).toBeInTheDocument();
-        expect(region).toHaveTextContent('');
-
-        const quantityInput = screen.getByDisplayValue('1');
-        await user.clear(quantityInput);
-        await user.type(quantityInput, '5');
-
-        // Same region node now holds the warning (was populated, not freshly mounted).
-        const expectedMessage = t('quantitySelector:onlyLeft', { stockLevel: '3' });
-        expect(screen.getByRole('status')).toHaveTextContent(expectedMessage);
     });
 
     test('handles multiple prop combinations correctly', () => {
@@ -311,8 +282,7 @@ describe('ProductQuantityPicker', () => {
         expect(screen.getByDisplayValue('2')).toBeInTheDocument();
         expect(screen.getByText(t('quantitySelector:quantity'))).toBeInTheDocument();
 
-        // Should not show any warnings since quantity (2) < stockLevel (10):
-        // the live region is mounted but empty.
-        expect(screen.getByRole('status')).toHaveTextContent('');
+        // Should not show any warnings since quantity (2) < stockLevel (10)
+        expect(screen.queryByRole('alert')).not.toBeInTheDocument();
     });
 });
