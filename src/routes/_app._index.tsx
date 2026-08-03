@@ -59,11 +59,14 @@ import { fetchPageWithComponentData } from '@/lib/page-designer/page-loader.serv
 import { getLogger } from '@/lib/logger.server';
 
 import hero01 from '/images/hero-01.webp';
-import hero03 from '/images/hero-03.webp';
-import hero04 from '/images/hero-04.webp';
 // Foundations hero visual from the Figma "Storefront Home" design (node 10002:82198):
 // a single centered "Geometric Elegance" cube. Overlaid via the foundations public dir.
 import heroGeometric from '/images/hero-geometric.webp';
+// New Arrivals promo banner visuals (Figma composed home node 10079:9635, Promo Banner 2):
+// minimalist geometric forms on a neutral backdrop — a trio of cubes and a single pyramid.
+// Overlaid via the foundations public dir.
+import heroNewArrivals from '/images/foundations/hero-carousel/hero-new-arrivals.webp';
+import heroPyramid from '/images/foundations/hero-carousel/hero-pyramid.webp';
 import HeroCarousel, { type HeroSlide } from '@/components/hero-carousel';
 import { ProductCarouselSkeleton } from '@/components/product-carousel';
 import { ProductCarouselWithData } from '@/components/product-carousel/carousel';
@@ -258,28 +261,35 @@ export default function HomePage({ loaderData }: { loaderData: HomePageData }) {
             {/* Empty PD slot between featured collection and content cards (Figma: Custom Region 3). */}
             <Region page={loaderData.page} regionId="afterFeatured" />
 
-            {/* Women/Men content cards — static */}
+            {/* Featured content cards — static. Mirrors the New Arrivals promo banner
+                below (same cube/pyramid geometric visuals and "Shop new arrivals" CTA)
+                but with the cards reversed (Pyramids then Cubes) so the two grids read
+                slightly differently. */}
             <div className="pt-16">
                 <div className="section-container">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <ContentCard
-                            title={t('featuredContent.women.title')}
-                            description={t('featuredContent.women.description')}
-                            imageUrl={hero03}
-                            imageAlt={t('featuredContent.women.imageAlt')}
-                            buttonText={t('featuredContent.women.ctaText')}
-                            buttonLink="/category/womens"
+                            className="fnd-content-card"
+                            title={t('featuredContent.newArrivals.pyramids.title')}
+                            description={t('featuredContent.newArrivals.pyramids.description')}
+                            imageUrl={heroPyramid}
+                            imageAlt={t('featuredContent.newArrivals.pyramids.imageAlt')}
+                            buttonText={t('featuredContent.newArrivals.pyramids.ctaText')}
+                            buttonAriaLabel={t('featuredContent.newArrivals.pyramids.ctaAriaLabel')}
+                            buttonLink="/category/newarrivals"
                             showBackground={false}
                             showBorder={false}
                             loading="lazy"
                         />
                         <ContentCard
-                            title={t('featuredContent.men.title')}
-                            description={t('featuredContent.men.description')}
-                            imageUrl={hero04}
-                            imageAlt={t('featuredContent.men.imageAlt')}
-                            buttonText={t('featuredContent.men.ctaText')}
-                            buttonLink="/category/mens"
+                            className="fnd-content-card"
+                            title={t('featuredContent.newArrivals.cubes.title')}
+                            description={t('featuredContent.newArrivals.cubes.description')}
+                            imageUrl={heroNewArrivals}
+                            imageAlt={t('featuredContent.newArrivals.cubes.imageAlt')}
+                            buttonText={t('featuredContent.newArrivals.cubes.ctaText')}
+                            buttonAriaLabel={t('featuredContent.newArrivals.cubes.ctaAriaLabel')}
+                            buttonLink="/category/newarrivals"
                             showBackground={false}
                             showBorder={false}
                             loading="lazy"
@@ -291,9 +301,47 @@ export default function HomePage({ loaderData }: { loaderData: HomePageData }) {
             {/* Empty PD slot between content cards and the category section (Figma: Custom Region 4). */}
             <Region page={loaderData.page} regionId="afterContent" />
 
-            {/* "Style for Real Life" category rail — static (Suspense while categories resolve) */}
+            {/* "Style for Real Life" category rail — static (Suspense while categories resolve).
+                Center the cards when they don't fill the track (foundations opts in; the shared
+                component left-aligns by default). */}
             <div className="pt-16">
-                <PopularCategories categoriesPromise={loaderData.categories} />
+                <PopularCategories categoriesPromise={loaderData.categories} centerWhenPartial />
+            </div>
+
+            {/* New Arrivals promo banner — static two-card grid (Figma composed home node
+                10079:9635, Promo Banner 2). Both cards use the grey-cube visual and link to
+                the real "newarrivals" category. Mirrors the Women/Men grid above. */}
+            <div className="pt-16">
+                <div className="section-container">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <ContentCard
+                            className="fnd-content-card"
+                            title={t('featuredContent.newArrivals.cubes.title')}
+                            description={t('featuredContent.newArrivals.cubes.description')}
+                            imageUrl={heroNewArrivals}
+                            imageAlt={t('featuredContent.newArrivals.cubes.imageAlt')}
+                            buttonText={t('featuredContent.newArrivals.cubes.ctaText')}
+                            buttonAriaLabel={t('featuredContent.newArrivals.cubes.ctaAriaLabel')}
+                            buttonLink="/category/newarrivals"
+                            showBackground={false}
+                            showBorder={false}
+                            loading="lazy"
+                        />
+                        <ContentCard
+                            className="fnd-content-card"
+                            title={t('featuredContent.newArrivals.pyramids.title')}
+                            description={t('featuredContent.newArrivals.pyramids.description')}
+                            imageUrl={heroPyramid}
+                            imageAlt={t('featuredContent.newArrivals.pyramids.imageAlt')}
+                            buttonText={t('featuredContent.newArrivals.pyramids.ctaText')}
+                            buttonAriaLabel={t('featuredContent.newArrivals.pyramids.ctaAriaLabel')}
+                            buttonLink="/category/newarrivals"
+                            showBackground={false}
+                            showBorder={false}
+                            loading="lazy"
+                        />
+                    </div>
+                </div>
             </div>
 
             {/* Empty PD slot below the category section (Figma: Custom Region 5). */}
