@@ -100,6 +100,7 @@
         "mobileNavigation": "Mobile navigation menu",
         "expandCategory": "Expand {{category}}",
         "collapseCategory": "Collapse {{category}}",
+        "featuredContent": "{{category}} featured content",
         "menu": {
             "yourLists": "Your Lists",
             "yourAccount": "Your Account",
@@ -1388,21 +1389,37 @@
         "featuredContent": {
             "women": {
                 "title": "Women",
-                "description": "Discover our curated collection of sophisticated footwear designed for the modern woman.",
-                "ctaText": "EXPLORE COLLECTION",
-                "ctaAriaLabel": "Explore collection: women's",
-                "imageAlt": "Women's Collection"
+                "description": "Explore the women’s edit — clean silhouettes and considered essentials designed to layer effortlessly into everyday life.",
+                "ctaText": "Explore collection",
+                "ctaAriaLabel": "Explore the women’s collection",
+                "imageAlt": "Women’s collection"
             },
             "men": {
                 "title": "Men",
-                "description": "Timeless craftsmanship meets contemporary style in our men's footwear collection.",
-                "ctaText": "EXPLORE COLLECTION",
-                "ctaAriaLabel": "Explore collection: men's",
-                "imageAlt": "Men's Collection"
+                "description": "Explore the men’s edit — refined staples and versatile pieces built around proportion, comfort, and modern design.",
+                "ctaText": "Explore collection",
+                "ctaAriaLabel": "Explore the men’s collection",
+                "imageAlt": "Men’s collection"
             },
             "styleForRealLife": {
                 "title": "Style for Real Life",
                 "description": "At Foundations Next, we believe fashion should be effortless, authentic, and accessible. Our collections are designed for the modern individual who values quality, versatility, and timeless style.\n\nDiscover pieces that move with you, adapt to your life, and become the foundation of a wardrobe that works—every day, everywhere."
+            },
+            "newArrivals": {
+                "cubes": {
+                    "title": "Cubes",
+                    "description": "Discover our curated collection of sculptural forms designed for the modern space.",
+                    "ctaText": "Shop new arrivals",
+                    "ctaAriaLabel": "Shop new arrivals: cubes",
+                    "imageAlt": "A trio of minimalist geometric cubes on a neutral studio backdrop"
+                },
+                "pyramids": {
+                    "title": "Pyramids",
+                    "description": "Bold geometry and clean lines — statement forms that anchor a contemporary space.",
+                    "ctaText": "Shop new arrivals",
+                    "ctaAriaLabel": "Shop new arrivals: pyramids",
+                    "imageAlt": "A minimalist white pyramid on a neutral studio backdrop"
+                }
             }
         }
     },

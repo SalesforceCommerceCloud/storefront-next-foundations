@@ -21,13 +21,16 @@
  * (`_app._index.tsx`) ships its own test — the canonical test asserts a 3-card
  * layout that the foundations Figma design does not have.
  *
- * The foundations home renders only TWO featured content cards (Women, Men);
- * it intentionally omits the canonical "Style for Real Life" text-only card
- * (see the route overlay header). So this overlay differs from the canonical
- * test in exactly two places:
+ * The foundations home renders FOUR featured content cards across two grids:
+ * the first grid mirrors the New Arrivals promo banner below it, so both grids
+ * render the same Cubes + Pyramids cards. It intentionally omits the canonical
+ * "Style for Real Life" text-only card (see the route overlay header). So this
+ * overlay differs from the canonical test in these places:
  *
- *   1. `renders all content cards with correct count` asserts a length of 2.
- *   2. `passes categories promise to PopularCategories component` asserts the
+ *   1. `renders all content cards with correct count` asserts a length of 4.
+ *   2. Because both grids are identical, each card title/description renders
+ *      twice, so the card tests assert with `getAllByText` (length 2).
+ *   3. `passes categories promise to PopularCategories component` asserts the
  *      PopularCategories mock's own heading ("Step into Elegance") rather than
  *      "Style for Real Life", which the canonical test only saw because it was
  *      the third card's title.
@@ -186,18 +189,23 @@ vi.mock('react-i18next', async () => {
                     'featuredProducts.title': 'Featured Collection',
                     'categoryGrid.title': 'Style for Real Life',
                     'categoryGrid.shopNowButton': 'Shop Now',
-                    // Foundations does not override the Women/Men card copy, so it
-                    // inherits the base bundle strings asserted here.
-                    'featuredContent.women.title': 'Women',
-                    'featuredContent.women.description':
-                        'Discover our curated collection of sophisticated footwear designed for the modern woman.',
-                    'featuredContent.women.imageAlt': "Women's Collection",
-                    'featuredContent.women.ctaText': 'EXPLORE COLLECTION',
-                    'featuredContent.men.title': 'Men',
-                    'featuredContent.men.description':
-                        "Timeless craftsmanship meets contemporary style in our men's footwear collection.",
-                    'featuredContent.men.imageAlt': "Men's Collection",
-                    'featuredContent.men.ctaText': 'EXPLORE COLLECTION',
+                    // Both the featured-content grid and the New Arrivals promo banner
+                    // render the same two-card grid (Cubes + Pyramids), so these keys
+                    // back both grids.
+                    'featuredContent.newArrivals.cubes.title': 'Cubes',
+                    'featuredContent.newArrivals.cubes.description':
+                        'Discover our curated collection of sculptural forms designed for the modern space.',
+                    'featuredContent.newArrivals.cubes.imageAlt':
+                        'A trio of minimalist geometric cubes on a neutral studio backdrop',
+                    'featuredContent.newArrivals.cubes.ctaText': 'Shop new arrivals',
+                    'featuredContent.newArrivals.cubes.ctaAriaLabel': 'Shop new arrivals: cubes',
+                    'featuredContent.newArrivals.pyramids.title': 'Pyramids',
+                    'featuredContent.newArrivals.pyramids.description':
+                        'Bold geometry and clean lines — statement forms that anchor a contemporary space.',
+                    'featuredContent.newArrivals.pyramids.imageAlt':
+                        'A minimalist white pyramid on a neutral studio backdrop',
+                    'featuredContent.newArrivals.pyramids.ctaText': 'Shop new arrivals',
+                    'featuredContent.newArrivals.pyramids.ctaAriaLabel': 'Shop new arrivals: pyramids',
                 };
                 return translations[normalizedKey] || key;
             },
@@ -285,8 +293,9 @@ describe('HomePage', () => {
             {
                 description: 'renders featured content cards',
                 assertion: () => {
-                    expect(screen.getByText(t('home:featuredContent.women.title'))).toBeInTheDocument();
-                    expect(screen.getByText(t('home:featuredContent.men.title'))).toBeInTheDocument();
+                    // Both grids render the same cards, so each title appears twice.
+                    expect(screen.getAllByText(t('home:featuredContent.newArrivals.cubes.title'))).toHaveLength(2);
+                    expect(screen.getAllByText(t('home:featuredContent.newArrivals.pyramids.title'))).toHaveLength(2);
                 },
             },
         ];
@@ -309,7 +318,7 @@ describe('HomePage', () => {
             // Should not render region when no regions are available
             expect(screen.queryByTestId('region')).not.toBeInTheDocument();
             // But should still render other sections
-            expect(screen.getByText(t('home:featuredContent.women.title'))).toBeInTheDocument();
+            expect(screen.getAllByText(t('home:featuredContent.newArrivals.cubes.title'))).toHaveLength(2);
         });
 
         test('renders header banner region when headerbanner region is provided', async () => {
@@ -341,7 +350,7 @@ describe('HomePage', () => {
                 expect(screen.getByTestId('product-carousel')).toBeInTheDocument();
             });
             // Should still render other sections
-            expect(screen.getByText(t('home:featuredContent.women.title'))).toBeInTheDocument();
+            expect(screen.getAllByText(t('home:featuredContent.newArrivals.cubes.title'))).toHaveLength(2);
         });
     });
 
@@ -366,30 +375,34 @@ describe('HomePage', () => {
         // Assert against the copy the component renders (the react-i18next mock
         // above), not getTranslation()'s base bundle — the latter resolves to the
         // active brand's merged locales, which differ when a brand overlay is active.
+        // Both grids (featured content + New Arrivals promo banner) render the same
+        // Cubes + Pyramids cards, so each title/description appears exactly twice.
         const contentCardTests = [
             {
-                description: 'renders women content card',
-                title: 'Women',
-                content: 'Discover our curated collection of sophisticated footwear designed for the modern woman.',
+                description: 'renders cubes content card',
+                title: 'Cubes',
+                content: 'Discover our curated collection of sculptural forms designed for the modern space.',
             },
             {
-                description: 'renders men content card',
-                title: 'Men',
-                content: "Timeless craftsmanship meets contemporary style in our men's footwear collection.",
+                description: 'renders pyramids content card',
+                title: 'Pyramids',
+                content: 'Bold geometry and clean lines — statement forms that anchor a contemporary space.',
             },
         ];
 
         test.each(contentCardTests)('$description', ({ title, content }) => {
             renderComponent();
-            expect(screen.getByText(title)).toBeInTheDocument();
-            expect(screen.getByText(content)).toBeInTheDocument();
+            expect(screen.getAllByText(title)).toHaveLength(2);
+            expect(screen.getAllByText(content)).toHaveLength(2);
         });
 
         test('renders all content cards with correct count', () => {
             renderComponent();
             const contentCards = screen.getAllByTestId('content-card');
-            // Women and Men. Foundations home renders no third "Style for Real Life" card.
-            expect(contentCards).toHaveLength(2);
+            // Two identical two-card grids: the featured-content grid and the New
+            // Arrivals promo banner, each rendering Cubes + Pyramids. The "Style for
+            // Real Life" category rail is a carousel, not a content card.
+            expect(contentCards).toHaveLength(4);
         });
     });
 
@@ -397,7 +410,7 @@ describe('HomePage', () => {
         test('handles page promise rejection gracefully', () => {
             renderComponent();
             // Should still render other sections
-            expect(screen.getByText(t('home:featuredContent.women.title'))).toBeInTheDocument();
+            expect(screen.getAllByText(t('home:featuredContent.newArrivals.cubes.title'))).toHaveLength(2);
         });
 
         test('handles page promise rejection', () => {
@@ -409,7 +422,7 @@ describe('HomePage', () => {
             });
 
             // Should still render other sections
-            expect(screen.getByText(t('home:featuredContent.women.title'))).toBeInTheDocument();
+            expect(screen.getAllByText(t('home:featuredContent.newArrivals.cubes.title'))).toHaveLength(2);
         });
     });
 
@@ -425,7 +438,10 @@ describe('HomePage', () => {
             {
                 description: 'applies correct spacing between sections',
                 assertion: () => {
-                    const featuredContentTitle = screen.getByText(t('home:featuredContent.women.title'));
+                    // First grid's Cubes card (both grids render one).
+                    const [featuredContentTitle] = screen.getAllByText(
+                        t('home:featuredContent.newArrivals.cubes.title')
+                    );
                     const sectionWithPadding = featuredContentTitle.closest('[class*="pt-16"]');
                     expect(sectionWithPadding).toBeInTheDocument();
                 },
@@ -433,9 +449,8 @@ describe('HomePage', () => {
             {
                 description: 'applies correct grid layout for content cards',
                 assertion: () => {
-                    const contentCardsGrid = screen
-                        .getByText(t('home:featuredContent.women.title'))
-                        .closest('div')?.parentElement;
+                    const [cubesTitle] = screen.getAllByText(t('home:featuredContent.newArrivals.cubes.title'));
+                    const contentCardsGrid = cubesTitle.closest('div')?.parentElement;
                     expect(contentCardsGrid).toHaveClass('grid', 'grid-cols-1', 'md:grid-cols-2', 'gap-6');
                 },
             },
