@@ -42,6 +42,10 @@ interface UIConfig {
                 mobileBatchSize: number;
                 maxProducts: number;
             };
+            /** Opt-in: keep the `cgid` refinement in the sidebar as a single-select radio group. @default undefined */
+            sidebarCategoryRefinement?: {
+                enabled: boolean;
+            };
         };
         product: {
             showRatingAverage: boolean;
