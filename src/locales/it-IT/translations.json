@@ -27,6 +27,9 @@
             "emptyTitle": "Aggiungi qui il titolo",
             "emptyButton": "Pulsante"
         },
+        "heroCarousel": {
+            "emptyLabel": "No banners yet"
+        },
         "image": {
             "emptyTitle": "Aggiungi qui il titolo"
         },
@@ -35,12 +38,21 @@
         "productGrid": {
             "loadFailed": "Impossibile caricare ulteriori prodotti."
         },
+        "popularCategory": {
+            "emptyTitle": "Categoria"
+        },
         "announcementBanner": {
             "emptyTitle": "Aggiungi qui il titolo"
         },
         "contentCard": {
             "emptyTitle": "Aggiungi qui il titolo",
             "emptyDescription": "Aggiungi qui la descrizione"
+        },
+        "productTile": {
+            "emptyTitle": "Prodotto"
+        },
+        "productRecommendations": {
+            "emptyTitle": "Prodotti consigliati"
         }
     },
     "search": {
@@ -1263,7 +1275,9 @@
             "title": "Stile per la vita reale",
             "description": "Noi di Market Street crediamo che la moda debba essere semplice, autentica e accessibile. Le nostre collezioni sono progettate per le persone moderne che apprezzano la qualità, la versatilità e lo stile senza tempo.",
             "shopNowButton": "Acquista ora",
-            "loadFailed": "Impossibile caricare le categorie."
+            "loadFailed": "Impossibile caricare le categorie.",
+            "emptyTitle": "Aggiungi qui il titolo",
+            "emptyRegionLabel": "Sequenza categorie"
         },
         "featuredContent": {
             "women": {
@@ -1619,7 +1633,6 @@
         "quickAdd": "Aggiunta rapida",
         "buyItNow": "Compralo subito",
         "pickupAvailable": "Ritiro disponibile",
-        "selectProduct": "Seleziona un prodotto",
         "updatingCart": "Aggiornamento in corso...",
         "updateCart": "Aggiorna",
         "addingToWishlist": "Aggiunta alla lista desideri in corso...",

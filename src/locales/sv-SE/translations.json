@@ -26,17 +26,29 @@
             "emptyTitle": "Lägg till din rubrik här",
             "emptyButton": "Knapp"
         },
+        "heroCarousel": {
+            "emptyLabel": "No banners yet"
+        },
         "image": {
             "emptyTitle": "Lägg till din rubrik här"
         },
         "previousImage": "Föregående bild",
         "nextImage": "Nästa bild",
+        "popularCategory": {
+            "emptyTitle": "Kategori"
+        },
         "announcementBanner": {
             "emptyTitle": "Lägg till din rubrik här"
         },
         "contentCard": {
             "emptyTitle": "Lägg till din rubrik här",
             "emptyDescription": "Lägg till din beskrivning här"
+        },
+        "productTile": {
+            "emptyTitle": "Produkt"
+        },
+        "productRecommendations": {
+            "emptyTitle": "Produktrekommendationer"
         }
     },
     "search": {
@@ -1146,7 +1158,9 @@
         "categoryGrid": {
             "title": "Stil för livet",
             "description": "Market Street anser att mode ska vara enkelt, äkta och tillgängligt. Våra kollektioner är designade för den moderna individen som värdesätter kvalitet, mångsidighet och tidlös stil.",
-            "shopNowButton": "Handla nu"
+            "shopNowButton": "Handla nu",
+            "emptyTitle": "Lägg till din rubrik här",
+            "emptyRegionLabel": "Kategorikarusell"
         },
         "featuredContent": {
             "women": {
@@ -1463,7 +1477,6 @@
         "quickAdd": "Snabbtillägg",
         "buyItNow": "Köp nu",
         "pickupAvailable": "Upphämtning tillgänglig",
-        "selectProduct": "Välj en produkt",
         "updatingCart": "Uppdaterar ...",
         "updateCart": "Uppdatera",
         "addingToWishlist": "Lägger till i önskelistan ...",

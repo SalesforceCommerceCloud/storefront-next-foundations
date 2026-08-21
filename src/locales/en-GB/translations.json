@@ -28,12 +28,16 @@
             "emptyTitle": "Add your title here",
             "emptyButton": "Button"
         },
+        "heroCarousel": {
+            "emptyLabel": "No banners yet"
+        },
         "image": {
             "emptyTitle": "Add your title here"
         },
         "previousImage": "Previous image",
         "nextImage": "Next image",
         "thumbnailImage": "Product image {{current}} of {{total}}",
+        "thumbnailImageLabeled": "{{label}}, product image {{current}} of {{total}}",
         "productGrid": {
             "loadFailed": "Unable to load additional products."
         },
@@ -43,12 +47,21 @@
             "pause": "Pause carousel"
         },
         "skipToMainContent": "Skip to main content",
+        "popularCategory": {
+            "emptyTitle": "Category"
+        },
         "announcementBanner": {
             "emptyTitle": "Add your text here"
         },
         "contentCard": {
             "emptyTitle": "Add your title here",
             "emptyDescription": "Add your description here"
+        },
+        "productTile": {
+            "emptyTitle": "Product"
+        },
+        "productRecommendations": {
+            "emptyTitle": "Product Recommendations"
         }
     },
     "search": {
@@ -1403,7 +1416,9 @@
             "title": "Style for Real Life",
             "description": "At Foundations Next, we believe fashion should be effortless, authentic, and accessible. Our collections are designed for the modern individual who values quality, versatility, and timeless style.",
             "shopNowButton": "Shop Now",
-            "loadFailed": "Unable to load categories."
+            "loadFailed": "Unable to load categories.",
+            "emptyTitle": "Add your title here",
+            "emptyRegionLabel": "Categories carousel"
         },
         "featuredContent": {
             "women": {
@@ -1855,7 +1870,6 @@
         "quickAdd": "Quick Add",
         "buyItNow": "Buy It Now",
         "pickupAvailable": "Pickup Available",
-        "selectProduct": "Select a product",
         "updatingCart": "Updating...",
         "updateCart": "Update",
         "addingToWishlist": "Adding to Wishlist...",

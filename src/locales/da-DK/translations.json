@@ -27,17 +27,29 @@
             "emptyTitle": "Tilføj din titel her",
             "emptyButton": "Knap"
         },
+        "heroCarousel": {
+            "emptyLabel": "No banners yet"
+        },
         "image": {
             "emptyTitle": "Tilføj din titel her"
         },
         "previousImage": "Forrige billede",
         "nextImage": "Næste billede",
+        "popularCategory": {
+            "emptyTitle": "Kategori"
+        },
         "announcementBanner": {
             "emptyTitle": "Tilføj din titel her"
         },
         "contentCard": {
             "emptyTitle": "Tilføj din titel her",
             "emptyDescription": "Tilføj din beskrivelse her"
+        },
+        "productTile": {
+            "emptyTitle": "Produkt"
+        },
+        "productRecommendations": {
+            "emptyTitle": "Produktanbefalinger"
         }
     },
     "search": {
@@ -1143,7 +1155,9 @@
         "categoryGrid": {
             "title": "Stil til det virkelige liv",
             "description": "Hos Market Street mener vi, at mode skal være ubesværet, autentisk og tilgængelig. Vores kollektioner er designet til det moderne menneske, der værdsætter kvalitet, alsidighed og tidløs stil.",
-            "shopNowButton": "Køb nu"
+            "shopNowButton": "Køb nu",
+            "emptyTitle": "Tilføj din titel her",
+            "emptyRegionLabel": "Kategorikarrusel"
         },
         "featuredContent": {
             "women": {
@@ -1461,7 +1475,6 @@
         "quickAdd": "Hurtig tilføjelse",
         "buyItNow": "Køb nu",
         "pickupAvailable": "Afhentning tilgængelig",
-        "selectProduct": "Vælg et produkt",
         "updatingCart": "Opdaterer ...",
         "updateCart": "Opdater",
         "addingToWishlist": "Føjer til ønskelisten ...",

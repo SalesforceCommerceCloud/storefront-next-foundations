@@ -27,17 +27,29 @@
             "emptyTitle": "ここにタイトルを追加",
             "emptyButton": "ボタン"
         },
+        "heroCarousel": {
+            "emptyLabel": "No banners yet"
+        },
         "image": {
             "emptyTitle": "ここにタイトルを追加"
         },
         "previousImage": "前の画像",
         "nextImage": "次の画像",
+        "popularCategory": {
+            "emptyTitle": "カテゴリ"
+        },
         "announcementBanner": {
             "emptyTitle": "ここにタイトルを追加"
         },
         "contentCard": {
             "emptyTitle": "ここにタイトルを追加",
             "emptyDescription": "ここに説明を追加"
+        },
+        "productTile": {
+            "emptyTitle": "商品"
+        },
+        "productRecommendations": {
+            "emptyTitle": "おすすめ商品"
         }
     },
     "search": {
@@ -1147,7 +1159,9 @@
         "categoryGrid": {
             "title": "日常に寄り添うスタイル",
             "description": "Market Street では、ファッションは気負わず、自分らしく、誰もが楽しめるものであるべきだと考えています。私たちのコレクションは、品質、多用途性、そして時代を超えて愛されるスタイルを大切にする現代的な一人ひとりのためにデザインされています。",
-            "shopNowButton": "今すぐお買い物"
+            "shopNowButton": "今すぐお買い物",
+            "emptyTitle": "ここにタイトルを追加",
+            "emptyRegionLabel": "カテゴリカルーセル"
         },
         "featuredContent": {
             "women": {
@@ -1525,7 +1539,6 @@
         "quickAdd": "クイック追加",
         "buyItNow": "今すぐ購入",
         "pickupAvailable": "店舗受け取り可能",
-        "selectProduct": "商品を選択",
         "updatingCart": "更新中...",
         "updateCart": "更新",
         "addingToWishlist": "ほしい物リストに追加しています...",

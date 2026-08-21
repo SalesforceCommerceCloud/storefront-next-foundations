@@ -28,17 +28,29 @@
             "emptyTitle": "Legg til tittelen her",
             "emptyButton": "Knapp"
         },
+        "heroCarousel": {
+            "emptyLabel": "No banners yet"
+        },
         "image": {
             "emptyTitle": "Legg til tittelen her"
         },
         "previousImage": "Forrige bilde",
         "nextImage": "Neste bilde",
+        "popularCategory": {
+            "emptyTitle": "Kategori"
+        },
         "announcementBanner": {
             "emptyTitle": "Legg til tittelen her"
         },
         "contentCard": {
             "emptyTitle": "Legg til tittelen her",
             "emptyDescription": "Legg til beskrivelsen her"
+        },
+        "productTile": {
+            "emptyTitle": "Produkt"
+        },
+        "productRecommendations": {
+            "emptyTitle": "Produktanbefalinger"
         }
     },
     "search": {
@@ -1143,7 +1155,9 @@
         "categoryGrid": {
             "title": "Stil for det virkelige liv",
             "description": "Hos Market Street mener vi at mote skal være uanstrengt, autentisk og tilgjengelig. Kolleksjonene våre er designet for det moderne mennesket som setter pris på kvalitet, allsidighet og tidløs stil.",
-            "shopNowButton": "Handle nå"
+            "shopNowButton": "Handle nå",
+            "emptyTitle": "Legg til tittelen her",
+            "emptyRegionLabel": "Karusell med kategorier"
         },
         "featuredContent": {
             "women": {
@@ -1461,7 +1475,6 @@
         "quickAdd": "Hurtigtillegg",
         "buyItNow": "Kjøp det nå",
         "pickupAvailable": "Tilgjengelig for henting",
-        "selectProduct": "Velg et produkt",
         "updatingCart": "Oppdaterer ...",
         "updateCart": "Oppdater",
         "addingToWishlist": "Legger til på ønskelisten ...",

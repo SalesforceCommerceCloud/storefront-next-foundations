@@ -27,17 +27,29 @@
             "emptyTitle": "여기에 제목 추가",
             "emptyButton": "버튼"
         },
+        "heroCarousel": {
+            "emptyLabel": "No banners yet"
+        },
         "image": {
             "emptyTitle": "여기에 제목 추가"
         },
         "previousImage": "이전 이미지",
         "nextImage": "다음 이미지",
+        "popularCategory": {
+            "emptyTitle": "카테고리"
+        },
         "announcementBanner": {
             "emptyTitle": "여기에 제목 추가"
         },
         "contentCard": {
             "emptyTitle": "여기에 제목 추가",
             "emptyDescription": "여기에 설명 추가"
+        },
+        "productTile": {
+            "emptyTitle": "제품"
+        },
+        "productRecommendations": {
+            "emptyTitle": "제품 추천"
         }
     },
     "search": {
@@ -1143,7 +1155,9 @@
         "categoryGrid": {
             "title": "실생활에 어울리는 스타일",
             "description": "Market Street는 패션이 수월하고 진정성 있고 접근하기 쉬워야 한다고 믿습니다. Market Street의 컬렉션은 품질, 다재다능함, 시대를 초월한 스타일을 중시하는 현대인에게 어울리도록 디자인되었습니다.",
-            "shopNowButton": "지금 쇼핑하기"
+            "shopNowButton": "지금 쇼핑하기",
+            "emptyTitle": "여기에 제목 추가",
+            "emptyRegionLabel": "카테고리 캐러셀"
         },
         "featuredContent": {
             "women": {
@@ -1521,7 +1535,6 @@
         "quickAdd": "빠른 추가",
         "buyItNow": "지금 구매하기",
         "pickupAvailable": "수령 가능",
-        "selectProduct": "제품 선택",
         "updatingCart": "업데이트 중...",
         "updateCart": "업데이트",
         "addingToWishlist": "위시리스트에 추가 중...",

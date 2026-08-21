@@ -27,17 +27,29 @@
             "emptyTitle": "Dodaj tytuł tutaj",
             "emptyButton": "Przycisk"
         },
+        "heroCarousel": {
+            "emptyLabel": "No banners yet"
+        },
         "image": {
             "emptyTitle": "Dodaj tytuł tutaj"
         },
         "previousImage": "Poprzedni obraz",
         "nextImage": "Następny obraz",
+        "popularCategory": {
+            "emptyTitle": "Kategoria"
+        },
         "announcementBanner": {
             "emptyTitle": "Dodaj tytuł tutaj"
         },
         "contentCard": {
             "emptyTitle": "Dodaj tytuł tutaj",
             "emptyDescription": "Dodaj opis tutaj"
+        },
+        "productTile": {
+            "emptyTitle": "Produkt"
+        },
+        "productRecommendations": {
+            "emptyTitle": "Rekomendacje produktów"
         }
     },
     "search": {
@@ -1156,7 +1168,9 @@
         "categoryGrid": {
             "title": "Styl w prawdziwym życiu",
             "description": "W Market Street uważamy, że moda powinna być naturalna, autentyczna i dostępna. Nasze kolekcje zostały zaprojektowane z myślą o nowoczesnych ludziach, którzy cenią sobie jakość, wszechstronność i ponadczasowy styl.",
-            "shopNowButton": "Kupuj teraz"
+            "shopNowButton": "Kupuj teraz",
+            "emptyTitle": "Dodaj tytuł tutaj",
+            "emptyRegionLabel": "Karuzela kategorii"
         },
         "featuredContent": {
             "women": {
@@ -1499,7 +1513,6 @@
         "quickAdd": "Szybko dodaj",
         "buyItNow": "Kup teraz",
         "pickupAvailable": "Dostępny odbiór osobisty",
-        "selectProduct": "Wybierz produkt",
         "updatingCart": "Aktualizowanie...",
         "updateCart": "Zaktualizuj",
         "addingToWishlist": "Dodawanie do listy życzeń...",

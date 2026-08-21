@@ -25,17 +25,29 @@
             "emptyTitle": "Voeg hier je titel toe",
             "emptyButton": "Knop"
         },
+        "heroCarousel": {
+            "emptyLabel": "No banners yet"
+        },
         "image": {
             "emptyTitle": "Voeg hier je titel toe"
         },
         "previousImage": "Vorige afbeelding",
         "nextImage": "Volgende afbeelding",
+        "popularCategory": {
+            "emptyTitle": "Categorie"
+        },
         "announcementBanner": {
             "emptyTitle": "Voeg hier je titel toe"
         },
         "contentCard": {
             "emptyTitle": "Voeg hier je titel toe",
             "emptyDescription": "Voeg hier je beschrijving toe"
+        },
+        "productTile": {
+            "emptyTitle": "Product"
+        },
+        "productRecommendations": {
+            "emptyTitle": "Productaanbevelingen"
         }
     },
     "search": {
@@ -1140,7 +1152,9 @@
         "categoryGrid": {
             "title": "Stijl voor het echte leven",
             "description": "Bij Market Street vinden we dat mode moeiteloos, authentiek en toegankelijk moet zijn. Onze collecties zijn ontworpen voor de moderne mens die waarde hecht aan kwaliteit, veelzijdigheid en een tijdloze stijl.",
-            "shopNowButton": "Nu shoppen"
+            "shopNowButton": "Nu shoppen",
+            "emptyTitle": "Voeg hier je titel toe",
+            "emptyRegionLabel": "Categorieëncarrousel"
         },
         "featuredContent": {
             "women": {
@@ -1462,7 +1476,6 @@
         "quickAdd": "Snel toevoegen",
         "buyItNow": "Nu kopen",
         "pickupAvailable": "Ophalen beschikbaar",
-        "selectProduct": "Selecteer een product",
         "updatingCart": "Bijwerken...",
         "updateCart": "Bijwerken",
         "addingToWishlist": "Toevoegen aan verlanglijst...",

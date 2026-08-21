@@ -28,17 +28,29 @@
             "emptyTitle": "在此添加标题",
             "emptyButton": "按钮"
         },
+        "heroCarousel": {
+            "emptyLabel": "No banners yet"
+        },
         "image": {
             "emptyTitle": "在此添加标题"
         },
         "previousImage": "上一张图片",
         "nextImage": "下一张图片",
+        "popularCategory": {
+            "emptyTitle": "类别"
+        },
         "announcementBanner": {
             "emptyTitle": "在此添加标题"
         },
         "contentCard": {
             "emptyTitle": "在此添加标题",
             "emptyDescription": "在此添加描述"
+        },
+        "productTile": {
+            "emptyTitle": "产品"
+        },
+        "productRecommendations": {
+            "emptyTitle": "产品推荐"
         }
     },
     "search": {
@@ -1149,7 +1161,9 @@
         "categoryGrid": {
             "title": "现实生活的风格",
             "description": "在 Market Street，我们相信时尚应该轻松自在、真实自然、触手可及。我们的系列专为重视品质、百搭性和永恒风格的现代人士而设计。",
-            "shopNowButton": "立即购买"
+            "shopNowButton": "立即购买",
+            "emptyTitle": "在此添加标题",
+            "emptyRegionLabel": "类别轮播"
         },
         "featuredContent": {
             "women": {
@@ -1528,7 +1542,6 @@
         "quickAdd": "快速添加",
         "buyItNow": "立即购买",
         "pickupAvailable": "提供取货服务",
-        "selectProduct": "选择产品",
         "updatingCart": "正在更新...",
         "updateCart": "更新",
         "addingToWishlist": "正在添加到愿望清单...",
