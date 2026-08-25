@@ -23,6 +23,7 @@ import { fetchProductById } from '@/lib/api/products.server';
 import { NormalizedApiError } from '@/lib/api/normalized-api-error';
 import { siteContext } from '@salesforce/storefront-next-runtime/site-context';
 import ProductView from '@/components/product-view';
+import ProductViewProvider from '@/providers/product-view';
 import ChildProducts from '@/components/product-view/child-products';
 import CategoryBreadcrumbs from '@/components/category-breadcrumbs';
 import { isProductSet, isProductBundle } from '@/lib/product/product-utils';
@@ -78,10 +79,6 @@ import { resolvePdpSections } from '@/extensions/product-content/lib/pdp-section
 import { ProductContentDataProvider } from '@/extensions/product-content/context/product-content-data-context';
 // @sfdc-extension-block-end SFDC_EXT_PRODUCT_CONTENT
 // @sfdc-extension-block-start SFDC_EXT_SHIPPING_DELIVERY
-import {
-    getEstimatedDelivery,
-    type EstimatedDeliveryData,
-} from '@/extensions/shipping-delivery/lib/api/shipping-delivery.server';
 import { ShippingDeliveryProvider } from '@/extensions/shipping-delivery/context/shipping-delivery-context';
 // @sfdc-extension-block-end SFDC_EXT_SHIPPING_DELIVERY
 
@@ -125,9 +122,6 @@ export type ProductPageData = {
     returnsWarranty: Promise<ReturnsAndWarrantyData>;
     pdpCollapsibles: Promise<Array<HtmlContent | null>>;
     // @sfdc-extension-block-end SFDC_EXT_PRODUCT_CONTENT
-    // @sfdc-extension-block-start SFDC_EXT_SHIPPING_DELIVERY
-    estimatedDelivery: Promise<EstimatedDeliveryData>;
-    // @sfdc-extension-block-end SFDC_EXT_SHIPPING_DELIVERY
 };
 
 /**
@@ -170,7 +164,6 @@ export async function loader(args: Route.LoaderArgs): Promise<ProductPageData> {
     // needs the product ID and drives above-the-fold star display + SEO.
     const reviewsSummaryPromise = getReviewsSummary(productLookupId);
     // @sfdc-extension-block-end SFDC_EXT_RATINGS_REVIEWS
-
     let product: ShopperProducts.schemas['Product'] | null;
     try {
         product = await fetchProductById(context, productLookupId, {
@@ -268,9 +261,6 @@ export async function loader(args: Route.LoaderArgs): Promise<ProductPageData> {
             )
         ),
         // @sfdc-extension-block-end SFDC_EXT_PRODUCT_CONTENT
-        // @sfdc-extension-block-start SFDC_EXT_SHIPPING_DELIVERY
-        estimatedDelivery: getEstimatedDelivery(productLookupId),
-        // @sfdc-extension-block-end SFDC_EXT_SHIPPING_DELIVERY
     };
 }
 
@@ -348,21 +338,29 @@ function ProductContent({
                                 image: primaryImage,
                             }}
                         />
-                        <div className="space-y-8">
-                            {isProductASet || isProductABundle ? (
-                                <>
+                        <ProductViewProvider
+                            product={product}
+                            mode="add"
+                            // @sfdc-extension-block-start SFDC_EXT_BOPIS
+                            clearDeferredPickupSelection
+                            // @sfdc-extension-block-end SFDC_EXT_BOPIS
+                        >
+                            <div className="space-y-8">
+                                {isProductASet || isProductABundle ? (
+                                    <>
+                                        <ProductView product={product} />
+                                        <ChildProducts parentProduct={product} />
+                                    </>
+                                ) : (
                                     <ProductView product={product} />
-                                    <ChildProducts parentProduct={product} />
-                                </>
-                            ) : (
-                                <ProductView product={product} />
-                            )}
+                                )}
 
-                            {/* @sfdc-extension-block-start SFDC_EXT_RATINGS_REVIEWS */}
-                            <UITarget targetId="sfcc.pdp.reviews.section" />
-                            {/* @sfdc-extension-block-end SFDC_EXT_RATINGS_REVIEWS */}
-                            <UITarget targetId="sfcc.pdp.reviews.qna" />
-                        </div>
+                                {/* @sfdc-extension-block-start SFDC_EXT_RATINGS_REVIEWS */}
+                                <UITarget targetId="sfcc.pdp.reviews.section" />
+                                {/* @sfdc-extension-block-end SFDC_EXT_RATINGS_REVIEWS */}
+                                <UITarget targetId="sfcc.pdp.reviews.qna" />
+                            </div>
+                        </ProductViewProvider>
                         {/* @sfdc-extension-block-start SFDC_EXT_RATINGS_REVIEWS */}
                     </WriteReviewFormProvider>
                 </ProductReviewsProvider>
@@ -461,9 +459,7 @@ function ProductDetailView({ loaderData }: { loaderData: ProductPageData }) {
     // @sfdc-extension-block-end SFDC_EXT_BNPL
     // @sfdc-extension-block-start SFDC_EXT_SHIPPING_DELIVERY
     finalContent = (
-        <ShippingDeliveryProvider estimatedDeliveryPromise={loaderData.estimatedDelivery}>
-            {finalContent}
-        </ShippingDeliveryProvider>
+        <ShippingDeliveryProvider productId={loaderData.product.id}>{finalContent}</ShippingDeliveryProvider>
     );
     // @sfdc-extension-block-end SFDC_EXT_SHIPPING_DELIVERY
 

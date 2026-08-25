@@ -25,12 +25,13 @@ exports[`ShippingCalculator stories snapshot > Default story renders and matches
           <input
             aria-describedby="delivery-message"
             aria-invalid="false"
-            aria-label="ZIP code"
+            aria-label="postcode"
+            autocomplete="postal-code"
             class="w-full px-3 py-2 text-sm border rounded-ui transition-colors focus:outline-none focus:ring-2 bg-background border-muted-foreground/20 focus:border-ring focus:ring-ring"
             id="delivery-zip-input"
-            inputmode="numeric"
-            maxlength="5"
-            placeholder="Enter ZIP code"
+            inputmode="text"
+            maxlength="8"
+            placeholder="Enter postcode"
             type="text"
             value=""
           />
@@ -47,7 +48,7 @@ exports[`ShippingCalculator stories snapshot > Default story renders and matches
         class="text-xs text-muted-foreground"
         id="delivery-message"
       >
-        Enter a 5-digit ZIP code to see delivery estimates.
+        Enter your postcode (e.g. SW1A 1AA) to see delivery estimates.
       </p>
     </div>
   </div>
@@ -79,12 +80,13 @@ exports[`ShippingCalculator stories snapshot > DesktopLayout story renders and m
           <input
             aria-describedby="delivery-message"
             aria-invalid="false"
-            aria-label="ZIP code"
+            aria-label="postcode"
+            autocomplete="postal-code"
             class="w-full px-3 py-2 text-sm border rounded-ui transition-colors focus:outline-none focus:ring-2 bg-background border-muted-foreground/20 focus:border-ring focus:ring-ring"
             id="delivery-zip-input"
-            inputmode="numeric"
-            maxlength="5"
-            placeholder="Enter ZIP code"
+            inputmode="text"
+            maxlength="8"
+            placeholder="Enter postcode"
             type="text"
             value=""
           />
@@ -101,7 +103,7 @@ exports[`ShippingCalculator stories snapshot > DesktopLayout story renders and m
         class="text-xs text-muted-foreground"
         id="delivery-message"
       >
-        Enter a 5-digit ZIP code to see delivery estimates.
+        Enter your postcode (e.g. SW1A 1AA) to see delivery estimates.
       </p>
     </div>
   </div>
@@ -133,12 +135,13 @@ exports[`ShippingCalculator stories snapshot > InvalidZip story renders and matc
           <input
             aria-describedby="delivery-message"
             aria-invalid="false"
-            aria-label="ZIP code"
+            aria-label="postcode"
+            autocomplete="postal-code"
             class="w-full px-3 py-2 text-sm border rounded-ui transition-colors focus:outline-none focus:ring-2 bg-background border-muted-foreground/20 focus:border-ring focus:ring-ring"
             id="delivery-zip-input"
-            inputmode="numeric"
-            maxlength="5"
-            placeholder="Enter ZIP code"
+            inputmode="text"
+            maxlength="8"
+            placeholder="Enter postcode"
             type="text"
             value=""
           />
@@ -155,7 +158,7 @@ exports[`ShippingCalculator stories snapshot > InvalidZip story renders and matc
         class="text-xs text-muted-foreground"
         id="delivery-message"
       >
-        Enter a 5-digit ZIP code to see delivery estimates.
+        Enter your postcode (e.g. SW1A 1AA) to see delivery estimates.
       </p>
     </div>
   </div>
@@ -187,12 +190,13 @@ exports[`ShippingCalculator stories snapshot > MobileLayout story renders and ma
           <input
             aria-describedby="delivery-message"
             aria-invalid="false"
-            aria-label="ZIP code"
+            aria-label="postcode"
+            autocomplete="postal-code"
             class="w-full px-3 py-2 text-sm border rounded-ui transition-colors focus:outline-none focus:ring-2 bg-background border-muted-foreground/20 focus:border-ring focus:ring-ring"
             id="delivery-zip-input"
-            inputmode="numeric"
-            maxlength="5"
-            placeholder="Enter ZIP code"
+            inputmode="text"
+            maxlength="8"
+            placeholder="Enter postcode"
             type="text"
             value=""
           />
@@ -209,7 +213,7 @@ exports[`ShippingCalculator stories snapshot > MobileLayout story renders and ma
         class="text-xs text-muted-foreground"
         id="delivery-message"
       >
-        Enter a 5-digit ZIP code to see delivery estimates.
+        Enter your postcode (e.g. SW1A 1AA) to see delivery estimates.
       </p>
     </div>
   </div>
@@ -241,12 +245,13 @@ exports[`ShippingCalculator stories snapshot > WithResult story renders and matc
           <input
             aria-describedby="delivery-message"
             aria-invalid="false"
-            aria-label="ZIP code"
+            aria-label="postcode"
+            autocomplete="postal-code"
             class="w-full px-3 py-2 text-sm border rounded-ui transition-colors focus:outline-none focus:ring-2 bg-background border-muted-foreground/20 focus:border-ring focus:ring-ring"
             id="delivery-zip-input"
-            inputmode="numeric"
-            maxlength="5"
-            placeholder="Enter ZIP code"
+            inputmode="text"
+            maxlength="8"
+            placeholder="Enter postcode"
             type="text"
             value=""
           />
@@ -263,7 +268,7 @@ exports[`ShippingCalculator stories snapshot > WithResult story renders and matc
         class="text-xs text-muted-foreground"
         id="delivery-message"
       >
-        Enter a 5-digit ZIP code to see delivery estimates.
+        Enter your postcode (e.g. SW1A 1AA) to see delivery estimates.
       </p>
     </div>
   </div>
@@ -295,12 +300,13 @@ exports[`ShippingCalculator stories snapshot > WithValidZip story renders and ma
           <input
             aria-describedby="delivery-message"
             aria-invalid="false"
-            aria-label="ZIP code"
+            aria-label="postcode"
+            autocomplete="postal-code"
             class="w-full px-3 py-2 text-sm border rounded-ui transition-colors focus:outline-none focus:ring-2 bg-background border-muted-foreground/20 focus:border-ring focus:ring-ring"
             id="delivery-zip-input"
-            inputmode="numeric"
-            maxlength="5"
-            placeholder="Enter ZIP code"
+            inputmode="text"
+            maxlength="8"
+            placeholder="Enter postcode"
             type="text"
             value=""
           />
@@ -317,7 +323,7 @@ exports[`ShippingCalculator stories snapshot > WithValidZip story renders and ma
         class="text-xs text-muted-foreground"
         id="delivery-message"
       >
-        Enter a 5-digit ZIP code to see delivery estimates.
+        Enter your postcode (e.g. SW1A 1AA) to see delivery estimates.
       </p>
     </div>
   </div>
