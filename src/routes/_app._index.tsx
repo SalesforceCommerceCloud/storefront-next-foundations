@@ -58,10 +58,10 @@ import { RegionDefinition } from '@/lib/decorators/region-definition';
 import { fetchPageWithComponentData } from '@/lib/page-designer/page-loader.server';
 import { getLogger } from '@/lib/logger.server';
 
-import hero01 from '/images/hero-01.webp';
-// Foundations hero visual from the Figma "Storefront Home" design (node 10002:82198):
-// a single centered "Geometric Elegance" cube. Overlaid via the foundations public dir.
-import heroGeometric from '/images/hero-geometric.webp';
+import hero1 from '/images/foundations/hero-carousel/hero1.webp';
+import hero2 from '/images/foundations/hero-carousel/hero2.webp';
+import hero3 from '/images/foundations/hero-carousel/hero3.webp';
+import hero4 from '/images/foundations/hero-carousel/hero4.webp';
 // New Arrivals promo banner visuals (Figma composed home node 10079:9635, Promo Banner 2):
 // minimalist geometric forms on a neutral backdrop — a trio of cubes and a single pyramid.
 // Overlaid via the foundations public dir.
@@ -182,7 +182,7 @@ export function loader(args: Route.LoaderArgs): HomePageData {
         }),
         categories: fetchCategories(args.context, 'root', 1),
         pageUrl,
-        ogImageUrl: new URL(hero01, requestUrl.origin).href,
+        ogImageUrl: new URL(hero1, requestUrl.origin).href,
     };
 }
 
@@ -196,17 +196,52 @@ export function loader(args: Route.LoaderArgs): HomePageData {
 export default function HomePage({ loaderData }: { loaderData: HomePageData }) {
     const { t } = useTranslation('home');
 
-    // Figma designs a single "Geometric Elegance" hero slide (node 10002:82198); the 5 dots there
-    // are placeholder carousel chrome, not additional designed slides. So foundations renders one
-    // slide — the HeroCarousel already hides dots/nav when slideCount === 1.
+    // The supplied hero images are ordered to match their carousel positions.
     const heroSlides: HeroSlide[] = [
         {
             id: 'slide-1',
             title: t('hero.slide1.title'),
             subtitle: t('hero.slide1.subtitle'),
-            imageUrl: heroGeometric,
+            imageUrl: hero1,
             imageAlt: t('hero.slide1.imageAlt'),
             ctaText: t('hero.slide1.ctaText'),
+            ctaAriaLabel: t('hero.slide1.ctaAriaLabel'),
+            ctaLink: '/category/root',
+            overlayPosition: 'Middle Center',
+            overlayAlignment: 'center',
+        },
+        {
+            id: 'slide-2',
+            title: t('hero.slide2.title'),
+            subtitle: t('hero.slide2.subtitle'),
+            imageUrl: hero2,
+            imageAlt: t('hero.slide2.imageAlt'),
+            ctaText: t('hero.slide2.ctaText'),
+            ctaAriaLabel: t('hero.slide2.ctaAriaLabel'),
+            ctaLink: '/category/root',
+            overlayPosition: 'Middle Center',
+            overlayAlignment: 'center',
+        },
+        {
+            id: 'slide-3',
+            title: t('hero.slide3.title'),
+            subtitle: t('hero.slide3.subtitle'),
+            imageUrl: hero3,
+            imageAlt: t('hero.slide3.imageAlt'),
+            ctaText: t('hero.slide3.ctaText'),
+            ctaAriaLabel: t('hero.slide3.ctaAriaLabel'),
+            ctaLink: '/category/root',
+            overlayPosition: 'Middle Center',
+            overlayAlignment: 'center',
+        },
+        {
+            id: 'slide-4',
+            title: t('hero.slide4.title'),
+            subtitle: t('hero.slide4.subtitle'),
+            imageUrl: hero4,
+            imageAlt: t('hero.slide4.imageAlt'),
+            ctaText: t('hero.slide4.ctaText'),
+            ctaAriaLabel: t('hero.slide4.ctaAriaLabel'),
             ctaLink: '/category/root',
             overlayPosition: 'Middle Center',
             overlayAlignment: 'center',
@@ -306,7 +341,11 @@ export default function HomePage({ loaderData }: { loaderData: HomePageData }) {
                 Center the cards when they don't fill the track (foundations opts in; the shared
                 component left-aligns by default). */}
             <div className="pt-16">
-                <PopularCategories categoriesPromise={loaderData.categories} centerWhenPartial />
+                <PopularCategories
+                    categoriesPromise={loaderData.categories}
+                    centerWhenPartial
+                    fallbackImageUrl={hero1}
+                />
             </div>
 
             {/* New Arrivals promo banner — static two-card grid (Figma composed home node

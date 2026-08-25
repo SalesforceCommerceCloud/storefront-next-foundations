@@ -1375,32 +1375,32 @@
     "home": {
         "hero": {
             "slide1": {
-                "title": "Geometric Elegance",
-                "subtitle": "Discover our curated selection of minimalist design pieces",
-                "ctaText": "Explore now",
-                "ctaAriaLabel": "Discover the Collection: The New Season",
-                "imageAlt": "A minimalist geometric cube on a neutral studio backdrop"
+                "title": "Geometric Balance",
+                "subtitle": "A study in proportion, light, and quiet structure.",
+                "ctaText": "Explore collection",
+                "ctaAriaLabel": "Explore collection: Geometric Balance",
+                "imageAlt": "White geometric forms balanced on plinths in a softly lit studio"
             },
             "slide2": {
-                "title": "The Modern Wardrobe",
-                "subtitle": "Elevated silhouettes, refined textures, and a bold approach to everyday dressing. Designed to move with you.",
-                "ctaText": "Shop the Look",
-                "ctaAriaLabel": "Shop the Look: The Modern Wardrobe",
-                "imageAlt": "Women's White Linen Dress"
+                "title": "Sculptural Contrast",
+                "subtitle": "Clean forms bring depth to a considered space.",
+                "ctaText": "Explore collection",
+                "ctaAriaLabel": "Explore collection: Sculptural Contrast",
+                "imageAlt": "White geometric forms arranged on a plinth in a softly lit studio"
             },
             "slide3": {
-                "title": "After Hours",
-                "subtitle": "Statement pieces and refined layers designed for nights out, late moments, and everything in between.",
-                "ctaText": "Explore the Collection",
-                "ctaAriaLabel": "Explore the Collection: After Hours",
-                "imageAlt": "Women's Black Suit"
+                "title": "Quiet Geometry",
+                "subtitle": "Architectural silhouettes in a neutral palette.",
+                "ctaText": "Explore collection",
+                "ctaAriaLabel": "Explore collection: Quiet Geometry",
+                "imageAlt": "A white cone, sphere, and hexagonal form arranged on a plinth"
             },
             "slide4": {
-                "title": "New Perspectives",
-                "subtitle": "A curated drop of standout pieces that redefine contemporary fashion. Confident. Expressive. Uncompromising.",
-                "ctaText": "Shop Now",
-                "ctaAriaLabel": "Shop Now: New Perspectives",
-                "imageAlt": "Women's Grey Dress"
+                "title": "Stacked Simplicity",
+                "subtitle": "Everyday objects reduced to their essential forms.",
+                "ctaText": "Explore collection",
+                "ctaAriaLabel": "Explore collection: Stacked Simplicity",
+                "imageAlt": "Three white cubes stacked on a plinth in a softly lit studio"
             }
         },
         "meta": {

@@ -30,10 +30,8 @@
  *   1. `renders all content cards with correct count` asserts a length of 4.
  *   2. Because both grids are identical, each card title/description renders
  *      twice, so the card tests assert with `getAllByText` (length 2).
- *   3. `passes categories promise to PopularCategories component` asserts the
- *      PopularCategories mock's own heading ("Step into Elegance") rather than
- *      "Style for Real Life", which the canonical test only saw because it was
- *      the third card's title.
+ *   3. `passes Foundations category fallback image to PopularCategories` asserts
+ *      the route forwards its category promise and vertical-specific fallback.
  *
  * Everything else mirrors the canonical test — the foundations loader and the
  * remaining static sections are structurally identical.
@@ -51,6 +49,10 @@ import { getConfig } from '@salesforce/storefront-next-runtime/config';
 import type { AppConfig } from '@/types/config';
 
 const { t } = getTranslation();
+const { mockHeroCarousel, mockPopularCategories } = vi.hoisted(() => ({
+    mockHeroCarousel: vi.fn(),
+    mockPopularCategories: vi.fn(),
+}));
 
 // Mock data
 const mockSearchResult = {
@@ -120,11 +122,14 @@ vi.mock('@/components/region', () => ({
 
 // Mock the PopularCategories component
 vi.mock('@/components/home/popular-categories', () => ({
-    default: () => (
-        <div data-testid="popular-categories">
-            <h2>Step into Elegance</h2>
-        </div>
-    ),
+    default: (props: any) => {
+        mockPopularCategories(props);
+        return (
+            <div data-testid="popular-categories">
+                <h2>Step into Elegance</h2>
+            </div>
+        );
+    },
 }));
 
 // Mock the ContentCard component
@@ -139,7 +144,10 @@ vi.mock('@/components/content-card', () => ({
 
 // Mock HeroCarousel component
 vi.mock('@/components/hero-carousel', () => ({
-    default: () => <div data-testid="hero-carousel">Hero Carousel</div>,
+    default: (props: any) => {
+        mockHeroCarousel(props);
+        return <div data-testid="hero-carousel">Hero Carousel</div>;
+    },
     HeroCarouselSkeleton: () => <div data-testid="hero-carousel-skeleton">Hero Carousel</div>,
 }));
 
@@ -182,10 +190,26 @@ vi.mock('react-i18next', async () => {
                 // Handle both with and without the 'home:' namespace prefix
                 const normalizedKey = key.startsWith('home:') ? key.substring(5) : key;
                 const translations: Record<string, string> = {
-                    'hero.slide1.title': 'Geometric Elegance',
-                    'hero.slide1.subtitle': 'Discover our curated selection of minimalist design pieces',
-                    'hero.slide1.imageAlt': 'A minimalist geometric cube on a neutral studio backdrop',
-                    'hero.slide1.ctaText': 'Explore now',
+                    'hero.slide1.title': 'Geometric Balance',
+                    'hero.slide1.subtitle': 'A study in proportion, light, and quiet structure.',
+                    'hero.slide1.imageAlt': 'White geometric forms balanced on plinths in a softly lit studio',
+                    'hero.slide1.ctaText': 'Explore collection',
+                    'hero.slide1.ctaAriaLabel': 'Explore collection: Geometric Balance',
+                    'hero.slide2.title': 'Sculptural Contrast',
+                    'hero.slide2.subtitle': 'Clean forms bring depth to a considered space.',
+                    'hero.slide2.imageAlt': 'White geometric forms arranged on a plinth in a softly lit studio',
+                    'hero.slide2.ctaText': 'Explore collection',
+                    'hero.slide2.ctaAriaLabel': 'Explore collection: Sculptural Contrast',
+                    'hero.slide3.title': 'Quiet Geometry',
+                    'hero.slide3.subtitle': 'Architectural silhouettes in a neutral palette.',
+                    'hero.slide3.imageAlt': 'A white cone, sphere, and hexagonal form arranged on a plinth',
+                    'hero.slide3.ctaText': 'Explore collection',
+                    'hero.slide3.ctaAriaLabel': 'Explore collection: Quiet Geometry',
+                    'hero.slide4.title': 'Stacked Simplicity',
+                    'hero.slide4.subtitle': 'Everyday objects reduced to their essential forms.',
+                    'hero.slide4.imageAlt': 'Three white cubes stacked on a plinth in a softly lit studio',
+                    'hero.slide4.ctaText': 'Explore collection',
+                    'hero.slide4.ctaAriaLabel': 'Explore collection: Stacked Simplicity',
                     'featuredProducts.title': 'Featured Collection',
                     'categoryGrid.title': 'Style for Real Life',
                     'categoryGrid.shopNowButton': 'Shop Now',
@@ -289,6 +313,57 @@ describe('HomePage', () => {
     });
 
     describe('Basic Rendering', () => {
+        test('passes the four Foundations hero slides to the carousel', () => {
+            renderComponent();
+
+            expect(mockHeroCarousel).toHaveBeenCalledWith(
+                expect.objectContaining({
+                    autoPlay: true,
+                    autoPlayInterval: 6000,
+                    showDots: true,
+                    showNavigation: true,
+                    slides: [
+                        expect.objectContaining({
+                            id: 'slide-1',
+                            title: 'Geometric Balance',
+                            imageAlt: 'White geometric forms balanced on plinths in a softly lit studio',
+                            imageUrl: '__ASSET_MOCK__',
+                            ctaText: 'Explore collection',
+                            ctaAriaLabel: 'Explore collection: Geometric Balance',
+                            ctaLink: '/category/root',
+                        }),
+                        expect.objectContaining({
+                            id: 'slide-2',
+                            title: 'Sculptural Contrast',
+                            imageAlt: 'White geometric forms arranged on a plinth in a softly lit studio',
+                            imageUrl: '__ASSET_MOCK__',
+                            ctaText: 'Explore collection',
+                            ctaAriaLabel: 'Explore collection: Sculptural Contrast',
+                            ctaLink: '/category/root',
+                        }),
+                        expect.objectContaining({
+                            id: 'slide-3',
+                            title: 'Quiet Geometry',
+                            imageAlt: 'A white cone, sphere, and hexagonal form arranged on a plinth',
+                            imageUrl: '__ASSET_MOCK__',
+                            ctaText: 'Explore collection',
+                            ctaAriaLabel: 'Explore collection: Quiet Geometry',
+                            ctaLink: '/category/root',
+                        }),
+                        expect.objectContaining({
+                            id: 'slide-4',
+                            title: 'Stacked Simplicity',
+                            imageAlt: 'Three white cubes stacked on a plinth in a softly lit studio',
+                            imageUrl: '__ASSET_MOCK__',
+                            ctaText: 'Explore collection',
+                            ctaAriaLabel: 'Explore collection: Stacked Simplicity',
+                            ctaLink: '/category/root',
+                        }),
+                    ],
+                })
+            );
+        });
+
         const renderingTests = [
             {
                 description: 'renders featured content cards',
@@ -362,11 +437,16 @@ describe('HomePage', () => {
             });
         });
 
-        test('passes categories promise to PopularCategories component', async () => {
+        test('passes Foundations category fallback image to PopularCategories', async () => {
             renderComponent();
             await waitFor(() => {
                 expect(screen.getByTestId('popular-categories')).toBeInTheDocument();
-                expect(screen.getByText('Step into Elegance')).toBeInTheDocument();
+                expect(mockPopularCategories).toHaveBeenCalledWith(
+                    expect.objectContaining({
+                        categoriesPromise: expect.any(Promise),
+                        fallbackImageUrl: '__ASSET_MOCK__',
+                    })
+                );
             });
         });
     });
