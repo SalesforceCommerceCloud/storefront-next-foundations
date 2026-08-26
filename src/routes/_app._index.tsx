@@ -136,7 +136,7 @@ function FeaturedProductsError() {
 }
 
 export type HomePageData = {
-    page: ReturnType<typeof fetchPageWithComponentData>;
+    page: Awaited<ReturnType<typeof fetchPageWithComponentData>>;
     searchResult: Promise<ShopperSearch.schemas['ProductSearchResult']>;
     categories: Promise<ShopperProducts.schemas['Category'][]>;
     pageUrl: string;
@@ -148,7 +148,7 @@ export type HomePageData = {
  * This function runs on the server during SSR and prepares data for the home page.
  * @returns Promise that resolves to an object containing search result promise
  */
-export function loader(args: Route.LoaderArgs): HomePageData {
+export async function loader(args: Route.LoaderArgs): Promise<HomePageData> {
     const logger = getLogger(args.context);
     logger.debug('HomePage: loader starting');
 
@@ -171,16 +171,23 @@ export function loader(args: Route.LoaderArgs): HomePageData {
     const currency = (args.context.get(siteContext) as SiteContext).currency;
     const pageUrl = buildCanonicalUrl(requestUrl.origin, requestUrl.pathname, requestUrl.search);
 
+    const page = fetchPageWithComponentData(args, {
+        pageId: 'homepage',
+    });
+    const searchResult = fetchCarouselProducts(args.context, {
+        categoryId: 'root',
+        limit: config.pages.home.featuredProductsCount,
+        currency: currency ?? undefined,
+    });
+    const categories = fetchCategories(args.context, 'root', 1);
+
+    // These requests remain deferred, but must be observed if the blocking page request rejects.
+    void Promise.allSettled([searchResult, categories]);
+
     return {
-        page: fetchPageWithComponentData(args, {
-            pageId: 'homepage',
-        }),
-        searchResult: fetchCarouselProducts(args.context, {
-            categoryId: 'root',
-            limit: config.pages.home.featuredProductsCount,
-            currency: currency ?? undefined,
-        }),
-        categories: fetchCategories(args.context, 'root', 1),
+        page: await page,
+        searchResult,
+        categories,
         pageUrl,
         ogImageUrl: new URL(hero1, requestUrl.origin).href,
     };
@@ -265,7 +272,7 @@ export default function HomePage({ loaderData }: { loaderData: HomePageData }) {
             />
 
             {/* Empty PD slot above the hero (Figma: Custom Region 1). */}
-            <Region page={loaderData.page} regionId="top" />
+            <Region page={loaderData.page} regionId="top" critical={true} />
 
             {/* Hero carousel — static */}
             <HeroCarousel
