@@ -46,6 +46,8 @@ interface UIConfig {
             sidebarCategoryRefinement?: {
                 enabled: boolean;
             };
+            /** When true, product tiles link to the master product PDP instead of the represented variant. @default false */
+            tileLinksToMasterProduct?: boolean;
         };
         product: {
             showRatingAverage: boolean;
