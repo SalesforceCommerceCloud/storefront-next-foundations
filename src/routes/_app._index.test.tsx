@@ -50,6 +50,10 @@ import { fetchCategories } from '@/lib/api/categories.server';
 import { getConfig } from '@salesforce/storefront-next-runtime/config';
 import type { AppConfig } from '@/types/config';
 
+vi.mock('@/hooks/use-seo-url-context', () => ({
+    useSeoUrlContext: () => ({ siteId: 'RefArchGlobal' }),
+}));
+
 const { t } = getTranslation();
 const { mockHeroCarousel, mockPopularCategories } = vi.hoisted(() => ({
     mockHeroCarousel: vi.fn(),
