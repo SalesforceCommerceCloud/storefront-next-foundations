@@ -14,15 +14,95 @@
  * limitations under the License.
  */
 /** @sfdc-extension-file SFDC_EXT_SHIPPING_DELIVERY */
-import { describe, expect, test, vi } from 'vitest';
+import { beforeEach, describe, expect, test, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
-import type { ShopperProducts } from '@/scapi';
+import { ApiError, type ShopperProducts } from '@/scapi';
 import type { ProductPageData } from './_app.product.$productId';
+import { siteContext } from '@salesforce/storefront-next-runtime/site-context';
+import { NormalizedApiError } from '@/lib/api/normalized-api-error';
+
+const { mockFetchProductById, mockAttemptRouteSeoFallback } = vi.hoisted(() => ({
+    mockFetchProductById: vi.fn(),
+    mockAttemptRouteSeoFallback: vi.fn(),
+}));
+
+vi.mock('@/lib/api/products.server', () => ({ fetchProductById: mockFetchProductById }));
+vi.mock('@/lib/seo/route-fallback.server', () => ({ attemptRouteSeoFallback: mockAttemptRouteSeoFallback }));
+vi.mock('@/lib/page-designer/page-loader.server', () => ({
+    fetchPageWithComponentData: vi.fn(() => Promise.resolve({ id: 'pdp', regions: [] })),
+}));
+vi.mock('@/extensions/ratings-reviews/lib/api/reviews.server', () => ({
+    getReviewsSummary: vi.fn(() => Promise.resolve({ totalCount: 0 })),
+    getReviews: vi.fn(() => Promise.resolve({ reviews: [] })),
+    getWriteReviewForm: vi.fn(() => Promise.resolve({})),
+}));
+vi.mock('@/extensions/product-content/lib/api/product-content.server', () => ({
+    getReturnsAndWarranty: vi.fn(() => Promise.resolve({})),
+    pdpSectionApi: {},
+}));
+vi.mock('@/extensions/product-content/lib/pdp-sections', () => ({ resolvePdpSections: vi.fn(() => []) }));
 
 vi.mock('react-router', async (importOriginal) => {
     const actual = await importOriginal<typeof import('react-router')>();
     return { ...actual, useRouteLoaderData: () => ({ nonce: undefined }) };
 });
+
+describe('Foundations product route loader fallback', () => {
+    const context = {
+        get: vi.fn((key) =>
+            key === siteContext ? { currency: 'USD', site: { id: 'test-site' }, locale: { id: 'en-US' } } : undefined
+        ),
+    } as any;
+    const invoke = async (path: string) => {
+        const { loader } = await import('./_app.product.$productId');
+        const request = new Request(`https://example.com/product/${path}`);
+        return loader({
+            request,
+            params: { siteId: 'test-site', localeId: 'en-US', productId: path },
+            context,
+            url: new URL(request.url),
+            pattern: '',
+        });
+    };
+
+    beforeEach(() => {
+        vi.clearAllMocks();
+        mockAttemptRouteSeoFallback.mockResolvedValue(undefined);
+    });
+
+    test('uses the unchanged .html path ID without fallback on primary success', async () => {
+        mockFetchProductById.mockResolvedValue({ id: 'legacy.html', primaryCategoryId: 'category' });
+        await invoke('legacy.html');
+        expect(mockFetchProductById.mock.calls[0][1]).toBe('legacy.html');
+        expect(mockAttemptRouteSeoFallback).not.toHaveBeenCalled();
+    });
+
+    test('attempts fallback once only for an authoritative path 404', async () => {
+        mockFetchProductById.mockRejectedValue(foundationsLoaderError(404));
+        await expect(invoke('missing')).rejects.toBeInstanceOf(Response);
+        expect(mockAttemptRouteSeoFallback).toHaveBeenCalledOnce();
+    });
+
+    test('does not attempt fallback for a non-404 failure', async () => {
+        mockFetchProductById.mockRejectedValue(foundationsLoaderError(500));
+        await expect(invoke('failure')).rejects.toBeInstanceOf(Response);
+        expect(mockAttemptRouteSeoFallback).not.toHaveBeenCalled();
+    });
+});
+
+function foundationsLoaderError(status: number): NormalizedApiError {
+    return new NormalizedApiError(
+        new ApiError({
+            status,
+            statusText: 'Failure',
+            headers: new Headers(),
+            body: { type: 'Failure', title: 'Failure', detail: 'failure' },
+            rawBody: '{}',
+            url: 'https://api.example.com/products/failure',
+            method: 'GET',
+        })
+    );
+}
 vi.mock('@/components/product-view', () => ({ default: () => <div data-testid="product-view" /> }));
 vi.mock('@/components/product-view/child-products', () => ({ default: () => null }));
 vi.mock('@/components/product-recommendations', () => ({ default: () => null }));
