@@ -21,9 +21,6 @@ const vertical = process.env.VERTICAL ?? 'foundations';
 //     canonical `useVariationMedia` hook W-24144914 + Shopper Agent shell helper W-24210721). The
 //     attribution feature this PR adds is not the cause — it contributes ~91B (482092 without vs
 //     482183 with, within run-to-run noise).
-//   - Non-footwear PDP: this branch's 479 KB already clears main's furniture (477 KB) and base
-//     (476 KB) tiers, so the larger value covers every non-footwear vertical — the separate furniture
-//     PDP tier collapses away.
 //   - Cart: footwear 538 KB (this branch, above main's 535 KB) plus main's luxury tier, raised to
 //     536 KB (luxury joined the Lighthouse matrix in W-24144914); other verticals stay at 530 KB.
 //   - Luxury drift (post-merge CI): the merged shared shell (this branch's attribution capture +
@@ -31,10 +28,36 @@ const vertical = process.env.VERTICAL ?? 'foundations';
 //     cart 534285 (> the 533 KB luxury tier). Both are luxury-only overages (the other five verticals
 //     still pass unchanged), so luxury takes a dedicated 413 KB home tier and a 536 KB cart ceiling,
 //     each with modest headroom (~1.4-1.7 KB) over the measured median.
-const homeScriptSizeLimit = vertical === 'luxury' ? 413000 : 411000;
-const productScriptSizeLimit = vertical === 'footwear' ? 486000 : 479000;
+// Raised for the inline Add-to-Cart quantity stepper (@W-24184213@). ProductCartActions grew to
+// host the stepper's error boundary, Suspense fallback, and lazy-loaded controller; it's reachable
+// eagerly from the cart-item edit modal (cart route) and from every vertical's PDP. Three size
+// mitigations already landed in this branch (deduping the fallback button markup, lazy-loading the
+// connected controller, splitting the child-product gallery into its own chunk) before these ceilings
+// were touched.
+//   - PDP zoom (@W-24184223@, 2026-09-21, merged from main): the accessible image-zoom feature
+//     extracts the shared gallery rendering out of `image-gallery/index.tsx` into
+//     `image-gallery/gallery-content.tsx` so ProductZoomGallery can reuse it without duplicating
+//     markup. That seam ships to every vertical's product page; the lightbox chunk stays lazy-loaded.
+// Both features land on the shared PDP/home product-view chunks, so on merge we keep the LARGER
+// ceiling per vertical and re-measured the combined build. Per-route numbers are CI-measured.
+const homeScriptSizeLimit = vertical === 'luxury' ? 415000 : vertical === 'footwear' ? 413000 : 411000;
+// Product ceilings re-measured after the latest upstream/main merge: the combined PDP chunk landed a
+// touch above the earlier raise on the three verticals that carry the most PDP code (CI medians:
+// footwear 499656, luxury 491466, cosmetic 486286). Each ceiling sits ~1.5 KB above its measured
+// median. Cosmetic and luxury get their own tiers so furniture (489 KB) and the fashion/foundations
+// default (485 KB), which still pass, keep their existing headroom.
+const productScriptSizeLimit =
+    vertical === 'footwear'
+        ? 501000
+        : vertical === 'luxury'
+          ? 493000
+          : vertical === 'furniture'
+            ? 489000
+            : vertical === 'cosmetic'
+              ? 488000
+              : 485000;
 const productDocumentSizeLimit = vertical === 'furniture' ? 69000 : 55000;
-const cartScriptSizeLimit = vertical === 'footwear' ? 538000 : vertical === 'luxury' ? 536000 : 530000;
+const cartScriptSizeLimit = vertical === 'footwear' ? 543000 : vertical === 'luxury' ? 541500 : 535000;
 
 module.exports = {
     ci: {
@@ -129,13 +152,12 @@ module.exports = {
                         'categories:accessibility': ['error', { minScore: 0.91, aggregationMethod: 'median' }],
                         'categories:seo': ['error', { minScore: 0.91, aggregationMethod: 'median' }],
                         'categories:best-practices': ['error', { minScore: 0.7, aggregationMethod: 'median' }],
-                        // Footwear's PDP includes its size/width/colorway controls and the configurable
-                        // SEO URL generator. After canonical URL convergence, the combined mirrored
-                        // payload measures 482358 B across five deterministic CI runs, so retain
-                        // modest headroom above the observed baseline.
-                        // Furniture's product overlay plus canonical URL convergence measures 475033 B
-                        // across five deterministic CI runs; its vertical-specific ceiling absorbs that
-                        // combined payload without changing the other verticals' budget.
+                        // Per-vertical ceilings above (`productScriptSizeLimit`) absorb each vertical's
+                        // own PDP baseline: footwear's size/width/colorway controls and SEO URL generator
+                        // plus its zoom trigger, furniture's product overlay plus its zoom trigger,
+                        // luxury's baseline drift plus the shared gallery-content extraction, and
+                        // cosmetic's shared gallery-content extraction alone. See the top-of-file comment
+                        // for the measured medians behind each tier.
                         'resource-summary:script:size': [
                             'error',
                             { maxNumericValue: productScriptSizeLimit, aggregationMethod: 'median' },

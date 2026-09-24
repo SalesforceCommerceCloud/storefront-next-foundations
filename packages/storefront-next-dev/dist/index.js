@@ -2111,17 +2111,42 @@ function i18nPlugin(config) {
 		name: "storefront-next:i18n",
 		apply: "build",
 		config(viteConfig) {
-			const output = viteConfig.build?.rollupOptions?.output;
-			if (Array.isArray(output)) return;
-			const existingManualChunks = output?.manualChunks;
-			return { build: { rollupOptions: { output: { manualChunks(id, meta) {
-				const localeMatch = id.match(pattern);
-				if (localeMatch) return `locales-${localeMatch[1]}`;
-				if (typeof existingManualChunks === "function") return existingManualChunks.call(this, id, meta);
-				if (existingManualChunks && typeof existingManualChunks === "object") {
-					for (const [name, ids] of Object.entries(existingManualChunks)) if (ids.includes(id)) return name;
-				}
-			} } } } };
+			const wrapManualChunks = (output) => {
+				if (Array.isArray(output)) return;
+				const existingManualChunks = output?.manualChunks;
+				return function(id, meta) {
+					const localeMatch = id.match(pattern);
+					if (localeMatch) return `locales-${localeMatch[1]}`;
+					if (typeof existingManualChunks === "function") return existingManualChunks.call(this, id, meta);
+					if (existingManualChunks && typeof existingManualChunks === "object") {
+						for (const [name, ids] of Object.entries(existingManualChunks)) if (ids.includes(id)) return name;
+					}
+				};
+			};
+			if (viteConfig.environments?.client) {
+				const rootOutput = viteConfig.build?.rollupOptions?.output;
+				const clientOutput = viteConfig.environments.client.build?.rollupOptions?.output ?? rootOutput;
+				const ssrOutput = viteConfig.environments.ssr?.build?.rollupOptions?.output ?? rootOutput;
+				const clientManualChunks = wrapManualChunks(clientOutput);
+				const ssrManualChunks = wrapManualChunks(ssrOutput);
+				if (!clientManualChunks && !ssrManualChunks) return;
+				return { environments: {
+					...clientManualChunks && { client: { build: { rollupOptions: { output: {
+						...clientOutput,
+						manualChunks: clientManualChunks
+					} } } } },
+					...ssrManualChunks && { ssr: { build: { rollupOptions: { output: {
+						...ssrOutput,
+						manualChunks: ssrManualChunks
+					} } } } }
+				} };
+			}
+			const manualChunks = wrapManualChunks(viteConfig.build?.rollupOptions?.output);
+			if (!manualChunks) return;
+			return { build: { rollupOptions: { output: {
+				...viteConfig.build?.rollupOptions?.output,
+				manualChunks
+			} } } };
 		}
 	};
 }
