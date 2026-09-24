@@ -69,7 +69,7 @@ interface UIConfig {
             collapsibleSwatchSections?: boolean;
             /** PDP product-image gallery layout: 'stacked' (hero + thumbnails) or 'mosaic'. @default 'stacked' */
             galleryLayout?: 'stacked' | 'mosaic';
-            /** PDP Add-to-Cart quantity UX. @default 'inline' */
+            /** PDP Add-to-Cart quantity UX. @default 'pre-select' */
             addToCartQuantityMode?: 'inline' | 'pre-select';
         };
     };
