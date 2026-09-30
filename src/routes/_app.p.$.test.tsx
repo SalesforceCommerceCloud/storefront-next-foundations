@@ -17,7 +17,8 @@
 import { beforeEach, describe, expect, test, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import { ApiError, type ShopperProducts } from '@/scapi';
-import type { ProductPageData } from './_app.product.$productId';
+import type { ProductPageData } from './_app.p.$';
+import { appConfigContext } from '@salesforce/storefront-next-runtime/config';
 import { siteContext } from '@salesforce/storefront-next-runtime/site-context';
 import { NormalizedApiError } from '@/lib/api/normalized-api-error';
 
@@ -48,26 +49,70 @@ vi.mock('react-router', async (importOriginal) => {
 });
 
 describe('Foundations product route loader fallback', () => {
+    let activeAppConfig: object = {};
     const context = {
-        get: vi.fn((key) =>
-            key === siteContext ? { currency: 'USD', site: { id: 'test-site' }, locale: { id: 'en-US' } } : undefined
-        ),
+        get: vi.fn((key) => {
+            if (key === siteContext) {
+                return { currency: 'USD', site: { id: 'test-site' }, locale: { id: 'en-US' } };
+            }
+            if (key === appConfigContext) {
+                return activeAppConfig;
+            }
+            return undefined;
+        }),
     } as any;
     const invoke = async (path: string) => {
-        const { loader } = await import('./_app.product.$productId');
-        const request = new Request(`https://example.com/product/${path}`);
+        const { loader } = await import('./_app.p.$');
+        const request = new Request(`https://example.com/p/${path}`);
         return loader({
             request,
-            params: { siteId: 'test-site', localeId: 'en-US', productId: path },
+            params: { siteId: 'test-site', localeId: 'en-US', '*': path },
             context,
             url: new URL(request.url),
-            pattern: '',
+            pattern: '/p/*',
         });
     };
 
     beforeEach(() => {
         vi.clearAllMocks();
+        activeAppConfig = {};
         mockAttemptRouteSeoFallback.mockResolvedValue(undefined);
+    });
+
+    test('301-redirects a stale slug from the existing product lookup', async () => {
+        activeAppConfig = {
+            url: {
+                seoRoutes: {
+                    'test-site': {
+                        product: { prefix: 'p' },
+                        category: { prefix: 'c', mode: 'id-suffix' },
+                    },
+                },
+            },
+        };
+        mockFetchProductById.mockResolvedValueOnce({
+            id: 'shoe-123',
+            slug: 'current café',
+            primaryCategoryId: 'category',
+        });
+        const { loader } = await import('./_app.p.$');
+        const request = new Request('https://example.com/p/old-slug/shoe-123?color=blue');
+
+        const response = await loader({
+            request,
+            params: { siteId: 'test-site', localeId: 'en-US', '*': 'stale-route-param' },
+            context,
+            url: new URL(request.url),
+            pattern: '/p/*',
+        }).then(
+            () => undefined,
+            (error: unknown) => error as Response
+        );
+
+        expect(response?.status).toBe(301);
+        expect(response?.headers.get('Location')).toBe('/p/current%20caf%C3%A9/shoe-123?color=blue');
+        expect(mockFetchProductById).toHaveBeenCalledOnce();
+        expect(mockAttemptRouteSeoFallback).not.toHaveBeenCalled();
     });
 
     test('uses the unchanged .html path ID without fallback on primary success', async () => {
@@ -149,7 +194,7 @@ vi.mock('@/extensions/shipping-delivery/context/shipping-delivery-context', () =
 describe('Foundations product detail route', () => {
     // @sfdc-extension-block-start SFDC_EXT_SHIPPING_DELIVERY
     test('passes the product ID to the delivery provider', async () => {
-        const { default: ProductPage } = await import('./_app.product.$productId');
+        const { default: ProductPage } = await import('./_app.p.$');
         const product = {
             id: 'foundations-product',
             name: 'Foundations Product',

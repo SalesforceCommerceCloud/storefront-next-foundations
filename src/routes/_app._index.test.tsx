@@ -341,7 +341,7 @@ describe('HomePage', () => {
                             imageUrl: '__ASSET_MOCK__',
                             ctaText: 'Explore collection',
                             ctaAriaLabel: 'Explore collection: Geometric Balance',
-                            ctaLink: '/category/root',
+                            ctaLink: '/c/root',
                         }),
                         expect.objectContaining({
                             id: 'slide-2',
@@ -350,7 +350,7 @@ describe('HomePage', () => {
                             imageUrl: '__ASSET_MOCK__',
                             ctaText: 'Explore collection',
                             ctaAriaLabel: 'Explore collection: Sculptural Contrast',
-                            ctaLink: '/category/root',
+                            ctaLink: '/c/root',
                         }),
                         expect.objectContaining({
                             id: 'slide-3',
@@ -359,7 +359,7 @@ describe('HomePage', () => {
                             imageUrl: '__ASSET_MOCK__',
                             ctaText: 'Explore collection',
                             ctaAriaLabel: 'Explore collection: Quiet Geometry',
-                            ctaLink: '/category/root',
+                            ctaLink: '/c/root',
                         }),
                         expect.objectContaining({
                             id: 'slide-4',
@@ -368,7 +368,7 @@ describe('HomePage', () => {
                             imageUrl: '__ASSET_MOCK__',
                             ctaText: 'Explore collection',
                             ctaAriaLabel: 'Explore collection: Stacked Simplicity',
-                            ctaLink: '/category/root',
+                            ctaLink: '/c/root',
                         }),
                     ],
                 })
