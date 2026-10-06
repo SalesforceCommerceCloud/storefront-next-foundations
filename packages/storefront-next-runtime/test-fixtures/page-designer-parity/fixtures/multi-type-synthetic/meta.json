@@ -1,9 +1,0 @@
-{
-    "sourceStack": "synthetic",
-    "requestHost": "https://www.shop.example",
-    "locale": "fr_FR",
-    "defaultLocale": "en_US",
-    "siteId": "RefArch",
-    "capturedAt": "2026-05-11T00:00:00Z",
-    "description": "Multi-type fixture exercising first-matching-locale component content on a page at a non-default locale (fr_FR). Its manifest declares string, image, file, markup, url, and cms_record attributes; only the attributes authored in the first matching locale are returned. Synthetic capture."
-}
