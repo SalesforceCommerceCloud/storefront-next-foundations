@@ -74,6 +74,8 @@ import { SeoMeta } from '@/components/seo-meta';
 import { buildCanonicalUrl } from '@/utils/canonical-url';
 import { useTranslation } from 'react-i18next';
 import type { NormalizedApiError } from '@/lib/api/normalized-api-error';
+import { createCategoryUrlFromLegacyPath } from '@/route-paths';
+import { useSeoUrlContext } from '@/hooks/use-seo-url-context';
 
 export { shouldRevalidate } from '@/lib/revalidation/routes/home';
 
@@ -202,6 +204,8 @@ export async function loader(args: Route.LoaderArgs): Promise<HomePageData> {
  */
 export default function HomePage({ loaderData }: { loaderData: HomePageData }) {
     const { t } = useTranslation('home');
+    const seoUrlContext = useSeoUrlContext();
+    const categoryUrl = (path: string) => createCategoryUrlFromLegacyPath(path, seoUrlContext);
 
     // The supplied hero images are ordered to match their carousel positions.
     const heroSlides: HeroSlide[] = [
@@ -213,7 +217,7 @@ export default function HomePage({ loaderData }: { loaderData: HomePageData }) {
             imageAlt: t('hero.slide1.imageAlt'),
             ctaText: t('hero.slide1.ctaText'),
             ctaAriaLabel: t('hero.slide1.ctaAriaLabel'),
-            ctaLink: '/category/root',
+            ctaLink: categoryUrl('/category/root'),
             overlayPosition: 'Middle Center',
             overlayAlignment: 'center',
         },
@@ -225,7 +229,7 @@ export default function HomePage({ loaderData }: { loaderData: HomePageData }) {
             imageAlt: t('hero.slide2.imageAlt'),
             ctaText: t('hero.slide2.ctaText'),
             ctaAriaLabel: t('hero.slide2.ctaAriaLabel'),
-            ctaLink: '/category/root',
+            ctaLink: categoryUrl('/category/root'),
             overlayPosition: 'Middle Center',
             overlayAlignment: 'center',
         },
@@ -237,7 +241,7 @@ export default function HomePage({ loaderData }: { loaderData: HomePageData }) {
             imageAlt: t('hero.slide3.imageAlt'),
             ctaText: t('hero.slide3.ctaText'),
             ctaAriaLabel: t('hero.slide3.ctaAriaLabel'),
-            ctaLink: '/category/root',
+            ctaLink: categoryUrl('/category/root'),
             overlayPosition: 'Middle Center',
             overlayAlignment: 'center',
         },
@@ -249,7 +253,7 @@ export default function HomePage({ loaderData }: { loaderData: HomePageData }) {
             imageAlt: t('hero.slide4.imageAlt'),
             ctaText: t('hero.slide4.ctaText'),
             ctaAriaLabel: t('hero.slide4.ctaAriaLabel'),
-            ctaLink: '/category/root',
+            ctaLink: categoryUrl('/category/root'),
             overlayPosition: 'Middle Center',
             overlayAlignment: 'center',
         },
@@ -294,7 +298,7 @@ export default function HomePage({ loaderData }: { loaderData: HomePageData }) {
                             data={searchResult}
                             title={t('featuredProducts.title')}
                             titleClassName={featuredHeadingClassName}
-                            shopAllUrl="/category/root"
+                            shopAllUrl={categoryUrl('/category/root')}
                             shopAllText={t('featuredProducts.shopAll')}
                         />
                     )}
@@ -319,7 +323,7 @@ export default function HomePage({ loaderData }: { loaderData: HomePageData }) {
                             imageAlt={t('featuredContent.newArrivals.pyramids.imageAlt')}
                             buttonText={t('featuredContent.newArrivals.pyramids.ctaText')}
                             buttonAriaLabel={t('featuredContent.newArrivals.pyramids.ctaAriaLabel')}
-                            buttonLink="/category/newarrivals"
+                            buttonLink={categoryUrl('/category/newarrivals')}
                             showBackground={false}
                             showBorder={false}
                             loading="lazy"
@@ -332,7 +336,7 @@ export default function HomePage({ loaderData }: { loaderData: HomePageData }) {
                             imageAlt={t('featuredContent.newArrivals.cubes.imageAlt')}
                             buttonText={t('featuredContent.newArrivals.cubes.ctaText')}
                             buttonAriaLabel={t('featuredContent.newArrivals.cubes.ctaAriaLabel')}
-                            buttonLink="/category/newarrivals"
+                            buttonLink={categoryUrl('/category/newarrivals')}
                             showBackground={false}
                             showBorder={false}
                             loading="lazy"
@@ -369,7 +373,7 @@ export default function HomePage({ loaderData }: { loaderData: HomePageData }) {
                             imageAlt={t('featuredContent.newArrivals.cubes.imageAlt')}
                             buttonText={t('featuredContent.newArrivals.cubes.ctaText')}
                             buttonAriaLabel={t('featuredContent.newArrivals.cubes.ctaAriaLabel')}
-                            buttonLink="/category/newarrivals"
+                            buttonLink={categoryUrl('/category/newarrivals')}
                             showBackground={false}
                             showBorder={false}
                             loading="lazy"
@@ -382,7 +386,7 @@ export default function HomePage({ loaderData }: { loaderData: HomePageData }) {
                             imageAlt={t('featuredContent.newArrivals.pyramids.imageAlt')}
                             buttonText={t('featuredContent.newArrivals.pyramids.ctaText')}
                             buttonAriaLabel={t('featuredContent.newArrivals.pyramids.ctaAriaLabel')}
-                            buttonLink="/category/newarrivals"
+                            buttonLink={categoryUrl('/category/newarrivals')}
                             showBackground={false}
                             showBorder={false}
                             loading="lazy"
