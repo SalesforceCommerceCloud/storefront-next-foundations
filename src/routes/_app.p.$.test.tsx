@@ -15,12 +15,19 @@
  */
 /** @sfdc-extension-file SFDC_EXT_SHIPPING_DELIVERY */
 import { beforeEach, describe, expect, test, vi } from 'vitest';
-import { render, screen } from '@testing-library/react';
+import { act, render, screen } from '@testing-library/react';
+import { StrictMode } from 'react';
 import { ApiError, type ShopperProducts } from '@/scapi';
 import type { ProductPageData } from './_app.p.$';
 import { appConfigContext } from '@salesforce/storefront-next-runtime/config';
 import { siteContext } from '@salesforce/storefront-next-runtime/site-context';
 import { NormalizedApiError } from '@/lib/api/normalized-api-error';
+
+const tracking = vi.hoisted(() => ({ consentKey: 'accepted', trackViewProduct: vi.fn().mockResolvedValue(true) }));
+vi.mock('@salesforce/storefront-next-runtime/site-context', async (importOriginal) => ({
+    ...(await importOriginal<typeof import('@salesforce/storefront-next-runtime/site-context')>()),
+    useSite: () => ({ site: { id: 'test-site' }, locale: { id: 'en-US' } }),
+}));
 
 const { mockFetchProductById, mockAttemptRouteSeoFallback } = vi.hoisted(() => ({
     mockFetchProductById: vi.fn(),
@@ -45,7 +52,12 @@ vi.mock('@/extensions/product-content/lib/pdp-sections', () => ({ resolvePdpSect
 
 vi.mock('react-router', async (importOriginal) => {
     const actual = await importOriginal<typeof import('react-router')>();
-    return { ...actual, useRouteLoaderData: () => ({ nonce: undefined }) };
+    return {
+        ...actual,
+        useRouteLoaderData: () => ({ nonce: undefined }),
+        useLocation: () => ({ pathname: '/p/test-product-123', search: '', hash: '', key: 'default' }),
+        useNavigation: () => ({ state: 'idle' }),
+    };
 });
 
 describe('Foundations product route loader fallback', () => {
@@ -159,7 +171,9 @@ vi.mock('@/components/seo-meta', () => ({ SeoMeta: () => null }));
 vi.mock('@/providers/product-context', () => ({ ProductProvider: ({ children }: any) => children }));
 vi.mock('@/providers/product-view', () => ({ default: ({ children }: any) => children }));
 vi.mock('@/targets/ui-target', () => ({ UITarget: () => null }));
-vi.mock('@/hooks/use-analytics', () => ({ useAnalytics: () => ({ trackViewProduct: vi.fn() }) }));
+vi.mock('@/hooks/use-analytics', () => ({
+    useAnalytics: () => ({ consentKey: tracking.consentKey, trackViewProduct: tracking.trackViewProduct }),
+}));
 vi.mock('@/lib/product/product-utils', () => ({ isProductSet: () => false, isProductBundle: () => false }));
 // @sfdc-extension-block-start SFDC_EXT_RATINGS_REVIEWS
 vi.mock('@/extensions/ratings-reviews/providers/product-reviews-context', () => ({
@@ -192,9 +206,12 @@ vi.mock('@/extensions/shipping-delivery/context/shipping-delivery-context', () =
 // @sfdc-extension-block-end SFDC_EXT_SHIPPING_DELIVERY
 
 describe('Foundations product detail route', () => {
-    // @sfdc-extension-block-start SFDC_EXT_SHIPPING_DELIVERY
-    test('passes the product ID to the delivery provider', async () => {
-        const { default: ProductPage } = await import('./_app.p.$');
+    beforeEach(() => {
+        tracking.consentKey = 'accepted';
+        tracking.trackViewProduct.mockReset().mockResolvedValue(true);
+    });
+
+    const impressionData = (): ProductPageData => {
         const product = {
             id: 'foundations-product',
             name: 'Foundations Product',
@@ -258,7 +275,53 @@ describe('Foundations product detail route', () => {
             // @sfdc-extension-block-end SFDC_EXT_PRODUCT_CONTENT
         };
 
-        render(<ProductPage loaderData={loaderData} />);
+        return loaderData;
+    };
+
+    test('recovers the current product after consent, deduplicates Strict Mode, and aborts on unmount', async () => {
+        const { default: ProductPage } = await import('./_app.p.$');
+        const data = impressionData();
+        tracking.consentKey = 'unknown';
+        tracking.trackViewProduct.mockResolvedValueOnce(false);
+        const view = render(
+            <StrictMode>
+                <ProductPage loaderData={data} />
+            </StrictMode>
+        );
+        await act(async () => {});
+        expect(tracking.trackViewProduct).toHaveBeenCalledTimes(1);
+        tracking.consentKey = 'accepted';
+        view.rerender(
+            <StrictMode>
+                <ProductPage loaderData={data} />
+            </StrictMode>
+        );
+        await act(async () => {});
+        expect(tracking.trackViewProduct).toHaveBeenCalledTimes(2);
+        view.rerender(
+            <StrictMode>
+                <ProductPage loaderData={{ ...data, product: { ...data.product } }} />
+            </StrictMode>
+        );
+        await act(async () => {});
+        expect(tracking.trackViewProduct).toHaveBeenCalledTimes(2);
+        tracking.trackViewProduct.mockImplementationOnce(() => new Promise<boolean>(() => {}));
+        view.rerender(
+            <StrictMode>
+                <ProductPage loaderData={{ ...data, product: { ...data.product, id: 'variant' } }} />
+            </StrictMode>
+        );
+        await act(async () => {});
+        const signal = tracking.trackViewProduct.mock.calls[2][1] as AbortSignal;
+        expect(signal.aborted).toBe(false);
+        view.unmount();
+        expect(signal.aborted).toBe(true);
+    });
+
+    // @sfdc-extension-block-start SFDC_EXT_SHIPPING_DELIVERY
+    test('passes the product ID to the delivery provider', async () => {
+        const { default: ProductPage } = await import('./_app.p.$');
+        render(<ProductPage loaderData={impressionData()} />);
 
         expect(screen.getByTestId('shipping-delivery-provider')).toHaveAttribute(
             'data-product-id',
