@@ -37,6 +37,7 @@
     --muted-hover: #ebebeb;
 
     --accent: #dbeafe;                  /* soft blue from Figma var(--accent) */
+    --skeleton: #ECECEC;
     --accent-foreground: #1e3a8a;       /* blue-900 from Figma header/accent-foreground; 8.9:1 on accent (AAA) */
 
     /*
