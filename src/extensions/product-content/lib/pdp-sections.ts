@@ -16,11 +16,14 @@
 import type { ShopperProducts } from '@/scapi';
 import type { ParseKeys } from 'i18next';
 import type { PdpSectionApiMethod } from '@/extensions/product-content/lib/api/product-content.server';
+import type { SectionContent } from '@/components/html-fragment/types';
 
-export type PdpSection = {
-    apiMethod: PdpSectionApiMethod;
-    labelKey: ParseKeys<'product'>;
-};
+export type PdpSection =
+    | { apiMethod: PdpSectionApiMethod; labelKey: ParseKeys<'product'> }
+    | {
+          labelKey: ParseKeys<'product'>;
+          resolve: (product: ShopperProducts.schemas['Product']) => Promise<SectionContent | null>;
+      };
 
 /**
  * Returns the ordered list of collapsible sections to render on the PDP.
