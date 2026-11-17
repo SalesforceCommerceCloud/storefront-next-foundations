@@ -21,6 +21,11 @@ import { ApiError, type ShopperProducts } from '@/scapi';
 import type { ProductPageData } from './_app.p.$';
 import { appConfigContext } from '@salesforce/storefront-next-runtime/config';
 import { siteContext } from '@salesforce/storefront-next-runtime/site-context';
+// @sfdc-extension-block-start SFDC_EXT_BOPIS
+vi.mock('@/extensions/store-locator/lib/resolve-selected-store.server', () => ({
+    resolveSelectedStore: vi.fn(() => Promise.resolve({ selectedStoreInfo: null, store: null, error: null })),
+}));
+// @sfdc-extension-block-end SFDC_EXT_BOPIS
 import { NormalizedApiError } from '@/lib/api/normalized-api-error';
 
 const tracking = vi.hoisted(() => ({ consentKey: 'accepted', trackViewProduct: vi.fn().mockResolvedValue(true) }));

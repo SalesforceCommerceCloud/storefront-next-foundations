@@ -13,69 +13,148 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-import { describe, test, expect, vi } from 'vitest';
+import { beforeEach, describe, test, expect, vi } from 'vitest';
 import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { getTranslation } from '@salesforce/storefront-next-runtime/i18n';
 import { AllProvidersWrapper } from '@/test-utils/context-provider';
+import AuthProvider from '@/providers/auth';
+import type { SessionData } from '@/lib/api/types';
+vi.mock('@/extensions/store-locator/providers/selection', () => ({
+    default: ({ children }: { children: React.ReactNode }) => children,
+}));
 
 const { t } = getTranslation();
+const guestSession: SessionData = { userType: 'guest' };
+const registeredSession: SessionData = { userType: 'registered', customerId: 'test-customer-1' };
 
-// Mock the lazy-loaded store locator sheet
-vi.mock('@/extensions/store-locator/components/header/store-locator-sheet', () => ({
-    default: ({
-        children,
-        open,
-        onOpenChange,
-    }: {
-        children: any;
-        open: boolean;
-        onOpenChange: (open: boolean) => void;
-    }) => (
-        <div data-testid="mock-store-locator-sheet" data-open={open}>
-            {children}
-            <button onClick={() => onOpenChange(false)}>Mock Close</button>
-        </div>
-    ),
-}));
+function renderBadge(session?: SessionData) {
+    return render(
+        <AllProvidersWrapper>
+            {session ? (
+                <AuthProvider value={session}>
+                    <StoreLocatorBadge />
+                </AuthProvider>
+            ) : (
+                <StoreLocatorBadge />
+            )}
+        </AllProvidersWrapper>
+    );
+}
+
+const openStoreLocator = vi.fn();
+const openSelectedStoreLocator = vi.fn();
+const storeLocatorState = {
+    selectedStoreInfo: null as { id: string; name?: string; postalCode?: string; distance?: number } | null,
+    isOpen: false,
+    open: openStoreLocator,
+    openSelectedStore: openSelectedStoreLocator,
+    config: { radiusUnit: 'mi' as const },
+};
+
+vi.mock('@/extensions/store-locator/providers/store-locator', async (importOriginal) => {
+    const actual = await importOriginal<typeof import('@/extensions/store-locator/providers/store-locator')>();
+    return {
+        ...actual,
+        useStoreLocator: (selector: (state: typeof storeLocatorState) => unknown) => selector(storeLocatorState),
+    };
+});
 
 import StoreLocatorBadge from './store-locator-badge';
 
 describe('StoreLocatorBadge', () => {
-    test('renders initial trigger button', () => {
-        render(
-            <AllProvidersWrapper>
-                <StoreLocatorBadge />
-            </AllProvidersWrapper>
-        );
+    beforeEach(() => {
+        openStoreLocator.mockClear();
+        openSelectedStoreLocator.mockClear();
+        storeLocatorState.selectedStoreInfo = null;
+        storeLocatorState.isOpen = false;
+    });
 
-        expect(
-            screen.getByRole('button', { name: t('extStoreLocator:storeLocator.trigger.ariaLabel') })
-        ).toBeInTheDocument();
+    test('renders initial trigger button', () => {
+        renderBadge();
+
+        const trigger = screen.getByRole('button', {
+            name: t('extStoreLocator:storeLocator.trigger.chooseAriaLabel'),
+        });
+        expect(trigger).toBeInTheDocument();
+        expect(trigger).toHaveTextContent(t('extStoreLocator:storeLocator.trigger.chooseAriaLabel'));
+        expect(trigger.querySelector('.lucide-store')).toBeInTheDocument();
+        expect(trigger).toHaveClass('hover:opacity-50');
+        expect(trigger).toHaveAttribute('aria-haspopup', 'dialog');
+        expect(trigger).toHaveAttribute('aria-expanded', 'false');
 
         expect(
             screen.queryByRole('button', { name: t('extStoreLocator:storeLocator.trigger.openAriaLabel') })
         ).not.toBeInTheDocument();
     });
 
-    test('shows open button and sheet after clicking trigger', async () => {
-        render(
-            <AllProvidersWrapper>
-                <StoreLocatorBadge />
-            </AllProvidersWrapper>
-        );
+    test('opens the shared Store Locator sheet host when clicked', async () => {
+        renderBadge();
 
         await userEvent.click(
-            screen.getByRole('button', { name: t('extStoreLocator:storeLocator.trigger.ariaLabel') })
+            screen.getByRole('button', { name: t('extStoreLocator:storeLocator.trigger.chooseAriaLabel') })
         );
 
-        const openBtn = await screen.findByRole('button', {
-            name: t('extStoreLocator:storeLocator.trigger.openAriaLabel'),
-        });
+        expect(openStoreLocator).toHaveBeenCalledOnce();
+    });
 
-        expect(openBtn).toBeInTheDocument();
-        const sheet = screen.getByTestId('mock-store-locator-sheet');
-        expect(sheet).toBeInTheDocument();
-        expect(sheet).toHaveAttribute('data-open', 'true');
+    test('reports the sheet as expanded while it is open', () => {
+        storeLocatorState.isOpen = true;
+        renderBadge();
+
+        expect(
+            screen.getByRole('button', { name: t('extStoreLocator:storeLocator.trigger.chooseAriaLabel') })
+        ).toHaveAttribute('aria-expanded', 'true');
+    });
+
+    test.each([
+        ['guest', guestSession],
+        ['registered', registeredSession],
+    ])('uses the same choose-store trigger for %s shoppers', (_shopperType, session) => {
+        renderBadge(session);
+
+        const trigger = screen.getByRole('button', {
+            name: t('extStoreLocator:storeLocator.trigger.chooseAriaLabel'),
+        });
+        expect(trigger).toHaveTextContent(t('extStoreLocator:storeLocator.trigger.chooseAriaLabel'));
+        expect(trigger.querySelector('.lucide-store')).toBeInTheDocument();
+        expect(trigger.querySelector('.lucide-map-pin')).not.toBeInTheDocument();
+        expect(trigger).toHaveClass('hover:opacity-50');
+    });
+
+    test('displays the selected store name and postal code in one dialog trigger', () => {
+        storeLocatorState.selectedStoreInfo = {
+            id: 'store-1',
+            name: 'Downtown Store',
+            postalCode: '94105',
+            distance: 1.2,
+        };
+        renderBadge();
+
+        const trigger = screen.getByRole('button', {
+            name: 'Change your store: Downtown Store · 1.20 mi away, 94105',
+        });
+        expect(trigger).toHaveTextContent('Downtown Store · 1.20 mi away');
+        expect(trigger).toHaveTextContent('94105');
+        expect(trigger.querySelector('.lucide-map-pin')).toBeInTheDocument();
+        expect(trigger).toHaveAttribute('aria-haspopup', 'dialog');
+        expect(trigger).toHaveAttribute('aria-expanded', 'false');
+        expect(screen.getAllByRole('button')).toHaveLength(1);
+    });
+
+    test('opens the shared Store Locator sheet from the selected-store trigger', async () => {
+        storeLocatorState.selectedStoreInfo = {
+            id: 'store-1',
+            name: 'Downtown Store',
+            postalCode: '94105',
+            distance: 1.2,
+        };
+        renderBadge();
+
+        await userEvent.click(
+            screen.getByRole('button', { name: 'Change your store: Downtown Store · 1.20 mi away, 94105' })
+        );
+        expect(openSelectedStoreLocator).toHaveBeenCalledOnce();
+        expect(openStoreLocator).not.toHaveBeenCalled();
     });
 });
