@@ -7,7 +7,7 @@ import { fileURLToPath } from "url";
 import { parse } from "@babel/parser";
 import { isArrayPattern, isClassDeclaration, isExportSpecifier, isFunctionDeclaration, isIdentifier, isJSXAttribute, isJSXElement, isJSXFragment, isJSXIdentifier, isMemberExpression, isObjectPattern, isObjectProperty, isRestElement, isVariableDeclaration, jsxClosingElement, jsxClosingFragment, jsxElement, jsxFragment, jsxIdentifier, jsxOpeningElement, jsxOpeningFragment, jsxText } from "@babel/types";
 import { generate } from "@babel/generator";
-import traverseModule from "@babel/traverse";
+import _traverse from "@babel/traverse";
 import { existsSync, mkdirSync, readFileSync, unlinkSync, writeFileSync } from "fs";
 import { glob } from "glob";
 import { Node, Project, ts } from "ts-morph";
@@ -397,7 +397,7 @@ const patchReactRouterPlugin = () => {
 
 //#endregion
 //#region src/extensibility/target-utils.ts
-const traverse$1 = traverseModule.default || traverseModule;
+const traverse$1 = _traverse.default || _traverse;
 const TARGET_COMPONENT_TAG = "UITarget";
 const TARGET_PROVIDERS_TAG = "UITargetProviders";
 const TARGET_ID_ATTRIBUTE = "targetId";
@@ -1823,7 +1823,7 @@ const workspacePlugin = () => {
 
 //#endregion
 //#region src/plugins/componentLoaders.ts
-const traverse = traverseModule.default || traverseModule;
+const traverse = _traverse.default || _traverse;
 const generate$1 = generate.default || generate;
 /**
 * Names of exports to strip per environment.
@@ -2889,5 +2889,80 @@ function shouldRouteToNext(pathname, routingRules) {
 }
 
 //#endregion
-export { storefrontNextTargets as default, hybridProxyPlugin, shouldRouteToNext, transformTargetPlaceholderPlugin, uiTargetDevModePlugin };
+//#region src/config.ts
+const SFNEXT_BASE_CARTRIDGE_NAME = "app_storefrontnext_base";
+/** Metadata directory relative to `cartridges/`, for the given cartridge name. */
+function cartridgeExperienceDir(cartridgeName = SFNEXT_BASE_CARTRIDGE_NAME) {
+	return `${cartridgeName}/cartridge/experience`;
+}
+const SFNEXT_BASE_CARTRIDGE_OUTPUT_DIR = cartridgeExperienceDir();
+/**
+* Merge override patterns with defaults while preserving required defaults.
+*
+* Overrides are prepended so they can add additional globs or exclusions, while
+* defaults remain in the list to prevent breaking essential artifacts.
+*
+* @example
+* const defaults = ['server/**', 'loader.js'];
+* const overrides = ['custom/**', '!static/**'];
+* mergePatterns(defaults, overrides);
+* // => ['custom/**', '!static/**', 'server/**', 'loader.js']
+*/
+const mergePatterns = (defaults, overrides) => {
+	if (!overrides?.length) return defaults;
+	return Array.from(new Set([...overrides, ...defaults]));
+};
+/**
+* Build the MRT SSR configuration from the `runtime` section of `config.server.ts`.
+*
+* Patterns from `runtime` are merged with the defaults rather than replacing them. Pure and
+* synchronous so build tooling that already has the runtime config loaded can reuse the defaults.
+*
+* @param runtime - The `runtime` section of `config.server.ts`, if any
+* @param mode - Build mode; `production` selects the streaming entry point unless `MRT_BUNDLE_TYPE=ssr`
+*/
+const buildMrtSsrConfig = (runtime, mode = "production") => {
+	const ssrEntryPoint = getMrtEntryFile(mode);
+	const defaultSsrOnly = [
+		"server/**/*",
+		"package.json",
+		"loader.js",
+		`${ssrEntryPoint}.{js,mjs,cjs}`,
+		`${ssrEntryPoint}.{js,mjs,cjs}.map`,
+		"!static/**/*",
+		"sfnext-server-*.mjs",
+		"sfnext-server-*.mjs.map"
+	];
+	const defaultSsrShared = [
+		"client/**/*",
+		"static/**/*",
+		"**/*.css",
+		"**/*.png",
+		"**/*.jpg",
+		"**/*.jpeg",
+		"**/*.gif",
+		"**/*.svg",
+		"**/*.ico",
+		"**/*.woff",
+		"**/*.woff2",
+		"**/*.ttf",
+		"**/*.eot"
+	];
+	const defaultSsrParameters = { ssrFunctionNodeVersion: "24.x" };
+	const ssrOnly = mergePatterns(defaultSsrOnly, runtime?.ssrOnly);
+	const ssrShared = mergePatterns(defaultSsrShared, runtime?.ssrShared);
+	const ssrParameters = {
+		...defaultSsrParameters,
+		...runtime?.ssrParameters ?? {}
+	};
+	if (!ssrParameters.envBasePath) delete ssrParameters.envBasePath;
+	return {
+		ssrOnly,
+		ssrShared,
+		ssrParameters
+	};
+};
+
+//#endregion
+export { buildMrtSsrConfig, storefrontNextTargets as default, hybridProxyPlugin, shouldRouteToNext, transformTargetPlaceholderPlugin, uiTargetDevModePlugin };
 //# sourceMappingURL=index.js.map
